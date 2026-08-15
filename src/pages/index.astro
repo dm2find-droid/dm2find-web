@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Chat from '../components/Chat.astro';
+
+const all = (await getCollection('destinations')).map(e => e.data);
+const countries = new Set(all.map(d => d.countryName)).size;
+const sources = (await getCollection('sources')).map(e => e.data);
+const featured = ['bordeaux', 'groningen', 'bolzano', 'seoul', 'bruges']
+  .map(s => all.find(d => d.slug === s)).filter(Boolean);
+const first = all.find(d => d.slug === 'bordeaux') ?? all[0];
+---
+<Base title="Ask a destination anything">
+  <section class="mx-auto max-w-6xl px-5 py-14">
+    <p class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">
+      {all.length} live destinations in {countries} countries · built and hosted in Europe
+    </p>
+    <h1 class="h-display">Ask a destination<br />anything.</h1>
+    <p class="lede mt-5">
+      DM2find turns the tourism data a region already publishes into a conversation — so a visitor can
+      simply ask, and get an answer that is actually current.
+    </p>
+
+    <div class="mt-10 grid items-center gap-8 rounded-3xl border border-(--color-line) bg-white p-8 lg:grid-cols-2">
+      <div>
+        <p class="mb-2 text-xs font-bold tracking-widest text-(--color-terra) uppercase">I'm travelling</p>
+        <h2 class="h-section">Where are you going?</h2>
+        <p class="mt-3 text-sm text-(--color-ink-2)">Pick a destination and start asking. No app, no account, free — always.</p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          {featured.map(d => (
+            <a href={`/destinations/${d!.slug}`}
+               class="rounded-full border border-(--color-line) px-4 py-2 text-sm hover:border-(--color-terra) hover:text-(--color-terra)">
+              {d!.name.en}
+            </a>
+          ))}
+          <a href="/destinations" class="rounded-full bg-(--color-ink) px-4 py-2 text-sm text-white">All {all.length} →</a>
+        </div>
+      </div>
+      <Chat name={first.name.en} chatUrl={first.chatUrl} embed={false} />
+    </div>
+
+    <div class="mt-8 grid overflow-hidden rounded-xl border border-(--color-line) bg-white md:grid-cols-3">
+      <a href="/business" class="border-b border-(--color-line-2) p-6 hover:bg-(--color-paper-2) md:border-r md:border-b-0">
+        <p class="text-xs font-bold tracking-widest text-(--color-amber) uppercase">Tourism business</p>
+        <h3 class="mt-2 font-serif text-xl">Own a hotel, restaurant, museum or rental?</h3>
+        <p class="mt-2 text-sm text-(--color-ink-2)">You’re probably already in the concierge. Claim your listing and describe yourself properly.</p>
+        <p class="mt-3 text-sm font-semibold text-(--color-amber)">See what it costs →</p>
+      </a>
+      <a href="/dmo" class="border-b border-(--color-line-2) p-6 hover:bg-(--color-paper-2) md:border-r md:border-b-0">
+        <p class="text-xs font-bold tracking-widest text-(--color-pine) uppercase">Destination marketer</p>
+        <h3 class="mt-2 font-serif text-xl">Market a city or region?</h3>
+        <p class="mt-2 text-sm text-(--color-ink-2)">If your region publishes open tourism data, your branded concierge can be live in 48 hours.</p>
+        <p class="mt-3 text-sm font-semibold text-(--color-pine)">How it works →</p>
+      </a>
+      <a href="/platform" class="p-6 hover:bg-(--color-paper-2)">
+        <p class="text-xs font-bold tracking-widest text-(--color-slate2) uppercase">National data platform</p>
+        <h3 class="mt-2 font-serif text-xl">Run a national or regional data platform?</h3>
+        <p class="mt-2 text-sm text-(--color-ink-2)">The ontology layer that makes your tourism data readable by every assistant.</p>
+        <p class="mt-3 text-sm font-semibold text-(--color-slate2)">Explore the layer →</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="border-y border-(--color-line-2) bg-(--color-paper-2) py-12">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="h-section">Connected data platforms</h2>
+      <div class="mt-5 flex flex-wrap gap-2">
+        {sources.map(s => (
+          <a href={`/data/${s.id}`}
+             class={`rounded-full px-3 py-1.5 text-xs font-semibold ${
+               s.status === 'connected' ? 'bg-(--color-pine-l) text-(--color-pine)' : 'bg-(--color-paper-3) text-(--color-ink-3)'}`}>
+            {s.name}{s.status === 'planned' ? ' · planned' : ''}
+          </a>
+        ))}
+      </div>
+      <p class="mt-6 max-w-[66ch] text-sm text-(--color-ink-2)">
+        Every destination on this site is a concierge you can open and use right now — no request form, no
+        waiting for someone to call you back. Where a destination is connected to its national or regional
+        platform we say so, and where it is running on public sources we say that too.
+      </p>
+    </div>
+  </section>
+</Base>

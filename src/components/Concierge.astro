@@ -1,0 +1,84 @@
+---
+/** Site-wide concierge. Angle comes from page context, overridable by the visitor. */
+const { angle = 'traveller' } = Astro.props;
+const angles = [
+  ['traveller', "I'm travelling"],
+  ['business',  'I run a tourism business'],
+  ['dmo',       'I market a destination'],
+  ['nto',       'I run a data platform'],
+];
+---
+<button id="cg-open"
+  class="fixed right-5 bottom-5 z-40 flex items-center gap-2 rounded-full bg-(--color-terra) px-5 py-3.5 font-semibold text-white shadow-lg">
+  💬 Ask DM2find
+</button>
+<div id="cg-panel" data-angle={angle}
+     class="fixed right-5 bottom-5 z-50 hidden w-[378px] max-w-[calc(100vw-2rem)] overflow-hidden rounded-2xl border border-(--color-line) bg-white shadow-2xl">
+  <div class="flex items-center gap-2 bg-(--color-ink) px-4 py-3 text-sm text-white">
+    <span class="h-2 w-2 rounded-full bg-[#68C48C]"></span>
+    <span id="cg-title">DM2find concierge</span>
+    <button id="cg-close" class="ml-auto text-xl leading-none">×</button>
+  </div>
+  <div id="cg-body" class="max-h-[44vh] overflow-y-auto bg-(--color-paper-2) p-4"></div>
+  <div class="border-t border-(--color-line) bg-white px-4 py-3">
+    <p class="mb-2 text-xs text-(--color-ink-3)">Answering as — tap to switch:</p>
+    <div id="cg-chips" class="flex flex-wrap gap-1.5">
+      {angles.map(([k, label]) => (
+        <button data-angle={k}
+          class="cg-chip rounded-full border border-(--color-line) px-3 py-1.5 text-xs text-(--color-ink-2)">{label}</button>
+      ))}
+    </div>
+  </div>
+  <form id="cg-form" class="flex gap-2 border-t border-(--color-line) p-3">
+    <input id="cg-in" placeholder="Ask anything…" autocomplete="off"
+      class="flex-1 rounded-full border border-(--color-line) bg-(--color-paper) px-4 py-2.5 text-sm outline-none" />
+    <button class="rounded-full bg-(--color-pine) px-4 text-sm font-semibold text-white">Ask</button>
+  </form>
+</div>
+<script>
+  const P = document.getElementById('cg-panel')!;
+  const B = document.getElementById('cg-body')!;
+  const T = document.getElementById('cg-title')!;
+  const OPEN = { traveller: 'Hello — where are you off to? I can open the live concierge for any destination we cover.',
+    business: "Good to meet you. Hotel, restaurant, museum, event or rental — you're probably already listed from the open data. Want to see what it costs to control it?",
+    dmo: 'Which destination do you market? If your region publishes to one of our connected sources, you can be live in 48 hours.',
+    nto: 'We operate the ontology layer over national and regional tourism platforms. Data model, sovereignty, or rollout?' } as Record<string,string>;
+  const TITLE = { traveller: 'DM2find · travel', business: 'DM2find · for businesses',
+    dmo: 'DM2find · for DMOs', nto: 'DM2find · infrastructure' } as Record<string,string>;
+
+  let angle = localStorage.getItem('dm2find-angle') || P.dataset.angle || 'traveller';
+  const bubble = (r: string, t: string) => {
+    const d = document.createElement('div');
+    d.className = r === 'u'
+      ? 'ml-auto mb-2 max-w-[82%] rounded-2xl rounded-br bg-(--color-pine) px-4 py-2.5 text-sm text-white'
+      : 'mb-2 max-w-[82%] rounded-2xl rounded-bl border border-(--color-line) bg-white px-4 py-2.5 text-sm';
+    d.textContent = t; B.appendChild(d); B.scrollTop = B.scrollHeight;
+  };
+  const setAngle = (a: string, announce = true) => {
+    angle = a; localStorage.setItem('dm2find-angle', a);
+    T.textContent = TITLE[a];
+    document.querySelectorAll<HTMLElement>('.cg-chip').forEach(c =>
+      c.classList.toggle('bg-(--color-ink)', c.dataset.angle === a) ||
+      c.classList.toggle('text-white', c.dataset.angle === a));
+    if (announce) bubble('a', OPEN[a]);
+  };
+  document.getElementById('cg-open')!.addEventListener('click', () => {
+    P.classList.remove('hidden');
+    (document.getElementById('cg-open') as HTMLElement).style.display = 'none';
+    if (!B.childElementCount) setAngle(angle);
+  });
+  document.getElementById('cg-close')!.addEventListener('click', () => {
+    P.classList.add('hidden');
+    (document.getElementById('cg-open') as HTMLElement).style.display = 'flex';
+  });
+  document.querySelectorAll<HTMLElement>('.cg-chip').forEach(c =>
+    c.addEventListener('click', () => setAngle(c.dataset.angle!)));
+  document.getElementById('cg-form')!.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const i = document.getElementById('cg-in') as HTMLInputElement;
+    if (!i.value.trim()) return;
+    const q = i.value.trim(); i.value = ''; bubble('u', q);
+    // TODO: POST { angle, q } to the concierge endpoint in the same Coolify stack.
+    setTimeout(() => bubble('a', 'Connect this to the concierge endpoint — one system prompt per angle, retrieval over site content plus destinations.json.'), 350);
+  });
+</script>

@@ -1,0 +1,18 @@
+# dm2find.com  →  DM2find.ai/travel
+#
+# Separate Coolify application on purpose: the redirect keeps working while the
+# main site container is rebuilding.
+#
+# ⚠️  app.dm2find.com is a white-label chatbotbuilder.ai deployment (Sijthoff,
+#     Nyenrode) on different infrastructure. It is NOT handled here and must keep
+#     resolving. Only the apex and www records point at this container — never a
+#     wildcard, or the white label goes down with it.
+#
+# Coolify's Traefik terminates TLS in front of this, so we listen plain on :80.
+
+:80 {
+	# Flat redirect. Deliberately no {uri}: the old .com paths have no
+	# counterpart under /travel, so appending them would 404. If specific .com
+	# URLs turn out to matter, add explicit `redir` lines ABOVE this one.
+	redir https://dm2find.ai/travel 301
+}

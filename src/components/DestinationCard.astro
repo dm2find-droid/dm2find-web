@@ -1,0 +1,16 @@
+---
+import ProvenanceBadge from './ProvenanceBadge.astro';
+const { d } = Astro.props;
+---
+<a href={`/destinations/${d.slug}`}
+   class="group flex flex-col overflow-hidden rounded-xl border border-(--color-line) bg-white transition hover:-translate-y-0.5 hover:border-(--color-terra)">
+  <div class="aspect-video bg-gradient-to-br from-[#D9C3A5] to-[#8B9A8C]"></div>
+  <div class="p-4">
+    <h3 class="font-serif text-lg font-semibold">{d.name.en}</h3>
+    <p class="mt-0.5 text-sm text-(--color-ink-3)">{d.countryName}</p>
+    <p class="mt-2 text-xs text-(--color-ink-3)">{d.channels.join(' · ')}</p>
+  </div>
+  <div class="mt-auto border-t border-(--color-line-2) bg-(--color-paper-2) px-4 py-2.5">
+    <ProvenanceBadge provenance={d.provenance} />
+  </div>
+</a>
