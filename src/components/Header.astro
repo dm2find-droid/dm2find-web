@@ -1,4 +1,5 @@
 ---
+import { BOOKING_URL } from '../data/site';
 const nav = [
   { href: '/travel',       label: 'Travel' },
   { href: '/destinations', label: 'Destinations' },
@@ -23,13 +24,20 @@ const path = Astro.url.pathname;
         </a>
       ))}
     </nav>
-    <a href="/dmo" class="ml-auto hidden rounded-full bg-(--color-pine) px-4 py-2 text-sm font-semibold text-white md:inline-block">
+    <a href={BOOKING_URL} target="_blank" rel="noopener"
+       class="ml-auto hidden rounded-full bg-(--color-pine) px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110 md:inline-block">
       Book a walkthrough
     </a>
     <button id="burger" aria-label="Menu" class="ml-auto rounded-lg border border-(--color-line) px-3 py-2 md:hidden">☰</button>
   </div>
   <nav id="mnav" class="hidden flex-col gap-1 border-t border-(--color-line) px-5 pb-4 md:hidden">
     {nav.map(n => <a href={n.href} class="py-3 text-base">{n.label}</a>)}
+    {/* The desktop CTA is md:inline-block, so without this the booking link was
+        invisible on a phone — where most of your traveller traffic will be. */}
+    <a href={BOOKING_URL} target="_blank" rel="noopener"
+       class="mt-2 rounded-full bg-(--color-pine) px-4 py-3 text-center text-base font-semibold text-white">
+      Book a walkthrough
+    </a>
   </nav>
 </header>
 <script>

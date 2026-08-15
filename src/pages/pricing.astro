@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { BOOKING_URL } from '../data/site';
 const biz = [
   ['Listed','Free','You already have this',['Whatever the open data publishes','Name, category, address','Hours as filed by the destination']],
   ['Verified','€12','per month · claim and correct',['Owner-verified mark','Logo and social profiles','Your own opening hours','One photo']],
@@ -79,8 +80,14 @@ const dmo = [
         quote rather than list. Send your region and your source and you'll have a number within a
         working day, not after three meetings.
       </p>
-      <a href="mailto:sales@dm2find.ai?subject=Pricing%20enquiry"
-         class="mt-4 inline-block rounded-full bg-(--color-pine) px-6 py-3 font-semibold text-white">sales@dm2find.ai</a>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <a href="mailto:sales@dm2find.ai?subject=Pricing%20enquiry"
+           class="inline-block rounded-full bg-(--color-pine) px-6 py-3 font-semibold text-white">sales@dm2find.ai</a>
+        <a href={BOOKING_URL} target="_blank" rel="noopener"
+           class="inline-block rounded-full border border-(--color-pine) px-6 py-3 font-semibold text-(--color-pine)">
+          Or book 15 minutes
+        </a>
+      </div>
     </div>
   </section>
 </Base>
