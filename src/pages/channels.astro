@@ -9,25 +9,26 @@ const all = (await getCollection('destinations')).map(e => e.data);
 const chatDemo  = all.find(d => d.slug === 'bolzano') ?? all[0];
 const voiceDemo = all.find(d => d.slug === 'nancy')   ?? all[0];
 
-/** Authoritative channel walkthroughs — your list, not the auto-mapped one from
- *  the Grav export. Order is deliberate: the two Meta channels sit together,
- *  Voice last because it leads into the live widget above.
+/** Authoritative channel walkthroughs. The list lives in src/data/channels.json
+ *  so scripts/fetch-thumbs.mjs and this page can never disagree about which
+ *  videos exist. Order is deliberate: the two Meta channels sit together, Voice
+ *  last because it leads back to the live widget above.
  *  `note` renders under the card; `img` means a screenshot, not a clip. */
-const TELEGRAM_IMG = '/channels/telegram.png';
-const channels = [
-  { n: 'WhatsApp',  yt: 'ElkRqmlDde4',
-    note: 'The WhatsApp number shown in this video is no longer in use.' },
-  { n: 'Messenger', badge: 'Meta approved' },
-  { n: 'Instagram', yt: 'fImCYXsq6Bc', badge: 'Meta approved' },
-  { n: 'Telegram',  img: TELEGRAM_IMG, note: 'Screenshot, not a walkthrough video.' },
-  { n: 'WeChat',    yt: 'Z3VEVV83_dE' },
-  { n: 'LINE',      yt: '8-nFiGEpsmk' },
-  { n: 'Voice',     yt: 'qcVMHV9r0S0',
-    note: 'Voice by phone and WhatsApp Call — they need a real number to try.' },
-]
+import raw from '../data/channels.json';
+
+const here = (p?: string) => !!p && existsSync(`public${p}`);
+const channels = (raw as any[])
   // never ship a card that would open an empty lightbox
-  .filter(c => c.yt || (c.img && existsSync(`public${c.img}`)) || c.badge)
-  .map(c => ({ ...c, playable: !!(c.yt || (c.img && existsSync(`public${c.img}`))) }));
+  .filter(c => c.yt || here(c.img) || c.badge)
+  .map(c => ({
+    ...c,
+    playable: !!(c.yt || here(c.img)),
+    /* Poster frame, self-hosted by the prebuild step. Falls back to the
+     * gradient card if the fetch didn't happen — never a broken image. */
+    poster: c.yt && here(`/channels/yt-${c.yt}.jpg`) ? `/channels/yt-${c.yt}.jpg`
+          : here(c.img) ? c.img
+          : null,
+  }));
 ---
 <Base title="Channels" angle="dmo"
       description="Webchat is the product. Messaging channels and voice are reach, added when your visitors are actually there.">
@@ -80,12 +81,19 @@ const channels = [
               <button data-lb={c.yt ? 'video' : 'image'} data-yt={c.yt} data-src={c.img}
                       data-cap={`${c.n} — DM2find concierge`} data-gallery="channels"
                       class="group relative block aspect-video w-full overflow-hidden rounded-xl bg-gradient-to-br from-[#4E5C56] to-[#232B28]">
+                {c.poster && (
+                  /* object-cover crops hqdefault's 4:3 letterboxing back to 16:9
+                     and is a no-op on a true 1280x720 maxresdefault. */
+                  <img src={c.poster} alt="" loading="lazy" decoding="async" width="1280" height="720"
+                       class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" />
+                )}
+                <span class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/20"></span>
                 <span class="absolute inset-0 grid place-items-center">
-                  <span class="grid h-12 w-12 place-items-center rounded-full bg-white/95 text-lg text-(--color-ink) transition group-hover:scale-110">
+                  <span class="grid h-12 w-12 place-items-center rounded-full bg-white/95 text-lg text-(--color-ink) shadow-lg transition group-hover:scale-110">
                     {c.yt ? '▶' : '⤢'}
                   </span>
                 </span>
-                <span class="absolute bottom-3 left-3 text-sm font-semibold text-white">{c.n}</span>
+                <span class="absolute bottom-3 left-3 text-sm font-semibold text-white drop-shadow">{c.n}</span>
               </button>
             ) : (
               <div class="relative grid aspect-video w-full place-items-center rounded-xl border border-dashed border-(--color-line) bg-white/60">

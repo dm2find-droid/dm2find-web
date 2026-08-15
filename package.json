@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
+    "thumbs": "node scripts/fetch-thumbs.mjs",
+    "prebuild": "node scripts/fetch-thumbs.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check"
