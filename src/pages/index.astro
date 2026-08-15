@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Chat from '../components/Chat.astro';
+import EuBadges from '../components/EuBadges.astro';
 
 const all = (await getCollection('destinations')).map(e => e.data);
 const countries = new Set(all.map(d => d.countryName)).size;
@@ -78,6 +79,7 @@ const first = all.find(d => d.slug === 'bordeaux') ?? all[0];
         waiting for someone to call you back. Where a destination is connected to its national or regional
         platform we say so, and where it is running on public sources we say that too.
       </p>
+      <EuBadges />
     </div>
   </section>
 </Base>

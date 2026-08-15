@@ -1,9 +1,86 @@
 ---
 import Base from '../layouts/Base.astro';
+const biz = [
+  ['Listed','Free','You already have this',['Whatever the open data publishes','Name, category, address','Hours as filed by the destination']],
+  ['Verified','€12','per month · claim and correct',['Owner-verified mark','Logo and social profiles','Your own opening hours','One photo']],
+  ['Enhanced','€39','per month · the full record',['Everything in Verified','Photo gallery','Features, suitability, cuisine, diets','Reservation link, menu or brochure']],
+  ['Enhanced + Events','€69','per month · venues and organisers',['Everything in Enhanced','Your own events and offers','Descriptions in four languages']],
+];
+const dmo = [
+  ['Town','Single municipality',['Up to ~250 records','Branded webchat','Live in 48 hours']],
+  ['City','Most common',['Up to ~2,000 records','Enrichment dashboard and veto','30% of enrichment revenue']],
+  ['Region','Province or region',['Unlimited records','Per-town sub-concierges','Multi-municipality branding']],
+  ['National','Multi-region rollout',['Scope-based','Ontology mapping included','Pilot programme']],
+];
 ---
-<Base title="Pricing" angle="business">
-  <section class="mx-auto max-w-4xl px-5 py-14">
-    <h1 class="h-display">Pricing</h1>
-    <p class="lede mt-5">Copy for this pillar lives in the prototype — move it in during Phase 2.</p>
+<Base title="Pricing" angle="business" concierge>
+  <section class="mx-auto max-w-6xl px-5 py-14">
+    <p class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Pricing</p>
+    <h1 class="h-display">Free to travel with.<br />Cheap to be described well.</h1>
+    <p class="lede mt-5">
+      Business tiers are self-serve and priced in public — nobody should book a call to buy a €39
+      listing upgrade. Destination licences are quoted per destination, and you get the figure the
+      same working day.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-5 pb-10">
+    <p class="text-xs font-bold tracking-widest text-(--color-terra) uppercase">Travellers</p>
+    <h2 class="h-section mt-2">Free. Always.</h2>
+    <p class="mt-3 max-w-[62ch] text-sm text-(--color-ink-2)">
+      No account, no app, no data sold. The destination pays for the concierge, the way it pays for
+      the tourist office.
+    </p>
+  </section>
+
+  <section class="border-y border-(--color-line-2) bg-(--color-paper-2) py-12">
+    <div class="mx-auto max-w-6xl px-5">
+      <p class="text-xs font-bold tracking-widest text-(--color-amber) uppercase">Tourism businesses</p>
+      <h2 class="h-section mt-2">Per location. Monthly. Cancel anytime.</h2>
+      <div class="mt-6 grid overflow-hidden rounded-2xl border border-(--color-line) bg-white sm:grid-cols-2 lg:grid-cols-4">
+        {biz.map(([t,p,s,items], i) => (
+          <div class={`border-b border-(--color-line-2) p-6 lg:border-r lg:border-b-0 ${i===2?'bg-(--color-amber-l)':''} ${i===3?'lg:border-r-0':''}`}>
+            <h3 class="font-serif text-xl font-semibold">{t}</h3>
+            <div class="mt-2 font-serif text-3xl font-semibold">{p}</div>
+            <div class="text-xs text-(--color-ink-3)">{s}</div>
+            <ul class="mt-4 space-y-1.5 text-sm text-(--color-ink-2)">
+              {(items as string[]).map(x => <li class="relative pl-4"><span class="absolute left-0 text-(--color-ink-3)">—</span>{x}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <p class="mt-4 text-sm text-(--color-ink-2)">
+        Five locations or more: 30% off. Annual: two months free. Card self-serve via Stripe; groups
+        and chains are invoiced. <b>Every tier improves how you're described, never whether you're
+        recommended.</b>
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-5 py-12">
+    <p class="text-xs font-bold tracking-widest text-(--color-pine) uppercase">Destinations &amp; DMOs</p>
+    <h2 class="h-section mt-2">Annual. Branded webchat, EU hosting, four languages, unlimited conversations.</h2>
+    <div class="mt-6 grid overflow-hidden rounded-2xl border border-(--color-line) bg-white sm:grid-cols-2 lg:grid-cols-4">
+      {dmo.map(([t,s,items], i) => (
+        <div class={`border-b border-(--color-line-2) p-6 lg:border-r lg:border-b-0 ${i===1?'bg-(--color-pine-l)':''} ${i===3?'lg:border-r-0':''}`}>
+          <h3 class="font-serif text-xl font-semibold">{t}</h3>
+          <div class="mt-2 font-serif text-2xl font-semibold">On request</div>
+          <div class="text-xs text-(--color-ink-3)">{s}</div>
+          <ul class="mt-4 space-y-1.5 text-sm text-(--color-ink-2)">
+            {(items as string[]).map(x => <li class="relative pl-4"><span class="absolute left-0 text-(--color-ink-3)">—</span>{x}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <div class="mt-6 rounded-2xl border border-(--color-pine) bg-(--color-pine-l) p-6">
+      <h3 class="text-lg font-semibold">Tell us your destination, get a figure the same day</h3>
+      <p class="mt-2 max-w-[70ch] text-sm text-(--color-ink-2)">
+        Pricing depends on the size of your inventory and which data platform you publish to — so we
+        quote rather than list. Send your region and your source and you'll have a number within a
+        working day, not after three meetings.
+      </p>
+      <a href="mailto:sales@dm2find.ai?subject=Pricing%20enquiry"
+         class="mt-4 inline-block rounded-full bg-(--color-pine) px-6 py-3 font-semibold text-white">sales@dm2find.ai</a>
+    </div>
   </section>
 </Base>

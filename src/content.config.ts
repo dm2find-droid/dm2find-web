@@ -50,6 +50,17 @@ const destinations = defineCollection({
     /** true = this tenant has its own DATAtourisme feed hash bound. */
     dtFeed: z.boolean().default(false),
     website: z.string().url().nullable().default(null),
+    /** The DMO's own logo and accent colour, straight from the tenants table. */
+    logo: z.string().url().nullable().default(null),
+    brandColor: z.string().regex(/^#[0-9a-fA-F]{3,8}$/).nullable().default(null),
+    touristPass: z.object({ name: z.string().nullable(), url: z.string().nullable() }).nullable().default(null),
+    calendarUrl: z.string().nullable().default(null),
+    /** Real walkthrough videos recovered from the old Grav pages. */
+    videos: z.array(z.object({
+      id: z.string().regex(/^[A-Za-z0-9_-]{11}$/, 'not a YouTube id'),
+      label: z.string(),
+      channel: z.string(),
+    })).default([]),
     dmo: z.object({ name: z.string().nullable(), claimed: z.boolean() })
           .default({ name: null, claimed: false }),
   })
