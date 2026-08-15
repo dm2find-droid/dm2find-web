@@ -1,20 +1,33 @@
 ---
+import { existsSync } from 'node:fs';
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Chat from '../components/Chat.astro';
+import VoiceDemo from '../components/VoiceDemo.astro';
 
 const all = (await getCollection('destinations')).map(e => e.data);
-const demo = all.find(d => d.slug === 'bolzano') ?? all[0];
+const chatDemo  = all.find(d => d.slug === 'bolzano') ?? all[0];
+const voiceDemo = all.find(d => d.slug === 'nancy')   ?? all[0];
 
-/** Real walkthroughs recovered from the old site. Where we have no clip yet the
- *  channel is listed without one rather than shown with a placeholder. */
-import channelVideos from '../data/channel-videos.json';
-const order = ['WhatsApp','Messenger','Instagram','Telegram','WeChat','LINE','Voice'];
-const videos = order
-  .filter(n => (channelVideos as Record<string, any>)[n])
-  .map(n => ({ n, yt: (channelVideos as Record<string, any>)[n].id,
-               cap: (channelVideos as Record<string, any>)[n].label }));
-const noVideoYet = order.filter(n => !(channelVideos as Record<string, any>)[n]);
+/** Authoritative channel walkthroughs — your list, not the auto-mapped one from
+ *  the Grav export. Order is deliberate: the two Meta channels sit together,
+ *  Voice last because it leads into the live widget above.
+ *  `note` renders under the card; `img` means a screenshot, not a clip. */
+const TELEGRAM_IMG = '/channels/telegram.png';
+const channels = [
+  { n: 'WhatsApp',  yt: 'ElkRqmlDde4',
+    note: 'The WhatsApp number shown in this video is no longer in use.' },
+  { n: 'Messenger', badge: 'Meta approved' },
+  { n: 'Instagram', yt: 'fImCYXsq6Bc', badge: 'Meta approved' },
+  { n: 'Telegram',  img: TELEGRAM_IMG, note: 'Screenshot, not a walkthrough video.' },
+  { n: 'WeChat',    yt: 'Z3VEVV83_dE' },
+  { n: 'LINE',      yt: '8-nFiGEpsmk' },
+  { n: 'Voice',     yt: 'qcVMHV9r0S0',
+    note: 'Voice by phone and WhatsApp Call — they need a real number to try.' },
+]
+  // never ship a card that would open an empty lightbox
+  .filter(c => c.yt || (c.img && existsSync(`public${c.img}`)) || c.badge)
+  .map(c => ({ ...c, playable: !!(c.yt || (c.img && existsSync(`public${c.img}`))) }));
 ---
 <Base title="Channels" angle="dmo"
       description="Webchat is the product. Messaging channels and voice are reach, added when your visitors are actually there.">
@@ -36,7 +49,7 @@ const noVideoYet = order.filter(n => !(channelVideos as Record<string, any>)[n])
           Embedded on the destination's own site, or standalone. Images, opening hours, distances and
           booking links inline.
         </p>
-        <div class="mt-5"><Chat name={demo.name.en} chatUrl={demo.chatUrl} /></div>
+        <div class="mt-5"><Chat name={chatDemo.name.en} chatUrl={chatDemo.chatUrl} /></div>
       </div>
       <div>
         <span class="inline-flex items-center gap-1.5 rounded-full bg-(--color-pine-l) px-3 py-1 text-xs font-semibold text-(--color-pine)">
@@ -46,13 +59,9 @@ const noVideoYet = order.filter(n => !(channelVideos as Record<string, any>)[n])
         <p class="mt-2 text-sm text-(--color-ink-2)">
           Tap and talk, in the browser. The only voice option you can try without picking up a phone.
         </p>
-        <div class="mt-5 rounded-2xl border border-(--color-line) bg-white p-10 text-center">
-          <div class="mx-auto grid h-20 w-20 place-items-center rounded-full bg-(--color-terra) text-3xl text-white">🎙</div>
-          <p class="mt-4 text-sm text-(--color-ink-2)">Tap to speak with the {demo.name.en} concierge</p>
+        <div class="mt-5">
+          <VoiceDemo agentId="agent_0401knvgg4a9e3qrtmjjtazq91x6" place={voiceDemo.name.en} />
         </div>
-        <p class="mt-3 text-xs text-(--color-ink-3)">
-          Voice by phone and WhatsApp Call are shown on video below — they need a real number to try.
-        </p>
       </div>
     </div>
   </section>
@@ -64,27 +73,38 @@ const noVideoYet = order.filter(n => !(channelVideos as Record<string, any>)[n])
         No demos here on purpose — these run inside apps we can't embed. Each video shows a real
         conversation end to end.
       </p>
-      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {videos.map(v => (
-          <button data-lb="video" data-yt={v.yt} data-cap={v.cap} data-gallery="channels"
-                  class="group relative aspect-video overflow-hidden rounded-xl bg-gradient-to-br from-[#4E5C56] to-[#232B28]">
-            <span class="absolute inset-0 grid place-items-center">
-              <span class="grid h-12 w-12 place-items-center rounded-full bg-white/95 pl-1 text-lg text-(--color-ink) transition group-hover:scale-110">▶</span>
-            </span>
-            <span class="absolute bottom-3 left-3 text-sm font-semibold text-white">{v.n}</span>
-            
-          </button>
+      <div class="mt-6 grid gap-x-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+        {channels.map(c => (
+          <div>
+            {c.playable ? (
+              <button data-lb={c.yt ? 'video' : 'image'} data-yt={c.yt} data-src={c.img}
+                      data-cap={`${c.n} — DM2find concierge`} data-gallery="channels"
+                      class="group relative block aspect-video w-full overflow-hidden rounded-xl bg-gradient-to-br from-[#4E5C56] to-[#232B28]">
+                <span class="absolute inset-0 grid place-items-center">
+                  <span class="grid h-12 w-12 place-items-center rounded-full bg-white/95 text-lg text-(--color-ink) transition group-hover:scale-110">
+                    {c.yt ? '▶' : '⤢'}
+                  </span>
+                </span>
+                <span class="absolute bottom-3 left-3 text-sm font-semibold text-white">{c.n}</span>
+              </button>
+            ) : (
+              <div class="relative grid aspect-video w-full place-items-center rounded-xl border border-dashed border-(--color-line) bg-white/60">
+                <span class="text-sm font-semibold text-(--color-ink-2)">{c.n}</span>
+                <span class="absolute bottom-3 left-3 text-[11px] text-(--color-ink-3)">Walkthrough coming</span>
+              </div>
+            )}
+            {c.badge && (
+              <span class="mt-2 inline-block rounded-full bg-(--color-pine-l) px-2.5 py-0.5 text-[11px] font-semibold text-(--color-pine)">
+                {c.badge}
+              </span>
+            )}
+            {c.note && <p class="mt-2 text-[11px] leading-snug text-(--color-ink-3)">{c.note}</p>}
+          </div>
         ))}
       </div>
-      {noVideoYet.length > 0 && (
-        <p class="mt-5 text-sm text-(--color-ink-2)">
-          Also available, walkthrough video coming: {noVideoYet.join(' · ')}.
-        </p>
-      )}
-      <p class="mt-6 border-l-4 border-(--color-line) pl-4 text-sm text-(--color-ink-3)">
-        Not yet available: KakaoTalk and Zalo. They are deliberately absent rather than listed as
-        “coming soon” — a greyed-out channel raises a question you don't want asked in a sales call.
-      </p>
+      {/* Commented out at your request — a greyed-out channel raises a question
+          you don't want asked in a sales call, and naming them does the same:
+          <p …>Not yet available: KakaoTalk and Zalo. …</p> */}
     </div>
   </section>
 </Base>
