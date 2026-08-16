@@ -14,7 +14,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -36,7 +37,8 @@
     "coords": [
       51.6833,
       5.3167
-    ]
+    ],
+    "voiceAgentId": "agent_3901knkz2t3sfgf809agav0bay10"
   },
   {
     "slug": "achterhoek",
@@ -668,7 +670,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -690,7 +693,8 @@
     "touristPass": {
       "name": "I Amsterdam City Card",
       "url": "https://www.iamsterdam.com/en/tickets/i-amsterdam-city-card"
-    }
+    },
+    "voiceAgentId": "agent_4201kn7fz66cfkzsjnr11533r4mb"
   },
   {
     "slug": "andorra-la-vella",
@@ -1643,7 +1647,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -1666,7 +1671,8 @@
     "touristPass": {
       "name": "Beijing Pass",
       "url": "https://english.beijing.gov.cn/specials/beijingservice/pek/trafficone/"
-    }
+    },
+    "voiceAgentId": "agent_1301kneqk5aefe1szp8w7grykv2n"
   },
   {
     "slug": "belfort",
@@ -1754,7 +1760,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -1783,7 +1790,8 @@
     "touristPass": {
       "name": "Berlin Welcomecard",
       "url": "https://www.berlin-welcomecard.de/en"
-    }
+    },
+    "voiceAgentId": "agent_6301knkwp1syehz9y8tvxz41skhg"
   },
   {
     "slug": "besancon",
@@ -2286,7 +2294,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -2315,7 +2324,8 @@
         "label": "Bruges - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "voiceAgentId": "agent_6101knj4ez1af0erwtscgr1dh5sp"
   },
   {
     "slug": "brussels",
@@ -2413,7 +2423,8 @@
     "dataSource": "kto",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -2442,7 +2453,8 @@
     "touristPass": {
       "name": "Busan Pass",
       "url": "https://www.visitbusanpass.com/"
-    }
+    },
+    "voiceAgentId": "agent_4001knmd3m05es8re3zn54s99a97"
   },
   {
     "slug": "caen",
@@ -3603,7 +3615,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -3622,7 +3635,8 @@
     "logo": "https://i.imgur.com/7VYX4jZ.png",
     "brandColor": null,
     "calendarUrl": null,
-    "website": null
+    "website": null,
+    "voiceAgentId": "agent_3201knmesz7sfm7aa4za1yk43vtf"
   },
   {
     "slug": "deauville",
@@ -4545,6 +4559,44 @@
     ]
   },
   {
+    "slug": "girona",
+    "name": {
+      "en": "Girona"
+    },
+    "country": "ES",
+    "countryName": "Spain",
+    "region": "Catalonia",
+    "tenantId": "girona",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/girona",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": null,
+    "logo": "https://i.imgur.com/sqqm021.png",
+    "brandColor": "#A31A1A",
+    "touristPass": null,
+    "calendarUrl": "https://www.girona.cat/turisme/eng/activitats.php",
+    "voiceAgentId": "agent_5201knesr1rreq5vh6psf57tt981",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      41.9833,
+      2.8167
+    ]
+  },
+  {
     "slug": "gironde",
     "name": {
       "en": "Gironde"
@@ -4621,7 +4673,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -4636,7 +4689,8 @@
     "coords": [
       37.1781,
       -3.6008
-    ]
+    ],
+    "voiceAgentId": "agent_5501knk55mm6e6g9th5btydmvq2q"
   },
   {
     "slug": "grenoble",
@@ -4754,7 +4808,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -4776,7 +4831,8 @@
         "label": "Hamburg - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "voiceAgentId": "agent_2901kne8pp8cfjbba93k5mtvs1p9"
   },
   {
     "slug": "hannover",
@@ -5287,6 +5343,47 @@
     ]
   },
   {
+    "slug": "hong-kong",
+    "name": {
+      "en": "Hong Kong"
+    },
+    "country": "HK",
+    "countryName": "Hong Kong",
+    "region": null,
+    "tenantId": "hongkong",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/hongkong",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": null,
+    "logo": "https://i.imgur.com/7OpfBxK.png",
+    "brandColor": "#ED1C24",
+    "touristPass": {
+      "name": "Tourist Octopus",
+      "url": "https://www.octopus.com.hk/en/consumer/octopus-cards/products/sold-tourist/index.html"
+    },
+    "calendarUrl": "https://www.discoverhongkong.com/eng/what-s-new/events.html",
+    "voiceAgentId": "agent_1901knmyrha1e73vz4zd6a7e3907",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      22.3193,
+      114.1694
+    ]
+  },
+  {
     "slug": "herault",
     "name": {
       "en": "Hérault"
@@ -5394,7 +5491,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -5409,6 +5507,48 @@
     "coords": [
       47.2683,
       11.3933
+    ],
+    "voiceAgentId": "agent_5801knpydsg3evwbvx18fg5f76z1"
+  },
+  {
+    "slug": "istanbul",
+    "name": {
+      "en": "Istanbul"
+    },
+    "country": "TR",
+    "countryName": "Türkiye",
+    "region": "Istanbul",
+    "tenantId": "istanbul",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/istanbul",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": null,
+    "logo": "https://i.imgur.com/qp1CgEb.png",
+    "brandColor": "#E30A17",
+    "touristPass": {
+      "name": "Istanbul Card",
+      "url": "https://visit.istanbul/istanbul-card"
+    },
+    "calendarUrl": "https://visit.istanbul/whats-happening",
+    "voiceAgentId": "agent_1601knmdnma0emw8fhhc8mpxsq0r",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      41.02765,
+      28.96268
     ]
   },
   {
@@ -5641,6 +5781,44 @@
     "brandColor": "#E30613",
     "touristPass": null,
     "calendarUrl": "https://www.visitkortrijk.be/en/calendar"
+  },
+  {
+    "slug": "kyoto",
+    "name": {
+      "en": "Kyoto"
+    },
+    "country": "JP",
+    "countryName": "Japan",
+    "region": "Kyōto",
+    "tenantId": "kyoto",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/kyoto",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": null,
+    "logo": "https://i.imgur.com/sw0CoMv.png",
+    "brandColor": "#D5C390",
+    "touristPass": null,
+    "calendarUrl": "https://kyoto.travel/en/events",
+    "voiceAgentId": "agent_3301knevqy1ye0vtvbtc2w7gdnsn",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      35.0117,
+      135.7683
+    ]
   },
   {
     "slug": "karnten",
@@ -6319,6 +6497,44 @@
     ]
   },
   {
+    "slug": "luxembourg-city",
+    "name": {
+      "en": "Luxembourg City"
+    },
+    "country": "LU",
+    "countryName": "Luxembourg",
+    "region": "Luxembourg",
+    "tenantId": "luxcity",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/luxcity",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": null,
+    "logo": "https://i.imgur.com/KQS7fdM.png",
+    "brandColor": "#E30613",
+    "touristPass": null,
+    "calendarUrl": "https://www.luxembourg-city.com/en/what-s-on",
+    "voiceAgentId": "agent_8001knmy1v6kebdth0psw7fh1zyn",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      49.6106,
+      6.1328
+    ]
+  },
+  {
     "slug": "lyon",
     "name": {
       "en": "Lyon"
@@ -6839,6 +7055,44 @@
     }
   },
   {
+    "slug": "monaco",
+    "name": {
+      "en": "Monaco"
+    },
+    "country": "MC",
+    "countryName": "Monaco",
+    "region": null,
+    "tenantId": "monaco",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/monaco",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": null,
+    "logo": "https://i.imgur.com/dUJfdvn.png",
+    "brandColor": "#EB0000",
+    "touristPass": null,
+    "calendarUrl": "https://www.visitmonaco.com/en/events/events-calendar?page=1",
+    "voiceAgentId": "agent_2201knmye5pne4s8r57kbmaec0rb",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.7396,
+      7.4069
+    ]
+  },
+  {
     "slug": "mont-de-marsan",
     "name": {
       "en": "Mont-de-Marsan"
@@ -7125,6 +7379,47 @@
     ]
   },
   {
+    "slug": "munich",
+    "name": {
+      "en": "Munich"
+    },
+    "country": "DE",
+    "countryName": "Germany",
+    "region": "Bavaria",
+    "tenantId": "munich",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/munich",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": null,
+    "logo": "https://i.imgur.com/Vd088Nv.png",
+    "brandColor": "#B0913B",
+    "touristPass": {
+      "name": "Munich City Pass",
+      "url": "https://www.munich.travel/en/topics/guestcards/munich-card-city-pass"
+    },
+    "calendarUrl": "https://www.munich.travel/en/categories/plan/event-calendar",
+    "voiceAgentId": "agent_4801knk6byrffz9r8dz8y3701bbg",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      48.1375,
+      11.575
+    ]
+  },
+  {
     "slug": "malaga",
     "name": {
       "en": "Málaga"
@@ -7285,7 +7580,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -7300,7 +7596,8 @@
     "coords": [
       48.693767,
       6.183198
-    ]
+    ],
+    "voiceAgentId": "agent_0401knvgg4a9e3qrtmjjtazq91x6"
   },
   {
     "slug": "nantes",
@@ -7367,6 +7664,47 @@
     ]
   },
   {
+    "slug": "new-york-city",
+    "name": {
+      "en": "New York City"
+    },
+    "country": "US",
+    "countryName": "United States",
+    "region": "New York",
+    "tenantId": "nyc",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/nyc",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": null,
+    "logo": "https://i.imgur.com/ACpeV9B.png",
+    "brandColor": "#003087",
+    "touristPass": {
+      "name": "Various commercial offerings",
+      "url": "https://www.nyctourism.com/things-to-do/attraction-passes/"
+    },
+    "calendarUrl": "https://www.nyctourism.com/things-to-do/",
+    "voiceAgentId": "agent_1501knmddepbf7pt368w6hf94x98",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      40.6943,
+      -73.9249
+    ]
+  },
+  {
     "slug": "nice",
     "name": {
       "en": "Nice"
@@ -7381,7 +7719,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -7396,7 +7735,8 @@
     "coords": [
       43.7034,
       7.2663
-    ]
+    ],
+    "voiceAgentId": "agent_7201knq2kgv5f7n8vrafvex26yww"
   },
   {
     "slug": "niort",
@@ -7647,7 +7987,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -7662,7 +8003,8 @@
     "coords": [
       48.8566,
       2.3522
-    ]
+    ],
+    "voiceAgentId": "agent_4401knmdzpgmewbrbskdkf7607fe"
   },
   {
     "slug": "parma",
@@ -9037,7 +9379,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -9052,7 +9395,8 @@
     "coords": [
       37.39,
       -5.99
-    ]
+    ],
+    "voiceAgentId": "agent_6301knes8y3xfsq8x4my93q7dykx"
   },
   {
     "slug": "singapore",
@@ -9069,7 +9413,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -9091,7 +9436,8 @@
         "label": "Singapore",
         "channel": "webchat"
       }
-    ]
+    ],
+    "voiceAgentId": "agent_9701knet807gea6axq794nbmc6aa"
   },
   {
     "slug": "sitges",
@@ -9299,7 +9645,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -9314,7 +9661,8 @@
     "coords": [
       25.0329,
       121.5654
-    ]
+    ],
+    "voiceAgentId": "agent_3401knepn183e0tat20v8qfvj6mh"
   },
   {
     "slug": "tallinn",
@@ -9786,7 +10134,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -9807,7 +10156,8 @@
         "label": "Trento - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "voiceAgentId": "agent_9801knpzsmhdf62bmyzxakfxztn4"
   },
   {
     "slug": "trouville-sur-mer",
@@ -9920,7 +10270,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -9941,7 +10292,8 @@
         "label": "Turin - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "voiceAgentId": "agent_7201knky6fnzfq8rk10hbjywmtce"
   },
   {
     "slug": "turku",
@@ -10021,7 +10373,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -10043,7 +10396,8 @@
         "label": "Utrecht - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "voiceAgentId": "agent_5101knfsbbqrfh5b09w4n8zzyzgz"
   },
   {
     "slug": "val-gardena",
@@ -10922,7 +11276,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -10944,7 +11299,8 @@
         "label": "Zagreb - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "voiceAgentId": "agent_1401knq1emjkea3sexn1ync2gfsj"
   },
   {
     "slug": "zandvoort",
@@ -11057,7 +11413,8 @@
     "dataSource": null,
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -11072,7 +11429,8 @@
     "coords": [
       47.3744,
       8.5411
-    ]
+    ],
+    "voiceAgentId": "agent_9001knpnw3ygf3h9msm4thkwm7r4"
   },
   {
     "slug": "eze",

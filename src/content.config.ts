@@ -36,6 +36,11 @@ const destinations = defineCollection({
     tenantId: z.string(),
     /** Separate namespace: /demo?city=<voiceId>. Null where there is no voice demo. */
     voiceId: z.string().nullable().default(null),
+    /** ElevenLabs agent for this destination's own voice concierge. Present only
+     *  where the tenants table has el_agent_id. Loading it sends data to
+     *  ElevenLabs in the US, so it is lazy-loaded and captioned as such. */
+    voiceAgentId: z.string().regex(/^agent_[A-Za-z0-9]+$/, 'not an ElevenLabs agent id')
+                   .nullable().default(null),
     chatUrl: z.string().url(),
     provenance: z.enum(['official', 'preview']),
     dataSource: z.string().nullable().default(null),
