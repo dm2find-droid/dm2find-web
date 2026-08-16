@@ -18,6 +18,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <title>{title} · DM2find.ai</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
+  {/* SVG first for browsers that support it, .ico as the fallback every
+      browser and bookmark bar understands. Both are needed. */}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#1F5B4E" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
