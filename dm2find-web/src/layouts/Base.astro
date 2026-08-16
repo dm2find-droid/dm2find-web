@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Concierge from '../components/Concierge.astro';
+import Lightbox from '../components/Lightbox.astro';
+
+interface Props { title: string; description?: string; angle?: string; jsonLd?: object; concierge?: boolean }
+const { title, description = 'AI travel concierges built on the tourism data destinations already publish.',
+        angle = 'traveller', jsonLd, concierge = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title} · DM2find.ai</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  {/* SVG first for browsers that support it, .ico as the fallback every
+      browser and bookmark bar understands. Both are needed. */}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#1F5B4E" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+</head>
+<body class="antialiased">
+  <Header />
+  <main><slot /></main>
+  <Footer />
+  {concierge && <Concierge />}
+  <Lightbox />
+</body>
+</html>

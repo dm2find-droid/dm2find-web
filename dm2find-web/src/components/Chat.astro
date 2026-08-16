@@ -1,0 +1,22 @@
+---
+/** The live webchat. Main channel, embedded on every destination page. */
+interface Props { name: string; chatUrl: string; embed?: boolean }
+const { name, chatUrl, embed = true } = Astro.props;
+---
+<div class="overflow-hidden rounded-2xl border border-(--color-line) bg-white shadow-xl">
+  <div class="flex items-center gap-2 bg-(--color-ink) px-4 py-3 text-sm text-white">
+    <span class="h-2 w-2 rounded-full bg-[#68C48C]"></span>
+    <span>{name} concierge · webchat</span>
+  </div>
+  {embed ? (
+    <iframe src={chatUrl} title={`${name} concierge`} loading="lazy"
+            class="h-[420px] w-full border-0 bg-(--color-paper-2)"></iframe>
+  ) : (
+    <div class="p-6 text-center">
+      <a href={chatUrl} target="_blank" rel="noopener"
+         class="inline-block rounded-full bg-(--color-pine) px-6 py-3 font-semibold text-white">
+        Open the {name} concierge →
+      </a>
+    </div>
+  )}
+</div>

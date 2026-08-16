@@ -1,0 +1,96 @@
+---
+import Base from '../layouts/Base.astro';
+const segments = [
+  ['Accommodation','Hotels, B&Bs, campings, holiday parks. Pitch types, pet policy, EV charging, check-in times — the questions you answer by phone twenty times a week.'],
+  ['Food & drink','Restaurants, cafés, bars, wineries. Cuisine, diets, terrace, kitchen hours, and the reservation link open data never carries.'],
+  ['Attractions & museums','Ticket links, last admission, accessibility, what is on the walls this season rather than in general.'],
+  ['Events & festivals','Your own dates and line-ups, surfacing the week they matter instead of after a manual data update.'],
+  ['Rental & activities','Bike, SUP and kayak hire, ski schools, guides, shuttles. Barely present in open data, constantly asked about.'],
+  ['Groups & chains','Five locations or more, one dashboard, 30% off.'],
+];
+---
+<Base title="For tourism businesses" angle="business"
+      description="You are probably already in the concierge. Claim your listing and decide how you are described.">
+  <section class="mx-auto max-w-6xl px-5 py-14">
+    <p class="mb-3 text-xs font-bold tracking-widest text-(--color-amber) uppercase">
+      For hotels, campings, restaurants, museums, events and rentals
+    </p>
+    <h1 class="h-display">You're already in there.<br />Make sure it's right.</h1>
+    <p class="lede mt-5">
+      Every destination we power is built from official open tourism data — which means your business
+      is probably already answering visitors' questions. From whatever the feed happens to say about
+      you. Claim it, and you decide how you're described.
+    </p>
+    <div class="mt-7 flex flex-wrap gap-3">
+      <a href="mailto:sales@dm2find.ai?subject=Claim%20my%20business"
+         class="rounded-full bg-(--color-amber) px-6 py-3 font-semibold text-white">Find my business</a>
+      <a href="/pricing" class="rounded-full border border-(--color-line) px-6 py-3 font-semibold">See pricing</a>
+    </div>
+  </section>
+
+  <section class="border-y border-(--color-line-2) bg-(--color-paper-2) py-12">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="h-section">What you can add</h2>
+      <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {[['Your look','Logo, photo gallery, social profiles, a short description in your own words — in up to four languages.'],
+          ['Your details','Opening hours that override a stale feed, seasonal kitchen times, closing days, contact that actually reaches you.'],
+          ['Your specifics','Features (heated terrace, accessible, dog-friendly, parking, EV charging), suitability, cuisine, and diets — vegetarian, vegan, gluten-free, halal.'],
+          ['Your booking','A reservation or ticket link, menu or brochure, and your own events and seasonal offers.']
+        ].map(([t,b]) => (
+          <div class="rounded-xl border border-(--color-line) bg-white p-5">
+            <h3 class="text-base font-semibold">{t}</h3>
+            <p class="mt-2 text-sm text-(--color-ink-2)">{b}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-5 py-14">
+    <div class="rounded-2xl border border-(--color-amber) bg-(--color-amber-l) p-7">
+      <h2 class="h-section">One rule, and we mean it</h2>
+      <p class="mt-3 max-w-[70ch] text-(--color-ink-2)">
+        <b>Enrichment buys completeness, never placement.</b> Paying changes how well you're described —
+        a photo, a diet tag, a working booking link. It never changes whether you're recommended or in
+        what order. That is decided by the visitor's question and the destination's own data. Your
+        tourist office can see exactly which records are owner-enriched, and so can you.
+      </p>
+      <p class="mt-3 max-w-[70ch] text-sm text-(--color-ink-2)">
+        We're strict about this because the moment a destination suspects businesses can buy their way
+        into answers, the whole thing stops being useful — to travellers first, and to you right after.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-5 pb-14">
+    <h2 class="h-section">Built for every kind of operator</h2>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {segments.map(([t,b]) => (
+        <div class="rounded-xl border border-(--color-line) bg-white p-5">
+          <h3 class="text-base font-semibold">{t}</h3>
+          <p class="mt-2 text-sm text-(--color-ink-2)">{b}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="border-t border-(--color-line-2) bg-(--color-paper-2) py-12">
+    <div class="mx-auto max-w-3xl px-5">
+      <h2 class="h-section">Claim your business</h2>
+      <p class="lede mt-3">Find your listing, tell us who you are, and we verify you within a working day.</p>
+      <div class="mt-6 rounded-xl border border-(--color-line) bg-white p-6">
+        <p class="text-sm text-(--color-ink-2)">
+          Send us the business name, town and your email at the business.
+        </p>
+        <a href="mailto:sales@dm2find.ai?subject=Claim%20my%20business&body=Business%20name%3A%0ATown%20or%20city%3A%0AYour%20email%20at%20the%20business%3A"
+           class="mt-4 inline-block rounded-full bg-(--color-amber) px-6 py-3 font-semibold text-white">
+          Email sales@dm2find.ai
+        </a>
+        <p class="mt-4 text-xs text-(--color-ink-3)">
+          We verify with a business email domain or phone number before anything goes live, and photos
+          get a light review. If someone claims a business that isn't theirs, one message reverses it.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
