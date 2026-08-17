@@ -8904,8 +8904,8 @@
     "tenantId": "rodez",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/rodez",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9048,8 +9048,8 @@
     "tenantId": "rouen",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/rouen",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9113,8 +9113,8 @@
     "tenantId": "saintetienne",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/saintetienne",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9147,8 +9147,8 @@
     "tenantId": "saintbrieuc",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/saintbrieuc",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9181,8 +9181,8 @@
     "tenantId": "saintlo",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/saintlo",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9313,8 +9313,8 @@
     "tenantId": "72",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/72",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9347,8 +9347,8 @@
     "tenantId": "73",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/73",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9445,8 +9445,8 @@
     "tenantId": "76",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/76",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9479,8 +9479,8 @@
     "tenantId": "93",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/93",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9513,8 +9513,8 @@
     "tenantId": "seinesaintdenis",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/seinesaintdenis",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9545,8 +9545,8 @@
     "tenantId": "77",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/77",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9726,8 +9726,8 @@
     "tenantId": "80",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/80",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9827,8 +9827,8 @@
     "tenantId": "strasbourg",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/strasbourg",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -9992,8 +9992,8 @@
     "tenantId": "frtarbes",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/frtarbes",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10026,8 +10026,8 @@
     "tenantId": "81",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/81",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10060,8 +10060,8 @@
     "tenantId": "82",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/82",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10126,8 +10126,8 @@
     "tenantId": "90",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/90",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10330,8 +10330,8 @@
     "tenantId": "frtoulouse",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/frtoulouse",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10362,8 +10362,8 @@
     "tenantId": "frtours",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/frtours",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10438,8 +10438,8 @@
     "tenantId": "frtrouville",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/frtrouville",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10472,8 +10472,8 @@
     "tenantId": "frtroyes",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/frtroyes",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10506,8 +10506,8 @@
     "tenantId": "frtulle",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/frtulle",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10723,8 +10723,8 @@
     "tenantId": "valdugaronne",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/valdugaronne",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10757,8 +10757,8 @@
     "tenantId": "95",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/95",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10791,8 +10791,8 @@
     "tenantId": "valdemarne",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/valdemarne",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10825,8 +10825,8 @@
     "tenantId": "valence",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/valence",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10891,8 +10891,8 @@
     "tenantId": "vannes",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/vannes",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10925,8 +10925,8 @@
     "tenantId": "83",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/83",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -10959,8 +10959,8 @@
     "tenantId": "85",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/85",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -11058,8 +11058,8 @@
     "tenantId": "versailles",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/versailles",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -11092,8 +11092,8 @@
     "tenantId": "86",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/86",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -11320,8 +11320,8 @@
     "tenantId": "88",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/88",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -11484,8 +11484,8 @@
     "tenantId": "89",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/89",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -11518,8 +11518,8 @@
     "tenantId": "78",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/78",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
