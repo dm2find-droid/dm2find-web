@@ -71,7 +71,7 @@
       52.14,
       6.195
     ],
-    "logo": "https://i.imgur.com/CxG6Xcv.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/achterhoek.jpg",
     "brandColor": "#90BA1A",
     "calendarUrl": "https://achterhoek.nl/Evenementen",
     "website": null
@@ -727,7 +727,7 @@
       42.5,
       1.5
     ],
-    "logo": "https://i.imgur.com/lmXsvsB.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/andorraworld.jpg",
     "brandColor": "#E55817",
     "calendarUrl": "https://visitandorra.com/en/events/",
     "website": null
@@ -1478,7 +1478,7 @@
       13.7630662728481,
       100.52591411791
     ],
-    "logo": "https://i.imgur.com/20cWRKw.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-bangkok.jpg",
     "brandColor": "#025937",
     "calendarUrl": "https://visit.bangkok.go.th/festival-calendar",
     "website": null
@@ -1664,7 +1664,7 @@
       39.92586965,
       116.379323
     ],
-    "logo": "https://i.imgur.com/l9jFXp8.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-beijing.jpg",
     "brandColor": "#C62828",
     "calendarUrl": "https://english.visitbeijing.com.cn/events",
     "website": null,
@@ -3117,7 +3117,7 @@
       47.0021,
       28.84031
     ],
-    "logo": "https://i.imgur.com/CM9hdAB.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitchisinau.png",
     "brandColor": "#F7CC00",
     "calendarUrl": "https://visit.chisinau.md/en/calendar-2026/",
     "website": null
@@ -4217,7 +4217,9 @@
     "coords": [
       37.10549,
       -7.93159
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitfaro.png",
+    "brandColor": "#c7383a"
   },
   {
     "slug": "ferrara",
@@ -4804,7 +4806,9 @@
         "label": "Groningen - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitgroningen.jpg",
+    "brandColor": "#029D59"
   },
   {
     "slug": "gyeongju",
@@ -6721,7 +6725,9 @@
         "label": "Maastricht - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitmaastricht.jpg",
+    "brandColor": "#E11E32"
   },
   {
     "slug": "madrid",
@@ -8990,7 +8996,9 @@
     "coords": [
       51.5314,
       4.4556
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/inroosendaal.jpg",
+    "brandColor": "#E62650"
   },
   {
     "slug": "rotterdam",
@@ -9035,7 +9043,9 @@
         "label": "Rotterdam - WhatsApp",
         "channel": "WhatsApp"
       }
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/rotterdam.jpg",
+    "brandColor": "#00AEEF"
   },
   {
     "slug": "rouen",
@@ -9268,7 +9278,9 @@
     "coords": [
       37.7562,
       -122.443
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/sfo.jpg",
+    "brandColor": "#DC4405"
   },
   {
     "slug": "santander",
@@ -9400,7 +9412,9 @@
     "coords": [
       51.6497,
       3.9164
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/schouwenduiveland.jpg",
+    "brandColor": "#002238"
   },
   {
     "slug": "seattle",
@@ -9432,7 +9446,9 @@
     "coords": [
       47.6211,
       -122.3244
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitseattle.jpg",
+    "brandColor": "#447500"
   },
   {
     "slug": "seine-maritime",
@@ -9681,7 +9697,9 @@
         "channel": "webchat"
       }
     ],
-    "voiceAgentId": "agent_9701knet807gea6axq794nbmc6aa"
+    "voiceAgentId": "agent_9701knet807gea6axq794nbmc6aa",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitsingapore.jpg",
+    "brandColor": "#EE192F"
   },
   {
     "slug": "sitges",
@@ -9846,7 +9864,9 @@
     "coords": [
       48.5833,
       7.7458
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/strasbourgtourisme.jpg",
+    "brandColor": "#EE3D3D"
   },
   {
     "slug": "stuttgart",
@@ -9946,7 +9966,9 @@
     "coords": [
       59.4370748,
       24.7285841
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittallinn.png",
+    "brandColor": "#fe0000"
   },
   {
     "slug": "tampere",
@@ -10187,7 +10209,9 @@
         "label": "Texel - WhatsApp",
         "channel": "WhatsApp"
       }
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittexel.jpg",
+    "brandColor": "#214786"
   },
   {
     "slug": "the-hague",
@@ -10219,7 +10243,9 @@
     "coords": [
       52.08,
       4.31
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/thisisthehague.jpg",
+    "brandColor": "#64BC50"
   },
   {
     "slug": "tilburg",
@@ -10251,7 +10277,9 @@
     "coords": [
       51.57,
       5.07
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittilburg.png",
+    "brandColor": "#C79288"
   },
   {
     "slug": "tirol",
@@ -10317,7 +10345,9 @@
     "coords": [
       35.6839,
       139.7744
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gotokyo.png",
+    "brandColor": "#E60012"
   },
   {
     "slug": "toulouse",
@@ -10677,7 +10707,9 @@
         "channel": "webchat"
       }
     ],
-    "voiceAgentId": "agent_5101knfsbbqrfh5b09w4n8zzyzgz"
+    "voiceAgentId": "agent_5101knfsbbqrfh5b09w4n8zzyzgz",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitutrecht.jpg",
+    "brandColor": "#e70703"
   },
   {
     "slug": "val-gardena",
@@ -11045,7 +11077,9 @@
     "coords": [
       51.37,
       6.1681
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitvenlo.jpg",
+    "brandColor": "#00AB60"
   },
   {
     "slug": "versailles-grand-parc",
@@ -11209,7 +11243,9 @@
     "coords": [
       51.9167,
       4.35
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vlaardingen.jpg",
+    "brandColor": "#C42526"
   },
   {
     "slug": "vlissingen",
@@ -11241,7 +11277,9 @@
     "coords": [
       51.45,
       3.5833
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vlissingen.jpg",
+    "brandColor": "#0E84C7"
   },
   {
     "slug": "volendam",
@@ -11273,7 +11311,9 @@
     "coords": [
       52.4969,
       5.0727
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/laagholland.png",
+    "brandColor": "#D64019"
   },
   {
     "slug": "vorarlberg",
@@ -11373,7 +11413,9 @@
     "coords": [
       38.9047,
       -77.0163
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/washingtondc.jpg",
+    "brandColor": "#466E82"
   },
   {
     "slug": "wien",
@@ -11439,7 +11481,9 @@
     "coords": [
       52.0858,
       4.8833
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/beleefwoerden.png",
+    "brandColor": "#EAAA00"
   },
   {
     "slug": "yerevan",
@@ -11471,7 +11515,9 @@
     "coords": [
       40.18247,
       44.51652
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visityerevan.png",
+    "brandColor": "#DE5382"
   },
   {
     "slug": "yonne",
@@ -11571,7 +11617,9 @@
     "coords": [
       52.4417,
       4.8422
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zaans.jpg",
+    "brandColor": "#009E45"
   },
   {
     "slug": "zagreb",
@@ -11644,7 +11692,9 @@
     "coords": [
       52.3667,
       4.5333
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitzandvoort.jpg",
+    "brandColor": "#E2722C"
   },
   {
     "slug": "zermatt",
@@ -11708,7 +11758,9 @@
     "coords": [
       52.5167,
       6.1
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hanzestadzwolle.jpg",
+    "brandColor": "#052AA0"
   },
   {
     "slug": "zurich",
