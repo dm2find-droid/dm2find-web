@@ -4255,6 +4255,43 @@
     "brandColor": "#A91A2D"
   },
   {
+    "slug": "figueres",
+    "name": {
+      "en": "Figueras"
+    },
+    "country": "ES",
+    "countryName": "Spain",
+    "region": "Catalonia",
+    "tenantId": "figueres",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/figueres",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://visitfigueres.cat/en/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitfigueres.jpg",
+    "brandColor": "#007E97",
+    "touristPass": null,
+    "calendarUrl": "https://visitfigueres.cat/en/what-to-do/agenda/",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      42.2667,
+      2.965
+    ]
+  },
+  {
     "slug": "finistere",
     "name": {
       "en": "Finistère"
@@ -5251,37 +5288,6 @@
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationhautsdeseine.png",
     "brandColor": "#C94645"
-  },
-  {
-    "slug": "hauts-de-seine-destination",
-    "name": {
-      "en": "Hauts-de-Seine (destination)"
-    },
-    "country": "FR",
-    "countryName": "France",
-    "region": "Hauts-de-Seine",
-    "tenantId": "hautsdeseine",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/hautsdeseine",
-    "provenance": "official",
-    "dataSource": "datatourisme",
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "coords": [
-      48.778633,
-      2.267295
-    ],
-    "dtFeed": true,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    }
   },
   {
     "slug": "heidelberg",
@@ -6308,7 +6314,9 @@
     "coords": [
       50.6278,
       3.0583
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hellolille.jpg",
+    "brandColor": "#E5231B"
   },
   {
     "slug": "limoges",
@@ -6517,6 +6525,43 @@
     "brandColor": "#1C77C3"
   },
   {
+    "slug": "los-angeles",
+    "name": {
+      "en": "Los Angeles"
+    },
+    "country": "US",
+    "countryName": "United States",
+    "region": "California",
+    "tenantId": "losangeles",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/losangeles",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.discoverlosangeles.com/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/welovela.jpg",
+    "brandColor": "#333333",
+    "touristPass": null,
+    "calendarUrl": "https://www.discoverlosangeles.com/events",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      34.1139,
+      -118.4068
+    ]
+  },
+  {
     "slug": "lot",
     "name": {
       "en": "Lot"
@@ -6686,7 +6731,9 @@
     "coords": [
       45.76,
       4.84
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/onlylyon.jpg",
+    "brandColor": "#b5b230"
   },
   {
     "slug": "maastricht",
@@ -6859,7 +6906,9 @@
     "coords": [
       43.2964,
       5.37
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/choosemarseille.jpg",
+    "brandColor": "#036BAF"
   },
   {
     "slug": "mayenne",
@@ -7765,7 +7814,9 @@
       48.693767,
       6.183198
     ],
-    "voiceAgentId": "agent_0401knvgg4a9e3qrtmjjtazq91x6"
+    "voiceAgentId": "agent_0401knvgg4a9e3qrtmjjtazq91x6",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationnancy.png",
+    "brandColor": "#E10D2F"
   },
   {
     "slug": "nantes",
@@ -7797,7 +7848,9 @@
     "coords": [
       47.2181,
       -1.5528
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nantes.jpg",
+    "brandColor": "#8CEDD3"
   },
   {
     "slug": "nevers",
@@ -7906,7 +7959,9 @@
       43.7034,
       7.2663
     ],
-    "voiceAgentId": "agent_7201knq2kgv5f7n8vrafvex26yww"
+    "voiceAgentId": "agent_7201knq2kgv5f7n8vrafvex26yww",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nicecotedazur.jpg",
+    "brandColor": "#00847A"
   },
   {
     "slug": "niort",
@@ -9077,7 +9132,9 @@
     "coords": [
       49.4428,
       1.0886
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitrouen.jpg",
+    "brandColor": "#004899"
   },
   {
     "slug": "rovaniemi",
@@ -9517,38 +9574,6 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/seinesaintdenistourisme.png",
     "brandColor": "#115BA2"
-  },
-  {
-    "slug": "seine-saint-denis-fr",
-    "name": {
-      "en": "Seine-Saint-Denis"
-    },
-    "country": "FR",
-    "countryName": "France",
-    "region": null,
-    "tenantId": "seinesaintdenis",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/seinesaintdenis",
-    "provenance": "official",
-    "dataSource": "datatourisme",
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://www.tourisme93.com/",
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      48.93327,
-      2.355947
-    ]
   },
   {
     "slug": "seine-et-marne",
@@ -10379,7 +10404,9 @@
     "coords": [
       43.6045,
       1.444
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/toulouse.jpg",
+    "brandColor": "#E40D35"
   },
   {
     "slug": "tours",
