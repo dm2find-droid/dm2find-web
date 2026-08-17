@@ -361,7 +361,7 @@
       38.3453,
       -0.4831
     ],
-    "logo": "https://i.imgur.com/4xeGMUs.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-alicante.jpg",
     "brandColor": "#002E6D",
     "calendarUrl": "https://alicanteturismo.com/en/festivities/",
     "website": null
@@ -432,7 +432,7 @@
       "name": null,
       "claimed": false
     },
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dm2find-logo.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/allier-tourisme.png",
     "brandColor": "#D4A927",
     "calendarUrl": "https://www.allier-auvergne-tourisme.com/agenda-allier-605-1.html",
     "website": "https://www.allier-auvergne-tourisme.com/"
@@ -872,7 +872,7 @@
       51.2211,
       4.3997
     ],
-    "logo": "https://i.imgur.com/mAhbD4J.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-antwerp.jpg",
     "brandColor": "#CF0039",
     "touristPass": {
       "name": "Antwerp City Pass",
@@ -1438,7 +1438,7 @@
       "name": null,
       "claimed": false
     },
-    "logo": "https://i.imgur.com/m9lcTGP.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/avignon-tourisme.jpg",
     "brandColor": "#E2003B",
     "calendarUrl": "https://avignon-tourisme.com/en/to-do-on-site/agenda/",
     "website": "https://avignon-tourisme.com/en/",
@@ -1740,7 +1740,7 @@
       38.5342,
       -0.1314
     ],
-    "logo": "https://i.imgur.com/9ntvMv8.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-benidorm.jpg",
     "brandColor": "#FF5000",
     "calendarUrl": "https://en.visitbenidorm.es/ver/116/benidorm-official-agenda.html",
     "website": null
@@ -1863,7 +1863,7 @@
       43.2569,
       -2.9236
     ],
-    "logo": "https://i.imgur.com/tdmi1Xx.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-bilbao.jpg",
     "brandColor": "#6E6E6E",
     "calendarUrl": "https://www.bilbao.eus/cs/Satellite?cid=3000094681&language=en&pagename=Bilbaonet%2FPage%2FBIO_ListadoAgenda",
     "website": null,
@@ -1941,8 +1941,8 @@
       "name": null,
       "claimed": false
     },
-    "logo": null,
-    "brandColor": null,
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-bobbio.jpg",
+    "brandColor": "#B72222",
     "calendarUrl": null,
     "website": null
   },
@@ -1976,7 +1976,7 @@
       "name": null,
       "claimed": false
     },
-    "logo": "https://i.imgur.com/X8UK8By.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-bologna.jpg",
     "brandColor": "#920C25",
     "calendarUrl": "https://www.bolognawelcome.com/en/events",
     "website": null,
@@ -2054,7 +2054,7 @@
       "name": null,
       "claimed": false
     },
-    "logo": "https://i.imgur.com/jRMtmUE.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-bordeaux.jpg",
     "brandColor": "#EC5D8E",
     "calendarUrl": "https://www.bordeaux-tourism.co.uk/agenda.html",
     "website": "https://www.visiter-bordeaux.com/en",
@@ -2129,7 +2129,7 @@
       "name": null,
       "claimed": false
     },
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dm2find-logo.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/alpes-cote-dazur.jpg",
     "brandColor": "#0075BF",
     "calendarUrl": null,
     "website": "https://provence-alpes-cotedazur.com/en/get-inspired/towns/bouches-du-rhone/"
@@ -2404,8 +2404,8 @@
       47.8457,
       16.5237
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dm2find-logo.png",
-    "brandColor": null,
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-burgenland.jpg",
+    "brandColor": "#347AAD",
     "calendarUrl": null
   },
   {
@@ -3742,7 +3742,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/deuxsevrestourisme.jpg",
+    "brandColor": "#3799D3"
   },
   {
     "slug": "digne-les-bains",
@@ -3773,7 +3775,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dignes-les-bains.jpg",
+    "brandColor": "#036574"
   },
   {
     "slug": "dijon",
@@ -3804,7 +3808,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dijon-tourisme.jpg",
+    "brandColor": "#D6075C"
   },
   {
     "slug": "dinant",
@@ -3871,7 +3877,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dordogne-tourisme.jpg",
+    "brandColor": "#c2ab57"
   },
   {
     "slug": "doubs",
@@ -3902,7 +3910,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/doubs-tourisme.png",
+    "brandColor": "#2FAC66"
   },
   {
     "slug": "dresden",
@@ -3973,7 +3983,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/drome-tourisme.jpg",
+    "brandColor": "#82AD19"
   },
   {
     "slug": "dunkirk",
@@ -4004,7 +4016,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/ispiritofdunkerque.jpg",
+    "brandColor": "#AC1A26"
   },
   {
     "slug": "dusseldorf",
@@ -4103,7 +4117,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/essonne-tourisme.jpg",
+    "brandColor": "#00988B"
   },
   {
     "slug": "eure-et-loir",
@@ -4134,7 +4150,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/eureetloire-tourisme.jpg",
+    "brandColor": "#66B7BF"
   },
   {
     "slug": "falaise",
@@ -4165,7 +4183,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/falaise-tourisme.jpg",
+    "brandColor": "#C51718"
   },
   {
     "slug": "faro",
@@ -4228,7 +4248,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/inferrara.jpg",
+    "brandColor": "#A91A2D"
   },
   {
     "slug": "finistere",
@@ -4259,7 +4281,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/finistere.png",
+    "brandColor": "#00B3E7"
   },
   {
     "slug": "florence",
@@ -4290,7 +4314,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationflorence.jpg",
+    "brandColor": "#F9D597"
   },
   {
     "slug": "foix",
@@ -4321,7 +4347,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/foix-tourisme.jpg",
+    "brandColor": "#BA6645"
   },
   {
     "slug": "forli-cesena",
@@ -4352,7 +4380,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/cesenaturismo.jpg",
+    "brandColor": "#AF0917"
   },
   {
     "slug": "frankfurt",
@@ -4416,7 +4446,9 @@
     "coords": [
       47.996608,
       7.84918
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/freiburg-tourism.jpg",
+    "brandColor": "#E0202C"
   },
   {
     "slug": "gap",
@@ -4447,7 +4479,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/terresdegap-tourisme.jpg",
+    "brandColor": "#224740"
   },
   {
     "slug": "gard",
@@ -4478,7 +4512,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gard-tourisme.jpg",
+    "brandColor": "#252525"
   },
   {
     "slug": "gers",
@@ -4509,7 +4545,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gers-tourisme.jpg",
+    "brandColor": "#FF99C3"
   },
   {
     "slug": "ghent",
@@ -4625,7 +4663,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gironde-tourisme.jpg",
+    "brandColor": "#1C1C1C"
   },
   {
     "slug": "gothenburg",
@@ -4656,7 +4696,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/gothenburg-tourisme.png",
+    "brandColor": "#006FA3"
   },
   {
     "slug": "granada",
@@ -4721,7 +4763,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/grenoble-tourisme.jpg",
+    "brandColor": "#FF4713"
   },
   {
     "slug": "groningen",
@@ -4791,7 +4835,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gyeongju.jpg",
+    "brandColor": "#4FC99A"
   },
   {
     "slug": "hamburg",
@@ -4934,7 +4980,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/colmartourisme.jpg",
+    "brandColor": "#9e0026"
   },
   {
     "slug": "haute-corse",
@@ -4965,7 +5013,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/corsica-tourism.png",
+    "brandColor": "#5B99B5"
   },
   {
     "slug": "haute-garonne",
@@ -4996,7 +5046,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hautegaronne-tourisme.jpg",
+    "brandColor": "#000000"
   },
   {
     "slug": "haute-loire",
@@ -5027,7 +5079,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hauteloire-tourisme.jpg",
+    "brandColor": "#EA4F3D"
   },
   {
     "slug": "haute-marne",
@@ -5058,7 +5112,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hautemarne-tourisme.jpg",
+    "brandColor": "#DC1965"
   },
   {
     "slug": "haute-savoie",
@@ -5089,7 +5145,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/haute-savoie-tourisme.jpg",
+    "brandColor": "#E30A18"
   },
   {
     "slug": "haute-saone",
@@ -5120,7 +5178,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/destination70.png",
+    "brandColor": "#769C59"
   },
   {
     "slug": "hautes-alpes",
@@ -5151,7 +5211,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hautes-alpes-tourism.jpg",
+    "brandColor": "#999999"
   },
   {
     "slug": "hauts-de-seine",
@@ -5182,7 +5244,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationhautsdeseine.png",
+    "brandColor": "#C94645"
   },
   {
     "slug": "hauts-de-seine-destination",
@@ -5276,7 +5340,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visit-helsinki.jpg",
+    "brandColor": "#FD4F00"
   },
   {
     "slug": "hilversum",
@@ -5340,7 +5406,9 @@
     "coords": [
       49.419025,
       0.23456
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/honfleur.jpg",
+    "brandColor": "#073D49"
   },
   {
     "slug": "hong-kong",
@@ -5412,7 +5480,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/herault-tourisme.jpg",
+    "brandColor": "#AE0F65"
   },
   {
     "slug": "ille-et-vilaine",
@@ -5443,7 +5513,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/illeetvilainetourisme.jpg",
+    "brandColor": "#185050"
   },
   {
     "slug": "incheon",
@@ -5474,7 +5546,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/incheon.jpg",
+    "brandColor": "#1F4D95"
   },
   {
     "slug": "innsbruck",
@@ -5508,7 +5582,9 @@
       47.2683,
       11.3933
     ],
-    "voiceAgentId": "agent_5801knpydsg3evwbvx18fg5f76z1"
+    "voiceAgentId": "agent_5801knpydsg3evwbvx18fg5f76z1",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/innsbruckregion.jpg",
+    "brandColor": "#ED1C24"
   },
   {
     "slug": "istanbul",
@@ -5580,7 +5656,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/alpesishere.jpg",
+    "brandColor": "#161616"
   },
   {
     "slug": "jeju",
@@ -5611,7 +5689,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitjeju.png",
+    "brandColor": "#b34f00"
   },
   {
     "slug": "jeonju",
@@ -5642,7 +5722,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/jeonju-tourisme.jpg",
+    "brandColor": "#7401B8"
   },
   {
     "slug": "jura",
@@ -5673,7 +5755,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/juratourism.jpg",
+    "brandColor": "#592C86"
   },
   {
     "slug": "karlsruhe",
@@ -5850,7 +5934,9 @@
     "coords": [
       46.6247,
       14.305
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/carinthiaismylife.jpg",
+    "brandColor": "#0073B6"
   },
   {
     "slug": "la-rochelle",
@@ -5881,7 +5967,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/larochelle.jpg",
+    "brandColor": "#005C5D"
   },
   {
     "slug": "landes",
@@ -5912,7 +6000,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/landes-tourisme.png",
+    "brandColor": "#67BABA"
   },
   {
     "slug": "laon",
@@ -5943,7 +6033,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/laon-tourisme.jpg",
+    "brandColor": "#008F98"
   },
   {
     "slug": "laurentides",
@@ -5974,7 +6066,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismelaurentides.jpg",
+    "brandColor": "#2F6F9F"
   },
   {
     "slug": "laval-ca",
@@ -6005,7 +6099,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismelaval.jpg",
+    "brandColor": "#00A0A0"
   },
   {
     "slug": "laval",
@@ -6036,7 +6132,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/laval-tourisme.jpg",
+    "brandColor": "#EEAB90"
   },
   {
     "slug": "le-mans",
@@ -6067,7 +6165,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lemanstourisme.jpg",
+    "brandColor": "#FFDF11"
   },
   {
     "slug": "le-puy-en-velay",
@@ -6099,7 +6199,9 @@
     "coords": [
       45.043,
       3.885
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lepuyenvelay-tourisme.jpg",
+    "brandColor": "#121244"
   },
   {
     "slug": "leipzig",
@@ -6234,7 +6336,9 @@
     "coords": [
       45.8336,
       1.2611
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/limoges-tourisme.jpg",
+    "brandColor": "#253072"
   },
   {
     "slug": "liege",
@@ -6302,7 +6406,9 @@
     "coords": [
       47.586,
       1.335
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/loiretcher-tourisme.png",
+    "brandColor": "#F09900"
   },
   {
     "slug": "loire-atlantique",
@@ -6334,7 +6440,9 @@
     "coords": [
       47.2181,
       -1.5528
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/atlanticloire-tourisme.png",
+    "brandColor": "#000FA0"
   },
   {
     "slug": "loiret",
@@ -6366,7 +6474,9 @@
     "coords": [
       47.902,
       1.909
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismeloiret.jpg",
+    "brandColor": "#088391"
   },
   {
     "slug": "lons-le-saunier",
@@ -6398,7 +6508,9 @@
     "coords": [
       46.675,
       5.554
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lonslesaunier-tourisme.jpg",
+    "brandColor": "#1C77C3"
   },
   {
     "slug": "lot",
@@ -6430,7 +6542,9 @@
     "coords": [
       44.4479,
       1.4404
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lot-tourisme.jpg",
+    "brandColor": "#EF7F64"
   },
   {
     "slug": "lot-et-garonne",
@@ -6462,7 +6576,9 @@
     "coords": [
       44.520025,
       0.159822
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismelotetgaronne.jpg",
+    "brandColor": "#65B32E"
   },
   {
     "slug": "lozere",
@@ -6494,7 +6610,9 @@
     "coords": [
       44.518,
       3.5
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lozeretourisme.jpg",
+    "brandColor": "#736645"
   },
   {
     "slug": "luxembourg-city",
@@ -6667,7 +6785,9 @@
     "coords": [
       49.116,
       -1.091
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/attitude-manche.png",
+    "brandColor": "#489792"
   },
   {
     "slug": "marne",
@@ -6699,7 +6819,9 @@
     "coords": [
       48.957663,
       4.363451
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/marne-tourisme.png",
+    "brandColor": "#6AAFAF"
   },
   {
     "slug": "marseille",
@@ -6763,7 +6885,9 @@
     "coords": [
       48.0698,
       -0.77
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationmayenne.jpg",
+    "brandColor": "#00708A"
   },
   {
     "slug": "mechelen",
@@ -6831,7 +6955,9 @@
     "coords": [
       48.54047,
       2.660611
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/meluntourisme.jpg",
+    "brandColor": "#95BF74"
   },
   {
     "slug": "mende",
@@ -6863,7 +6989,9 @@
     "coords": [
       44.518,
       3.5
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/mende-tourisme.jpg",
+    "brandColor": "#96BF0D"
   },
   {
     "slug": "merano",
@@ -6894,7 +7022,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/merano-tourism.png",
+    "brandColor": "#66E0A1"
   },
   {
     "slug": "metz",
@@ -6926,7 +7056,9 @@
     "coords": [
       49.120901,
       6.175699
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/metz-avatar.png",
+    "brandColor": "#94C242"
   },
   {
     "slug": "meurthe-et-moselle",
@@ -6958,7 +7090,9 @@
     "coords": [
       48.693767,
       6.183198
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/meurthemoselle-tourisme.jpg",
+    "brandColor": "#F7A801"
   },
   {
     "slug": "meuse",
@@ -6990,7 +7124,9 @@
     "coords": [
       48.771,
       5.162
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lameuse.jpg",
+    "brandColor": "#E8580C"
   },
   {
     "slug": "milan",
@@ -7021,7 +7157,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/yesmilano.png",
+    "brandColor": "#FFC036"
   },
   {
     "slug": "modena",
@@ -7052,7 +7190,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitmodena.jpg",
+    "brandColor": "#AA2129"
   },
   {
     "slug": "monaco",
@@ -7122,7 +7262,9 @@
     "coords": [
       43.8938,
       -0.499
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montdemarsan-tourisme.png",
+    "brandColor": "#38A9E0"
   },
   {
     "slug": "montauban",
@@ -7154,7 +7296,9 @@
     "coords": [
       44.0177,
       1.355
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montauban-tourisme.jpg",
+    "brandColor": "#4E9FBF"
   },
   {
     "slug": "montpellier",
@@ -7186,7 +7330,9 @@
     "coords": [
       43.6108,
       3.8767
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montpellier-tourisme.png",
+    "brandColor": "#AB2D6E"
   },
   {
     "slug": "montreal",
@@ -7217,7 +7363,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montreal-tourisme.png",
+    "brandColor": "#E1140A"
   },
   {
     "slug": "monteregie",
@@ -7248,7 +7396,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourisme-monteregie.jpg",
+    "brandColor": "#4C8C2B"
   },
   {
     "slug": "morbihan",
@@ -7280,7 +7430,9 @@
     "coords": [
       47.658,
       -2.76
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/morbihan-tourisme.jpg",
+    "brandColor": "#CBA868"
   },
   {
     "slug": "moselle",
@@ -7312,7 +7464,9 @@
     "coords": [
       49.120901,
       6.175699
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/moselle-tourisme.jpg",
+    "brandColor": "#F8D82E"
   },
   {
     "slug": "moulins",
@@ -7344,7 +7498,9 @@
     "coords": [
       46.567176,
       3.33318
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/moulins-tourisme.jpg",
+    "brandColor": "#4E7282"
   },
   {
     "slug": "mulhouse",
@@ -7376,7 +7532,9 @@
     "coords": [
       47.750966,
       7.339136
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-mulhouse.jpg",
+    "brandColor": "#F24F55"
   },
   {
     "slug": "munich",
@@ -7488,7 +7646,9 @@
     "coords": [
       46.30401,
       4.831685
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/macontourisme.jpg",
+    "brandColor": "#416E75"
   },
   {
     "slug": "medoc-atlantique",
@@ -7520,7 +7680,9 @@
     "coords": [
       45.002364,
       -1.196441
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/medocatlantique.jpg",
+    "brandColor": "#EA4588"
   },
   {
     "slug": "namur",
@@ -7661,7 +7823,9 @@
     "coords": [
       46.9896,
       3.159
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nevers-tourisme.jpg",
+    "brandColor": "#E14D8A"
   },
   {
     "slug": "new-york-city",
@@ -7768,7 +7932,9 @@
     "coords": [
       46.321645,
       -0.454418
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/niort-tourisme.png",
+    "brandColor": "#00A19A"
   },
   {
     "slug": "nievre",
@@ -7800,7 +7966,9 @@
     "coords": [
       46.9896,
       3.159
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lanievre.jpg",
+    "brandColor": "#84B2AD"
   },
   {
     "slug": "nord",
@@ -7832,7 +8000,9 @@
     "coords": [
       50.6278,
       3.0583
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourisme-nord.jpg",
+    "brandColor": "#139FC6"
   },
   {
     "slug": "nimes",
@@ -7864,7 +8034,9 @@
     "coords": [
       43.8367,
       4.3601
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nimes-tourisme.jpg",
+    "brandColor": "#1A2740"
   },
   {
     "slug": "orleans",
@@ -7896,7 +8068,9 @@
     "coords": [
       47.902,
       1.909
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationorleans.jpg",
+    "brandColor": "#76B860"
   },
   {
     "slug": "ostend",
@@ -7970,7 +8144,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismeoutaouais.png",
+    "brandColor": "#0B6E4F"
   },
   {
     "slug": "paris",
@@ -8004,7 +8180,9 @@
       48.8566,
       2.3522
     ],
-    "voiceAgentId": "agent_4401knmdzpgmewbrbskdkf7607fe"
+    "voiceAgentId": "agent_4401knmdzpgmewbrbskdkf7607fe",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/parisjetaime.png",
+    "brandColor": "#1F3C88"
   },
   {
     "slug": "parma",
@@ -8035,7 +8213,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/parmawelcome.png",
+    "brandColor": "#FEDB00"
   },
   {
     "slug": "pas-de-calais",
@@ -8067,7 +8247,9 @@
     "coords": [
       50.291003,
       2.777918
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/calaisxxl.jpg",
+    "brandColor": "#4C00FF"
   },
   {
     "slug": "pau",
@@ -8099,7 +8281,9 @@
     "coords": [
       43.295481,
       -0.375673
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/pautourisme.png",
+    "brandColor": "#C62337"
   },
   {
     "slug": "perpignan",
@@ -8131,7 +8315,9 @@
     "coords": [
       42.701317,
       2.894159
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/perpignan.jpg",
+    "brandColor": "#E94868"
   },
   {
     "slug": "piacenza",
@@ -8162,7 +8348,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitpiacenza.jpg",
+    "brandColor": "#9E1E33"
   },
   {
     "slug": "pisa",
@@ -8193,7 +8381,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/turismopisa.jpg",
+    "brandColor": "#E4003A"
   },
   {
     "slug": "poitiers",
@@ -8225,7 +8415,9 @@
     "coords": [
       46.5802,
       0.3404
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitpoitiers.jpg",
+    "brandColor": "#43206D"
   },
   {
     "slug": "pontoise",
@@ -8257,7 +8449,9 @@
     "coords": [
       49.041122,
       2.081054
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/pontoise.png",
+    "brandColor": "#009AA6"
   },
   {
     "slug": "privas",
@@ -8289,7 +8483,9 @@
     "coords": [
       44.734612,
       4.598372
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/coeurdeardeche-tourisme.jpg",
+    "brandColor": "#60B08D"
   },
   {
     "slug": "groningen-province",
@@ -8357,7 +8553,9 @@
     "coords": [
       45.779058,
       3.085698
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/puy-de-dome.jpg",
+    "brandColor": "#325C00"
   },
   {
     "slug": "pyrenees-atlantiques",
@@ -8389,7 +8587,9 @@
     "coords": [
       43.295481,
       -0.375673
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/64-tourisme.png",
+    "brandColor": "#FF3B3B"
   },
   {
     "slug": "perigueux",
@@ -8421,7 +8621,9 @@
     "coords": [
       45.184,
       0.721
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationperigieux.jpg",
+    "brandColor": "#8FA78F"
   },
   {
     "slug": "quimper",
@@ -8453,7 +8655,9 @@
     "coords": [
       47.996,
       -4.098
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/quimper-tourisme.jpg",
+    "brandColor": "#202020"
   },
   {
     "slug": "quebec-city",
@@ -8484,7 +8688,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/quebec-cite.jpg",
+    "brandColor": "#1D3F72"
   },
   {
     "slug": "ravenna",
@@ -8515,7 +8721,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitravenna.jpg",
+    "brandColor": "#02518C"
   },
   {
     "slug": "reggio-emilia",
@@ -8546,7 +8754,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/reggioemiliawelcome.jpg",
+    "brandColor": "#C05116"
   },
   {
     "slug": "reims",
@@ -8578,7 +8788,9 @@
     "coords": [
       49.255356,
       4.033992
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/reimstourisme.jpg",
+    "brandColor": "#191F6C"
   },
   {
     "slug": "rennes",
@@ -8610,7 +8822,9 @@
     "coords": [
       48.1173,
       -1.6778
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/rennes-original.jpg",
+    "brandColor": "#EB212E"
   },
   {
     "slug": "riga",
@@ -8642,7 +8856,9 @@
     "coords": [
       56.946285,
       24.105078
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/liveriga.jpg",
+    "brandColor": "#78E9B8"
   },
   {
     "slug": "rimini",
@@ -8673,7 +8889,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitrimini.jpg",
+    "brandColor": "#FF0000"
   },
   {
     "slug": "rodez",
@@ -8705,7 +8923,9 @@
     "coords": [
       44.3495,
       2.575
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/rodez-tourisme.png",
+    "brandColor": "#D44724"
   },
   {
     "slug": "rome",
@@ -8736,7 +8956,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/romalive.jpg",
+    "brandColor": "#800F1E"
   },
   {
     "slug": "roosendaal",
@@ -8876,7 +9098,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/rovaniemi-tourism.jpg",
+    "brandColor": "#C00000"
   },
   {
     "slug": "saint-etienne",
@@ -8908,7 +9132,9 @@
     "coords": [
       45.4397,
       4.3872
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/saint-etienne-tourisme-congres.jpg",
+    "brandColor": "#FFF000"
   },
   {
     "slug": "saint-brieuc",
@@ -8940,7 +9166,9 @@
     "coords": [
       48.5144,
       -2.7653
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/saint-brieuc-tourisme.jpg",
+    "brandColor": "#DB9C7F"
   },
   {
     "slug": "saint-lo",
@@ -8972,7 +9200,9 @@
     "coords": [
       49.116,
       -1.091
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/saintlo-tourisme.jpg",
+    "brandColor": "#D20042"
   },
   {
     "slug": "salzburger-land",
@@ -9004,7 +9234,9 @@
     "coords": [
       47.8095,
       13.055
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/salzburgerland.jpg",
+    "brandColor": "#B60C20"
   },
   {
     "slug": "san-francisco",
@@ -9100,7 +9332,9 @@
     "coords": [
       48.0061,
       0.1996
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/sarthetourisme.jpg",
+    "brandColor": "#1E97A7"
   },
   {
     "slug": "savoie",
@@ -9132,7 +9366,9 @@
     "coords": [
       45.565527,
       5.918505
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/exploresavoie.jpg",
+    "brandColor": "#E61B05"
   },
   {
     "slug": "schouwen-duiveland",
@@ -9228,7 +9464,9 @@
     "coords": [
       49.4428,
       1.0886
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/seinemaritime-tourisme.jpg",
+    "brandColor": "#AB91CA"
   },
   {
     "slug": "seine-saint-denis",
@@ -9260,7 +9498,9 @@
     "coords": [
       48.93327,
       2.355947
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/seinesaintdenistourisme.png",
+    "brandColor": "#115BA2"
   },
   {
     "slug": "seine-saint-denis-fr",
@@ -9324,7 +9564,9 @@
     "coords": [
       48.54047,
       2.660611
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/seineetmarne.jpg",
+    "brandColor": "#044A47"
   },
   {
     "slug": "seoul",
@@ -9362,7 +9604,9 @@
         "label": "Seoul",
         "channel": "webchat"
       }
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitseoul.jpg",
+    "brandColor": "#0051FC"
   },
   {
     "slug": "seville",
@@ -9501,7 +9745,9 @@
     "coords": [
       49.8941,
       2.2958
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/somme-tourisme.jpg",
+    "brandColor": "#E73331"
   },
   {
     "slug": "steiermark",
@@ -9533,7 +9779,9 @@
     "coords": [
       47.0707,
       15.4395
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/steiermark.jpg",
+    "brandColor": "#028337"
   },
   {
     "slug": "stockholm",
@@ -9564,7 +9812,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visit-stockholm.jpg",
+    "brandColor": "#181818"
   },
   {
     "slug": "strasbourg",
@@ -9662,7 +9912,9 @@
       25.0329,
       121.5654
     ],
-    "voiceAgentId": "agent_3401knepn183e0tat20v8qfvj6mh"
+    "voiceAgentId": "agent_3401knepn183e0tat20v8qfvj6mh",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittaipei.png",
+    "brandColor": "#007996"
   },
   {
     "slug": "tallinn",
@@ -9725,7 +9977,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visit-tampere-jpg.jpg",
+    "brandColor": "#2D2D2D"
   },
   {
     "slug": "tarbes",
@@ -9757,7 +10011,9 @@
     "coords": [
       43.2328,
       0.0782
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tarbes-tourisme.jpg",
+    "brandColor": "#0A4250"
   },
   {
     "slug": "tarn",
@@ -9789,7 +10045,9 @@
     "coords": [
       43.928863,
       2.144673
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valleedutarn.png",
+    "brandColor": "#DD5D09"
   },
   {
     "slug": "tarn-et-garonne",
@@ -9821,7 +10079,9 @@
     "coords": [
       44.0177,
       1.355
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tarngaronne-tourisme.jpg",
+    "brandColor": "#0A4750"
   },
   {
     "slug": "tarragona",
@@ -9885,7 +10145,9 @@
     "coords": [
       47.6379,
       6.8628
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/belforttourisme.jpg",
+    "brandColor": "#972B7C"
   },
   {
     "slug": "texel",
@@ -10021,7 +10283,9 @@
     "coords": [
       47.2683,
       11.3933
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittirol.jpg",
+    "brandColor": "#B51F1F"
   },
   {
     "slug": "tokyo",
@@ -10117,7 +10381,9 @@
     "coords": [
       47.390677,
       0.689387
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tours-tourisme.jpg",
+    "brandColor": "#C65643"
   },
   {
     "slug": "trento",
@@ -10157,7 +10423,9 @@
         "channel": "webchat"
       }
     ],
-    "voiceAgentId": "agent_9801knpzsmhdf62bmyzxakfxztn4"
+    "voiceAgentId": "agent_9801knpzsmhdf62bmyzxakfxztn4",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittrentino.jpg",
+    "brandColor": "#0082A4"
   },
   {
     "slug": "trouville-sur-mer",
@@ -10189,7 +10457,9 @@
     "coords": [
       49.363647,
       0.08544
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/trouville-tourisme.png",
+    "brandColor": "#000FFF"
   },
   {
     "slug": "troyes",
@@ -10221,7 +10491,9 @@
     "coords": [
       48.294426,
       4.071799
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/troyes-tourisme.png",
+    "brandColor": "#0F68B3"
   },
   {
     "slug": "tulle",
@@ -10253,7 +10525,9 @@
     "coords": [
       45.2671,
       1.771
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/contreesvertes-tourisme.jpg",
+    "brandColor": "#B35928"
   },
   {
     "slug": "turin",
@@ -10293,7 +10567,9 @@
         "channel": "webchat"
       }
     ],
-    "voiceAgentId": "agent_7201knky6fnzfq8rk10hbjywmtce"
+    "voiceAgentId": "agent_7201knky6fnzfq8rk10hbjywmtce",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/turismotorino.jpg",
+    "brandColor": "#9DE3F9"
   },
   {
     "slug": "turku",
@@ -10324,7 +10600,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visit-turku.jpg",
+    "brandColor": "#4BA432"
   },
   {
     "slug": "twente",
@@ -10356,7 +10634,9 @@
     "coords": [
       52.271687,
       6.783722
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visittwente.jpg",
+    "brandColor": "#FF0000"
   },
   {
     "slug": "utrecht",
@@ -10428,7 +10708,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/dolomitesvalgardena.png",
+    "brandColor": "#C00510"
   },
   {
     "slug": "val-du-garonne",
@@ -10460,7 +10742,9 @@
     "coords": [
       44.520025,
       0.159822
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdugaronne-tourisme.jpg",
+    "brandColor": "#BE2D06"
   },
   {
     "slug": "val-d-oise",
@@ -10492,7 +10776,9 @@
     "coords": [
       49.041122,
       2.081054
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdoisetourisme.png",
+    "brandColor": "#C71553"
   },
   {
     "slug": "val-de-marne",
@@ -10524,7 +10810,9 @@
     "coords": [
       48.78534,
       2.459132
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdemarnetourisme.jpg",
+    "brandColor": "#C80E66"
   },
   {
     "slug": "valence",
@@ -10556,7 +10844,9 @@
     "coords": [
       44.9334,
       4.8924
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valence-tourisme.jpg",
+    "brandColor": "#EB5B56"
   },
   {
     "slug": "valencia",
@@ -10620,7 +10910,9 @@
     "coords": [
       47.658,
       -2.76
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vannes-tourisme.jpg",
+    "brandColor": "#078293"
   },
   {
     "slug": "var",
@@ -10652,7 +10944,9 @@
     "coords": [
       43.1242,
       5.928
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/var-tourisme.jpg",
+    "brandColor": "#ffa553"
   },
   {
     "slug": "vendee",
@@ -10684,7 +10978,9 @@
     "coords": [
       46.6705,
       -1.4269
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/envendee.jpg",
+    "brandColor": "#00B79C"
   },
   {
     "slug": "venice",
@@ -10715,7 +11011,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitvenezia.jpg",
+    "brandColor": "#FF0033"
   },
   {
     "slug": "venlo",
@@ -10779,7 +11077,9 @@
     "coords": [
       48.807368,
       2.121597
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/versailles.png",
+    "brandColor": "#EE717D"
   },
   {
     "slug": "vienne",
@@ -10811,7 +11111,9 @@
     "coords": [
       46.5802,
       0.3404
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lavienne.jpg",
+    "brandColor": "#EC5123"
   },
   {
     "slug": "vigo",
@@ -11003,7 +11305,9 @@
     "coords": [
       47.5031,
       9.7471
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vorarlberg.png",
+    "brandColor": "#E30613"
   },
   {
     "slug": "vosges",
@@ -11035,7 +11339,9 @@
     "coords": [
       48.1744,
       6.4512
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vosges-tourism.jpg",
+    "brandColor": "#231441"
   },
   {
     "slug": "washington",
@@ -11099,7 +11405,9 @@
     "coords": [
       48.2082,
       16.3738
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vienna.jpg",
+    "brandColor": "#E52236"
   },
   {
     "slug": "woerden",
@@ -11195,7 +11503,9 @@
     "coords": [
       47.7982,
       3.5734
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/yonne-tourisme.jpg",
+    "brandColor": "#6E898C"
   },
   {
     "slug": "yvelines",
@@ -11227,7 +11537,9 @@
     "coords": [
       48.807368,
       2.121597
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationyvelines.jpg",
+    "brandColor": "#D20072"
   },
   {
     "slug": "zaandam",
@@ -11461,7 +11773,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/eze-tourisme.jpg",
+    "brandColor": "#4593C8"
   },
   {
     "slug": "epernay",
@@ -11492,7 +11806,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/epernay-tourisme.jpg",
+    "brandColor": "#E5CC6B"
   },
   {
     "slug": "epinal",
@@ -11523,7 +11839,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/epinal-tourisme.jpg",
+    "brandColor": "#026041"
   },
   {
     "slug": "etretat",
@@ -11554,7 +11872,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/lehavreetretat-tourisme.png",
+    "brandColor": "#034660"
   },
   {
     "slug": "evreux",
@@ -11585,7 +11905,9 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/evreux-tourisme.jpg",
+    "brandColor": "#2358A5"
   },
   {
     "slug": "evry",
@@ -11616,6 +11938,8 @@
     "dmo": {
       "name": null,
       "claimed": false
-    }
+    },
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/grandparissud-tourisme.png",
+    "brandColor": "#E95B1D"
   }
 ]
