@@ -77,6 +77,43 @@
     "website": null
   },
   {
+    "slug": "adana",
+    "name": {
+      "en": "Adana"
+    },
+    "country": "TR",
+    "countryName": "Türkiye",
+    "region": "Adana",
+    "tenantId": "adana",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/adana",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://adana.goturkiye.com/homepage",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitadana.png",
+    "brandColor": "#13AEB5",
+    "touristPass": null,
+    "calendarUrl": "https://adana.goturkiye.com/homepage",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      36.99102,
+      35.33033
+    ]
+  },
+  {
     "slug": "ain",
     "name": {
       "en": "Ain"
@@ -3952,7 +3989,9 @@
         "label": "Dresden - WhatsApp",
         "channel": "WhatsApp"
       }
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitdresden.jpg",
+    "brandColor": "#FFEA00"
   },
   {
     "slug": "drome",
@@ -3986,6 +4025,43 @@
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/drome-tourisme.jpg",
     "brandColor": "#82AD19"
+  },
+  {
+    "slug": "dubrovnik",
+    "name": {
+      "en": "Dubrovnik"
+    },
+    "country": "HR",
+    "countryName": "Croatia",
+    "region": null,
+    "tenantId": "dubrovnik",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/dubrovnik",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://visitdubrovnik.hr/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dubrovnik.jpg",
+    "brandColor": "#BE50C2",
+    "touristPass": null,
+    "calendarUrl": "https://tzdubrovnik.hr/lang/en/calendar/0/index.html",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      42.64105,
+      18.11108
+    ]
   },
   {
     "slug": "dunkirk",
@@ -4453,7 +4529,9 @@
     "coords": [
       50.11144,
       8.68077
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/frankfurt.jpg",
+    "brandColor": "#DB0B0B"
   },
   {
     "slug": "freiburg",
@@ -4771,7 +4849,9 @@
       37.1781,
       -3.6008
     ],
-    "voiceAgentId": "agent_5501knk55mm6e6g9th5btydmvq2q"
+    "voiceAgentId": "agent_5501knk55mm6e6g9th5btydmvq2q",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/turismogranada.png",
+    "brandColor": "#6A1B9A"
   },
   {
     "slug": "grenoble",
@@ -4919,7 +4999,9 @@
         "channel": "webchat"
       }
     ],
-    "voiceAgentId": "agent_2901kne8pp8cfjbba93k5mtvs1p9"
+    "voiceAgentId": "agent_2901kne8pp8cfjbba93k5mtvs1p9",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hamburg.jpg",
+    "brandColor": "#E10019"
   },
   {
     "slug": "hannover",
@@ -4951,7 +5033,9 @@
     "coords": [
       52.3744,
       9.7386
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hannover.jpg",
+    "brandColor": "#008FD4"
   },
   {
     "slug": "hasselt",
@@ -5319,7 +5403,9 @@
     "coords": [
       49.4122,
       8.71
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/heidelberg.jpg",
+    "brandColor": "#A50050"
   },
   {
     "slug": "helsinki",
@@ -5384,7 +5470,10 @@
     "coords": [
       52.22655,
       5.17083
-    ]
+    ],
+    "logo": "https://i.imgur.com/d1RRLeb.jpg",
+    "brandColor": "#ee0000",
+    "calendarUrl": "https://www.livehilversum.com/en/events"
   },
   {
     "slug": "honfleur",
@@ -5671,6 +5760,46 @@
     "brandColor": "#161616"
   },
   {
+    "slug": "izmir",
+    "name": {
+      "en": "Izmir"
+    },
+    "country": "TR",
+    "countryName": "Türkiye",
+    "region": null,
+    "tenantId": "izmir",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/izmir",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.visitizmir.org/en/Home/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitizmir.png",
+    "brandColor": "#FF6579",
+    "touristPass": {
+      "name": "Izmirim Card",
+      "url": "https://www.visitizmir.org/en/Information#izmirimkart"
+    },
+    "calendarUrl": "https://www.visitizmir.org/en/",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      38.4031,
+      27.06871
+    ]
+  },
+  {
     "slug": "jeju",
     "name": {
       "en": "Jeju"
@@ -5806,7 +5935,9 @@
         "label": "Karlsruhe - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/karslruhe.png",
+    "brandColor": "#0093A3"
   },
   {
     "slug": "kiel",
@@ -5838,7 +5969,9 @@
     "coords": [
       54.3233,
       10.1394
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/kielsailingcity.jpg",
+    "brandColor": "#8ACEF0"
   },
   {
     "slug": "kortrijk",
@@ -6243,7 +6376,9 @@
     "coords": [
       51.3333,
       12.3833
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/leipzigregion.png",
+    "brandColor": "#F9DB9D"
   },
   {
     "slug": "leuven",
@@ -6806,7 +6941,9 @@
     "coords": [
       40.4167,
       -3.7167
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitmadrid.jpg",
+    "brandColor": "#DE0029"
   },
   {
     "slug": "manche",
@@ -9369,7 +9506,9 @@
     "coords": [
       43.4628,
       -3.805
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/santander.jpg",
+    "brandColor": "#3382A6"
   },
   {
     "slug": "sarthe",
@@ -9672,7 +9811,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": null,
+    "website": "https://visitasevilla.es/en/",
     "dmo": {
       "name": null,
       "claimed": false
@@ -9681,7 +9820,10 @@
       37.39,
       -5.99
     ],
-    "voiceAgentId": "agent_6301knes8y3xfsq8x4my93q7dykx"
+    "voiceAgentId": "agent_6301knes8y3xfsq8x4my93q7dykx",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitsevilla.jpg",
+    "brandColor": "#E9425A",
+    "calendarUrl": "https://visitasevilla.es/en/now-in-seville/"
   },
   {
     "slug": "singapore",
@@ -9756,7 +9898,9 @@
     "coords": [
       41.237,
       1.80875
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/sitgesanytime.jpg",
+    "brandColor": "#4174B6"
   },
   {
     "slug": "somme",
@@ -9923,7 +10067,9 @@
     "coords": [
       48.7761,
       9.1775
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/stuttgart.jpg",
+    "brandColor": "#F5E146"
   },
   {
     "slug": "taipei",
@@ -10138,9 +10284,9 @@
     "country": "ES",
     "countryName": "Spain",
     "region": "Catalonia",
-    "tenantId": "tarragona",
+    "tenantId": "estarragona",
     "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/tarragona",
+    "chatUrl": "https://chat.dm2find.ai/estarragona",
     "provenance": "preview",
     "dataSource": null,
     "status": "live",
@@ -10160,7 +10306,9 @@
     "coords": [
       41.1187,
       1.2453
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tarragonaturisme.jpg",
+    "brandColor": "#043A56"
   },
   {
     "slug": "territoire-de-belfort",
@@ -10937,7 +11085,9 @@
     "coords": [
       39.47,
       -0.3764
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valencia.jpg",
+    "brandColor": "#FF6000"
   },
   {
     "slug": "vannes",
@@ -11198,7 +11348,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": null,
+    "website": "https://www.turismodevigo.org/en",
     "dmo": {
       "name": null,
       "claimed": false
@@ -11206,7 +11356,9 @@
     "coords": [
       42.2314,
       -8.7124
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/turismovigo.jpg",
+    "brandColor": "#D02B0C"
   },
   {
     "slug": "vitoria-gasteiz",
@@ -11238,7 +11390,9 @@
     "coords": [
       42.85,
       -2.6833
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vitoriagasteiz.jpg",
+    "brandColor": "#24B32B"
   },
   {
     "slug": "vlaardingen",
@@ -11687,7 +11841,9 @@
         "channel": "webchat"
       }
     ],
-    "voiceAgentId": "agent_1401knq1emjkea3sexn1ync2gfsj"
+    "voiceAgentId": "agent_1401knq1emjkea3sexn1ync2gfsj",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zagreb.jpg",
+    "brandColor": "#157EFB"
   },
   {
     "slug": "zandvoort",
@@ -11753,7 +11909,9 @@
     "coords": [
       46.0193,
       7.7461
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zermatt.jpg",
+    "brandColor": "#414141"
   },
   {
     "slug": "zwolle",
@@ -11821,7 +11979,9 @@
       47.3744,
       8.5411
     ],
-    "voiceAgentId": "agent_9001knpnw3ygf3h9msm4thkwm7r4"
+    "voiceAgentId": "agent_9001knpnw3ygf3h9msm4thkwm7r4",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/enjoyzuerich.jpg",
+    "brandColor": "#0078BF"
   },
   {
     "slug": "eze",
