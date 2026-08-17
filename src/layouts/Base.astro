@@ -36,5 +36,19 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <Footer />
   {concierge && <Concierge />}
   <Lightbox />
+  <script>
+    /* Safety net for the same rule linkAttrs() applies at build time: any link
+       leaving DM2find opens in a new tab. It exists because links also arrive
+       from destinations.json — tourist office sites, city passes, image credits
+       — and one forgotten spread should not send a reader off the site.
+       Build-time attributes stay authoritative; this only fills gaps. */
+    for (const a of document.querySelectorAll('a[href^="http"]')) {
+      const el = a as HTMLAnchorElement;
+      if (/(^|\.)dm2find\.(ai|com)$/i.test(el.hostname)) continue;
+      if (el.target) continue;
+      el.target = '_blank';
+      el.rel = (el.rel ? el.rel + ' ' : '') + 'noopener noreferrer';
+    }
+  </script>
 </body>
 </html>

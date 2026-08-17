@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { linkAttrs } from '../../lib/link';
 import DestinationCard from '../../components/DestinationCard.astro';
 
 export async function getStaticPaths() {
@@ -29,7 +30,7 @@ const connected = s.status === 'connected';
         <p class="mt-2 text-xs text-(--color-ink-3)">Rendered on every destination page sourced from this platform.</p>
       </div>
     )}
-    {s.url && <p class="mt-4 text-sm"><a class="text-(--color-terra) underline" href={s.url} rel="noopener">{s.url}</a></p>}
+    {s.url && <p class="mt-4 text-sm"><a class="text-(--color-terra) underline" href={s.url} {...linkAttrs(s.url)}>{s.url}</a></p>}
 
     <h2 class="h-section mt-12">{dests.length} destination{dests.length === 1 ? '' : 's'}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2">{dests.map(d => <DestinationCard d={d} />)}</div>
