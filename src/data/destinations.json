@@ -7288,6 +7288,46 @@
     ]
   },
   {
+    "slug": "lviv",
+    "name": {
+      "en": "Lviv"
+    },
+    "country": "UA",
+    "countryName": "Ukraine",
+    "region": null,
+    "tenantId": "lviv",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/lviv",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": null,
+    "logo": "https://i.imgur.com/ZhseYpX.png",
+    "brandColor": "#FF7D0C",
+    "touristPass": {
+      "name": "Lviv City Card",
+      "url": "https://lviv.travel/en/city-card"
+    },
+    "calendarUrl": "https://lviv.travel/en/events",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      49.84347,
+      24.02764
+    ]
+  },
+  {
     "slug": "lyon",
     "name": {
       "en": "Lyon"
