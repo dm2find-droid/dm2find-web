@@ -23,7 +23,7 @@
     "sampleQuestions": {},
     "dtFeed": false,
     "website": null,
-    "logo": "https://i.imgur.com/VzGuUiJ.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zinindenbosch.jpg",
     "brandColor": "#D36112",
     "touristPass": {
       "name": "Bossche Pas",
@@ -434,7 +434,7 @@
       52.6289,
       4.744
     ],
-    "logo": "https://i.imgur.com/4PGIFC2.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitalkmaar.jpg",
     "brandColor": "#E6343E",
     "calendarUrl": "https://www.visitalkmaar.com/en/events",
     "website": null
@@ -505,7 +505,7 @@
       52.3758,
       5.2256
     ],
-    "logo": "https://i.imgur.com/I8dt5lE.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitalmere.jpg",
     "brandColor": "#899477",
     "calendarUrl": "https://www.visitalmere.com/en/calendar/overview",
     "website": null
@@ -612,7 +612,7 @@
       52.15,
       5.38
     ],
-    "logo": "https://i.imgur.com/cEBEepH.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitamersfoort.jpg",
     "brandColor": "#EA0029",
     "calendarUrl": "https://www.tijdvooramersfoort.nl/en/events",
     "website": null
@@ -687,7 +687,7 @@
       52.3019,
       4.8581
     ],
-    "logo": "https://i.imgur.com/7QsMXSj.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitamstelveen.jpg",
     "brandColor": "#9D704B",
     "calendarUrl": "https://www.visitamstelveen.nl/en/whats-on-guide-amstelveen",
     "website": null
@@ -724,7 +724,7 @@
       52.3667,
       4.8833
     ],
-    "logo": "https://i.imgur.com/PpnlDHn.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/iamsterdam.jpg",
     "brandColor": "#E10600",
     "calendarUrl": "https://www.iamsterdam.com/en/whats-on/calendar",
     "touristPass": {
@@ -948,7 +948,7 @@
       52.21,
       5.97
     ],
-    "logo": "https://i.imgur.com/uWlXVQu.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/apeldoorn.jpg",
     "brandColor": "#216725",
     "calendarUrl": "https://uit.inapeldoorn.nl/english/",
     "website": null
@@ -1159,7 +1159,7 @@
       51.9833,
       5.9167
     ],
-    "logo": "https://i.imgur.com/NcTXYby.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/regioarnhem.png",
     "brandColor": "#ED7501",
     "calendarUrl": "https://www.visitarnhem.com/evenementen",
     "website": null
@@ -1230,7 +1230,7 @@
       53.0,
       6.55
     ],
-    "logo": "https://i.imgur.com/UC5xGOI.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/ditisassen.jpg",
     "brandColor": "#00584B",
     "calendarUrl": "https://www.ditisassen.nl/agenda/agenda-overzicht",
     "website": null
@@ -2272,7 +2272,7 @@
       51.5875,
       4.775
     ],
-    "logo": "https://i.imgur.com/Zj2kQVX.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/breda.jpg",
     "brandColor": "#FF0033",
     "calendarUrl": "https://www.explorebreda.com/nl/evenementen",
     "website": null
@@ -2348,7 +2348,7 @@
       3.2242
     ],
     "website": null,
-    "logo": "https://i.imgur.com/wqY8MNx.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitbrugge.jpg",
     "brandColor": "#D62528",
     "touristPass": {
       "name": "Brugge Museum Card",
@@ -2395,7 +2395,7 @@
       4.3314
     ],
     "website": null,
-    "logo": "https://i.imgur.com/ptTQFY1.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitbrussels.jpg",
     "brandColor": "#F2C300",
     "touristPass": {
       "name": "Brussels Card",
@@ -3741,7 +3741,7 @@
       52.0119,
       4.3594
     ],
-    "logo": "https://i.imgur.com/OegA0ic.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/indelft.jpg",
     "brandColor": "#002F7E",
     "calendarUrl": "https://www.indelft.nl/en/uitagenda",
     "website": null,
@@ -3749,6 +3749,43 @@
       "name": "Delftpas",
       "url": "https://www.delft.nl/delftpas"
     }
+  },
+  {
+    "slug": "den-helder",
+    "name": {
+      "en": "Den Helder"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Noord-Holland",
+    "tenantId": "denhelder",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/denhelder",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://denhelder.online/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitdenhelder.jpg",
+    "brandColor": "#0FB3C1",
+    "touristPass": null,
+    "calendarUrl": "https://visitkopvanholland.nl/agenda/",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.9583,
+      4.7589
+    ]
   },
   {
     "slug": "deux-sevres",
@@ -3880,7 +3917,7 @@
       4.9136
     ],
     "website": null,
-    "logo": "https://i.imgur.com/uQpMhRv.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dinant.jpg",
     "brandColor": "#00355A",
     "touristPass": null,
     "calendarUrl": "https://www.citadellededinant.be/en/events.php"
@@ -3917,6 +3954,43 @@
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dordogne-tourisme.jpg",
     "brandColor": "#c2ab57"
+  },
+  {
+    "slug": "dordrecht",
+    "name": {
+      "en": "Dordrecht"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Zuid-Holland",
+    "tenantId": "dordrecht",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/dordrecht",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://indordrecht.nl/en/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/indordrecht.jpg",
+    "brandColor": "#284E61",
+    "touristPass": null,
+    "calendarUrl": "https://indordrecht.nl/uitagenda/",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      51.81,
+      4.67
+    ]
   },
   {
     "slug": "doubs",
@@ -4118,7 +4192,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": null,
+    "website": "https://www.visitduesseldorf.de/en",
     "dmo": {
       "name": null,
       "claimed": false
@@ -4126,7 +4200,14 @@
     "coords": [
       51.2311,
       6.7724
-    ]
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitdusseldorf.jpg",
+    "brandColor": "#E30018",
+    "calendarUrl": "https://www.visitduesseldorf.de/en/experience/events",
+    "touristPass": {
+      "name": "DüsseldorfCard Classic",
+      "url": "https://www.visitduesseldorf.de/en/book/duesseldorfcard"
+    }
   },
   {
     "slug": "eemsdelta",
@@ -4151,7 +4232,7 @@
     "sampleQuestions": {},
     "dtFeed": false,
     "website": null,
-    "logo": "https://i.imgur.com/ggjG1Yt.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/eemsdelta.jpg",
     "brandColor": "#004680",
     "touristPass": null,
     "calendarUrl": "https://www.visitgroningen.nl/nl/plekken/eemsdelta/uitagenda-eemsdelta",
@@ -4162,6 +4243,80 @@
     "coords": [
       53.3333,
       6.9167
+    ]
+  },
+  {
+    "slug": "eindhoven",
+    "name": {
+      "en": "Eindhoven"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Noord-Brabant",
+    "tenantId": "eindhoven",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/eindhoven",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.thisiseindhoven.com/en",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visiteindhoven.jpg",
+    "brandColor": "#FF0000",
+    "touristPass": null,
+    "calendarUrl": "https://www.thisiseindhoven.com/en",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      51.4344,
+      5.4842
+    ]
+  },
+  {
+    "slug": "enkhuizen",
+    "name": {
+      "en": "Enkhuizen"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Noord-Holland",
+    "tenantId": "enkhuizen",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/enkhuizen",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://visitenkhuizen.nl/en/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-enkhuizen.jpg",
+    "brandColor": "#0069D2",
+    "touristPass": null,
+    "calendarUrl": "https://visitenkhuizen.nl/en/evenement/",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.7,
+      5.2833
     ]
   },
   {
@@ -4785,6 +4940,43 @@
     "brandColor": "#1C1C1C"
   },
   {
+    "slug": "gooi-en-vecht",
+    "name": {
+      "en": "Gooi & Vecht"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Noord-Holland",
+    "tenantId": "gooivecht",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/gooivecht",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.visitgooivecht.nl/en",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitgooivecht.jpg",
+    "brandColor": "#0EA29B",
+    "touristPass": null,
+    "calendarUrl": "https://www.visitgooivecht.nl/en/events",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.23,
+      5.18
+    ]
+  },
+  {
     "slug": "gothenburg",
     "name": {
       "en": "Gothenburg"
@@ -4816,6 +5008,43 @@
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/gothenburg-tourisme.png",
     "brandColor": "#006FA3"
+  },
+  {
+    "slug": "gouda",
+    "name": {
+      "en": "Gouda"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Zuid-Holland",
+    "tenantId": "gouda",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/gouda",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://welkomingouda.nl/en/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gouda.jpg",
+    "brandColor": "#EA1017",
+    "touristPass": null,
+    "calendarUrl": "https://welkomingouda.nl/uitagenda/alle-evenementen",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.0181,
+      4.7056
+    ]
   },
   {
     "slug": "granada",
@@ -4961,6 +5190,43 @@
     "brandColor": "#4FC99A"
   },
   {
+    "slug": "haarlem",
+    "name": {
+      "en": "Haarlem"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Noord-Holland",
+    "tenantId": "haarlem",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/haarlem",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.visithaarlem.com/en/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/haarlemmarketing.jpg",
+    "brandColor": "#C19A5B",
+    "touristPass": null,
+    "calendarUrl": "https://www.visithaarlem.com/en/events-calender/",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.3803,
+      4.6406
+    ]
+  },
+  {
     "slug": "hamburg",
     "name": {
       "en": "Hamburg"
@@ -5036,6 +5302,43 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hannover.jpg",
     "brandColor": "#008FD4"
+  },
+  {
+    "slug": "harderwijk",
+    "name": {
+      "en": "Harderwijk"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Gelderland",
+    "tenantId": "harderwijk",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/harderwijk",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://visitharderwijk.com/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/heerlijlkharderwijk.jpg",
+    "brandColor": "#0C1E47",
+    "touristPass": null,
+    "calendarUrl": "https://www.visitharderwijk.com/outcalendar",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.3506,
+      5.6172
+    ]
   },
   {
     "slug": "hasselt",
@@ -5471,7 +5774,7 @@
       52.22655,
       5.17083
     ],
-    "logo": "https://i.imgur.com/d1RRLeb.jpg",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/livehilversum.jpg",
     "brandColor": "#ee0000",
     "calendarUrl": "https://www.livehilversum.com/en/events"
   },
@@ -5533,7 +5836,7 @@
     "sampleQuestions": {},
     "dtFeed": false,
     "website": null,
-    "logo": "https://i.imgur.com/7OpfBxK.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/discoverhongkong.jpg",
     "brandColor": "#ED1C24",
     "touristPass": {
       "name": "Tourist Octopus",
@@ -5548,6 +5851,43 @@
     "coords": [
       22.3193,
       114.1694
+    ]
+  },
+  {
+    "slug": "hoorn",
+    "name": {
+      "en": "Hoorn"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Noord-Holland",
+    "tenantId": "hoorn",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/hoorn",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://komnaarhoorn.nl/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/komnaarhoorn.jpg",
+    "brandColor": "#FF3D7F",
+    "touristPass": null,
+    "calendarUrl": "https://www.inhoorn.nl/agenda/",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.6533,
+      5.0733
     ]
   },
   {
@@ -5582,6 +5922,43 @@
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/herault-tourisme.jpg",
     "brandColor": "#AE0F65"
+  },
+  {
+    "slug": "ijmuiden",
+    "name": {
+      "en": "IJmuiden"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Noord-Holland",
+    "tenantId": "ijmuiden",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/ijmuiden",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.ijmuiden.nl/en/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/ijmuidenrauw.jpg",
+    "brandColor": "#E28514",
+    "touristPass": null,
+    "calendarUrl": "https://www.ijmuiden.nl/uitagenda/",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.4586,
+      4.6194
+    ]
   },
   {
     "slug": "ille-et-vilaine",
@@ -5938,6 +6315,43 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/karslruhe.png",
     "brandColor": "#0093A3"
+  },
+  {
+    "slug": "kaysersberg",
+    "name": {
+      "en": "Kaysersberg"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Grand Est",
+    "tenantId": "kaysersberg",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/kaysersberg",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.kaysersberg.com/en",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/kaysersberg.jpg",
+    "brandColor": "#A4213B",
+    "touristPass": null,
+    "calendarUrl": "https://www.kaysersberg.com/en/events/",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      48.140359,
+      7.258954
+    ]
   },
   {
     "slug": "kiel",
@@ -6345,6 +6759,43 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lepuyenvelay-tourisme.jpg",
     "brandColor": "#121244"
+  },
+  {
+    "slug": "leiden",
+    "name": {
+      "en": "Leiden"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Zuid-Holland",
+    "tenantId": "leiden",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/leiden",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.visitleiden.nl/en",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/leiden.png",
+    "brandColor": "#554734",
+    "touristPass": null,
+    "calendarUrl": "https://www.visitleiden.nl/en/event-calendar",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.161025,
+      4.486792
+    ]
   },
   {
     "slug": "leipzig",
@@ -8079,8 +8530,7 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat",
-      "voice"
+      "webchat"
     ],
     "languages": [],
     "inventory": {},
@@ -8096,7 +8546,7 @@
       43.7034,
       7.2663
     ],
-    "voiceAgentId": "agent_7201knq2kgv5f7n8vrafvex26yww",
+    "voiceAgentId": null,
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nicecotedazur.jpg",
     "brandColor": "#00847A"
   },
@@ -10885,6 +11335,43 @@
     "voiceAgentId": "agent_5101knfsbbqrfh5b09w4n8zzyzgz",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitutrecht.jpg",
     "brandColor": "#e70703"
+  },
+  {
+    "slug": "heuvelrug",
+    "name": {
+      "en": "Utrechtse Heuvelrug"
+    },
+    "country": "NL",
+    "countryName": "Netherlands",
+    "region": "Utrecht",
+    "tenantId": "heuvelrug",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/heuvelrug",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.opdeheuvelrug.nl/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/opdeheuvelrug.png",
+    "brandColor": "#009AC0",
+    "touristPass": null,
+    "calendarUrl": "https://www.opdeheuvelrug.nl/agenda",
+    "voiceAgentId": null,
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      52.0333,
+      5.35
+    ]
   },
   {
     "slug": "val-gardena",
