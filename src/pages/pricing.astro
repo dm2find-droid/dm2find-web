@@ -1,6 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import { BOOKING_URL } from '../data/site';
+/* Same source of truth as /platform#booking, so the two pages cannot disagree. */
+const bk = (await import('../data/booking-systems.json')).default as any;
+const bookingTotal = bk.totals.golf + bk.totals.restaurant;
 const biz = [
   ['Listed','Free','You already have this',['Whatever the open data publishes','Name, category, address','Hours as filed by the destination']],
   ['Verified','€12','per month · claim and correct',['Owner-verified mark','Logo and social profiles','Your own opening hours','One photo']],
@@ -69,9 +72,9 @@ const dmo = [
         <p class="mt-3 max-w-[72ch] text-sm text-(--color-ink-2)">
           Your card gains a live availability lookup — the visitor gives a date and a party size and
           gets an answer without leaving the conversation. Or, where your system prefers it, a direct
-          button into your own booking page. We read
-          <a href="/platform#booking" class="font-semibold text-(--color-pine) underline">45 tee-sheet and
-          reservation systems</a>, so you keep the software you have.
+          button into your own booking page. We reach
+          <a href="/platform#booking" class="font-semibold text-(--color-pine) underline">{bookingTotal} tee-sheet
+          and reservation systems</a>, so you keep the software you have.
         </p>
         <div class="mt-4 grid gap-3 text-sm text-(--color-ink-2) sm:grid-cols-3">
           <p><b>Requires Verified.</b> A booking button has to belong to someone, and €12 is where
