@@ -1,113 +1,114 @@
 [
- {
-  "id": "datatourisme",
-  "name": "DATAtourisme",
-  "geo": "France",
-  "country": "FR",
-  "url": "https://www.datatourisme.fr",
-  "status": "connected",
-  "attributionRequired": true,
-  "attribution": "DATAtourisme, Licence Ouverte / Etalab"
- },
- {
-  "id": "touripedia",
-  "name": "Touripedia",
-  "geo": "Netherlands",
-  "country": "NL",
-  "status": "connected",
-  "attributionRequired": true,
-  "attribution": "Touripedia"
- },
- {
-  "id": "austria",
-  "name": "Österreich Werbung",
-  "geo": "Austria",
-  "country": "AT",
-  "status": "planned",
-  "attributionRequired": true,
-  "attribution": "Datenschnittstelle der Österreich Werbung"
- },
- {
-  "id": "germany",
-  "name": "Open Data Germany",
-  "geo": "Germany",
-  "country": "DE",
-  "status": "planned",
-  "attributionRequired": true,
-  "attribution": "Open Data Germany"
- },
- {
-  "id": "belgium",
-  "name": "Visit Flanders / Wallonie Tourisme",
-  "geo": "Belgium",
-  "country": "BE",
-  "status": "planned",
-  "attributionRequired": true,
-  "attribution": "Visit Flanders / Wallonie Tourisme"
- },
- {
-  "id": "spain",
-  "name": "Datos Abiertos Turismo",
-  "geo": "Spain",
-  "country": "ES",
-  "status": "planned",
-  "attributionRequired": true,
-  "attribution": "Datos Abiertos Turismo"
- },
- {
-  "id": "suedtirol",
-  "name": "Open Data Hub Südtirol",
-  "geo": "Italy — Süd-Tirol",
-  "country": "IT",
-  "url": "https://tourism.opendatahub.com",
-  "status": "connected",
-  "attributionRequired": true,
-  "attribution": "Open Data Hub Südtirol/Alto Adige (opendatahub.com)"
- },
- {
-  "id": "emiliaromagna",
-  "name": "Emilia-Romagna Tourism",
-  "geo": "Italy — Emilia-Romagna",
-  "country": "IT",
-  "status": "connected",
-  "attributionRequired": true,
-  "attribution": "Emilia-Romagna Tourism – Regione Emilia-Romagna (CC-BY 4.0)"
- },
- {
-  "id": "quebec",
-  "name": "Données Québec",
-  "geo": "Canada — Québec",
-  "country": "CA",
-  "status": "connected",
-  "attributionRequired": true,
-  "attribution": "Données Québec – Gouvernement du Québec (CC-BY 4.0)"
- },
- {
-  "id": "kto",
-  "name": "KTO Tourism",
-  "geo": "South Korea",
-  "country": "KR",
-  "status": "connected",
-  "attributionRequired": true,
-  "attribution": "KTO Tourism from data.go.kr"
- },
- {
-  "id": "visitsweden",
-  "name": "Visit Sweden national API",
-  "geo": "Sweden",
-  "country": "SE",
-  "status": "connected",
-  "attributionRequired": true,
-  "attribution": "Visit Sweden national API"
- },
- {
-  "id": "visitfinland",
-  "name": "Visit Finland DataHub",
-  "geo": "Finland",
-  "country": "FI",
-  "url": "https://datahub.visitfinland.com",
-  "status": "connected",
-  "attributionRequired": true,
-  "attribution": "Visit Finland – DataHub (business.finland.fi)"
- }
+  {
+    "id": "datatourisme",
+    "name": "DATAtourisme",
+    "geo": "France",
+    "country": "FR",
+    "url": "https://www.datatourisme.fr",
+    "status": "connected",
+    "attributionRequired": true,
+    "attribution": "DATAtourisme, Licence Ouverte / Etalab"
+  },
+  {
+    "id": "touripedia",
+    "name": "Touripedia",
+    "geo": "Netherlands",
+    "country": "NL",
+    "status": "connected",
+    "attributionRequired": true,
+    "attribution": "Touripedia"
+  },
+  {
+    "id": "austria",
+    "name": "Österreich Werbung",
+    "geo": "Austria",
+    "country": "AT",
+    "status": "planned",
+    "attributionRequired": true,
+    "attribution": "Datenschnittstelle der Österreich Werbung"
+  },
+  {
+    "id": "germany",
+    "name": "Open Data Germany",
+    "geo": "Germany",
+    "country": "DE",
+    "status": "connected",
+    "attributionRequired": true,
+    "attribution": "Open Data Germany",
+    "coverage": "Munich and Freiburg only — other German destinations run on public sources"
+  },
+  {
+    "id": "belgium",
+    "name": "Visit Flanders / Wallonie Tourisme",
+    "geo": "Belgium",
+    "country": "BE",
+    "status": "planned",
+    "attributionRequired": true,
+    "attribution": "Visit Flanders / Wallonie Tourisme"
+  },
+  {
+    "id": "spain",
+    "name": "Datos Abiertos Turismo",
+    "geo": "Spain",
+    "country": "ES",
+    "status": "planned",
+    "attributionRequired": true,
+    "attribution": "Datos Abiertos Turismo"
+  },
+  {
+    "id": "suedtirol",
+    "name": "Open Data Hub Südtirol",
+    "geo": "Italy — Süd-Tirol",
+    "country": "IT",
+    "url": "https://tourism.opendatahub.com",
+    "status": "connected",
+    "attributionRequired": true,
+    "attribution": "Open Data Hub Südtirol/Alto Adige (opendatahub.com)"
+  },
+  {
+    "id": "emiliaromagna",
+    "name": "Emilia-Romagna Tourism",
+    "geo": "Italy — Emilia-Romagna",
+    "country": "IT",
+    "status": "connected",
+    "attributionRequired": true,
+    "attribution": "Emilia-Romagna Tourism – Regione Emilia-Romagna (CC-BY 4.0)"
+  },
+  {
+    "id": "quebec",
+    "name": "Données Québec",
+    "geo": "Canada — Québec",
+    "country": "CA",
+    "status": "connected",
+    "attributionRequired": true,
+    "attribution": "Données Québec – Gouvernement du Québec (CC-BY 4.0)"
+  },
+  {
+    "id": "kto",
+    "name": "KTO Tourism",
+    "geo": "South Korea",
+    "country": "KR",
+    "status": "connected",
+    "attributionRequired": true,
+    "attribution": "KTO Tourism from data.go.kr"
+  },
+  {
+    "id": "visitsweden",
+    "name": "Visit Sweden national API",
+    "geo": "Sweden",
+    "country": "SE",
+    "status": "connected",
+    "attributionRequired": true,
+    "attribution": "Visit Sweden national API"
+  },
+  {
+    "id": "visitfinland",
+    "name": "Visit Finland DataHub",
+    "geo": "Finland",
+    "country": "FI",
+    "url": "https://datahub.visitfinland.com",
+    "status": "connected",
+    "attributionRequired": true,
+    "attribution": "Visit Finland – DataHub (business.finland.fi)"
+  }
 ]

@@ -20,6 +20,9 @@ const sources = defineCollection({
     status: z.enum(['connected', 'planned']),
     attributionRequired: z.boolean().default(false),
     attribution: z.string().optional(),
+    /** Where a connector covers only part of a country, say so. Rendered next
+     *  to the geography so "Connected" can never be read as nationwide. */
+    coverage: z.string().optional(),
   }),
 });
 
