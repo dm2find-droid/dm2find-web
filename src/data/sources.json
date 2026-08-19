@@ -16,7 +16,8 @@
     "country": "NL",
     "status": "connected",
     "attributionRequired": true,
-    "attribution": "Touripedia"
+    "attribution": "Touripedia",
+    "coverage": "Province of Groningen only — other Dutch destinations run on public sources"
   },
   {
     "id": "austria",

@@ -1,0 +1,21 @@
+[
+  { "name": "Lightspeed Golf", "vertical": "golf", "mode": "api", "note": "formerly Chronogolf" },
+  { "name": "TeeControl", "vertical": "golf", "mode": "api", "note": null },
+  { "name": "BRS Golf", "vertical": "golf", "mode": "api", "note": "by GolfNow" },
+  { "name": "ClubV1", "vertical": "golf", "mode": "api", "note": "Club Systems International" },
+  { "name": "PC CADDIE", "vertical": "golf", "mode": "api", "note": null },
+  { "name": "TeeOne", "vertical": "golf", "mode": "api", "note": null },
+  { "name": "IntoGolf", "vertical": "golf", "mode": "api", "note": null },
+  { "name": "Golfmanager", "vertical": "golf", "mode": "link", "note": null },
+  { "name": "Nexxchange", "vertical": "golf", "mode": "link", "note": null },
+
+  { "name": "OpenTable", "vertical": "restaurant", "mode": "api", "note": null },
+  { "name": "TheFork", "vertical": "restaurant", "mode": "api", "note": null },
+  { "name": "SevenRooms", "vertical": "restaurant", "mode": "api", "note": null },
+  { "name": "ResDiary", "vertical": "restaurant", "mode": "api", "note": null },
+  { "name": "Zenchef", "vertical": "restaurant", "mode": "api", "note": null },
+  { "name": "CoverManager", "vertical": "restaurant", "mode": "api", "note": null },
+  { "name": "TableCheck", "vertical": "restaurant", "mode": "api", "note": null },
+  { "name": "Formitable", "vertical": "restaurant", "mode": "api", "note": null },
+  { "name": "Guestplan", "vertical": "restaurant", "mode": "api", "note": null }
+]

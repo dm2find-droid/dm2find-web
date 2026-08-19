@@ -1,0 +1,71 @@
+---
+/**
+ * Deliberately a sibling of DestinationCard rather than a variant of it. A venue
+ * has no provenance badge and no channel line; it has an industry and a booking
+ * mode. Forcing one component to serve both would mean a prop for every
+ * difference and a card that reads as neither.
+ */
+const { v } = Astro.props;
+
+const LABEL: Record<string, string> = {
+  golf_resort: 'Golf club',
+  hospitality: 'Restaurant',
+  mixed_property: 'Resort',
+};
+
+const PLATES = [
+  ['#C9A227', '#7A5C1E'], ['#4E7A63', '#22453A'], ['#B4643C', '#6E3320'],
+  ['#5B7C99', '#2C4459'], ['#8A7CA8', '#4A3F63'], ['#A8894B', '#5E4A26'],
+  ['#6E8B5A', '#37502C'], ['#9C5A6B', '#5A2E3A'],
+];
+const hash = [...v.slug].reduce((a: number, c: string) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
+const plate = PLATES[hash % PLATES.length];
+
+const shade = (hex: string, amount: number) => {
+  const n = parseInt(hex.replace('#', '').padEnd(6, '0').slice(0, 6), 16);
+  return '#' + [(n >> 16) & 255, (n >> 8) & 255, n & 255]
+    .map(c => Math.round(c * (1 - amount)).toString(16).padStart(2, '0')).join('');
+};
+const from = v.brandColor ? shade(v.brandColor, 0.14) : plate[0];
+const to   = v.brandColor ? shade(v.brandColor, 0.58) : plate[1];
+---
+<a href={`/venues/${v.slug}`}
+   class="group flex flex-col overflow-hidden rounded-xl border border-(--color-line) bg-white transition hover:-translate-y-0.5 hover:border-(--color-terra)">
+  <div class="relative aspect-video overflow-hidden"
+       style={`background-image:linear-gradient(135deg, ${from}, ${to})`}>
+    {v.logo ? (
+      <span class="absolute inset-0 grid place-items-center p-5">
+        <span class="grid max-h-[76%] w-[62%] place-items-center rounded-xl bg-white/92 p-3 shadow-sm">
+          <img src={v.logo} alt="" loading="lazy" decoding="async" class="max-h-16 w-full object-contain" />
+        </span>
+      </span>
+    ) : (
+      <span class="absolute inset-0 grid place-items-center">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="opacity-30">
+          <path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"
+                stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="12" cy="9" r="2.4" fill="#fff"/>
+        </svg>
+      </span>
+    )}
+  </div>
+  <div class="p-4">
+    <h3 class="font-serif text-lg font-semibold">{v.name}</h3>
+    <p class="mt-0.5 text-sm text-(--color-ink-3)">{[v.city, v.countryName].filter(Boolean).join(' · ')}</p>
+    <div class="mt-2.5 flex flex-wrap gap-1.5">
+      <span class="rounded-full bg-(--color-paper-3) px-2.5 py-0.5 text-[11px] font-semibold text-(--color-ink-2)">
+        {LABEL[v.industry]}
+      </span>
+      {v.booking !== 'none' && (
+        <span class="rounded-full bg-(--color-pine-l) px-2.5 py-0.5 text-[11px] font-semibold text-(--color-pine)">
+          {v.booking === 'panel' ? 'Availability' : 'Booking link'}
+        </span>
+      )}
+      {v.voiceAgentId && (
+        <span class="rounded-full bg-(--color-terra-l) px-2.5 py-0.5 text-[11px] font-semibold text-(--color-terra)">
+          Voice demo
+        </span>
+      )}
+    </div>
+  </div>
+</a>

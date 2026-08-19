@@ -7,6 +7,16 @@ const biz = [
   ['Enhanced','€39','per month · the full record',['Everything in Verified','Photo gallery','Features, suitability, cuisine, diets','Reservation link, menu or brochure']],
   ['Enhanced + Events','€69','per month · venues and organisers',['Everything in Enhanced','Your own events and offers','Descriptions in four languages']],
 ];
+/* Priced by function count: a kitchen is one thing to answer for, a resort with
+   golf, rooms, spa and three restaurants is four. Same logic as the DMO bands. */
+const venue = [
+  ['Single venue','One business — a restaurant, or a course',
+    ['Your branding and your languages','Menus, rules, hours, facilities','Live availability where your system allows']],
+  ['Venue + booking','Most common',
+    ['Everything in Single venue','WhatsApp and voice','Availability across your reservation system']],
+  ['Property','Golf, hotel, spa and restaurants',
+    ['Everything above, per function','Cross-selling inside your own walls','One concierge for the whole estate']],
+];
 const dmo = [
   ['Town','Single municipality',['Up to ~250 records','Branded webchat','Live in 48 hours']],
   ['City','Most common',['Up to ~2,000 records','Enrichment dashboard and veto','30% of enrichment revenue']],
@@ -50,10 +60,68 @@ const dmo = [
           </div>
         ))}
       </div>
+      <div class="mt-6 rounded-2xl border border-(--color-terra) bg-(--color-terra-l) p-6">
+        <div class="flex flex-wrap items-baseline gap-3">
+          <h3 class="font-serif text-xl font-semibold">Bookable</h3>
+          <span class="font-serif text-2xl font-semibold">+€20</span>
+          <span class="text-xs text-(--color-ink-3)">per month · add to any paid tier</span>
+        </div>
+        <p class="mt-3 max-w-[72ch] text-sm text-(--color-ink-2)">
+          Your card gains a live availability lookup — the visitor gives a date and a party size and
+          gets an answer without leaving the conversation. Or, where your system prefers it, a direct
+          button into your own booking page. We read
+          <a href="/platform#booking" class="font-semibold text-(--color-pine) underline">45 tee-sheet and
+          reservation systems</a>, so you keep the software you have.
+        </p>
+        <div class="mt-4 grid gap-3 text-sm text-(--color-ink-2) sm:grid-cols-3">
+          <p><b>Requires Verified.</b> A booking button has to belong to someone, and €12 is where
+            ownership is proven.</p>
+          <p><b>We never take the booking.</b> No payment, no inventory, no commission — you finish it
+            on your own system.</p>
+          <p><b>It buys completeness, not ranking.</b> A bookable venue answers a question the others
+            cannot; it is not placed higher.</p>
+        </div>
+      </div>
+
       <p class="mt-4 text-sm text-(--color-ink-2)">
         Five locations or more: 30% off. Annual: two months free. Card self-serve via Stripe; groups
         and chains are invoiced. <b>Every tier improves how you're described, never whether you're
         recommended.</b>
+      </p>
+    </div>
+  </section>
+
+  <section id="venues" class="border-y border-(--color-line-2) bg-(--color-paper-2) py-12">
+    <div class="mx-auto max-w-6xl px-5">
+      <p class="text-xs font-bold tracking-widest text-(--color-terra) uppercase">Venues</p>
+      <h2 class="h-section mt-2">A concierge of your own, priced by what is inside.</h2>
+      <p class="lede mt-3">
+        A hotel, golf club, restaurant or resort can run its own concierge rather than appear in
+        someone else's. Same product as a destination, on a smaller footprint — so it is priced the
+        same way, by how much there is to answer for.
+      </p>
+      <div class="mt-6 grid overflow-hidden rounded-2xl border border-(--color-line) bg-white sm:grid-cols-3">
+        {venue.map(([t,s2,items], i) => (
+          <div class={`border-b border-(--color-line-2) p-6 sm:border-r sm:border-b-0 ${i===1?'bg-(--color-terra-l)':''} ${i===2?'sm:border-r-0':''}`}>
+            <h3 class="font-serif text-xl font-semibold">{t}</h3>
+            <div class="mt-2 font-serif text-2xl font-semibold">On request</div>
+            <div class="text-xs text-(--color-ink-3)">{s2}</div>
+            <ul class="mt-4 space-y-1.5 text-sm text-(--color-ink-2)">
+              {(items as string[]).map(x => <li class="relative pl-4"><span class="absolute left-0 text-(--color-ink-3)">—</span>{x}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div class="mt-5 flex flex-wrap items-center gap-3">
+        <a href="/venues" class="rounded-full bg-(--color-terra) px-6 py-3 font-semibold text-white">
+          See the venues already running
+        </a>
+        <a href="mailto:sales@dm2find.ai?subject=Venue%20concierge"
+           class="rounded-full border border-(--color-line) px-6 py-3 font-semibold">sales@dm2find.ai</a>
+      </div>
+      <p class="mt-4 max-w-[74ch] text-sm text-(--color-ink-2)">
+        Where a destination near you runs on DM2find, <b>30% of what you pay goes to that destination</b> —
+        the same share it earns on enrichment. Nothing changes about how you are answered.
       </p>
     </div>
   </section>

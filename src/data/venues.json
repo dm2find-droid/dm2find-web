@@ -1,0 +1,773 @@
+[
+  {
+    "slug": "adare-manor",
+    "name": "Adare Manor",
+    "industry": "mixed_property",
+    "country": "IE",
+    "countryName": "Ireland",
+    "city": null,
+    "region": null,
+    "tenantId": "adaremanor",
+    "chatUrl": "https://chat.dm2find.ai/adaremanor",
+    "website": "https://www.adaremanor.com/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/adare-manor.jpg",
+    "brandColor": "#4E3524",
+    "booking": "none",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      52.56424,
+      -8.77789
+    ]
+  },
+  {
+    "slug": "au-coin-des-bons-enfants",
+    "name": "Au Coin des Bons Enfants",
+    "industry": "hospitality",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "aucoin",
+    "chatUrl": "https://chat.dm2find.ai/aucoin",
+    "website": "https://www.aucoin.nl/",
+    "logo": "https://i.imgur.com/i1GrvLim.png",
+    "brandColor": "#000000",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      50.84654,
+      5.68728
+    ]
+  },
+  {
+    "slug": "bernardus-golf",
+    "name": "Bernardus Golf",
+    "industry": "mixed_property",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "bernardus",
+    "chatUrl": "https://chat.dm2find.ai/bernardus",
+    "website": "https://www.bernardusgolf.com",
+    "logo": "https://i.imgur.com/pNSA6M5.png",
+    "brandColor": "#BE9D76",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      51.6654,
+      5.22981
+    ]
+  },
+  {
+    "slug": "domburgsche-golfclub",
+    "name": "Domburgsche Golfclub",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "domburgsche-golfclub",
+    "chatUrl": "https://chat.dm2find.ai/domburgsche-golfclub",
+    "website": "https://www.domburgschegolfclub.nl/",
+    "logo": "https://i.imgur.com/4GrO2Odm.jpg",
+    "brandColor": null,
+    "booking": "none",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_4201kp081js9fbftvjyqfacjezkd",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      51.56165,
+      3.48945
+    ]
+  },
+  {
+    "slug": "druids-glen-hotel-golf",
+    "name": "Druids Glen Hotel & Golf",
+    "industry": "mixed_property",
+    "country": "GB",
+    "countryName": "United Kingdom",
+    "city": null,
+    "region": null,
+    "tenantId": "druidsglen",
+    "chatUrl": "https://chat.dm2find.ai/druidsglen",
+    "website": "https://www.druidsglenresort.com/",
+    "logo": "https://i.imgur.com/PDldm0r.png",
+    "brandColor": "#866779",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      53.0918,
+      -6.0788
+    ]
+  },
+  {
+    "slug": "enoteca-paco-perez",
+    "name": "Enoteca Paco Pérez",
+    "industry": "hospitality",
+    "country": "ES",
+    "countryName": "Spain",
+    "city": null,
+    "region": null,
+    "tenantId": "enoteca",
+    "chatUrl": "https://chat.dm2find.ai/enoteca",
+    "website": "https://enotecapacoperez.com/",
+    "logo": "https://i.imgur.com/qs6uePK.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      41.38719,
+      2.19661
+    ]
+  },
+  {
+    "slug": "fairmont-royal-palm-golf-marrakech",
+    "name": "Fairmont Royal Palm Golf Marrakech",
+    "industry": "mixed_property",
+    "country": "MA",
+    "countryName": "Morocco",
+    "city": null,
+    "region": null,
+    "tenantId": "fairmont-marrakech",
+    "chatUrl": "https://chat.dm2find.ai/fairmont-marrakech",
+    "website": "https://royalpalmgolfmarrakech.com/",
+    "logo": "https://i.imgur.com/fg0DRKB.png",
+    "brandColor": "#4C4C4C",
+    "booking": "none",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      31.523178,
+      -8.057235
+    ]
+  },
+  {
+    "slug": "gleneagles-hotel",
+    "name": "Gleneagles Hotel",
+    "industry": "mixed_property",
+    "country": "GB",
+    "countryName": "United Kingdom",
+    "city": null,
+    "region": null,
+    "tenantId": "gleneagles-hotel",
+    "chatUrl": "https://chat.dm2find.ai/gleneagles-hotel",
+    "website": "https://gleneagles.com/golf/",
+    "logo": "https://i.imgur.com/HNkV2C7.png",
+    "brandColor": "#113931",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_1301kpjw5a4rejfakteyxa3mzz1v",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      56.28431,
+      -3.75225
+    ]
+  },
+  {
+    "slug": "golf-amsteldijk",
+    "name": "Golf Amsteldijk",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "golf-amsteldijk",
+    "chatUrl": "https://chat.dm2find.ai/golf-amsteldijk",
+    "website": "https://www.amsteldijk.nl/",
+    "logo": "https://i.imgur.com/S8qmJ9a.png",
+    "brandColor": null,
+    "booking": "none",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_9101kp8syh20e2dthadqwaktwe38",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      52.3104,
+      4.8692
+    ]
+  },
+  {
+    "slug": "golf-waterland",
+    "name": "Golf Waterland",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "golf-waterland",
+    "chatUrl": "https://chat.dm2find.ai/golf-waterland",
+    "website": "http://www.golfwaterland.nl/",
+    "logo": "https://i.imgur.com/zbUkRXI.png",
+    "brandColor": null,
+    "booking": "none",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      52.40955,
+      4.94223
+    ]
+  },
+  {
+    "slug": "golf-de-preisch",
+    "name": "Golf de Preisch",
+    "industry": "golf_resort",
+    "country": "FR",
+    "countryName": "France",
+    "city": null,
+    "region": null,
+    "tenantId": "preisch",
+    "chatUrl": "https://chat.dm2find.ai/preisch",
+    "website": "https://golf-de-preisch.com/",
+    "logo": "https://i.imgur.com/WU7cA9tm.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      49.50584,
+      6.21793
+    ]
+  },
+  {
+    "slug": "golfbaan-ameland",
+    "name": "Golfbaan Ameland",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "golfbaanameland",
+    "chatUrl": "https://chat.dm2find.ai/golfbaanameland",
+    "website": "https://golfbaanameland.nl/",
+    "logo": "https://app.teecontrol.com/storage/golf_courses/ecb182a2-272b-46a3-8313-4dd65b3c8318/golf_course_setting/2b8674ae-1ffc-4aa1-8ce1-0aae1927a4a3/logo/Gjwes1ZMqnPZU1mB-tAVBlafO0Jx9j5dy-GolfbaanAmeland_fc.png",
+    "brandColor": null,
+    "booking": "none",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_7201kp59gxczfqn98tppj69k1a70",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      53.44877,
+      5.64308
+    ]
+  },
+  {
+    "slug": "golfbaan-bentwoud",
+    "name": "Golfbaan Bentwoud",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "bentwoud",
+    "chatUrl": "https://chat.dm2find.ai/bentwoud",
+    "website": "https://www.golfbaanbentwoud.nl/",
+    "logo": "https://i.imgur.com/CH3eXf8m.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      52.07368,
+      4.57213
+    ]
+  },
+  {
+    "slug": "golfbaan-tespelduyn",
+    "name": "Golfbaan Tespelduyn",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "golfbaantespelduyn",
+    "chatUrl": "https://chat.dm2find.ai/golfbaantespelduyn",
+    "website": "https://golfbaantespelduyn.nl/",
+    "logo": "https://i.imgur.com/gf66MuS.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_9301kp49rgy7f1596v0kszff615w",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      52.28363,
+      4.52566
+    ]
+  },
+  {
+    "slug": "golfclub-almeerderhout",
+    "name": "Golfclub Almeerderhout",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "golfclub-almeerderhout",
+    "chatUrl": "https://chat.dm2find.ai/golfclub-almeerderhout",
+    "website": "https://www.almeerderhout.nl/",
+    "logo": "https://i.imgur.com/RJLmNTPm.png",
+    "brandColor": null,
+    "booking": "none",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_2601kp5rgxgbedvavmas2cbxz4dm",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      52.34748,
+      5.28834
+    ]
+  },
+  {
+    "slug": "golfclub-zeegersloot",
+    "name": "Golfclub Zeegersloot",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "zeegersloot",
+    "chatUrl": "https://chat.dm2find.ai/zeegersloot",
+    "website": "https://zeegersloot.nl/",
+    "logo": "https://i.imgur.com/Gfcrx5T.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_2101kp40szycezar1d7m1a6d66yf",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      52.1293,
+      4.6551
+    ]
+  },
+  {
+    "slug": "golfpark-wilnis",
+    "name": "Golfpark Wilnis",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "wilnis",
+    "chatUrl": "https://chat.dm2find.ai/wilnis",
+    "website": "https://golfparkwilnis.nl/",
+    "logo": "https://i.imgur.com/Z6ohfFq.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_0301kpgr1jznev6rjhkdrn4839sm",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      52.17874,
+      4.88149
+    ]
+  },
+  {
+    "slug": "golfpark-de-biltse-duinen",
+    "name": "Golfpark de Biltse Duinen",
+    "industry": "golf_resort",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "biltseduinen",
+    "chatUrl": "https://chat.dm2find.ai/biltseduinen",
+    "website": "https://www.biltseduinen.nl/",
+    "logo": "https://i.imgur.com/MeKvKZq.png",
+    "brandColor": null,
+    "booking": "none",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_1001kny443frfn68vn57ds5s552f",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      52.1405,
+      5.1839
+    ]
+  },
+  {
+    "slug": "isle-of-skye-golf-club",
+    "name": "Isle of Skye Golf Club",
+    "industry": "golf_resort",
+    "country": "GB",
+    "countryName": "United Kingdom",
+    "city": null,
+    "region": null,
+    "tenantId": "isleofskye",
+    "chatUrl": "https://chat.dm2find.ai/isleofskye",
+    "website": "https://www.isleofskyegolfclub.co.uk/",
+    "logo": "https://i.imgur.com/Rk3BfdB.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_1801kpkj84nmfzasx6s6e9ka944k",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      57.62206,
+      -6.18196
+    ]
+  },
+  {
+    "slug": "patrick-guilbaud",
+    "name": "Patrick Guilbaud",
+    "industry": "hospitality",
+    "country": "IE",
+    "countryName": "Ireland",
+    "city": null,
+    "region": null,
+    "tenantId": "patrickguilbaud",
+    "chatUrl": "https://chat.dm2find.ai/patrickguilbaud",
+    "website": "https://restaurantpatrickguilbaud.ie/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/patrick-guilbaud.jpg",
+    "brandColor": "#D7A466",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      53.33867,
+      -6.25287
+    ]
+  },
+  {
+    "slug": "penhalonga-resort",
+    "name": "Penhalonga Resort",
+    "industry": "mixed_property",
+    "country": "PT",
+    "countryName": "Portugal",
+    "city": null,
+    "region": null,
+    "tenantId": "penhalonga",
+    "chatUrl": "https://chat.dm2find.ai/penhalonga",
+    "website": "https://www.ritzcarlton.com/en/hotels/lisrz-penha-longa-resort/overview/",
+    "logo": "https://i.imgur.com/Fc7mn0zm.png",
+    "brandColor": "#606060",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      38.76169,
+      -9.39699
+    ]
+  },
+  {
+    "slug": "restaurant-alter",
+    "name": "Restaurant Alter",
+    "industry": "hospitality",
+    "country": "BE",
+    "countryName": "Belgium",
+    "city": null,
+    "region": null,
+    "tenantId": "alter",
+    "chatUrl": "https://chat.dm2find.ai/alter",
+    "website": "https://restaurant-alter.be/",
+    "logo": "https://i.imgur.com/A9QUvTH.png",
+    "brandColor": "#000000",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      50.80258,
+      6.46547
+    ]
+  },
+  {
+    "slug": "restaurant-bozar",
+    "name": "Restaurant Bozar",
+    "industry": "hospitality",
+    "country": "BE",
+    "countryName": "Belgium",
+    "city": null,
+    "region": null,
+    "tenantId": "bozar",
+    "chatUrl": "https://chat.dm2find.ai/bozar",
+    "website": "https://bozarrestaurant.be/",
+    "logo": "https://i.imgur.com/HFTgDS9.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      50.84431,
+      4.35994
+    ]
+  },
+  {
+    "slug": "restaurant-ciel-bleu",
+    "name": "Restaurant Ciel Bleu",
+    "industry": "hospitality",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "cielbleu",
+    "chatUrl": "https://chat.dm2find.ai/cielbleu",
+    "website": "https://www.cielbleu.nl/",
+    "logo": "https://i.imgur.com/gbpTH1im.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      52.34914,
+      4.89391
+    ]
+  },
+  {
+    "slug": "restaurant-kei",
+    "name": "Restaurant KEI",
+    "industry": "hospitality",
+    "country": "FR",
+    "countryName": "France",
+    "city": null,
+    "region": null,
+    "tenantId": "kei",
+    "chatUrl": "https://chat.dm2find.ai/kei",
+    "website": "https://restaurant-kei.fr/",
+    "logo": "https://i.imgur.com/ZaMz2i0.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      48.86459,
+      2.34206
+    ]
+  },
+  {
+    "slug": "restaurant-the-oak-room",
+    "name": "Restaurant The Oak Room",
+    "industry": "hospitality",
+    "country": "IE",
+    "countryName": "Ireland",
+    "city": null,
+    "region": null,
+    "tenantId": "oakroom",
+    "chatUrl": "https://chat.dm2find.ai/oakroom",
+    "website": "https://www.adaremanor.com/dining/the-oak-room/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/adare-manor.jpg",
+    "brandColor": "#4E3524",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      52.56394,
+      -8.77803
+    ]
+  },
+  {
+    "slug": "restaurant-vinkeles",
+    "name": "Restaurant Vinkeles",
+    "industry": "hospitality",
+    "country": "NL",
+    "countryName": "Netherlands",
+    "city": null,
+    "region": null,
+    "tenantId": "vinkeles",
+    "chatUrl": "https://chat.dm2find.ai/vinkeles",
+    "website": "https://www.vinkeles.com/",
+    "logo": "https://i.imgur.com/h3kqL90m.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      52.36951,
+      4.88392
+    ]
+  },
+  {
+    "slug": "restaurante-coque",
+    "name": "Restaurante Coque",
+    "industry": "hospitality",
+    "country": "ES",
+    "countryName": "Spain",
+    "city": null,
+    "region": null,
+    "tenantId": "coque",
+    "chatUrl": "https://chat.dm2find.ai/coque",
+    "website": "https://www.restaurantecoque.com/",
+    "logo": "https://i.imgur.com/bNpmF2n.png",
+    "brandColor": null,
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      40.43089,
+      -3.69052
+    ]
+  },
+  {
+    "slug": "terre-blanche",
+    "name": "Terre Blanche",
+    "industry": "mixed_property",
+    "country": "FR",
+    "countryName": "France",
+    "city": null,
+    "region": null,
+    "tenantId": "fr-terre-blanche",
+    "chatUrl": "https://chat.dm2find.ai/fr-terre-blanche",
+    "website": "http://www.terre-blanche.com",
+    "logo": "https://i.imgur.com/4ElozuN.png",
+    "brandColor": "#626F66",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": "agent_5501kpnnd92ffpx9efmx76b6tjcr",
+    "channels": [
+      "webchat",
+      "voice"
+    ],
+    "coords": [
+      43.5908710600578,
+      6.73200524726458
+    ]
+  },
+  {
+    "slug": "the-els-club-copperleaf",
+    "name": "The Els Club - Copperleaf",
+    "industry": "mixed_property",
+    "country": "SA",
+    "countryName": "South Africa",
+    "city": null,
+    "region": null,
+    "tenantId": "copperleaf-golf",
+    "chatUrl": "https://chat.dm2find.ai/copperleaf-golf",
+    "website": "https://copper-leaf.co.za/",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/copperleaf.png",
+    "brandColor": "#FF8504",
+    "booking": "none",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ]
+  },
+  {
+    "slug": "the-els-club-dubai",
+    "name": "The Els Club, Dubai",
+    "industry": "golf_resort",
+    "country": "AE",
+    "countryName": "United Arab Emirates",
+    "city": null,
+    "region": null,
+    "tenantId": "els",
+    "chatUrl": "https://chat.dm2find.ai/els",
+    "website": "https://www.elsclubdubai.com/",
+    "logo": "https://i.imgur.com/wjsTrjqm.png",
+    "brandColor": "#AE6219",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ],
+    "coords": [
+      25.0297503,
+      55.1780526
+    ]
+  },
+  {
+    "slug": "the-marmalade-pantry",
+    "name": "The Marmalade Pantry",
+    "industry": "hospitality",
+    "country": "SG",
+    "countryName": "Singapore",
+    "city": null,
+    "region": null,
+    "tenantId": "marmaladepantry",
+    "chatUrl": "https://chat.dm2find.ai/marmaladepantry",
+    "website": "https://www.themarmaladepantry.com.sg/",
+    "logo": "https://i.imgur.com/x1hZmMQm.png",
+    "brandColor": "#D5A2AD",
+    "booking": "panel",
+    "bookingUrl": null,
+    "voiceAgentId": null,
+    "channels": [
+      "webchat"
+    ]
+  }
+]

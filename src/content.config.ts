@@ -26,6 +26,44 @@ const sources = defineCollection({
   }),
 });
 
+/**
+ * Venues are tenants that are not destinations: a golf club, a restaurant, a
+ * resort. Same build-time discipline as destinations — a bad slug or a booking
+ * mode that names no URL fails the build.
+ */
+const venues = defineCollection({
+  loader: file('src/data/venues.json', { parser: (t) => JSON.parse(t) }),
+  schema: z.object({
+    slug: z.string().regex(/^[a-z0-9-]+$/, 'slug must be lowercase, digits and hyphens only'),
+    name: z.string(),
+    /** Drives the catalogue filter and the price band. */
+    industry: z.enum(['golf_resort', 'hospitality', 'mixed_property']),
+    country: z.string(),
+    countryName: z.string(),
+    city: z.string().nullable().default(null),
+    region: z.string().nullable().default(null),
+    tenantId: z.string(),
+    chatUrl: z.string().url(),
+    website: z.string().url().nullable().default(null),
+    logo: z.string().url().nullable().default(null),
+    brandColor: z.string().regex(/^#[0-9a-fA-F]{3,8}$/).nullable().default(null),
+    /** How the visitor can act on the card.
+     *  link  = the venue's own booking page, which outranks the panel
+     *          (same precedence fallback_booking_url has in the venues table)
+     *  panel = live availability lookup, read-only — we never take the booking
+     *  none  = website and phone only */
+    booking: z.enum(['link', 'panel', 'none']).default('none'),
+    bookingUrl: z.string().url().nullable().default(null),
+    voiceAgentId: z.string().regex(/^agent_[A-Za-z0-9]+$/).nullable().default(null),
+    channels: z.array(z.string()).default(['webchat']),
+    coords: z.tuple([z.number(), z.number()]).optional(),
+  })
+  .refine((v) => v.booking !== 'link' || !!v.bookingUrl, {
+    message: 'booking "link" needs a bookingUrl',
+    path: ['bookingUrl'],
+  }),
+});
+
 const destinations = defineCollection({
   loader: file('src/data/destinations.json', { parser: (t) => JSON.parse(t) }),
   schema: z.object({
@@ -87,4 +125,4 @@ const destinations = defineCollection({
   }),
 });
 
-export const collections = { destinations, sources };
+export const collections = { destinations, sources, venues };
