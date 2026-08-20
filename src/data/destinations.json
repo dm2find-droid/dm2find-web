@@ -22,7 +22,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.zinindenbosch.nl/nl",
+    "website": null,
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zinindenbosch.jpg",
     "brandColor": "#D36112",
     "touristPass": {
@@ -74,7 +74,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/achterhoek.jpg",
     "brandColor": "#90BA1A",
     "calendarUrl": "https://achterhoek.nl/Evenementen",
-    "website": "https://achterhoek.nl/"
+    "website": null
   },
   {
     "slug": "adana",
@@ -398,10 +398,10 @@
       38.3453,
       -0.4831
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/alicanteturismo.jpg",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-alicante.jpg",
     "brandColor": "#002E6D",
-    "calendarUrl": "https://alicanteturismo.com/en/agenda/",
-    "website": "https://alicanteturismo.com/en/"
+    "calendarUrl": "https://alicanteturismo.com/en/festivities/",
+    "website": null
   },
   {
     "slug": "alkmaar",
@@ -437,7 +437,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitalkmaar.jpg",
     "brandColor": "#E6343E",
     "calendarUrl": "https://www.visitalkmaar.com/en/events",
-    "website": "https://www.inalkmaar.nl/en-gb"
+    "website": null
   },
   {
     "slug": "allier",
@@ -508,7 +508,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitalmere.jpg",
     "brandColor": "#899477",
     "calendarUrl": "https://www.visitalmere.com/en/calendar/overview",
-    "website": "https://www.visitalmere.com/en"
+    "website": null
   },
   {
     "slug": "almeria",
@@ -541,10 +541,10 @@
       36.8403,
       -2.4681
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/efectoalmeria.jpg",
+    "logo": "https://i.imgur.com/3iPXJXX.png",
     "brandColor": "#FF7BAC",
     "calendarUrl": "https://www.turismodealmeria.org/eventos-y-ocio/",
-    "website": "https://www.turismodealmeria.org/en/"
+    "website": null
   },
   {
     "slug": "alpes-de-haute-provence",
@@ -615,7 +615,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitamersfoort.jpg",
     "brandColor": "#EA0029",
     "calendarUrl": "https://www.tijdvooramersfoort.nl/en/events",
-    "website": "https://www.tijdvooramersfoort.nl/en"
+    "website": null
   },
   {
     "slug": "amiens",
@@ -690,7 +690,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitamstelveen.jpg",
     "brandColor": "#9D704B",
     "calendarUrl": "https://www.visitamstelveen.nl/en/whats-on-guide-amstelveen",
-    "website": "https://www.visitamstelveen.nl/en"
+    "website": null
   },
   {
     "slug": "amsterdam",
@@ -715,7 +715,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.iamsterdam.com/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -767,7 +767,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/andorraworld.jpg",
     "brandColor": "#E55817",
     "calendarUrl": "https://visitandorra.com/en/events/",
-    "website": "https://visitandorra.com/en/"
+    "website": null
   },
   {
     "slug": "angers",
@@ -879,43 +879,6 @@
     "website": "https://en.lac-annecy.com/"
   },
   {
-    "slug": "antibes",
-    "name": {
-      "en": "Antibes Juan-les-Pins"
-    },
-    "country": "FR",
-    "countryName": "France",
-    "region": null,
-    "tenantId": "antibesjuanlespins",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/antibesjuanlespins",
-    "provenance": "official",
-    "dataSource": "datatourisme",
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://www.antibesjuanlespins.com/en",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/antibes.jpg",
-    "brandColor": "#24A4E4",
-    "touristPass": null,
-    "calendarUrl": "https://www.antibesjuanlespins.com/en/must-see-must-do/going-out/diary-all-the-events",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      43.568764,
-      7.11577
-    ]
-  },
-  {
     "slug": "antwerp",
     "name": {
       "en": "Antwerp"
@@ -937,7 +900,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://visit.antwerpen.be/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -988,7 +951,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/apeldoorn.jpg",
     "brandColor": "#216725",
     "calendarUrl": "https://uit.inapeldoorn.nl/english/",
-    "website": "https://uit.inapeldoorn.nl/en/home/"
+    "website": null
   },
   {
     "slug": "ardennes",
@@ -1199,7 +1162,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/regioarnhem.png",
     "brandColor": "#ED7501",
     "calendarUrl": "https://www.visitarnhem.com/evenementen",
-    "website": "https://en.regioarnhem.com/"
+    "website": null
   },
   {
     "slug": "arras",
@@ -1270,7 +1233,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/ditisassen.jpg",
     "brandColor": "#00584B",
     "calendarUrl": "https://www.ditisassen.nl/agenda/agenda-overzicht",
-    "website": "https://www.ditisassen.nl/en"
+    "website": null
   },
   {
     "slug": "aube",
@@ -1579,7 +1542,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://thisisbarcelona.com/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1588,9 +1551,9 @@
       41.3825,
       2.1769
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/thisisbarcelona.jpg",
+    "logo": "https://i.imgur.com/SPx4Qf6.png",
     "brandColor": "#C8102E",
-    "calendarUrl": "https://thisisbarcelona.com/agenda",
+    "calendarUrl": "https://www.barcelonaturisme.com/wv3/en/page/39/agenda.html",
     "touristPass": {
       "name": "Barcelona card",
       "url": "https://bcnshop.barcelonaturisme.com/shopv3/en/product/1/barcelona-card.html"
@@ -1741,7 +1704,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-beijing.jpg",
     "brandColor": "#C62828",
     "calendarUrl": "https://english.visitbeijing.com.cn/events",
-    "website": "https://r.visitbeijing.com.cn/",
+    "website": null,
     "touristPass": {
       "name": "Beijing Pass",
       "url": "https://english.beijing.gov.cn/specials/beijingservice/pek/trafficone/"
@@ -1817,7 +1780,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-benidorm.jpg",
     "brandColor": "#FF5000",
     "calendarUrl": "https://en.visitbenidorm.es/ver/116/benidorm-official-agenda.html",
-    "website": "https://en.visitbenidorm.es/"
+    "website": null
   },
   {
     "slug": "berlin",
@@ -1842,7 +1805,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visitberlin.de/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1858,7 +1821,7 @@
         "channel": "webchat"
       }
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitberlin.jpg",
+    "logo": "https://i.imgur.com/2C2b3KX.png",
     "brandColor": "#000000",
     "calendarUrl": "https://www.visitberlin.de/en/event-calendar-berlin",
     "touristPass": {
@@ -1937,10 +1900,10 @@
       43.2569,
       -2.9236
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/bilbaotourism.jpg",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-bilbao.jpg",
     "brandColor": "#6E6E6E",
     "calendarUrl": "https://www.bilbao.eus/cs/Satellite?cid=3000094681&language=en&pagename=Bilbaonet%2FPage%2FBIO_ListadoAgenda",
-    "website": "https://www.bilbaoturismo.net/BilbaoTurismo/en/tourists",
+    "website": null,
     "touristPass": {
       "name": "Bilbao Bizkaia Card",
       "url": "https://www.bilbaoturismo.net/BilbaoTurismo/en/transport-cards/bilbao-card_2"
@@ -2018,7 +1981,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-bobbio.jpg",
     "brandColor": "#B72222",
     "calendarUrl": null,
-    "website": "https://www.visitbobbio.com/"
+    "website": null
   },
   {
     "slug": "bologna",
@@ -2053,7 +2016,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-bologna.jpg",
     "brandColor": "#920C25",
     "calendarUrl": "https://www.bolognawelcome.com/en/events",
-    "website": "https://www.bolognawelcome.com/en",
+    "website": null,
     "touristPass": {
       "name": "Bologna Welcome Card",
       "url": "https://www.bolognawelcome.com/en/information/bologna-welcome-card-eng"
@@ -2168,10 +2131,10 @@
       42.3188,
       -71.0846
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/meetboston.jpg",
+    "logo": "https://i.imgur.com/GpdJJAZ.png",
     "brandColor": "#205BC6",
     "calendarUrl": "https://www.meetboston.com/events/",
-    "website": "https://www.meetboston.com/"
+    "website": null
   },
   {
     "slug": "bouches-du-rhone",
@@ -2312,7 +2275,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/breda.jpg",
     "brandColor": "#FF0033",
     "calendarUrl": "https://www.explorebreda.com/nl/evenementen",
-    "website": "https://www.explorebreda.com/en"
+    "website": null
   },
   {
     "slug": "brest",
@@ -2384,7 +2347,7 @@
       51.2089,
       3.2242
     ],
-    "website": "https://www.visitbruges.be/en",
+    "website": null,
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitbrugge.jpg",
     "brandColor": "#D62528",
     "touristPass": {
@@ -2431,7 +2394,7 @@
       50.8353,
       4.3314
     ],
-    "website": "https://www.visit.brussels/en/",
+    "website": null,
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitbrussels.jpg",
     "brandColor": "#F2C300",
     "touristPass": {
@@ -2469,7 +2432,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.burgenland.info/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -2480,7 +2443,7 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-burgenland.jpg",
     "brandColor": "#347AAD",
-    "calendarUrl": "https://www.burgenland.info/en/experience/events"
+    "calendarUrl": null
   },
   {
     "slug": "busan",
@@ -3194,7 +3157,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitchisinau.png",
     "brandColor": "#F7CC00",
     "calendarUrl": "https://visit.chisinau.md/en/calendar-2026/",
-    "website": "https://visit.chisinau.md/en/"
+    "website": null
   },
   {
     "slug": "chalons-en-champagne",
@@ -3363,7 +3326,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.cologne-tourism.com/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -3384,7 +3347,7 @@
         "channel": "WhatsApp"
       }
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitcologne.jpg",
+    "logo": "https://i.imgur.com/oTMedZo.png",
     "brandColor": "#E5005B",
     "calendarUrl": "https://www.cologne-tourism.com/experiences-lifestyle/events/calendar-of-events",
     "touristPass": {
@@ -3528,10 +3491,10 @@
       36.535,
       -6.2975
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/cadiz.jpg",
+    "logo": "https://i.imgur.com/xnucrP7.png",
     "brandColor": "#F5A623",
     "calendarUrl": "https://www.cadizturismo.com/en/todos-los-eventos",
-    "website": "https://www.cadizturismo.com/en/"
+    "website": null
   },
   {
     "slug": "cordoba",
@@ -3564,10 +3527,10 @@
       37.8845,
       -4.7796
     ],
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/cordoba.jpg",
+    "logo": "https://i.imgur.com/CZhAKsT.png",
     "brandColor": "#0C65B2",
     "calendarUrl": "https://www.turismodecordoba.org/schedule",
-    "website": "https://www.turismodecordoba.org/#"
+    "website": null
   },
   {
     "slug": "cote-d-or",
@@ -3781,7 +3744,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/indelft.jpg",
     "brandColor": "#002F7E",
     "calendarUrl": "https://www.indelft.nl/en/uitagenda",
-    "website": "https://www.indelft.nl/en",
+    "website": null,
     "touristPass": {
       "name": "Delftpas",
       "url": "https://www.delft.nl/delftpas"
@@ -3855,9 +3818,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/deuxsevrestourisme.jpg",
-    "brandColor": "#3799D3",
-    "website": "https://www.tourisme-deux-sevres.com/",
-    "calendarUrl": "https://www.tourisme-deux-sevres.com/planifiez-votre-sejour/agenda/"
+    "brandColor": "#3799D3"
   },
   {
     "slug": "digne-les-bains",
@@ -3890,9 +3851,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dignes-les-bains.jpg",
-    "brandColor": "#036574",
-    "website": "https://www.dignelesbains-tourisme.com/en/",
-    "calendarUrl": "https://www.dignelesbains-tourisme.com/agendas/tout-lagenda/"
+    "brandColor": "#036574"
   },
   {
     "slug": "dijon",
@@ -3925,13 +3884,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dijon-tourisme.jpg",
-    "brandColor": "#D6075C",
-    "website": "https://en.destinationdijon.com/",
-    "calendarUrl": "https://en.destinationdijon.com/practical-information/going-out/the-full-events-calendar/",
-    "touristPass": {
-      "name": "Dijon City Pass",
-      "url": "https://en.destinationdijon.com/destination/dijon-city-pass/"
-    }
+    "brandColor": "#D6075C"
   },
   {
     "slug": "dinant",
@@ -3963,7 +3916,7 @@
       50.2564,
       4.9136
     ],
-    "website": "https://www.citadellededinant.be/en",
+    "website": null,
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dinant.jpg",
     "brandColor": "#00355A",
     "touristPass": null,
@@ -4000,9 +3953,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dordogne-tourisme.jpg",
-    "brandColor": "#c2ab57",
-    "website": "https://www.dordogne-perigord-tourisme.fr/",
-    "calendarUrl": "https://www.dordogne-perigord-tourisme.fr/preparer-son-sejour/agenda-des-animations/agenda-toutes-animations/"
+    "brandColor": "#c2ab57"
   },
   {
     "slug": "dordrecht",
@@ -4072,9 +4023,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/doubs-tourisme.png",
-    "brandColor": "#2FAC66",
-    "website": "https://www.doubs.travel/",
-    "calendarUrl": "https://www.doubs.travel/sejourner/agenda/"
+    "brandColor": "#2FAC66"
   },
   {
     "slug": "dresden",
@@ -4099,7 +4048,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visit-dresden-elbland.de/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -4116,12 +4065,7 @@
       }
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitdresden.jpg",
-    "brandColor": "#FFEA00",
-    "calendarUrl": "https://www.dresden.de/en/tourism/attractions/events.php",
-    "touristPass": {
-      "name": "Dresden City Card",
-      "url": "https://www.dresden.de/de/tourismus/dresden-welcome-cards.php"
-    }
+    "brandColor": "#FFEA00"
   },
   {
     "slug": "drome",
@@ -4154,9 +4098,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/drome-tourisme.jpg",
-    "brandColor": "#82AD19",
-    "website": "https://www.drome-tourism.com/",
-    "calendarUrl": "https://www.drome-tourism.com/preparing-your-trip/diary/"
+    "brandColor": "#82AD19"
   },
   {
     "slug": "dubrovnik",
@@ -4226,8 +4168,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/ispiritofdunkerque.jpg",
-    "brandColor": "#AC1A26",
-    "website": "https://www.dunkirk-tourism.com/"
+    "brandColor": "#AC1A26"
   },
   {
     "slug": "dusseldorf",
@@ -4290,7 +4231,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visitgroningen.nl/nl/plekken/eemsdelta",
+    "website": null,
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/eemsdelta.jpg",
     "brandColor": "#004680",
     "touristPass": null,
@@ -4409,9 +4350,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/essonne-tourisme.jpg",
-    "brandColor": "#00988B",
-    "website": "https://www.essonnetourisme.com/en/tourism-in-essonne-3/",
-    "calendarUrl": "https://www.essonnetourisme.com/en/events-in-essonne/"
+    "brandColor": "#00988B"
   },
   {
     "slug": "eure-et-loir",
@@ -4444,8 +4383,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/eureetloire-tourisme.jpg",
-    "brandColor": "#66B7BF",
-    "website": "https://www.tourisme28.com/en/"
+    "brandColor": "#66B7BF"
   },
   {
     "slug": "falaise",
@@ -4478,9 +4416,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/falaise-tourisme.jpg",
-    "brandColor": "#C51718",
-    "website": "https://www.falaise-suissenormande.com/",
-    "calendarUrl": "https://www.falaise-suissenormande.com/en/accueil/agenda/"
+    "brandColor": "#C51718"
   },
   {
     "slug": "faro",
@@ -4547,9 +4483,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/inferrara.jpg",
-    "brandColor": "#A91A2D",
-    "website": "https://www.inferrara.it/en/homepage",
-    "calendarUrl": "https://www.inferrara.it/en/c/23/eventi"
+    "brandColor": "#A91A2D"
   },
   {
     "slug": "figueres",
@@ -4619,9 +4553,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/finistere.png",
-    "brandColor": "#00B3E7",
-    "website": "https://www.toutcommenceenfinistere.com/en/home/",
-    "calendarUrl": "https://www.toutcommenceenfinistere.com/en/events/"
+    "brandColor": "#00B3E7"
   },
   {
     "slug": "florence",
@@ -4654,13 +4586,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationflorence.jpg",
-    "brandColor": "#F9D597",
-    "website": "https://www.feelflorence.it/en",
-    "calendarUrl": "https://www.feelflorence.it/en/events",
-    "touristPass": {
-      "name": "Firenze Card",
-      "url": "https://www.firenzecard.it/en"
-    }
+    "brandColor": "#F9D597"
   },
   {
     "slug": "foix",
@@ -4693,9 +4619,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/foix-tourisme.jpg",
-    "brandColor": "#BA6645",
-    "website": "https://www.foix-tourisme.com/en/",
-    "calendarUrl": "https://www.foix-tourisme.com/en/agenda/fetes-animations/"
+    "brandColor": "#BA6645"
   },
   {
     "slug": "forli-cesena",
@@ -4728,8 +4652,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/cesenaturismo.jpg",
-    "brandColor": "#AF0917",
-    "website": "https://sititematici.comune.cesena.fc.it/cesenaturismo"
+    "brandColor": "#AF0917"
   },
   {
     "slug": "frankfurt",
@@ -4763,12 +4686,7 @@
       8.68077
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/frankfurt.jpg",
-    "brandColor": "#DB0B0B",
-    "calendarUrl": "https://www.visitfrankfurt.travel/en/experience/calendar-of-events",
-    "touristPass": {
-      "name": "Frankfurt Card",
-      "url": "https://www.visitfrankfurt.travel/en/booking/frankfurt-card#/"
-    }
+    "brandColor": "#DB0B0B"
   },
   {
     "slug": "freiburg",
@@ -4781,8 +4699,8 @@
     "tenantId": "freiburg",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/freiburg",
-    "provenance": "official",
-    "dataSource": "germany",
+    "provenance": "preview",
+    "dataSource": null,
     "status": "live",
     "channels": [
       "webchat"
@@ -4792,7 +4710,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://visit.freiburg.de/en",
+    "website": "https://visit.freiburg.de/",
     "dmo": {
       "name": null,
       "claimed": false
@@ -4802,8 +4720,7 @@
       7.84918
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/freiburg-tourism.jpg",
-    "brandColor": "#E0202C",
-    "calendarUrl": "https://visit.freiburg.de/events/veranstaltungskalender#/"
+    "brandColor": "#E0202C"
   },
   {
     "slug": "gap",
@@ -4836,9 +4753,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/terresdegap-tourisme.jpg",
-    "brandColor": "#224740",
-    "website": "https://www.terresdegap.fr/en/",
-    "calendarUrl": "https://www.terresdegap.fr/en/events/diary/"
+    "brandColor": "#224740"
   },
   {
     "slug": "gard",
@@ -4871,49 +4786,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gard-tourisme.jpg",
-    "brandColor": "#252525",
-    "website": "https://www.tourismegard.com/",
-    "calendarUrl": "https://www.tourismegard.com/agenda/"
-  },
-  {
-    "slug": "geneva",
-    "name": {
-      "en": "Geneva"
-    },
-    "country": "CH",
-    "countryName": "Switzerland",
-    "region": "Genève",
-    "tenantId": "geneva",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/geneva",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/HRpxLER.png",
-    "brandColor": "#F6F6F6",
-    "touristPass": {
-      "name": "Geneva City Pass",
-      "url": "https://www.geneve.com/en/see-do/city-tours-day-trips/geneva-city-pass#/"
-    },
-    "calendarUrl": "https://www.geneve.com/en/events-calendar",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      46.2,
-      6.15
-    ]
+    "brandColor": "#252525"
   },
   {
     "slug": "gers",
@@ -4946,9 +4819,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gers-tourisme.jpg",
-    "brandColor": "#FF99C3",
-    "website": "https://www.tourisme-gers.com/en/organiser/que-visiter/",
-    "calendarUrl": "https://www.tourisme-gers.com/en/agenda/"
+    "brandColor": "#FF99C3"
   },
   {
     "slug": "ghent",
@@ -4973,7 +4844,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://visit.gent.be/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -4995,46 +4866,6 @@
         "label": "Ghent - WhatsApp",
         "channel": "WhatsApp"
       }
-    ]
-  },
-  {
-    "slug": "gijon",
-    "name": {
-      "en": "Gijón"
-    },
-    "country": "ES",
-    "countryName": "Spain",
-    "region": "Asturias",
-    "tenantId": "gijon",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/gijon",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://www.gijon.es/en/turismo",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gijon.jpg",
-    "brandColor": "#E60000",
-    "touristPass": {
-      "name": "Gijón Card",
-      "url": "https://www.gijon.es/es/turismo/visit-gijon-card"
-    },
-    "calendarUrl": null,
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      43.5333,
-      -5.7
     ]
   },
   {
@@ -5061,7 +4892,7 @@
     "sampleQuestions": {},
     "dtFeed": false,
     "website": null,
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/girona.png",
+    "logo": "https://i.imgur.com/sqqm021.png",
     "brandColor": "#A31A1A",
     "touristPass": null,
     "calendarUrl": "https://www.girona.cat/turisme/eng/activitats.php",
@@ -5106,9 +4937,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gironde-tourisme.jpg",
-    "brandColor": "#1C1C1C",
-    "website": "https://www.gironde-tourisme.com/en/",
-    "calendarUrl": "https://www.gironde-tourisme.com/en/practice-MBA/Schedule/all-lagenda/"
+    "brandColor": "#1C1C1C"
   },
   {
     "slug": "gooi-en-vecht",
@@ -5178,9 +5007,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/gothenburg-tourisme.png",
-    "brandColor": "#006FA3",
-    "website": "https://www.goteborg.com/en",
-    "calendarUrl": "https://www.goteborg.com/en/events"
+    "brandColor": "#006FA3"
   },
   {
     "slug": "gouda",
@@ -5242,7 +5069,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://turismo.granada.org/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5253,12 +5080,7 @@
     ],
     "voiceAgentId": "agent_5501knk55mm6e6g9th5btydmvq2q",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/turismogranada.png",
-    "brandColor": "#6A1B9A",
-    "calendarUrl": "https://turismo.granada.org/en/cultural-program",
-    "touristPass": {
-      "name": "Granada City Pass",
-      "url": "https://turismo.granada.org/en/node/3241"
-    }
+    "brandColor": "#6A1B9A"
   },
   {
     "slug": "grenoble",
@@ -5291,12 +5113,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/grenoble-tourisme.jpg",
-    "brandColor": "#FF4713",
-    "website": "https://www.grenoble-tourisme.com/en/",
-    "touristPass": {
-      "name": "G-Pass",
-      "url": "https://www.grenoblepass.com/"
-    }
+    "brandColor": "#FF4713"
   },
   {
     "slug": "groningen",
@@ -5320,7 +5137,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visitgroningen.nl/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5337,12 +5154,7 @@
       }
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitgroningen.jpg",
-    "brandColor": "#029D59",
-    "calendarUrl": "https://www.visitgroningen.nl/en/things-to-do/culture",
-    "touristPass": {
-      "name": "Stadjerspas",
-      "url": "https://stadjerspas.gemeente.groningen.nl/"
-    }
+    "brandColor": "#029D59"
   },
   {
     "slug": "gyeongju",
@@ -5375,9 +5187,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gyeongju.jpg",
-    "brandColor": "#4FC99A",
-    "website": "https://visitgyeongju.or.kr/",
-    "calendarUrl": "https://visitgyeongju.or.kr/highlights/event"
+    "brandColor": "#4FC99A"
   },
   {
     "slug": "haarlem",
@@ -5417,43 +5227,6 @@
     ]
   },
   {
-    "slug": "haguenau",
-    "name": {
-      "en": "Haguenau"
-    },
-    "country": "FR",
-    "countryName": "France",
-    "region": "Bas-Rhin",
-    "tenantId": "haguenau",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/haguenau",
-    "provenance": "official",
-    "dataSource": "datatourisme",
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://www.visithaguenau.alsace/en/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visithaguenau.jpg",
-    "brandColor": "#1C803C",
-    "touristPass": null,
-    "calendarUrl": "https://www.visithaguenau.alsace/en/calendar-of-events",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      48.814971,
-      7.789361
-    ]
-  },
-  {
     "slug": "hamburg",
     "name": {
       "en": "Hamburg"
@@ -5476,7 +5249,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.hamburg-travel.com/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5494,12 +5267,7 @@
     ],
     "voiceAgentId": "agent_2901kne8pp8cfjbba93k5mtvs1p9",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hamburg.jpg",
-    "brandColor": "#E10019",
-    "calendarUrl": "https://www.hamburg-travel.com/see-explore/events/events-calendar/",
-    "touristPass": {
-      "name": "Hamburg Card",
-      "url": "https://www.hamburg-travel.com/booking/hamburg-card/"
-    }
+    "brandColor": "#E10019"
   },
   {
     "slug": "hannover",
@@ -5523,7 +5291,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visit-hannover.com/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5533,8 +5301,7 @@
       9.7386
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hannover.jpg",
-    "brandColor": "#008FD4",
-    "calendarUrl": "https://www.hannover.de/Veranstaltungskalender"
+    "brandColor": "#008FD4"
   },
   {
     "slug": "harderwijk",
@@ -5643,9 +5410,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/colmartourisme.jpg",
-    "brandColor": "#9e0026",
-    "website": "https://tourisme-colmar.com/en/",
-    "calendarUrl": "https://tourisme-colmar.com/en/whats-on/events/event-agenda"
+    "brandColor": "#9e0026"
   },
   {
     "slug": "haute-corse",
@@ -5678,9 +5443,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/corsica-tourism.png",
-    "brandColor": "#5B99B5",
-    "website": "https://www.visit-corsica.com/en",
-    "calendarUrl": "https://www.visit-corsica.com/en/Plan-my-holiday/Events-calendar"
+    "brandColor": "#5B99B5"
   },
   {
     "slug": "haute-garonne",
@@ -5713,9 +5476,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hautegaronne-tourisme.jpg",
-    "brandColor": "#000000",
-    "website": "https://www.hautegaronnetourism.com/",
-    "calendarUrl": "https://www.hautegaronnetourism.com/moving-going-out/go-out-have-fun/all-the-agenda/"
+    "brandColor": "#000000"
   },
   {
     "slug": "haute-loire",
@@ -5748,9 +5509,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hauteloire-tourisme.jpg",
-    "brandColor": "#EA4F3D",
-    "website": "https://www.myhauteloire.fr/en/",
-    "calendarUrl": "https://www.myhauteloire.fr/en/calendar/Haute-Loire-diary/"
+    "brandColor": "#EA4F3D"
   },
   {
     "slug": "haute-marne",
@@ -5783,9 +5542,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hautemarne-tourisme.jpg",
-    "brandColor": "#DC1965",
-    "website": "https://www.bienvenue-hautemarne.fr/",
-    "calendarUrl": "https://www.bienvenue-hautemarne.fr/agenda-et-grands-evenements/tout-lagenda/"
+    "brandColor": "#DC1965"
   },
   {
     "slug": "haute-savoie",
@@ -5818,8 +5575,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/haute-savoie-tourisme.jpg",
-    "brandColor": "#E30A18",
-    "website": "https://hautesavoiemontblanc-tourisme.com/en/"
+    "brandColor": "#E30A18"
   },
   {
     "slug": "haute-saone",
@@ -5852,8 +5608,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/destination70.png",
-    "brandColor": "#769C59",
-    "website": "https://en.hautesaonetourisme.com/"
+    "brandColor": "#769C59"
   },
   {
     "slug": "hautes-alpes",
@@ -5886,8 +5641,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hautes-alpes-tourism.jpg",
-    "brandColor": "#999999",
-    "website": "https://www.hautes-alpes.net/en/"
+    "brandColor": "#999999"
   },
   {
     "slug": "hauts-de-seine",
@@ -5944,7 +5698,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.heidelberg-marketing.de/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5954,12 +5708,7 @@
       8.71
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/heidelberg.jpg",
-    "brandColor": "#A50050",
-    "calendarUrl": "https://www.heidelberg-marketing.de/en/discover/events",
-    "touristPass": {
-      "name": "HeidelbergCARD",
-      "url": "https://www.heidelberg-marketing.de/en/planning-booking/tickets-tours/heidelbergcard#/"
-    }
+    "brandColor": "#A50050"
   },
   {
     "slug": "helsinki",
@@ -5992,9 +5741,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visit-helsinki.jpg",
-    "brandColor": "#FD4F00",
-    "website": "https://www.myhelsinki.fi/",
-    "calendarUrl": "https://www.myhelsinki.fi/helsinki-event-calendar/"
+    "brandColor": "#FD4F00"
   },
   {
     "slug": "hilversum",
@@ -6063,8 +5810,7 @@
       0.23456
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/honfleur.jpg",
-    "brandColor": "#073D49",
-    "calendarUrl": "https://www.ot-honfleur.fr/en/events/Schedule/"
+    "brandColor": "#073D49"
   },
   {
     "slug": "hong-kong",
@@ -6089,7 +5835,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.discoverhongkong.com/eng/index.html",
+    "website": null,
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/discoverhongkong.jpg",
     "brandColor": "#ED1C24",
     "touristPass": {
@@ -6145,43 +5891,6 @@
     ]
   },
   {
-    "slug": "huelva",
-    "name": {
-      "en": "Huelva"
-    },
-    "country": "ES",
-    "countryName": "Spain",
-    "region": "Andalusia",
-    "tenantId": "huelva",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/huelva",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://turismo.huelva.es/en/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/huelva.jpg",
-    "brandColor": "#094172",
-    "touristPass": null,
-    "calendarUrl": "https://turismo.huelva.es/en/agenda/",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      37.25,
-      -6.95
-    ]
-  },
-  {
     "slug": "herault",
     "name": {
       "en": "Hérault"
@@ -6212,9 +5921,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/herault-tourisme.jpg",
-    "brandColor": "#AE0F65",
-    "website": "https://www.herault-tourisme.com/en/",
-    "calendarUrl": "https://www.herault-tourisme.com/fr/agenda/"
+    "brandColor": "#AE0F65"
   },
   {
     "slug": "ijmuiden",
@@ -6284,46 +5991,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/illeetvilainetourisme.jpg",
-    "brandColor": "#185050",
-    "website": "https://www.ille-et-vilaine-tourisme.bzh/",
-    "calendarUrl": "https://www.ille-et-vilaine-tourisme.bzh/agenda/tous-les-evenements/"
-  },
-  {
-    "slug": "imereti",
-    "name": {
-      "en": "Imereti"
-    },
-    "country": "GE",
-    "countryName": "Georgia",
-    "region": null,
-    "tenantId": "imereti",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/imereti",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/RfNCuKg.png",
-    "brandColor": "#0A6FA3",
-    "touristPass": null,
-    "calendarUrl": "https://imereti.gov.ge/eng/static/159/regions/TOURISM",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      42.271323,
-      42.703787
-    ]
+    "brandColor": "#185050"
   },
   {
     "slug": "incheon",
@@ -6356,8 +6024,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/incheon.jpg",
-    "brandColor": "#1F4D95",
-    "website": "https://www.ito.or.kr/foreign/english/main/sub/fivetour.jsp"
+    "brandColor": "#1F4D95"
   },
   {
     "slug": "innsbruck",
@@ -6382,7 +6049,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.innsbruck.info/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6393,12 +6060,7 @@
     ],
     "voiceAgentId": "agent_5801knpydsg3evwbvx18fg5f76z1",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/innsbruckregion.jpg",
-    "brandColor": "#ED1C24",
-    "calendarUrl": "https://www.innsbruck.info/en/customs-and-events/events-calendar.html",
-    "touristPass": {
-      "name": "Innsbruck Card",
-      "url": "https://www.innsbruck.info/en/sightseeing/innsbruck-card.html"
-    }
+    "brandColor": "#ED1C24"
   },
   {
     "slug": "istanbul",
@@ -6423,8 +6085,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://visit.istanbul/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitistanbul.jpg",
+    "website": null,
+    "logo": "https://i.imgur.com/qp1CgEb.png",
     "brandColor": "#E30A17",
     "touristPass": {
       "name": "Istanbul Card",
@@ -6472,9 +6134,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/alpesishere.jpg",
-    "brandColor": "#161616",
-    "website": "https://www.alpes-isere.com/en/",
-    "calendarUrl": "https://www.alpes-isere.com/en/presentation-of-isere/activities/events/"
+    "brandColor": "#161616"
   },
   {
     "slug": "izmir",
@@ -6517,43 +6177,6 @@
     ]
   },
   {
-    "slug": "jaen",
-    "name": {
-      "en": "Jaén"
-    },
-    "country": "ES",
-    "countryName": "Spain",
-    "region": "Andalusia",
-    "tenantId": "jaen",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/jaen",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://visitarprovinciajaen.com/en",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/jaen.jpg",
-    "brandColor": "#37AE66",
-    "touristPass": null,
-    "calendarUrl": "https://visitarprovinciajaen.com/agenda",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      37.7667,
-      -3.7711
-    ]
-  },
-  {
     "slug": "jeju",
     "name": {
       "en": "Jeju"
@@ -6584,9 +6207,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitjeju.png",
-    "brandColor": "#b34f00",
-    "website": "https://www.visitjeju.net/en/",
-    "calendarUrl": "https://www.visitjeju.net/en/festival/list"
+    "brandColor": "#b34f00"
   },
   {
     "slug": "jeonju",
@@ -6619,45 +6240,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/jeonju-tourisme.jpg",
-    "brandColor": "#7401B8",
-    "website": "https://tour.jeonju.go.kr/eng/index.jeonju"
-  },
-  {
-    "slug": "jerez-de-la-frontera",
-    "name": {
-      "en": "Jerez de la Frontera"
-    },
-    "country": "ES",
-    "countryName": "Spain",
-    "region": "Andalusia",
-    "tenantId": "jerez",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/jerez",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://www.turismojerez.com/en/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/turismojerez.jpg",
-    "brandColor": "#0097B2",
-    "touristPass": null,
-    "calendarUrl": "https://www.turismojerez.com/en/festivities-and-events",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      36.6817,
-      -6.1378
-    ]
+    "brandColor": "#7401B8"
   },
   {
     "slug": "jura",
@@ -6690,9 +6273,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/juratourism.jpg",
-    "brandColor": "#592C86",
-    "website": "https://www.jura-tourism.com/",
-    "calendarUrl": "https://www.jura-tourism.com/en-ce-moment/tout-lagenda-du-jura/"
+    "brandColor": "#592C86"
   },
   {
     "slug": "karlsruhe",
@@ -6716,7 +6297,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.karlsruhe-erleben.de/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6733,8 +6314,7 @@
       }
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/karslruhe.png",
-    "brandColor": "#0093A3",
-    "calendarUrl": "https://www.karlsruhe-erleben.de/en/veranstaltungen/kalender#/event"
+    "brandColor": "#0093A3"
   },
   {
     "slug": "kaysersberg",
@@ -6795,7 +6375,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://kiel-sailing-city.de/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6805,8 +6385,7 @@
       10.1394
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/kielsailingcity.jpg",
-    "brandColor": "#8ACEF0",
-    "calendarUrl": "https://kiel-sailing-city.de/en/events/calendar"
+    "brandColor": "#8ACEF0"
   },
   {
     "slug": "kortrijk",
@@ -6845,43 +6424,6 @@
     "calendarUrl": "https://www.visitkortrijk.be/en/calendar"
   },
   {
-    "slug": "krakow",
-    "name": {
-      "en": "Krakow"
-    },
-    "country": "PL",
-    "countryName": "Poland",
-    "region": null,
-    "tenantId": "krakow",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/krakow",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/WqI6Cok.png",
-    "brandColor": "#30B2C4",
-    "touristPass": null,
-    "calendarUrl": "https://krakow.travel/en/wydarzenia",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      50.0647,
-      19.945
-    ]
-  },
-  {
     "slug": "kyoto",
     "name": {
       "en": "Kyoto"
@@ -6904,8 +6446,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://kyoto.travel/en/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitkyoto.jpg",
+    "website": null,
+    "logo": "https://i.imgur.com/sw0CoMv.png",
     "brandColor": "#D5C390",
     "touristPass": null,
     "calendarUrl": "https://kyoto.travel/en/events",
@@ -6941,7 +6483,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visitcarinthia.at/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6984,9 +6526,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/larochelle.jpg",
-    "brandColor": "#005C5D",
-    "website": "https://www.nous-larochelle.fr/en",
-    "calendarUrl": "https://www.nous-larochelle.fr/en/practical/events-calendar"
+    "brandColor": "#005C5D"
   },
   {
     "slug": "landes",
@@ -7019,9 +6559,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/landes-tourisme.png",
-    "brandColor": "#67BABA",
-    "website": "https://www.tourismelandes.com/",
-    "calendarUrl": "https://www.tourismelandes.com/preparer-mon-sejour/agenda/agenda-landes/"
+    "brandColor": "#67BABA"
   },
   {
     "slug": "laon",
@@ -7054,9 +6592,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/laon-tourisme.jpg",
-    "brandColor": "#008F98",
-    "website": "https://www.tourisme-paysdelaon.com/",
-    "calendarUrl": "https://www.tourisme-paysdelaon.com/decouvrir/agenda/"
+    "brandColor": "#008F98"
   },
   {
     "slug": "laurentides",
@@ -7089,9 +6625,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismelaurentides.jpg",
-    "brandColor": "#2F6F9F",
-    "website": "https://www.laurentides.com/en",
-    "calendarUrl": "https://www.laurentides.com/en/events"
+    "brandColor": "#2F6F9F"
   },
   {
     "slug": "laval-ca",
@@ -7124,9 +6658,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismelaval.jpg",
-    "brandColor": "#00A0A0",
-    "website": "https://www.tourismelaval.com/en",
-    "calendarUrl": "https://www.tourismelaval.com/en/explore-offer/events/"
+    "brandColor": "#00A0A0"
   },
   {
     "slug": "laval",
@@ -7159,9 +6691,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/laval-tourisme.jpg",
-    "brandColor": "#EEAB90",
-    "website": "https://www.laval-tourisme.com/",
-    "calendarUrl": "https://www.laval-tourisme.com/sortez-vibrez/agenda/"
+    "brandColor": "#EEAB90"
   },
   {
     "slug": "le-mans",
@@ -7194,9 +6724,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lemanstourisme.jpg",
-    "brandColor": "#FFDF11",
-    "website": "https://www.lemans-tourisme.com/en/",
-    "calendarUrl": "https://www.lemans-tourisme.com/en/agenda"
+    "brandColor": "#FFDF11"
   },
   {
     "slug": "le-puy-en-velay",
@@ -7230,45 +6758,7 @@
       3.885
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lepuyenvelay-tourisme.jpg",
-    "brandColor": "#121244",
-    "calendarUrl": "https://en.lepuyenvelay-tourisme.fr/agenda/"
-  },
-  {
-    "slug": "leeuwarden",
-    "name": {
-      "en": "Leeuwarden"
-    },
-    "country": "NL",
-    "countryName": "Netherlands",
-    "region": "Fryslân",
-    "tenantId": "leeuwarden",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/leeuwarden",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/iw3tkMJ.png",
-    "brandColor": "#3A372D",
-    "touristPass": null,
-    "calendarUrl": "https://www.visitleeuwarden.com/en/agenda",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      53.2,
-      5.7833
-    ]
+    "brandColor": "#121244"
   },
   {
     "slug": "leiden",
@@ -7329,7 +6819,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.leipzig.travel/en/discover",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -7339,49 +6829,7 @@
       12.3833
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/leipzigregion.png",
-    "brandColor": "#F9DB9D",
-    "calendarUrl": "https://www.leipzig.travel/entdecken/veranstaltungen-in-leipzig/All/layout:card/sort:chronological/type:Event/latitude:51.33932/longitude:12.37647/radius:200/radiusSearchInputMode:InputString/radiusSearchInputModeValue:04109/limit:24/",
-    "touristPass": {
-      "name": "Leipzig Card",
-      "url": "https://english.leipzig.de/leisure-culture-and-tourism/tourism/leipzig-card"
-    }
-  },
-  {
-    "slug": "lelystad",
-    "name": {
-      "en": "Lelystad"
-    },
-    "country": "NL",
-    "countryName": "Netherlands",
-    "region": "Flevoland",
-    "tenantId": "lelystad",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/lelystad",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/FYxxhLq.png",
-    "brandColor": "#0A034E",
-    "touristPass": null,
-    "calendarUrl": "https://www.visitlelystad.nl/nl/activiteiten",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      52.5167,
-      5.4833
-    ]
+    "brandColor": "#F9DB9D"
   },
   {
     "slug": "leuven",
@@ -7423,43 +6871,6 @@
     "calendarUrl": "https://www.visitleuven.be/en/agenda"
   },
   {
-    "slug": "liechtenstein",
-    "name": {
-      "en": "Liechtenstein"
-    },
-    "country": "LI",
-    "countryName": "Liechtenstein",
-    "region": "Liechtenstein",
-    "tenantId": "liechtenstein",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/liechtenstein",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/zmXkPMl.png",
-    "brandColor": "#147DFF",
-    "touristPass": null,
-    "calendarUrl": "https://en.tourismus.li/entdecken/ganzjaehrig/veranstaltungen.html",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      47.1418,
-      9.51858
-    ]
-  },
-  {
     "slug": "lille",
     "name": {
       "en": "Lille"
@@ -7491,49 +6902,7 @@
       3.0583
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hellolille.jpg",
-    "brandColor": "#E5231B",
-    "calendarUrl": "https://en.lilletourism.com/explore/hello-culture/agenda/",
-    "touristPass": {
-      "name": "City Pass Lille",
-      "url": "https://booking.lilletourism.com/city-pass.html"
-    }
-  },
-  {
-    "slug": "limburg",
-    "name": {
-      "en": "Limburg"
-    },
-    "country": "NL",
-    "countryName": "Netherlands",
-    "region": "Limburg",
-    "tenantId": "nl-limburg",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/nl-limburg",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": null,
-    "brandColor": null,
-    "touristPass": null,
-    "calendarUrl": null,
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      50.8514,
-      5.691
-    ]
+    "brandColor": "#E5231B"
   },
   {
     "slug": "limoges",
@@ -7567,8 +6936,7 @@
       1.2611
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/limoges-tourisme.jpg",
-    "brandColor": "#253072",
-    "calendarUrl": "https://www.destination-limoges.com/en/tout-l-agenda/"
+    "brandColor": "#253072"
   },
   {
     "slug": "liege",
@@ -7607,46 +6975,6 @@
     "calendarUrl": "https://www.visitezliege.be/en/catalogue/evenement"
   },
   {
-    "slug": "ljubljana",
-    "name": {
-      "en": "Ljubljana"
-    },
-    "country": "SI",
-    "countryName": "Slovenia",
-    "region": null,
-    "tenantId": "ljubljana",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/ljubljana",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/RPyCFGQ.png",
-    "brandColor": "#EC1C24",
-    "touristPass": {
-      "name": "Ljubljana Card",
-      "url": "https://www.visitljubljana.com/en/visitors/sights-and-activities/ljubljana-card/"
-    },
-    "calendarUrl": "https://www.visitljubljana.com/en/visitors/events/",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      46.05295,
-      14.50751
-    ]
-  },
-  {
     "slug": "loir-et-cher",
     "name": {
       "en": "Loir-et-Cher"
@@ -7678,8 +7006,7 @@
       1.335
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/loiretcher-tourisme.png",
-    "brandColor": "#F09900",
-    "calendarUrl": "https://www.val-de-loire-41.com/agenda/"
+    "brandColor": "#F09900"
   },
   {
     "slug": "loire-atlantique",
@@ -7713,8 +7040,7 @@
       -1.5528
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/atlanticloire-tourisme.png",
-    "brandColor": "#000FA0",
-    "calendarUrl": "https://www.atlantic-loire-valley.com/festivals-and-events"
+    "brandColor": "#000FA0"
   },
   {
     "slug": "loiret",
@@ -7748,8 +7074,7 @@
       1.909
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismeloiret.jpg",
-    "brandColor": "#088391",
-    "calendarUrl": "https://www.tourismeloiret.com/fr/agenda/tout-lagenda"
+    "brandColor": "#088391"
   },
   {
     "slug": "lons-le-saunier",
@@ -7783,8 +7108,7 @@
       5.554
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lonslesaunier-tourisme.jpg",
-    "brandColor": "#1C77C3",
-    "calendarUrl": "https://www.lons-jura.fr/se-divertir/agenda-manifestations/"
+    "brandColor": "#1C77C3"
   },
   {
     "slug": "los-angeles",
@@ -7855,8 +7179,7 @@
       1.4404
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lot-tourisme.jpg",
-    "brandColor": "#EF7F64",
-    "calendarUrl": "https://www.tourisme-lot.com/agenda/"
+    "brandColor": "#EF7F64"
   },
   {
     "slug": "lot-et-garonne",
@@ -7890,8 +7213,7 @@
       0.159822
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismelotetgaronne.jpg",
-    "brandColor": "#65B32E",
-    "calendarUrl": "https://www.tourisme-lotetgaronne.com/sortir/agenda/?type=tous"
+    "brandColor": "#65B32E"
   },
   {
     "slug": "lozere",
@@ -7926,46 +7248,6 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lozeretourisme.jpg",
     "brandColor": "#736645"
-  },
-  {
-    "slug": "lucerne",
-    "name": {
-      "en": "Lucerne"
-    },
-    "country": "CH",
-    "countryName": "Switzerland",
-    "region": "Luzern",
-    "tenantId": "lucerne",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/lucerne",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/R6IKIwR.png",
-    "brandColor": "#E73337",
-    "touristPass": {
-      "name": "Visitor Card Lucerne",
-      "url": "https://www.luzern.com/en/information/useful-information/visitor-card-lucerne"
-    },
-    "calendarUrl": "https://www.luzern.com/en/the-city/events/event-calendar",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      47.0523,
-      8.3059
-    ]
   },
   {
     "slug": "luxembourg-city",
@@ -8006,46 +7288,6 @@
     ]
   },
   {
-    "slug": "lviv",
-    "name": {
-      "en": "Lviv"
-    },
-    "country": "UA",
-    "countryName": "Ukraine",
-    "region": null,
-    "tenantId": "lviv",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/lviv",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://lviv.travel/en",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lvivtravel.jpg",
-    "brandColor": "#FF7D0C",
-    "touristPass": {
-      "name": "Lviv City Card",
-      "url": "https://lviv.travel/en/city-card"
-    },
-    "calendarUrl": "https://lviv.travel/en/events",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      49.84347,
-      24.02764
-    ]
-  },
-  {
     "slug": "lyon",
     "name": {
       "en": "Lyon"
@@ -8077,12 +7319,7 @@
       4.84
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/onlylyon.jpg",
-    "brandColor": "#b5b230",
-    "calendarUrl": "https://en.visiterlyon.com/out-and-about/what-s-on/all-events",
-    "touristPass": {
-      "name": "Lyon City Card",
-      "url": "https://shop.visiterlyon.com/lyon-city-card"
-    }
+    "brandColor": "#b5b230"
   },
   {
     "slug": "maastricht",
@@ -8106,7 +7343,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visitmaastricht.com/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8123,8 +7360,7 @@
       }
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitmaastricht.jpg",
-    "brandColor": "#E11E32",
-    "calendarUrl": "https://www.visitmaastricht.com/en/agenda"
+    "brandColor": "#E11E32"
   },
   {
     "slug": "madrid",
@@ -8148,7 +7384,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visitmadrid.es/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8158,12 +7394,7 @@
       -3.7167
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitmadrid.jpg",
-    "brandColor": "#DE0029",
-    "calendarUrl": "https://www.visitmadrid.es/en/madrid-events-calendar-discover-whats-on",
-    "touristPass": {
-      "name": "Madrid City Card",
-      "url": "https://www.esmadrid.com/en/madrid-city-card"
-    }
+    "brandColor": "#DE0029"
   },
   {
     "slug": "manche",
@@ -8197,45 +7428,7 @@
       -1.091
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/attitude-manche.png",
-    "brandColor": "#489792",
-    "calendarUrl": "https://www.attitude-manche.fr/visiter-que-faire/"
-  },
-  {
-    "slug": "mannheim",
-    "name": {
-      "en": "Mannheim"
-    },
-    "country": "DE",
-    "countryName": "Germany",
-    "region": "Baden-Württemberg",
-    "tenantId": "mannheim",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/mannheim",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://www.visit-mannheim.de/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/mannheim.png",
-    "brandColor": "#D12E2C",
-    "touristPass": null,
-    "calendarUrl": "https://www.visit-mannheim.de/Media/veranstaltungen-in-mannheim#/event",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      49.4878,
-      8.4661
-    ]
+    "brandColor": "#489792"
   },
   {
     "slug": "marne",
@@ -8272,43 +7465,6 @@
     "brandColor": "#6AAFAF"
   },
   {
-    "slug": "marrakech",
-    "name": {
-      "en": "Marrakech"
-    },
-    "country": "MA",
-    "countryName": "Morocco",
-    "region": null,
-    "tenantId": "marrakech",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/marrakech",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://visitmarrakech.com/en/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitmarrakech.png",
-    "brandColor": "#191919",
-    "touristPass": null,
-    "calendarUrl": "https://visitmarrakech.com/en/events/",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      31.634017,
-      -8.008123
-    ]
-  },
-  {
     "slug": "marseille",
     "name": {
       "en": "Marseille"
@@ -8340,12 +7496,7 @@
       5.37
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/choosemarseille.jpg",
-    "brandColor": "#036BAF",
-    "calendarUrl": "https://www.marseille-tourisme.com/en/blog-marseille/events-in-marseille/",
-    "touristPass": {
-      "name": "Marseille CityPass",
-      "url": "https://www.marseille-tourisme.com/en/experience/citypass-marseille/"
-    }
+    "brandColor": "#036BAF"
   },
   {
     "slug": "mayenne",
@@ -8379,8 +7530,7 @@
       -0.77
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationmayenne.jpg",
-    "brandColor": "#00708A",
-    "calendarUrl": "https://www.destination-mayenne.com/en/things-to-see-and-do/full-agenda/"
+    "brandColor": "#00708A"
   },
   {
     "slug": "mechelen",
@@ -8517,8 +7667,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/merano-tourism.png",
-    "brandColor": "#66E0A1",
-    "website": "https://www.merano-suedtirol.it/en/merano-and-environs.html"
+    "brandColor": "#66E0A1"
   },
   {
     "slug": "metz",
@@ -8552,12 +7701,7 @@
       6.175699
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/metz-avatar.png",
-    "brandColor": "#94C242",
-    "calendarUrl": "https://www.tourisme-metz.com/en/things-to-see-things-to-do/calendar",
-    "touristPass": {
-      "name": "Metz City Pass",
-      "url": "https://www.tourisme-metz.com/en/planning-your-trip/metz-citypass"
-    }
+    "brandColor": "#94C242"
   },
   {
     "slug": "meurthe-et-moselle",
@@ -8591,8 +7735,7 @@
       6.183198
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/meurthemoselle-tourisme.jpg",
-    "brandColor": "#F7A801",
-    "calendarUrl": "https://www.tourisme-meurtheetmoselle.fr/en/accueil/agenda/"
+    "brandColor": "#F7A801"
   },
   {
     "slug": "meuse",
@@ -8626,45 +7769,7 @@
       5.162
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lameuse.jpg",
-    "brandColor": "#E8580C",
-    "calendarUrl": "https://www.lameuse.fr/je-visite/agenda-des-sorties"
-  },
-  {
-    "slug": "middelburg",
-    "name": {
-      "en": "Middelburg"
-    },
-    "country": "NL",
-    "countryName": "Netherlands",
-    "region": "Zeeland",
-    "tenantId": "middelburg",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/middelburg",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/83uDRoW.png",
-    "brandColor": "#E11F21",
-    "touristPass": null,
-    "calendarUrl": "https://www.uitinmiddelburg.nl/en/agenda",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      51.4997,
-      3.6136
-    ]
+    "brandColor": "#E8580C"
   },
   {
     "slug": "milan",
@@ -8697,13 +7802,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/yesmilano.png",
-    "brandColor": "#FFC036",
-    "website": "https://www.yesmilano.it/en",
-    "calendarUrl": "https://www.yesmilano.it/en/whats-on/all-events",
-    "touristPass": {
-      "name": "YesMilano CityPass",
-      "url": "https://citypass.yesmilano.it/en"
-    }
+    "brandColor": "#FFC036"
   },
   {
     "slug": "modena",
@@ -8736,9 +7835,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitmodena.jpg",
-    "brandColor": "#AA2129",
-    "website": "https://www.visitmodena.it/en",
-    "calendarUrl": "https://www.visitmodena.it/en/events"
+    "brandColor": "#AA2129"
   },
   {
     "slug": "monaco",
@@ -8810,8 +7907,7 @@
       -0.499
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montdemarsan-tourisme.png",
-    "brandColor": "#38A9E0",
-    "calendarUrl": "https://en.montdemarsan-tourisme.com/prepare-my-stay/agenda/"
+    "brandColor": "#38A9E0"
   },
   {
     "slug": "montauban",
@@ -8845,8 +7941,7 @@
       1.355
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montauban-tourisme.jpg",
-    "brandColor": "#4E9FBF",
-    "calendarUrl": "https://www.montauban-tourisme.com/sejourner/agenda/"
+    "brandColor": "#4E9FBF"
   },
   {
     "slug": "montpellier",
@@ -8880,8 +7975,7 @@
       3.8767
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montpellier-tourisme.png",
-    "brandColor": "#AB2D6E",
-    "calendarUrl": "https://www.montpellier-france.com/whats-on/"
+    "brandColor": "#AB2D6E"
   },
   {
     "slug": "montreal",
@@ -8914,9 +8008,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montreal-tourisme.png",
-    "brandColor": "#E1140A",
-    "website": "https://www.mtl.org/en",
-    "calendarUrl": "https://www.mtl.org/en/what-to-do/festivals-and-events"
+    "brandColor": "#E1140A"
   },
   {
     "slug": "monteregie",
@@ -8949,9 +8041,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourisme-monteregie.jpg",
-    "brandColor": "#4C8C2B",
-    "website": "https://www.tourisme-monteregie.qc.ca/en",
-    "calendarUrl": "https://www.tourisme-monteregie.qc.ca/en/member/category/things-to-do/events/festivals-and-events/"
+    "brandColor": "#4C8C2B"
   },
   {
     "slug": "morbihan",
@@ -9019,8 +8109,7 @@
       6.175699
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/moselle-tourisme.jpg",
-    "brandColor": "#F8D82E",
-    "calendarUrl": "https://www.mosl.fr/en/discover-moselle/destination/calendar-of-events"
+    "brandColor": "#F8D82E"
   },
   {
     "slug": "moulins",
@@ -9054,8 +8143,7 @@
       3.33318
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/moulins-tourisme.jpg",
-    "brandColor": "#4E7282",
-    "calendarUrl": "https://www.moulins-tourisme.com/en/agenda/"
+    "brandColor": "#4E7282"
   },
   {
     "slug": "mulhouse",
@@ -9089,8 +8177,7 @@
       7.339136
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-mulhouse.jpg",
-    "brandColor": "#F24F55",
-    "calendarUrl": "https://www.tourisme-mulhouse.com/en/what-to-do-in-mulhouse/events-in-mulhouse/all-the-events/"
+    "brandColor": "#F24F55"
   },
   {
     "slug": "munich",
@@ -9103,8 +8190,8 @@
     "tenantId": "munich",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/munich",
-    "provenance": "official",
-    "dataSource": "germany",
+    "provenance": "preview",
+    "dataSource": null,
     "status": "live",
     "channels": [
       "webchat",
@@ -9115,8 +8202,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.munich.travel/en",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/simplymunich.png",
+    "website": null,
+    "logo": "https://i.imgur.com/Vd088Nv.png",
     "brandColor": "#B0913B",
     "touristPass": {
       "name": "Munich City Pass",
@@ -9155,8 +8242,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://visita.malaga.eu/en/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/malaga.jpg",
+    "website": null,
+    "logo": "https://i.imgur.com/MH12EZP.png",
     "brandColor": "#2670CA",
     "touristPass": {
       "name": "Malaga Pass",
@@ -9204,8 +8291,7 @@
       4.831685
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/macontourisme.jpg",
-    "brandColor": "#416E75",
-    "calendarUrl": "https://www.macon-tourisme.com/en/agenda/tout-lagenda/"
+    "brandColor": "#416E75"
   },
   {
     "slug": "medoc-atlantique",
@@ -9318,12 +8404,7 @@
     ],
     "voiceAgentId": "agent_0401knvgg4a9e3qrtmjjtazq91x6",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationnancy.png",
-    "brandColor": "#E10D2F",
-    "calendarUrl": "https://www.destination-nancy.com/en/tourisme/quoi-faire-a-nancy/agenda-et-grands-evenements/",
-    "touristPass": {
-      "name": "Nancy City Pass",
-      "url": "https://visites.nancy-tourisme.fr/en/city-pass-numerique/city-pass/city-pass-24h-dematerialise"
-    }
+    "brandColor": "#E10D2F"
   },
   {
     "slug": "nantes",
@@ -9357,12 +8438,7 @@
       -1.5528
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nantes.jpg",
-    "brandColor": "#8CEDD3",
-    "calendarUrl": "https://www.levoyageanantes.fr/en/agenda/",
-    "touristPass": {
-      "name": "Pass Nantes",
-      "url": "https://www.levoyageanantes.fr/en/to-do/nantes-city-pass/"
-    }
+    "brandColor": "#8CEDD3"
   },
   {
     "slug": "nevers",
@@ -9396,8 +8472,7 @@
       3.159
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nevers-tourisme.jpg",
-    "brandColor": "#E14D8A",
-    "calendarUrl": "https://www.nevers-tourisme.com/agenda/"
+    "brandColor": "#E14D8A"
   },
   {
     "slug": "new-york-city",
@@ -9422,8 +8497,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.nyctourism.com/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nyc-tourism.jpg",
+    "website": null,
+    "logo": "https://i.imgur.com/ACpeV9B.png",
     "brandColor": "#003087",
     "touristPass": {
       "name": "Various commercial offerings",
@@ -9473,86 +8548,7 @@
     ],
     "voiceAgentId": null,
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nicecotedazur.jpg",
-    "brandColor": "#00847A",
-    "calendarUrl": "https://www.explorenicecotedazur.com/en/prepare-your-holidays/major-events/events-nice/",
-    "touristPass": {
-      "name": "French Riviera Pass",
-      "url": "https://www.frenchrivierapass.com/en/"
-    }
-  },
-  {
-    "slug": "niederosterreich",
-    "name": {
-      "en": "Niederösterreich"
-    },
-    "country": "AT",
-    "countryName": "Austria",
-    "region": "Niederösterreich",
-    "tenantId": "niederoesterreich",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/niederoesterreich",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dm2find-logo.png",
-    "brandColor": null,
-    "touristPass": null,
-    "calendarUrl": null,
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      48.2047,
-      15.6256
-    ]
-  },
-  {
-    "slug": "nijmegen",
-    "name": {
-      "en": "Nijmegen"
-    },
-    "country": "NL",
-    "countryName": "Netherlands",
-    "region": "Gelderland",
-    "tenantId": "nijmegen",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/nijmegen",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/MVFnj2t.png",
-    "brandColor": "#00865C",
-    "touristPass": null,
-    "calendarUrl": "https://www.intonijmegen.com/agenda/agenda-overzicht",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      51.8475,
-      5.8625
-    ]
+    "brandColor": "#00847A"
   },
   {
     "slug": "niort",
@@ -9586,8 +8582,7 @@
       -0.454418
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/niort-tourisme.png",
-    "brandColor": "#00A19A",
-    "calendarUrl": "https://www.niortmaraispoitevin.com/en/agenda-et-evenements/"
+    "brandColor": "#00A19A"
   },
   {
     "slug": "nievre",
@@ -9621,45 +8616,7 @@
       3.159
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lanievre.jpg",
-    "brandColor": "#84B2AD",
-    "calendarUrl": "https://www.lanievrenaturellement.com/sejourner/agenda/"
-  },
-  {
-    "slug": "noordwijk",
-    "name": {
-      "en": "Noordwijk"
-    },
-    "country": "NL",
-    "countryName": "Netherlands",
-    "region": "Zuid-Holland",
-    "tenantId": "noordwijk",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/noordwijk",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/EE6aWNY.png",
-    "brandColor": "#819898",
-    "touristPass": null,
-    "calendarUrl": "https://www.noordwijk.info/en/discover-noordwijk/events",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      52.2333,
-      4.4333
-    ]
+    "brandColor": "#84B2AD"
   },
   {
     "slug": "nord",
@@ -9693,48 +8650,7 @@
       3.0583
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourisme-nord.jpg",
-    "brandColor": "#139FC6",
-    "calendarUrl": "https://evasion.lenord.fr/sortir/tout-lagenda/"
-  },
-  {
-    "slug": "nuremberg",
-    "name": {
-      "en": "Nuremberg"
-    },
-    "country": "DE",
-    "countryName": "Germany",
-    "region": "Bavaria",
-    "tenantId": "nuremberg",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/nuremberg",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://tourismus.nuernberg.de/en/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nuremberg.png",
-    "brandColor": "#00BCE4",
-    "touristPass": {
-      "name": "Nürnberg Card",
-      "url": "https://tourismus.nuernberg.de/en/booking/nuernberg-card-city-card/#/"
-    },
-    "calendarUrl": "https://www.nuernberg.de/internet/stadtportal/nbg_komfortsuche.html",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      49.4539,
-      11.0775
-    ]
+    "brandColor": "#139FC6"
   },
   {
     "slug": "nimes",
@@ -9768,49 +8684,7 @@
       4.3601
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nimes-tourisme.jpg",
-    "brandColor": "#1A2740",
-    "calendarUrl": "https://nimes-tourisme.com/en/profiter/agenda/",
-    "touristPass": {
-      "name": "Nîmes City Pass",
-      "url": "https://nimescitypass.com/lang/en"
-    }
-  },
-  {
-    "slug": "oberosterreich",
-    "name": {
-      "en": "Oberösterreich"
-    },
-    "country": "AT",
-    "countryName": "Austria",
-    "region": "Oberösterreich",
-    "tenantId": "oberoesterreich",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/oberoesterreich",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dm2find-logo.png",
-    "brandColor": null,
-    "touristPass": null,
-    "calendarUrl": null,
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      48.3069,
-      14.2858
-    ]
+    "brandColor": "#1A2740"
   },
   {
     "slug": "orleans",
@@ -9845,46 +8719,6 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationorleans.jpg",
     "brandColor": "#76B860"
-  },
-  {
-    "slug": "osaka",
-    "name": {
-      "en": "Osaka"
-    },
-    "country": "JP",
-    "countryName": "Japan",
-    "region": "Ōsaka",
-    "tenantId": "osaka",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/osaka",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://osaka-info.jp/en/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/discoverosaka.jpg",
-    "brandColor": "#F17210",
-    "touristPass": {
-      "name": "Osaka Amazing Pass",
-      "url": "https://osaka-amazing-pass.com/en/"
-    },
-    "calendarUrl": "en.osaka-info.jp/event/",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      34.752,
-      135.4582
-    ]
   },
   {
     "slug": "ostend",
@@ -9960,49 +8794,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismeoutaouais.png",
-    "brandColor": "#0B6E4F",
-    "website": "https://tourismeoutaouais.com/en/",
-    "calendarUrl": "https://tourismeoutaouais.com/quoi-faire/festivals-et-evenements"
-  },
-  {
-    "slug": "oviedo",
-    "name": {
-      "en": "Oviedo"
-    },
-    "country": "ES",
-    "countryName": "Spain",
-    "region": "Asturias",
-    "tenantId": "oviedo",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/oviedo",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://www.visitoviedo.info/en-GB/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/turismooviedo.jpg",
-    "brandColor": "#00314F",
-    "touristPass": {
-      "name": "CONECTA Asturias Card",
-      "url": "https://en.asturias.com/Conecta-Asturias-card/"
-    },
-    "calendarUrl": "https://www.visitoviedo.info/en_GB/que-hacer/cultura",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      43.36,
-      -5.845
-    ]
+    "brandColor": "#0B6E4F"
   },
   {
     "slug": "paris",
@@ -10038,12 +8830,7 @@
     ],
     "voiceAgentId": "agent_4401knmdzpgmewbrbskdkf7607fe",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/parisjetaime.png",
-    "brandColor": "#1F3C88",
-    "calendarUrl": "https://parisjetaime.com/eng/what-to-do-in-paris-i004",
-    "touristPass": {
-      "name": "Paris City Pass",
-      "url": "https://parisjetaime.com/eng/article/paris-museum-pass-a979"
-    }
+    "brandColor": "#1F3C88"
   },
   {
     "slug": "parma",
@@ -10076,9 +8863,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/parmawelcome.png",
-    "brandColor": "#FEDB00",
-    "website": "https://parmawelcome.it/en/",
-    "calendarUrl": "https://parmawelcome.it/en/event/"
+    "brandColor": "#FEDB00"
   },
   {
     "slug": "pas-de-calais",
@@ -10112,8 +8897,7 @@
       2.777918
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/calaisxxl.jpg",
-    "brandColor": "#4C00FF",
-    "calendarUrl": "https://www.calaisxxl.com/en/calendar/"
+    "brandColor": "#4C00FF"
   },
   {
     "slug": "pau",
@@ -10147,8 +8931,7 @@
       -0.375673
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/pautourisme.png",
-    "brandColor": "#C62337",
-    "calendarUrl": "https://en.tourismepau.com/agenda/"
+    "brandColor": "#C62337"
   },
   {
     "slug": "perpignan",
@@ -10215,9 +8998,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitpiacenza.jpg",
-    "brandColor": "#9E1E33",
-    "website": "https://visitpiacenza.it/en/",
-    "calendarUrl": "https://visitpiacenza.it/en/events/"
+    "brandColor": "#9E1E33"
   },
   {
     "slug": "pisa",
@@ -10250,9 +9031,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/turismopisa.jpg",
-    "brandColor": "#E4003A",
-    "website": "https://www.turismo.pisa.it/en",
-    "calendarUrl": "https://www.turismo.pisa.it/en/events"
+    "brandColor": "#E4003A"
   },
   {
     "slug": "poitiers",
@@ -10286,45 +9065,7 @@
       0.3404
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitpoitiers.jpg",
-    "brandColor": "#43206D",
-    "calendarUrl": "https://www.visitpoitiers.fr/en/vivre-des-experiences/evenements-et-temps-forts/tout-lagenda/"
-  },
-  {
-    "slug": "pontevedra",
-    "name": {
-      "en": "Pontevedra"
-    },
-    "country": "ES",
-    "countryName": "Spain",
-    "region": "Galicia",
-    "tenantId": "pontevedra",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/pontevedra",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://www.visit-pontevedra.com/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-pontevedra.png",
-    "brandColor": "#0071C2",
-    "touristPass": null,
-    "calendarUrl": "https://www.visit-pontevedra.com/en/",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      42.4333,
-      -8.6333
-    ]
+    "brandColor": "#43206D"
   },
   {
     "slug": "pontoise",
@@ -10361,46 +9102,6 @@
     "brandColor": "#009AA6"
   },
   {
-    "slug": "prague",
-    "name": {
-      "en": "Prague"
-    },
-    "country": "CZ",
-    "countryName": "Czechia",
-    "region": null,
-    "tenantId": "prague",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/prague",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": null,
-    "logo": "https://i.imgur.com/eSmsqQ3.png",
-    "brandColor": "#000000",
-    "touristPass": {
-      "name": "Prague Visitor Pass",
-      "url": "https://praguevisitorpass.eu/"
-    },
-    "calendarUrl": "https://prague.eu/en/akce-kategorie/events/?pg=1",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      50.08762,
-      14.42074
-    ]
-  },
-  {
     "slug": "privas",
     "name": {
       "en": "Privas"
@@ -10432,8 +9133,7 @@
       4.598372
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/coeurdeardeche-tourisme.jpg",
-    "brandColor": "#60B08D",
-    "calendarUrl": "https://www.coeur-ardeche.fr/agenda-coeur-ardeche/"
+    "brandColor": "#60B08D"
   },
   {
     "slug": "groningen-province",
@@ -10458,7 +9158,7 @@
     "sampleQuestions": {},
     "dtFeed": false,
     "website": null,
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitgroningen.jpg",
+    "logo": "https://i.imgur.com/qOBEkTE.png",
     "brandColor": "#029D59",
     "touristPass": null,
     "calendarUrl": null,
@@ -10571,8 +9271,7 @@
       0.721
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationperigieux.jpg",
-    "brandColor": "#8FA78F",
-    "calendarUrl": "https://www.destination-perigueux.fr/en/sur-place/agenda/tout-lagenda/"
+    "brandColor": "#8FA78F"
   },
   {
     "slug": "quimper",
@@ -10606,8 +9305,7 @@
       -4.098
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/quimper-tourisme.jpg",
-    "brandColor": "#202020",
-    "calendarUrl": "https://www.quimper-tourisme.bzh/agenda_manifestations/"
+    "brandColor": "#202020"
   },
   {
     "slug": "quebec-city",
@@ -10640,9 +9338,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/quebec-cite.jpg",
-    "brandColor": "#1D3F72",
-    "website": "https://www.quebec-cite.com/en",
-    "calendarUrl": "https://www.quebec-cite.com/en/search?tab=event"
+    "brandColor": "#1D3F72"
   },
   {
     "slug": "ravenna",
@@ -10675,9 +9371,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitravenna.jpg",
-    "brandColor": "#02518C",
-    "website": "https://www.visitravenna.it/en",
-    "calendarUrl": "https://www.visitravenna.it/en/must-see-events-ravenna"
+    "brandColor": "#02518C"
   },
   {
     "slug": "reggio-emilia",
@@ -10710,9 +9404,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/reggioemiliawelcome.jpg",
-    "brandColor": "#C05116",
-    "website": "https://www.reggioemiliawelcome.it/en",
-    "calendarUrl": "https://www.reggioemiliawelcome.it/en/events"
+    "brandColor": "#C05116"
   },
   {
     "slug": "reims",
@@ -10780,11 +9472,7 @@
       -1.6778
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/rennes-original.jpg",
-    "brandColor": "#EB212E",
-    "touristPass": {
-      "name": "Pass Rennes",
-      "url": "https://www.pass-rennes.com/"
-    }
+    "brandColor": "#EB212E"
   },
   {
     "slug": "riga",
@@ -10818,8 +9506,7 @@
       24.105078
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/liveriga.jpg",
-    "brandColor": "#78E9B8",
-    "calendarUrl": "https://www.liveriga.com/en/visit/events"
+    "brandColor": "#78E9B8"
   },
   {
     "slug": "rimini",
@@ -10852,9 +9539,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitrimini.jpg",
-    "brandColor": "#FF0000",
-    "website": "https://www.visitrimini.com/en/",
-    "calendarUrl": "https://www.visitrimini.com/en/events/"
+    "brandColor": "#FF0000"
   },
   {
     "slug": "rodez",
@@ -10888,8 +9573,7 @@
       2.575
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/rodez-tourisme.png",
-    "brandColor": "#D44724",
-    "calendarUrl": "https://en.rodez-tourisme.fr/whats-on-in-rodez/"
+    "brandColor": "#D44724"
   },
   {
     "slug": "rome",
@@ -10922,13 +9606,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/romalive.jpg",
-    "brandColor": "#800F1E",
-    "website": "https://www.turismoroma.it/en/romalive",
-    "calendarUrl": "https://www.turismoroma.it/en/romalive",
-    "touristPass": {
-      "name": "Roma Pass",
-      "url": "https://www.turismoroma.it/en/page/roma-pass"
-    }
+    "brandColor": "#800F1E"
   },
   {
     "slug": "roosendaal",
@@ -10952,7 +9630,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.inroosendaal.nl/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -10962,8 +9640,7 @@
       4.4556
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/inroosendaal.jpg",
-    "brandColor": "#E62650",
-    "calendarUrl": "https://www.bezoek-roosendaal.nl/uitagenda"
+    "brandColor": "#E62650"
   },
   {
     "slug": "rotterdam",
@@ -10988,7 +9665,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://rotterdammakeithappen.nl/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11010,12 +9687,7 @@
       }
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/rotterdam.jpg",
-    "brandColor": "#00AEEF",
-    "calendarUrl": "https://en.rotterdam.info/events/",
-    "touristPass": {
-      "name": "Rotterdam City Card",
-      "url": "https://www.rotterdam.info/en/visit/city-card-rotterdam"
-    }
+    "brandColor": "#00AEEF"
   },
   {
     "slug": "rouen",
@@ -11049,12 +9721,7 @@
       1.0886
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitrouen.jpg",
-    "brandColor": "#004899",
-    "calendarUrl": "https://en.visiterouen.com/news/to-the-rhythm-of-the-highlights/all-the-agenda/",
-    "touristPass": {
-      "name": "Rouen Pass",
-      "url": "https://en.visiterouen.com/book/rouen-pass/"
-    }
+    "brandColor": "#004899"
   },
   {
     "slug": "rovaniemi",
@@ -11087,9 +9754,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/rovaniemi-tourism.jpg",
-    "brandColor": "#C00000",
-    "website": "https://www.visitrovaniemi.fi/",
-    "calendarUrl": "https://www.visitrovaniemi.fi/see-do/events/"
+    "brandColor": "#C00000"
   },
   {
     "slug": "saint-etienne",
@@ -11123,11 +9788,7 @@
       4.3872
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/saint-etienne-tourisme-congres.jpg",
-    "brandColor": "#FFF000",
-    "touristPass": {
-      "name": "Saint-Étienne City Pass",
-      "url": "https://www.saint-etienne-hors-cadre.fr/en/get-organised/citycard-pass-touristique/"
-    }
+    "brandColor": "#FFF000"
   },
   {
     "slug": "saint-brieuc",
@@ -11161,8 +9822,7 @@
       -2.7653
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/saint-brieuc-tourisme.jpg",
-    "brandColor": "#DB9C7F",
-    "calendarUrl": "https://www.baiedesaintbrieuc.com/en/saint-brieuc-city/culture-and-festivals/"
+    "brandColor": "#DB9C7F"
   },
   {
     "slug": "saint-lo",
@@ -11185,7 +9845,7 @@
     "inventory": {},
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://saintlo-tourisme.com/",
     "dmo": {
       "name": null,
@@ -11221,7 +9881,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.josalzburg.com/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11231,8 +9891,7 @@
       13.055
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/salzburgerland.jpg",
-    "brandColor": "#B60C20",
-    "calendarUrl": "https://www.josalzburg.com/en/service-events/events.html"
+    "brandColor": "#B60C20"
   },
   {
     "slug": "san-francisco",
@@ -11256,7 +9915,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.sftravel.com/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11266,52 +9925,7 @@
       -122.443
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/sfo.jpg",
-    "brandColor": "#DC4405",
-    "calendarUrl": "https://www.sftravel.com/things-to-do/events",
-    "touristPass": {
-      "name": "San Francisco CityPASS",
-      "url": "https://www.sftravel.com/attraction-passes"
-    }
-  },
-  {
-    "slug": "san-sebastian",
-    "name": {
-      "en": "San Sebastián"
-    },
-    "country": "ES",
-    "countryName": "Spain",
-    "region": null,
-    "tenantId": "donostia",
-    "voiceId": null,
-    "chatUrl": "https://chat.dm2find.ai/donostia",
-    "provenance": "preview",
-    "dataSource": null,
-    "status": "live",
-    "channels": [
-      "webchat"
-    ],
-    "languages": [],
-    "inventory": {},
-    "enrichments": [],
-    "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://sansebastianturismoa.eus/en/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/donostia.png",
-    "brandColor": "#0B1431",
-    "touristPass": {
-      "name": "Basque Card",
-      "url": "https://www.sansebastianturismoa.eus/en/shop/city-cards/7887-basque-card"
-    },
-    "calendarUrl": "https://sansebastianturismoa.eus/en/agenda-events/",
-    "voiceAgentId": null,
-    "dmo": {
-      "name": null,
-      "claimed": false
-    },
-    "coords": [
-      43.32,
-      -1.98
-    ]
+    "brandColor": "#DC4405"
   },
   {
     "slug": "santander",
@@ -11335,7 +9949,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://turismo.santander.es/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11345,8 +9959,7 @@
       -3.805
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/santander.jpg",
-    "brandColor": "#3382A6",
-    "calendarUrl": "https://turismo.santander.es/en/actualidad/proximos-eventos"
+    "brandColor": "#3382A6"
   },
   {
     "slug": "sarthe",
@@ -11380,8 +9993,7 @@
       0.1996
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/sarthetourisme.jpg",
-    "brandColor": "#1E97A7",
-    "calendarUrl": "https://www.sarthetourisme.com/en/l-agenda/"
+    "brandColor": "#1E97A7"
   },
   {
     "slug": "savoie",
@@ -11415,8 +10027,7 @@
       5.918505
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/exploresavoie.jpg",
-    "brandColor": "#E61B05",
-    "calendarUrl": "https://www.explore-savoie.com/en/events/"
+    "brandColor": "#E61B05"
   },
   {
     "slug": "schouwen-duiveland",
@@ -11440,7 +10051,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.opschouwenduiveland.nl/en/discover",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11450,8 +10061,7 @@
       3.9164
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/schouwenduiveland.jpg",
-    "brandColor": "#002238",
-    "calendarUrl": "https://www.opschouwenduiveland.nl/en/events"
+    "brandColor": "#002238"
   },
   {
     "slug": "seattle",
@@ -11475,7 +10085,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://visitseattle.org/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11485,8 +10095,7 @@
       -122.3244
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitseattle.jpg",
-    "brandColor": "#447500",
-    "calendarUrl": "https://visitseattle.org/things-to-do/events/"
+    "brandColor": "#447500"
   },
   {
     "slug": "seine-maritime",
@@ -11520,8 +10129,7 @@
       1.0886
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/seinemaritime-tourisme.jpg",
-    "brandColor": "#AB91CA",
-    "calendarUrl": "https://www.seine-maritime-tourisme.com/agenda/tout-agenda/evenements/"
+    "brandColor": "#AB91CA"
   },
   {
     "slug": "seine-saint-denis",
@@ -11555,8 +10163,7 @@
       2.355947
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/seinesaintdenistourisme.png",
-    "brandColor": "#115BA2",
-    "calendarUrl": "https://uk.tourisme93.com/document.php?pagendx=10006"
+    "brandColor": "#115BA2"
   },
   {
     "slug": "seine-et-marne",
@@ -11630,13 +10237,7 @@
       }
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitseoul.jpg",
-    "brandColor": "#0051FC",
-    "website": "https://www.visitseoul.net/",
-    "calendarUrl": "https://english.visitseoul.net/exhibition-events",
-    "touristPass": {
-      "name": "Discover Seoul Pass",
-      "url": "https://english.visitseoul.net/editorspicks/Discover-Seoul-Pass-EN/ENN018392"
-    }
+    "brandColor": "#0051FC"
   },
   {
     "slug": "seville",
@@ -11698,7 +10299,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visitsingapore.com/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11716,8 +10317,7 @@
     ],
     "voiceAgentId": "agent_9701knet807gea6axq794nbmc6aa",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitsingapore.jpg",
-    "brandColor": "#EE192F",
-    "calendarUrl": "https://www.visitsingapore.com/whats-happening/all-happenings/"
+    "brandColor": "#EE192F"
   },
   {
     "slug": "sitges",
@@ -11741,7 +10341,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.sitgesanytime.com/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11751,8 +10351,7 @@
       1.80875
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/sitgesanytime.jpg",
-    "brandColor": "#4174B6",
-    "calendarUrl": "https://www.sitgesanytime.com/en/#"
+    "brandColor": "#4174B6"
   },
   {
     "slug": "somme",
@@ -11786,8 +10385,7 @@
       2.2958
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/somme-tourisme.jpg",
-    "brandColor": "#E73331",
-    "calendarUrl": "https://www.somme-tourisme.com/en/plan-your-trip/schedule/"
+    "brandColor": "#E73331"
   },
   {
     "slug": "steiermark",
@@ -11811,7 +10409,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.steiermark.com/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11854,9 +10452,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visit-stockholm.jpg",
-    "brandColor": "#181818",
-    "website": "https://www.visitstockholm.com/",
-    "calendarUrl": "https://www.visitstockholm.com/events/"
+    "brandColor": "#181818"
   },
   {
     "slug": "strasbourg",
@@ -11890,12 +10486,7 @@
       7.7458
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/strasbourgtourisme.jpg",
-    "brandColor": "#EE3D3D",
-    "calendarUrl": "https://www.visitstrasbourg.fr/en/this-week/",
-    "touristPass": {
-      "name": "Strasbourg City Card",
-      "url": "https://shop.visitstrasbourg.fr/visite/strasbourg-city-card/"
-    }
+    "brandColor": "#EE3D3D"
   },
   {
     "slug": "stuttgart",
@@ -11919,7 +10510,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.stuttgart-tourist.de/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11929,11 +10520,7 @@
       9.1775
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/stuttgart.jpg",
-    "brandColor": "#F5E146",
-    "touristPass": {
-      "name": "Stuttcard",
-      "url": "https://www.stuttgart-tourist.de/en/stuttcard#/"
-    }
+    "brandColor": "#F5E146"
   },
   {
     "slug": "taipei",
@@ -11958,7 +10545,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.travel.taipei/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -11969,12 +10556,7 @@
     ],
     "voiceAgentId": "agent_3401knepn183e0tat20v8qfvj6mh",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittaipei.png",
-    "brandColor": "#007996",
-    "calendarUrl": "https://www.travel.taipei/en/event-calendar/",
-    "touristPass": {
-      "name": "Funpass Taipei",
-      "url": "https://funpass.travel.taipei/"
-    }
+    "brandColor": "#007996"
   },
   {
     "slug": "tallinn",
@@ -12008,12 +10590,7 @@
       24.7285841
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittallinn.png",
-    "brandColor": "#fe0000",
-    "calendarUrl": "https://visittallinn.ee/eng/visitor/see-do/events/events",
-    "touristPass": {
-      "name": "Tallin Card",
-      "url": "https://visittallinn.ee/eng/visitor/tallinn-card/tallinn-card/online-shop"
-    }
+    "brandColor": "#fe0000"
   },
   {
     "slug": "tampere",
@@ -12046,9 +10623,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visit-tampere-jpg.jpg",
-    "brandColor": "#2D2D2D",
-    "website": "https://visittampere.fi/en/",
-    "calendarUrl": "https://tapahtumat.tampere.fi/en-FI"
+    "brandColor": "#2D2D2D"
   },
   {
     "slug": "tarbes",
@@ -12082,8 +10657,7 @@
       0.0782
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tarbes-tourisme.jpg",
-    "brandColor": "#0A4250",
-    "calendarUrl": "https://www.tarbes-tourisme.fr/en/the-full-events-calendar/"
+    "brandColor": "#0A4250"
   },
   {
     "slug": "tarn",
@@ -12151,8 +10725,7 @@
       1.355
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tarngaronne-tourisme.jpg",
-    "brandColor": "#0A4750",
-    "calendarUrl": "https://www.tourisme-tarnetgaronne.fr/agenda/tout-lagenda/"
+    "brandColor": "#0A4750"
   },
   {
     "slug": "tarragona",
@@ -12176,7 +10749,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.tarragonaturisme.cat/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -12245,7 +10818,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.texel.net/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -12262,8 +10835,7 @@
       }
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittexel.jpg",
-    "brandColor": "#214786",
-    "calendarUrl": "https://www.texel.net/en/whats-on/"
+    "brandColor": "#214786"
   },
   {
     "slug": "the-hague",
@@ -12287,7 +10859,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://denhaag.com/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -12297,12 +10869,7 @@
       4.31
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/thisisthehague.jpg",
-    "brandColor": "#64BC50",
-    "calendarUrl": "https://denhaag.com/en/calendar",
-    "touristPass": {
-      "name": "DenHaagPas",
-      "url": "https://denhaag.com/en/pass"
-    }
+    "brandColor": "#64BC50"
   },
   {
     "slug": "tilburg",
@@ -12326,7 +10893,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visit-tilburg.com/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -12336,8 +10903,7 @@
       5.07
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittilburg.png",
-    "brandColor": "#C79288",
-    "calendarUrl": "https://www.visit-tilburg.com/events"
+    "brandColor": "#C79288"
   },
   {
     "slug": "tirol",
@@ -12371,8 +10937,7 @@
       11.3933
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittirol.jpg",
-    "brandColor": "#B51F1F",
-    "calendarUrl": "https://www.tyrol.com/activities/events/all-events"
+    "brandColor": "#B51F1F"
   },
   {
     "slug": "tokyo",
@@ -12396,7 +10961,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.gotokyo.org/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -12406,12 +10971,7 @@
       139.7744
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/gotokyo.png",
-    "brandColor": "#E60012",
-    "calendarUrl": "https://www.gotokyo.org/en/calendar/index.html",
-    "touristPass": {
-      "name": "The Tokyo Pass",
-      "url": "https://www.mytokyopass.com/"
-    }
+    "brandColor": "#E60012"
   },
   {
     "slug": "toulouse",
@@ -12445,12 +11005,7 @@
       1.444
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/toulouse.jpg",
-    "brandColor": "#E40D35",
-    "calendarUrl": "https://www.toulouse-tourisme.com/en/what-to-see-and-do/what-to-do/",
-    "touristPass": {
-      "name": "Pass Tourisme",
-      "url": "https://www.toulouse-tourisme.com/en/what-to-see-and-do/pass-tourisme/"
-    }
+    "brandColor": "#E40D35"
   },
   {
     "slug": "tours",
@@ -12484,8 +11039,7 @@
       0.689387
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tours-tourisme.jpg",
-    "brandColor": "#C65643",
-    "calendarUrl": "https://www.tours-tourisme.fr/en/agenda/"
+    "brandColor": "#C65643"
   },
   {
     "slug": "trento",
@@ -12527,13 +11081,7 @@
     ],
     "voiceAgentId": "agent_9801knpzsmhdf62bmyzxakfxztn4",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittrentino.jpg",
-    "brandColor": "#0082A4",
-    "website": "https://www.visittrentino.info/en",
-    "calendarUrl": "https://www.visittrentino.info/en/guide/what-to-do/events",
-    "touristPass": {
-      "name": "Trentino Guest Card",
-      "url": "https://www.visittrentino.info/en/experience/trentino-guest-card"
-    }
+    "brandColor": "#0082A4"
   },
   {
     "slug": "trouville-sur-mer",
@@ -12567,8 +11115,7 @@
       0.08544
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/trouville-tourisme.png",
-    "brandColor": "#000FFF",
-    "calendarUrl": "https://en.trouvillesurmer.org/que-faire-a-trouville-sur-mer/evenements/tout-lagenda/"
+    "brandColor": "#000FFF"
   },
   {
     "slug": "troyes",
@@ -12602,8 +11149,7 @@
       4.071799
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/troyes-tourisme.png",
-    "brandColor": "#0F68B3",
-    "calendarUrl": "https://en.troyeslachampagne.com/going-out/calendar/"
+    "brandColor": "#0F68B3"
   },
   {
     "slug": "tulle",
@@ -12637,8 +11183,7 @@
       1.771
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/contreesvertes-tourisme.jpg",
-    "brandColor": "#B35928",
-    "calendarUrl": "https://www.contreesvertes.com/en/agenda/"
+    "brandColor": "#B35928"
   },
   {
     "slug": "turin",
@@ -12680,13 +11225,7 @@
     ],
     "voiceAgentId": "agent_7201knky6fnzfq8rk10hbjywmtce",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/turismotorino.jpg",
-    "brandColor": "#9DE3F9",
-    "website": "https://turismotorino.org/en/",
-    "calendarUrl": "https://turismotorino.org/en/visit/events/agenda",
-    "touristPass": {
-      "name": "Torino+Piemonte card",
-      "url": "https://turismotorino.org/en/visit/plan-your-trip/tourist-products/torino-piemonte-card"
-    }
+    "brandColor": "#9DE3F9"
   },
   {
     "slug": "turku",
@@ -12719,8 +11258,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visit-turku.jpg",
-    "brandColor": "#4BA432",
-    "website": "https://en.visitturku.fi/"
+    "brandColor": "#4BA432"
   },
   {
     "slug": "twente",
@@ -12754,8 +11292,7 @@
       6.783722
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visittwente.jpg",
-    "brandColor": "#FF0000",
-    "calendarUrl": "https://www.visittwente.com/agenda/today/"
+    "brandColor": "#FF0000"
   },
   {
     "slug": "utrecht",
@@ -12780,7 +11317,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.discover-utrecht.com/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -12798,8 +11335,7 @@
     ],
     "voiceAgentId": "agent_5101knfsbbqrfh5b09w4n8zzyzgz",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitutrecht.jpg",
-    "brandColor": "#e70703",
-    "calendarUrl": "https://www.discover-utrecht.com/agenda"
+    "brandColor": "#e70703"
   },
   {
     "slug": "heuvelrug",
@@ -12869,8 +11405,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/dolomitesvalgardena.png",
-    "brandColor": "#C00510",
-    "website": "https://www.valgardena.it/en/"
+    "brandColor": "#C00510"
   },
   {
     "slug": "val-du-garonne",
@@ -12904,8 +11439,7 @@
       0.159822
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdugaronne-tourisme.jpg",
-    "brandColor": "#BE2D06",
-    "calendarUrl": "https://www.valdegaronne-tourisme.com/en/Schedule/"
+    "brandColor": "#BE2D06"
   },
   {
     "slug": "val-d-oise",
@@ -12939,8 +11473,7 @@
       2.081054
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdoisetourisme.png",
-    "brandColor": "#C71553",
-    "calendarUrl": "https://www.valdoise-tourisme.com/agenda-sortir-en-val-doise/"
+    "brandColor": "#C71553"
   },
   {
     "slug": "val-de-marne",
@@ -12974,8 +11507,7 @@
       2.459132
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdemarnetourisme.jpg",
-    "brandColor": "#C80E66",
-    "calendarUrl": "https://www.tourisme-valdemarne.com/agendas/"
+    "brandColor": "#C80E66"
   },
   {
     "slug": "valence",
@@ -13009,8 +11541,7 @@
       4.8924
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valence-tourisme.jpg",
-    "brandColor": "#EB5B56",
-    "calendarUrl": "https://www.valence-romans-tourisme.com/en/be-organised/going-out/all-events/"
+    "brandColor": "#EB5B56"
   },
   {
     "slug": "valencia",
@@ -13034,7 +11565,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visitvalencia.com/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13044,12 +11575,7 @@
       -0.3764
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valencia.jpg",
-    "brandColor": "#FF6000",
-    "calendarUrl": "https://www.visitvalencia.com/en/events-valencia",
-    "touristPass": {
-      "name": "Valencia Tourist Card",
-      "url": "https://www.visitvalencia.com/en/valencia-tourist-card"
-    }
+    "brandColor": "#FF6000"
   },
   {
     "slug": "vannes",
@@ -13083,8 +11609,7 @@
       -2.76
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vannes-tourisme.jpg",
-    "brandColor": "#078293",
-    "calendarUrl": "https://www.mairie-vannes.fr/agenda"
+    "brandColor": "#078293"
   },
   {
     "slug": "var",
@@ -13152,8 +11677,7 @@
       -1.4269
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/envendee.jpg",
-    "brandColor": "#00B79C",
-    "calendarUrl": "https://www.vendee-tourisme.com/agenda-des-sorties-et-evenements-en-vendee"
+    "brandColor": "#00B79C"
   },
   {
     "slug": "venice",
@@ -13186,12 +11710,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitvenezia.jpg",
-    "brandColor": "#FF0033",
-    "website": "https://www.visitvenezia.eu/en",
-    "touristPass": {
-      "name": "Venice Museum Pass",
-      "url": "https://www.venicepass.eu/"
-    }
+    "brandColor": "#FF0033"
   },
   {
     "slug": "venlo",
@@ -13215,7 +11734,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.visitvenlo.nl/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13225,8 +11744,7 @@
       6.1681
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitvenlo.jpg",
-    "brandColor": "#00AB60",
-    "calendarUrl": "https://www.invenlo.com/nl/agenda/"
+    "brandColor": "#00AB60"
   },
   {
     "slug": "versailles-grand-parc",
@@ -13260,8 +11778,7 @@
       2.121597
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/versailles.png",
-    "brandColor": "#EE717D",
-    "calendarUrl": "https://en.versailles-tourisme.com/go-out/events-calendar-versailles-grand-parc"
+    "brandColor": "#EE717D"
   },
   {
     "slug": "vienne",
@@ -13295,8 +11812,7 @@
       0.3404
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lavienne.jpg",
-    "brandColor": "#EC5123",
-    "calendarUrl": "https://www.tourisme-vienne.com/en/calendar/"
+    "brandColor": "#EC5123"
   },
   {
     "slug": "vigo",
@@ -13354,7 +11870,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.vitoria-gasteiz.org/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13364,8 +11880,7 @@
       -2.6833
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vitoriagasteiz.jpg",
-    "brandColor": "#24B32B",
-    "calendarUrl": "https://www.vitoria-gasteiz.org/wb021/was/we001Action.do?idioma=en&accionWe001=ficha&accion=calMunicipales&calendariosID=202"
+    "brandColor": "#24B32B"
   },
   {
     "slug": "vlaardingen",
@@ -13389,7 +11904,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://vlaardingendoen.nl/home",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13399,8 +11914,7 @@
       4.35
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vlaardingen.jpg",
-    "brandColor": "#C42526",
-    "calendarUrl": "https://uitagenda.vlaardingendoen.nl/"
+    "brandColor": "#C42526"
   },
   {
     "slug": "vlissingen",
@@ -13424,7 +11938,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://visitvlissingen.nl/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13434,8 +11948,7 @@
       3.5833
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vlissingen.jpg",
-    "brandColor": "#0E84C7",
-    "calendarUrl": "https://invlissingen.nl/uit-agenda-en-evenementen-vlissingen/"
+    "brandColor": "#0E84C7"
   },
   {
     "slug": "volendam",
@@ -13459,7 +11972,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.laagholland.com/en/edam-volendam",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13469,8 +11982,7 @@
       5.0727
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/laagholland.png",
-    "brandColor": "#D64019",
-    "calendarUrl": "https://www.laagholland.com/en/agenda"
+    "brandColor": "#D64019"
   },
   {
     "slug": "vorarlberg",
@@ -13494,7 +12006,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.vorarlberg.travel/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13562,7 +12074,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://washington.org/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13572,8 +12084,7 @@
       -77.0163
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/washingtondc.jpg",
-    "brandColor": "#466E82",
-    "calendarUrl": "https://washington.org/find-dc-listings/dc-events"
+    "brandColor": "#466E82"
   },
   {
     "slug": "wien",
@@ -13597,7 +12108,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.wien.info/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13607,12 +12118,7 @@
       16.3738
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vienna.jpg",
-    "brandColor": "#E52236",
-    "calendarUrl": "https://www.wien.info/en/now-on/event-search",
-    "touristPass": {
-      "name": "Vienna City Card",
-      "url": "https://www.viennacitycard.at/"
-    }
+    "brandColor": "#E52236"
   },
   {
     "slug": "woerden",
@@ -13636,7 +12142,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.beleefwoerden.com/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13646,8 +12152,7 @@
       4.8833
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/beleefwoerden.png",
-    "brandColor": "#EAAA00",
-    "calendarUrl": "https://www.beleefwoerden.com/nl/agenda/uitagenda"
+    "brandColor": "#EAAA00"
   },
   {
     "slug": "yerevan",
@@ -13671,7 +12176,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://visityerevan.am/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13681,12 +12186,7 @@
       44.51652
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visityerevan.png",
-    "brandColor": "#DE5382",
-    "calendarUrl": "https://visityerevan.am/browse/things-to-do-events/en/",
-    "touristPass": {
-      "name": "Yerevan Card",
-      "url": "https://yerevancard.com/"
-    }
+    "brandColor": "#DE5382"
   },
   {
     "slug": "yonne",
@@ -13754,11 +12254,7 @@
       2.121597
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationyvelines.jpg",
-    "brandColor": "#D20072",
-    "touristPass": {
-      "name": "Pass Destination Yvelines - Hauts-de-Seine",
-      "url": "https://destination.hauts-de-seine.fr/pass-destination-78-92.html"
-    }
+    "brandColor": "#D20072"
   },
   {
     "slug": "zaandam",
@@ -13782,7 +12278,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.zaans.nl/en",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13792,8 +12288,7 @@
       4.8422
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zaans.jpg",
-    "brandColor": "#009E45",
-    "calendarUrl": "https://www.zaans.nl/nl/visitors"
+    "brandColor": "#009E45"
   },
   {
     "slug": "zagreb",
@@ -13818,7 +12313,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.infozagreb.hr/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13836,8 +12331,7 @@
     ],
     "voiceAgentId": "agent_1401knq1emjkea3sexn1ync2gfsj",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zagreb.jpg",
-    "brandColor": "#157EFB",
-    "calendarUrl": "https://www.infozagreb.hr/en/events"
+    "brandColor": "#157EFB"
   },
   {
     "slug": "zandvoort",
@@ -13861,7 +12355,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://visitzandvoort.com/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13871,8 +12365,7 @@
       4.5333
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitzandvoort.jpg",
-    "brandColor": "#E2722C",
-    "calendarUrl": "https://www.visitzandvoort.com/calendar"
+    "brandColor": "#E2722C"
   },
   {
     "slug": "zermatt",
@@ -13896,7 +12389,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://zermatt.swiss/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13906,8 +12399,7 @@
       7.7461
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zermatt.jpg",
-    "brandColor": "#414141",
-    "calendarUrl": "https://zermatt.swiss/en/activities/more"
+    "brandColor": "#414141"
   },
   {
     "slug": "zwolle",
@@ -13931,7 +12423,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://en.visitzwolle.com/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13941,8 +12433,7 @@
       6.1
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hanzestadzwolle.jpg",
-    "brandColor": "#052AA0",
-    "calendarUrl": "https://en.visitzwolle.com/see-and-do/activities-in-zwolle/"
+    "brandColor": "#052AA0"
   },
   {
     "slug": "zurich",
@@ -13967,7 +12458,7 @@
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
-    "website": "https://www.zuerich.com/en/",
+    "website": null,
     "dmo": {
       "name": null,
       "claimed": false
@@ -13978,12 +12469,7 @@
     ],
     "voiceAgentId": "agent_9001knpnw3ygf3h9msm4thkwm7r4",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/enjoyzuerich.jpg",
-    "brandColor": "#0078BF",
-    "calendarUrl": "https://www.zuerich.com/en/events-nightlife/event-calendar",
-    "touristPass": {
-      "name": "Zürich Card",
-      "url": "https://www.zuerich.com/en/zurich-card-city-guide-app/zurich-card"
-    }
+    "brandColor": "#0078BF"
   },
   {
     "slug": "eze",
@@ -14016,8 +12502,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/eze-tourisme.jpg",
-    "brandColor": "#4593C8",
-    "website": "https://www.eze-tourisme.com/en/"
+    "brandColor": "#4593C8"
   },
   {
     "slug": "epernay",
@@ -14050,9 +12535,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/epernay-tourisme.jpg",
-    "brandColor": "#E5CC6B",
-    "website": "https://www.epernay-tourisme.com/",
-    "calendarUrl": "https://www.epernay-tourisme.com/profiter/agenda/tout-agenda/"
+    "brandColor": "#E5CC6B"
   },
   {
     "slug": "epinal",
@@ -14085,9 +12568,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/epinal-tourisme.jpg",
-    "brandColor": "#026041",
-    "website": "https://www.epinal-touristoffice.com/",
-    "calendarUrl": "https://www.epinal-touristoffice.com/stay/diary"
+    "brandColor": "#026041"
   },
   {
     "slug": "etretat",
@@ -14120,9 +12601,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/lehavreetretat-tourisme.png",
-    "brandColor": "#034660",
-    "website": "https://www.lehavre-etretat-tourisme.com/",
-    "calendarUrl": "https://www.lehavre-etretat-tourisme.com/"
+    "brandColor": "#034660"
   },
   {
     "slug": "evreux",
@@ -14155,9 +12634,7 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/evreux-tourisme.jpg",
-    "brandColor": "#2358A5",
-    "website": "https://www.lecomptoirdesloisirs-evreux.fr/",
-    "calendarUrl": "https://www.lecomptoirdesloisirs-evreux.fr/notre-agenda/tout-lagenda/"
+    "brandColor": "#2358A5"
   },
   {
     "slug": "evry",
@@ -14190,8 +12667,216 @@
       "claimed": false
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/grandparissud-tourisme.png",
-    "brandColor": "#E95B1D",
-    "website": "https://tourisme-grandparissud.com/",
-    "calendarUrl": "https://tourisme-grandparissud.com/sortir-et-bouger/agenda/"
+    "brandColor": "#E95B1D"
+  },
+  {
+    "slug": "cannes",
+    "name": {
+      "en": "Cannes"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "cannes",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/cannes",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://en.cannes-france.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.549516,
+      6.977698
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/cannes.jpg",
+    "brandColor": "#003CBC",
+    "calendarUrl": "https://en.cannes-france.com/events/all-agenda/"
+  },
+  {
+    "slug": "chamonix-mont-blanc",
+    "name": {
+      "en": "Chamonix-Mont-Blanc"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "chamonixmontblanc",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/chamonixmontblanc",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://en.chamonix.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      45.924106,
+      6.868207
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/chamonix-mont-blanc.jpg",
+    "brandColor": "#CF333C",
+    "calendarUrl": null
+  },
+  {
+    "slug": "lourdes",
+    "name": {
+      "en": "Lourdes"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "lourdes",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/lourdes",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://en.lourdes-infotourisme.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.093522,
+      -0.046838
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lourdes.jpg",
+    "brandColor": "#14BEF0",
+    "calendarUrl": null
+  },
+  {
+    "slug": "mont-saint-michel",
+    "name": {
+      "en": "Mont-Saint-Michel"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "montsaintmichel",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/montsaintmichel",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.ot-montsaintmichel.com/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      48.635248,
+      -1.510581
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montsaintmichel.jpg",
+    "brandColor": "#EC764E",
+    "calendarUrl": "https://www.ot-montsaintmichel.com/en/plan-your-stay/events-calendar/"
+  },
+  {
+    "slug": "obernai",
+    "name": {
+      "en": "Obernai"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "obernai",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/obernai",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.tourisme-obernai.fr/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      48.462362,
+      7.481135
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/obernai.jpg",
+    "brandColor": "#B0C600",
+    "calendarUrl": null
+  },
+  {
+    "slug": "orange",
+    "name": {
+      "en": "Orange"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "orange",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/orange",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.poptourisme.fr/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      44.136776,
+      4.804458
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/orange-tourisme.jpg",
+    "brandColor": "#CE5E16",
+    "calendarUrl": "https://www.poptourisme.fr/en/que-faire/agenda/"
   }
 ]
