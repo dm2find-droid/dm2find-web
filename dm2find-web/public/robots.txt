@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-
-# Internal tool, not content. Excluded so it never appears in search results;
-# note this is discouragement, not access control - the n8n webhook itself is
-# what needs the real protection.
-Disallow: /upload.html
-
-Sitemap: https://dm2find.ai/sitemap-index.xml
