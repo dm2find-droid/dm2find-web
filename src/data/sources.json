@@ -16,14 +16,15 @@
   "country": "NL",
   "status": "connected",
   "attributionRequired": true,
-  "attribution": "Touripedia"
+  "attribution": "Touripedia",
+  "coverage": "Province of Groningen only — other Dutch destinations run on public sources"
  },
  {
   "id": "austria",
   "name": "Österreich Werbung",
   "geo": "Austria",
   "country": "AT",
-  "status": "planned",
+  "status": "connected",
   "attributionRequired": true,
   "attribution": "Datenschnittstelle der Österreich Werbung"
  },
@@ -32,9 +33,10 @@
   "name": "Open Data Germany",
   "geo": "Germany",
   "country": "DE",
-  "status": "planned",
+  "status": "connected",
   "attributionRequired": true,
-  "attribution": "Open Data Germany"
+  "attribution": "Open Data Germany",
+  "coverage": "Nuremberg, Munich and Freiburg only — other German destinations run on public sources"
  },
  {
   "id": "belgium",

@@ -20,9 +20,16 @@ const connected = s.status === 'connected';
     <nav class="text-sm text-(--color-ink-3)"><a href="/platform">Data platform</a> → {s.name}</nav>
     <h1 class="h-display mt-4">{s.name}</h1>
     <p class="lede mt-4">{s.geo}. {connected
-      ? 'Connected — we read this feed, and destinations published to it launch in 48 hours.'
+      ? (s.coverage
+          ? `Connected for ${s.coverage.replace(/ —.*/, '')} — we read this feed, and destinations published to it launch in 48 hours.`
+          : 'Connected — we read this feed, and destinations published to it launch in 48 hours.')
       : 'Connector planned. Destinations in this geography currently run on public sources, and we do not claim attribution to this platform until the connector is live.'}</p>
 
+    {connected && s.coverage && (
+      <p class="mt-3 rounded-xl border border-(--color-amber) bg-(--color-amber-l) px-4 py-3 text-sm text-(--color-ink-2)">
+        <b>Partial coverage.</b> {s.coverage}. Those destinations carry no attribution to this platform.
+      </p>
+    )}
     {connected && s.attributionRequired && (
       <div class="mt-6 rounded-xl border border-(--color-line) bg-white p-5">
         <h2 class="text-sm font-semibold">Attribution as published</h2>

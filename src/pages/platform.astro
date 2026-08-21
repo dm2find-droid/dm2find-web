@@ -7,6 +7,17 @@ const sources = (await getCollection('sources')).map(e => e.data);
 const dests   = (await getCollection('destinations')).map(e => e.data);
 const countBy = (id: string) => dests.filter(d => d.dataSource === id).length;
 const connected = sources.filter(s => s.status === 'connected').length;
+/* Every booking number on this page and on /pricing comes from this one file,
+   so the pills and the totals can never drift apart. "and N more" is computed,
+   not typed. */
+const bk = (await import('../data/booking-systems.json')).default as any;
+const golf  = bk.systems.filter((b: any) => b.vertical === 'golf');
+const resto = bk.systems.filter((b: any) => b.vertical === 'restaurant');
+const golfTotal = bk.totals.golf, restoTotal = bk.totals.restaurant;
+const bookingTotal = golfTotal + restoTotal;
+const linked = bk.systems.filter((b: any) => b.mode === 'link').map((b: any) => b.name);
+/* "A, B, C and D" — so this sentence stays correct when a mode flips. */
+const andList = (a: string[]) => a.length < 2 ? (a[0] ?? '') : a.slice(0, -1).join(', ') + ' and ' + a.at(-1);
 ---
 <Base title="For national and regional tourism organisations" angle="nto" concierge
       description="The ontology layer that makes national tourism data readable by every assistant, agent and search engine.">
@@ -42,7 +53,9 @@ const connected = sources.filter(s => s.status === 'connected').length;
           <tbody>
             {sources.map(s => (
               <tr class="border-b border-(--color-line-2)">
-                <td class="p-3 font-semibold">{s.geo}</td>
+                <td class="p-3 font-semibold">{s.geo}
+                  {s.coverage && <span class="mt-0.5 block text-xs font-normal text-(--color-ink-3)">{s.coverage}</span>}
+                </td>
                 <td class="p-3"><a class="font-semibold text-(--color-pine) underline" href={`/data/${s.id}`}>{s.name}</a></td>
                 <td class="p-3">
                   <span class={`rounded-full px-2.5 py-1 text-xs font-semibold ${
@@ -115,6 +128,86 @@ const connected = sources.filter(s => s.status === 'connected').length;
           <p class="mt-2 text-sm text-(--color-ink-2)">{b}</p>
         </div>
       ))}
+    </div>
+  </section>
+
+  <section id="booking" class="border-t border-(--color-line-2) bg-(--color-paper-2) py-14">
+    <div class="mx-auto max-w-6xl px-5">
+      <p class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Booking systems</p>
+      <h2 class="h-section">The ontology reaches past open data.</h2>
+      <p class="lede mt-4">
+        Open tourism data says a golf course exists. It cannot say whether Saturday at 08:40 is free —
+        that lives in the club's own tee sheet and changes by the minute. We reach&nbsp;
+        <b>{golfTotal} tee-sheet systems and {restoTotal} restaurant reservation platforms</b>, so a
+        venue never changes software to work with us.
+      </p>
+
+      <div class="mt-8 grid gap-6 lg:grid-cols-2">
+        <div class="rounded-xl border border-(--color-line) bg-white p-6">
+          <h3 class="text-sm font-semibold">Golf — {golfTotal} systems</h3>
+          <div class="mt-3 flex flex-wrap gap-1.5">
+            {golf.map(b => (
+              <span class={`rounded-full px-3 py-1 text-xs font-semibold ${
+                b.mode === 'api' ? 'bg-(--color-pine-l) text-(--color-pine)'
+                                 : 'bg-(--color-paper-3) text-(--color-ink-2)'}`}>{b.name}</span>
+            ))}
+            <span class="rounded-full bg-white px-3 py-1 text-xs text-(--color-ink-3) ring-1 ring-(--color-line)">
+              and {golfTotal - golf.length} more
+            </span>
+          </div>
+        </div>
+        <div class="rounded-xl border border-(--color-line) bg-white p-6">
+          <h3 class="text-sm font-semibold">Restaurants — {restoTotal} systems</h3>
+          <div class="mt-3 flex flex-wrap gap-1.5">
+            {resto.map(b => (
+              <span class={`rounded-full px-3 py-1 text-xs font-semibold ${
+                b.mode === 'api' ? 'bg-(--color-pine-l) text-(--color-pine)'
+                                 : 'bg-(--color-paper-3) text-(--color-ink-2)'}`}>{b.name}</span>
+            ))}
+            <span class="rounded-full bg-white px-3 py-1 text-xs text-(--color-ink-3) ring-1 ring-(--color-line)">
+              and {restoTotal - resto.length} more
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="rounded-xl border border-(--color-line) bg-white p-5">
+          <h3 class="text-sm font-semibold">Live lookup</h3>
+          <p class="mt-2 text-sm text-(--color-ink-2)">
+            Green pills read availability directly. The visitor gives a date and a party size inside the
+            conversation and gets an answer back.
+          </p>
+        </div>
+        <div class="rounded-xl border border-(--color-line) bg-white p-5">
+          <h3 class="text-sm font-semibold">Direct link</h3>
+          <p class="mt-2 text-sm text-(--color-ink-2)">
+            Grey pills — {andList(linked)} — hand over to the venue's own booking page instead. The
+            answer is a button, not a time slot.
+          </p>
+        </div>
+        <div class="rounded-xl border border-(--color-amber) bg-(--color-amber-l) p-5">
+          <h3 class="text-sm font-semibold">We never take the booking</h3>
+          <p class="mt-2 text-sm text-(--color-ink-2)">
+            No payment, no inventory held, no commission. We show what is free; the venue completes the
+            reservation on its own system.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-xl border border-(--color-line) bg-white p-6">
+        <h3 class="text-sm font-semibold">Which system do you use?</h3>
+        <p class="mt-2 max-w-[70ch] text-sm text-(--color-ink-2)">
+          If it is not listed above, it is probably still one of the {bookingTotal} we reach — and if
+          it genuinely is not, tell us which one and we will say plainly whether we can.
+        </p>
+        <form class="mt-4 flex flex-wrap gap-2" action="mailto:sales@dm2find.ai" method="get">
+          <input type="hidden" name="subject" value="Booking system" />
+          <input name="body" placeholder="e.g. Nappkin, Avenista, teeitup…"
+                 class="min-w-[16rem] flex-1 rounded-xl border border-(--color-line) bg-white px-4 py-2.5 text-sm outline-none focus:border-(--color-pine)" />
+          <button class="rounded-full bg-(--color-pine) px-5 py-2.5 text-sm font-semibold text-white">Ask</button>
+        </form>
+      </div>
     </div>
   </section>
 </Base>
