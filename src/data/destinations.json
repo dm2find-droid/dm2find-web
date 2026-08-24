@@ -14438,5 +14438,145 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/steenwijkvestingstad.jpg",
     "brandColor": "#214F50",
     "calendarUrl": null
+  },
+  {
+    "slug": "uzes",
+    "name": {
+      "en": "Uzès"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Gard",
+    "tenantId": "uzes",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/uzes",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.uzes-pontdugard.com/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      44.015749,
+      4.419155
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/paysduzes.jpg",
+    "brandColor": "#8A2D4C",
+    "calendarUrl": "https://www.uzes-pontdugard.com/en/tous-les-evenements/"
+  },
+  {
+    "slug": "wissembourg",
+    "name": {
+      "en": "Wissembourg"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Bas-Rhin",
+    "tenantId": "wissembourg",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/wissembourg",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.alsace-verte.com/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      49.036901,
+      7.942875
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/alsazeverte.png",
+    "brandColor": "#509625",
+    "calendarUrl": "https://www.alsace-verte.com/en/Agenda/"
+  },
+  {
+    "slug": "zonza",
+    "name": {
+      "en": "Zonza"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Corse-du-Sud",
+    "tenantId": "zonza",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/zonza",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.zonza-saintelucie.com/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      41.76352,
+      9.165233
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zonzasantalucia.jpg",
+    "brandColor": "#053542",
+    "calendarUrl": "https://www.zonza-saintelucie.com/en/agenda/"
+  },
+  {
+    "slug": "aachen",
+    "name": {
+      "en": "Aachen"
+    },
+    "country": "DE",
+    "countryName": "Germany",
+    "region": "North Rhine-Westphalia",
+    "tenantId": "aachen",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/aachen",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.aachen-tourismus.de/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      50.7762,
+      6.0838
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/aachentourismus.jpg",
+    "brandColor": "#2D2854",
+    "calendarUrl": "https://www.aachen-tourismus.de/en/aachen-entdecken/events/"
   }
 ]
