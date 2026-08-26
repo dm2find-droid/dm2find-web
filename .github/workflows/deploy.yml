@@ -1,5 +1,4 @@
 name: build & publish
-
 on:
   push:
     branches: [main]
@@ -11,6 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # De secrets-context bestaat niet in een `if`, ook niet op stapniveau. Via
+    # env op jobniveau kan de laatste stap er wel op testen.
+    env:
+      COOLIFY_WEBHOOK: ${{ secrets.COOLIFY_WEBHOOK }}
     permissions: { contents: read, packages: write }
     steps:
       - uses: actions/checkout@v4
@@ -31,5 +34,5 @@ jobs:
             ghcr.io/${{ github.repository }}:latest
             ghcr.io/${{ github.repository }}:${{ github.sha }}
       - name: Tell Coolify to redeploy
-        if: ${{ secrets.COOLIFY_WEBHOOK != '' }}
-        run: curl -fsS -X POST "${{ secrets.COOLIFY_WEBHOOK }}"
+        if: env.COOLIFY_WEBHOOK != ''
+        run: curl -fsS -X POST "$COOLIFY_WEBHOOK"
