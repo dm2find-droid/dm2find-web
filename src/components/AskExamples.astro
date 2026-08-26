@@ -1,0 +1,77 @@
+---
+/**
+ * Voorbeeldvragen boven de ingebedde concierge.
+ *
+ * Een chip herlaadt het iframe dat al op de pagina staat, met de vraag
+ * meegestuurd — de bezoeker ziet het antwoord verschijnen in het kader waar
+ * hij al naar keek. Een nieuw tabblad zou een slechtere demo zijn: het kost
+ * de pagina en toont hetzelfde lege invoerveld dat de chips moeten oplossen.
+ *
+ * Rendert als echte links, dus het werkt zonder JS en cmd-klik doet nog steeds
+ * het verwachte. Het script onderschept alleen de gewone linkermuisklik.
+ *
+ * Er rendert niets als er geen vragen zijn — een preview-bestemming met een
+ * lege inventory toont de concierge alleen, niet een lege kop erboven.
+ */
+import { sampleQuestionsFor, type QuestionSource } from '../lib/sampleQuestions';
+
+interface Props {
+  d: QuestionSource;
+  /** Moet overeenkomen met het iframe dat <Chat> rendert. */
+  frameId?: string;
+  chatUrl: string;
+  locale?: string;
+  limit?: number;
+}
+
+const { d, frameId = 'concierge-frame', chatUrl, locale = 'en', limit = 4 } = Astro.props;
+
+const questions = sampleQuestionsFor(d, locale, limit);
+const href = (q: string) => `${chatUrl}?q=${encodeURIComponent(q)}`;
+---
+
+{questions.length > 0 && (
+  <div class="mb-3" data-ask-examples data-frame={frameId}>
+    <h2 class="text-xs font-semibold tracking-wide text-(--color-ink-3) uppercase">Try asking</h2>
+    <div class="mt-2.5 flex flex-wrap gap-2">
+      {questions.map((q) => (
+        <a
+          href={href(q)}
+          data-q={q}
+          class="inline-flex items-baseline gap-2 rounded-full border border-(--color-line) bg-white px-3.5 py-2 text-sm text-(--color-ink-2) transition hover:border-(--color-pine) hover:bg-(--color-pine-l) hover:text-(--color-pine) focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-pine)"
+        >
+          <span>{q}</span>
+          <span aria-hidden="true" class="text-(--color-ink-3)">→</span>
+        </a>
+      ))}
+    </div>
+  </div>
+)}
+
+<script>
+  document.querySelectorAll('[data-ask-examples]').forEach((box) => {
+    const el = box as HTMLElement;
+    const frame = document.getElementById(el.dataset.frame || '') as HTMLIFrameElement | null;
+    if (!frame) return; // geen embed op deze pagina — de links staan op zichzelf
+
+    el.addEventListener('click', (ev) => {
+      const e = ev as MouseEvent;
+      const link = (e.target as HTMLElement).closest('a[data-q]') as HTMLAnchorElement | null;
+      if (!link) return;
+      // Laat aangepaste kliks aan de browser: cmd/ctrl-klik, middelklik en
+      // openen-in-nieuw-tabblad blijven gewoon werken.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+
+      e.preventDefault();
+      frame.src = link.href;
+
+      // Op een smal scherm staat het venster onder de chips; breng het in beeld.
+      if (window.matchMedia('(max-width: 1023px)').matches) {
+        frame.scrollIntoView({
+          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+          block: 'nearest',
+        });
+      }
+    });
+  });
+</script>
