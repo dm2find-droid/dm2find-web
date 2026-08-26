@@ -115,8 +115,8 @@
       "claimed": false
     },
     "coords": [
-      36.991,
-      35.3303
+      36.99102,
+      35.33033
     ]
   },
   {
@@ -139,7 +139,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 23,
+      "events": 9,
       "trails": 25,
       "attractions": 356,
       "restaurants": 158
@@ -147,8 +147,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.207,
-      5.2283
+      46.207045,
+      5.228283
     ],
     "dtFeed": false,
     "dmo": {
@@ -180,7 +180,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 33,
+      "events": 23,
       "trails": 82,
       "attractions": 114,
       "restaurants": 58
@@ -189,7 +189,7 @@
     "sampleQuestions": {},
     "coords": [
       49.5656,
-      3.6236
+      3.623633
     ],
     "dtFeed": false,
     "dmo": {
@@ -221,7 +221,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 385,
+      "events": 143,
       "trails": 108,
       "attractions": 1818,
       "restaurants": 736
@@ -229,8 +229,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      43.5261,
-      5.4442
+      43.526131,
+      5.444158
     ],
     "dtFeed": false,
     "dmo": {
@@ -314,8 +314,8 @@
       "claimed": false
     },
     "coords": [
-      41.6546,
-      41.6401
+      41.654594,
+      41.640133
     ],
     "logo": "https://i.imgur.com/y79apCf.png",
     "brandColor": "#DD4848",
@@ -346,7 +346,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 3,
+      "events": 2,
       "trails": 14,
       "attractions": 254,
       "restaurants": 117
@@ -354,8 +354,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      43.9289,
-      2.1447
+      43.928863,
+      2.144673
     ],
     "dtFeed": true,
     "dmo": {
@@ -387,7 +387,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 158,
+      "events": 59,
       "trails": 57,
       "attractions": 144,
       "restaurants": 42
@@ -395,8 +395,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      48.4306,
-      0.0822
+      48.430571,
+      0.082151
     ],
     "dtFeed": true,
     "dmo": {
@@ -466,7 +466,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 48,
+      "events": 5,
       "trails": 2,
       "attractions": 100,
       "restaurants": 20
@@ -508,7 +508,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 156,
+      "events": 70,
       "trails": 105,
       "attractions": 310,
       "restaurants": 69
@@ -516,8 +516,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.5672,
-      3.3332
+      46.567176,
+      3.33318
     ],
     "dtFeed": false,
     "dmo": {
@@ -549,7 +549,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 24,
+      "events": 10,
       "trails": 1,
       "attractions": 33,
       "restaurants": 31
@@ -630,7 +630,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 21,
+      "events": 19,
       "trails": 4,
       "attractions": 138,
       "restaurants": 72
@@ -638,8 +638,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.0949,
-      6.2382
+      44.094918,
+      6.238205
     ],
     "dtFeed": false,
     "dmo": {
@@ -671,7 +671,7 @@
     "languages": [],
     "inventory": {
       "golf": 7,
-      "events": 45,
+      "events": 12,
       "trails": 17,
       "attractions": 60,
       "restaurants": 89
@@ -713,7 +713,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 414,
+      "events": 219,
       "attractions": 246,
       "restaurants": 189
     },
@@ -757,7 +757,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 82,
+      "events": 16,
       "trails": 3,
       "attractions": 123,
       "restaurants": 217
@@ -800,7 +800,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 97,
+      "events": 14,
       "trails": 4,
       "districts": 110,
       "attractions": 129,
@@ -887,7 +887,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 1007,
+      "events": 159,
       "trails": 34,
       "attractions": 455,
       "restaurants": 262
@@ -932,7 +932,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 538,
+      "events": 252,
       "trails": 120,
       "attractions": 494,
       "restaurants": 170
@@ -973,7 +973,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 14,
+      "events": 4,
       "trails": 40,
       "attractions": 625,
       "restaurants": 251
@@ -981,8 +981,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.9004,
-      6.1257
+      45.900369,
+      6.125679
     ],
     "dtFeed": true,
     "dmo": {
@@ -1014,7 +1014,7 @@
     "languages": [],
     "inventory": {
       "golf": 14,
-      "events": 173,
+      "events": 64,
       "trails": 21,
       "attractions": 774,
       "restaurants": 803
@@ -1033,8 +1033,8 @@
       "claimed": false
     },
     "coords": [
-      43.5688,
-      7.1158
+      43.568764,
+      7.11577
     ]
   },
   {
@@ -1141,7 +1141,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 14,
+      "events": 6,
       "trails": 13,
       "attractions": 410,
       "restaurants": 179
@@ -1149,8 +1149,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.7346,
-      4.5984
+      44.734612,
+      4.598372
     ],
     "dtFeed": false,
     "dmo": {
@@ -1182,7 +1182,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 604,
+      "events": 365,
       "trails": 131,
       "attractions": 2001,
       "restaurants": 745
@@ -1190,8 +1190,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.0631,
-      4.8339
+      45.063142,
+      4.833866
     ],
     "dtFeed": false,
     "dmo": {
@@ -1222,7 +1222,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 165,
+      "events": 106,
       "trails": 87,
       "attractions": 555,
       "restaurants": 156
@@ -1230,8 +1230,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      49.7743,
-      4.7207
+      49.77433,
+      4.720675
     ],
     "dtFeed": false,
     "dmo": {
@@ -1271,8 +1271,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      42.9658,
-      1.6048
+      42.965766,
+      1.604834
     ],
     "dtFeed": false,
     "dmo": {
@@ -1304,7 +1304,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 21,
+      "events": 4,
       "trails": 2,
       "attractions": 132,
       "restaurants": 55
@@ -1312,8 +1312,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      43.7845,
-      -0.0092
+      43.784486,
+      -0.009177
     ],
     "dtFeed": false,
     "dmo": {
@@ -1386,7 +1386,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 30,
+      "events": 24,
       "trails": 11,
       "attractions": 801,
       "restaurants": 396
@@ -1394,8 +1394,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      50.291,
-      2.7779
+      50.291003,
+      2.777918
     ],
     "dtFeed": true,
     "dmo": {
@@ -1426,7 +1426,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 10,
+      "events": 2,
       "trails": 12,
       "attractions": 120,
       "restaurants": 49
@@ -1468,7 +1468,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 362,
+      "events": 210,
       "trails": 47,
       "attractions": 749,
       "restaurants": 346
@@ -1476,8 +1476,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      48.2944,
-      4.0718
+      48.294426,
+      4.071799
     ],
     "dtFeed": false,
     "dmo": {
@@ -1509,7 +1509,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 25,
+      "events": 9,
       "trails": 6,
       "attractions": 159,
       "restaurants": 50
@@ -1550,7 +1550,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 103,
+      "events": 92,
       "attractions": 220,
       "restaurants": 89
     },
@@ -1590,7 +1590,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 12,
+      "events": 5,
       "trails": 43,
       "attractions": 228,
       "restaurants": 108
@@ -1630,7 +1630,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 158,
+      "events": 73,
       "trails": 30,
       "attractions": 325,
       "restaurants": 122
@@ -1670,7 +1670,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 156,
+      "events": 70,
       "trails": 127,
       "attractions": 378,
       "restaurants": 249
@@ -1711,7 +1711,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 342,
+      "events": 119,
       "trails": 75,
       "attractions": 1528,
       "restaurants": 581
@@ -1766,8 +1766,8 @@
       "claimed": false
     },
     "coords": [
-      13.7631,
-      100.5259
+      13.7630662728481,
+      100.52591411791
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-bangkok.jpg",
     "brandColor": "#025937",
@@ -1886,8 +1886,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      42.7011,
-      9.4511
+      42.701132,
+      9.451119
     ],
     "dtFeed": true,
     "dmo": {
@@ -1918,7 +1918,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 64,
+      "events": 44,
       "trails": 105,
       "attractions": 183,
       "restaurants": 61
@@ -1971,8 +1971,8 @@
       "claimed": false
     },
     "coords": [
-      39.9259,
-      116.3793
+      39.92586965,
+      116.379323
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-beijing.jpg",
     "brandColor": "#C62828",
@@ -2003,7 +2003,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 486,
+      "events": 263,
       "trails": 266,
       "attractions": 431,
       "restaurants": 243
@@ -2134,7 +2134,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 722,
+      "events": 189,
       "trails": 243,
       "attractions": 403,
       "restaurants": 216
@@ -2142,8 +2142,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      47.2411,
-      6.0228
+      47.241084,
+      6.022812
     ],
     "dtFeed": true,
     "dmo": {
@@ -2155,6 +2155,7 @@
     "calendarUrl": "https://www.besancon-tourisme.com/en/on-the-practical-side/agenda/",
     "website": "https://www.besancon-tourisme.com/en/",
     "touristPass": {
+      "url": null,
       "name": "Besançon Pass Tourisme"
     }
   },
@@ -2221,7 +2222,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 541,
+      "events": 68,
       "trails": 14,
       "attractions": 154,
       "restaurants": 93
@@ -2272,8 +2273,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.7677,
-      9.3856
+      44.767703,
+      9.385583
     ],
     "dtFeed": false,
     "dmo": {
@@ -2304,7 +2305,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 92,
+      "events": 8,
       "attractions": 28,
       "restaurants": 28
     },
@@ -2354,8 +2355,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.5012,
-      11.3492
+      46.501198,
+      11.349187
     ],
     "dtFeed": false,
     "dmo": {
@@ -2391,7 +2392,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 419,
+      "events": 101,
       "trails": 133,
       "districts": 8,
       "attractions": 553,
@@ -2475,7 +2476,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 1464,
+      "events": 706,
       "trails": 148,
       "attractions": 2538,
       "restaurants": 1268
@@ -2516,7 +2517,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 23,
+      "events": 9,
       "trails": 25,
       "attractions": 356,
       "restaurants": 158
@@ -2524,8 +2525,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.207,
-      5.2283
+      46.207045,
+      5.228283
     ],
     "dtFeed": true,
     "dmo": {
@@ -2557,7 +2558,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 314,
+      "events": 111,
       "trails": 4,
       "attractions": 177,
       "restaurants": 65
@@ -2640,15 +2641,15 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 423,
+      "events": 198,
       "attractions": 143,
       "restaurants": 40
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      48.398,
-      -4.4878
+      48.398019,
+      -4.487839
     ],
     "dtFeed": false,
     "dmo": {
@@ -2833,8 +2834,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      35.1667,
-      129.0667
+      35.166668,
+      129.066666
     ],
     "dtFeed": false,
     "dmo": {
@@ -2917,7 +2918,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 917,
+      "events": 321,
       "trails": 99,
       "attractions": 689,
       "restaurants": 199
@@ -2925,8 +2926,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      49.1863,
-      -0.3634
+      49.186267,
+      -0.36335
     ],
     "dtFeed": true,
     "dmo": {
@@ -2957,7 +2958,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 318,
+      "events": 130,
       "trails": 86,
       "attractions": 545,
       "restaurants": 188
@@ -2998,7 +2999,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 917,
+      "events": 321,
       "trails": 99,
       "attractions": 689,
       "restaurants": 199
@@ -3006,8 +3007,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      49.1863,
-      -0.3634
+      49.186267,
+      -0.36335
     ],
     "dtFeed": false,
     "dmo": {
@@ -3039,7 +3040,7 @@
     "languages": [],
     "inventory": {
       "golf": 17,
-      "events": 65,
+      "events": 17,
       "trails": 21,
       "attractions": 655,
       "restaurants": 591
@@ -3053,8 +3054,8 @@
       "claimed": false
     },
     "coords": [
-      43.5495,
-      6.9777
+      43.549516,
+      6.977698
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/cannes.jpg\r\n",
     "brandColor": "#003CBC",
@@ -3080,7 +3081,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 12,
+      "events": 5,
       "trails": 43,
       "attractions": 228,
       "restaurants": 108
@@ -3121,7 +3122,7 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 164,
+      "events": 17,
       "trails": 57,
       "attractions": 242,
       "restaurants": 91
@@ -3162,7 +3163,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 103,
+      "events": 92,
       "attractions": 220,
       "restaurants": 89
     },
@@ -3202,7 +3203,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 401,
+      "events": 152,
       "trails": 104,
       "attractions": 146,
       "restaurants": 41
@@ -3210,8 +3211,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      49.5852,
-      1.3589
+      49.585204,
+      1.358931
     ],
     "dtFeed": false,
     "dmo": {
@@ -3243,7 +3244,7 @@
     "languages": [],
     "inventory": {
       "golf": 7,
-      "events": 25,
+      "events": 10,
       "trails": 28,
       "attractions": 161,
       "restaurants": 82
@@ -3284,7 +3285,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 140,
+      "events": 46,
       "trails": 16,
       "attractions": 117,
       "restaurants": 47
@@ -3292,8 +3293,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      48.9577,
-      4.3635
+      48.957663,
+      4.363451
     ],
     "dtFeed": true,
     "dmo": {
@@ -3325,7 +3326,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 31,
+      "events": 10,
       "trails": 59,
       "attractions": 699,
       "restaurants": 267
@@ -3333,8 +3334,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.5655,
-      5.9185
+      45.565527,
+      5.918505
     ],
     "dtFeed": true,
     "dmo": {
@@ -3366,7 +3367,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 84,
+      "events": 48,
       "trails": 105,
       "attractions": 873,
       "restaurants": 314
@@ -3380,8 +3381,8 @@
       "claimed": false
     },
     "coords": [
-      45.9241,
-      6.8682
+      45.924106,
+      6.868207
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/chamonix-mont-blanc.jpg",
     "brandColor": "#CF333C",
@@ -3407,7 +3408,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 538,
+      "events": 252,
       "trails": 120,
       "attractions": 494,
       "restaurants": 170
@@ -3448,7 +3449,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 394,
+      "events": 154,
       "trails": 12,
       "attractions": 322,
       "restaurants": 200
@@ -3456,8 +3457,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.1581,
-      -1.1511
+      46.158134,
+      -1.151128
     ],
     "dtFeed": false,
     "dmo": {
@@ -3488,7 +3489,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 165,
+      "events": 106,
       "trails": 87,
       "attractions": 555,
       "restaurants": 156
@@ -3496,8 +3497,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      49.7743,
-      4.7207
+      49.77433,
+      4.720675
     ],
     "dtFeed": true,
     "dmo": {
@@ -3529,7 +3530,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 12,
+      "events": 3,
       "trails": 18,
       "attractions": 83,
       "restaurants": 27
@@ -3570,7 +3571,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 164,
+      "events": 65,
       "trails": 25,
       "attractions": 94,
       "restaurants": 33
@@ -3611,7 +3612,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 167,
+      "events": 71,
       "trails": 15,
       "attractions": 153,
       "restaurants": 46
@@ -3652,7 +3653,7 @@
     "languages": [],
     "inventory": {
       "golf": 11,
-      "events": 486,
+      "events": 36,
       "trails": 35,
       "attractions": 342,
       "restaurants": 227
@@ -3692,7 +3693,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 34,
+      "events": 17,
       "trails": 54,
       "attractions": 667,
       "restaurants": 67
@@ -3733,7 +3734,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 314,
+      "events": 111,
       "trails": 4,
       "attractions": 177,
       "restaurants": 65
@@ -3822,7 +3823,7 @@
     },
     "coords": [
       47.0021,
-      28.8403
+      28.84031
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitchisinau.png",
     "brandColor": "#F7CC00",
@@ -3849,7 +3850,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 143,
+      "events": 75,
       "trails": 40,
       "attractions": 517,
       "restaurants": 322
@@ -3857,8 +3858,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.7791,
-      3.0857
+      45.779058,
+      3.085698
     ],
     "dtFeed": true,
     "dmo": {
@@ -3870,6 +3871,7 @@
     "calendarUrl": "https://www.clermontauvergnevolcans.com/en/major-events/",
     "website": "https://www.clermontauvergnevolcans.com/en/bienvenue-clermont-ferrand/",
     "touristPass": {
+      "url": null,
       "name": "ClermontPass"
     }
   },
@@ -3893,7 +3895,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 1614,
+      "events": 384,
       "trails": 249,
       "attractions": 1486,
       "restaurants": 339
@@ -3901,8 +3903,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      48.0759,
-      7.3564
+      48.075915,
+      7.356395
     ],
     "dtFeed": true,
     "dmo": {
@@ -4028,7 +4030,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 351,
+      "events": 104,
       "trails": 148,
       "attractions": 569,
       "restaurants": 129
@@ -4107,7 +4109,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 515,
+      "events": 147,
       "trails": 76,
       "attractions": 546,
       "restaurants": 256
@@ -4148,7 +4150,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 543,
+      "events": 205,
       "attractions": 179,
       "restaurants": 100
     },
@@ -4187,7 +4189,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 366,
+      "events": 89,
       "trails": 127,
       "attractions": 351,
       "restaurants": 78
@@ -4233,8 +4235,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      35.8662,
-      128.593
+      35.866185,
+      128.593026
     ],
     "dtFeed": false,
     "dmo": {
@@ -4278,8 +4280,8 @@
       "claimed": false
     },
     "coords": [
-      33.5139,
-      36.2899
+      33.51391,
+      36.28989
     ],
     "logo": "https://i.imgur.com/7VYX4jZ.png",
     "brandColor": null,
@@ -4307,7 +4309,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 1709,
+      "events": 619,
       "trails": 84,
       "attractions": 759,
       "restaurants": 364
@@ -4315,8 +4317,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      49.3598,
-      0.0773
+      49.359811,
+      0.077275
     ],
     "dtFeed": false,
     "dmo": {
@@ -4348,7 +4350,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 65,
+      "events": 17,
       "trails": 2,
       "attractions": 106,
       "restaurants": 127
@@ -4395,7 +4397,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 38,
+      "events": 18,
       "trails": 3,
       "attractions": 27,
       "restaurants": 29
@@ -4440,7 +4442,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 48,
+      "events": 7,
       "trails": 8,
       "attractions": 20,
       "restaurants": 12
@@ -4483,7 +4485,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 278,
+      "events": 88,
       "trails": 129,
       "attractions": 506,
       "restaurants": 178
@@ -4491,8 +4493,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.3216,
-      -0.4544
+      46.321645,
+      -0.454418
     ],
     "dtFeed": false,
     "dmo": {
@@ -4524,7 +4526,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 21,
+      "events": 19,
       "trails": 4,
       "attractions": 138,
       "restaurants": 72
@@ -4532,8 +4534,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.0949,
-      6.2382
+      44.094918,
+      6.238205
     ],
     "dtFeed": true,
     "dmo": {
@@ -4565,7 +4567,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 515,
+      "events": 147,
       "trails": 76,
       "attractions": 546,
       "restaurants": 256
@@ -4650,7 +4652,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 283,
+      "events": 145,
       "trails": 59,
       "attractions": 325,
       "restaurants": 271
@@ -4691,7 +4693,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 19,
+      "events": 8,
       "trails": 1,
       "attractions": 43,
       "restaurants": 60
@@ -4733,7 +4735,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 722,
+      "events": 189,
       "trails": 243,
       "attractions": 403,
       "restaurants": 216
@@ -4741,8 +4743,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      47.2411,
-      6.0228
+      47.241084,
+      6.022812
     ],
     "dtFeed": false,
     "dmo": {
@@ -4823,7 +4825,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 505,
+      "events": 304,
       "trails": 51,
       "attractions": 1381,
       "restaurants": 474
@@ -4879,8 +4881,8 @@
       "claimed": false
     },
     "coords": [
-      42.6411,
-      18.1111
+      42.64105,
+      18.11108
     ]
   },
   {
@@ -4903,15 +4905,15 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 11,
+      "events": 10,
       "attractions": 75,
       "restaurants": 105
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      51.0362,
-      2.376
+      51.036181,
+      2.376022
     ],
     "dtFeed": false,
     "dmo": {
@@ -5025,7 +5027,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 12,
+      "events": 5,
       "trails": 2,
       "attractions": 23,
       "restaurants": 35
@@ -5109,7 +5111,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 63,
+      "events": 36,
       "trails": 36,
       "attractions": 545,
       "restaurants": 109
@@ -5117,8 +5119,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      49.0438,
-      3.9581
+      49.043813,
+      3.958146
     ],
     "dtFeed": false,
     "dmo": {
@@ -5150,7 +5152,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 189,
+      "events": 98,
       "trails": 168,
       "attractions": 225,
       "restaurants": 41
@@ -5191,7 +5193,7 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 45,
+      "events": 23,
       "trails": 13,
       "attractions": 619,
       "restaurants": 303
@@ -5232,7 +5234,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 58,
+      "events": 38,
       "trails": 28,
       "attractions": 147,
       "restaurants": 61
@@ -5240,8 +5242,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      49.7079,
-      0.2056
+      49.70789,
+      0.205648
     ],
     "dtFeed": false,
     "dmo": {
@@ -5273,7 +5275,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 164,
+      "events": 65,
       "trails": 25,
       "attractions": 94,
       "restaurants": 33
@@ -5312,7 +5314,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 112,
+      "events": 35,
       "trails": 26,
       "attractions": 92,
       "restaurants": 35
@@ -5353,7 +5355,7 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 45,
+      "events": 23,
       "trails": 13,
       "attractions": 619,
       "restaurants": 303
@@ -5394,7 +5396,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 115,
+      "events": 50,
       "trails": 21,
       "attractions": 830,
       "restaurants": 797
@@ -5402,8 +5404,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      43.7287,
-      7.3616
+      43.728712,
+      7.361596
     ],
     "dtFeed": false,
     "dmo": {
@@ -5433,7 +5435,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 119,
+      "events": 59,
       "trails": 68,
       "attractions": 138,
       "restaurants": 34
@@ -5441,8 +5443,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      48.8959,
-      -0.1989
+      48.895885,
+      -0.198888
     ],
     "dtFeed": false,
     "dmo": {
@@ -5485,8 +5487,8 @@
       "claimed": false
     },
     "coords": [
-      37.1055,
-      -7.9316
+      37.10549,
+      -7.93159
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitfaro.png",
     "brandColor": "#c7383a"
@@ -5510,15 +5512,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 130,
+      "events": 13,
       "attractions": 6,
       "restaurants": 9
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.8354,
-      11.6158
+      44.83542,
+      11.615751
     ],
     "dtFeed": false,
     "dmo": {
@@ -5590,7 +5592,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 368,
+      "events": 124,
       "attractions": 171,
       "restaurants": 78
     },
@@ -5680,8 +5682,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      42.9658,
-      1.6048
+      42.965766,
+      1.604834
     ],
     "dtFeed": true,
     "dmo": {
@@ -5712,15 +5714,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 45,
+      "events": 5,
       "attractions": 14,
       "restaurants": 4
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.1877,
-      12.1265
+      44.187709,
+      12.126515
     ],
     "dtFeed": false,
     "dmo": {
@@ -5762,8 +5764,8 @@
       "claimed": false
     },
     "coords": [
-      50.1114,
-      8.6808
+      50.11144,
+      8.68077
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/frankfurt.jpg",
     "brandColor": "#DB0B0B",
@@ -5805,8 +5807,8 @@
       "claimed": false
     },
     "coords": [
-      47.9966,
-      7.8492
+      47.996608,
+      7.84918
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/freiburg-tourism.jpg",
     "brandColor": "#E0202C",
@@ -5832,7 +5834,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 17,
+      "events": 8,
       "trails": 16,
       "attractions": 325,
       "restaurants": 89
@@ -5840,8 +5842,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.5587,
-      6.0781
+      44.558682,
+      6.078073
     ],
     "dtFeed": true,
     "dmo": {
@@ -5873,7 +5875,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 56,
+      "events": 49,
       "trails": 1,
       "attractions": 421,
       "restaurants": 166
@@ -5958,7 +5960,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 25,
+      "events": 9,
       "trails": 6,
       "attractions": 159,
       "restaurants": 50
@@ -6133,7 +6135,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 419,
+      "events": 101,
       "trails": 133,
       "attractions": 553,
       "restaurants": 143
@@ -6174,7 +6176,7 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 52,
+      "events": 18,
       "trails": 15,
       "attractions": 64,
       "restaurants": 101
@@ -6222,8 +6224,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      57.7045,
-      11.9698
+      57.704513,
+      11.96978
     ],
     "dtFeed": false,
     "dmo": {
@@ -6255,7 +6257,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 74,
+      "events": 16,
       "trails": 2,
       "attractions": 51,
       "restaurants": 65
@@ -6342,7 +6344,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 11,
+      "events": 3,
       "trails": 57,
       "attractions": 1169,
       "restaurants": 391
@@ -6350,8 +6352,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.193,
-      5.7261
+      45.192996,
+      5.726128
     ],
     "dtFeed": true,
     "dmo": {
@@ -6385,7 +6387,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 71,
+      "events": 34,
       "trails": 98,
       "districts": 17,
       "attractions": 1841,
@@ -6437,7 +6439,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 71,
+      "events": 34,
       "trails": 98,
       "attractions": 1841,
       "restaurants": 762
@@ -6484,8 +6486,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      35.848,
-      129.2061
+      35.848003,
+      129.206102
     ],
     "dtFeed": false,
     "dmo": {
@@ -6517,7 +6519,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 86,
+      "events": 11,
       "trails": 14,
       "attractions": 129,
       "restaurants": 207
@@ -6560,7 +6562,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 425,
+      "events": 203,
       "trails": 200,
       "attractions": 892,
       "restaurants": 294
@@ -6579,8 +6581,8 @@
       "claimed": false
     },
     "coords": [
-      48.815,
-      7.7894
+      48.814971,
+      7.789361
     ]
   },
   {
@@ -6777,7 +6779,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 1614,
+      "events": 384,
       "trails": 249,
       "attractions": 1486,
       "restaurants": 339
@@ -6785,8 +6787,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      48.0759,
-      7.3564
+      48.075915,
+      7.356395
     ],
     "dtFeed": false,
     "dmo": {
@@ -6823,8 +6825,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      42.7011,
-      9.4511
+      42.701132,
+      9.451119
     ],
     "dtFeed": false,
     "dmo": {
@@ -6856,7 +6858,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 385,
+      "events": 197,
       "attractions": 698,
       "restaurants": 558
     },
@@ -6895,7 +6897,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 334,
+      "events": 104,
       "trails": 14,
       "attractions": 537,
       "restaurants": 165
@@ -6935,7 +6937,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 34,
+      "events": 17,
       "trails": 54,
       "attractions": 667,
       "restaurants": 67
@@ -6975,7 +6977,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 101,
+      "events": 20,
       "trails": 28,
       "attractions": 145,
       "restaurants": 78
@@ -7015,7 +7017,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 14,
+      "events": 4,
       "trails": 40,
       "attractions": 625,
       "restaurants": 251
@@ -7023,8 +7025,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.9004,
-      6.1257
+      45.900369,
+      6.125679
     ],
     "dtFeed": false,
     "dmo": {
@@ -7055,7 +7057,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 17,
+      "events": 8,
       "trails": 16,
       "attractions": 325,
       "restaurants": 89
@@ -7063,8 +7065,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.5587,
-      6.0781
+      44.558682,
+      6.078073
     ],
     "dtFeed": false,
     "dmo": {
@@ -7095,7 +7097,7 @@
     "languages": [],
     "inventory": {
       "golf": 16,
-      "events": 174,
+      "events": 57,
       "trails": 34,
       "attractions": 3640,
       "restaurants": 2227
@@ -7103,8 +7105,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      48.7786,
-      2.2673
+      48.778633,
+      2.267295
     ],
     "dtFeed": false,
     "dmo": {
@@ -7181,15 +7183,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 134,
+      "events": 12,
       "attractions": 352,
       "restaurants": 24
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      60.1702,
-      24.9412
+      60.170234,
+      24.941181
     ],
     "dtFeed": false,
     "dmo": {
@@ -7221,7 +7223,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 1002,
+      "events": 382,
       "trails": 51,
       "attractions": 516,
       "restaurants": 287
@@ -7262,7 +7264,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 44,
+      "events": 14,
       "trails": 17,
       "attractions": 45,
       "restaurants": 89
@@ -7305,7 +7307,7 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 53,
+      "events": 19,
       "trails": 15,
       "attractions": 64,
       "restaurants": 100
@@ -7319,8 +7321,8 @@
       "claimed": false
     },
     "coords": [
-      52.2266,
-      5.1708
+      52.22655,
+      5.17083
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/livehilversum.jpg",
     "brandColor": "#ee0000",
@@ -7346,7 +7348,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 1368,
+      "events": 506,
       "trails": 74,
       "attractions": 627,
       "restaurants": 296
@@ -7360,8 +7362,8 @@
       "claimed": false
     },
     "coords": [
-      49.419,
-      0.2346
+      49.419025,
+      0.23456
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/honfleur.jpg",
     "brandColor": "#073D49",
@@ -7433,7 +7435,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 10,
+      "events": 2,
       "attractions": 91,
       "restaurants": 12
     },
@@ -7514,7 +7516,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 47,
+      "events": 4,
       "trails": 12,
       "attractions": 54,
       "restaurants": 42
@@ -7557,7 +7559,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 62,
+      "events": 41,
       "attractions": 129,
       "restaurants": 147
     },
@@ -7610,8 +7612,8 @@
       "claimed": false
     },
     "coords": [
-      42.2713,
-      42.7038
+      42.271323,
+      42.703787
     ]
   },
   {
@@ -7640,8 +7642,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      37.4934,
-      126.6247
+      37.493418,
+      126.624732
     ],
     "dtFeed": false,
     "dmo": {
@@ -7716,7 +7718,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 11,
+      "events": 3,
       "trails": 57,
       "attractions": 1169,
       "restaurants": 391
@@ -7724,8 +7726,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.193,
-      5.7261
+      45.192996,
+      5.726128
     ],
     "dtFeed": false,
     "dmo": {
@@ -7777,8 +7779,8 @@
       "claimed": false
     },
     "coords": [
-      41.0277,
-      28.9627
+      41.02765,
+      28.96268
     ]
   },
   {
@@ -7820,7 +7822,7 @@
     },
     "coords": [
       38.4031,
-      27.0687
+      27.06871
     ]
   },
   {
@@ -7888,8 +7890,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      33.506,
-      126.5277
+      33.505983,
+      126.527707
     ],
     "dtFeed": false,
     "dmo": {
@@ -7926,8 +7928,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      35.8208,
-      127.1171
+      35.820804,
+      127.117058
     ],
     "dtFeed": false,
     "dmo": {
@@ -7997,7 +7999,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 500,
+      "events": 171,
       "trails": 113,
       "attractions": 354,
       "restaurants": 144
@@ -8121,7 +8123,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 1812,
+      "events": 431,
       "trails": 414,
       "attractions": 1472,
       "restaurants": 360
@@ -8140,8 +8142,8 @@
       "claimed": false
     },
     "coords": [
-      48.1404,
-      7.259
+      48.140359,
+      7.258954
     ]
   },
   {
@@ -8201,7 +8203,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 12,
+      "events": 2,
       "trails": 4,
       "attractions": 8,
       "restaurants": 34
@@ -8282,7 +8284,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 57,
+      "events": 5,
       "districts": 11,
       "attractions": 1,
       "restaurants": 256
@@ -8325,7 +8327,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 394,
+      "events": 154,
       "trails": 12,
       "attractions": 322,
       "restaurants": 200
@@ -8333,8 +8335,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.1581,
-      -1.1511
+      46.158134,
+      -1.151128
     ],
     "dtFeed": true,
     "dmo": {
@@ -8366,7 +8368,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 227,
+      "events": 114,
       "trails": 12,
       "attractions": 365,
       "restaurants": 119
@@ -8407,7 +8409,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 33,
+      "events": 23,
       "trails": 82,
       "attractions": 114,
       "restaurants": 58
@@ -8416,7 +8418,7 @@
     "sampleQuestions": {},
     "coords": [
       49.5656,
-      3.6236
+      3.623633
     ],
     "dtFeed": true,
     "dmo": {
@@ -8448,7 +8450,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 308,
+      "events": 13,
       "trails": 37,
       "attractions": 268,
       "restaurants": 91
@@ -8489,7 +8491,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 242,
+      "events": 73,
       "trails": 30,
       "attractions": 197,
       "restaurants": 3
@@ -8530,7 +8532,7 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 12755,
+      "events": 538,
       "trails": 12,
       "attractions": 579,
       "restaurants": 661
@@ -8571,7 +8573,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 628,
+      "events": 216,
       "trails": 189,
       "attractions": 371,
       "restaurants": 285
@@ -8611,7 +8613,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 334,
+      "events": 104,
       "trails": 14,
       "attractions": 537,
       "restaurants": 165
@@ -8694,7 +8696,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 55,
+      "events": 18,
       "trails": 4,
       "attractions": 78,
       "restaurants": 87
@@ -8713,8 +8715,8 @@
       "claimed": false
     },
     "coords": [
-      52.161,
-      4.4868
+      52.161025,
+      4.486792
     ]
   },
   {
@@ -8876,7 +8878,7 @@
     },
     "coords": [
       47.1418,
-      9.5186
+      9.51858
     ]
   },
   {
@@ -8939,7 +8941,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 671,
+      "events": 186,
       "trails": 2,
       "attractions": 402,
       "restaurants": 275
@@ -9025,7 +9027,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 1097,
+      "events": 447,
       "trails": 140,
       "attractions": 683,
       "restaurants": 348
@@ -9084,8 +9086,8 @@
       "claimed": false
     },
     "coords": [
-      46.053,
-      14.5075
+      46.05295,
+      14.50751
     ]
   },
   {
@@ -9108,7 +9110,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 541,
+      "events": 68,
       "trails": 14,
       "attractions": 154,
       "restaurants": 93
@@ -9149,7 +9151,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 113,
+      "events": 31,
       "trails": 120,
       "attractions": 355,
       "restaurants": 177
@@ -9190,7 +9192,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 141,
+      "events": 37,
       "trails": 82,
       "attractions": 468,
       "restaurants": 131
@@ -9230,7 +9232,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 500,
+      "events": 171,
       "trails": 113,
       "attractions": 354,
       "restaurants": 144
@@ -9310,7 +9312,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 318,
+      "events": 130,
       "trails": 86,
       "attractions": 545,
       "restaurants": 188
@@ -9351,7 +9353,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 448,
+      "events": 132,
       "trails": 105,
       "attractions": 428,
       "restaurants": 88
@@ -9365,8 +9367,8 @@
       "claimed": false
     },
     "coords": [
-      44.52,
-      0.1598
+      44.520025,
+      0.159822
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismelotetgaronne.jpg",
     "brandColor": "#65B32E",
@@ -9391,7 +9393,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 272,
+      "events": 117,
       "trails": 50,
       "attractions": 1322,
       "restaurants": 515
@@ -9405,8 +9407,8 @@
       "claimed": false
     },
     "coords": [
-      43.0935,
-      -0.0468
+      43.093522,
+      -0.046838
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lourdes.jpg",
     "brandColor": "#14BEF0",
@@ -9432,7 +9434,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 244,
+      "events": 83,
       "trails": 216,
       "attractions": 207,
       "restaurants": 26
@@ -9578,8 +9580,8 @@
       "claimed": false
     },
     "coords": [
-      49.8435,
-      24.0276
+      49.84347,
+      24.02764
     ]
   },
   {
@@ -9602,7 +9604,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 157,
+      "events": 82,
       "trails": 51,
       "districts": 21,
       "attractions": 960,
@@ -9695,7 +9697,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 685,
+      "events": 239,
       "trails": 141,
       "attractions": 697,
       "restaurants": 231
@@ -9709,8 +9711,8 @@
       "claimed": false
     },
     "coords": [
-      46.304,
-      4.8317
+      46.30401,
+      4.831685
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/macontourisme.jpg",
     "brandColor": "#416E75",
@@ -9820,7 +9822,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 238,
+      "events": 80,
       "trails": 37,
       "attractions": 168,
       "restaurants": 77
@@ -9901,7 +9903,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 140,
+      "events": 46,
       "trails": 16,
       "attractions": 117,
       "restaurants": 47
@@ -9915,8 +9917,8 @@
       "claimed": false
     },
     "coords": [
-      48.9577,
-      4.3635
+      48.957663,
+      4.363451
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/marne-tourisme.png",
     "brandColor": "#6AAFAF"
@@ -9941,7 +9943,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 3,
+      "events": 1,
       "attractions": 3,
       "restaurants": 6
     },
@@ -9959,8 +9961,8 @@
       "claimed": false
     },
     "coords": [
-      31.634,
-      -8.0081
+      31.634017,
+      -8.008123
     ]
   },
   {
@@ -9983,7 +9985,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 1464,
+      "events": 706,
       "trails": 148,
       "districts": 30,
       "attractions": 2538,
@@ -10029,7 +10031,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 242,
+      "events": 73,
       "trails": 30,
       "attractions": 197,
       "restaurants": 3
@@ -10108,7 +10110,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 3,
+      "events": 1,
       "trails": 25,
       "attractions": 123,
       "restaurants": 18
@@ -10122,8 +10124,8 @@
       "claimed": false
     },
     "coords": [
-      45.0024,
-      -1.1964
+      45.002364,
+      -1.196441
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/medocatlantique.jpg",
     "brandColor": "#EA4588"
@@ -10148,7 +10150,7 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 43,
+      "events": 11,
       "trails": 4,
       "attractions": 193,
       "restaurants": 189
@@ -10162,8 +10164,8 @@
       "claimed": false
     },
     "coords": [
-      48.5405,
-      2.6606
+      48.54047,
+      2.660611
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/meluntourisme.jpg",
     "brandColor": "#95BF74"
@@ -10188,7 +10190,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 244,
+      "events": 83,
       "trails": 216,
       "attractions": 207,
       "restaurants": 26
@@ -10234,8 +10236,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.6717,
-      11.1647
+      46.671697,
+      11.164727
     ],
     "dtFeed": false,
     "dmo": {
@@ -10266,7 +10268,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 427,
+      "events": 244,
       "trails": 127,
       "attractions": 711,
       "restaurants": 338
@@ -10280,8 +10282,8 @@
       "claimed": false
     },
     "coords": [
-      49.1209,
-      6.1757
+      49.120901,
+      6.175699
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/metz-avatar.png",
     "brandColor": "#94C242",
@@ -10311,7 +10313,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 797,
+      "events": 286,
       "trails": 68,
       "attractions": 567,
       "restaurants": 242
@@ -10325,8 +10327,8 @@
       "claimed": false
     },
     "coords": [
-      48.6938,
-      6.1832
+      48.693767,
+      6.183198
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/meurthemoselle-tourisme.jpg",
     "brandColor": "#F7A801",
@@ -10352,7 +10354,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 83,
+      "events": 65,
       "trails": 6,
       "attractions": 359,
       "restaurants": 76
@@ -10392,7 +10394,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 14,
+      "events": 6,
       "trails": 1,
       "attractions": 19,
       "restaurants": 25
@@ -10434,7 +10436,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 11,
+      "events": 1,
       "attractions": 1,
       "restaurants": 111
     },
@@ -10477,15 +10479,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 105,
+      "events": 13,
       "attractions": 30,
       "restaurants": 24
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.6462,
-      10.926
+      44.646209,
+      10.925995
     ],
     "dtFeed": false,
     "dmo": {
@@ -10557,7 +10559,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 227,
+      "events": 114,
       "trails": 12,
       "attractions": 365,
       "restaurants": 119
@@ -10597,7 +10599,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 190,
+      "events": 82,
       "trails": 19,
       "attractions": 169,
       "restaurants": 112
@@ -10611,8 +10613,8 @@
       "claimed": false
     },
     "coords": [
-      48.6352,
-      -1.5106
+      48.635248,
+      -1.510581
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montsaintmichel.jpg",
     "brandColor": "#EC764E",
@@ -10638,7 +10640,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 37,
+      "events": 23,
       "trails": 48,
       "attractions": 127,
       "restaurants": 25
@@ -10679,7 +10681,7 @@
     "languages": [],
     "inventory": {
       "golf": 24,
-      "events": 12860,
+      "events": 558,
       "trails": 75,
       "attractions": 921,
       "restaurants": 770
@@ -10720,7 +10722,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 1002,
+      "events": 382,
       "trails": 51,
       "attractions": 516,
       "restaurants": 287
@@ -10761,7 +10763,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 12822,
+      "events": 549,
       "trails": 21,
       "districts": 32,
       "attractions": 632,
@@ -10770,8 +10772,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.5088,
-      -73.5878
+      45.50884,
+      -73.58781
     ],
     "dtFeed": false,
     "dmo": {
@@ -10802,7 +10804,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 146,
+      "events": 74,
       "attractions": 105,
       "restaurants": 44
     },
@@ -10841,7 +10843,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 427,
+      "events": 244,
       "trails": 127,
       "attractions": 711,
       "restaurants": 338
@@ -10855,8 +10857,8 @@
       "claimed": false
     },
     "coords": [
-      49.1209,
-      6.1757
+      49.120901,
+      6.175699
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/moselle-tourisme.jpg",
     "brandColor": "#F8D82E",
@@ -10882,7 +10884,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 156,
+      "events": 70,
       "trails": 105,
       "attractions": 310,
       "restaurants": 69
@@ -10896,8 +10898,8 @@
       "claimed": false
     },
     "coords": [
-      46.5672,
-      3.3332
+      46.567176,
+      3.33318
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/moulins-tourisme.jpg",
     "brandColor": "#4E7282",
@@ -10923,7 +10925,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 602,
+      "events": 202,
       "trails": 236,
       "attractions": 1038,
       "restaurants": 387
@@ -10937,8 +10939,8 @@
       "claimed": false
     },
     "coords": [
-      47.751,
-      7.3391
+      47.750966,
+      7.339136
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-mulhouse.jpg",
     "brandColor": "#F24F55",
@@ -11057,7 +11059,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 797,
+      "events": 286,
       "trails": 68,
       "attractions": 567,
       "restaurants": 242
@@ -11071,8 +11073,8 @@
       "claimed": false
     },
     "coords": [
-      48.6938,
-      6.1832
+      48.693767,
+      6.183198
     ],
     "voiceAgentId": "agent_0401knvgg4a9e3qrtmjjtazq91x6",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationnancy.png",
@@ -11103,7 +11105,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 113,
+      "events": 31,
       "trails": 120,
       "attractions": 355,
       "restaurants": 177
@@ -11147,7 +11149,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 287,
+      "events": 112,
       "trails": 49,
       "attractions": 195,
       "restaurants": 129
@@ -11233,7 +11235,7 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 129,
+      "events": 57,
       "trails": 19,
       "attractions": 831,
       "restaurants": 778
@@ -11319,7 +11321,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 287,
+      "events": 112,
       "trails": 49,
       "attractions": 195,
       "restaurants": 129
@@ -11403,7 +11405,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 56,
+      "events": 49,
       "trails": 1,
       "attractions": 421,
       "restaurants": 166
@@ -11448,7 +11450,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 278,
+      "events": 88,
       "trails": 129,
       "attractions": 506,
       "restaurants": 178
@@ -11462,8 +11464,8 @@
       "claimed": false
     },
     "coords": [
-      46.3216,
-      -0.4544
+      46.321645,
+      -0.454418
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/niort-tourisme.png",
     "brandColor": "#00A19A",
@@ -11489,7 +11491,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 25,
+      "events": 13,
       "trails": 11,
       "attractions": 70,
       "restaurants": 84
@@ -11532,7 +11534,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 671,
+      "events": 186,
       "trails": 2,
       "attractions": 402,
       "restaurants": 275
@@ -11616,7 +11618,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 1038,
+      "events": 412,
       "trails": 607,
       "attractions": 1847,
       "restaurants": 444
@@ -11630,8 +11632,8 @@
       "claimed": false
     },
     "coords": [
-      48.4624,
-      7.4811
+      48.462362,
+      7.481135
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/obernai.jpg",
     "brandColor": "#B0C600",
@@ -11698,7 +11700,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 18,
+      "events": 13,
       "trails": 20,
       "attractions": 870,
       "restaurants": 315
@@ -11712,8 +11714,8 @@
       "claimed": false
     },
     "coords": [
-      44.1368,
-      4.8045
+      44.136776,
+      4.804458
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/orange-tourisme.jpg",
     "brandColor": "#CE5E16",
@@ -11739,7 +11741,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 141,
+      "events": 37,
       "trails": 82,
       "attractions": 468,
       "restaurants": 131
@@ -11778,7 +11780,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 48,
+      "events": 2,
       "districts": 24,
       "attractions": 12,
       "restaurants": 243
@@ -11870,7 +11872,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 154,
+      "events": 4,
       "trails": 15,
       "attractions": 166,
       "restaurants": 87
@@ -11878,8 +11880,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.4765,
-      -75.7013
+      45.476543,
+      -75.701271
     ],
     "dtFeed": false,
     "dmo": {
@@ -11955,7 +11957,7 @@
     "languages": [],
     "inventory": {
       "golf": 19,
-      "events": 129,
+      "events": 42,
       "trails": 39,
       "districts": 106,
       "attractions": 3586,
@@ -12001,15 +12003,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 121,
+      "events": 14,
       "attractions": 6,
       "restaurants": 18
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.8013,
-      10.3286
+      44.80126,
+      10.328551
     ],
     "dtFeed": false,
     "dmo": {
@@ -12041,7 +12043,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 30,
+      "events": 24,
       "trails": 11,
       "attractions": 801,
       "restaurants": 396
@@ -12055,8 +12057,8 @@
       "claimed": false
     },
     "coords": [
-      50.291,
-      2.7779
+      50.291003,
+      2.777918
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/calaisxxl.jpg",
     "brandColor": "#4C00FF",
@@ -12082,7 +12084,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 628,
+      "events": 284,
       "trails": 195,
       "attractions": 627,
       "restaurants": 369
@@ -12096,8 +12098,8 @@
       "claimed": false
     },
     "coords": [
-      43.2955,
-      -0.3757
+      43.295481,
+      -0.375673
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/pautourisme.png",
     "brandColor": "#C62337",
@@ -12123,7 +12125,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 283,
+      "events": 145,
       "trails": 59,
       "attractions": 325,
       "restaurants": 271
@@ -12164,7 +12166,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 700,
+      "events": 289,
       "attractions": 325,
       "restaurants": 276
     },
@@ -12177,8 +12179,8 @@
       "claimed": false
     },
     "coords": [
-      42.7013,
-      2.8942
+      42.701317,
+      2.894159
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/perpignan.jpg",
     "brandColor": "#E94868"
@@ -12202,15 +12204,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 36,
+      "events": 11,
       "attractions": 3,
       "restaurants": 13
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      45.0522,
-      9.6934
+      45.052233,
+      9.693369
     ],
     "dtFeed": false,
     "dmo": {
@@ -12279,7 +12281,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 60,
+      "events": 16,
       "trails": 16,
       "attractions": 316,
       "restaurants": 309
@@ -12360,7 +12362,7 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 59,
+      "events": 10,
       "trails": 20,
       "attractions": 808,
       "restaurants": 726
@@ -12374,8 +12376,8 @@
       "claimed": false
     },
     "coords": [
-      49.0411,
-      2.0811
+      49.041122,
+      2.081054
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/pontoise.png",
     "brandColor": "#009AA6"
@@ -12418,8 +12420,8 @@
       "claimed": false
     },
     "coords": [
-      50.0876,
-      14.4207
+      50.08762,
+      14.42074
     ]
   },
   {
@@ -12441,7 +12443,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 14,
+      "events": 6,
       "trails": 13,
       "attractions": 410,
       "restaurants": 179
@@ -12455,8 +12457,8 @@
       "claimed": false
     },
     "coords": [
-      44.7346,
-      4.5984
+      44.734612,
+      4.598372
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/coeurdeardeche-tourisme.jpg",
     "brandColor": "#60B08D",
@@ -12482,7 +12484,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 143,
+      "events": 75,
       "trails": 40,
       "attractions": 517,
       "restaurants": 322
@@ -12496,8 +12498,8 @@
       "claimed": false
     },
     "coords": [
-      45.7791,
-      3.0857
+      45.779058,
+      3.085698
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/puy-de-dome.jpg",
     "brandColor": "#325C00"
@@ -12522,7 +12524,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 628,
+      "events": 284,
       "trails": 195,
       "attractions": 627,
       "restaurants": 369
@@ -12536,8 +12538,8 @@
       "claimed": false
     },
     "coords": [
-      43.2955,
-      -0.3757
+      43.295481,
+      -0.375673
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/64-tourisme.png",
     "brandColor": "#FF3B3B"
@@ -12562,7 +12564,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 449,
+      "events": 30,
       "trails": 21,
       "attractions": 246,
       "restaurants": 210
@@ -12570,8 +12572,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.8139,
-      -71.208
+      46.813878,
+      -71.207981
     ],
     "dtFeed": false,
     "dmo": {
@@ -12603,7 +12605,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 368,
+      "events": 124,
       "attractions": 171,
       "restaurants": 78
     },
@@ -12642,15 +12644,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 26,
+      "events": 7,
       "attractions": 13,
       "restaurants": 5
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.4166,
-      12.2007
+      44.416587,
+      12.200729
     ],
     "dtFeed": false,
     "dmo": {
@@ -12681,15 +12683,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 114,
+      "events": 11,
       "attractions": 15,
       "restaurants": 12
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.6978,
-      10.6302
+      44.697823,
+      10.630241
     ],
     "dtFeed": false,
     "dmo": {
@@ -12721,7 +12723,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 303,
+      "events": 149,
       "trails": 42,
       "attractions": 362,
       "restaurants": 190
@@ -12735,8 +12737,8 @@
       "claimed": false
     },
     "coords": [
-      49.2554,
-      4.034
+      49.255356,
+      4.033992
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/reimstourisme.jpg",
     "brandColor": "#191F6C"
@@ -12761,7 +12763,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 62,
+      "events": 41,
       "attractions": 129,
       "restaurants": 147
     },
@@ -12803,7 +12805,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 12,
+      "events": 1,
       "trails": 1,
       "attractions": 1,
       "restaurants": 25
@@ -12817,8 +12819,8 @@
       "claimed": false
     },
     "coords": [
-      56.9463,
-      24.1051
+      56.946285,
+      24.105078
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/liveriga.jpg",
     "brandColor": "#78E9B8",
@@ -12843,15 +12845,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 45,
+      "events": 13,
       "attractions": 26,
       "restaurants": 16
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      44.0598,
-      12.5685
+      44.059825,
+      12.568529
     ],
     "dtFeed": false,
     "dmo": {
@@ -12882,7 +12884,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 156,
+      "events": 70,
       "trails": 127,
       "attractions": 378,
       "restaurants": 249
@@ -13006,7 +13008,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 62,
+      "events": 11,
       "trails": 2,
       "districts": 14,
       "attractions": 70,
@@ -13064,7 +13066,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 784,
+      "events": 263,
       "trails": 44,
       "attractions": 296,
       "restaurants": 75
@@ -13147,7 +13149,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 543,
+      "events": 205,
       "attractions": 179,
       "restaurants": 100
     },
@@ -13187,7 +13189,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 188,
+      "events": 126,
       "trails": 20,
       "attractions": 579,
       "restaurants": 248
@@ -13231,7 +13233,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 238,
+      "events": 80,
       "trails": 37,
       "attractions": 168,
       "restaurants": 77
@@ -13434,7 +13436,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 628,
+      "events": 216,
       "trails": 189,
       "attractions": 371,
       "restaurants": 285
@@ -13475,7 +13477,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 31,
+      "events": 10,
       "trails": 59,
       "attractions": 699,
       "restaurants": 267
@@ -13489,8 +13491,8 @@
       "claimed": false
     },
     "coords": [
-      45.5655,
-      5.9185
+      45.565527,
+      5.918505
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/exploresavoie.jpg",
     "brandColor": "#E61B05",
@@ -13515,7 +13517,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 11,
+      "events": 8,
       "attractions": 10,
       "restaurants": 13
     },
@@ -13592,7 +13594,7 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 43,
+      "events": 11,
       "trails": 4,
       "attractions": 193,
       "restaurants": 189
@@ -13606,8 +13608,8 @@
       "claimed": false
     },
     "coords": [
-      48.5405,
-      2.6606
+      48.54047,
+      2.660611
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/seineetmarne.jpg",
     "brandColor": "#044A47"
@@ -13632,7 +13634,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 784,
+      "events": 263,
       "trails": 44,
       "attractions": 296,
       "restaurants": 75
@@ -13673,7 +13675,7 @@
     "languages": [],
     "inventory": {
       "golf": 16,
-      "events": 106,
+      "events": 31,
       "trails": 36,
       "attractions": 3343,
       "restaurants": 2112
@@ -13687,8 +13689,8 @@
       "claimed": false
     },
     "coords": [
-      48.9333,
-      2.3559
+      48.93327,
+      2.355947
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/seinesaintdenistourisme.png",
     "brandColor": "#115BA2",
@@ -13720,8 +13722,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      37.5446,
-      126.9844
+      37.54462051,
+      126.9844226
     ],
     "dtFeed": false,
     "dmo": {
@@ -13864,7 +13866,7 @@
     },
     "coords": [
       41.237,
-      1.8088
+      1.80875
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/sitgesanytime.jpg",
     "brandColor": "#4174B6",
@@ -13890,7 +13892,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 414,
+      "events": 219,
       "attractions": 246,
       "restaurants": 189
     },
@@ -13929,7 +13931,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 5,
+      "events": 4,
       "trails": 20,
       "attractions": 90,
       "restaurants": 12
@@ -13943,8 +13945,8 @@
       "claimed": false
     },
     "coords": [
-      52.7869,
-      6.1162
+      52.78688,
+      6.11615
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/steenwijkvestingstad.jpg",
     "brandColor": "#214F50",
@@ -14007,15 +14009,15 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 13977,
+      "events": 751,
       "attractions": 40,
       "restaurants": 66
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      59.3284,
-      18.055
+      59.328363,
+      18.05503
     ],
     "dtFeed": false,
     "dmo": {
@@ -14047,7 +14049,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 969,
+      "events": 234,
       "trails": 201,
       "districts": 15,
       "attractions": 939,
@@ -14190,8 +14192,8 @@
       "claimed": false
     },
     "coords": [
-      59.4371,
-      24.7286
+      59.4370748,
+      24.7285841
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visittallinn.png",
     "brandColor": "#fe0000",
@@ -14220,14 +14222,14 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 65,
+      "events": 6,
       "attractions": 302
     },
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      61.4981,
-      23.776
+      61.498116,
+      23.7759596
     ],
     "dtFeed": false,
     "dmo": {
@@ -14258,7 +14260,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 172,
+      "events": 69,
       "trails": 18,
       "attractions": 1329,
       "restaurants": 461
@@ -14299,7 +14301,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 3,
+      "events": 2,
       "trails": 14,
       "attractions": 254,
       "restaurants": 117
@@ -14313,8 +14315,8 @@
       "claimed": false
     },
     "coords": [
-      43.9289,
-      2.1447
+      43.928863,
+      2.144673
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valleedutarn.png",
     "brandColor": "#DD5D09"
@@ -14339,7 +14341,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 37,
+      "events": 23,
       "trails": 48,
       "attractions": 127,
       "restaurants": 25
@@ -14415,7 +14417,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 486,
+      "events": 263,
       "trails": 266,
       "attractions": 431,
       "restaurants": 243
@@ -14454,7 +14456,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 46,
+      "events": 5,
       "trails": 11,
       "attractions": 12,
       "restaurants": 10
@@ -14502,7 +14504,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 64,
+      "events": 16,
       "trails": 2,
       "districts": 44,
       "attractions": 79,
@@ -14548,7 +14550,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 34,
+      "events": 14,
       "trails": 3,
       "attractions": 22,
       "restaurants": 29
@@ -14627,7 +14629,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 105,
+      "events": 6,
       "districts": 23,
       "attractions": 230,
       "restaurants": 510
@@ -14672,7 +14674,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 385,
+      "events": 197,
       "attractions": 698,
       "restaurants": 558
     },
@@ -14716,7 +14718,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 351,
+      "events": 161,
       "trails": 67,
       "attractions": 192,
       "restaurants": 154
@@ -14730,8 +14732,8 @@
       "claimed": false
     },
     "coords": [
-      47.3907,
-      0.6894
+      47.390677,
+      0.689387
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tours-tourisme.jpg",
     "brandColor": "#C65643",
@@ -14762,8 +14764,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.0677,
-      11.121
+      46.06772,
+      11.12099
     ],
     "dtFeed": false,
     "dmo": {
@@ -14807,7 +14809,7 @@
     "languages": [],
     "inventory": {
       "golf": 7,
-      "events": 1710,
+      "events": 620,
       "trails": 85,
       "attractions": 764,
       "restaurants": 365
@@ -14821,8 +14823,8 @@
       "claimed": false
     },
     "coords": [
-      49.3636,
-      0.0854
+      49.363647,
+      0.08544
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/trouville-tourisme.png",
     "brandColor": "#000FFF",
@@ -14848,7 +14850,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 362,
+      "events": 210,
       "trails": 47,
       "attractions": 749,
       "restaurants": 346
@@ -14862,8 +14864,8 @@
       "claimed": false
     },
     "coords": [
-      48.2944,
-      4.0718
+      48.294426,
+      4.071799
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/troyes-tourisme.png",
     "brandColor": "#0F68B3",
@@ -14889,7 +14891,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 351,
+      "events": 104,
       "trails": 148,
       "attractions": 569,
       "restaurants": 129
@@ -14931,7 +14933,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 66,
+      "events": 6,
       "attractions": 3,
       "restaurants": 38
     },
@@ -14988,8 +14990,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      60.449,
-      22.2685
+      60.449026,
+      22.26846
     ],
     "dtFeed": false,
     "dmo": {
@@ -15019,7 +15021,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 16,
+      "events": 4,
       "trails": 2,
       "attractions": 111,
       "restaurants": 14
@@ -15033,8 +15035,8 @@
       "claimed": false
     },
     "coords": [
-      52.2717,
-      6.7837
+      52.271687,
+      6.783722
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visittwente.jpg",
     "brandColor": "#FF0000",
@@ -15061,7 +15063,7 @@
     "languages": [],
     "inventory": {
       "golf": 10,
-      "events": 74,
+      "events": 19,
       "trails": 17,
       "districts": 27,
       "attractions": 57,
@@ -15111,7 +15113,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 50,
+      "events": 43,
       "trails": 4,
       "attractions": 477,
       "restaurants": 77
@@ -15125,8 +15127,8 @@
       "claimed": false
     },
     "coords": [
-      44.0157,
-      4.4192
+      44.015749,
+      4.419155
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/paysduzes.jpg",
     "brandColor": "#8A2D4C",
@@ -15152,7 +15154,7 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 59,
+      "events": 10,
       "trails": 20,
       "attractions": 808,
       "restaurants": 726
@@ -15166,8 +15168,8 @@
       "claimed": false
     },
     "coords": [
-      49.0411,
-      2.0811
+      49.041122,
+      2.081054
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdoisetourisme.png",
     "brandColor": "#C71553",
@@ -15193,7 +15195,7 @@
     "languages": [],
     "inventory": {
       "golf": 11,
-      "events": 87,
+      "events": 43,
       "trails": 22,
       "attractions": 3144,
       "restaurants": 1788
@@ -15207,8 +15209,8 @@
       "claimed": false
     },
     "coords": [
-      48.7853,
-      2.4591
+      48.78534,
+      2.459132
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdemarnetourisme.jpg",
     "brandColor": "#C80E66",
@@ -15234,7 +15236,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 448,
+      "events": 132,
       "trails": 105,
       "attractions": 428,
       "restaurants": 88
@@ -15248,8 +15250,8 @@
       "claimed": false
     },
     "coords": [
-      44.52,
-      0.1598
+      44.520025,
+      0.159822
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdugaronne-tourisme.jpg",
     "brandColor": "#BE2D06",
@@ -15281,8 +15283,8 @@
     "enrichments": [],
     "sampleQuestions": {},
     "coords": [
-      46.558,
-      11.7223
+      46.55797,
+      11.722295
     ],
     "dtFeed": false,
     "dmo": {
@@ -15313,7 +15315,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 505,
+      "events": 304,
       "trails": 51,
       "attractions": 1381,
       "restaurants": 474
@@ -15396,7 +15398,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 146,
+      "events": 74,
       "attractions": 105,
       "restaurants": 44
     },
@@ -15436,7 +15438,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 96,
+      "events": 38,
       "trails": 18,
       "attractions": 1004,
       "restaurants": 736
@@ -15475,7 +15477,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 78,
+      "events": 31,
       "attractions": 169,
       "restaurants": 28
     },
@@ -15555,7 +15557,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 12,
+      "events": 5,
       "trails": 6,
       "attractions": 7,
       "restaurants": 3
@@ -15596,7 +15598,7 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 142,
+      "events": 32,
       "trails": 21,
       "attractions": 3005,
       "restaurants": 2064
@@ -15610,8 +15612,8 @@
       "claimed": false
     },
     "coords": [
-      48.8074,
-      2.1216
+      48.807368,
+      2.121597
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/versailles.png",
     "brandColor": "#EE717D",
@@ -15637,7 +15639,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 60,
+      "events": 16,
       "trails": 16,
       "attractions": 316,
       "restaurants": 309
@@ -15752,7 +15754,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 48,
+      "events": 12,
       "trails": 2,
       "attractions": 88,
       "restaurants": 105
@@ -15792,7 +15794,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 15,
+      "events": 7,
       "trails": 1,
       "attractions": 15,
       "restaurants": 19
@@ -15833,7 +15835,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 45,
+      "events": 9,
       "attractions": 111,
       "restaurants": 139
     },
@@ -15910,7 +15912,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 189,
+      "events": 98,
       "trails": 168,
       "attractions": 225,
       "restaurants": 41
@@ -16031,7 +16033,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 170,
+      "events": 85,
       "trails": 144,
       "attractions": 453,
       "restaurants": 118
@@ -16045,8 +16047,8 @@
       "claimed": false
     },
     "coords": [
-      49.0369,
-      7.9429
+      49.036901,
+      7.942875
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/alsazeverte.png",
     "brandColor": "#509625",
@@ -16072,7 +16074,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 101,
+      "events": 21,
       "trails": 12,
       "attractions": 44,
       "restaurants": 73
@@ -16123,8 +16125,8 @@
       "claimed": false
     },
     "coords": [
-      40.1825,
-      44.5165
+      40.18247,
+      44.51652
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visityerevan.png",
     "brandColor": "#DE5382",
@@ -16153,7 +16155,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 158,
+      "events": 73,
       "trails": 30,
       "attractions": 325,
       "restaurants": 122
@@ -16193,7 +16195,7 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 142,
+      "events": 32,
       "trails": 21,
       "attractions": 3005,
       "restaurants": 2064
@@ -16207,8 +16209,8 @@
       "claimed": false
     },
     "coords": [
-      48.8074,
-      2.1216
+      48.807368,
+      2.121597
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationyvelines.jpg",
     "brandColor": "#D20072",
@@ -16237,7 +16239,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 94,
+      "events": 11,
       "trails": 4,
       "attractions": 153,
       "restaurants": 214
@@ -16290,8 +16292,8 @@
       "claimed": false
     },
     "coords": [
-      45.8087,
-      15.9863
+      45.80868389,
+      15.98632217
     ],
     "videos": [
       {
@@ -16325,7 +16327,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 25,
+      "events": 5,
       "trails": 13,
       "attractions": 43,
       "restaurants": 33
@@ -16415,8 +16417,8 @@
       "claimed": false
     },
     "coords": [
-      41.7635,
-      9.1652
+      41.76352,
+      9.165233
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zonzasantalucia.jpg",
     "brandColor": "#053542",
@@ -16485,7 +16487,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 13,
+      "events": 2,
       "trails": 48,
       "attractions": 84,
       "restaurants": 15
