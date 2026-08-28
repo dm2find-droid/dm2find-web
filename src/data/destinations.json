@@ -1900,6 +1900,41 @@
     "website": "https://www.bastia-tourisme.com/en/"
   },
   {
+    "slug": "bayonne",
+    "name": {
+      "en": "Bayonne"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "bayonne",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/bayonne",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.visitbayonne.com/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.494239,
+      -1.478695
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitbayonne.png",
+    "brandColor": "#E85252",
+    "calendarUrl": null
+  },
+  {
     "slug": "beauvais",
     "name": {
       "en": "Beauvais"
@@ -2158,6 +2193,41 @@
       "url": null,
       "name": "Besançon Pass Tourisme"
     }
+  },
+  {
+    "slug": "biarritz",
+    "name": {
+      "en": "Biarritz"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "biarritz",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/biarritz",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.destination-biarritz.fr/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.48397,
+      -1.557431
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationbiarritz.jpg",
+    "brandColor": "#E1D3A9",
+    "calendarUrl": "https://www.destination-biarritz.fr/en/agenda/"
   },
   {
     "slug": "bilbao",
@@ -6323,6 +6393,41 @@
       "url": "https://turismo.granada.org/en/node/3241",
       "name": "Granada City Pass"
     }
+  },
+  {
+    "slug": "grasse",
+    "name": {
+      "en": "Grasse"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Alpes-Maritimes",
+    "tenantId": "grasse",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/grasse",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.paysdegrassetourisme.fr/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.66277,
+      6.920782
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/grasse.jpg",
+    "brandColor": "#EAC7C1",
+    "calendarUrl": "https://www.paysdegrassetourisme.fr/en/events/"
   },
   {
     "slug": "grenoble",
@@ -15133,6 +15238,41 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/paysduzes.jpg",
     "brandColor": "#8A2D4C",
     "calendarUrl": "https://www.uzes-pontdugard.com/en/tous-les-evenements/"
+  },
+  {
+    "slug": "val-d-isere",
+    "name": {
+      "en": "Val d'Isère"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Savoie",
+    "tenantId": "valdisere",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/valdisere",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.valdisere.com/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      45.449402,
+      6.98019
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valdisere.jpg",
+    "brandColor": "#CB0F13",
+    "calendarUrl": null
   },
   {
     "slug": "val-d-oise",
