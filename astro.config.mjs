@@ -7,12 +7,8 @@ export default defineConfig({
   output: 'static',
   integrations: [sitemap()],
   vite: { plugins: [tailwindcss()] },
-  i18n: {
-    defaultLocale: 'en',
-    // Declare ONLY locales with real content. Adding one here that has no
-    // content generates hreflang claims that are not true.
-    locales: ['en', 'fr'],
-    routing: { prefixDefaultLocale: false, fallbackType: 'rewrite' },
-    fallback: { fr: 'en' },
-  },
+  /* Geen Astro-i18n-routing meer: die genereerde met `fallback` Franse URL's
+     met Engelse inhoud — precies de valse hreflang-claim waar de oude comment
+     voor waarschuwde. De talen komen nu uit echte routes onder /[locale]/,
+     en Base.astro zet hreflang alleen voor pagina's die in elke taal bestaan. */
 });

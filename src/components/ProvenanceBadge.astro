@@ -1,10 +1,12 @@
 ---
-interface Props { provenance: 'official' | 'preview'; sourceName?: string }
-const { provenance, sourceName } = Astro.props;
+import { t, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
+interface Props { provenance: 'official' | 'preview'; sourceName?: string; locale?: Locale }
+const { provenance, sourceName, locale = DEFAULT_LOCALE } = Astro.props;
+const _ = t(locale);
 const official = provenance === 'official';
 ---
 <span class={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${
   official ? 'bg-(--color-pine-l) text-(--color-pine)' : 'bg-(--color-amber-l) text-(--color-amber)'}`}>
   <span class="h-1.5 w-1.5 rounded-full bg-current"></span>
-  {official ? (sourceName ? `Official feed · ${sourceName}` : 'Official feed') : 'Public sources'}
+  {official ? (sourceName ? `${_('badge.official')} · ${sourceName}` : _('badge.official')) : _('badge.public')}
 </span>

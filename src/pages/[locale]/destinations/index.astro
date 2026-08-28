@@ -1,0 +1,18 @@
+---
+import Base from '../../../layouts/Base.astro';
+import DestinationsIndexBody from '../../../components/DestinationsIndexBody.astro';
+import { destinationsIndexProps } from '../../../lib/indexData';
+import { t, LOCALES, DEFAULT_LOCALE, type Locale } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const p = await destinationsIndexProps();
+  return LOCALES.filter(l => l !== DEFAULT_LOCALE)
+    .map(locale => ({ params: { locale }, props: { ...p, locale } }));
+}
+const { all, countries, channels, venueCount, locale } = Astro.props as any;
+const _ = t(locale as Locale);
+---
+<Base title={_('index.title')} description={_('index.meta')}>
+  <DestinationsIndexBody all={all} countries={countries} channels={channels}
+                         venueCount={venueCount} locale={locale} />
+</Base>

@@ -1,18 +1,23 @@
 ---
 /** The live webchat. Main channel, embedded on every destination page. */
-interface Props { name: string; chatUrl: string; embed?: boolean; frameId?: string }
-const { name, chatUrl, embed = true, frameId = 'concierge-frame' } = Astro.props;
+interface Props {
+  name: string; chatUrl: string; embed?: boolean; frameId?: string;
+  barLabel?: string; fullLabel?: string; fullTitle?: string;
+}
+const { name, chatUrl, embed = true, frameId = 'concierge-frame',
+        barLabel = `${name} concierge · webchat`,
+        fullLabel = 'Full screen',
+        fullTitle = `Open the ${name} concierge in a new window` } = Astro.props;
 ---
 <div class="overflow-hidden rounded-2xl border border-(--color-line) bg-white shadow-xl">
   <div class="flex items-center gap-2 bg-(--color-ink) px-4 py-3 text-sm text-white">
     <span class="h-2 w-2 rounded-full bg-[#68C48C]"></span>
-    <span>{name} concierge · webchat</span>
+    <span>{barLabel}</span>
     {/* Het iframe is 420px hoog; op een telefoon of voor een langer gesprek
         wil je de hele pagina. Zelfde URL, eigen venster. */}
-    <a href={chatUrl} target="_blank" rel="noopener"
-       title={`Open the ${name} concierge in a new window`}
+    <a href={chatUrl} target="_blank" rel="noopener" title={fullTitle}
        class="ml-auto inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white transition hover:bg-white/20">
-      Full screen
+      {fullLabel}
       <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor"
            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M15 3h6v6" /><path d="M10 14 21 3" />
@@ -21,13 +26,13 @@ const { name, chatUrl, embed = true, frameId = 'concierge-frame' } = Astro.props
     </a>
   </div>
   {embed ? (
-    <iframe id={frameId} src={chatUrl} title={`${name} concierge`} loading="lazy"
+    <iframe id={frameId} src={chatUrl} title={barLabel} loading="lazy"
          class="h-[420px] w-full border-0 bg-(--color-paper-2)"></iframe>
   ) : (
     <div class="p-6 text-center">
       <a href={chatUrl} target="_blank" rel="noopener"
          class="inline-block rounded-full bg-(--color-pine) px-6 py-3 font-semibold text-white">
-        Open the {name} concierge →
+        {fullLabel} →
       </a>
     </div>
   )}

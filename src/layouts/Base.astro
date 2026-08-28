@@ -4,20 +4,39 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Concierge from '../components/Concierge.astro';
 import Lightbox from '../components/Lightbox.astro';
+import { LOCALES, DEFAULT_LOCALE, localeHref, localeFromPath, isLocalised, type Locale } from '../i18n/ui';
 
 interface Props { title: string; description?: string; angle?: string; jsonLd?: object; concierge?: boolean }
 const { title, description = 'AI travel concierges built on the tourism data destinations already publish.',
         angle = 'traveller', jsonLd, concierge = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+
+/* De taal komt uit het pad: /fr/destinations/lille -> fr. Het pad zonder
+   taalprefix is wat we nodig hebben voor de taalwisselaar en voor hreflang. */
+const locale: Locale = localeFromPath(Astro.url.pathname);
+const basePath = locale === DEFAULT_LOCALE
+  ? Astro.url.pathname
+  : Astro.url.pathname.replace(new RegExp(`^/${locale}`), '') || '/';
+
+/* Alternates alleen voor routes die in élke taal bestaan. Een hreflang naar
+   een pagina die niet vertaald is, is een claim die niet klopt — precies wat
+   de oude fallback-configuratie wél deed. */
+const alternates = isLocalised(basePath) ? LOCALES : [];
 ---
 <!doctype html>
-<html lang="en">
+<html lang={locale}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title} · DM2find.ai</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
+  {alternates.map(l => (
+    <link rel="alternate" hreflang={l} href={new URL(localeHref(l, basePath), Astro.site)} />
+  ))}
+  {alternates.length > 0 && (
+    <link rel="alternate" hreflang="x-default" href={new URL(basePath, Astro.site)} />
+  )}
   {/* SVG first for browsers that support it, .ico as the fallback every
       browser and bookmark bar understands. Both are needed. */}
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -28,12 +47,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content={locale} />
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 </head>
 <body class="antialiased">
-  <Header />
+  <Header locale={locale} basePath={basePath} showLang={alternates.length > 0} />
   <main><slot /></main>
-  <Footer />
+  <Footer locale={locale} />
   {concierge && <Concierge />}
   <Lightbox />
   <script>

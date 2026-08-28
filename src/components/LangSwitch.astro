@@ -1,0 +1,36 @@
+---
+import { LOCALES, LOCALE_LABEL, DEFAULT_LOCALE, localeHref, type Locale } from '../i18n/ui';
+interface Props { locale: Locale; basePath: string; label: string }
+const { locale, basePath, label } = Astro.props;
+---
+<div class="relative" data-langswitch>
+  <button type="button" aria-haspopup="true" aria-expanded="false" aria-label={label}
+          class="flex items-center gap-1.5 rounded-lg border border-(--color-line) px-2.5 py-1.5 text-xs font-semibold text-(--color-ink-2) hover:bg-(--color-paper-2)">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18" />
+    </svg>
+    {locale.toUpperCase()}
+  </button>
+  <div hidden class="absolute right-0 z-50 mt-1 min-w-[9rem] overflow-hidden rounded-xl border border-(--color-line) bg-white py-1 shadow-lg">
+    {LOCALES.map(l => (
+      <a href={localeHref(l, basePath)} hreflang={l} lang={l}
+         class={`block px-3 py-2 text-sm ${l === locale ? 'font-semibold text-(--color-pine)' : 'text-(--color-ink-2) hover:bg-(--color-paper-2)'}`}>
+        {LOCALE_LABEL[l]}
+      </a>
+    ))}
+  </div>
+</div>
+<script>
+  for (const box of document.querySelectorAll('[data-langswitch]')) {
+    const btn = box.querySelector('button');
+    const menu = box.querySelector('div');
+    btn?.addEventListener('click', () => {
+      const open = menu?.hasAttribute('hidden');
+      if (open) menu?.removeAttribute('hidden'); else menu?.setAttribute('hidden', '');
+      btn.setAttribute('aria-expanded', String(!!open));
+    });
+    document.addEventListener('click', e => {
+      if (!box.contains(e.target as Node)) { menu?.setAttribute('hidden', ''); btn?.setAttribute('aria-expanded', 'false'); }
+    });
+  }
+</script>

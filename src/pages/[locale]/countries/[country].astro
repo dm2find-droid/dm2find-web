@@ -1,0 +1,19 @@
+---
+import Base from '../../../layouts/Base.astro';
+import CountryBody from '../../../components/CountryBody.astro';
+import { countryProps } from '../../../lib/pageData';
+import { t, countryName, LOCALES, DEFAULT_LOCALE, type Locale } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const rows = await countryProps();
+  return LOCALES.filter(l => l !== DEFAULT_LOCALE).flatMap(locale =>
+    rows.map(r => ({ params: { locale, country: r.code }, props: { ...r.props, locale } })),
+  );
+}
+const { dests, name, source, locale } = Astro.props as any;
+const loc = locale as Locale;
+const _ = t(loc);
+---
+<Base title={countryName(loc, dests[0]?.country ?? '', name)} description={_('country.meta', { n: dests.length, country: countryName(loc, dests[0]?.country ?? '', name) })}>
+  <CountryBody dests={dests} name={name} source={source} locale={locale} />
+</Base>

@@ -1,25 +1,27 @@
 ---
-/** Engelse variant (geen taalprefix). De inhoud staat in DestinationBody,
- *  zodat deze route en /[locale]/destinations/[slug] niet uiteen lopen. */
-import Base from '../../layouts/Base.astro';
-import DestinationBody from '../../components/DestinationBody.astro';
-import { destinationProps } from '../../lib/pageData';
-import { t, DEFAULT_LOCALE } from '../../i18n/ui';
+/** fr / de / nl / es. Engels heeft geen prefix en staat in
+ *  /destinations/[slug].astro. */
+import Base from '../../../layouts/Base.astro';
+import DestinationBody from '../../../components/DestinationBody.astro';
+import { destinationProps } from '../../../lib/pageData';
+import { t, LOCALES, DEFAULT_LOCALE, type Locale } from '../../../i18n/ui';
 
 export async function getStaticPaths() {
   const rows = await destinationProps();
-  return rows.map(r => ({ params: { slug: r.slug }, props: r.props }));
+  return LOCALES.filter(l => l !== DEFAULT_LOCALE).flatMap(locale =>
+    rows.map(r => ({ params: { locale, slug: r.slug }, props: { ...r.props, locale } })),
+  );
 }
-const { d, source, siblings, curatedCount } = Astro.props;
-const locale = DEFAULT_LOCALE;
-const _ = t(locale);
+const { d, source, siblings, curatedCount, locale } = Astro.props as any;
+const _ = t(locale as Locale);
 const official = d.provenance === 'official';
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'TouristDestination',
   name: d.name.en,
-  url: new URL(`/destinations/${d.slug}`, Astro.site).href,
+  url: new URL(`/${locale}/destinations/${d.slug}`, Astro.site).href,
+  inLanguage: locale,
   ...(official && source ? { isBasedOn: { '@type': 'Dataset', name: source.name } } : {}),
 };
 ---
