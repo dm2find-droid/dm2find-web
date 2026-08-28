@@ -16,8 +16,19 @@
   --color-pine:    #1F5B4E;  --color-pine-l:  #E4EFEB;
   --color-slate2:  #35566E;  --color-slate2-l:#E7EEF3;
 
-  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
+  /* De CJK-namen achteraan zijn geen sierlijkheid: Iowan, Palatino en Georgia
+     bevatten geen Chinese, Japanse of Koreaanse tekens, dus zonder deze regel
+     kiest de browser zelf een vervanger — meestal een die niet bij de rest van
+     de pagina past, en op Windows soms een die de verkeerde regionale vormen
+     toont. De volgorde zh - ja - ko is bewust: de browser pakt de eerste die
+     hij heeft, en op een systeem met alle drie geeft de taal van het lettertype
+     dat de gebruiker heeft geïnstalleerd de doorslag. */
+  --font-cjk: "Noto Serif SC", "Source Han Serif SC", "PingFang SC",
+              "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP",
+              "Apple SD Gothic Neo", "Malgun Gothic", "Noto Serif KR",
+              "Microsoft YaHei", "Meiryo";
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, var(--font-cjk), serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Roboto, var(--font-cjk), sans-serif;
 }
 
 html { scroll-behavior: smooth; }

@@ -1,5 +1,5 @@
 ---
-import { LOCALES, LOCALE_LABEL, DEFAULT_LOCALE, localeHref, type Locale } from '../i18n/ui';
+import { LOCALES, LOCALE_LABEL, DEFAULT_LOCALE, localeHref, langTag, type Locale } from '../i18n/ui';
 interface Props { locale: Locale; basePath: string; label: string }
 const { locale, basePath, label } = Astro.props;
 ---
@@ -13,7 +13,7 @@ const { locale, basePath, label } = Astro.props;
   </button>
   <div hidden class="absolute right-0 z-50 mt-1 min-w-[9rem] overflow-hidden rounded-xl border border-(--color-line) bg-white py-1 shadow-lg">
     {LOCALES.map(l => (
-      <a href={localeHref(l, basePath)} hreflang={l} lang={l}
+      <a href={localeHref(l, basePath)} hreflang={langTag(l)} lang={langTag(l)}
          class={`block px-3 py-2 text-sm ${l === locale ? 'font-semibold text-(--color-pine)' : 'text-(--color-ink-2) hover:bg-(--color-paper-2)'}`}>
         {LOCALE_LABEL[l]}
       </a>

@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Concierge from '../components/Concierge.astro';
 import Lightbox from '../components/Lightbox.astro';
-import { LOCALES, DEFAULT_LOCALE, localeHref, localeFromPath, isLocalised, type Locale } from '../i18n/ui';
+import { LOCALES, DEFAULT_LOCALE, localeHref, localeFromPath, isLocalised, langTag, ogLocale, type Locale } from '../i18n/ui';
 
 interface Props { title: string; description?: string; angle?: string; jsonLd?: object; concierge?: boolean }
 const { title, description = 'AI travel concierges built on the tourism data destinations already publish.',
@@ -24,7 +24,7 @@ const basePath = locale === DEFAULT_LOCALE
 const alternates = isLocalised(basePath) ? LOCALES : [];
 ---
 <!doctype html>
-<html lang={locale}>
+<html lang={langTag(locale)}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,7 +32,7 @@ const alternates = isLocalised(basePath) ? LOCALES : [];
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
   {alternates.map(l => (
-    <link rel="alternate" hreflang={l} href={new URL(localeHref(l, basePath), Astro.site)} />
+    <link rel="alternate" hreflang={langTag(l)} href={new URL(localeHref(l, basePath), Astro.site)} />
   ))}
   {alternates.length > 0 && (
     <link rel="alternate" hreflang="x-default" href={new URL(basePath, Astro.site)} />
@@ -47,7 +47,7 @@ const alternates = isLocalised(basePath) ? LOCALES : [];
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content={locale} />
+  <meta property="og:locale" content={ogLocale(locale)} />
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 </head>
 <body class="antialiased">

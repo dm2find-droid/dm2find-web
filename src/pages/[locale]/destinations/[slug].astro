@@ -4,7 +4,7 @@
 import Base from '../../../layouts/Base.astro';
 import DestinationBody from '../../../components/DestinationBody.astro';
 import { destinationProps } from '../../../lib/pageData';
-import { t, LOCALES, DEFAULT_LOCALE, type Locale } from '../../../i18n/ui';
+import { t, langTag, LOCALES, DEFAULT_LOCALE, type Locale } from '../../../i18n/ui';
 
 export async function getStaticPaths() {
   const rows = await destinationProps();
@@ -21,7 +21,7 @@ const jsonLd = {
   '@type': 'TouristDestination',
   name: d.name.en,
   url: new URL(`/${locale}/destinations/${d.slug}`, Astro.site).href,
-  inLanguage: locale,
+  inLanguage: langTag(locale),
   ...(official && source ? { isBasedOn: { '@type': 'Dataset', name: source.name } } : {}),
 };
 ---
