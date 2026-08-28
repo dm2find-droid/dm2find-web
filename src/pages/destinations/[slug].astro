@@ -7,21 +7,43 @@ import VoiceDemo from '../../components/VoiceDemo.astro';
 import ProvenanceBadge from '../../components/ProvenanceBadge.astro';
 import { linkAttrs } from '../../lib/link';
 import DestinationCard from '../../components/DestinationCard.astro';
+import highlights from '../../data/highlights.json';
 
 export async function getStaticPaths() {
   const dests = await getCollection('destinations');
   const sources = Object.fromEntries((await getCollection('sources')).map(e => [e.data.id, e.data]));
-  return dests.map(e => ({
-    params: { slug: e.data.slug },
-    props: {
-      d: e.data,
-      source: e.data.dataSource ? sources[e.data.dataSource] : null,
-      siblings: dests.filter(x => x.data.country === e.data.country && x.data.slug !== e.data.slug)
-                     .slice(0, 3).map(x => x.data),
-    },
-  }));
+
+  /* Onderaan elke pagina staan vier andere bestemmingen uit hetzelfde land.
+     Alfabetisch levert daar Aisne, Aix-en-Provence, Ajaccio op — correct maar
+     nietszeggend. highlights.json bepaalt per land welke steden dat zijn;
+     onbekende slugs worden overgeslagen (het bestand wordt door de nachtelijke
+     export overschreven, highlights.json niet), en een land zonder regel valt
+     terug op de eerste vier. */
+  const picks = highlights as Record<string, string[]>;
+  const bySlug = new Map(dests.map(e => [e.data.slug, e]));
+
+  return dests.map(e => {
+    const inCountry = dests.filter(
+      x => x.data.country === e.data.country && x.data.slug !== e.data.slug,
+    );
+    const curated = (picks[e.data.country] ?? [])
+      .filter(s => s !== e.data.slug)
+      .map(s => bySlug.get(s))
+      .filter((x): x is NonNullable<typeof x> => !!x && x.data.country === e.data.country);
+    const rest = inCountry.filter(x => !curated.some(c => c.data.slug === x.data.slug));
+
+    return {
+      params: { slug: e.data.slug },
+      props: {
+        d: e.data,
+        source: e.data.dataSource ? sources[e.data.dataSource] : null,
+        siblings: [...curated, ...rest].slice(0, 4).map(x => x.data),
+        curatedCount: curated.length,
+      },
+    };
+  });
 }
-const { d, source, siblings } = Astro.props;
+const { d, source, siblings, curatedCount } = Astro.props;
 const official = d.provenance === 'official';
 
 /* Attribution renders ONLY where the data genuinely came from that source.
@@ -64,6 +86,11 @@ const jsonLd = {
       <div>
         <AskExamples d={d} chatUrl={d.chatUrl} />
         <Chat name={d.name.en} chatUrl={d.chatUrl} />
+        <p class="mt-2 text-xs text-(--color-ink-3)">
+          Prefer a bigger window?
+          <a href={d.chatUrl} target="_blank" rel="noopener"
+             class="font-semibold text-(--color-pine) underline">Open the {d.name.en} concierge full screen →</a>
+        </p>
         {d.voiceAgentId && (
           <div class="mt-6">
             <div class="flex items-center gap-2">
@@ -152,8 +179,14 @@ const jsonLd = {
 
     {siblings.length > 0 && (
       <>
-        <h2 class="h-section mt-14">More in {d.countryName}</h2>
-        <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="mt-14 flex flex-wrap items-baseline justify-between gap-3">
+          <h2 class="h-section">
+            {curatedCount > 0 ? `Highlights in ${d.countryName}` : `More in ${d.countryName}`}
+          </h2>
+          <a href={`/countries/${d.country.toLowerCase()}`}
+             class="text-sm font-semibold text-(--color-pine) underline">All destinations in {d.countryName} →</a>
+        </div>
+        <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {siblings.map(s => <DestinationCard d={s} />)}
         </div>
       </>

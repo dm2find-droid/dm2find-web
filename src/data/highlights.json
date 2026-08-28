@@ -1,0 +1,7 @@
+{
+  "_comment": "Per land de bestemmingen die onderaan een destinatiepagina getoond worden, in deze volgorde. Onbekende slugs worden stil overgeslagen; een land zonder regel valt terug op de eerste vier uit het bestand. Alleen slugs die in destinations.json bestaan tellen mee.",
+  "FR": ["paris", "lyon", "marseille", "bordeaux"],
+  "DE": ["berlin", "munich", "cologne", "hamburg"],
+  "AT": ["wien", "innsbruck", "salzburger-land", "tirol"],
+  "ES": ["barcelona", "bilbao", "granada", "cordoba"]
+}
