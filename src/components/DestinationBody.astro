@@ -41,7 +41,7 @@ const country = countryName(locale, d.country, d.countryName);
 
   <div class="mt-8 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
     <div>
-      <AskExamples d={d} chatUrl={d.chatUrl} />
+      <AskExamples d={d} chatUrl={d.chatUrl} locale={locale} />
       <Chat name={place} chatUrl={d.chatUrl}
             barLabel={_('dest.webchat', { place })}
             fullLabel={_('dest.fullscreen')}

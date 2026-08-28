@@ -14,25 +14,27 @@
  * lege inventory toont de concierge alleen, niet een lege kop erboven.
  */
 import { sampleQuestionsFor, type QuestionSource } from '../lib/sampleQuestions';
+import { t, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
 
 interface Props {
   d: QuestionSource;
   /** Moet overeenkomen met het iframe dat <Chat> rendert. */
   frameId?: string;
   chatUrl: string;
-  locale?: string;
+  locale?: Locale;
   limit?: number;
 }
 
-const { d, frameId = 'concierge-frame', chatUrl, locale = 'en', limit = 4 } = Astro.props;
+const { d, frameId = 'concierge-frame', chatUrl, locale = DEFAULT_LOCALE, limit = 4 } = Astro.props;
 
+const _ = t(locale);
 const questions = sampleQuestionsFor(d, locale, limit);
 const href = (q: string) => `${chatUrl}?q=${encodeURIComponent(q)}`;
 ---
 
 {questions.length > 0 && (
   <div class="mb-3" data-ask-examples data-frame={frameId}>
-    <h2 class="text-xs font-semibold tracking-wide text-(--color-ink-3) uppercase">Try asking</h2>
+    <h2 class="text-xs font-semibold tracking-wide text-(--color-ink-3) uppercase">{_('ask.try')}</h2>
     <div class="mt-2.5 flex flex-wrap gap-2">
       {questions.map((q) => (
         <a

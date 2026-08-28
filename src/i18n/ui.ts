@@ -95,6 +95,7 @@ const en: Dict = {
 
   'crumb.home': 'Home',
   'crumb.destinations': 'Destinations',
+  'ask.try': 'Try asking',
 
   'dest.title': 'Ask anything about {place}',
   'dest.lede.official': "Answers from {country}'s own tourism data via {source}, refreshed daily — and filled in by the businesses themselves. Free, no account.",
@@ -183,6 +184,7 @@ const fr: Dict = {
 
   'crumb.home': 'Accueil',
   'crumb.destinations': 'Destinations',
+  'ask.try': 'Essayez de demander',
 
   'dest.title': 'Posez toutes vos questions sur {place}',
   'dest.lede.official': "Des réponses issues des données touristiques de {country} via {source}, actualisées chaque jour — et complétées par les établissements eux-mêmes. Gratuit, sans compte.",
@@ -271,6 +273,7 @@ const de: Dict = {
 
   'crumb.home': 'Start',
   'crumb.destinations': 'Reiseziele',
+  'ask.try': 'Fragen Sie zum Beispiel',
 
   'dest.title': 'Fragen Sie alles über {place}',
   'dest.lede.official': 'Antworten aus den Tourismusdaten von {country} über {source}, täglich aktualisiert — und von den Betrieben selbst ergänzt. Kostenlos, ohne Konto.',
@@ -359,6 +362,7 @@ const nl: Dict = {
 
   'crumb.home': 'Home',
   'crumb.destinations': 'Bestemmingen',
+  'ask.try': 'Probeer te vragen',
 
   'dest.title': 'Vraag alles over {place}',
   'dest.lede.official': 'Antwoorden uit de eigen toerismedata van {country} via {source}, dagelijks ververst — en aangevuld door de bedrijven zelf. Gratis, zonder account.',
@@ -447,6 +451,7 @@ const es: Dict = {
 
   'crumb.home': 'Inicio',
   'crumb.destinations': 'Destinos',
+  'ask.try': 'Prueba a preguntar',
 
   'dest.title': 'Pregunta lo que quieras sobre {place}',
   'dest.lede.official': 'Respuestas a partir de los datos turísticos oficiales de {country} vía {source}, actualizados a diario — y completados por los propios establecimientos. Gratis, sin cuenta.',
@@ -536,6 +541,7 @@ const it: Dict = {
 
   'crumb.home': 'Home',
   'crumb.destinations': 'Destinazioni',
+  'ask.try': 'Prova a chiedere',
 
   'dest.title': 'Chiedi qualsiasi cosa su {place}',
   'dest.lede.official': "Risposte dai dati turistici ufficiali di {country} tramite {source}, aggiornati ogni giorno — e completati dalle imprese stesse. Gratis, senza registrazione.",
@@ -624,6 +630,7 @@ const zh: Dict = {
 
   'crumb.home': '首页',
   'crumb.destinations': '目的地',
+  'ask.try': '试着问问',
 
   'dest.title': '关于{place}，尽管提问',
   'dest.lede.official': "答案来自{country}官方旅游数据（通过 {source}），每日更新，并由商户自己补充。免费，无需注册。",
@@ -712,6 +719,7 @@ const ja: Dict = {
 
   'crumb.home': 'ホーム',
   'crumb.destinations': '旅行先',
+  'ask.try': 'こんな質問を',
 
   'dest.title': '{place}のことなら何でも',
   'dest.lede.official': "{country}の公式観光データ（{source}経由）にもとづく回答。毎日更新され、事業者自身の情報で補われます。無料、登録不要。",
@@ -800,6 +808,7 @@ const ko: Dict = {
 
   'crumb.home': '홈',
   'crumb.destinations': '여행지',
+  'ask.try': '이렇게 물어보세요',
 
   'dest.title': '{place}에 대해 무엇이든 물어보세요',
   'dest.lede.official': "{country}의 공식 관광 데이터를 {source}를 통해 받아 매일 새로 고치고, 사업자들이 직접 채운 정보로 보완합니다. 무료이며 가입이 필요 없습니다.",
