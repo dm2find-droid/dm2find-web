@@ -31,6 +31,7 @@
     { "name": "Guestplan", "vertical": "restaurant", "mode": "api", "note": null },
     { "name": "Nappkin", "vertical": "restaurant", "mode": "api", "note": null },
     { "name": "OpenTable", "vertical": "restaurant", "mode": "link", "note": null },
-    { "name": "TheFork", "vertical": "restaurant", "mode": "link", "note": null }
+    { "name": "TheFork", "vertical": "restaurant", "mode": "link", "note": null },
+    { "name": "HappyChef", "vertical": "restaurant", "mode": "link", "note": "Belgium" }
   ]
 }

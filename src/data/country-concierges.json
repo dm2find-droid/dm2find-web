@@ -1,0 +1,46 @@
+{
+  "_comment": [
+    "Landsdekkende concierges: tenants met tenant_level = 'country'.",
+    "",
+    "Met de hand onderhouden, net als highlights.json. De nachtelijke export raakt",
+    "dit bestand niet aan - hij kent alleen destinations.json en schrijft daar",
+    "uitsluitend afgeleide velden in.",
+    "",
+    "Bewust GEEN bestemmingsrecord: dan zou 'France' als kaart tussen de steden",
+    "staan en meetellen in 'Frankrijk telt 200 bestemmingen'. Het land is geen",
+    "bestemming naast zijn eigen steden.",
+    "",
+    "provenance volgt dezelfde regel als elders: 'official' alleen waar een echte",
+    "connector het hele grondgebied dekt. DataTourisme dekt heel Frankrijk en",
+    "Osterreich Werbung heel Oostenrijk; Touripedia dekt drie Nederlandse steden,",
+    "dus de landelijke NL-concierge is 'preview'. Een landbrede claim op een",
+    "connector die drie steden dekt, is geen claim die je kunt verdedigen."
+  ],
+  "FR": {
+    "tenantId": "fr",
+    "chatUrl": "https://chat.dm2find.ai/fr",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitfrance.png",
+    "brandColor": "#030615",
+    "website": "https://www.france.fr/en/",
+    "provenance": "official",
+    "dataSource": "datatourisme"
+  },
+  "AT": {
+    "tenantId": "at",
+    "chatUrl": "https://chat.dm2find.ai/at",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/clker-free-vector-images-austria-26881-1920.png",
+    "brandColor": "#C8102E",
+    "website": null,
+    "provenance": "official",
+    "dataSource": "austria"
+  },
+  "NL": {
+    "tenantId": "nl",
+    "chatUrl": "https://chat.dm2find.ai/nl",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/slowlands-small.png",
+    "brandColor": "#FF6F00",
+    "website": null,
+    "provenance": "preview",
+    "dataSource": null
+  }
+}

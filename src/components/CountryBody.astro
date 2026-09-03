@@ -1,15 +1,22 @@
 ---
 import DestinationCard from './DestinationCard.astro';
+import CountryConcierge from './CountryConcierge.astro';
+import countryConcierges from '../data/country-concierges.json';
 import { t, localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
 
 interface Props { dests: any[]; name: string; source: any; locale?: Locale }
 const { dests, name, source, locale = DEFAULT_LOCALE } = Astro.props;
 const _ = t(locale);
-const label = countryName(locale, dests[0]?.country ?? '', name);
+const code = dests[0]?.country ?? '';
+const label = countryName(locale, code, name);
 const official = dests.filter(d => d.provenance === 'official').length;
 const count = dests.length === 1
   ? _('country.count.one', { n: dests.length, country: label })
   : _('country.count.many', { n: dests.length, country: label });
+
+/* De landelijke concierge staat los van de bestemmingen; ontbreekt hij, dan
+   rendert het component zichzelf niet. */
+const national = (countryConcierges as any)[code] ?? null;
 ---
 <section class="mx-auto max-w-6xl px-5 py-12">
   <nav class="text-sm text-(--color-ink-3)">
@@ -19,6 +26,7 @@ const count = dests.length === 1
   <p class="lede mt-4">
     {count}{official > 0 && source ? _('country.official', { n: official, source: source.name }) : '.'}
   </p>
+  <CountryConcierge c={national} country={label} sourceName={source?.name} locale={locale} />
   <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {dests.map(d => <DestinationCard d={d} locale={locale} />)}
   </div>

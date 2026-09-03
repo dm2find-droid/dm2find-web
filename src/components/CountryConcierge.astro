@@ -1,0 +1,62 @@
+---
+/**
+ * Landsdekkende concierge bovenaan een landpagina.
+ *
+ * Bewust géén bestemmingskaart. Een land is geen bestemming naast zijn eigen
+ * steden: als `France` een record in destinations.json zou zijn, stond hij als
+ * kaart tussen Lille en Lyon én telde hij mee in "200 destinations in France".
+ * Dat getal moet blijven zeggen wat het zegt.
+ *
+ * Rendert niets als er voor dit land geen landelijke tenant is — de meeste
+ * landen hebben er geen, en een lege balk is erger dan geen balk.
+ */
+import ProvenanceBadge from './ProvenanceBadge.astro';
+import { t, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
+
+interface Props {
+  c: {
+    tenantId: string;
+    chatUrl: string;
+    logo?: string | null;
+    brandColor?: string | null;
+    website?: string | null;
+    provenance: 'official' | 'preview';
+    dataSource?: string | null;
+  } | null;
+  /** De landnaam in de taal van de pagina, zoals de kop hem al toont. */
+  country: string;
+  /** Naam van de bron, alleen als de connector het hele land dekt. */
+  sourceName?: string;
+  locale?: Locale;
+}
+
+const { c, country, sourceName, locale = DEFAULT_LOCALE } = Astro.props;
+const _ = t(locale);
+const accent = c?.brandColor || 'var(--color-pine)';
+---
+
+{c && (
+  <section class="mt-8 overflow-hidden rounded-2xl border border-(--color-line) bg-(--color-paper-2)">
+    <div class="h-1 w-full" style={`background:${accent}`}></div>
+    <div class="flex flex-col gap-5 p-6 sm:flex-row sm:items-center">
+      {c.logo && (
+        <img src={c.logo} alt="" width="64" height="64" loading="lazy"
+             class="h-16 w-16 shrink-0 rounded-xl object-cover" />
+      )}
+      <div class="min-w-0 flex-1">
+        <div class="flex flex-wrap items-center gap-3">
+          <h2 class="h-section">{_('country.national.title', { country })}</h2>
+          <ProvenanceBadge provenance={c.provenance}
+                           sourceName={c.provenance === 'official' ? sourceName : undefined}
+                           locale={locale} />
+        </div>
+        <p class="mt-2 max-w-2xl text-(--color-ink-2)">{_('country.national.body')}</p>
+      </div>
+      <a href={c.chatUrl} target="_blank" rel="noopener noreferrer"
+         class="inline-flex shrink-0 items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2"
+         style={`background:${accent};outline-color:${accent}`}>
+        {_('country.national.cta', { country })}
+      </a>
+    </div>
+  </section>
+)}

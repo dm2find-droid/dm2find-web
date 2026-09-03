@@ -16111,6 +16111,41 @@
     "calendarUrl": "https://washington.org/find-dc-listings/dc-events"
   },
   {
+    "slug": "west-vlaanderen",
+    "name": {
+      "en": "West Vlaanderen"
+    },
+    "country": "BE",
+    "countryName": "Belgium",
+    "region": "Flanders",
+    "tenantId": "be-west-flanders",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/be-west-flanders",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.visitwestvlaanderen.be/en",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      51.2089,
+      3.2242
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/west-vlaanderen.jpg",
+    "brandColor": "#172844",
+    "calendarUrl": "https://www.visitwestvlaanderen.be/nl/doen/evenementenkalender"
+  },
+  {
     "slug": "wien",
     "name": {
       "en": "Wien"
