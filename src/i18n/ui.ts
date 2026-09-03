@@ -134,6 +134,9 @@ const en: Dict = {
   'country.count.many': '{n} live concierges in {country}',
   'country.official': ', {n} of them running on {source}.',
   'country.meta': '{n} live concierges in {country}.',
+  'country.national.title': "One concierge for all of {country}",
+  'country.national.body': "Start here when you have not picked a city yet. Ask about the whole country, then narrow down to a place.",
+  'country.national.cta': "Open the {country} concierge →",
 };
 
 const fr: Dict = {
@@ -223,6 +226,9 @@ const fr: Dict = {
   'country.count.many': '{n} concierges en ligne en {country}',
   'country.official': ', dont {n} sur {source}.',
   'country.meta': '{n} concierges en ligne en {country}.',
+  'country.national.title': "{country} : un concierge pour tout le pays",
+  'country.national.body': "Commencez ici si vous n'avez pas encore choisi de ville. Posez vos questions sur l'ensemble du pays, puis affinez.",
+  'country.national.cta': "Ouvrir le concierge {country} →",
 };
 
 const de: Dict = {
@@ -312,6 +318,9 @@ const de: Dict = {
   'country.count.many': '{n} Live-Concierges in {country}',
   'country.official': ', davon {n} über {source}.',
   'country.meta': '{n} Live-Concierges in {country}.',
+  'country.national.title': "{country}: ein Concierge für das ganze Land",
+  'country.national.body': "Fangen Sie hier an, wenn die Stadt noch nicht feststeht. Fragen Sie zum ganzen Land und grenzen Sie dann ein.",
+  'country.national.cta': "Concierge {country} öffnen →",
 };
 
 const nl: Dict = {
@@ -401,6 +410,9 @@ const nl: Dict = {
   'country.count.many': '{n} live conciërges in {country}',
   'country.official': ', waarvan {n} op {source}.',
   'country.meta': '{n} live conciërges in {country}.',
+  'country.national.title': "{country}: één concierge voor het hele land",
+  'country.national.body': "Begin hier als de stad nog niet vaststaat. Vraag over het hele land en verfijn daarna naar een plaats.",
+  'country.national.cta': "Open de concierge van {country} →",
 };
 
 const es: Dict = {
@@ -490,6 +502,9 @@ const es: Dict = {
   'country.count.many': '{n} conserjes activos en {country}',
   'country.official': ', {n} de ellos con {source}.',
   'country.meta': '{n} conserjes activos en {country}.',
+  'country.national.title': "{country}: un conserje para todo el país",
+  'country.national.body': "Empieza aquí si aún no has elegido ciudad. Pregunta por todo el país y luego concreta.",
+  'country.national.cta': "Abrir el conserje de {country} →",
 };
 
 
@@ -580,6 +595,9 @@ const it: Dict = {
   'country.count.many': '{n} concierge attivi in {country}',
   'country.official': ', {n} dei quali su {source}.',
   'country.meta': '{n} concierge attivi in {country}.',
+  'country.national.title': "{country}: un concierge per tutto il paese",
+  'country.national.body': "Inizia da qui se non hai ancora scelto la città. Chiedi di tutto il paese, poi restringi.",
+  'country.national.cta': "Apri il concierge di {country} →",
 };
 
 const zh: Dict = {
@@ -669,6 +687,9 @@ const zh: Dict = {
   'country.count.many': '{country}有 {n} 位已上线的礼宾助手',
   'country.official': '，其中 {n} 位运行在 {source} 上。',
   'country.meta': '{country}有 {n} 位已上线的礼宾助手。',
+  'country.national.title': "{country}：覆盖全国的礼宾助手",
+  'country.national.body': "还没定城市？从这里开始。先问整个国家，再缩小到具体地点。",
+  'country.national.cta': "打开{country}礼宾助手 →",
 };
 
 const ja: Dict = {
@@ -758,6 +779,9 @@ const ja: Dict = {
   'country.count.many': '{country}で稼働中のコンシェルジュ {n} 件',
   'country.official': '（うち {n} 件は {source} で稼働）。',
   'country.meta': '{country}で稼働中のコンシェルジュ {n} 件。',
+  'country.national.title': "{country}：国全体をカバーするコンシェルジュ",
+  'country.national.body': "行き先の街がまだ決まっていないなら、ここから。国全体について聞いて、そこから絞り込めます。",
+  'country.national.cta': "{country}のコンシェルジュを開く →",
 };
 
 const ko: Dict = {
@@ -847,6 +871,9 @@ const ko: Dict = {
   'country.count.many': '{country}에서 운영 중인 컨시어지 {n}곳',
   'country.official': ', 그중 {n}곳은 {source} 기반입니다.',
   'country.meta': '{country}에서 운영 중인 컨시어지 {n}곳.',
+  'country.national.title': "{country}: 전국을 아우르는 컨시어지",
+  'country.national.body': "도시를 아직 정하지 않았다면 여기서 시작하세요. 나라 전체에 대해 물어본 뒤 좁혀 가면 됩니다.",
+  'country.national.cta': "{country} 컨시어지 열기 →",
 };
 
 
