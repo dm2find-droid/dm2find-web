@@ -1,7 +1,9 @@
 ---
 import ProvenanceBadge from './ProvenanceBadge.astro';
 import { localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
-const { d, locale = DEFAULT_LOCALE } = Astro.props as { d: any; locale?: Locale };
+/** `href` overschrijft de standaardlink. De landelijke concierges hebben geen
+ *  bestemmingspagina; die wijzen naar hun landpagina. */
+const { d, locale = DEFAULT_LOCALE, href } = Astro.props as { d: any; locale?: Locale; href?: string };
 
 /**
  * Card artwork, in order of what we actually have:
@@ -39,7 +41,7 @@ const shade = (hex: string, amount = 0.45) => {
 const from = d.brandColor ? shade(d.brandColor, 0.14) : plate[0];
 const to   = d.brandColor ? shade(d.brandColor, 0.58) : plate[1];
 ---
-<a href={localeHref(locale, `/destinations/${d.slug}`)}
+<a href={href ?? localeHref(locale, `/destinations/${d.slug}`)}
    class="group flex flex-col overflow-hidden rounded-xl border border-(--color-line) bg-white transition hover:-translate-y-0.5 hover:border-(--color-terra)">
   <div class="relative aspect-video overflow-hidden"
        style={`background-image:linear-gradient(135deg, ${from}, ${to})`}>

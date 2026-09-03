@@ -1,10 +1,40 @@
 ---
 import DestinationCard from './DestinationCard.astro';
-import { t, localeHref, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
+import countryConcierges from '../data/country-concierges.json';
+import { t, localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
 
 interface Props { all: any[]; countries: string[]; channels: string[]; venueCount: number; locale?: Locale }
 const { all, countries, channels, venueCount, locale = DEFAULT_LOCALE } = Astro.props;
 const _ = t(locale);
+
+/* Landelijke concierges als kaart, maar alleen zichtbaar zodra je op dat land
+   filtert - anders staan ze tussen 403 steden waar ze niets verduidelijken, en
+   schuift de teller op naar 406 terwijl het er 403 zijn.
+   De kaart wijst naar de landpagina, niet naar de chat: elke andere kaart in
+   dit raster opent ook een pagina op de site, en daar staat de uitleg. */
+const nationals = Object.entries(countryConcierges as Record<string, any>)
+  .filter(([code]) => /^[A-Z]{2}$/.test(code))
+  .map(([code, c]) => {
+    const sample = all.find(d => d.country === code);
+    if (!sample) return null;
+    const label = countryName(locale, code, sample.countryName);
+    return {
+      countryName: sample.countryName,
+      href: localeHref(locale, `/countries/${code.toLowerCase()}`),
+      d: {
+        slug: code.toLowerCase(),
+        name: { en: label },
+        country: code,
+        countryName: sample.countryName,
+        region: _('index.wholeCountry'),
+        channels: ['webchat'],
+        provenance: c.provenance,
+        logo: c.logo,
+        brandColor: c.brandColor,
+      },
+    };
+  })
+  .filter(Boolean) as any[];
 
 /* Search key, folded at build time so the browser never does this work and so
    "zurich" finds Zürich, "malaga" finds Málaga, "hertogenbosch" finds
@@ -64,6 +94,11 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
        data-many={_('index.count.many', { n: '%n' })}
        data-matching={_('index.matching', { q: '%q' })}></div>
   <div id="grid" class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {nationals.map(n => (
+      <div class="n-item" style="display:none" data-country={n.countryName}>
+        <DestinationCard d={n.d} locale={locale} href={n.href} />
+      </div>
+    ))}
     {all.map(d => (
       <div class="d-item" data-country={d.countryName} data-prov={d.provenance}
            data-channel={d.channels.join('|')} data-k={key(d)}>
@@ -89,6 +124,11 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
   const F: Record<string,string> = { country:'All', channel:'All', prov:'All' };
   const chips = document.querySelectorAll<HTMLElement>('.f-chip');
   const items = document.querySelectorAll<HTMLElement>('.d-item');
+  /* Landelijke concierges. Ze staan buiten `items` en dus buiten de telling:
+     "200 destinations in France" moet blijven kloppen. Ze verschijnen alleen
+     als je precies dat land kiest, en verdwijnen zodra je typt - wie "Ain"
+     zoekt, zoekt Ain. */
+  const nats = document.querySelectorAll<HTMLElement>('.n-item');
   const count = document.getElementById('count')!;
   const empty = document.getElementById('empty')!;
   const q     = document.getElementById('q') as HTMLInputElement;
@@ -113,6 +153,10 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
               && words.every(w => (i.dataset.k||'').includes(w));
       i.style.display = ok ? '' : 'none';
       if (ok) visible.push(i);
+    });
+    nats.forEach(i => {
+      i.style.display = (F.country !== 'All' && i.dataset.country === F.country
+                         && !words.length) ? '' : 'none';
     });
     const n = visible.length;
     const base = (n === 1 ? T.one! : T.many!).replace('%n', String(n));
