@@ -28,7 +28,10 @@ export type InventoryKey =
   | 'trails'
   | 'districts'
   | 'bookable'
-  | 'golf';
+  | 'golf'
+  | 'swimming'
+  | 'walkNodes'
+  | 'cycleNodes';
 
 interface Template {
   needs: InventoryKey;
@@ -82,6 +85,56 @@ const TEMPLATES: Template[] = [
     },
   },
   {
+    // Knooppuntenroutes. Boven `districts`, want in een fietsland is dit de
+    // vraag waarvoor je de concierge opent — en het is het antwoord dat een
+    // zoekmachine niet geeft.
+    //
+    // De telling gaat over STARTPUNTEN met score >= 45, niet over knooppunten:
+    // 83.000 knooppunten zou overal boven elke drempel komen, terwijl de vraag
+    // is of er iets te beginnen valt. 50 startpunten binnen 15 km is een dicht
+    // genoeg netwerk dat `rondjes_bij` vrijwel altijd een lus vindt.
+    //
+    // Wandelen en fietsen dekken niet hetzelfde gebied — Nord alleen wandelen,
+    // Doubs en Wallonie vooral fietsen — vandaar twee sleutels. Eén sleutel zou
+    // in Wallonie een wandelvraag aanbieden die de planner niet kan beantwoorden.
+    // Fietsen krijgt een lagere drempel dan wandelen, en dat is geen slordigheid.
+    // Wandelknooppunten staan dichter op elkaar: Rotterdam 459 fiets tegen 654
+    // wandel, Nijmegen 315 tegen 962. Dezelfde drempel voor beide zou juist de
+    // fietsbestemmingen wegfilteren waar half de straal water is - Texel staat
+    // op 41, Flevoland op 49. Onder de 40 komen Hamburg (37) en Berlijn (8)
+    // binnen, en daar is de Duitse dekking te dun om iets te beloven.
+    needs: 'cycleNodes',
+    min: 40,
+    weight: 92,
+    text: {
+      en: 'A two-hour bike ride near {name}?',
+      fr: 'Une balade à vélo de 2 heures près de {name} ?',
+      de: 'Eine zweistündige Radtour bei {name}?',
+      nl: 'Een fietstocht van 2 uur bij {name}?',
+      es: '¿Una ruta en bici de 2 horas cerca de {name}?',
+      it: 'Un giro in bici di 2 ore vicino a {name}?',
+      zh: '{name}附近 2 小时的骑行路线？',
+      ja: '{name}周辺で 2 時間のサイクリングコースは？',
+      ko: '{name} 근처 2시간 자전거 코스는?',
+    },
+  },
+  {
+    needs: 'walkNodes',
+    min: 50,
+    weight: 91,
+    text: {
+      en: 'A two-hour walk near {name}?',
+      fr: 'Une randonnée de 2 heures près de {name} ?',
+      de: 'Eine zweistündige Wanderung bei {name}?',
+      nl: 'Een wandeltocht van 2 uur bij {name}?',
+      es: '¿Una caminata de 2 horas cerca de {name}?',
+      it: 'Una camminata di 2 ore vicino a {name}?',
+      zh: '{name}附近 2 小时的徒步路线？',
+      ja: '{name}周辺で 2 時間の散策コースは？',
+      ko: '{name} 근처 2시간 걷기 코스는?',
+    },
+  },
+  {
     needs: 'districts',
     min: 3,
     weight: 90,
@@ -111,6 +164,29 @@ const TEMPLATES: Template[] = [
       zh: '预订明天 19:30 两人的餐位',
       ja: '明日 19:30 に 2 名でテーブルを予約',
       ko: '내일 저녁 7시 30분 2인 테이블 예약',
+    },
+  },
+  {
+    // Boven golf en onder 'bookable': zwemmen heeft een veel breder publiek dan
+    // golf, maar mag een concrete reserveervraag niet verdringen. Bij een stad
+    // met wijken en reserveerbare tafels valt hij buiten de eerste vier; bij een
+    // kust- of merenbestemming, die die twee meestal mist, komt hij bovendrijven.
+    //
+    // min 5, want de vraag suggereert keuze. Eén zwembad is een adres, geen
+    // antwoord op "waar kan ik zwemmen".
+    needs: 'swimming',
+    min: 5,
+    weight: 87,
+    text: {
+      en: 'Where can I swim near {name}?',
+      fr: 'Où se baigner près de {name} ?',
+      de: 'Wo kann ich in der Nähe von {name} schwimmen?',
+      nl: 'Waar kan ik zwemmen in de buurt van {name}?',
+      es: '¿Dónde puedo bañarme cerca de {name}?',
+      it: 'Dove posso fare il bagno vicino a {name}?',
+      zh: '{name}附近哪里可以游泳？',
+      ja: '{name}の近くで泳げる場所は？',
+      ko: '{name} 근처에서 수영할 만한 곳은?',
     },
   },
   {
