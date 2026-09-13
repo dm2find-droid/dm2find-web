@@ -1666,6 +1666,41 @@
     "website": "https://www.paysaurillactourisme.com/"
   },
   {
+    "slug": "auvergne-rhone-alpes",
+    "name": {
+      "en": "Auvergne-Rhône-Alpes"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "auvergnerhonealpes",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/auvergnerhonealpes",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.auvergnerhonealpes-tourisme.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      45.764043,
+      4.835659
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/auvergnerhonealpes.jpg",
+    "brandColor": "#485591",
+    "calendarUrl": "https://www.auvergnerhonealpes-tourisme.com/agenda/"
+  },
+  {
     "slug": "auxerre",
     "name": {
       "en": "Auxerre"
@@ -2731,6 +2766,41 @@
     "website": "https://www.bourgesberrytourisme.com/en/"
   },
   {
+    "slug": "bourgogne-franche-comte",
+    "name": {
+      "en": "Bourgogne-Franche-Comté"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "bourgognefranchecomte",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/bourgognefranchecomte",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.burgundy-tourism.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      47.322047,
+      5.04148
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/bourgogne.jpg",
+    "brandColor": "#D49B5E",
+    "calendarUrl": null
+  },
+  {
     "slug": "breda",
     "name": {
       "en": "Breda"
@@ -2819,6 +2889,41 @@
       "url": "https://www.brest-metropole-tourisme.fr/a-la-brestoise/vue-mer/pass-ocean-4-lieux-incontournables/",
       "name": "Pass Ocean"
     }
+  },
+  {
+    "slug": "bretagne",
+    "name": {
+      "en": "Bretagne"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "bretagne",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/bretagne",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.brittanytourism.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      48.117266,
+      -1.677793
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/bretagne.png",
+    "brandColor": "#325E6E",
+    "calendarUrl": "https://www.brittanytourism.com/plan-my-holiday/calendar/"
   },
   {
     "slug": "bruges",
@@ -4236,6 +4341,41 @@
     "brandColor": "#193424",
     "calendarUrl": "https://www.tourismecorreze.com/en/events",
     "website": "https://www.tourismecorreze.com/en"
+  },
+  {
+    "slug": "corse",
+    "name": {
+      "en": "Corse"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "corse",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/corse",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.visit-corsica.com/en",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      41.919229,
+      8.738635
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/corsica-tourism.png",
+    "brandColor": "#2E3336",
+    "calendarUrl": null
   },
   {
     "slug": "corse-du-sud",
@@ -6576,6 +6716,41 @@
     }
   },
   {
+    "slug": "grand-est",
+    "name": {
+      "en": "Grand Est"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "grandest",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/grandest",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.explore-grandest.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      48.573405,
+      7.752111
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/explore-grand-est.jpg",
+    "brandColor": "#1E2529",
+    "calendarUrl": "https://www.explore-grandest.com/en/offerings/activities/"
+  },
+  {
     "slug": "grasse",
     "name": {
       "en": "Grasse"
@@ -7399,6 +7574,41 @@
     "website": "https://www.hautes-alpes.net/en/"
   },
   {
+    "slug": "hauts-de-france",
+    "name": {
+      "en": "Hauts-de-France"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "hautsdefrance",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/hautsdefrance",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.tourisme-en-hautsdefrance.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      50.62925,
+      3.057256
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hauts-de-france.jpg",
+    "brandColor": "#FABD58",
+    "calendarUrl": "https://www.hautsdefrancetourism.com/events/whats-on-in-northern-france/"
+  },
+  {
     "slug": "hauts-de-seine",
     "name": {
       "en": "Hauts-de-Seine"
@@ -7876,6 +8086,41 @@
       52.4586,
       4.6194
     ]
+  },
+  {
+    "slug": "ile-de-france",
+    "name": {
+      "en": "Île-de-France"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "iledefrance",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/iledefrance",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.visitparisregion.com/en",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      48.856614,
+      2.352222
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitparisregion.jpg",
+    "brandColor": "#BD1E85",
+    "calendarUrl": null
   },
   {
     "slug": "ille-et-vilaine",
@@ -11988,6 +12233,76 @@
     "calendarUrl": "https://evasion.lenord.fr/sortir/tout-lagenda/"
   },
   {
+    "slug": "normandie",
+    "name": {
+      "en": "Normandie"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "normandie",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/normandie",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://en.normandie-tourisme.fr/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      49.443232,
+      1.099971
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/normandy.jpg",
+    "brandColor": "#102236",
+    "calendarUrl": "https://en.normandie-tourisme.fr/plan-your-trip/whats-on-in-normandy/all-events-in-normandy/"
+  },
+  {
+    "slug": "nouvelle-aquitaine",
+    "name": {
+      "en": "Nouvelle-Aquitaine"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "nouvelleaquitaine",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/nouvelleaquitaine",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://visit-nouvelle-aquitaine.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      44.837789,
+      -0.57918
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nouvelle-aquitaine.jpg",
+    "brandColor": "#26411B",
+    "calendarUrl": null
+  },
+  {
     "slug": "nuremberg",
     "name": {
       "en": "Nuremberg"
@@ -12114,6 +12429,41 @@
       48.3069,
       14.2858
     ]
+  },
+  {
+    "slug": "occitanie",
+    "name": {
+      "en": "Occitanie"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "occitanie",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/occitanie",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.tourisme-occitanie.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.604652,
+      1.444209
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/occitanie.jpg",
+    "brandColor": "#DF232E",
+    "calendarUrl": "https://www.tourisme-occitanie.com/agenda/par-date/mois/"
   },
   {
     "slug": "orange",
@@ -12549,6 +12899,41 @@
     "calendarUrl": "https://en.tourismepau.com/agenda/"
   },
   {
+    "slug": "pays-de-la-loire",
+    "name": {
+      "en": "Pays de la Loire"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "paysdelaloire",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/paysdelaloire",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.atlantic-loire-valley.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      47.218371,
+      -1.553621
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/paysdelaloire.png",
+    "brandColor": "#000FA0",
+    "calendarUrl": "https://www.atlantic-loire-valley.com/festivals-and-events"
+  },
+  {
     "slug": "perigueux",
     "name": {
       "en": "Périgueux"
@@ -12911,6 +13296,41 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/coeurdeardeche-tourisme.jpg",
     "brandColor": "#60B08D",
     "calendarUrl": "https://www.coeur-ardeche.fr/agenda-coeur-ardeche/"
+  },
+  {
+    "slug": "provence-alpes-cote-d-azur",
+    "name": {
+      "en": "Provence-Alpes-Côte d'Azur"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "provencealpescotedazur",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/provencealpescotedazur",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://provence-alpes-cotedazur.com/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.296482,
+      5.36978
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/alpescotedazur.jpg",
+    "brandColor": "#526371",
+    "calendarUrl": "https://provence-alpes-cotedazur.com/en/things-to-do/events/all-events/"
   },
   {
     "slug": "puy-de-dome",

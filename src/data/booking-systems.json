@@ -10,7 +10,7 @@
     "cannot be defended costs more than a smaller one.",
     "mode: api = we read availability. link = we hand over to the venue's own page."
   ],
-  "totals": { "golf": 15, "restaurant": 29 },
+  "totals": { "golf": 15, "restaurant": 30 },
   "systems": [
     { "name": "Lightspeed Golf", "vertical": "golf", "mode": "api", "note": "formerly Chronogolf" },
     { "name": "TeeControl", "vertical": "golf", "mode": "api", "note": null },
