@@ -2035,6 +2035,41 @@
     "calendarUrl": null
   },
   {
+    "slug": "bearn-des-gaves",
+    "name": {
+      "en": "Béarn des Gaves"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "bearngaves",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/bearngaves",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.tourisme-bearn-gaves.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.438466,
+      -0.938323
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/bearndesgaves.jpg",
+    "brandColor": "#449E5F",
+    "calendarUrl": "https://www.tourisme-bearn-gaves.com/voir-faire/agenda/"
+  },
+  {
     "slug": "beauvais",
     "name": {
       "en": "Beauvais"
@@ -2340,6 +2375,41 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationbiarritz.jpg",
     "brandColor": "#E1D3A9",
     "calendarUrl": "https://www.destination-biarritz.fr/en/agenda/"
+  },
+  {
+    "slug": "bidart",
+    "name": {
+      "en": "Bidart"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "bidart",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/bidart",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.bidarttourisme.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.442102,
+      -1.590024
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/bidart.jpg",
+    "brandColor": "#00568E",
+    "calendarUrl": "https://www.bidarttourisme.com/agenda/"
   },
   {
     "slug": "bilbao",
@@ -3288,6 +3358,41 @@
     "brandColor": "#B4801C",
     "calendarUrl": "https://www.explore-calvados.com/en/calvados-agenda/",
     "website": "https://www.explore-calvados.com/en/"
+  },
+  {
+    "slug": "cambo-les-bains",
+    "name": {
+      "en": "Cambo-les-Bains"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "cambolesbains",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/cambolesbains",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.cambolesbains.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.370116,
+      -1.399009
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/cambolesbains.png",
+    "brandColor": "#008080",
+    "calendarUrl": "https://www.cambolesbains.com/agenda/"
   },
   {
     "slug": "cannes",
@@ -7736,6 +7841,41 @@
     "brandColor": "#FD4F00",
     "website": "https://www.myhelsinki.fi/",
     "calendarUrl": "https://www.myhelsinki.fi/helsinki-event-calendar/"
+  },
+  {
+    "slug": "hendaye",
+    "name": {
+      "en": "Hendaye"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "hendaye",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/hendaye",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.hendaye-tourisme.fr/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.357593,
+      -1.774754
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hendaye.jpg",
+    "brandColor": "#025F8A",
+    "calendarUrl": "https://www.hendaye-tourisme.fr/agenda/"
   },
   {
     "slug": "herault",
@@ -16349,6 +16489,41 @@
       "url": "https://www.visitvalencia.com/en/valencia-tourist-card",
       "name": "Valencia Tourist Card"
     }
+  },
+  {
+    "slug": "vallee-d-ossau",
+    "name": {
+      "en": "Vallée d'Ossau"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "valleedossau",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/valleedossau",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://en.valleedossau.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.150397,
+      -0.438432
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valleedosseau.jpg",
+    "brandColor": "#73AB96",
+    "calendarUrl": "https://en.valleedossau.com/all-events"
   },
   {
     "slug": "vannes",

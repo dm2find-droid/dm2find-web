@@ -10,6 +10,11 @@
  * Rendert als echte links, dus het werkt zonder JS en cmd-klik doet nog steeds
  * het verwachte. Het script onderschept alleen de gewone linkermuisklik.
  *
+ * rel="nofollow" op elke chip: 415 bestemmingen x 9 talen x 4 vragen is
+ * ruim 15.000 unieke ?q=-URL's naar de chat. Een crawler die die volgt
+ * indexeert niets bruikbaars en laat per bezoek wel een LLM-antwoord
+ * genereren. nofollow is een hint, geen slot - zie robots.txt op chat.
+ *
  * Er rendert niets als er geen vragen zijn — een preview-bestemming met een
  * lege inventory toont de concierge alleen, niet een lege kop erboven.
  */
@@ -39,6 +44,7 @@ const href = (q: string) => `${chatUrl}?q=${encodeURIComponent(q)}`;
       {questions.map((q) => (
         <a
           href={href(q)}
+          rel="nofollow"
           data-q={q}
           class="inline-flex items-baseline gap-2 rounded-full border border-(--color-line) bg-white px-3.5 py-2 text-sm text-(--color-ink-2) transition hover:border-(--color-pine) hover:bg-(--color-pine-l) hover:text-(--color-pine) focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-pine)"
         >
