@@ -3357,7 +3357,14 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/calvados-tourisme.jpg",
     "brandColor": "#B4801C",
     "calendarUrl": "https://www.explore-calvados.com/en/calvados-agenda/",
-    "website": "https://www.explore-calvados.com/en/"
+    "website": "https://www.explore-calvados.com/en/",
+    "videos": [
+      {
+        "id": "FRL9KI0eWNM",
+        "label": "Calvados - Web Chat",
+        "channel": "webchat"
+      }
+    ]
   },
   {
     "slug": "cambo-les-bains",
@@ -6985,8 +6992,8 @@
     "videos": [
       {
         "id": "AyAq1zQ5HKw",
-        "label": "Groningen - Web Chat",
-        "channel": "webchat"
+        "label": "Groningen - Facebook",
+        "channel": "Facebook"
       }
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitgroningen.jpg",
@@ -7039,6 +7046,13 @@
     "coords": [
       53.2167,
       6.5667
+    ],
+    "videos": [
+      {
+        "id": "c0bpk_Y5Wfc",
+        "label": "Province of Groningen - Web Chat",
+        "channel": "webchat"
+      }
     ]
   },
   {
@@ -7875,7 +7889,14 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hendaye.jpg",
     "brandColor": "#025F8A",
-    "calendarUrl": "https://www.hendaye-tourisme.fr/agenda/"
+    "calendarUrl": "https://www.hendaye-tourisme.fr/agenda/",
+    "videos": [
+      {
+        "id": "nBtb_A4O3do",
+        "label": "Hendaye - Web Chat",
+        "channel": "webchat"
+      }
+    ]
   },
   {
     "slug": "herault",
@@ -11886,7 +11907,19 @@
     "touristPass": {
       "url": "https://visites.nancy-tourisme.fr/en/city-pass-numerique/city-pass/city-pass-24h-dematerialise",
       "name": "Nancy City Pass"
-    }
+    },
+    "videos": [
+      {
+        "id": "CjAt94DMZqM",
+        "label": "Nancy - Web Chat",
+        "channel": "webchat"
+      },
+      {
+        "id": "qcVMHV9r0S0",
+        "label": "Nancy - Voice",
+        "channel": "voice"
+      }
+    ]
   },
   {
     "slug": "nantes",
@@ -13036,7 +13069,14 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/pautourisme.png",
     "brandColor": "#C62337",
-    "calendarUrl": "https://en.tourismepau.com/agenda/"
+    "calendarUrl": "https://en.tourismepau.com/agenda/",
+    "videos": [
+      {
+        "id": "CKfpyYHVyDs",
+        "label": "Pau - Web Chat",
+        "channel": "webchat"
+      }
+    ]
   },
   {
     "slug": "pays-de-la-loire",
