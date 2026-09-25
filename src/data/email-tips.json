@@ -1,0 +1,19 @@
+{
+  "_comment": [
+    "Optionele module 'Event tips by email'. Bezoeker kiest in het chatmenu welke",
+    "soorten evenementen hij wil volgen, laat een adres achter, bevestigt via een",
+    "verificatiemail, en krijgt daarna elke twee weken een overzicht.",
+    "",
+    "Staande shorts (9:16), dus apart van channels.json: die tegels zijn 16:9.",
+    "scripts/fetch-thumbs.mjs leest dit bestand ook, zodat de posterframes",
+    "self-hosted zijn en /channels nog steeds nul verzoeken naar Google doet",
+    "voordat iemand klikt.",
+    "",
+    "Alleen talen waarvoor echt een video bestaat. Geen Engelse tegel die",
+    "'coming soon' zegt."
+  ],
+  "videos": [
+    { "id": "0JqNVX1BAH0", "lang": "fr", "label": "Français" },
+    { "id": "h0c0pZJXkKs", "lang": "nl", "label": "Nederlands" }
+  ]
+}

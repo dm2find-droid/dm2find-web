@@ -15,6 +15,7 @@ const voiceDemo = all.find(d => d.slug === 'nancy')   ?? all[0];
  *  last because it leads back to the live widget above.
  *  `note` renders under the card; `img` means a screenshot, not a clip. */
 import raw from '../data/channels.json';
+import tipsRaw from '../data/email-tips.json';
 
 const here = (p?: string) => !!p && existsSync(`public${p}`);
 const channels = (raw as any[])
@@ -29,6 +30,12 @@ const channels = (raw as any[])
           : here(c.img) ? c.img
           : null,
   }));
+
+/** Event tips by email — staande shorts, alleen in de talen die echt bestaan. */
+const tips = (tipsRaw as any).videos.map((v: any) => ({
+  ...v,
+  poster: here(`/channels/yt-${v.id}.jpg`) ? `/channels/yt-${v.id}.jpg` : null,
+}));
 ---
 <Base title="Channels" angle="dmo"
       description="Webchat is the product. Messaging channels and voice are reach, added when your visitors are actually there.">
@@ -63,6 +70,49 @@ const channels = (raw as any[])
         <div class="mt-5">
           <VoiceDemo agentId="agent_0401knvgg4a9e3qrtmjjtazq91x6" place={voiceDemo.name.en} />
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="email-tips" class="mx-auto max-w-6xl px-5 pb-14">
+    <div class="grid items-start gap-8 rounded-2xl border border-(--color-line) bg-white p-7 lg:grid-cols-[1.2fr_1fr]">
+      <div>
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-(--color-amber-l) px-3 py-1 text-xs font-semibold text-(--color-amber)">
+          <span class="h-1.5 w-1.5 rounded-full bg-current"></span> Optional module
+        </span>
+        <h2 class="h-section mt-3">Event tips by email</h2>
+        <p class="mt-3 text-(--color-ink-2)">
+          In the chat menu a visitor taps <b>Event tips by email</b>, picks the kinds of events they care
+          about and leaves an address. Nothing is sent until they confirm it through a verification email.
+          After that, a digest of matching events arrives every two weeks.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm text-(--color-ink-2)">
+          <li><b class="text-(--color-ink)">Double opt-in.</b> An address someone typed is not consent; a confirmed one is.</li>
+          <li><b class="text-(--color-ink)">Only what they asked for.</b> The event types they picked, not the whole calendar.</li>
+          <li><b class="text-(--color-ink)">Sent from Europe.</b> The mail goes out via Scaleway in Paris.</li>
+          <li><b class="text-(--color-ink)">An audience the destination builds itself</b> — from people who were already asking it questions.</li>
+        </ul>
+        <p class="mt-4 text-xs text-(--color-ink-3)">Walkthroughs so far in French and Dutch.</p>
+      </div>
+      <div class="flex justify-center gap-4 lg:justify-end">
+        {tips.map((v: any) => (
+          <div class="w-[42%] max-w-[180px]">
+            <button data-lb="video" data-yt={v.id} data-ratio="vertical" data-gallery="email-tips"
+                    data-cap={`Event tips by email — ${v.label}`} lang={v.lang}
+                    class="group relative block aspect-[9/16] w-full overflow-hidden rounded-xl bg-gradient-to-br from-[#4E5C56] to-[#232B28]">
+              {v.poster && (
+                <img src={v.poster} alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" />
+              )}
+              <span class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/20"></span>
+              <span class="absolute inset-0 grid place-items-center">
+                <span class="grid h-11 w-11 place-items-center rounded-full bg-white/95 text-(--color-ink) shadow-lg transition group-hover:scale-110">▶</span>
+              </span>
+              <span class="absolute bottom-3 left-3 text-sm font-semibold text-white drop-shadow">{v.label}</span>
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   </section>

@@ -18,6 +18,25 @@ const bookingTotal = golfTotal + restoTotal;
 const linked = bk.systems.filter((b: any) => b.mode === 'link').map((b: any) => b.name);
 /* "A, B, C and D" — so this sentence stays correct when a mode flips. */
 const andList = (a: string[]) => a.length < 2 ? (a[0] ?? '') : a.slice(0, -1).join(', ') + ' and ' + a.at(-1);
+
+/* De Europese keten. Afgeleid waar het kan, zodat de lijst niet ouder wordt dan
+   de connectoren: alleen verbonden bronnen, en alleen die in de EU/EER. Québec
+   en KTO zijn verbonden maar niet Europees — die horen hier niet, want deze
+   lijst beweert iets over waar data vandaan komt. */
+const EU = new Set(['AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','GR','HR','HU','IE','IT',
+                    'LT','LU','LV','MT','NL','PL','PT','RO','SE','SI','SK','IS','LI','NO']);
+const euSources = sources.filter(s => s.status === 'connected' && EU.has(s.country)).map(s => s.name);
+/* De tenant die vandaag volledig Europees draait. Eén plek om bij te werken. */
+const EU_DEMO = 'https://chat.dm2find.ai/strasbourg-eu';
+const chain = [
+  { k: 'Built',          who: 'DM2find',                  where: 'the Netherlands', eu: true },
+  { k: 'Hosting',        who: 'Our own servers — app, workflows and database, self-hosted', where: 'Germany', eu: true },
+  { k: 'Language model', who: 'Mistral',                  where: 'Paris',           eu: true },
+  { k: 'Web search',     who: 'Mistral',                  where: 'Paris',           eu: true },
+  { k: 'Event emails',   who: 'Scaleway',                 where: 'Paris',           eu: true },
+  { k: 'Tourism data',   who: andList(euSources),         where: 'EU open data',    eu: true },
+  { k: 'Voice',          who: 'ElevenLabs',               where: 'Not European yet — can be switched off per destination', eu: false },
+];
 ---
 <Base title="For national and regional tourism organisations" angle="nto" concierge
       description="The ontology layer that makes national tourism data readable by every assistant, agent and search engine.">
@@ -117,9 +136,46 @@ const andList = (a: string[]) => a.length < 2 ? (a[0] ?? '') : a.slice(0, -1).jo
     </div>
   </section>
 
+
+  <section id="sovereignty" class="border-t border-(--color-line-2) py-14">
+    <div class="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[1fr_1.1fr]">
+      <div>
+        <p class="mb-3 text-xs font-bold tracking-widest text-(--color-slate2) uppercase">The European option</p>
+        <h2 class="h-section">European destination.<br />European AI.</h2>
+        <p class="lede mt-4">
+          An option per destination — and when it is on, it is complete. From the visitor's question to
+          the answer, no American AI service handles it: not the model, not the web search, not the email.
+        </p>
+        <p class="mt-4 text-sm text-(--color-ink-2)">
+          Every destination already runs on our own servers in Germany. What the option changes is
+          everything the question touches on its way to an answer. Choose it and every link in the list
+          stays in Europe, with one exception you can switch off.
+        </p>
+        <a href={EU_DEMO} class="mt-6 inline-flex items-center gap-2 rounded-full bg-(--color-slate2) px-5 py-2.5 text-sm font-semibold text-white">
+          Strasbourg runs on it today — ask it something →
+        </a>
+      </div>
+      <ol class="divide-y divide-(--color-line-2) overflow-hidden rounded-2xl border border-(--color-line) bg-white">
+        {chain.map(c => (
+          <li class="flex items-start gap-4 px-5 py-3.5">
+            <span class="w-28 shrink-0 pt-0.5 text-xs font-bold tracking-wider text-(--color-ink-3) uppercase">{c.k}</span>
+            <span class="min-w-0 flex-1 text-sm">
+              <b class="text-(--color-ink)">{c.who}</b>
+              <span class="block text-(--color-ink-3)">{c.where}</span>
+            </span>
+            <span class={`shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-semibold ${
+              c.eu ? 'bg-(--color-pine-l) text-(--color-pine)' : 'bg-(--color-amber-l) text-(--color-amber)'}`}>
+              {c.eu ? 'EU' : 'Optional'}
+            </span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
   <section class="border-t border-(--color-line-2) bg-(--color-paper-2) py-12">
     <div class="mx-auto grid max-w-6xl gap-5 px-5 sm:grid-cols-3">
-      {[['Sovereignty','Built in the EU and hosted on our own European infrastructure, with an optional fully-European model stack from source to answer. The one exception is the optional voice agent, which runs on ElevenLabs in the US — it is never part of the data layer, and it only loads when a visitor starts it.'],
+      {[['Sovereignty','Built in the Netherlands, hosted on our own servers in Germany. A fully European chain — model, search and email — is one switch per destination; voice is the only part that is not, and it can be switched off.'],
         ['Non-exclusive','We sit beside your platform, not in front of it. Your data stays yours; attribution travels with it, per field.'],
         ['Rollout','Pilot three destinations, then extend nationally with per-DMO branding on one shared layer.']
       ].map(([t,b]) => (

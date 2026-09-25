@@ -9,6 +9,7 @@
  *
  * Usage:
  *   <button data-lb="video" data-yt="VIDEO_ID" data-cap="WhatsApp walkthrough">…</button>
+ *   <button data-lb="video" data-yt="SHORT_ID" data-ratio="vertical">…</button>   (9:16)
  *   <button data-lb="image" data-src="/img/x.jpg" data-cap="Bordeaux" data-gallery="bordeaux">…</button>
  */
 ---
@@ -36,11 +37,19 @@
     const kind = el.dataset.lb;
     if (kind === 'video') {
       const id = el.dataset.yt!;
+      /* Shorts zijn 9:16. In een 16:9-frame wordt dat een smalle strook met
+         twee brede zwarte balken; daarom krijgen ze hun eigen verhouding en
+         wordt het kader zo smal als de video. */
+      const tall = el.dataset.ratio === 'vertical';
+      slot.style.width  = tall ? 'fit-content' : '';
+      slot.style.margin = tall ? '0 auto' : '';
       slot.innerHTML =
-        `<iframe class="aspect-video w-full border-0" allow="autoplay; encrypted-media; fullscreen"
+        `<iframe class="${tall ? 'block h-[78vh] max-h-[720px] aspect-[9/16]' : 'aspect-video w-full'} border-0"
+                 allow="autoplay; encrypted-media; fullscreen"
                  allowfullscreen loading="lazy"
                  src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0"></iframe>`;
     } else {
+      slot.style.width = slot.style.margin = '';
       slot.innerHTML =
         `<img src="${el.dataset.src}" alt="${el.dataset.cap ?? ''}" class="max-h-[78vh] w-full object-contain">`;
     }

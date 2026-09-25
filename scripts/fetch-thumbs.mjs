@@ -27,7 +27,8 @@ const OUT = 'public/channels';
 mkdirSync(OUT, { recursive: true });
 
 const channels = JSON.parse(await readFile('src/data/channels.json', 'utf8'));
-const ids = channels.map(c => c.yt).filter(Boolean);
+const tips = JSON.parse(await readFile('src/data/email-tips.json', 'utf8'));
+const ids = [...channels.map(c => c.yt), ...tips.videos.map(v => v.id)].filter(Boolean);
 
 /* maxresdefault is a true 1280x720. hqdefault is 480x360 — a 16:9 frame with
  * black bars top and bottom — which the page crops back off with object-cover.
