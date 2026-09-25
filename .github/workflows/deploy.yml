@@ -14,6 +14,7 @@ jobs:
     # env op jobniveau kan de laatste stap er wel op testen.
     env:
       COOLIFY_WEBHOOK: ${{ secrets.COOLIFY_WEBHOOK }}
+      COOLIFY_TOKEN:   ${{ secrets.COOLIFY_TOKEN }}
     permissions: { contents: read, packages: write }
     steps:
       - uses: actions/checkout@v4
@@ -33,6 +34,14 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}:latest
             ghcr.io/${{ github.repository }}:${{ github.sha }}
+      # Coolify's deploy-webhook is een API-endpoint en wil een Bearer-token.
+      # Zonder token antwoordt hij 401; zonder URL werd deze stap vroeger stil
+      # overgeslagen, waardoor de Action groen was en er niets live ging. Nu
+      # zegt hij dat hardop, zodat je het in het overzicht ziet.
       - name: Tell Coolify to redeploy
-        if: env.COOLIFY_WEBHOOK != ''
-        run: curl -fsS -X POST "$COOLIFY_WEBHOOK"
+        run: |
+          if [ -z "$COOLIFY_WEBHOOK" ] || [ -z "$COOLIFY_TOKEN" ]; then
+            echo "::warning::COOLIFY_WEBHOOK of COOLIFY_TOKEN ontbreekt - image staat op GHCR, maar Coolify is NIET aangeroepen. Redeploy met de hand."
+            exit 0
+          fi
+          curl -fsS -X POST -H "Authorization: Bearer $COOLIFY_TOKEN" "$COOLIFY_WEBHOOK"
