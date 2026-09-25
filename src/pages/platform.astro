@@ -151,7 +151,10 @@ const chain = [
           everything the question touches on its way to an answer. Choose it and every link in the list
           stays in Europe, with one exception you can switch off.
         </p>
-        <a href={EU_DEMO} class="mt-6 inline-flex items-center gap-2 rounded-full bg-(--color-slate2) px-5 py-2.5 text-sm font-semibold text-white">
+        {/* Nieuw venster, expliciet: linkAttrs() en het vangnet in Base houden
+            chat.dm2find.ai bewust in hetzelfde tabblad, maar hier moet de
+            lezer na de demo terug kunnen naar de uitleg over de keten. */}
+        <a href={EU_DEMO} target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 rounded-full bg-(--color-slate2) px-5 py-2.5 text-sm font-semibold text-white">
           Strasbourg runs on it today — ask it something →
         </a>
       </div>

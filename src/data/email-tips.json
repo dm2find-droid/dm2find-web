@@ -13,7 +13,20 @@
     "'coming soon' zegt."
   ],
   "videos": [
-    { "id": "0JqNVX1BAH0", "lang": "fr", "label": "Français" },
-    { "id": "h0c0pZJXkKs", "lang": "nl", "label": "Nederlands" }
+    {
+      "id": "XcID7h3AYcI",
+      "lang": "en",
+      "label": "English"
+    },
+    {
+      "id": "0JqNVX1BAH0",
+      "lang": "fr",
+      "label": "Français"
+    },
+    {
+      "id": "h0c0pZJXkKs",
+      "lang": "nl",
+      "label": "Nederlands"
+    }
   ]
 }
