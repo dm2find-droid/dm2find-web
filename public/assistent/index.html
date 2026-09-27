@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DM2find — Concierge</title>
+<style>
+  :root{
+    --blue:#0A1F44; --blue2:#1B3A6B; --gold:#F2C94C;
+    --paper:#F7F8FA; --green:#4CC38A; --mut:#A9B6CE; --red:#E5734F;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    background:radial-gradient(120% 60% at 50% 0%, #12305e 0%, var(--blue) 55%, #06152e 100%);
+    color:var(--paper);
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    height:100%;overflow:hidden;cursor:none;text-align:center;padding:6vw;
+    user-select:none;-webkit-user-select:none;
+  }
+  .brand{position:fixed;top:5vh;font-size:5vh;font-weight:800;letter-spacing:-0.5px;}
+  .brand .find{color:var(--gold);}
+  /* pulserende orb als "ik luister"-indicator */
+  .orb{
+    width:34vh;height:34vh;border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #2a5aa0, var(--blue2) 60%, #0d2145);
+    box-shadow:0 0 0 0 rgba(242,201,76,.35);
+    display:flex;align-items:center;justify-content:center;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .orb.listening{ animation:pulse 2.4s ease-in-out infinite; }
+  .orb.speaking{ animation:pulse 0.9s ease-in-out infinite; box-shadow:0 0 60px 10px rgba(242,201,76,.4); }
+  .orb.error{ background:radial-gradient(circle at 35% 30%, #7a2d2d, #3a1414); }
+  @keyframes pulse{
+    0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(242,201,76,.30);}
+    50%{transform:scale(1.05);box-shadow:0 0 50px 14px rgba(242,201,76,.18);}
+  }
+  .icon{font-size:14vh;line-height:1;}
+  .status{position:fixed;bottom:16vh;font-size:3.4vh;color:var(--paper);font-weight:600;max-width:80vw;}
+  .hint{position:fixed;bottom:9vh;font-size:2.2vh;color:var(--mut);max-width:80vw;line-height:1.4;}
+  .foot{position:fixed;bottom:3vh;font-size:1.7vh;color:var(--mut);}
+  .foot b{color:var(--paper);}
+  /* onzichtbare herstart-hoek: 3x tikken rechtsboven herlaadt (voor jou, niet de bezoeker) */
+  #reset{position:fixed;top:0;right:0;width:12vw;height:12vh;}
+</style>
+</head>
+<body>
+  <div class="brand">DM2<span class="find">find</span></div>
+
+  <div id="orb" class="orb"><div class="icon">📞</div></div>
+
+  <div id="status" class="status">Décrochez le combiné et parlez…</div>
+  <div class="hint">Posez vos questions sur la plateforme DM2find — en français.</div>
+  <div class="foot"><b>Conçu &amp; hébergé en Europe.</b> Votre voix n'est pas conservée.</div>
+
+  <div id="reset" title="reset"></div>
+
+  <script type="module">
+    // ====== CONFIG ======
+    const AGENT_ID = 'agent_3401kxzvkse2ftysyk4g566xre27'; // <-- jouw publieke platform-agent
+    // ElevenLabs SDK (browser client). Versie pinnen kan; hier de nieuwste.
+    import { Conversation } from 'https://esm.sh/@elevenlabs/client';
+
+    const orb = document.getElementById('orb');
+    const statusEl = document.getElementById('status');
+    let convo = null;
+    let starting = false;
+
+    function setStatus(text){ statusEl.textContent = text; }
+    function setOrb(cls){ orb.className = 'orb' + (cls ? ' ' + cls : ''); }
+
+    async function ensureMic(){
+      // Vraagt mic-permissie; op je demo-account eenmalig "onthouden" zetten.
+      await navigator.mediaDevices.getUserMedia({ audio: true });
+    }
+
+    async function start(){
+      if (convo || starting) return;
+      starting = true;
+      try{
+        setStatus('Connexion…');
+        await ensureMic();
+        convo = await Conversation.startSession({
+          agentId: AGENT_ID,
+          connectionType: 'webrtc',           // lagere latency dan websocket
+          onConnect: () => { setOrb('listening'); setStatus('Je vous écoute…'); },
+          onDisconnect: () => { setOrb(''); setStatus('Décrochez le combiné et parlez…'); convo = null; starting = false; scheduleRestart(); },
+          onError: (e) => { console.error(e); setOrb('error'); setStatus('Un instant… (redémarrage)'); convo = null; starting = false; scheduleRestart(); },
+          onModeChange: (m) => {
+            // m.mode is 'speaking' of 'listening'
+            if (m && m.mode === 'speaking'){ setOrb('speaking'); setStatus('…'); }
+            else { setOrb('listening'); setStatus('Je vous écoute…'); }
+          },
+        });
+      }catch(err){
+        console.error(err);
+        setOrb('error');
+        setStatus('Micro non autorisé — touchez l\'écran');
+        starting = false;
+        // fallback: 1 tik start alsnog (mic-permissie kan pas na gebruikersactie komen)
+      }
+    }
+
+    // Als de agent stopt (stilte/afgesloten), automatisch weer klaarzetten voor de volgende bezoeker
+    let restartTimer = null;
+    function scheduleRestart(){
+      clearTimeout(restartTimer);
+      restartTimer = setTimeout(start, 1500);
+    }
+
+    // ==== AUTO-START ====
+    // Browsers vereisen vaak één gebruikersinteractie vóór mic mag. Daarom twee sporen:
+    // 1) Probeer direct te starten bij laden (werkt als mic-permissie al "onthouden" is).
+    // 2) Val terug op de éérste tik/aanraking als de browser het blokkeert.
+    window.addEventListener('load', () => { start(); });
+    ['pointerdown','touchstart','keydown'].forEach(ev =>
+      window.addEventListener(ev, () => start(), { once:false })
+    );
+
+    // Verborgen herstart voor jou: 3x snel tikken rechtsboven = pagina herladen
+    let taps=0, tapTimer=null;
+    document.getElementById('reset').addEventListener('pointerdown', () => {
+      taps++; clearTimeout(tapTimer);
+      tapTimer = setTimeout(()=>{ taps=0; }, 800);
+      if (taps>=3){ location.reload(); }
+    });
+  </script>
+</body>
+</html>
