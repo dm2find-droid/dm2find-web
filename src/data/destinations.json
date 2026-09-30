@@ -4274,6 +4274,41 @@
     }
   },
   {
+    "slug": "coeur-de-bearn",
+    "name": {
+      "en": "Cœur de Béarn"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "coeurdebearn",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/coeurdebearn",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.coeurdebearn.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.488115,
+      -0.774136
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/coeurdebearn.jpg",
+    "brandColor": "#00B5C9",
+    "calendarUrl": null
+  },
+  {
     "slug": "colmar",
     "name": {
       "en": "Colmar"
@@ -4958,6 +4993,41 @@
     "brandColor": "#3799D3",
     "website": "https://www.tourisme-deux-sevres.com/",
     "calendarUrl": "https://www.tourisme-deux-sevres.com/planifiez-votre-sejour/agenda/"
+  },
+  {
+    "slug": "dieppe",
+    "name": {
+      "en": "Dieppe"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Normandie",
+    "tenantId": "dieppe",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/dieppe",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://uk.dieppetourisme.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      49.9268,
+      1.080408
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/dieppe.jpg",
+    "brandColor": "#1DB0A3",
+    "calendarUrl": "https://uk.dieppetourisme.com/agenda/the-whole-diary/"
   },
   {
     "slug": "digne-les-bains",
@@ -7365,6 +7435,41 @@
       "name": "HasPas"
     },
     "calendarUrl": "https://uitin.hasselt.be/en"
+  },
+  {
+    "slug": "haut-bearn",
+    "name": {
+      "en": "Haut-Béarn"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "hautbearn",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/hautbearn",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.pyrenees-bearnaises.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.190673,
+      -0.610567
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hautbearn.jpg",
+    "brandColor": "#2C11CB",
+    "calendarUrl": null
   },
   {
     "slug": "haut-rhin",
@@ -13079,6 +13184,41 @@
     ]
   },
   {
+    "slug": "pays-basque",
+    "name": {
+      "en": "Pays Basque"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Pyrénées-Atlantiques",
+    "tenantId": "paysbasque",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/paysbasque",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.en-pays-basque.fr/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      43.48397,
+      -1.557431
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/paysbasque.png",
+    "brandColor": "#E30613",
+    "calendarUrl": "https://www.en-pays-basque.fr/votre-sejour/tout-lagenda/"
+  },
+  {
     "slug": "pays-de-la-loire",
     "name": {
       "en": "Pays de la Loire"
@@ -13552,6 +13692,41 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/puy-de-dome.jpg",
     "brandColor": "#325C00"
+  },
+  {
+    "slug": "pyrenees-31",
+    "name": {
+      "en": "Pyrénées 31"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Occitanie",
+    "tenantId": "pyrenees31",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/pyrenees31",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.pyrenees31.com/en",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      42.79551,
+      0.590852
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/pyrenees31.jpg",
+    "brandColor": "#81AE9D",
+    "calendarUrl": "https://www.pyrenees31.com/preparer/evenements/tous-les-evenements?filter=all"
   },
   {
     "slug": "pyrenees-atlantiques",
