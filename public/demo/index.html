@@ -100,7 +100,7 @@
     <h1>Parlez &agrave; une destination</h1>
     <p class="sub"><b>&#127908; Assistant vocal :</b> choisissez une destination, puis <b>parlez-lui</b> &mdash; il vous r&eacute;pond &agrave; voix haute, dans votre langue. Chaque destination a son propre assistant, aliment&eacute; par des donn&eacute;es ouvertes.</p>
     <div class="grid" id="grid"></div>
-    <div class="foot"><b>Con&ccedil;u &amp; h&eacute;berg&eacute; en Europe.</b> De la ville &agrave; la r&eacute;gion enti&egrave;re.</div>
+    <div class="foot"><b>Con&ccedil;u &amp; h&eacute;berg&eacute; en Europe.</b> De la ville &agrave; la r&eacute;gion enti&egrave;re.<br><span style="font-size:12px">La voix passe par ElevenLabs (&Eacute;tats-Unis)&nbsp;: la seule partie qui ne peut pas encore rester en Europe. Le micro n'est activ&eacute; qu'apr&egrave;s votre clic.</span></div>
   </div>
 
   <!-- ===== GESPREKSSCHERM ===== -->
@@ -126,16 +126,19 @@
         agentId:'agent_0401knvgg4a9e3qrtmjjtazq91x6' },
       { key:'pau', name:'Pau / B\u00e9arn', level:'Ville',
         desc:'Ici m\u00eame \u2014 v\u00e9rifiable en sortant.',
-        agentId:'AGENT_ID_PAU' },
+        agentId:'agent_3101m3ydvp6nfpms5q0jq82hkmy8' },
       { key:'pa64', name:'Pyr\u00e9n\u00e9es-Atlantiques', level:'D\u00e9partement',
         desc:'Bayonne, Biarritz, Lourdes\u2026 tout le 64.',
-        agentId:'AGENT_ID_PA64' },
+        agentId:'agent_4301m3yd3vdff1ybwkwhsg188589' },
       { key:'naq', name:'Nouvelle-Aquitaine', level:'R\u00e9gion',
         desc:'Une r\u00e9gion enti\u00e8re dans un seul assistant.',
-        agentId:'AGENT_ID_NAQ' },
+        agentId:'agent_3201m3y9mtz4ej78n7wq6ems726g' },
       { key:'lyon', name:'Lyon', level:'Ville',
         desc:'Capitale gastronomique \u2014 Michelin & Gault&Millau.',
-        agentId:'AGENT_ID_LYON' },
+        agentId:'agent_5301m3ydrzygfkzb697td7hq3p00' },
+      { key:'strasbourg', name:'Strasbourg', level:'Ville',
+        desc:'Capitale europ\u00e9enne \u2014 cath\u00e9drale, canaux, Petite France.',
+        agentId:'agent_0901m3y4qnn7fzx8qxe97g6dqg77' },
     ];
 
     var LANGS = [
@@ -145,6 +148,8 @@
       { code:'de', label:'Deutsch',  flag:'\uD83C\uDDE9\uD83C\uDDEA' },
       { code:'es', label:'Espa\u00f1ol', flag:'\uD83C\uDDEA\uD83C\uDDF8' },
       { code:'it', label:'Italiano', flag:'\uD83C\uDDEE\uD83C\uDDF9' },
+      { code:'zh', label:'\u4E2D\u6587', flag:'\uD83C\uDDE8\uD83C\uDDF3' },
+      { code:'ja', label:'\u65E5\u672C\u8A9E', flag:'\uD83C\uDDEF\uD83C\uDDF5' },
     ];
 
     function isReady(d){ return d.agentId && d.agentId.indexOf('AGENT_ID_') !== 0; }
