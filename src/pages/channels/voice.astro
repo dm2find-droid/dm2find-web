@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { BOOKING_URL, SALES_EMAIL } from '../../data/site';
+import ChannelsNav from '../../components/ChannelsNav.astro';
 import sources from '../../data/sources.json';
 
 /* Live spraakdemo's. Eén lijst, één plek om bij te werken: een nieuwe demo is één
@@ -89,7 +90,8 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
 <Base title="Voice demos" angle="dmo"
       description={`Talk to a destination. Live voice demos for ${metaNames}, right in your browser.`}>
   <section class="mx-auto max-w-6xl px-5 pt-14 pb-8">
-    <p class="mb-3 text-xs font-bold tracking-widest text-(--color-terra) uppercase"><a href="/channels" class="hover:underline">Channels</a> · Voice · live demo</p>
+    <ChannelsNav />
+    <p class="mb-3 text-xs font-bold tracking-widest text-(--color-terra) uppercase">Voice · live demo</p>
     <h1 class="h-display">Talk to a destination.</h1>
     <p class="lede mt-5">
       Pick a destination and just speak. It answers out loud, in your language, from the open tourism

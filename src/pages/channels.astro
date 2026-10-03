@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Chat from '../components/Chat.astro';
 import VoiceDemo from '../components/VoiceDemo.astro';
+import ChannelsNav from '../components/ChannelsNav.astro';
 
 const all = (await getCollection('destinations')).map(e => e.data);
 const chatDemo  = all.find(d => d.slug === 'bolzano') ?? all[0];
@@ -40,6 +41,7 @@ const tips = (tipsRaw as any).videos.map((v: any) => ({
 <Base title="Channels" angle="dmo"
       description="Webchat is the product. Messaging channels and voice are reach, added when your visitors are actually there.">
   <section class="mx-auto max-w-6xl px-5 py-14">
+    <ChannelsNav />
     <p class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Channels</p>
     <h1 class="h-display">Webchat is the product.<br />The rest is reach.</h1>
     <p class="lede mt-5">
@@ -70,7 +72,7 @@ const tips = (tipsRaw as any).videos.map((v: any) => ({
         <div class="mt-5">
           <VoiceDemo agentId="agent_0401knvgg4a9e3qrtmjjtazq91x6" place={voiceDemo.name.en} />
         </div>
-        <a href="/channels/voice" class="mt-4 inline-block text-sm font-semibold text-(--color-terra) hover:underline">More voice demos: seven destinations, eight languages →</a>
+        <a href="/channels/voice" class="mt-4 inline-flex items-center gap-2 rounded-full bg-(--color-terra) px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110">Try all voice demos →</a>
       </div>
     </div>
   </section>

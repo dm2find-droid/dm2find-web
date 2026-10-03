@@ -47,7 +47,10 @@ const path = Astro.url.pathname;
     <button id="burger" aria-label={_('nav.menu')} class="ml-auto rounded-lg border border-(--color-line) px-3 py-2 xl:hidden">☰</button>
   </div>
   <nav id="mnav" class="hidden flex-col gap-1 border-t border-(--color-line) px-5 pb-4 xl:hidden">
-    {nav.map(n => <a href={n.url} class="py-3 text-base">{n.label}</a>)}
+    {nav.map(n => <>
+      <a href={n.url} class="py-3 text-base">{n.label}</a>
+      {n.href === '/channels' && <a href="/channels/voice" class="-mt-2 py-2 pl-4 text-sm text-(--color-ink-2)">{_('nav.voice')}</a>}
+    </>)}
     {/* The desktop CTA is md:inline-block, so without this the booking link was
         invisible on a phone — where most of your traveller traffic will be. */}
     <a href={BOOKING_URL} target="_blank" rel="noopener"

@@ -1,0 +1,23 @@
+---
+/* Subnavigatie voor de Channels-sectie. /channels/voice hangt onder Channels in
+   het hoofdmenu; zonder deze tabs zag je op /channels niet dat er een aparte
+   pagina met alle spraakdemo's is. Een nieuwe subpagina = één regel in TABS. */
+const TABS = [
+  { href: '/channels',       label: 'All channels' },
+  { href: '/channels/voice', label: 'Voice demos' },
+];
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+---
+<nav aria-label="Channels" class="mb-8 flex gap-1 overflow-x-auto border-b border-(--color-line)">
+  {TABS.map(t => {
+    const on = path === t.href;
+    return (
+      <a href={t.href} aria-current={on ? 'page' : undefined}
+         class={`-mb-px shrink-0 border-b-2 px-3 py-2.5 text-sm whitespace-nowrap transition ${
+           on ? 'border-(--color-terra) font-semibold text-(--color-ink)'
+              : 'border-transparent text-(--color-ink-2) hover:border-(--color-line) hover:text-(--color-ink)'}`}>
+        {t.label}
+      </a>
+    );
+  })}
+</nav>
