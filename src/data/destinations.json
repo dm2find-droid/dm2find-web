@@ -10495,7 +10495,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -10525,7 +10526,8 @@
     "touristPass": {
       "url": "https://shop.visiterlyon.com/lyon-city-card",
       "name": "Lyon City Card"
-    }
+    },
+    "voiceAgentId": "agent_5301m3ydrzygfkzb697td7hq3p00"
   },
   {
     "slug": "maastricht",
@@ -12560,7 +12562,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -12578,7 +12581,8 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/nouvelle-aquitaine.jpg",
     "brandColor": "#26411B",
-    "calendarUrl": null
+    "calendarUrl": null,
+    "voiceAgentId": "agent_3201m3y9mtz4ej78n7wq6ems726g"
   },
   {
     "slug": "nuremberg",
@@ -13149,7 +13153,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -13181,7 +13186,8 @@
         "label": "Pau - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "voiceAgentId": "agent_3101m3ydvp6nfpms5q0jq82hkmy8"
   },
   {
     "slug": "pays-basque",
@@ -13743,7 +13749,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -13767,7 +13774,8 @@
       -0.375673
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/64-tourisme.png",
-    "brandColor": "#FF3B3B"
+    "brandColor": "#FF3B3B",
+    "voiceAgentId": "agent_4301m3yd3vdff1ybwkwhsg188589"
   },
   {
     "slug": "quebec-city",
@@ -15297,7 +15305,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -15327,7 +15336,8 @@
     "touristPass": {
       "url": "https://shop.visitstrasbourg.fr/visite/strasbourg-city-card/",
       "name": "Strasbourg City Card"
-    }
+    },
+    "voiceAgentId": "agent_0901m3y4qnn7fzx8qxe97g6dqg77"
   },
   {
     "slug": "stuttgart",

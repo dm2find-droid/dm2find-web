@@ -5,33 +5,64 @@ import { BOOKING_URL, SALES_EMAIL } from '../../data/site';
 import ChannelsNav from '../../components/ChannelsNav.astro';
 import sources from '../../data/sources.json';
 
-/* Live spraakdemo's. Eén lijst, één plek om bij te werken: een nieuwe demo is één
-   regel erbij.
+/* Live spraakdemo's.
+
+   Wélke demo's er staan, komt uit destinations.json: elke bestemming met een
+   voiceAgentId (= el_agent_id in de tenants-tabel) verschijnt hier vanzelf.
+   Deze lijst voegt alleen toe wat de data niet weet:
+   - FEATURED: de Franse demo's, bovenaan en in deze volgorde, met taalknoppen.
+   - DESC:     één regel per kaart (de Engelse tagline uit de tenants-tabel).
+   - LEVEL:    alleen als het geen stad is.
+   - LANGS:    alleen voor agents waarin 'language override' aanstaat. Zonder
+               LANGS toont het paneel geen taalknoppen en sturen we geen
+               override mee; een agent zonder override-rechten weigert anders
+               het gesprek.
 
    Wat een kaart over de databron zegt (officiële feed of publieke bronnen, en
    wélke feed) komt uit destinations.json + sources.json, nooit uit deze lijst.
-   Zo kan een demo op publieke bronnen (Brugge, Amsterdam) of op Open Data Germany
-   van de DZT (München) nooit per ongeluk "DATAtourisme" claimen, en klopt de
-   tekst bovenaan de pagina vanzelf als er bronnen bijkomen.
+   Zo claimt een demo op publieke bronnen (Brugge, Amsterdam) of op Open Data
+   Germany van de DZT (München) nooit per ongeluk "DATAtourisme". */
+const FEATURED = ['paris', 'nancy', 'strasbourg', 'lyon', 'pau', 'pyrenees-atlantiques', 'nouvelle-aquitaine'];
 
-   - agentId   mag weg als destinations.json al een voiceAgentId voor die slug heeft.
-   - langs     alleen invullen als de agent níet alle talen uit LANGS spreekt.
-   - Volgorde  = volgorde op de pagina; landen verschijnen in de volgorde waarin
-               ze voor het eerst in de lijst staan. */
-type Demo = { slug: string; name?: string; level: string; desc: string; agentId?: string; langs?: string[] };
-const DEMOS: Demo[] = [
-  { slug: 'paris',                level: 'City',        agentId: 'agent_4401knmdzpgmewbrbskdkf7607fe', desc: 'The capital. Everyone knows it, so you can check every answer.' },
-  { slug: 'nancy',                level: 'City',        agentId: 'agent_0401knvgg4a9e3qrtmjjtazq91x6', desc: 'Place Stanislas (UNESCO) and Art Nouveau.' },
-  { slug: 'strasbourg',           level: 'City',        agentId: 'agent_0901m3y4qnn7fzx8qxe97g6dqg77', desc: 'Cathedral, canals, Christmas markets and Alsace cuisine.' },
-  { slug: 'lyon',                 level: 'City',        agentId: 'agent_5301m3ydrzygfkzb697td7hq3p00', desc: 'Bouchons, traboules and a serious food scene.' },
-  { slug: 'pau',                  level: 'City',        agentId: 'agent_3101m3ydvp6nfpms5q0jq82hkmy8', desc: 'Pyrenees views from the boulevard, the Gave, Jurançon wine.' },
-  { slug: 'pyrenees-atlantiques', level: 'Département', agentId: 'agent_4301m3yd3vdff1ybwkwhsg188589', desc: 'Bayonne, Biarritz, the Basque coast and the Béarn: all of the 64.' },
-  { slug: 'nouvelle-aquitaine',   level: 'Region',      agentId: 'agent_3201m3y9mtz4ej78n7wq6ems726g', desc: 'Twelve départements, from Bordeaux to the Pyrenees, in one assistant.' },
-  // Volgende: bijvoorbeeld
-  // { slug: 'bruges',    level: 'City', desc: '…' },                       // publieke bronnen
-  // { slug: 'amsterdam', level: 'City', desc: '…' },                       // publieke bronnen
-  // { slug: 'munich',    level: 'City', desc: '…', langs: ['de','en'] },   // Open Data Germany (DZT)
-];
+const DESC: Record<string, string> = {
+  'paris':                'The capital. Everyone knows it, so you can check every answer.',
+  'nancy':                'Place Stanislas (UNESCO) and Art Nouveau.',
+  'strasbourg':           'Cathedral, canals, Christmas markets and Alsace cuisine.',
+  'lyon':                 'Bouchons, traboules and a serious food scene.',
+  'pau':                  'Pyrenees views from the boulevard, the Gave, Jurançon wine.',
+  'pyrenees-atlantiques': 'Bayonne, Biarritz, the Basque coast and the Béarn: all of the 64.',
+  'nouvelle-aquitaine':   'Twelve départements, from Bordeaux to the Pyrenees, in one assistant.',
+  'amsterdam':            'Canals, Rijksmuseum, cycling.',
+  'beijing':              'Imperial palaces, street food, hutongs.',
+  'berlin':               'Berlin Wall, techno clubs, museums.',
+  'bruges':               'Medieval canals, the Belfry, chocolate.',
+  'busan':                'Oceanfront beaches, seafood markets, skyline views.',
+  'damascus':             'The old souk, the Umayyad Mosque, Damascus steel.',
+  'den-bosch':            'Historic centre, St John\'s Cathedral, canals.',
+  'girona':               'Medieval old town, tapas, riverside walks.',
+  'granada':              'The Alhambra, tapas, views from the Albaicín.',
+  'hamburg':              'Elbe harbour, Speicherstadt, Reeperbahn.',
+  'hong-kong':            'Skyline views, street food, harbour ferries.',
+  'innsbruck':            'Alpine views, Nordkette hiking, old town.',
+  'istanbul':             'The Bosphorus, bazaars and two continents.',
+  'kyoto':                'Historic temples, geisha streets, kaiseki cuisine.',
+  'luxembourg-city':      'The Alzette, the old town, the casemates.',
+  'monaco':               'Formula One, Monte Carlo, sea views.',
+  'munich':               'Oktoberfest, beer gardens, the English Garden.',
+  'new-york-city':        'Broadway shows, skyline views, delis.',
+  'seville':              'Giralda views, tapas alleys, flamenco.',
+  'singapore':            'Hawker centres, Marina Bay, gardens.',
+  'taipei':               'Night markets, Taipei 101, hot pot.',
+  'trento':               'Alpine views, historic centre, cycling.',
+  'turin':                'Mole Antonelliana, cafés, markets.',
+  'utrecht':              'Canals, the Dom Tower, cycling, cafés.',
+  'zagreb':               'Historic Upper Town, museums, cafés.',
+  'zurich':               'Lake Zürich, Bahnhofstrasse, museums.',
+};
+const LEVEL: Record<string, string> = {
+  'pyrenees-atlantiques': 'Département',
+  'nouvelle-aquitaine':   'Region',
+};
 
 /* Starttaal van het gesprek. Labels in de eigen taal, geen vlaggen: Windows
    toont vlag-emoji als losse letters, en een taal is geen land. */
@@ -40,31 +71,46 @@ const LANGS = [
   ['es', 'Español'], ['it', 'Italiano'], ['zh', '中文'], ['ja', '日本語'],
 ] as const;
 const ALL_LANGS: string[] = LANGS.map(([c]) => c);
+const LANGS_BY_SLUG: Record<string, string[]> = {
+  ...Object.fromEntries(FEATURED.map(s => [s, ALL_LANGS])),
+  // Zet hier een agent bij zodra language override in ElevenLabs aanstaat, bv.:
+  // 'munich': ['de', 'en'],
+};
 
 const SOURCE = new Map((sources as { id: string; name: string }[]).map(x => [x.id, x.name]));
 const and = (xs: string[]) => xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`;
 
-const all = (await getCollection('destinations')).map(e => e.data);
-const demos = DEMOS.map(d => {
-  const x = all.find(a => a.slug === d.slug);
-  const agentId = d.agentId ?? x?.voiceAgentId ?? null;
-  if (!agentId) throw new Error(`/channels/voice: demo "${d.slug}" has no agentId, and destinations.json has none either`);
-  const bad = (d.langs ?? []).filter(l => !ALL_LANGS.includes(l));
-  if (bad.length) throw new Error(`/channels/voice: demo "${d.slug}" lists unknown language(s) ${bad.join(', ')}`);
-  return {
-    ...d,
-    agentId,
-    name: d.name ?? x?.name?.en ?? d.slug,
-    langs: d.langs ?? ALL_LANGS,
-    logo: x?.logo ?? null,
-    href: x ? `/destinations/${d.slug}` : null,
-    country: x?.countryName ?? 'Elsewhere',
-    provenance: x?.provenance ?? null,
-    sourceName: x?.dataSource ? (SOURCE.get(x.dataSource) ?? null) : null,
-  };
-});
-const countries = [...new Set(demos.map(d => d.country))];
-const groups = countries.map(c => ({ title: c, items: demos.filter(d => d.country === c) }));
+const all = (await getCollection('destinations')).map(e => e.data).filter(x => !!x.voiceAgentId);
+for (const f of FEATURED) {
+  if (!all.some(x => x.slug === f)) throw new Error(`/channels/voice: featured demo "${f}" has no voiceAgentId in destinations.json`);
+}
+const rank = (slug: string) => { const k = FEATURED.indexOf(slug); return k === -1 ? Infinity : k; };
+const demos = all
+  .map(x => ({
+    slug: x.slug,
+    name: x.name?.en ?? x.slug,
+    agentId: x.voiceAgentId as string,
+    level: LEVEL[x.slug] ?? 'City',
+    desc: DESC[x.slug] ?? '',
+    langs: LANGS_BY_SLUG[x.slug] ?? [],
+    logo: x.logo ?? null,
+    href: `/destinations/${x.slug}`,
+    country: x.countryName,
+    provenance: x.provenance,
+    sourceName: x.dataSource ? (SOURCE.get(x.dataSource) ?? null) : null,
+  }))
+  .sort((a, b) => rank(a.slug) - rank(b.slug) || a.name.localeCompare(b.name, 'en'));
+
+/* Groepen per land: Frankrijk eerst (daar staan de uitgewerkte demo's), daarna
+   alfabetisch. */
+const first = demos[0];
+const countries = [...new Set(demos.map(d => d.country))]
+  .sort((a, b) => (a === first.country ? -1 : b === first.country ? 1 : a.localeCompare(b, 'en')));
+const groups = countries.map(c => ({
+  title: c,
+  id: 'c-' + c.toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
+  items: demos.filter(d => d.country === c),
+}));
 
 /* De bronnenzin bovenaan, afgeleid uit wat de demo's werkelijk gebruiken. */
 const feeds = [...new Set(demos.filter(d => d.provenance === 'official' && d.sourceName).map(d => d.sourceName as string))];
@@ -76,7 +122,6 @@ const sourceSentence = and([
 const allLangs = demos.every(d => d.langs.length === ALL_LANGS.length);
 const names = demos.map(d => d.name);
 const metaNames = names.length > 7 ? `${names.slice(0, 6).join(', ')} and more` : and(names);
-const first = demos[0];
 /* De volledig Europese spraakketen. Alleen wat echt draait, met waar het draait —
    dezelfde regel als de keten op /platform. */
 const EU_CHAIN = [
@@ -111,8 +156,17 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
   <section class="mx-auto max-w-6xl px-5 pb-14">
     <div class="grid items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
       <div>
+        {groups.length > 2 && (
+          <nav aria-label="Countries" class="mb-6 flex flex-wrap gap-1.5">
+            {groups.map(g => (
+              <a href={`#${g.id}`} class="rounded-full border border-(--color-line) bg-white px-3 py-1 text-xs text-(--color-ink-2) transition hover:border-(--color-ink-3) hover:text-(--color-ink)">
+                {g.title} <span class="text-(--color-ink-3)">{g.items.length}</span>
+              </a>
+            ))}
+          </nav>
+        )}
         {groups.map(g => (
-          <div class="mb-8 last:mb-0">
+          <div id={g.id} class="mb-8 scroll-mt-24 last:mb-0">
             <h2 class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase" style="font-family:var(--font-sans)">{g.title}</h2>
             <div class="grid gap-3 sm:grid-cols-2">
               {g.items.map(d => (
@@ -123,9 +177,9 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
                            class="h-11 w-11 shrink-0 rounded-lg border border-(--color-line-2) bg-white object-contain" />
                     : <span class="h-11 w-11 shrink-0 rounded-lg bg-(--color-paper-2)"></span>}
                   <span class="min-w-0">
-                    <span class="block text-[11px] font-bold tracking-wider text-(--color-terra) uppercase">{d.level}</span>
+                    {d.level !== 'City' && <span class="block text-[11px] font-bold tracking-wider text-(--color-terra) uppercase">{d.level}</span>}
                     <span class="block font-serif text-lg leading-tight font-semibold">{d.name}</span>
-                    <span class="mt-1 block text-sm text-(--color-ink-2)">{d.desc}</span>
+                    {d.desc && <span class="mt-1 block text-sm text-(--color-ink-2)">{d.desc}</span>}
                     {/* Zelfde kleuren als ProvenanceBadge, maar kort genoeg voor een smalle kaart:
                         alleen de bronnaam, de volledige uitleg zit in de title. */}
                     {d.provenance && (
@@ -149,14 +203,17 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
         <h2 id="vc-name" class="h-section mt-1">{first.name}</h2>
         <p id="vc-level" class="mt-1 text-sm text-(--color-ink-3)">{first.level} · {first.country}</p>
 
-        <p class="mt-5 mb-2 text-xs text-(--color-ink-3)">Start the conversation in</p>
-        <div class="flex flex-wrap justify-center gap-1.5">
-          {LANGS.map(([code, label]) => (
-            <button type="button" data-lang={code} lang={code} aria-pressed="false"
-                    class="vc-lang rounded-full border border-(--color-line) px-3 py-1.5 text-sm text-(--color-ink-2) transition hover:border-(--color-ink-3)">
-              {label}
-            </button>
-          ))}
+        {/* Alleen voor agents waarin language override aanstaat (LANGS_BY_SLUG). */}
+        <div id="vc-langs" hidden={first.langs.length === 0}>
+          <p class="mt-5 mb-2 text-xs text-(--color-ink-3)">Start the conversation in</p>
+          <div class="flex flex-wrap justify-center gap-1.5">
+            {LANGS.map(([code, label]) => (
+              <button type="button" data-lang={code} lang={code} aria-pressed="false"
+                      class="vc-lang rounded-full border border-(--color-line) px-3 py-1.5 text-sm text-(--color-ink-2) transition hover:border-(--color-ink-3)">
+                {label}
+              </button>
+            ))}
+          </div>
         </div>
 
         <button id="vc-orb" type="button" data-state="idle" aria-label="Start talking"
@@ -172,7 +229,7 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
                 class="mt-3 rounded-full border border-(--color-terra) px-5 py-2 text-sm font-semibold text-(--color-terra) transition hover:bg-(--color-terra-l)">
           End call
         </button>
-        <p class="mt-4 text-xs text-(--color-ink-3)">Switch language mid-conversation just by speaking it.</p>
+        <p id="vc-hint" class="mt-4 text-xs text-(--color-ink-3)" hidden={first.langs.length === 0}>Switch language mid-conversation just by speaking it.</p>
         <a id="vc-page" href={first.href ?? '#'} hidden={!first.href}
            class="mt-3 inline-block text-xs text-(--color-ink-2) underline underline-offset-2 hover:text-(--color-ink)">
           Destination page and webchat →
@@ -316,9 +373,12 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
     levelEl.textContent = `${current.level} · ${current.country}`;
     pageEl.hidden = !current.href;
     if (current.href) pageEl.href = current.href;
-    // alleen de talen die deze agent spreekt; staat de gekozen taal er niet bij, dan Engels of de eerste
+    // Taalknoppen alleen voor agents met language override; dan alleen de talen die die agent spreekt.
+    const hasLangs = current.langs.length > 0;
+    el('vc-langs').hidden = !hasLangs;
+    el('vc-hint').hidden = !hasLangs;
     langBtns.forEach(b => { b.hidden = !current.langs.includes(b.dataset.lang); });
-    if (!current.langs.includes(lang)) { lang = current.langs.includes('en') ? 'en' : current.langs[0]; markLang(); }
+    if (hasLangs && !current.langs.includes(lang)) { lang = current.langs.includes('en') ? 'en' : current.langs[0]; markLang(); }
   }
   function markLang() {
     langBtns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
@@ -348,7 +408,8 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
       const c = await Conversation.startSession({
         agentId: current.agentId,
         connectionType: 'webrtc',
-        overrides: { agent: { language: lang } },
+        // override alleen waar de agent het toestaat; anders weigert ElevenLabs de sessie
+        ...(current.langs.length ? { overrides: { agent: { language: lang } } } : {}),
         onConnect: () => { if (my === gen) setState('listening'); },
         onDisconnect: () => { if (my === gen) { convo = null; setState('idle'); } },
         onError: (e) => { console.error(e); if (my === gen) { convo = null; setState('error', 'Something went wrong. Tap to try again.'); } },
