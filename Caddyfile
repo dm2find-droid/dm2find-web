@@ -29,9 +29,9 @@
 	redir /en/tourism/continental-europe/italy       /countries/it 301
 	redir /en/tourism/continental-europe/the-netherlands /countries/nl 301
 	redir /en/tourism/north-america                  /countries/us 301
-	redir /en/tourism/voice                          /channels     301
+	redir /en/tourism/voice                          /channels/voice 301
 	redir /en/tourism/tourism-faq                    /dmo          301
-	redir /en/connect/connect-voice                  /channels     301
+	redir /en/connect/connect-voice                  /channels/voice 301
 	redir /en/connect*                               /channels     301
 	redir /en/sports                                 /solutions    301
 	redir /en/education                              /solutions    301
@@ -39,6 +39,9 @@
 	redir /en/wellness                               /solutions    301
 	redir /en/about/contact                          /contact      301
 	redir /en/about*                                 /about        301
+
+	# voice demo moved from a standalone page into the site
+	redir /demo* /channels/voice 301
 
 	# retired channels — these pages must not come back
 	redir /en/connect/kakaotalk /channels 301

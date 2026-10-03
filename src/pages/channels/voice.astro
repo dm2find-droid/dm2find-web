@@ -1,0 +1,386 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { BOOKING_URL, SALES_EMAIL } from '../../data/site';
+import sources from '../../data/sources.json';
+
+/* Live spraakdemo's. Eén lijst, één plek om bij te werken: een nieuwe demo is één
+   regel erbij.
+
+   Wat een kaart over de databron zegt (officiële feed of publieke bronnen, en
+   wélke feed) komt uit destinations.json + sources.json, nooit uit deze lijst.
+   Zo kan een demo op publieke bronnen (Brugge, Amsterdam) of op Open Data Germany
+   van de DZT (München) nooit per ongeluk "DATAtourisme" claimen, en klopt de
+   tekst bovenaan de pagina vanzelf als er bronnen bijkomen.
+
+   - agentId   mag weg als destinations.json al een voiceAgentId voor die slug heeft.
+   - langs     alleen invullen als de agent níet alle talen uit LANGS spreekt.
+   - Volgorde  = volgorde op de pagina; landen verschijnen in de volgorde waarin
+               ze voor het eerst in de lijst staan. */
+type Demo = { slug: string; name?: string; level: string; desc: string; agentId?: string; langs?: string[] };
+const DEMOS: Demo[] = [
+  { slug: 'paris',                level: 'City',        agentId: 'agent_4401knmdzpgmewbrbskdkf7607fe', desc: 'The capital. Everyone knows it, so you can check every answer.' },
+  { slug: 'nancy',                level: 'City',        agentId: 'agent_0401knvgg4a9e3qrtmjjtazq91x6', desc: 'Place Stanislas (UNESCO) and Art Nouveau.' },
+  { slug: 'strasbourg',           level: 'City',        agentId: 'agent_0901m3y4qnn7fzx8qxe97g6dqg77', desc: 'Cathedral, canals, Christmas markets and Alsace cuisine.' },
+  { slug: 'lyon',                 level: 'City',        agentId: 'agent_5301m3ydrzygfkzb697td7hq3p00', desc: 'Bouchons, traboules and a serious food scene.' },
+  { slug: 'pau',                  level: 'City',        agentId: 'agent_3101m3ydvp6nfpms5q0jq82hkmy8', desc: 'Pyrenees views from the boulevard, the Gave, Jurançon wine.' },
+  { slug: 'pyrenees-atlantiques', level: 'Département', agentId: 'agent_4301m3yd3vdff1ybwkwhsg188589', desc: 'Bayonne, Biarritz, the Basque coast and the Béarn: all of the 64.' },
+  { slug: 'nouvelle-aquitaine',   level: 'Region',      agentId: 'agent_3201m3y9mtz4ej78n7wq6ems726g', desc: 'Twelve départements, from Bordeaux to the Pyrenees, in one assistant.' },
+  // Volgende: bijvoorbeeld
+  // { slug: 'bruges',    level: 'City', desc: '…' },                       // publieke bronnen
+  // { slug: 'amsterdam', level: 'City', desc: '…' },                       // publieke bronnen
+  // { slug: 'munich',    level: 'City', desc: '…', langs: ['de','en'] },   // Open Data Germany (DZT)
+];
+
+/* Starttaal van het gesprek. Labels in de eigen taal, geen vlaggen: Windows
+   toont vlag-emoji als losse letters, en een taal is geen land. */
+const LANGS = [
+  ['fr', 'Français'], ['en', 'English'], ['nl', 'Nederlands'], ['de', 'Deutsch'],
+  ['es', 'Español'], ['it', 'Italiano'], ['zh', '中文'], ['ja', '日本語'],
+] as const;
+const ALL_LANGS: string[] = LANGS.map(([c]) => c);
+
+const SOURCE = new Map((sources as { id: string; name: string }[]).map(x => [x.id, x.name]));
+const and = (xs: string[]) => xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`;
+
+const all = (await getCollection('destinations')).map(e => e.data);
+const demos = DEMOS.map(d => {
+  const x = all.find(a => a.slug === d.slug);
+  const agentId = d.agentId ?? x?.voiceAgentId ?? null;
+  if (!agentId) throw new Error(`/channels/voice: demo "${d.slug}" has no agentId, and destinations.json has none either`);
+  const bad = (d.langs ?? []).filter(l => !ALL_LANGS.includes(l));
+  if (bad.length) throw new Error(`/channels/voice: demo "${d.slug}" lists unknown language(s) ${bad.join(', ')}`);
+  return {
+    ...d,
+    agentId,
+    name: d.name ?? x?.name?.en ?? d.slug,
+    langs: d.langs ?? ALL_LANGS,
+    logo: x?.logo ?? null,
+    href: x ? `/destinations/${d.slug}` : null,
+    country: x?.countryName ?? 'Elsewhere',
+    provenance: x?.provenance ?? null,
+    sourceName: x?.dataSource ? (SOURCE.get(x.dataSource) ?? null) : null,
+  };
+});
+const countries = [...new Set(demos.map(d => d.country))];
+const groups = countries.map(c => ({ title: c, items: demos.filter(d => d.country === c) }));
+
+/* De bronnenzin bovenaan, afgeleid uit wat de demo's werkelijk gebruiken. */
+const feeds = [...new Set(demos.filter(d => d.provenance === 'official' && d.sourceName).map(d => d.sourceName as string))];
+const hasPublic = demos.some(d => d.provenance === 'preview');
+const sourceSentence = and([
+  ...(feeds.length ? [`official open-data feeds (${and(feeds)})`] : []),
+  ...(hasPublic ? ['public sources'] : []),
+]);
+const allLangs = demos.every(d => d.langs.length === ALL_LANGS.length);
+const names = demos.map(d => d.name);
+const metaNames = names.length > 7 ? `${names.slice(0, 6).join(', ')} and more` : and(names);
+const first = demos[0];
+/* De volledig Europese spraakketen. Alleen wat echt draait, met waar het draait —
+   dezelfde regel als de keten op /platform. */
+const EU_CHAIN = [
+  { k: 'Speech to text',   what: 'Whisper (small), an open model',             who: 'Scaleway',                 where: 'Amsterdam, NL' },
+  { k: 'Language model',   what: 'Mistral Small 3.2',                          who: 'Scaleway',                 where: 'Paris, FR' },
+  { k: 'Destination data', what: "Our search over the destination's own data", who: 'Our own servers, Hetzner', where: 'Germany' },
+  { k: 'Text to speech',   what: 'Kokoro, an open model',                      who: 'Scaleway',                 where: 'Amsterdam, NL' },
+];
+const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully European voice')}`;
+---
+<Base title="Voice demos" angle="dmo"
+      description={`Talk to a destination. Live voice demos for ${metaNames}, right in your browser.`}>
+  <section class="mx-auto max-w-6xl px-5 pt-14 pb-8">
+    <p class="mb-3 text-xs font-bold tracking-widest text-(--color-terra) uppercase"><a href="/channels" class="hover:underline">Channels</a> · Voice · live demo</p>
+    <h1 class="h-display">Talk to a destination.</h1>
+    <p class="lede mt-5">
+      Pick a destination and just speak. It answers out loud, in your language, from the open tourism
+      data published for that destination: events, opening hours, restaurants, trails.
+    </p>
+    <p class="mt-3 max-w-[60ch] text-sm text-(--color-ink-3)">
+      These are demos on live data from {sourceSentence}; each card shows which. A destination's name
+      and logo show which place the assistant covers; they do not mean the tourist office is a customer.
+    </p>
+    <ul class="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-(--color-ink-2)">
+      <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">{allLangs ? `${ALL_LANGS.length} languages` : `Up to ${ALL_LANGS.length} languages`}</li>
+      <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">In the browser, no app</li>
+      <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">Microphone only after you tap</li>
+    </ul>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-5 pb-14">
+    <div class="grid items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
+      <div>
+        {groups.map(g => (
+          <div class="mb-8 last:mb-0">
+            <h2 class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase" style="font-family:var(--font-sans)">{g.title}</h2>
+            <div class="grid gap-3 sm:grid-cols-2">
+              {g.items.map(d => (
+                <button type="button" data-key={d.slug} aria-pressed={d.slug === first.slug ? 'true' : 'false'}
+                        class="vd-pick flex items-start gap-3 rounded-2xl border border-(--color-line) bg-white p-4 text-left transition hover:border-(--color-terra)">
+                  {d.logo
+                    ? <img src={d.logo} alt="" width="44" height="44" loading="lazy"
+                           class="h-11 w-11 shrink-0 rounded-lg border border-(--color-line-2) bg-white object-contain" />
+                    : <span class="h-11 w-11 shrink-0 rounded-lg bg-(--color-paper-2)"></span>}
+                  <span class="min-w-0">
+                    <span class="block text-[11px] font-bold tracking-wider text-(--color-terra) uppercase">{d.level}</span>
+                    <span class="block font-serif text-lg leading-tight font-semibold">{d.name}</span>
+                    <span class="mt-1 block text-sm text-(--color-ink-2)">{d.desc}</span>
+                    {/* Zelfde kleuren als ProvenanceBadge, maar kort genoeg voor een smalle kaart:
+                        alleen de bronnaam, de volledige uitleg zit in de title. */}
+                    {d.provenance && (
+                      <span title={d.provenance === 'official' ? `Official feed${d.sourceName ? ` · ${d.sourceName}` : ''}` : 'Public sources'}
+                            class={`mt-2 inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[11px] font-semibold ${
+                              d.provenance === 'official' ? 'bg-(--color-pine-l) text-(--color-pine)' : 'bg-(--color-amber-l) text-(--color-amber)'}`}>
+                        <span class="h-1.5 w-1.5 rounded-full bg-current"></span>
+                        {d.provenance === 'official' ? (d.sourceName ?? 'Official feed') : 'Public sources'}
+                      </span>
+                    )}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div id="vc" class="scroll-mt-20 rounded-2xl border border-(--color-line) bg-white p-6 text-center lg:sticky lg:top-24">
+        <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">You are talking to</p>
+        <h2 id="vc-name" class="h-section mt-1">{first.name}</h2>
+        <p id="vc-level" class="mt-1 text-sm text-(--color-ink-3)">{first.level} · {first.country}</p>
+
+        <p class="mt-5 mb-2 text-xs text-(--color-ink-3)">Start the conversation in</p>
+        <div class="flex flex-wrap justify-center gap-1.5">
+          {LANGS.map(([code, label]) => (
+            <button type="button" data-lang={code} lang={code} aria-pressed="false"
+                    class="vc-lang rounded-full border border-(--color-line) px-3 py-1.5 text-sm text-(--color-ink-2) transition hover:border-(--color-ink-3)">
+              {label}
+            </button>
+          ))}
+        </div>
+
+        <button id="vc-orb" type="button" data-state="idle" aria-label="Start talking"
+                class="vc-orb mx-auto mt-7 grid h-40 w-40 place-items-center rounded-full text-white">
+          <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="3" width="6" height="11" rx="3" />
+            <path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7" />
+          </svg>
+        </button>
+        <p id="vc-status" class="mt-5 min-h-7 text-lg font-semibold" aria-live="polite">Tap to talk</p>
+        <button id="vc-end" type="button" hidden
+                class="mt-3 rounded-full border border-(--color-terra) px-5 py-2 text-sm font-semibold text-(--color-terra) transition hover:bg-(--color-terra-l)">
+          End call
+        </button>
+        <p class="mt-4 text-xs text-(--color-ink-3)">Switch language mid-conversation just by speaking it.</p>
+        <a id="vc-page" href={first.href ?? '#'} hidden={!first.href}
+           class="mt-3 inline-block text-xs text-(--color-ink-2) underline underline-offset-2 hover:text-(--color-ink)">
+          Destination page and webchat →
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-8 flex flex-col gap-4 rounded-2xl border border-(--color-line) bg-(--color-paper-2) p-5 text-sm text-(--color-ink-2) sm:flex-row sm:items-center sm:justify-between">
+      <p>
+        <b class="text-(--color-ink)">These demos run on ElevenLabs (US).</b>{' '}
+        A fully European voice version, without ElevenLabs and without a US cloud, is also available.
+      </p>
+      <a href="#eu-voice" class="shrink-0 rounded-full border border-(--color-slate2) px-4 py-2 text-center font-semibold text-(--color-slate2) transition hover:bg-(--color-slate2-l)">
+        See the European version ↓
+      </a>
+    </div>
+  </section>
+
+  <section id="eu-voice" class="scroll-mt-20 border-t border-(--color-line-2) py-14">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 lg:grid-cols-[1fr_1.35fr] lg:items-start">
+      <div>
+        <p class="mb-3 text-xs font-bold tracking-widest text-(--color-slate2) uppercase">The European option</p>
+        <h2 class="h-section">The same conversation,<br />entirely in Europe.</h2>
+        <p class="mt-4 text-(--color-ink-2)">
+          For destinations that choose the European option there is a second voice stack: no ElevenLabs,
+          no US cloud. Open models for listening and speaking, Mistral for the answers, and every step
+          hosted in the EU.
+        </p>
+        <p class="mt-3 text-sm text-(--color-ink-3)">French and English today. We demo it live for Strasbourg, on open data from DATAtourisme.</p>
+        <a href={euMail} class="mt-6 inline-flex rounded-full bg-(--color-slate2) px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110">
+          Ask for the European voice demo
+        </a>
+      </div>
+      <ol class="grid gap-3 sm:grid-cols-2">
+        {EU_CHAIN.map((c, i) => (
+          <li class="rounded-2xl border border-(--color-line) bg-white p-5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs font-bold tracking-wider text-(--color-ink-3) uppercase">{i + 1} · {c.k}</span>
+              <span class="rounded-full bg-(--color-pine-l) px-2.5 py-0.5 text-[11px] font-semibold text-(--color-pine)">EU</span>
+            </div>
+            <p class="mt-2 font-semibold text-(--color-ink)">{c.what}</p>
+            <p class="mt-1 text-sm text-(--color-ink-2)">{c.who} · {c.where}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="border-t border-(--color-line-2) bg-(--color-paper-2) py-12">
+    <div class="mx-auto grid max-w-6xl items-center gap-6 px-5 lg:grid-cols-[1.4fr_1fr]">
+      <div>
+        <h2 class="h-section">Voice for your destination</h2>
+        <p class="mt-3 text-(--color-ink-2)">
+          The same assistant as your webchat, with the same data and the same answers, now spoken. From a
+          single city to a whole region, in the browser, on the phone or through WhatsApp.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-3 lg:justify-end">
+        <a href={BOOKING_URL} target="_blank" rel="noopener"
+           class="rounded-full bg-(--color-pine) px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110">
+          Book a walkthrough
+        </a>
+        <a href="/channels" class="rounded-full border border-(--color-line) bg-white px-5 py-2.5 text-sm font-semibold text-(--color-ink) transition hover:border-(--color-ink-3)">
+          All channels
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline type="application/json" id="vc-data" set:html={JSON.stringify({
+    demos: demos.map(({ slug, name, level, country, agentId, href, langs }) => ({ slug, name, level, country, agentId, href, langs })),
+    langs: ALL_LANGS,
+  })} />
+</Base>
+
+<style>
+  .vd-pick[aria-pressed='true'] { border-color: var(--color-terra); background: var(--color-terra-l); }
+  .vc-lang[aria-pressed='true'] { background: var(--color-ink); border-color: var(--color-ink); color: #fff; }
+
+  .vc-orb {
+    background: var(--color-terra);
+    box-shadow: 0 0 0 0 rgb(192 86 47 / .35);
+    transition: transform .2s ease, background-color .25s ease;
+    cursor: pointer;
+  }
+  .vc-orb:active { transform: scale(.97); }
+  .vc-orb[data-state='idle']       { animation: vc-invite 2.6s ease-in-out infinite; }
+  .vc-orb[data-state='connecting'] { opacity: .75; animation: vc-pulse 1.2s ease-in-out infinite; cursor: progress; }
+  .vc-orb[data-state='listening']  { animation: vc-pulse 2.4s ease-in-out infinite; cursor: default; }
+  .vc-orb[data-state='speaking']   { background: var(--color-pine); animation: vc-pulse .9s ease-in-out infinite; cursor: default; }
+  .vc-orb[data-state='error']      { background: var(--color-amber); }
+
+  @keyframes vc-invite {
+    0%, 100% { box-shadow: 0 0 0 0 rgb(192 86 47 / .32); }
+    50%      { box-shadow: 0 0 0 20px rgb(192 86 47 / 0); }
+  }
+  @keyframes vc-pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.05); }
+  }
+  @media (prefers-reduced-motion: reduce) { .vc-orb { animation: none !important; } }
+</style>
+
+<script is:inline type="module">
+  /* is:inline, bewust: Vite herschrijft een dynamische import() naar zijn eigen
+     preload-helper, en die bestaat niet in een inline script. Zo blijft het een
+     gewone browser-import die pas bij de eerste tik iets ophaalt.
+
+     Zelfde lazy-load-afspraak als VoiceDemo.astro: niets van ElevenLabs wordt
+     geladen tot iemand op de orb tikt. `gen` maakt elke sessie uniek, zodat een
+     late onDisconnect van een vorige sessie (taal- of bestemmingswissel) de
+     nieuwe niet terugzet naar idle. */
+  const data = JSON.parse(document.getElementById('vc-data').textContent || '{}');
+  const SDK = 'https://esm.sh/@elevenlabs/client';
+
+  const el = (id) => document.getElementById(id);
+  const orb = el('vc-orb'), statusEl = el('vc-status'), endBtn = el('vc-end'), panel = el('vc');
+  const nameEl = el('vc-name'), levelEl = el('vc-level'), pageEl = el('vc-page');
+  const picks = [...document.querySelectorAll('.vd-pick')];
+  const langBtns = [...document.querySelectorAll('.vc-lang')];
+
+  let current = data.demos[0];
+  const pref = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  let lang = data.langs.includes(pref) ? pref : 'en';
+  let convo = null;
+  let gen = 0;
+
+  const TEXT = {
+    idle: 'Tap to talk', connecting: 'Connecting…', listening: 'Listening…', speaking: 'Speaking…',
+  };
+  function setState(state, text) {
+    orb.dataset.state = state;
+    statusEl.textContent = text ?? TEXT[state] ?? '';
+    const inCall = state === 'connecting' || state === 'listening' || state === 'speaking';
+    endBtn.hidden = !inCall;
+    orb.setAttribute('aria-label', inCall ? 'Conversation in progress' : 'Start talking');
+  }
+  function markPick() {
+    picks.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.key === current.slug)));
+    nameEl.textContent = current.name;
+    levelEl.textContent = `${current.level} · ${current.country}`;
+    pageEl.hidden = !current.href;
+    if (current.href) pageEl.href = current.href;
+    // alleen de talen die deze agent spreekt; staat de gekozen taal er niet bij, dan Engels of de eerste
+    langBtns.forEach(b => { b.hidden = !current.langs.includes(b.dataset.lang); });
+    if (!current.langs.includes(lang)) { lang = current.langs.includes('en') ? 'en' : current.langs[0]; markLang(); }
+  }
+  function markLang() {
+    langBtns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+  }
+
+  async function end() {
+    gen++;
+    const c = convo; convo = null;
+    try { await c?.endSession?.(); } catch {}
+    setState('idle');
+  }
+
+  async function start() {
+    if (convo || orb.dataset.state === 'connecting') return;
+    const my = ++gen;
+    setState('connecting');
+    try {
+      const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+      mic.getTracks().forEach(t => t.stop());   // alleen toestemming vragen; de SDK opent zijn eigen stream
+    } catch {
+      if (my === gen) setState('error', 'Microphone blocked. Allow it in your browser, then tap again.');
+      return;
+    }
+    try {
+      const { Conversation } = await import(SDK);
+      if (my !== gen) return;
+      const c = await Conversation.startSession({
+        agentId: current.agentId,
+        connectionType: 'webrtc',
+        overrides: { agent: { language: lang } },
+        onConnect: () => { if (my === gen) setState('listening'); },
+        onDisconnect: () => { if (my === gen) { convo = null; setState('idle'); } },
+        onError: (e) => { console.error(e); if (my === gen) { convo = null; setState('error', 'Something went wrong. Tap to try again.'); } },
+        onModeChange: (m) => { if (my === gen) setState(m?.mode === 'speaking' ? 'speaking' : 'listening'); },
+      });
+      if (my !== gen) { try { await c.endSession(); } catch {} return; }
+      convo = c;
+    } catch (e) {
+      console.error(e);
+      if (my === gen) setState('error', 'Could not connect. Tap to try again.');
+    }
+  }
+
+  orb.addEventListener('click', () => { if (!convo) start(); });
+  endBtn.addEventListener('click', end);
+
+  picks.forEach(b => b.addEventListener('click', async () => {
+    const next = data.demos.find(d => d.slug === b.dataset.key);
+    if (!next) return;
+    if (next.slug !== current.slug && (convo || orb.dataset.state !== 'idle')) await end();
+    current = next;
+    markPick();
+    if (window.matchMedia('(max-width: 1023px)').matches) panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+
+  langBtns.forEach(b => b.addEventListener('click', async () => {
+    const was = !!convo;
+    lang = b.dataset.lang || 'en';
+    markLang();
+    if (was) { await end(); start(); }
+  }));
+
+  window.addEventListener('pagehide', () => { try { convo?.endSession?.(); } catch {} });
+
+  markPick();
+  markLang();
+</script>

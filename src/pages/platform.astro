@@ -35,7 +35,7 @@ const chain = [
   { k: 'Web search',     who: 'Mistral',                  where: 'Paris',           eu: true },
   { k: 'Event emails',   who: 'Scaleway',                 where: 'Paris',           eu: true },
   { k: 'Tourism data',   who: andList(euSources),         where: 'EU open data',    eu: true },
-  { k: 'Voice',          who: 'ElevenLabs',               where: 'Not European yet — can be switched off per destination', eu: false },
+  { k: 'Voice',          who: 'Whisper and Kokoro, open models on Scaleway — no ElevenLabs', where: 'Amsterdam — on request', eu: true },
 ];
 ---
 <Base title="For national and regional tourism organisations" angle="nto" concierge
@@ -149,13 +149,13 @@ const chain = [
         <p class="mt-4 text-sm text-(--color-ink-2)">
           Every destination already runs on our own servers in Germany. What the option changes is
           everything the question touches on its way to an answer. Choose it and every link in the list
-          stays in Europe, with one exception you can switch off.
+          stays in Europe — voice included, on request.
         </p>
         {/* Nieuw venster, expliciet: linkAttrs() en het vangnet in Base houden
             chat.dm2find.ai bewust in hetzelfde tabblad, maar hier moet de
             lezer na de demo terug kunnen naar de uitleg over de keten. */}
         <a href={EU_DEMO} target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 rounded-full bg-(--color-slate2) px-5 py-2.5 text-sm font-semibold text-white">
-          Strasbourg runs on it today — ask it something →
+          Try it on Strasbourg, with live DATAtourisme data →
         </a>
       </div>
       <ol class="divide-y divide-(--color-line-2) overflow-hidden rounded-2xl border border-(--color-line) bg-white">
@@ -178,7 +178,7 @@ const chain = [
 
   <section class="border-t border-(--color-line-2) bg-(--color-paper-2) py-12">
     <div class="mx-auto grid max-w-6xl gap-5 px-5 sm:grid-cols-3">
-      {[['Sovereignty','Built in the Netherlands, hosted on our own servers in Germany. A fully European chain — model, search and email — is one switch per destination; voice is the only part that is not, and it can be switched off.'],
+      {[['Sovereignty','Built in the Netherlands, hosted on our own servers in Germany. A fully European chain — model, search and email — is one switch per destination. Voice can run fully in Europe too, on request.'],
         ['Non-exclusive','We sit beside your platform, not in front of it. Your data stays yours; attribution travels with it, per field.'],
         ['Rollout','Pilot three destinations, then extend nationally with per-DMO branding on one shared layer.']
       ].map(([t,b]) => (
