@@ -13,10 +13,7 @@ import sources from '../../data/sources.json';
    - FEATURED: de Franse demo's, bovenaan en in deze volgorde, met taalknoppen.
    - DESC:     één regel per kaart (de Engelse tagline uit de tenants-tabel).
    - LEVEL:    alleen als het geen stad is.
-   - LANGS:    alleen voor agents waarin 'language override' aanstaat. Zonder
-               LANGS toont het paneel geen taalknoppen en sturen we geen
-               override mee; een agent zonder override-rechten weigert anders
-               het gesprek.
+   - LANGS:    standaard alle talen; zie LANGS_BY_SLUG voor uitzonderingen.
 
    Wat een kaart over de databron zegt (officiële feed of publieke bronnen, en
    wélke feed) komt uit destinations.json + sources.json, nooit uit deze lijst.
@@ -71,11 +68,11 @@ const LANGS = [
   ['es', 'Español'], ['it', 'Italiano'], ['zh', '中文'], ['ja', '日本語'],
 ] as const;
 const ALL_LANGS: string[] = LANGS.map(([c]) => c);
-const LANGS_BY_SLUG: Record<string, string[]> = {
-  ...Object.fromEntries(FEATURED.map(s => [s, ALL_LANGS])),
-  // Zet hier een agent bij zodra language override in ElevenLabs aanstaat, bv.:
-  // 'munich': ['de', 'en'],
-};
+/* Elke agent krijgt de taalknoppen. Alleen een uitzondering hier zetten als een
+   agent minder talen moet tonen, bv. 'munich': ['de', 'en']. Staat de override in
+   ElevenLabs bij een agent (nog) uit, dan valt de pagina vanzelf terug op een
+   sessie zonder override; zie start() hieronder. */
+const LANGS_BY_SLUG: Record<string, string[]> = {};
 
 const SOURCE = new Map((sources as { id: string; name: string }[]).map(x => [x.id, x.name]));
 const and = (xs: string[]) => xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`;
@@ -92,7 +89,7 @@ const demos = all
     agentId: x.voiceAgentId as string,
     level: LEVEL[x.slug] ?? 'City',
     desc: DESC[x.slug] ?? '',
-    langs: LANGS_BY_SLUG[x.slug] ?? [],
+    langs: LANGS_BY_SLUG[x.slug] ?? ALL_LANGS,
     logo: x.logo ?? null,
     href: `/destinations/${x.slug}`,
     country: x.countryName,
@@ -119,7 +116,6 @@ const sourceSentence = and([
   ...(feeds.length ? [`official open-data feeds (${and(feeds)})`] : []),
   ...(hasPublic ? ['public sources'] : []),
 ]);
-const allLangs = demos.every(d => d.langs.length === ALL_LANGS.length);
 const names = demos.map(d => d.name);
 const metaNames = names.length > 7 ? `${names.slice(0, 6).join(', ')} and more` : and(names);
 /* De volledig Europese spraakketen. Alleen wat echt draait, met waar het draait —
@@ -139,15 +135,16 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
     <p class="mb-3 text-xs font-bold tracking-widest text-(--color-terra) uppercase">Voice · live demo</p>
     <h1 class="h-display">Talk to a destination.</h1>
     <p class="lede mt-5">
-      Pick a destination and just speak. It answers out loud, in your language, from the open tourism
-      data published for that destination: events, opening hours, restaurants, trails.
+      Pick a destination and just speak, in your own language. It answers out loud, in that same
+      language, from the open tourism data published for that destination: events, opening hours,
+      restaurants, trails.
     </p>
     <p class="mt-3 max-w-[60ch] text-sm text-(--color-ink-3)">
       These are demos on live data from {sourceSentence}; each card shows which. A destination's name
       and logo show which place the assistant covers; they do not mean the tourist office is a customer.
     </p>
     <ul class="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-(--color-ink-2)">
-      <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">{allLangs ? `${ALL_LANGS.length} languages` : `Up to ${ALL_LANGS.length} languages`}</li>
+      <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">Speaks (almost) any language</li>
       <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">In the browser, no app</li>
       <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">Microphone only after you tap</li>
     </ul>
@@ -203,9 +200,19 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
         <h2 id="vc-name" class="h-section mt-1">{first.name}</h2>
         <p id="vc-level" class="mt-1 text-sm text-(--color-ink-3)">{first.level} · {first.country}</p>
 
-        {/* Alleen voor agents waarin language override aanstaat (LANGS_BY_SLUG). */}
+        {/* Geldt voor álle agents: ze herkennen de taal van de spreker en wisselen mee. */}
+        <div class="mt-5 inline-flex items-center gap-2 rounded-full bg-(--color-pine-l) px-3.5 py-1.5 text-sm font-semibold text-(--color-pine)">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18" />
+          </svg>
+          Just speak your own language
+        </div>
+        <p class="mx-auto mt-2 max-w-[34ch] text-xs text-(--color-ink-3)">
+          It understands and answers in almost any language, and switches when you do.
+        </p>
+
         <div id="vc-langs" hidden={first.langs.length === 0}>
-          <p class="mt-5 mb-2 text-xs text-(--color-ink-3)">Start the conversation in</p>
+          <p class="mt-4 mb-2 text-xs text-(--color-ink-3)">Or pick the language it opens in</p>
           <div class="flex flex-wrap justify-center gap-1.5">
             {LANGS.map(([code, label]) => (
               <button type="button" data-lang={code} lang={code} aria-pressed="false"
@@ -229,9 +236,8 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
                 class="mt-3 rounded-full border border-(--color-terra) px-5 py-2 text-sm font-semibold text-(--color-terra) transition hover:bg-(--color-terra-l)">
           End call
         </button>
-        <p id="vc-hint" class="mt-4 text-xs text-(--color-ink-3)" hidden={first.langs.length === 0}>Switch language mid-conversation just by speaking it.</p>
         <a id="vc-page" href={first.href ?? '#'} hidden={!first.href}
-           class="mt-3 inline-block text-xs text-(--color-ink-2) underline underline-offset-2 hover:text-(--color-ink)">
+           class="mx-auto mt-4 block w-fit text-xs text-(--color-ink-2) underline underline-offset-2 hover:text-(--color-ink)">
           Destination page and webchat →
         </a>
       </div>
@@ -376,7 +382,6 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
     // Taalknoppen alleen voor agents met language override; dan alleen de talen die die agent spreekt.
     const hasLangs = current.langs.length > 0;
     el('vc-langs').hidden = !hasLangs;
-    el('vc-hint').hidden = !hasLangs;
     langBtns.forEach(b => { b.hidden = !current.langs.includes(b.dataset.lang); });
     if (hasLangs && !current.langs.includes(lang)) { lang = current.langs.includes('en') ? 'en' : current.langs[0]; markLang(); }
   }
@@ -391,16 +396,36 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
     setState('idle');
   }
 
-  async function start() {
-    if (convo || orb.dataset.state === 'connecting') return;
+  // Agents die de taal-override weigeren (staat in ElevenLabs uit): daar starten we voortaan zonder.
+  const noOverride = new Set();
+
+  async function start(retry = false) {
+    if (convo || (!retry && orb.dataset.state === 'connecting')) return;
     const my = ++gen;
+    const slug = current.slug;
+    const useOverride = current.langs.length > 0 && !noOverride.has(slug);
+    const t0 = Date.now();
+    let spoke = false;
+    /* Weigert een agent de override, dan valt de sessie binnen enkele seconden weg
+       zonder dat de agent iets heeft gezegd. Dan één keer opnieuw zonder override:
+       de bezoeker merkt hooguit een korte vertraging, en de agent herkent de taal
+       nog steeds aan wat de bezoeker zegt. */
+    const fellBack = () => {
+      if (!useOverride || spoke || Date.now() - t0 > 6000) return false;
+      noOverride.add(slug);
+      convo = null;
+      start(true);
+      return true;
+    };
     setState('connecting');
-    try {
-      const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
-      mic.getTracks().forEach(t => t.stop());   // alleen toestemming vragen; de SDK opent zijn eigen stream
-    } catch {
-      if (my === gen) setState('error', 'Microphone blocked. Allow it in your browser, then tap again.');
-      return;
+    if (!retry) {
+      try {
+        const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mic.getTracks().forEach(t => t.stop());   // alleen toestemming vragen; de SDK opent zijn eigen stream
+      } catch {
+        if (my === gen) setState('error', 'Microphone blocked. Allow it in your browser, then tap again.');
+        return;
+      }
     }
     try {
       const { Conversation } = await import(SDK);
@@ -408,18 +433,29 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
       const c = await Conversation.startSession({
         agentId: current.agentId,
         connectionType: 'webrtc',
-        // override alleen waar de agent het toestaat; anders weigert ElevenLabs de sessie
-        ...(current.langs.length ? { overrides: { agent: { language: lang } } } : {}),
+        ...(useOverride ? { overrides: { agent: { language: lang } } } : {}),
         onConnect: () => { if (my === gen) setState('listening'); },
-        onDisconnect: () => { if (my === gen) { convo = null; setState('idle'); } },
-        onError: (e) => { console.error(e); if (my === gen) { convo = null; setState('error', 'Something went wrong. Tap to try again.'); } },
-        onModeChange: (m) => { if (my === gen) setState(m?.mode === 'speaking' ? 'speaking' : 'listening'); },
+        onDisconnect: () => {
+          if (my !== gen || fellBack()) return;
+          convo = null; setState('idle');
+        },
+        onError: (e) => {
+          console.error(e);
+          if (my !== gen || fellBack()) return;
+          convo = null; setState('error', 'Something went wrong. Tap to try again.');
+        },
+        onModeChange: (m) => {
+          if (my !== gen) return;
+          if (m?.mode === 'speaking') spoke = true;
+          setState(m?.mode === 'speaking' ? 'speaking' : 'listening');
+        },
       });
       if (my !== gen) { try { await c.endSession(); } catch {} return; }
       convo = c;
     } catch (e) {
       console.error(e);
-      if (my === gen) setState('error', 'Could not connect. Tap to try again.');
+      if (my !== gen || fellBack()) return;
+      setState('error', 'Could not connect. Tap to try again.');
     }
   }
 
