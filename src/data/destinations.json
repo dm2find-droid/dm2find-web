@@ -8619,7 +8619,7 @@
     "sampleQuestions": {},
     "dtFeed": false,
     "website": "https://visit.istanbul/",
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitistanbul.jpg.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitistanbul.jpg",
     "brandColor": "#E30A17",
     "touristPass": {
       "url": "https://visit.istanbul/istanbul-card",
