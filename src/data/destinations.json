@@ -7089,7 +7089,8 @@
     "dataSource": "touripedia",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -7123,7 +7124,8 @@
         "label": "Province of Groningen - Web Chat",
         "channel": "webchat"
       }
-    ]
+    ],
+    "voiceAgentId": "agent_1101m41fwpk7e5a83rpw8vgw5ex4"
   },
   {
     "slug": "gyeongju",
