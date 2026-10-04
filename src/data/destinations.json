@@ -6783,7 +6783,8 @@
     "dataSource": "visitsweden",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -6805,7 +6806,8 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/gothenburg-tourisme.png",
     "brandColor": "#006FA3",
     "website": "https://www.goteborg.com/en",
-    "calendarUrl": "https://www.goteborg.com/en/events"
+    "calendarUrl": "https://www.goteborg.com/en/events",
+    "voiceAgentId": "agent_9201m42wpzm1fcrs2gkav8dkf9s9"
   },
   {
     "slug": "gouda",
@@ -7938,7 +7940,8 @@
     "dataSource": "visitfinland",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -7961,7 +7964,8 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visit-helsinki.jpg",
     "brandColor": "#FD4F00",
     "website": "https://www.myhelsinki.fi/",
-    "calendarUrl": "https://www.myhelsinki.fi/helsinki-event-calendar/"
+    "calendarUrl": "https://www.myhelsinki.fi/helsinki-event-calendar/",
+    "voiceAgentId": "agent_8201m42wgcz5ehxafg8kh1wcfz84"
   },
   {
     "slug": "hendaye",
@@ -11139,7 +11143,8 @@
     "dataSource": "suedtirol",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -11160,7 +11165,8 @@
     },
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visit-merano.png",
     "brandColor": "#66E0A1",
-    "website": "https://www.merano-suedtirol.it/en/merano-and-environs.html"
+    "website": "https://www.merano-suedtirol.it/en/merano-and-environs.html",
+    "voiceAgentId": "agent_2501m42wxmkwf84tx14ctr0t661z"
   },
   {
     "slug": "metz",
