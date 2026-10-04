@@ -2554,7 +2554,8 @@
     "dataSource": "emiliaromagna",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -2580,7 +2581,8 @@
     "touristPass": {
       "url": "https://www.bolognawelcome.com/en/information/bologna-welcome-card-eng",
       "name": "Bologna Welcome Card"
-    }
+    },
+    "voiceAgentId": "agent_0101m43s14qees69bp6jky1czesk"
   },
   {
     "slug": "bolzano",
@@ -11689,7 +11691,8 @@
     "dataSource": "quebec",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -11715,7 +11718,8 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/montreal-tourisme.png",
     "brandColor": "#E1140A",
     "website": "https://www.mtl.org/en",
-    "calendarUrl": "https://www.mtl.org/en/what-to-do/festivals-and-events"
+    "calendarUrl": "https://www.mtl.org/en/what-to-do/festivals-and-events",
+    "voiceAgentId": "agent_8001m43s5tdjfxd9mfzd2pmgk79x"
   },
   {
     "slug": "morbihan",
