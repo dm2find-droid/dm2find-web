@@ -2007,7 +2007,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -2032,7 +2033,8 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/visitbayonne.png",
     "brandColor": "#E85252",
-    "calendarUrl": null
+    "calendarUrl": null,
+    "voiceAgentId": "agent_2901m44f9bbbfz39q7626p7mqhjc"
   },
   {
     "slug": "bearn-des-gaves",
