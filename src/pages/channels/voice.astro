@@ -407,6 +407,21 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
   // Agents die de taal-override weigeren (staat in ElevenLabs uit): daar starten we voortaan zonder.
   const noOverride = new Set();
 
+  /* Agents met "Enable authentication" weigeren een sessie met alleen agentId (401).
+     Voor die agents halen we eerst een kortlevend token bij onze eigen route; die houdt
+     de API-sleutel op de server en kent alleen tenants met web_voice_enabled. Geeft de
+     route geen token (andere demo's, route onbereikbaar), dan valt de pagina terug op
+     agentId zoals voorheen. */
+  const TOKEN_API = 'https://chat.dm2find.ai/api/voice/token?tenant=';
+  async function getToken(slug) {
+    try {
+      const r = await fetch(TOKEN_API + encodeURIComponent(slug), { cache: 'no-store' });
+      if (!r.ok) return null;
+      const d = await r.json();
+      return typeof d?.token === 'string' && d.token ? d.token : null;
+    } catch { return null; }
+  }
+
   async function start(retry = false) {
     if (convo || (!retry && orb.dataset.state === 'connecting')) return;
     const my = ++gen;
@@ -438,8 +453,10 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
     try {
       const { Conversation } = await import(SDK);
       if (my !== gen) return;
+      const token = await getToken(slug);
+      if (my !== gen) return;
       const c = await Conversation.startSession({
-        agentId: current.agentId,
+        ...(token ? { conversationToken: token } : { agentId: current.agentId }),
         connectionType: 'webrtc',
         ...(useOverride ? { overrides: { agent: { language: lang } } } : {}),
         onConnect: () => { if (my === gen) setState('listening'); },
