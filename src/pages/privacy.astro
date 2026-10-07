@@ -1,0 +1,9 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+import { Content, getHeadings } from '../legal/privacy.md';
+---
+<LegalPage title="Privacy policy" updated="7 October 2026"
+           description="What personal data DM2find processes when you use our website, chat and voice assistants, who receives it, and your rights."
+           headings={getHeadings()} other={{ href: '/terms', label: 'Terms and conditions' }}>
+  <Content />
+</LegalPage>

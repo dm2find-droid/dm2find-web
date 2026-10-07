@@ -1,0 +1,9 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+import { Content, getHeadings } from '../legal/terms.md';
+---
+<LegalPage title="Terms and conditions" updated="7 October 2026"
+           description="The general terms and conditions of DM2find BV for its AI travel concierge services, and the rules for visitors who use an assistant."
+           headings={getHeadings()} other={{ href: '/privacy', label: 'Privacy policy' }}>
+  <Content />
+</LegalPage>

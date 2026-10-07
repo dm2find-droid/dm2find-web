@@ -23,8 +23,13 @@ const _ = t(locale);
     <div><h2 class="mb-3 text-xs font-semibold tracking-widest text-white uppercase">{_('footer.orgs')}</h2>
       <a class="block py-1 hover:text-white" href="/dmo">{_('footer.dmos')}</a>
       <a class="block py-1 hover:text-white" href="/platform">{_('footer.platform')}</a></div>
-    <div class="border-t border-[#33403A] pt-5 text-xs text-[#78837D] sm:col-span-2 lg:col-span-4">
-      {_('footer.legal')}
+    <div class="flex flex-col gap-2 border-t border-[#33403A] pt-5 text-xs text-[#78837D] sm:col-span-2 lg:col-span-4 lg:flex-row lg:justify-between">
+      <span>{_('footer.legal')}</span>
+      <span class="flex shrink-0 gap-4">
+        <a class="hover:text-white" href="/privacy">{_('footer.privacy')}</a>
+        <a class="hover:text-white" href="/terms">{_('footer.terms')}</a>
+        <span>© DM2find BV</span>
+      </span>
     </div>
   </div>
 </footer>

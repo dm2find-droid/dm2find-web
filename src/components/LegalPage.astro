@@ -1,0 +1,67 @@
+---
+/* Juridische pagina's (/privacy, /terms). De tekst staat als Markdown in
+   src/legal/, zodat een wijziging een tekstwijziging is en geen HTML-klus.
+   De inhoudsopgave komt uit de koppen van dat bestand. */
+import Base from '../layouts/Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  updated: string;
+  headings: { depth: number; slug: string; text: string }[];
+  other: { href: string; label: string };
+}
+const { title, description, updated, headings, other } = Astro.props;
+const toc = headings.filter(h => h.depth === 2);
+---
+<Base title={title} description={description}>
+  <section class="mx-auto max-w-6xl px-5 pt-14 pb-6">
+    <p class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Legal</p>
+    <h1 class="h-display">{title}</h1>
+    <p class="mt-4 text-sm text-(--color-ink-3)">
+      Last updated {updated} · <a href={other.href} class="underline underline-offset-2 hover:text-(--color-ink)">{other.label}</a>
+    </p>
+  </section>
+
+  <section class="mx-auto grid max-w-6xl gap-10 px-5 pb-16 lg:grid-cols-[15rem_1fr]">
+    <nav aria-label="Contents" class="hidden lg:block">
+      <div class="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto border-l border-(--color-line) pl-4">
+        <p class="mb-2 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Contents</p>
+        <ol class="space-y-1.5 text-sm">
+          {toc.map(h => (
+            <li><a href={`#${h.slug}`} class="text-(--color-ink-2) hover:text-(--color-ink)">{h.text}</a></li>
+          ))}
+        </ol>
+      </div>
+    </nav>
+    <article class="legal min-w-0 max-w-[72ch]">
+      <slot />
+    </article>
+  </section>
+</Base>
+
+<style>
+  .legal :global(h2) {
+    font-size: 1.45rem; margin: 2.6rem 0 .8rem; scroll-margin-top: 6rem;
+  }
+  .legal :global(h2:first-child) { margin-top: 0; }
+  .legal :global(p) { margin: .75rem 0; line-height: 1.7; color: var(--color-ink-2); }
+  .legal :global(strong) { color: var(--color-ink); }
+  .legal :global(ul) { margin: .75rem 0; padding-left: 1.2rem; list-style: disc; color: var(--color-ink-2); }
+  .legal :global(li) { margin: .35rem 0; line-height: 1.6; }
+  .legal :global(a) { color: var(--color-pine); text-decoration: underline; text-underline-offset: 2px; }
+  .legal :global(table) {
+    display: block; overflow-x: auto; width: 100%; margin: 1.2rem 0;
+    border-collapse: collapse; font-size: .9rem;
+  }
+  .legal :global(th), .legal :global(td) {
+    text-align: left; vertical-align: top; padding: .6rem .8rem;
+    border-bottom: 1px solid var(--color-line-2); line-height: 1.55;
+  }
+  .legal :global(th) {
+    font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--color-ink-3); border-bottom-color: var(--color-line); background: var(--color-paper-2);
+  }
+  .legal :global(td:first-child) { font-weight: 600; color: var(--color-ink); white-space: nowrap; }
+  @media (max-width: 640px) { .legal :global(td:first-child) { white-space: normal; } }
+</style>

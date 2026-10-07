@@ -91,6 +91,8 @@ const en: Dict = {
   'footer.dmos': 'For DMOs',
   'footer.platform': 'Data platform',
   'footer.legal': 'Data credited to its source; licence attribution shown where required · Enrichment affects completeness, never ranking.',
+  'footer.privacy': 'Privacy policy',
+  'footer.terms': 'Terms',
 
   'badge.official': 'Official feed',
   'badge.public': 'Public sources',
@@ -185,6 +187,8 @@ const fr: Dict = {
   'footer.dmos': 'Pour les OGD',
   'footer.platform': 'Plateforme de données',
   'footer.legal': "Données créditées à leur source ; mention de licence affichée lorsque requise · L'enrichissement influe sur l'exhaustivité, jamais sur le classement.",
+  'footer.privacy': 'Confidentialité',
+  'footer.terms': 'Conditions générales',
 
   'badge.official': 'Flux officiel',
   'badge.public': 'Sources publiques',
@@ -279,6 +283,8 @@ const de: Dict = {
   'footer.dmos': 'Für DMOs',
   'footer.platform': 'Datenplattform',
   'footer.legal': 'Daten mit Quellenangabe; Lizenzhinweis dort, wo er verlangt wird · Anreicherung beeinflusst die Vollständigkeit, nie das Ranking.',
+  'footer.privacy': 'Datenschutz',
+  'footer.terms': 'AGB',
 
   'badge.official': 'Offizieller Feed',
   'badge.public': 'Öffentliche Quellen',
@@ -373,6 +379,8 @@ const nl: Dict = {
   'footer.dmos': 'Voor DMO’s',
   'footer.platform': 'Dataplatform',
   'footer.legal': 'Data met bronvermelding; licentievermelding waar vereist · Verrijking bepaalt volledigheid, nooit de rangschikking.',
+  'footer.privacy': 'Privacy',
+  'footer.terms': 'Algemene voorwaarden',
 
   'badge.official': 'Officiële feed',
   'badge.public': 'Publieke bronnen',
@@ -467,6 +475,8 @@ const es: Dict = {
   'footer.dmos': 'Para OGD',
   'footer.platform': 'Plataforma de datos',
   'footer.legal': 'Datos atribuidos a su fuente; mención de licencia donde se exige · El enriquecimiento afecta a la exhaustividad, nunca a la clasificación.',
+  'footer.privacy': 'Privacidad',
+  'footer.terms': 'Condiciones',
 
   'badge.official': 'Fuente oficial',
   'badge.public': 'Fuentes públicas',
@@ -562,6 +572,8 @@ const it: Dict = {
   'footer.dmos': 'Per le DMO',
   'footer.platform': 'Piattaforma dati',
   'footer.legal': "Dati attribuiti alla loro fonte; attribuzione della licenza dove richiesta · L'arricchimento incide sulla completezza, mai sul posizionamento.",
+  'footer.privacy': 'Privacy',
+  'footer.terms': 'Termini e condizioni',
 
   'badge.official': 'Flusso ufficiale',
   'badge.public': 'Fonti pubbliche',
@@ -656,6 +668,8 @@ const zh: Dict = {
   'footer.dmos': '面向 DMO',
   'footer.platform': '数据平台',
   'footer.legal': '数据均标注来源，并在需要时显示许可归属 · 数据补充只影响信息完整度，绝不影响排序。',
+  'footer.privacy': '隐私政策',
+  'footer.terms': '条款与条件',
 
   'badge.official': '官方数据源',
   'badge.public': '公开数据源',
@@ -750,6 +764,8 @@ const ja: Dict = {
   'footer.dmos': 'DMO の方へ',
   'footer.platform': 'データ基盤',
   'footer.legal': 'データは出典を明記し、必要な場合はライセンス表示を行います · 情報の拡充は網羅性にのみ影響し、表示順位には影響しません。',
+  'footer.privacy': 'プライバシーポリシー',
+  'footer.terms': '利用規約',
 
   'badge.official': '公式フィード',
   'badge.public': '公開データ',
@@ -844,6 +860,8 @@ const ko: Dict = {
   'footer.dmos': 'DMO를 위한 안내',
   'footer.platform': '데이터 플랫폼',
   'footer.legal': '데이터는 출처를 표기하며, 필요한 경우 라이선스를 함께 표시합니다 · 데이터 보강은 정보의 완전성에만 영향을 주고 노출 순서에는 영향을 주지 않습니다.',
+  'footer.privacy': '개인정보처리방침',
+  'footer.terms': '이용약관',
 
   'badge.official': '공식 피드',
   'badge.public': '공개 자료',
