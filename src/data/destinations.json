@@ -2051,7 +2051,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -2069,7 +2070,43 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/bearndesgaves.jpg",
     "brandColor": "#449E5F",
-    "calendarUrl": "https://www.tourisme-bearn-gaves.com/voir-faire/agenda/"
+    "calendarUrl": "https://www.tourisme-bearn-gaves.com/voir-faire/agenda/",
+    "voiceAgentId": "agent_8701m45qzn62f6ptdzeym2a8zpz6"
+  },
+  {
+    "slug": "beaune",
+    "name": {
+      "en": "Beaune"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Côte-d'Or",
+    "tenantId": "beaune",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/beaune",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.beaune-tourism.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      47.021032,
+      4.839073
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/beaune.jpg",
+    "brandColor": "#BD3D00",
+    "calendarUrl": "https://www.beaune-tourism.com/all-activities/"
   },
   {
     "slug": "beauvais",
@@ -4292,7 +4329,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -4310,7 +4348,8 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/coeurdebearn.jpg",
     "brandColor": "#00B5C9",
-    "calendarUrl": null
+    "calendarUrl": null,
+    "voiceAgentId": "agent_3801m45r2h9rf1q8a7ywdmjbdjex"
   },
   {
     "slug": "colmar",
@@ -7459,7 +7498,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -7477,7 +7517,8 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hautbearn.jpg",
     "brandColor": "#2C11CB",
-    "calendarUrl": null
+    "calendarUrl": null,
+    "voiceAgentId": "agent_7701m45r58pxfw19ebsj59rdh3fd"
   },
   {
     "slug": "haut-rhin",
@@ -8514,6 +8555,76 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/incheon.jpg",
     "brandColor": "#1F4D95",
     "website": "https://www.ito.or.kr/foreign/english/main/sub/fivetour.jsp"
+  },
+  {
+    "slug": "indre",
+    "name": {
+      "en": "Indre"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Indre",
+    "tenantId": "36",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/36",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.indreberry.fr/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      46.81,
+      1.691
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/indre.jpg",
+    "brandColor": "#EA0E6F",
+    "calendarUrl": null
+  },
+  {
+    "slug": "indre-et-loire",
+    "name": {
+      "en": "Indre-et-Loire"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Indre-et-Loire",
+    "tenantId": "37",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/37",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.tourainevaldeloire.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      47.390677,
+      0.689387
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourainevaldeloire.png",
+    "brandColor": "#3DB7BC",
+    "calendarUrl": "https://www.tourainevaldeloire.com/agenda/tout-lagenda/"
   },
   {
     "slug": "innsbruck",
@@ -10285,7 +10396,7 @@
     },
     "country": "FR",
     "countryName": "France",
-    "region": null,
+    "region": "Hautes-Pyrénées",
     "tenantId": "lourdes",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/lourdes",
@@ -10293,7 +10404,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
@@ -10317,7 +10429,8 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lourdes.jpg",
     "brandColor": "#14BEF0",
-    "calendarUrl": null
+    "calendarUrl": null,
+    "voiceAgentId": "agent_5801m45qt0mae499dd8e5ypn6axz"
   },
   {
     "slug": "lozere",
@@ -13218,7 +13331,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -13236,7 +13350,8 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/paysbasque.png",
     "brandColor": "#E30613",
-    "calendarUrl": "https://www.en-pays-basque.fr/votre-sejour/tout-lagenda/"
+    "calendarUrl": "https://www.en-pays-basque.fr/votre-sejour/tout-lagenda/",
+    "voiceAgentId": "agent_9001m45raexefmssfh8yxmnxrz3v"
   },
   {
     "slug": "pays-de-la-loire",
@@ -16744,7 +16859,8 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {},
@@ -16762,7 +16878,8 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/valleedosseau.jpg",
     "brandColor": "#73AB96",
-    "calendarUrl": "https://en.valleedossau.com/all-events"
+    "calendarUrl": "https://en.valleedossau.com/all-events",
+    "voiceAgentId": "agent_7401m45r78ryfv79qf8hzxz8q1df"
   },
   {
     "slug": "vannes",
