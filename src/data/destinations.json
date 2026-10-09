@@ -20,8 +20,8 @@
     "inventory": {
       "trails": 1,
       "swimming": 1,
-      "walkNodes": 744,
-      "cycleNodes": 174,
+      "walkNodes": 497,
+      "cycleNodes": 79,
       "attractions": 19,
       "restaurants": 7
     },
@@ -62,12 +62,12 @@
     "inventory": {
       "golf": 1,
       "events": 5,
-      "trails": 4,
-      "swimming": 18,
+      "trails": 24,
+      "swimming": 22,
       "walkNodes": 376,
-      "cycleNodes": 122,
-      "attractions": 63,
-      "restaurants": 15
+      "cycleNodes": 99,
+      "attractions": 161,
+      "restaurants": 37
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -145,11 +145,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 5,
-      "trails": 25,
-      "swimming": 6,
+      "events": 16,
+      "trails": 24,
+      "swimming": 7,
       "attractions": 352,
-      "restaurants": 159
+      "restaurants": 161
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -187,10 +187,10 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 14,
+      "events": 73,
       "trails": 82,
-      "swimming": 1,
-      "attractions": 114,
+      "swimming": 3,
+      "attractions": 121,
       "restaurants": 58
     },
     "enrichments": [],
@@ -229,11 +229,11 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 115,
+      "events": 369,
       "trails": 108,
-      "swimming": 24,
-      "attractions": 1802,
-      "restaurants": 733
+      "swimming": 25,
+      "attractions": 1775,
+      "restaurants": 721
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -270,8 +270,9 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 4,
-      "restaurants": 9
+      "swimming": 45,
+      "attractions": 49,
+      "restaurants": 22
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -312,7 +313,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 3
+      "attractions": 5
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -355,11 +356,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 2,
+      "events": 1,
       "trails": 14,
-      "swimming": 5,
-      "attractions": 255,
-      "restaurants": 116
+      "swimming": 8,
+      "attractions": 258,
+      "restaurants": 121
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -397,10 +398,10 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 50,
+      "events": 73,
       "trails": 57,
       "swimming": 2,
-      "attractions": 143,
+      "attractions": 144,
       "restaurants": 42
     },
     "enrichments": [],
@@ -438,7 +439,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 1,
+      "swimming": 26,
+      "attractions": 28,
       "restaurants": 23
     },
     "enrichments": [],
@@ -478,12 +480,12 @@
     "languages": [],
     "inventory": {
       "events": 5,
-      "trails": 2,
+      "trails": 5,
       "swimming": 29,
-      "walkNodes": 422,
-      "cycleNodes": 148,
-      "attractions": 130,
-      "restaurants": 20
+      "walkNodes": 419,
+      "cycleNodes": 114,
+      "attractions": 63,
+      "restaurants": 24
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -522,11 +524,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 51,
+      "events": 145,
       "trails": 105,
       "swimming": 1,
-      "attractions": 306,
-      "restaurants": 67
+      "attractions": 299,
+      "restaurants": 68
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -564,13 +566,13 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 9,
-      "trails": 1,
+      "events": 7,
+      "trails": 7,
       "swimming": 33,
-      "walkNodes": 172,
-      "cycleNodes": 111,
-      "attractions": 64,
-      "restaurants": 31
+      "walkNodes": 174,
+      "cycleNodes": 102,
+      "attractions": 79,
+      "restaurants": 38
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -608,7 +610,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 2,
+      "swimming": 20,
+      "attractions": 23,
       "restaurants": 5
     },
     "enrichments": [],
@@ -648,10 +651,10 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 17,
+      "events": 9,
       "trails": 4,
-      "swimming": 2,
-      "attractions": 137,
+      "swimming": 1,
+      "attractions": 128,
       "restaurants": 72
     },
     "enrichments": [],
@@ -690,13 +693,13 @@
     "languages": [],
     "inventory": {
       "golf": 7,
-      "events": 12,
-      "trails": 17,
-      "swimming": 21,
-      "walkNodes": 158,
-      "cycleNodes": 225,
+      "events": 11,
+      "trails": 31,
+      "swimming": 22,
+      "walkNodes": 184,
+      "cycleNodes": 177,
       "attractions": 82,
-      "restaurants": 90
+      "restaurants": 102
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -735,10 +738,12 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 187,
+      "events": 161,
+      "trails": 59,
       "swimming": 5,
-      "attractions": 226,
-      "restaurants": 189
+      "cycleNodes": 12,
+      "attractions": 235,
+      "restaurants": 178
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -781,12 +786,12 @@
     "inventory": {
       "golf": 6,
       "events": 16,
-      "trails": 3,
+      "trails": 7,
       "swimming": 60,
-      "walkNodes": 471,
-      "cycleNodes": 159,
-      "attractions": 183,
-      "restaurants": 215
+      "walkNodes": 470,
+      "cycleNodes": 141,
+      "attractions": 266,
+      "restaurants": 278
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -827,13 +832,13 @@
     "inventory": {
       "golf": 6,
       "events": 14,
-      "trails": 4,
+      "trails": 11,
       "swimming": 58,
       "districts": 110,
-      "walkNodes": 458,
-      "cycleNodes": 165,
-      "attractions": 185,
-      "restaurants": 210
+      "walkNodes": 459,
+      "cycleNodes": 146,
+      "attractions": 281,
+      "restaurants": 280
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -916,11 +921,11 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 112,
-      "trails": 34,
-      "swimming": 8,
-      "attractions": 461,
-      "restaurants": 262
+      "events": 177,
+      "trails": 33,
+      "swimming": 13,
+      "attractions": 454,
+      "restaurants": 245
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -962,11 +967,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 226,
-      "trails": 118,
-      "swimming": 3,
-      "attractions": 484,
-      "restaurants": 169
+      "events": 268,
+      "trails": 117,
+      "swimming": 7,
+      "attractions": 488,
+      "restaurants": 167
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1004,11 +1009,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 3,
-      "trails": 40,
-      "swimming": 17,
-      "attractions": 612,
-      "restaurants": 250
+      "events": 5,
+      "trails": 39,
+      "swimming": 19,
+      "attractions": 618,
+      "restaurants": 271
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1045,12 +1050,12 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 13,
-      "events": 54,
+      "golf": 14,
+      "events": 44,
       "trails": 21,
-      "swimming": 58,
-      "attractions": 771,
-      "restaurants": 800
+      "swimming": 102,
+      "attractions": 801,
+      "restaurants": 911
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1089,11 +1094,13 @@
     ],
     "languages": [],
     "inventory": {
+      "trails": 3,
+      "swimming": 6,
       "districts": 67,
       "walkNodes": 193,
-      "cycleNodes": 153,
-      "attractions": 29,
-      "restaurants": 84
+      "cycleNodes": 160,
+      "attractions": 36,
+      "restaurants": 83
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1136,12 +1143,12 @@
     "inventory": {
       "golf": 1,
       "events": 6,
-      "trails": 8,
-      "swimming": 15,
-      "walkNodes": 238,
-      "cycleNodes": 129,
-      "attractions": 65,
-      "restaurants": 17
+      "trails": 21,
+      "swimming": 17,
+      "walkNodes": 239,
+      "cycleNodes": 100,
+      "attractions": 172,
+      "restaurants": 32
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1179,11 +1186,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 4,
+      "events": 9,
       "trails": 18,
-      "swimming": 7,
-      "attractions": 402,
-      "restaurants": 174
+      "swimming": 16,
+      "attractions": 405,
+      "restaurants": 168
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1221,11 +1228,11 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 290,
-      "trails": 138,
-      "swimming": 20,
-      "attractions": 2015,
-      "restaurants": 762
+      "events": 816,
+      "trails": 134,
+      "swimming": 27,
+      "attractions": 2032,
+      "restaurants": 758
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1262,11 +1269,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 93,
-      "trails": 87,
-      "swimming": 4,
-      "attractions": 546,
-      "restaurants": 154
+      "events": 136,
+      "trails": 79,
+      "swimming": 6,
+      "attractions": 544,
+      "restaurants": 159
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1304,11 +1311,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 4,
+      "events": 3,
       "trails": 3,
-      "swimming": 3,
-      "attractions": 252,
-      "restaurants": 147
+      "swimming": 4,
+      "attractions": 254,
+      "restaurants": 150
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1346,11 +1353,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 2,
+      "events": 24,
       "trails": 2,
-      "swimming": 3,
-      "attractions": 127,
-      "restaurants": 55
+      "swimming": 4,
+      "attractions": 128,
+      "restaurants": 56
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1387,13 +1394,13 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 15,
-      "trails": 9,
+      "events": 13,
+      "trails": 24,
       "swimming": 21,
-      "walkNodes": 740,
-      "cycleNodes": 238,
-      "attractions": 57,
-      "restaurants": 33
+      "walkNodes": 728,
+      "cycleNodes": 175,
+      "attractions": 59,
+      "restaurants": 48
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1432,11 +1439,12 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 21,
-      "trails": 11,
-      "swimming": 10,
-      "attractions": 748,
-      "restaurants": 394
+      "events": 4,
+      "trails": 14,
+      "swimming": 11,
+      "cycleNodes": 18,
+      "attractions": 752,
+      "restaurants": 395
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1473,13 +1481,13 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 2,
-      "trails": 12,
-      "swimming": 26,
-      "walkNodes": 332,
-      "cycleNodes": 80,
-      "attractions": 141,
-      "restaurants": 50
+      "events": 6,
+      "trails": 35,
+      "swimming": 49,
+      "walkNodes": 317,
+      "cycleNodes": 71,
+      "attractions": 505,
+      "restaurants": 90
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1518,11 +1526,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 203,
+      "events": 363,
       "trails": 47,
-      "swimming": 4,
-      "attractions": 734,
-      "restaurants": 346
+      "swimming": 8,
+      "attractions": 738,
+      "restaurants": 352
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1560,11 +1568,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 8,
+      "events": 38,
       "trails": 6,
-      "swimming": 1,
-      "attractions": 158,
-      "restaurants": 50
+      "swimming": 3,
+      "attractions": 156,
+      "restaurants": 54
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1602,10 +1610,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 77,
-      "swimming": 5,
-      "attractions": 219,
-      "restaurants": 89
+      "events": 138,
+      "trails": 10,
+      "swimming": 8,
+      "attractions": 222,
+      "restaurants": 93
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1643,11 +1652,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 1,
+      "events": 17,
       "trails": 43,
-      "swimming": 6,
-      "attractions": 214,
-      "restaurants": 107
+      "swimming": 7,
+      "attractions": 209,
+      "restaurants": 103
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1683,7 +1692,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 6,
+      "events": 67,
+      "trails": 46,
+      "swimming": 15,
+      "attractions": 979,
+      "restaurants": 1164
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -1698,7 +1714,7 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/auvergnerhonealpes.jpg",
     "brandColor": "#485591",
-    "calendarUrl": "https://www.auvergnerhonealpes-tourisme.com/agenda/"
+    "calendarUrl": "https://www.auvergnerhonealpes-tourisme.com/agenda/?"
   },
   {
     "slug": "auxerre",
@@ -1720,11 +1736,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 45,
-      "trails": 30,
-      "swimming": 3,
-      "attractions": 317,
-      "restaurants": 122
+      "events": 156,
+      "trails": 29,
+      "swimming": 5,
+      "attractions": 322,
+      "restaurants": 126
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1761,11 +1777,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 56,
-      "trails": 127,
-      "swimming": 11,
-      "attractions": 385,
-      "restaurants": 248
+      "events": 277,
+      "trails": 126,
+      "swimming": 12,
+      "attractions": 355,
+      "restaurants": 252
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1803,11 +1819,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 102,
-      "trails": 75,
-      "swimming": 16,
-      "attractions": 1520,
-      "restaurants": 581
+      "events": 176,
+      "trails": 74,
+      "swimming": 15,
+      "attractions": 1515,
+      "restaurants": 612
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -1848,6 +1864,7 @@
     ],
     "languages": [],
     "inventory": {
+      "attractions": 2,
       "restaurants": 180
     },
     "enrichments": [],
@@ -1886,8 +1903,9 @@
     ],
     "languages": [],
     "inventory": {
+      "swimming": 17,
       "districts": 73,
-      "attractions": 94,
+      "attractions": 113,
       "restaurants": 157
     },
     "enrichments": [],
@@ -1973,8 +1991,9 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 9,
-      "restaurants": 7
+      "swimming": 28,
+      "attractions": 37,
+      "restaurants": 30
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2013,11 +2032,11 @@
     "languages": [],
     "inventory": {
       "golf": 10,
-      "events": 479,
-      "trails": 92,
-      "swimming": 82,
-      "attractions": 1358,
-      "restaurants": 836
+      "events": 915,
+      "trails": 93,
+      "swimming": 81,
+      "attractions": 1321,
+      "restaurants": 849
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2055,7 +2074,14 @@
       "voice"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 1,
+      "events": 207,
+      "trails": 62,
+      "swimming": 10,
+      "attractions": 370,
+      "restaurants": 95
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -2091,7 +2117,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 1,
+      "events": 222,
+      "trails": 66,
+      "swimming": 24,
+      "attractions": 1027,
+      "restaurants": 251
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -2127,11 +2160,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 40,
+      "events": 35,
       "trails": 104,
-      "swimming": 4,
-      "attractions": 176,
-      "restaurants": 61
+      "swimming": 5,
+      "attractions": 169,
+      "restaurants": 51
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2169,7 +2202,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 3,
+      "attractions": 9,
       "restaurants": 99
     },
     "enrichments": [],
@@ -2213,11 +2246,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 223,
-      "trails": 265,
-      "swimming": 11,
-      "attractions": 439,
-      "restaurants": 243
+      "events": 392,
+      "trails": 263,
+      "swimming": 12,
+      "attractions": 433,
+      "restaurants": 244
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2254,7 +2287,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 2,
+      "swimming": 27,
+      "attractions": 29,
       "restaurants": 1
     },
     "enrichments": [],
@@ -2296,8 +2330,7 @@
     "inventory": {
       "swimming": 81,
       "districts": 97,
-      "cycleNodes": 8,
-      "attractions": 273,
+      "attractions": 277,
       "restaurants": 67
     },
     "enrichments": [],
@@ -2347,11 +2380,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 167,
+      "events": 287,
       "trails": 233,
       "swimming": 7,
-      "attractions": 531,
-      "restaurants": 216
+      "attractions": 528,
+      "restaurants": 220
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2388,16 +2421,17 @@
     "dataSource": "datatourisme",
     "status": "live",
     "channels": [
-      "webchat"
+      "webchat",
+      "voice"
     ],
     "languages": [],
     "inventory": {
       "golf": 9,
-      "events": 504,
-      "trails": 95,
+      "events": 893,
+      "trails": 96,
       "swimming": 69,
-      "attractions": 1169,
-      "restaurants": 743
+      "attractions": 1137,
+      "restaurants": 756
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2413,7 +2447,8 @@
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationbiarritz.jpg",
     "brandColor": "#E1D3A9",
-    "calendarUrl": "https://www.destination-biarritz.fr/en/agenda/"
+    "calendarUrl": "https://www.destination-biarritz.fr/en/agenda/",
+    "voiceAgentId": "agent_6301m45qxewmfssspbzb8v3xgj2w"
   },
   {
     "slug": "bidart",
@@ -2433,7 +2468,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 9,
+      "events": 938,
+      "trails": 122,
+      "swimming": 71,
+      "attractions": 1263,
+      "restaurants": 852
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -2469,7 +2511,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 24,
+      "swimming": 12,
+      "attractions": 36,
       "restaurants": 40
     },
     "enrichments": [],
@@ -2513,11 +2556,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 61,
+      "events": 72,
       "trails": 14,
       "swimming": 2,
-      "attractions": 154,
-      "restaurants": 94
+      "attractions": 152,
+      "restaurants": 100
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2558,7 +2601,6 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 1,
       "attractions": 4,
       "restaurants": 3
     },
@@ -2598,8 +2640,9 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 8,
-      "attractions": 28,
+      "golf": 2,
+      "events": 1,
+      "attractions": 26,
       "restaurants": 28
     },
     "enrichments": [],
@@ -2643,7 +2686,8 @@
     "languages": [],
     "inventory": {
       "trails": 8,
-      "attractions": 77,
+      "swimming": 9,
+      "attractions": 87,
       "restaurants": 95
     },
     "enrichments": [],
@@ -2686,12 +2730,12 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 80,
+      "events": 159,
       "trails": 133,
       "swimming": 17,
       "districts": 8,
-      "attractions": 550,
-      "restaurants": 143
+      "attractions": 548,
+      "restaurants": 213
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2732,7 +2776,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 5
+      "attractions": 6
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2771,11 +2815,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 647,
+      "events": 1160,
       "trails": 147,
-      "swimming": 70,
-      "attractions": 2562,
-      "restaurants": 1267
+      "swimming": 74,
+      "attractions": 2567,
+      "restaurants": 1299
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2813,11 +2857,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 5,
-      "trails": 25,
-      "swimming": 6,
+      "events": 16,
+      "trails": 24,
+      "swimming": 7,
       "attractions": 352,
-      "restaurants": 159
+      "restaurants": 161
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2855,10 +2899,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 96,
+      "events": 140,
       "trails": 4,
-      "attractions": 175,
-      "restaurants": 65
+      "swimming": 1,
+      "attractions": 177,
+      "restaurants": 68
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2894,7 +2939,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 3,
+      "events": 175,
+      "trails": 75,
+      "swimming": 21,
+      "attractions": 564,
+      "restaurants": 272
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -2932,12 +2984,12 @@
     "inventory": {
       "golf": 2,
       "events": 5,
-      "trails": 3,
+      "trails": 11,
       "swimming": 20,
-      "walkNodes": 433,
-      "cycleNodes": 181,
+      "walkNodes": 425,
+      "cycleNodes": 116,
       "attractions": 35,
-      "restaurants": 22
+      "restaurants": 26
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -2976,10 +3028,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 96,
-      "swimming": 10,
-      "attractions": 142,
-      "restaurants": 40
+      "events": 376,
+      "trails": 103,
+      "swimming": 37,
+      "attractions": 171,
+      "restaurants": 58
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3019,7 +3072,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 1,
+      "events": 58,
+      "trails": 131,
+      "swimming": 6,
+      "attractions": 127,
+      "restaurants": 177
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -3056,10 +3116,12 @@
     ],
     "languages": [],
     "inventory": {
+      "trails": 2,
+      "swimming": 24,
       "districts": 3,
-      "walkNodes": 122,
-      "cycleNodes": 153,
-      "attractions": 38,
+      "walkNodes": 119,
+      "cycleNodes": 159,
+      "attractions": 64,
       "restaurants": 64
     },
     "enrichments": [],
@@ -3110,10 +3172,11 @@
     "languages": [],
     "inventory": {
       "events": 1,
+      "swimming": 1,
       "districts": 145,
-      "walkNodes": 141,
-      "cycleNodes": 191,
-      "attractions": 77,
+      "walkNodes": 142,
+      "cycleNodes": 200,
+      "attractions": 78,
       "restaurants": 146
     },
     "enrichments": [],
@@ -3163,9 +3226,9 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "swimming": 343,
-      "attractions": 7509,
-      "restaurants": 6097
+      "swimming": 340,
+      "attractions": 7736,
+      "restaurants": 6111
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3205,7 +3268,7 @@
     "inventory": {
       "swimming": 9,
       "districts": 20,
-      "attractions": 111,
+      "attractions": 112,
       "restaurants": 9
     },
     "enrichments": [],
@@ -3255,7 +3318,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 6,
+      "swimming": 20,
+      "attractions": 27,
       "restaurants": 14
     },
     "enrichments": [],
@@ -3295,11 +3359,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 235,
-      "trails": 100,
-      "swimming": 22,
-      "attractions": 635,
-      "restaurants": 199
+      "events": 426,
+      "trails": 91,
+      "swimming": 25,
+      "attractions": 648,
+      "restaurants": 210
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3336,11 +3400,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 93,
+      "events": 241,
       "trails": 86,
       "swimming": 12,
-      "attractions": 537,
-      "restaurants": 188
+      "attractions": 525,
+      "restaurants": 195
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3378,11 +3442,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 235,
-      "trails": 100,
-      "swimming": 22,
-      "attractions": 635,
-      "restaurants": 199
+      "events": 426,
+      "trails": 91,
+      "swimming": 25,
+      "attractions": 648,
+      "restaurants": 210
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3425,7 +3489,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 8,
+      "events": 759,
+      "trails": 109,
+      "swimming": 55,
+      "attractions": 941,
+      "restaurants": 639
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -3461,12 +3532,12 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 16,
-      "events": 13,
+      "golf": 17,
+      "events": 11,
       "trails": 21,
-      "swimming": 68,
-      "attractions": 648,
-      "restaurants": 586
+      "swimming": 105,
+      "attractions": 674,
+      "restaurants": 636
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3504,11 +3575,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 1,
+      "events": 17,
       "trails": 43,
-      "swimming": 6,
-      "attractions": 214,
-      "restaurants": 107
+      "swimming": 7,
+      "attractions": 209,
+      "restaurants": 103
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3546,7 +3617,7 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 14,
+      "events": 11,
       "trails": 57,
       "swimming": 11,
       "attractions": 242,
@@ -3588,10 +3659,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 77,
-      "swimming": 5,
-      "attractions": 219,
-      "restaurants": 89
+      "events": 138,
+      "trails": 10,
+      "swimming": 8,
+      "attractions": 222,
+      "restaurants": 93
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3629,10 +3701,10 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 127,
+      "events": 151,
       "trails": 104,
       "attractions": 143,
-      "restaurants": 41
+      "restaurants": 44
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3670,7 +3742,7 @@
     "languages": [],
     "inventory": {
       "golf": 7,
-      "events": 9,
+      "events": 6,
       "trails": 28,
       "swimming": 5,
       "attractions": 161,
@@ -3712,11 +3784,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 45,
+      "events": 102,
       "trails": 16,
       "swimming": 2,
-      "attractions": 117,
-      "restaurants": 47
+      "attractions": 105,
+      "restaurants": 49
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3753,12 +3825,12 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 2,
-      "events": 9,
-      "trails": 60,
-      "swimming": 21,
-      "attractions": 686,
-      "restaurants": 262
+      "golf": 3,
+      "events": 13,
+      "trails": 61,
+      "swimming": 31,
+      "attractions": 704,
+      "restaurants": 284
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3795,12 +3867,12 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 4,
-      "events": 42,
-      "trails": 105,
-      "swimming": 7,
-      "attractions": 841,
-      "restaurants": 283
+      "golf": 3,
+      "events": 81,
+      "trails": 102,
+      "swimming": 9,
+      "attractions": 844,
+      "restaurants": 313
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3838,11 +3910,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 226,
-      "trails": 118,
-      "swimming": 3,
-      "attractions": 484,
-      "restaurants": 169
+      "events": 268,
+      "trails": 117,
+      "swimming": 7,
+      "attractions": 488,
+      "restaurants": 167
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3880,11 +3952,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 117,
+      "events": 325,
       "trails": 10,
-      "swimming": 21,
-      "attractions": 317,
-      "restaurants": 189
+      "swimming": 36,
+      "attractions": 330,
+      "restaurants": 207
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3921,11 +3993,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 93,
-      "trails": 87,
-      "swimming": 4,
-      "attractions": 546,
-      "restaurants": 154
+      "events": 136,
+      "trails": 79,
+      "swimming": 6,
+      "attractions": 544,
+      "restaurants": 159
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -3963,8 +4035,8 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 2,
-      "trails": 18,
+      "events": 3,
+      "trails": 19,
       "swimming": 1,
       "attractions": 83,
       "restaurants": 27
@@ -4005,11 +4077,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 54,
+      "events": 194,
       "trails": 25,
       "swimming": 1,
       "attractions": 94,
-      "restaurants": 33
+      "restaurants": 35
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4047,11 +4119,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 57,
+      "events": 113,
       "trails": 15,
       "swimming": 5,
       "attractions": 151,
-      "restaurants": 46
+      "restaurants": 47
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4089,8 +4161,8 @@
     "languages": [],
     "inventory": {
       "golf": 11,
-      "events": 35,
-      "trails": 35,
+      "events": 29,
+      "trails": 36,
       "swimming": 4,
       "attractions": 342,
       "restaurants": 227
@@ -4130,11 +4202,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 15,
+      "events": 75,
       "trails": 54,
       "swimming": 2,
-      "attractions": 677,
-      "restaurants": 68
+      "attractions": 695,
+      "restaurants": 69
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4172,10 +4244,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 96,
+      "events": 140,
       "trails": 4,
-      "attractions": 175,
-      "restaurants": 65
+      "swimming": 1,
+      "attractions": 177,
+      "restaurants": 68
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4213,7 +4286,7 @@
     "languages": [],
     "inventory": {
       "districts": 98,
-      "attractions": 451,
+      "attractions": 454,
       "restaurants": 112
     },
     "enrichments": [],
@@ -4288,11 +4361,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 70,
+      "events": 151,
       "trails": 40,
-      "swimming": 9,
-      "attractions": 514,
-      "restaurants": 320
+      "swimming": 10,
+      "attractions": 513,
+      "restaurants": 333
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4333,7 +4406,14 @@
       "voice"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 2,
+      "events": 240,
+      "trails": 77,
+      "swimming": 11,
+      "attractions": 361,
+      "restaurants": 84
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -4371,11 +4451,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 339,
-      "trails": 250,
-      "swimming": 23,
-      "attractions": 1491,
-      "restaurants": 340
+      "events": 611,
+      "trails": 251,
+      "swimming": 24,
+      "attractions": 1507,
+      "restaurants": 370
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4413,11 +4493,10 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "swimming": 69,
+      "swimming": 91,
       "districts": 86,
-      "cycleNodes": 66,
-      "attractions": 371,
-      "restaurants": 1286
+      "attractions": 416,
+      "restaurants": 1443
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4510,11 +4589,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 81,
+      "events": 133,
       "trails": 149,
-      "swimming": 11,
-      "attractions": 558,
-      "restaurants": 129
+      "swimming": 15,
+      "attractions": 515,
+      "restaurants": 128
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4550,7 +4629,11 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "swimming": 44,
+      "attractions": 48,
+      "restaurants": 22
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -4586,8 +4669,9 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 4,
-      "restaurants": 9
+      "swimming": 45,
+      "attractions": 49,
+      "restaurants": 22
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4625,11 +4709,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 132,
-      "trails": 76,
-      "swimming": 17,
-      "attractions": 544,
-      "restaurants": 256
+      "events": 175,
+      "trails": 75,
+      "swimming": 21,
+      "attractions": 566,
+      "restaurants": 272
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4667,10 +4751,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 111,
-      "swimming": 14,
-      "attractions": 179,
-      "restaurants": 100
+      "events": 515,
+      "trails": 237,
+      "swimming": 33,
+      "attractions": 197,
+      "restaurants": 103
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4707,11 +4792,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 72,
+      "events": 162,
       "trails": 127,
-      "swimming": 6,
-      "attractions": 349,
-      "restaurants": 80
+      "swimming": 9,
+      "attractions": 335,
+      "restaurants": 78
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4749,7 +4834,7 @@
     "languages": [],
     "inventory": {
       "swimming": 1,
-      "attractions": 70,
+      "attractions": 71,
       "restaurants": 3
     },
     "enrichments": [],
@@ -4829,11 +4914,11 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 478,
-      "trails": 84,
-      "swimming": 24,
-      "attractions": 744,
-      "restaurants": 352
+      "events": 917,
+      "trails": 85,
+      "swimming": 28,
+      "attractions": 749,
+      "restaurants": 399
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4872,12 +4957,12 @@
     "inventory": {
       "golf": 3,
       "events": 17,
-      "trails": 2,
-      "swimming": 44,
-      "walkNodes": 525,
-      "cycleNodes": 472,
-      "attractions": 149,
-      "restaurants": 126
+      "trails": 11,
+      "swimming": 45,
+      "walkNodes": 518,
+      "cycleNodes": 338,
+      "attractions": 156,
+      "restaurants": 180
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4921,13 +5006,13 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 18,
-      "trails": 3,
+      "events": 20,
+      "trails": 14,
       "swimming": 36,
-      "walkNodes": 469,
-      "cycleNodes": 201,
-      "attractions": 63,
-      "restaurants": 29
+      "walkNodes": 461,
+      "cycleNodes": 150,
+      "attractions": 65,
+      "restaurants": 44
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -4970,12 +5055,12 @@
     "languages": [],
     "inventory": {
       "events": 7,
-      "trails": 8,
+      "trails": 11,
       "swimming": 12,
       "walkNodes": 151,
-      "cycleNodes": 51,
-      "attractions": 32,
-      "restaurants": 10
+      "cycleNodes": 48,
+      "attractions": 24,
+      "restaurants": 11
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5015,11 +5100,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 59,
-      "trails": 129,
-      "swimming": 9,
+      "events": 99,
+      "trails": 130,
+      "swimming": 10,
       "attractions": 502,
-      "restaurants": 178
+      "restaurants": 177
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5055,7 +5140,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 1,
+      "events": 277,
+      "trails": 70,
+      "swimming": 9,
+      "attractions": 188,
+      "restaurants": 60
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -5092,10 +5184,10 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 17,
+      "events": 9,
       "trails": 4,
-      "swimming": 2,
-      "attractions": 137,
+      "swimming": 1,
+      "attractions": 128,
       "restaurants": 72
     },
     "enrichments": [],
@@ -5134,11 +5226,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 132,
-      "trails": 76,
-      "swimming": 17,
-      "attractions": 544,
-      "restaurants": 256
+      "events": 175,
+      "trails": 75,
+      "swimming": 21,
+      "attractions": 566,
+      "restaurants": 272
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5179,9 +5271,10 @@
     ],
     "languages": [],
     "inventory": {
-      "trails": 19,
-      "cycleNodes": 62,
-      "attractions": 4,
+      "trails": 18,
+      "swimming": 2,
+      "cycleNodes": 61,
+      "attractions": 6,
       "restaurants": 20
     },
     "enrichments": [],
@@ -5221,11 +5314,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 98,
+      "events": 332,
       "trails": 59,
-      "swimming": 9,
-      "attractions": 323,
-      "restaurants": 271
+      "swimming": 11,
+      "attractions": 291,
+      "restaurants": 266
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5264,12 +5357,12 @@
     "inventory": {
       "golf": 1,
       "events": 8,
-      "trails": 1,
+      "trails": 4,
       "swimming": 25,
-      "walkNodes": 440,
-      "cycleNodes": 196,
-      "attractions": 68,
-      "restaurants": 59
+      "walkNodes": 436,
+      "cycleNodes": 169,
+      "attractions": 74,
+      "restaurants": 85
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5308,11 +5401,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 167,
+      "events": 287,
       "trails": 233,
       "swimming": 7,
-      "attractions": 531,
-      "restaurants": 216
+      "attractions": 528,
+      "restaurants": 220
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5350,7 +5443,7 @@
     "languages": [],
     "inventory": {
       "swimming": 4,
-      "attractions": 74,
+      "attractions": 78,
       "restaurants": 10
     },
     "enrichments": [],
@@ -5400,11 +5493,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 243,
-      "trails": 54,
-      "swimming": 15,
-      "attractions": 1409,
-      "restaurants": 499
+      "events": 699,
+      "trails": 53,
+      "swimming": 16,
+      "attractions": 1415,
+      "restaurants": 498
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5441,6 +5534,7 @@
     ],
     "languages": [],
     "inventory": {
+      "attractions": 1,
       "restaurants": 12
     },
     "enrichments": [],
@@ -5481,11 +5575,13 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 8,
-      "walkNodes": 20,
+      "events": 6,
+      "trails": 3,
+      "swimming": 8,
+      "walkNodes": 21,
       "cycleNodes": 51,
-      "attractions": 73,
-      "restaurants": 104
+      "attractions": 75,
+      "restaurants": 99
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5522,10 +5618,9 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "swimming": 12,
-      "cycleNodes": 149,
-      "attractions": 56,
-      "restaurants": 78
+      "swimming": 14,
+      "attractions": 60,
+      "restaurants": 86
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5566,13 +5661,13 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 38,
-      "trails": 61,
-      "swimming": 22,
-      "walkNodes": 120,
-      "cycleNodes": 56,
-      "attractions": 493,
-      "restaurants": 171
+      "events": 44,
+      "trails": 109,
+      "swimming": 28,
+      "walkNodes": 119,
+      "cycleNodes": 49,
+      "attractions": 803,
+      "restaurants": 172
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5611,13 +5706,13 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 5,
-      "trails": 2,
+      "events": 6,
+      "trails": 28,
       "swimming": 23,
-      "walkNodes": 447,
-      "cycleNodes": 175,
-      "attractions": 47,
-      "restaurants": 35
+      "walkNodes": 443,
+      "cycleNodes": 135,
+      "attractions": 45,
+      "restaurants": 55
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5657,11 +5752,12 @@
     "languages": [],
     "inventory": {
       "events": 1,
+      "trails": 4,
       "swimming": 12,
-      "walkNodes": 145,
-      "cycleNodes": 39,
-      "attractions": 24,
-      "restaurants": 6
+      "walkNodes": 144,
+      "cycleNodes": 35,
+      "attractions": 26,
+      "restaurants": 9
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5701,11 +5797,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 32,
+      "events": 104,
       "trails": 36,
       "swimming": 4,
-      "attractions": 542,
-      "restaurants": 109
+      "attractions": 521,
+      "restaurants": 110
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5743,11 +5839,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 90,
+      "events": 159,
       "trails": 168,
-      "swimming": 1,
-      "attractions": 234,
-      "restaurants": 41
+      "swimming": 5,
+      "attractions": 203,
+      "restaurants": 43
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5785,11 +5881,11 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 22,
-      "trails": 16,
-      "swimming": 22,
+      "events": 17,
+      "trails": 15,
+      "swimming": 24,
       "attractions": 612,
-      "restaurants": 295
+      "restaurants": 305
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5827,11 +5923,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 18,
+      "events": 87,
       "trails": 28,
-      "swimming": 8,
-      "attractions": 143,
-      "restaurants": 61
+      "swimming": 9,
+      "attractions": 144,
+      "restaurants": 63
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5869,11 +5965,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 54,
+      "events": 194,
       "trails": 25,
       "swimming": 1,
       "attractions": 94,
-      "restaurants": 33
+      "restaurants": 35
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5909,11 +6005,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 32,
+      "events": 108,
       "trails": 26,
-      "swimming": 1,
-      "attractions": 92,
-      "restaurants": 35
+      "swimming": 2,
+      "attractions": 93,
+      "restaurants": 37
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5951,11 +6047,11 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 22,
-      "trails": 16,
-      "swimming": 22,
+      "events": 17,
+      "trails": 15,
+      "swimming": 24,
       "attractions": 612,
-      "restaurants": 295
+      "restaurants": 305
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -5993,11 +6089,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 45,
+      "events": 43,
       "trails": 21,
-      "swimming": 58,
-      "attractions": 824,
-      "restaurants": 797
+      "swimming": 72,
+      "attractions": 826,
+      "restaurants": 881
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6033,10 +6129,10 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 41,
-      "trails": 68,
+      "events": 113,
+      "trails": 54,
       "swimming": 1,
-      "attractions": 133,
+      "attractions": 136,
       "restaurants": 35
     },
     "enrichments": [],
@@ -6111,7 +6207,8 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 12,
+      "golf": 1,
+      "events": 6,
       "attractions": 6,
       "restaurants": 9
     },
@@ -6150,7 +6247,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 1,
+      "swimming": 15,
+      "attractions": 16,
       "restaurants": 14
     },
     "enrichments": [],
@@ -6191,10 +6289,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 87,
-      "swimming": 16,
-      "attractions": 166,
-      "restaurants": 78
+      "events": 231,
+      "trails": 196,
+      "swimming": 32,
+      "attractions": 182,
+      "restaurants": 94
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6231,7 +6330,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 58,
+      "swimming": 1,
+      "attractions": 59,
       "restaurants": 39
     },
     "enrichments": [],
@@ -6274,11 +6374,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 4,
+      "events": 3,
       "trails": 3,
-      "swimming": 3,
-      "attractions": 252,
-      "restaurants": 147
+      "swimming": 4,
+      "attractions": 254,
+      "restaurants": 150
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6315,8 +6415,9 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 5,
-      "attractions": 14,
+      "golf": 2,
+      "events": 1,
+      "attractions": 13,
       "restaurants": 4
     },
     "enrichments": [],
@@ -6354,8 +6455,8 @@
     "languages": [],
     "inventory": {
       "swimming": 29,
-      "attractions": 335,
-      "restaurants": 196
+      "attractions": 358,
+      "restaurants": 282
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6398,7 +6499,7 @@
     "inventory": {
       "golf": 2,
       "swimming": 24,
-      "attractions": 266,
+      "attractions": 267,
       "restaurants": 301
     },
     "enrichments": [],
@@ -6437,11 +6538,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 4,
+      "events": 3,
       "trails": 16,
-      "swimming": 7,
-      "attractions": 318,
-      "restaurants": 88
+      "swimming": 9,
+      "attractions": 323,
+      "restaurants": 90
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6479,11 +6580,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 47,
+      "events": 56,
       "trails": 1,
-      "swimming": 10,
-      "attractions": 419,
-      "restaurants": 166
+      "swimming": 14,
+      "attractions": 423,
+      "restaurants": 183
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6520,7 +6621,7 @@
     ],
     "languages": [],
     "inventory": {
-      "trails": 52,
+      "trails": 51,
       "attractions": 12,
       "restaurants": 49
     },
@@ -6565,11 +6666,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 8,
+      "events": 38,
       "trails": 6,
-      "swimming": 1,
-      "attractions": 158,
-      "restaurants": 50
+      "swimming": 3,
+      "attractions": 156,
+      "restaurants": 54
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6606,10 +6707,11 @@
     ],
     "languages": [],
     "inventory": {
+      "swimming": 6,
       "districts": 25,
-      "walkNodes": 22,
-      "cycleNodes": 168,
-      "attractions": 16,
+      "walkNodes": 23,
+      "cycleNodes": 176,
+      "attractions": 24,
       "restaurants": 47
     },
     "enrichments": [],
@@ -6658,7 +6760,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 2,
+      "swimming": 15,
+      "attractions": 18,
       "restaurants": 18
     },
     "enrichments": [],
@@ -6703,6 +6806,8 @@
     "languages": [],
     "inventory": {
       "golf": 1,
+      "swimming": 1,
+      "attractions": 1,
       "restaurants": 19
     },
     "enrichments": [],
@@ -6743,11 +6848,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 80,
+      "events": 159,
       "trails": 133,
       "swimming": 17,
-      "attractions": 550,
-      "restaurants": 143
+      "attractions": 548,
+      "restaurants": 213
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6785,13 +6890,13 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 17,
-      "trails": 15,
+      "events": 14,
+      "trails": 27,
       "swimming": 51,
-      "walkNodes": 383,
-      "cycleNodes": 226,
-      "attractions": 115,
-      "restaurants": 101
+      "walkNodes": 381,
+      "cycleNodes": 187,
+      "attractions": 126,
+      "restaurants": 115
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6831,9 +6936,10 @@
     ],
     "languages": [],
     "inventory": {
+      "events": 116,
       "swimming": 21,
-      "attractions": 571,
-      "restaurants": 586
+      "attractions": 959,
+      "restaurants": 740
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6873,12 +6979,12 @@
     "inventory": {
       "golf": 3,
       "events": 16,
-      "trails": 2,
+      "trails": 11,
       "swimming": 26,
-      "walkNodes": 391,
-      "cycleNodes": 252,
-      "attractions": 79,
-      "restaurants": 65
+      "walkNodes": 385,
+      "cycleNodes": 215,
+      "attractions": 84,
+      "restaurants": 92
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -6918,7 +7024,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 14,
+      "swimming": 1,
+      "attractions": 16,
       "restaurants": 14
     },
     "enrichments": [],
@@ -6960,7 +7067,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 3,
+      "events": 264,
+      "trails": 172,
+      "swimming": 27,
+      "attractions": 887,
+      "restaurants": 452
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -6996,12 +7110,12 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 13,
-      "events": 23,
-      "trails": 27,
-      "swimming": 39,
-      "attractions": 714,
-      "restaurants": 624
+      "golf": 14,
+      "events": 31,
+      "trails": 28,
+      "swimming": 76,
+      "attractions": 744,
+      "restaurants": 677
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7040,10 +7154,10 @@
     "inventory": {
       "golf": 5,
       "events": 3,
-      "trails": 57,
+      "trails": 56,
       "swimming": 28,
-      "attractions": 1154,
-      "restaurants": 379
+      "attractions": 1143,
+      "restaurants": 401
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7083,14 +7197,14 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 19,
-      "trails": 98,
-      "swimming": 47,
+      "events": 32,
+      "trails": 193,
+      "swimming": 63,
       "districts": 17,
-      "walkNodes": 289,
-      "cycleNodes": 121,
-      "attractions": 1832,
-      "restaurants": 758
+      "walkNodes": 283,
+      "cycleNodes": 108,
+      "attractions": 2432,
+      "restaurants": 794
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7139,13 +7253,13 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 19,
-      "trails": 98,
-      "swimming": 47,
-      "walkNodes": 289,
-      "cycleNodes": 121,
-      "attractions": 1832,
-      "restaurants": 758
+      "events": 32,
+      "trails": 193,
+      "swimming": 63,
+      "walkNodes": 283,
+      "cycleNodes": 108,
+      "attractions": 2432,
+      "restaurants": 794
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7192,7 +7306,7 @@
     "languages": [],
     "inventory": {
       "swimming": 2,
-      "attractions": 48,
+      "attractions": 49,
       "restaurants": 5
     },
     "enrichments": [],
@@ -7232,12 +7346,12 @@
     "inventory": {
       "golf": 2,
       "events": 11,
-      "trails": 14,
+      "trails": 23,
       "swimming": 44,
-      "walkNodes": 548,
-      "cycleNodes": 212,
-      "attractions": 172,
-      "restaurants": 205
+      "walkNodes": 544,
+      "cycleNodes": 159,
+      "attractions": 243,
+      "restaurants": 265
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7277,11 +7391,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 179,
-      "trails": 200,
-      "swimming": 17,
-      "attractions": 888,
-      "restaurants": 294
+      "events": 384,
+      "trails": 203,
+      "swimming": 21,
+      "attractions": 908,
+      "restaurants": 298
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7321,11 +7435,10 @@
     ],
     "languages": [],
     "inventory": {
-      "swimming": 50,
+      "swimming": 61,
       "districts": 104,
-      "cycleNodes": 37,
-      "attractions": 179,
-      "restaurants": 56
+      "attractions": 205,
+      "restaurants": 57
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7375,7 +7488,7 @@
     "languages": [],
     "inventory": {
       "swimming": 20,
-      "attractions": 52,
+      "attractions": 53,
       "restaurants": 9
     },
     "enrichments": [],
@@ -7414,12 +7527,12 @@
     "languages": [],
     "inventory": {
       "events": 4,
-      "trails": 1,
-      "swimming": 26,
+      "trails": 6,
+      "swimming": 27,
       "walkNodes": 257,
-      "cycleNodes": 116,
+      "cycleNodes": 100,
       "attractions": 46,
-      "restaurants": 22
+      "restaurants": 25
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7458,9 +7571,10 @@
     ],
     "languages": [],
     "inventory": {
+      "swimming": 4,
       "walkNodes": 194,
-      "cycleNodes": 68,
-      "attractions": 7,
+      "cycleNodes": 71,
+      "attractions": 12,
       "restaurants": 26
     },
     "enrichments": [],
@@ -7502,7 +7616,14 @@
       "voice"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 1,
+      "events": 194,
+      "trails": 157,
+      "swimming": 8,
+      "attractions": 394,
+      "restaurants": 84
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -7540,11 +7661,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 339,
-      "trails": 250,
-      "swimming": 23,
-      "attractions": 1491,
-      "restaurants": 340
+      "events": 611,
+      "trails": 251,
+      "swimming": 24,
+      "attractions": 1507,
+      "restaurants": 370
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7581,8 +7702,9 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 9,
-      "restaurants": 7
+      "swimming": 28,
+      "attractions": 37,
+      "restaurants": 30
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7620,10 +7742,10 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 170,
-      "swimming": 25,
-      "attractions": 696,
-      "restaurants": 558
+      "events": 642,
+      "swimming": 27,
+      "attractions": 760,
+      "restaurants": 428
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7660,11 +7782,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 80,
+      "events": 212,
       "trails": 14,
-      "swimming": 8,
-      "attractions": 507,
-      "restaurants": 163
+      "swimming": 9,
+      "attractions": 503,
+      "restaurants": 162
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7701,11 +7823,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 15,
+      "events": 75,
       "trails": 54,
       "swimming": 2,
-      "attractions": 677,
-      "restaurants": 68
+      "attractions": 695,
+      "restaurants": 69
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7743,11 +7865,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 16,
-      "trails": 28,
-      "swimming": 3,
-      "attractions": 145,
-      "restaurants": 77
+      "events": 68,
+      "trails": 26,
+      "swimming": 5,
+      "attractions": 147,
+      "restaurants": 79
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7784,11 +7906,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 3,
-      "trails": 40,
-      "swimming": 17,
-      "attractions": 612,
-      "restaurants": 250
+      "events": 5,
+      "trails": 39,
+      "swimming": 19,
+      "attractions": 618,
+      "restaurants": 271
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7825,11 +7947,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 4,
+      "events": 3,
       "trails": 16,
-      "swimming": 7,
-      "attractions": 318,
-      "restaurants": 88
+      "swimming": 9,
+      "attractions": 323,
+      "restaurants": 90
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7864,7 +7986,15 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 4,
+      "events": 210,
+      "trails": 4,
+      "swimming": 1,
+      "cycleNodes": 162,
+      "attractions": 311,
+      "restaurants": 287
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -7901,11 +8031,11 @@
     "languages": [],
     "inventory": {
       "golf": 16,
-      "events": 56,
-      "trails": 36,
-      "swimming": 67,
-      "attractions": 3479,
-      "restaurants": 2210
+      "events": 52,
+      "trails": 34,
+      "swimming": 77,
+      "attractions": 3396,
+      "restaurants": 2790
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -7947,7 +8077,7 @@
     "languages": [],
     "inventory": {
       "swimming": 24,
-      "attractions": 66,
+      "attractions": 69,
       "restaurants": 18
     },
     "enrichments": [],
@@ -7992,7 +8122,7 @@
     "inventory": {
       "events": 12,
       "swimming": 1,
-      "attractions": 351,
+      "attractions": 344,
       "restaurants": 24
     },
     "enrichments": [],
@@ -8030,7 +8160,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 3,
+      "events": 319,
+      "trails": 67,
+      "swimming": 28,
+      "attractions": 641,
+      "restaurants": 314
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -8074,11 +8211,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 297,
-      "trails": 52,
-      "swimming": 30,
-      "attractions": 512,
-      "restaurants": 289
+      "events": 604,
+      "trails": 50,
+      "swimming": 39,
+      "attractions": 524,
+      "restaurants": 317
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -8116,13 +8253,13 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 13,
-      "trails": 17,
+      "events": 12,
+      "trails": 32,
       "swimming": 22,
-      "walkNodes": 345,
-      "cycleNodes": 232,
+      "walkNodes": 367,
+      "cycleNodes": 184,
       "attractions": 67,
-      "restaurants": 90
+      "restaurants": 99
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -8162,13 +8299,13 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 18,
-      "trails": 15,
+      "events": 15,
+      "trails": 27,
       "swimming": 51,
-      "walkNodes": 397,
-      "cycleNodes": 222,
-      "attractions": 115,
-      "restaurants": 100
+      "walkNodes": 395,
+      "cycleNodes": 184,
+      "attractions": 126,
+      "restaurants": 114
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -8206,11 +8343,11 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 385,
-      "trails": 74,
-      "swimming": 20,
-      "attractions": 618,
-      "restaurants": 288
+      "events": 804,
+      "trails": 75,
+      "swimming": 24,
+      "attractions": 620,
+      "restaurants": 333
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -8250,7 +8387,7 @@
     "inventory": {
       "trails": 1,
       "districts": 18,
-      "attractions": 3,
+      "attractions": 5,
       "restaurants": 208
     },
     "enrichments": [],
@@ -8295,11 +8432,12 @@
     "inventory": {
       "golf": 1,
       "events": 2,
+      "trails": 5,
       "swimming": 20,
-      "walkNodes": 283,
-      "cycleNodes": 84,
-      "attractions": 110,
-      "restaurants": 12
+      "walkNodes": 281,
+      "cycleNodes": 73,
+      "attractions": 53,
+      "restaurants": 19
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -8338,7 +8476,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 5,
+      "swimming": 7,
+      "attractions": 12,
       "restaurants": 2
     },
     "enrichments": [],
@@ -8379,12 +8518,12 @@
     "languages": [],
     "inventory": {
       "events": 4,
-      "trails": 12,
+      "trails": 19,
       "swimming": 37,
-      "walkNodes": 479,
-      "cycleNodes": 167,
-      "attractions": 91,
-      "restaurants": 41
+      "walkNodes": 477,
+      "cycleNodes": 124,
+      "attractions": 102,
+      "restaurants": 62
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -8422,7 +8561,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 19,
+      "events": 35,
+      "trails": 38,
+      "swimming": 69,
+      "attractions": 3337,
+      "restaurants": 2818
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -8459,10 +8605,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 31,
-      "swimming": 5,
-      "attractions": 129,
-      "restaurants": 147
+      "events": 58,
+      "trails": 131,
+      "swimming": 6,
+      "attractions": 127,
+      "restaurants": 177
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -8574,7 +8721,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 1,
+      "events": 113,
+      "trails": 15,
+      "swimming": 5,
+      "attractions": 151,
+      "restaurants": 47
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -8609,7 +8763,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 2,
+      "events": 237,
+      "trails": 68,
+      "swimming": 8,
+      "attractions": 184,
+      "restaurants": 173
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -8647,8 +8808,8 @@
     "languages": [],
     "inventory": {
       "swimming": 5,
-      "attractions": 697,
-      "restaurants": 356
+      "attractions": 772,
+      "restaurants": 346
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -8692,10 +8853,10 @@
     "inventory": {
       "golf": 5,
       "events": 3,
-      "trails": 57,
+      "trails": 56,
       "swimming": 28,
-      "attractions": 1154,
-      "restaurants": 379
+      "attractions": 1143,
+      "restaurants": 401
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -8733,7 +8894,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 7,
+      "attractions": 10,
       "restaurants": 74
     },
     "enrichments": [],
@@ -8935,7 +9096,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 6,
+      "swimming": 10,
+      "attractions": 16,
       "restaurants": 15
     },
     "enrichments": [],
@@ -8975,11 +9137,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 138,
+      "events": 160,
       "trails": 107,
-      "swimming": 8,
-      "attractions": 368,
-      "restaurants": 144
+      "swimming": 9,
+      "attractions": 363,
+      "restaurants": 148
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9018,7 +9180,7 @@
     "inventory": {
       "trails": 3,
       "swimming": 24,
-      "attractions": 63,
+      "attractions": 66,
       "restaurants": 26
     },
     "enrichments": [],
@@ -9064,8 +9226,8 @@
     "languages": [],
     "inventory": {
       "swimming": 433,
-      "attractions": 7654,
-      "restaurants": 6194
+      "attractions": 8268,
+      "restaurants": 5948
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9102,11 +9264,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 377,
+      "events": 711,
       "trails": 415,
-      "swimming": 24,
-      "attractions": 1464,
-      "restaurants": 361
+      "swimming": 26,
+      "attractions": 1475,
+      "restaurants": 395
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9146,7 +9308,7 @@
     "languages": [],
     "inventory": {
       "swimming": 46,
-      "attractions": 64,
+      "attractions": 67,
       "restaurants": 4
     },
     "enrichments": [],
@@ -9186,9 +9348,10 @@
     "inventory": {
       "events": 2,
       "trails": 4,
+      "swimming": 3,
       "walkNodes": 280,
-      "cycleNodes": 179,
-      "attractions": 8,
+      "cycleNodes": 190,
+      "attractions": 11,
       "restaurants": 34
     },
     "enrichments": [],
@@ -9227,6 +9390,7 @@
     ],
     "languages": [],
     "inventory": {
+      "attractions": 2,
       "restaurants": 22
     },
     "enrichments": [],
@@ -9269,7 +9433,7 @@
     "inventory": {
       "events": 5,
       "districts": 11,
-      "attractions": 1,
+      "attractions": 3,
       "restaurants": 256
     },
     "enrichments": [],
@@ -9310,11 +9474,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 117,
+      "events": 325,
       "trails": 10,
-      "swimming": 21,
-      "attractions": 317,
-      "restaurants": 189
+      "swimming": 36,
+      "attractions": 330,
+      "restaurants": 207
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9352,11 +9516,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 91,
+      "events": 162,
       "trails": 12,
       "swimming": 6,
       "attractions": 347,
-      "restaurants": 118
+      "restaurants": 117
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9394,10 +9558,10 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 14,
+      "events": 73,
       "trails": 82,
-      "swimming": 1,
-      "attractions": 114,
+      "swimming": 3,
+      "attractions": 121,
       "restaurants": 58
     },
     "enrichments": [],
@@ -9436,7 +9600,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 14,
+      "events": 12,
       "trails": 37,
       "swimming": 2,
       "attractions": 268,
@@ -9478,11 +9642,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 48,
+      "events": 130,
       "trails": 30,
       "swimming": 4,
       "attractions": 202,
-      "restaurants": 3
+      "restaurants": 5
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9520,11 +9684,11 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 545,
+      "events": 567,
       "trails": 12,
       "swimming": 2,
-      "attractions": 579,
-      "restaurants": 661
+      "attractions": 582,
+      "restaurants": 664
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9562,11 +9726,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 196,
+      "events": 436,
       "trails": 189,
-      "swimming": 6,
-      "attractions": 381,
-      "restaurants": 285
+      "swimming": 8,
+      "attractions": 391,
+      "restaurants": 277
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9603,11 +9767,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 80,
+      "events": 212,
       "trails": 14,
-      "swimming": 8,
-      "attractions": 507,
-      "restaurants": 163
+      "swimming": 9,
+      "attractions": 503,
+      "restaurants": 162
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9644,13 +9808,13 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 9,
+      "events": 8,
       "trails": 1,
       "swimming": 11,
-      "walkNodes": 280,
-      "cycleNodes": 155,
+      "walkNodes": 276,
+      "cycleNodes": 131,
       "attractions": 23,
-      "restaurants": 15
+      "restaurants": 13
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9691,12 +9855,12 @@
     "inventory": {
       "golf": 4,
       "events": 18,
-      "trails": 4,
-      "swimming": 40,
-      "walkNodes": 502,
-      "cycleNodes": 407,
-      "attractions": 117,
-      "restaurants": 87
+      "trails": 11,
+      "swimming": 41,
+      "walkNodes": 500,
+      "cycleNodes": 337,
+      "attractions": 121,
+      "restaurants": 123
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9736,7 +9900,7 @@
     "languages": [],
     "inventory": {
       "swimming": 6,
-      "attractions": 48,
+      "attractions": 49,
       "restaurants": 5
     },
     "enrichments": [],
@@ -9779,10 +9943,11 @@
     "languages": [],
     "inventory": {
       "events": 2,
+      "trails": 4,
       "swimming": 7,
-      "cycleNodes": 51,
+      "cycleNodes": 49,
       "attractions": 15,
-      "restaurants": 4
+      "restaurants": 5
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9821,9 +9986,10 @@
     ],
     "languages": [],
     "inventory": {
-      "walkNodes": 267,
-      "cycleNodes": 135,
-      "attractions": 8,
+      "swimming": 2,
+      "walkNodes": 269,
+      "cycleNodes": 141,
+      "attractions": 10,
       "restaurants": 38
     },
     "enrichments": [],
@@ -9904,8 +10070,8 @@
     "inventory": {
       "trails": 3,
       "walkNodes": 22,
-      "cycleNodes": 91,
-      "attractions": 18,
+      "cycleNodes": 93,
+      "attractions": 19,
       "restaurants": 35
     },
     "enrichments": [],
@@ -9945,11 +10111,12 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 170,
-      "trails": 2,
-      "cycleNodes": 160,
-      "attractions": 405,
-      "restaurants": 275
+      "events": 210,
+      "trails": 4,
+      "swimming": 1,
+      "cycleNodes": 161,
+      "attractions": 311,
+      "restaurants": 287
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -9991,17 +10158,17 @@
     "languages": [],
     "inventory": {
       "trails": 9,
-      "swimming": 15,
-      "walkNodes": 650,
-      "cycleNodes": 159,
-      "attractions": 29,
-      "restaurants": 49
+      "swimming": 3,
+      "walkNodes": 637,
+      "cycleNodes": 146,
+      "attractions": 17,
+      "restaurants": 75
     },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
     "website": null,
-    "logo": null,
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/limburgsevlaai.png",
     "brandColor": null,
     "touristPass": null,
     "calendarUrl": null,
@@ -10035,11 +10202,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 381,
+      "events": 670,
       "trails": 140,
       "swimming": 12,
-      "attractions": 642,
-      "restaurants": 349
+      "attractions": 640,
+      "restaurants": 348
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10119,11 +10286,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 61,
+      "events": 72,
       "trails": 14,
       "swimming": 2,
-      "attractions": 154,
-      "restaurants": 94
+      "attractions": 152,
+      "restaurants": 100
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10161,11 +10328,11 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 24,
-      "trails": 120,
-      "swimming": 5,
-      "attractions": 351,
-      "restaurants": 177
+      "events": 92,
+      "trails": 119,
+      "swimming": 6,
+      "attractions": 350,
+      "restaurants": 210
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10203,11 +10370,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 26,
+      "events": 39,
       "trails": 82,
-      "swimming": 10,
-      "attractions": 465,
-      "restaurants": 131
+      "swimming": 12,
+      "attractions": 467,
+      "restaurants": 133
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10244,11 +10411,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 138,
+      "events": 160,
       "trails": 107,
-      "swimming": 8,
-      "attractions": 368,
-      "restaurants": 144
+      "swimming": 9,
+      "attractions": 363,
+      "restaurants": 148
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10285,7 +10452,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 89,
+      "attractions": 93,
       "restaurants": 146
     },
     "enrichments": [],
@@ -10325,11 +10492,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 93,
+      "events": 241,
       "trails": 86,
       "swimming": 12,
-      "attractions": 537,
-      "restaurants": 188
+      "attractions": 525,
+      "restaurants": 195
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10366,12 +10533,12 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 1,
-      "events": 100,
-      "trails": 105,
+      "golf": 2,
+      "events": 73,
+      "trails": 146,
       "swimming": 7,
-      "attractions": 416,
-      "restaurants": 89
+      "attractions": 363,
+      "restaurants": 104
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10382,8 +10549,8 @@
       "claimed": false
     },
     "coords": [
-      44.520025,
-      0.159822
+      44.204519,
+      0.616518
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/tourismelotetgaronne.jpg",
     "brandColor": "#65B32E",
@@ -10409,11 +10576,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 69,
+      "events": 275,
       "trails": 50,
       "swimming": 2,
-      "attractions": 1377,
-      "restaurants": 516
+      "attractions": 1382,
+      "restaurants": 520
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10452,11 +10619,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 43,
+      "events": 124,
       "trails": 216,
-      "swimming": 3,
-      "attractions": 202,
-      "restaurants": 26
+      "swimming": 8,
+      "attractions": 203,
+      "restaurants": 23
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10539,7 +10706,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "trails": 15,
+      "trails": 16,
       "attractions": 4,
       "restaurants": 44
     },
@@ -10580,7 +10747,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 4
+      "attractions": 5
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10624,12 +10791,12 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 82,
-      "trails": 51,
-      "swimming": 11,
+      "events": 67,
+      "trails": 45,
+      "swimming": 15,
       "districts": 21,
-      "attractions": 957,
-      "restaurants": 1038
+      "attractions": 978,
+      "restaurants": 1161
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10672,12 +10839,12 @@
     "languages": [],
     "inventory": {
       "trails": 9,
-      "swimming": 15,
+      "swimming": 3,
       "districts": 37,
-      "walkNodes": 636,
-      "cycleNodes": 156,
-      "attractions": 30,
-      "restaurants": 50
+      "walkNodes": 621,
+      "cycleNodes": 144,
+      "attractions": 18,
+      "restaurants": 78
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10722,11 +10889,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 182,
-      "trails": 140,
-      "swimming": 12,
-      "attractions": 683,
-      "restaurants": 231
+      "events": 311,
+      "trails": 142,
+      "swimming": 16,
+      "attractions": 680,
+      "restaurants": 246
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -10805,7 +10972,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 12,
+      "swimming": 28,
+      "attractions": 42,
       "restaurants": 20
     },
     "enrichments": [],
@@ -10848,9 +11016,9 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 56,
+      "events": 172,
       "trails": 37,
-      "attractions": 166,
+      "attractions": 159,
       "restaurants": 76
     },
     "enrichments": [],
@@ -10889,7 +11057,7 @@
     "languages": [],
     "inventory": {
       "swimming": 36,
-      "attractions": 85,
+      "attractions": 88,
       "restaurants": 17
     },
     "enrichments": [],
@@ -10930,11 +11098,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 45,
+      "events": 102,
       "trails": 16,
       "swimming": 2,
-      "attractions": 117,
-      "restaurants": 47
+      "attractions": 105,
+      "restaurants": 49
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11013,12 +11181,12 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 647,
+      "events": 1160,
       "trails": 147,
-      "swimming": 70,
+      "swimming": 74,
       "districts": 30,
-      "attractions": 2562,
-      "restaurants": 1267
+      "attractions": 2567,
+      "restaurants": 1299
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11060,11 +11228,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 48,
+      "events": 130,
       "trails": 30,
       "swimming": 4,
       "attractions": 202,
-      "restaurants": 3
+      "restaurants": 5
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11101,9 +11269,10 @@
     ],
     "languages": [],
     "inventory": {
-      "walkNodes": 343,
-      "cycleNodes": 170,
-      "attractions": 24,
+      "swimming": 7,
+      "walkNodes": 348,
+      "cycleNodes": 182,
+      "attractions": 32,
       "restaurants": 47
     },
     "enrichments": [],
@@ -11142,10 +11311,9 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 1,
       "trails": 25,
-      "swimming": 13,
-      "attractions": 121,
+      "swimming": 14,
+      "attractions": 122,
       "restaurants": 18
     },
     "enrichments": [],
@@ -11183,11 +11351,11 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 11,
+      "events": 14,
       "trails": 4,
-      "swimming": 8,
-      "attractions": 189,
-      "restaurants": 191
+      "swimming": 9,
+      "attractions": 188,
+      "restaurants": 197
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11224,11 +11392,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 43,
+      "events": 124,
       "trails": 216,
-      "swimming": 3,
-      "attractions": 202,
-      "restaurants": 26
+      "swimming": 8,
+      "attractions": 203,
+      "restaurants": 23
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11266,7 +11434,8 @@
     "languages": [],
     "inventory": {
       "trails": 5,
-      "attractions": 20,
+      "swimming": 1,
+      "attractions": 21,
       "restaurants": 38
     },
     "enrichments": [],
@@ -11305,11 +11474,11 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 227,
+      "events": 394,
       "trails": 127,
-      "swimming": 8,
-      "attractions": 691,
-      "restaurants": 338
+      "swimming": 10,
+      "attractions": 688,
+      "restaurants": 356
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11351,11 +11520,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 244,
+      "events": 382,
       "trails": 68,
       "swimming": 9,
-      "attractions": 568,
-      "restaurants": 245
+      "attractions": 502,
+      "restaurants": 270
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11393,11 +11562,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 56,
+      "events": 170,
       "trails": 6,
-      "swimming": 2,
-      "attractions": 363,
-      "restaurants": 76
+      "swimming": 3,
+      "attractions": 355,
+      "restaurants": 75
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11435,12 +11604,12 @@
     "languages": [],
     "inventory": {
       "events": 6,
-      "trails": 1,
+      "trails": 12,
       "swimming": 30,
-      "walkNodes": 157,
+      "walkNodes": 162,
       "cycleNodes": 74,
-      "attractions": 48,
-      "restaurants": 25
+      "attractions": 51,
+      "restaurants": 28
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11480,7 +11649,8 @@
     "languages": [],
     "inventory": {
       "events": 1,
-      "attractions": 1,
+      "swimming": 5,
+      "attractions": 9,
       "restaurants": 111
     },
     "enrichments": [],
@@ -11522,8 +11692,9 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 12,
-      "attractions": 30,
+      "golf": 1,
+      "events": 3,
+      "attractions": 28,
       "restaurants": 24
     },
     "enrichments": [],
@@ -11602,11 +11773,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 91,
+      "events": 162,
       "trails": 12,
       "swimming": 6,
       "attractions": 347,
-      "restaurants": 118
+      "restaurants": 117
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11643,11 +11814,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 57,
-      "trails": 19,
-      "swimming": 6,
-      "attractions": 165,
-      "restaurants": 112
+      "events": 125,
+      "trails": 54,
+      "swimming": 11,
+      "attractions": 148,
+      "restaurants": 92
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11685,11 +11856,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 22,
+      "events": 42,
       "trails": 48,
-      "swimming": 5,
-      "attractions": 125,
-      "restaurants": 25
+      "swimming": 8,
+      "attractions": 126,
+      "restaurants": 27
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11727,11 +11898,11 @@
     "languages": [],
     "inventory": {
       "golf": 24,
-      "events": 563,
+      "events": 583,
       "trails": 75,
       "swimming": 7,
-      "attractions": 921,
-      "restaurants": 770
+      "attractions": 924,
+      "restaurants": 774
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11769,11 +11940,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 297,
-      "trails": 52,
-      "swimming": 30,
-      "attractions": 512,
-      "restaurants": 289
+      "events": 604,
+      "trails": 50,
+      "swimming": 39,
+      "attractions": 524,
+      "restaurants": 317
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11812,12 +11983,12 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 555,
+      "events": 575,
       "trails": 21,
       "swimming": 3,
       "districts": 32,
-      "attractions": 632,
-      "restaurants": 704
+      "attractions": 635,
+      "restaurants": 708
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11855,10 +12026,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 47,
-      "swimming": 8,
-      "attractions": 105,
-      "restaurants": 44
+      "events": 114,
+      "trails": 62,
+      "swimming": 54,
+      "attractions": 147,
+      "restaurants": 62
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11869,8 +12041,8 @@
       "claimed": false
     },
     "coords": [
-      47.658,
-      -2.76
+      47.651528,
+      -2.758777
     ],
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/morbihan-tourisme.jpg",
     "brandColor": "#CBA868"
@@ -11895,11 +12067,11 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 227,
+      "events": 394,
       "trails": 127,
-      "swimming": 8,
-      "attractions": 691,
-      "restaurants": 338
+      "swimming": 10,
+      "attractions": 688,
+      "restaurants": 356
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11937,11 +12109,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 51,
+      "events": 145,
       "trails": 105,
       "swimming": 1,
-      "attractions": 306,
-      "restaurants": 67
+      "attractions": 299,
+      "restaurants": 68
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -11979,11 +12151,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 176,
-      "trails": 237,
-      "swimming": 17,
-      "attractions": 1030,
-      "restaurants": 402
+      "events": 419,
+      "trails": 245,
+      "swimming": 18,
+      "attractions": 1035,
+      "restaurants": 410
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12024,7 +12196,7 @@
       "trails": 1,
       "swimming": 38,
       "districts": 25,
-      "attractions": 379,
+      "attractions": 330,
       "restaurants": 101
     },
     "enrichments": [],
@@ -12067,8 +12239,9 @@
     ],
     "languages": [],
     "inventory": {
-      "cycleNodes": 65,
-      "attractions": 14,
+      "swimming": 1,
+      "cycleNodes": 68,
+      "attractions": 15,
       "restaurants": 32
     },
     "enrichments": [],
@@ -12116,11 +12289,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 244,
+      "events": 382,
       "trails": 68,
       "swimming": 9,
-      "attractions": 568,
-      "restaurants": 245
+      "attractions": 502,
+      "restaurants": 270
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12175,11 +12348,11 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 24,
-      "trails": 120,
-      "swimming": 5,
-      "attractions": 351,
-      "restaurants": 177
+      "events": 92,
+      "trails": 119,
+      "swimming": 6,
+      "attractions": 350,
+      "restaurants": 210
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12220,11 +12393,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 84,
-      "trails": 46,
-      "swimming": 3,
-      "attractions": 193,
-      "restaurants": 129
+      "events": 99,
+      "trails": 47,
+      "swimming": 6,
+      "attractions": 190,
+      "restaurants": 131
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12263,7 +12436,7 @@
     "languages": [],
     "inventory": {
       "districts": 36,
-      "attractions": 177,
+      "attractions": 179,
       "restaurants": 348
     },
     "enrichments": [],
@@ -12306,12 +12479,12 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 7,
-      "events": 48,
+      "golf": 8,
+      "events": 47,
       "trails": 19,
-      "swimming": 72,
-      "attractions": 823,
-      "restaurants": 777
+      "swimming": 93,
+      "attractions": 829,
+      "restaurants": 875
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12354,9 +12527,9 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "swimming": 436,
-      "attractions": 9554,
-      "restaurants": 5841
+      "swimming": 433,
+      "attractions": 9966,
+      "restaurants": 5846
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12395,11 +12568,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 84,
-      "trails": 46,
-      "swimming": 3,
-      "attractions": 193,
-      "restaurants": 129
+      "events": 99,
+      "trails": 47,
+      "swimming": 6,
+      "attractions": 190,
+      "restaurants": 131
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12437,13 +12610,13 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 19,
-      "trails": 8,
+      "events": 17,
+      "trails": 16,
       "swimming": 27,
-      "walkNodes": 962,
-      "cycleNodes": 315,
-      "attractions": 63,
-      "restaurants": 30
+      "walkNodes": 951,
+      "cycleNodes": 220,
+      "attractions": 65,
+      "restaurants": 44
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12483,11 +12656,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 47,
+      "events": 56,
       "trails": 1,
-      "swimming": 10,
-      "attractions": 419,
-      "restaurants": 166
+      "swimming": 14,
+      "attractions": 423,
+      "restaurants": 183
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12529,11 +12702,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 59,
-      "trails": 129,
-      "swimming": 9,
+      "events": 99,
+      "trails": 130,
+      "swimming": 10,
       "attractions": 502,
-      "restaurants": 178
+      "restaurants": 177
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12572,12 +12745,12 @@
     "inventory": {
       "golf": 2,
       "events": 13,
-      "trails": 11,
+      "trails": 19,
       "swimming": 33,
-      "walkNodes": 384,
-      "cycleNodes": 273,
-      "attractions": 102,
-      "restaurants": 84
+      "walkNodes": 380,
+      "cycleNodes": 215,
+      "attractions": 106,
+      "restaurants": 118
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12617,11 +12790,12 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 170,
-      "trails": 2,
-      "cycleNodes": 160,
-      "attractions": 405,
-      "restaurants": 275
+      "events": 210,
+      "trails": 4,
+      "swimming": 1,
+      "cycleNodes": 161,
+      "attractions": 311,
+      "restaurants": 287
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12657,7 +12831,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 3,
+      "events": 281,
+      "trails": 44,
+      "swimming": 8,
+      "attractions": 284,
+      "restaurants": 111
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -12693,7 +12874,14 @@
       "voice"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 3,
+      "events": 159,
+      "trails": 134,
+      "swimming": 17,
+      "attractions": 546,
+      "restaurants": 212
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -12730,8 +12918,8 @@
     ],
     "languages": [],
     "inventory": {
-      "swimming": 48,
-      "attractions": 576,
+      "swimming": 52,
+      "attractions": 579,
       "restaurants": 157
     },
     "enrichments": [],
@@ -12775,11 +12963,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 325,
-      "trails": 607,
-      "swimming": 13,
-      "attractions": 1841,
-      "restaurants": 444
+      "events": 515,
+      "trails": 606,
+      "swimming": 19,
+      "attractions": 1851,
+      "restaurants": 457
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12817,9 +13005,9 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "swimming": 844,
-      "attractions": 20246,
-      "restaurants": 11408
+      "swimming": 836,
+      "attractions": 22327,
+      "restaurants": 11195
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12857,7 +13045,13 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 3,
+      "events": 642,
+      "swimming": 27,
+      "attractions": 760,
+      "restaurants": 428
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -12894,11 +13088,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 9,
+      "events": 8,
       "trails": 20,
-      "swimming": 10,
-      "attractions": 871,
-      "restaurants": 315
+      "swimming": 14,
+      "attractions": 870,
+      "restaurants": 324
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12936,11 +13130,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 26,
+      "events": 39,
       "trails": 82,
-      "swimming": 10,
-      "attractions": 465,
-      "restaurants": 131
+      "swimming": 12,
+      "attractions": 467,
+      "restaurants": 133
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -12978,7 +13172,7 @@
     "inventory": {
       "events": 2,
       "districts": 24,
-      "attractions": 12,
+      "attractions": 15,
       "restaurants": 243
     },
     "enrichments": [],
@@ -13021,9 +13215,10 @@
     ],
     "languages": [],
     "inventory": {
+      "swimming": 30,
       "walkNodes": 31,
-      "cycleNodes": 91,
-      "attractions": 10,
+      "cycleNodes": 94,
+      "attractions": 43,
       "restaurants": 26
     },
     "enrichments": [],
@@ -13069,11 +13264,11 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 6,
-      "events": 4,
+      "golf": 7,
+      "events": 6,
       "trails": 15,
       "swimming": 3,
-      "attractions": 166,
+      "attractions": 168,
       "restaurants": 87
     },
     "enrichments": [],
@@ -13156,12 +13351,12 @@
     "languages": [],
     "inventory": {
       "golf": 19,
-      "events": 40,
-      "trails": 39,
-      "swimming": 59,
+      "events": 35,
+      "trails": 38,
+      "swimming": 69,
       "districts": 106,
-      "attractions": 3424,
-      "restaurants": 2240
+      "attractions": 3337,
+      "restaurants": 2818
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13203,7 +13398,8 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 13,
+      "golf": 1,
+      "events": 5,
       "attractions": 6,
       "restaurants": 18
     },
@@ -13243,11 +13439,12 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 21,
-      "trails": 11,
-      "swimming": 10,
-      "attractions": 748,
-      "restaurants": 394
+      "events": 4,
+      "trails": 14,
+      "swimming": 11,
+      "cycleNodes": 18,
+      "attractions": 752,
+      "restaurants": 395
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13286,11 +13483,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 239,
-      "trails": 194,
+      "events": 582,
+      "trails": 193,
       "swimming": 14,
-      "attractions": 621,
-      "restaurants": 371
+      "attractions": 608,
+      "restaurants": 358
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13335,7 +13532,14 @@
       "voice"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 9,
+      "events": 947,
+      "trails": 122,
+      "swimming": 80,
+      "attractions": 1363,
+      "restaurants": 888
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -13371,7 +13575,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 6,
+      "events": 92,
+      "trails": 119,
+      "swimming": 6,
+      "attractions": 350,
+      "restaurants": 210
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -13408,11 +13619,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 98,
+      "events": 332,
       "trails": 59,
-      "swimming": 9,
-      "attractions": 323,
-      "restaurants": 271
+      "swimming": 11,
+      "attractions": 291,
+      "restaurants": 266
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13450,10 +13661,10 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 223,
-      "swimming": 49,
-      "attractions": 328,
-      "restaurants": 276
+      "events": 397,
+      "swimming": 55,
+      "attractions": 334,
+      "restaurants": 288
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13489,7 +13700,8 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 10,
+      "golf": 1,
+      "events": 4,
       "attractions": 3,
       "restaurants": 13
     },
@@ -13528,6 +13740,8 @@
     ],
     "languages": [],
     "inventory": {
+      "swimming": 21,
+      "attractions": 22,
       "restaurants": 13
     },
     "enrichments": [],
@@ -13566,11 +13780,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 13,
+      "events": 21,
       "trails": 16,
-      "swimming": 14,
-      "attractions": 317,
-      "restaurants": 309
+      "swimming": 16,
+      "attractions": 310,
+      "restaurants": 315
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13607,7 +13821,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 1,
+      "swimming": 76,
+      "attractions": 77,
       "restaurants": 13
     },
     "enrichments": [],
@@ -13648,11 +13863,11 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 10,
+      "events": 9,
       "trails": 20,
-      "swimming": 17,
-      "attractions": 792,
-      "restaurants": 726
+      "swimming": 18,
+      "attractions": 784,
+      "restaurants": 728
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13688,6 +13903,7 @@
     ],
     "languages": [],
     "inventory": {
+      "attractions": 2,
       "restaurants": 7
     },
     "enrichments": [],
@@ -13730,11 +13946,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 4,
+      "events": 9,
       "trails": 18,
-      "swimming": 7,
-      "attractions": 402,
-      "restaurants": 174
+      "swimming": 16,
+      "attractions": 405,
+      "restaurants": 168
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13770,7 +13986,14 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 4,
+      "events": 1160,
+      "trails": 147,
+      "swimming": 74,
+      "attractions": 2567,
+      "restaurants": 1299
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -13807,11 +14030,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 70,
+      "events": 151,
       "trails": 40,
-      "swimming": 9,
-      "attractions": 514,
-      "restaurants": 320
+      "swimming": 10,
+      "attractions": 513,
+      "restaurants": 333
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13846,7 +14069,13 @@
       "webchat"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 3,
+      "events": 82,
+      "swimming": 3,
+      "attractions": 486,
+      "restaurants": 109
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -13884,11 +14113,11 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 239,
-      "trails": 194,
+      "events": 582,
+      "trails": 193,
       "swimming": 14,
-      "attractions": 621,
-      "restaurants": 371
+      "attractions": 608,
+      "restaurants": 358
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -13926,8 +14155,8 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 30,
-      "trails": 21,
+      "events": 24,
+      "trails": 22,
       "swimming": 3,
       "attractions": 246,
       "restaurants": 210
@@ -13968,10 +14197,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 87,
-      "swimming": 16,
-      "attractions": 166,
-      "restaurants": 78
+      "events": 231,
+      "trails": 196,
+      "swimming": 32,
+      "attractions": 182,
+      "restaurants": 94
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14008,8 +14238,10 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 7,
-      "attractions": 13,
+      "golf": 1,
+      "events": 2,
+      "swimming": 12,
+      "attractions": 25,
       "restaurants": 5
     },
     "enrichments": [],
@@ -14047,7 +14279,8 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 11,
+      "golf": 3,
+      "events": 6,
       "attractions": 15,
       "restaurants": 12
     },
@@ -14087,11 +14320,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 136,
+      "events": 275,
       "trails": 42,
       "swimming": 6,
-      "attractions": 361,
-      "restaurants": 190
+      "attractions": 341,
+      "restaurants": 195
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14128,10 +14361,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 31,
-      "swimming": 5,
-      "attractions": 129,
-      "restaurants": 147
+      "events": 58,
+      "trails": 131,
+      "swimming": 6,
+      "attractions": 127,
+      "restaurants": 177
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14211,8 +14445,10 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 8,
-      "attractions": 26,
+      "golf": 2,
+      "events": 1,
+      "swimming": 34,
+      "attractions": 61,
       "restaurants": 16
     },
     "enrichments": [],
@@ -14250,11 +14486,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 56,
-      "trails": 127,
-      "swimming": 11,
-      "attractions": 385,
-      "restaurants": 248
+      "events": 277,
+      "trails": 126,
+      "swimming": 12,
+      "attractions": 355,
+      "restaurants": 252
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14292,7 +14528,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "attractions": 10,
+      "attractions": 12,
       "restaurants": 64
     },
     "enrichments": [],
@@ -14335,12 +14571,12 @@
     "languages": [],
     "inventory": {
       "events": 3,
-      "trails": 1,
+      "trails": 11,
       "swimming": 10,
-      "walkNodes": 273,
-      "cycleNodes": 125,
-      "attractions": 18,
-      "restaurants": 12
+      "walkNodes": 270,
+      "cycleNodes": 89,
+      "attractions": 19,
+      "restaurants": 14
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14379,13 +14615,13 @@
     "inventory": {
       "golf": 3,
       "events": 11,
-      "trails": 2,
+      "trails": 12,
       "swimming": 36,
       "districts": 14,
-      "walkNodes": 654,
-      "cycleNodes": 459,
-      "attractions": 107,
-      "restaurants": 80
+      "walkNodes": 648,
+      "cycleNodes": 362,
+      "attractions": 113,
+      "restaurants": 113
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14439,11 +14675,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 226,
+      "events": 281,
       "trails": 44,
-      "swimming": 4,
-      "attractions": 290,
-      "restaurants": 76
+      "swimming": 8,
+      "attractions": 285,
+      "restaurants": 112
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14523,10 +14759,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 111,
-      "swimming": 14,
-      "attractions": 179,
-      "restaurants": 100
+      "events": 515,
+      "trails": 237,
+      "swimming": 33,
+      "attractions": 197,
+      "restaurants": 103
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14563,11 +14800,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 121,
+      "events": 97,
       "trails": 20,
-      "swimming": 8,
-      "attractions": 568,
-      "restaurants": 250
+      "swimming": 13,
+      "attractions": 566,
+      "restaurants": 254
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14608,9 +14845,9 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 56,
+      "events": 172,
       "trails": 37,
-      "attractions": 166,
+      "attractions": 159,
       "restaurants": 76
     },
     "enrichments": [],
@@ -14648,9 +14885,9 @@
     ],
     "languages": [],
     "inventory": {
-      "swimming": 444,
-      "attractions": 12817,
-      "restaurants": 6352
+      "swimming": 437,
+      "attractions": 14524,
+      "restaurants": 6000
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14687,7 +14924,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 65,
+      "attractions": 68,
       "restaurants": 143
     },
     "enrichments": [],
@@ -14730,8 +14967,9 @@
     "languages": [],
     "inventory": {
       "events": 1,
-      "trails": 11,
-      "attractions": 19,
+      "trails": 12,
+      "swimming": 8,
+      "attractions": 28,
       "restaurants": 43
     },
     "enrichments": [],
@@ -14774,6 +15012,8 @@
     ],
     "languages": [],
     "inventory": {
+      "swimming": 18,
+      "attractions": 19,
       "restaurants": 20
     },
     "enrichments": [],
@@ -14812,11 +15052,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 196,
+      "events": 436,
       "trails": 189,
-      "swimming": 6,
-      "attractions": 381,
-      "restaurants": 285
+      "swimming": 8,
+      "attractions": 391,
+      "restaurants": 277
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14853,12 +15093,12 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 2,
-      "events": 9,
-      "trails": 60,
-      "swimming": 21,
-      "attractions": 686,
-      "restaurants": 262
+      "golf": 3,
+      "events": 13,
+      "trails": 61,
+      "swimming": 31,
+      "attractions": 704,
+      "restaurants": 284
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14896,11 +15136,12 @@
     "languages": [],
     "inventory": {
       "events": 8,
+      "trails": 8,
       "swimming": 39,
-      "walkNodes": 109,
+      "walkNodes": 117,
       "cycleNodes": 50,
-      "attractions": 49,
-      "restaurants": 13
+      "attractions": 51,
+      "restaurants": 24
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14937,7 +15178,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 5
+      "attractions": 7
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -14975,11 +15216,11 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 11,
+      "events": 14,
       "trails": 4,
-      "swimming": 8,
-      "attractions": 189,
-      "restaurants": 191
+      "swimming": 9,
+      "attractions": 188,
+      "restaurants": 197
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15016,11 +15257,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 226,
+      "events": 281,
       "trails": 44,
-      "swimming": 4,
-      "attractions": 290,
-      "restaurants": 76
+      "swimming": 8,
+      "attractions": 285,
+      "restaurants": 112
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15058,11 +15299,11 @@
     "languages": [],
     "inventory": {
       "golf": 16,
-      "events": 29,
-      "trails": 36,
-      "swimming": 53,
-      "attractions": 3185,
-      "restaurants": 2105
+      "events": 25,
+      "trails": 35,
+      "swimming": 63,
+      "attractions": 3104,
+      "restaurants": 2679
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15101,7 +15342,7 @@
     "inventory": {
       "swimming": 3,
       "districts": 37,
-      "attractions": 382,
+      "attractions": 383,
       "restaurants": 255
     },
     "enrichments": [],
@@ -15151,7 +15392,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 11,
+      "attractions": 12,
       "restaurants": 21
     },
     "enrichments": [],
@@ -15192,7 +15433,7 @@
     "languages": [],
     "inventory": {
       "districts": 23,
-      "attractions": 316,
+      "attractions": 317,
       "restaurants": 288
     },
     "enrichments": [],
@@ -15238,7 +15479,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 18,
+      "swimming": 24,
+      "attractions": 43,
       "restaurants": 7
     },
     "enrichments": [],
@@ -15277,10 +15519,12 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 187,
+      "events": 161,
+      "trails": 59,
       "swimming": 5,
-      "attractions": 226,
-      "restaurants": 189
+      "cycleNodes": 12,
+      "attractions": 235,
+      "restaurants": 178
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15317,13 +15561,13 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 4,
-      "trails": 20,
-      "swimming": 14,
-      "walkNodes": 264,
-      "cycleNodes": 82,
-      "attractions": 106,
-      "restaurants": 12
+      "events": 3,
+      "trails": 41,
+      "swimming": 27,
+      "walkNodes": 262,
+      "cycleNodes": 79,
+      "attractions": 286,
+      "restaurants": 46
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15361,9 +15605,9 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "swimming": 665,
-      "attractions": 12400,
-      "restaurants": 10151
+      "swimming": 662,
+      "attractions": 13319,
+      "restaurants": 10030
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15399,8 +15643,8 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 619,
-      "attractions": 39,
+      "events": 689,
+      "attractions": 42,
       "restaurants": 66
     },
     "enrichments": [],
@@ -15440,12 +15684,12 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 197,
-      "trails": 201,
-      "swimming": 20,
+      "events": 280,
+      "trails": 200,
+      "swimming": 27,
       "districts": 15,
-      "attractions": 920,
-      "restaurants": 420
+      "attractions": 932,
+      "restaurants": 462
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15487,7 +15731,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 79,
+      "attractions": 81,
       "restaurants": 41
     },
     "enrichments": [],
@@ -15530,7 +15774,7 @@
     "languages": [],
     "inventory": {
       "districts": 12,
-      "attractions": 3,
+      "attractions": 4,
       "restaurants": 159
     },
     "enrichments": [],
@@ -15615,9 +15859,9 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 5,
+      "events": 4,
       "swimming": 4,
-      "attractions": 301
+      "attractions": 302
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15654,11 +15898,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 36,
+      "events": 210,
       "trails": 18,
       "swimming": 1,
-      "attractions": 1335,
-      "restaurants": 462
+      "attractions": 1338,
+      "restaurants": 467
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15696,11 +15940,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 2,
+      "events": 1,
       "trails": 14,
-      "swimming": 5,
-      "attractions": 255,
-      "restaurants": 116
+      "swimming": 8,
+      "attractions": 258,
+      "restaurants": 121
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15737,11 +15981,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 22,
+      "events": 42,
       "trails": 48,
-      "swimming": 5,
-      "attractions": 125,
-      "restaurants": 25
+      "swimming": 8,
+      "attractions": 126,
+      "restaurants": 27
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15778,6 +16022,8 @@
     ],
     "languages": [],
     "inventory": {
+      "swimming": 24,
+      "attractions": 24,
       "restaurants": 20
     },
     "enrichments": [],
@@ -15814,11 +16060,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 223,
-      "trails": 265,
-      "swimming": 11,
-      "attractions": 439,
-      "restaurants": 243
+      "events": 392,
+      "trails": 263,
+      "swimming": 12,
+      "attractions": 433,
+      "restaurants": 244
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15855,12 +16101,12 @@
     "languages": [],
     "inventory": {
       "events": 5,
-      "trails": 11,
+      "trails": 14,
       "swimming": 5,
       "walkNodes": 116,
-      "cycleNodes": 41,
-      "attractions": 17,
-      "restaurants": 8
+      "cycleNodes": 39,
+      "attractions": 16,
+      "restaurants": 9
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15906,13 +16152,13 @@
     "inventory": {
       "golf": 3,
       "events": 16,
-      "trails": 2,
-      "swimming": 38,
+      "trails": 11,
+      "swimming": 39,
       "districts": 44,
-      "walkNodes": 383,
-      "cycleNodes": 319,
-      "attractions": 116,
-      "restaurants": 86
+      "walkNodes": 376,
+      "cycleNodes": 239,
+      "attractions": 118,
+      "restaurants": 127
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15955,12 +16201,12 @@
     "inventory": {
       "golf": 2,
       "events": 14,
-      "trails": 3,
+      "trails": 16,
       "swimming": 26,
-      "walkNodes": 494,
-      "cycleNodes": 204,
-      "attractions": 47,
-      "restaurants": 28
+      "walkNodes": 480,
+      "cycleNodes": 141,
+      "attractions": 48,
+      "restaurants": 40
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -15999,8 +16245,8 @@
     "inventory": {
       "trails": 44,
       "swimming": 195,
-      "attractions": 6722,
-      "restaurants": 4440
+      "attractions": 7319,
+      "restaurants": 3946
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16039,7 +16285,7 @@
     "inventory": {
       "events": 6,
       "districts": 23,
-      "attractions": 230,
+      "attractions": 241,
       "restaurants": 510
     },
     "enrichments": [],
@@ -16082,10 +16328,10 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 170,
-      "swimming": 25,
-      "attractions": 696,
-      "restaurants": 558
+      "events": 642,
+      "swimming": 27,
+      "attractions": 760,
+      "restaurants": 428
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16127,11 +16373,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 137,
+      "events": 237,
       "trails": 68,
       "swimming": 8,
-      "attractions": 189,
-      "restaurants": 155
+      "attractions": 184,
+      "restaurants": 173
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16169,6 +16415,8 @@
     ],
     "languages": [],
     "inventory": {
+      "swimming": 26,
+      "attractions": 26,
       "restaurants": 14
     },
     "enrichments": [],
@@ -16219,11 +16467,11 @@
     "languages": [],
     "inventory": {
       "golf": 7,
-      "events": 479,
-      "trails": 85,
-      "swimming": 25,
-      "attractions": 749,
-      "restaurants": 353
+      "events": 916,
+      "trails": 86,
+      "swimming": 29,
+      "attractions": 754,
+      "restaurants": 400
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16261,11 +16509,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 203,
+      "events": 363,
       "trails": 47,
-      "swimming": 4,
-      "attractions": 734,
-      "restaurants": 346
+      "swimming": 8,
+      "attractions": 738,
+      "restaurants": 352
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16303,11 +16551,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 81,
+      "events": 133,
       "trails": 149,
-      "swimming": 11,
-      "attractions": 558,
-      "restaurants": 129
+      "swimming": 15,
+      "attractions": 515,
+      "restaurants": 128
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16347,7 +16595,7 @@
     "inventory": {
       "golf": 1,
       "events": 6,
-      "attractions": 3,
+      "attractions": 4,
       "restaurants": 38
     },
     "enrichments": [],
@@ -16397,7 +16645,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 100,
+      "attractions": 101,
       "restaurants": 2
     },
     "enrichments": [],
@@ -16434,13 +16682,13 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 4,
-      "trails": 2,
-      "swimming": 17,
-      "walkNodes": 672,
-      "cycleNodes": 128,
-      "attractions": 128,
-      "restaurants": 14
+      "events": 6,
+      "trails": 14,
+      "swimming": 43,
+      "walkNodes": 667,
+      "cycleNodes": 119,
+      "attractions": 531,
+      "restaurants": 87
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16479,14 +16727,14 @@
     "languages": [],
     "inventory": {
       "golf": 10,
-      "events": 18,
-      "trails": 17,
+      "events": 17,
+      "trails": 28,
       "swimming": 31,
       "districts": 27,
-      "walkNodes": 584,
-      "cycleNodes": 349,
-      "attractions": 88,
-      "restaurants": 91
+      "walkNodes": 566,
+      "cycleNodes": 290,
+      "attractions": 87,
+      "restaurants": 104
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16532,11 +16780,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 42,
-      "trails": 4,
-      "swimming": 6,
-      "attractions": 472,
-      "restaurants": 78
+      "events": 36,
+      "trails": 3,
+      "swimming": 10,
+      "attractions": 477,
+      "restaurants": 90
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16574,10 +16822,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 2,
+      "events": 6,
       "trails": 35,
-      "attractions": 294,
-      "restaurants": 135
+      "swimming": 2,
+      "attractions": 328,
+      "restaurants": 186
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16615,11 +16864,11 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 10,
+      "events": 9,
       "trails": 20,
-      "swimming": 17,
-      "attractions": 792,
-      "restaurants": 726
+      "swimming": 18,
+      "attractions": 784,
+      "restaurants": 728
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16657,11 +16906,11 @@
     "languages": [],
     "inventory": {
       "golf": 11,
-      "events": 41,
-      "trails": 23,
-      "swimming": 60,
-      "attractions": 2993,
-      "restaurants": 1779
+      "events": 40,
+      "trails": 21,
+      "swimming": 72,
+      "attractions": 2918,
+      "restaurants": 2352
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16699,11 +16948,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 100,
-      "trails": 105,
-      "swimming": 7,
-      "attractions": 416,
-      "restaurants": 89
+      "events": 204,
+      "trails": 107,
+      "swimming": 8,
+      "attractions": 411,
+      "restaurants": 85
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16779,11 +17028,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 243,
-      "trails": 54,
-      "swimming": 15,
-      "attractions": 1409,
-      "restaurants": 499
+      "events": 699,
+      "trails": 53,
+      "swimming": 16,
+      "attractions": 1415,
+      "restaurants": 498
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16821,7 +17070,8 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "attractions": 14,
+      "swimming": 22,
+      "attractions": 36,
       "restaurants": 37
     },
     "enrichments": [],
@@ -16863,7 +17113,14 @@
       "voice"
     ],
     "languages": [],
-    "inventory": {},
+    "inventory": {
+      "golf": 3,
+      "events": 487,
+      "trails": 226,
+      "swimming": 12,
+      "attractions": 669,
+      "restaurants": 346
+    },
     "enrichments": [],
     "sampleQuestions": {},
     "dtFeed": false,
@@ -16900,10 +17157,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 47,
-      "swimming": 8,
-      "attractions": 105,
-      "restaurants": 44
+      "events": 114,
+      "trails": 62,
+      "swimming": 52,
+      "attractions": 148,
+      "restaurants": 62
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16941,11 +17199,11 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 34,
-      "trails": 18,
-      "swimming": 64,
-      "attractions": 994,
-      "restaurants": 731
+      "events": 47,
+      "trails": 16,
+      "swimming": 79,
+      "attractions": 991,
+      "restaurants": 741
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -16981,10 +17239,10 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 25,
+      "events": 123,
       "swimming": 3,
-      "attractions": 169,
-      "restaurants": 28
+      "attractions": 172,
+      "restaurants": 29
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17021,7 +17279,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 11,
+      "swimming": 24,
+      "attractions": 37,
       "restaurants": 45
     },
     "enrichments": [],
@@ -17063,12 +17322,12 @@
     "languages": [],
     "inventory": {
       "events": 5,
-      "trails": 6,
+      "trails": 7,
       "swimming": 10,
-      "walkNodes": 403,
-      "cycleNodes": 129,
+      "walkNodes": 404,
+      "cycleNodes": 70,
       "attractions": 17,
-      "restaurants": 3
+      "restaurants": 9
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17105,12 +17364,12 @@
     ],
     "languages": [],
     "inventory": {
-      "golf": 18,
-      "events": 31,
-      "trails": 21,
-      "swimming": 35,
-      "attractions": 2871,
-      "restaurants": 2054
+      "golf": 9,
+      "events": 10,
+      "trails": 8,
+      "swimming": 4,
+      "attractions": 365,
+      "restaurants": 276
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17148,11 +17407,11 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 13,
+      "events": 21,
       "trails": 16,
-      "swimming": 14,
-      "attractions": 317,
-      "restaurants": 309
+      "swimming": 16,
+      "attractions": 310,
+      "restaurants": 315
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17189,6 +17448,8 @@
     ],
     "languages": [],
     "inventory": {
+      "swimming": 88,
+      "attractions": 88,
       "restaurants": 14
     },
     "enrichments": [],
@@ -17225,7 +17486,8 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 11,
+      "swimming": 5,
+      "attractions": 16,
       "restaurants": 4
     },
     "enrichments": [],
@@ -17265,12 +17527,12 @@
     "inventory": {
       "golf": 2,
       "events": 12,
-      "trails": 2,
+      "trails": 11,
       "swimming": 48,
-      "walkNodes": 580,
-      "cycleNodes": 421,
-      "attractions": 136,
-      "restaurants": 104
+      "walkNodes": 573,
+      "cycleNodes": 310,
+      "attractions": 142,
+      "restaurants": 152
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17308,12 +17570,12 @@
     "languages": [],
     "inventory": {
       "events": 7,
-      "trails": 1,
+      "trails": 13,
       "swimming": 29,
-      "walkNodes": 143,
-      "cycleNodes": 72,
-      "attractions": 43,
-      "restaurants": 19
+      "walkNodes": 145,
+      "cycleNodes": 70,
+      "attractions": 46,
+      "restaurants": 24
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17352,11 +17614,12 @@
     "inventory": {
       "golf": 1,
       "events": 9,
+      "trails": 6,
       "swimming": 34,
-      "walkNodes": 195,
-      "cycleNodes": 76,
-      "attractions": 144,
-      "restaurants": 138
+      "walkNodes": 198,
+      "cycleNodes": 75,
+      "attractions": 212,
+      "restaurants": 181
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17394,8 +17657,8 @@
     "languages": [],
     "inventory": {
       "swimming": 26,
-      "attractions": 531,
-      "restaurants": 1466
+      "attractions": 748,
+      "restaurants": 1315
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17432,11 +17695,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 90,
+      "events": 159,
       "trails": 168,
-      "swimming": 1,
-      "attractions": 234,
-      "restaurants": 41
+      "swimming": 5,
+      "attractions": 203,
+      "restaurants": 43
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17472,7 +17735,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 7,
+      "attractions": 9,
       "restaurants": 111
     },
     "enrichments": [],
@@ -17510,9 +17773,11 @@
     ],
     "languages": [],
     "inventory": {
-      "walkNodes": 122,
-      "cycleNodes": 153,
-      "attractions": 38,
+      "trails": 2,
+      "swimming": 24,
+      "walkNodes": 119,
+      "cycleNodes": 159,
+      "attractions": 64,
       "restaurants": 64
     },
     "enrichments": [],
@@ -17551,10 +17816,10 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "swimming": 122,
+      "swimming": 121,
       "districts": 23,
-      "attractions": 3312,
-      "restaurants": 2302
+      "attractions": 3385,
+      "restaurants": 2303
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17595,11 +17860,11 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 76,
-      "trails": 144,
-      "swimming": 7,
-      "attractions": 453,
-      "restaurants": 119
+      "events": 134,
+      "trails": 145,
+      "swimming": 8,
+      "attractions": 446,
+      "restaurants": 121
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17637,13 +17902,13 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 20,
-      "trails": 12,
+      "events": 19,
+      "trails": 14,
       "swimming": 31,
-      "walkNodes": 390,
-      "cycleNodes": 257,
+      "walkNodes": 378,
+      "cycleNodes": 210,
       "attractions": 77,
-      "restaurants": 73
+      "restaurants": 86
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17722,11 +17987,11 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 45,
-      "trails": 30,
-      "swimming": 3,
-      "attractions": 317,
-      "restaurants": 122
+      "events": 156,
+      "trails": 29,
+      "swimming": 5,
+      "attractions": 322,
+      "restaurants": 126
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17763,11 +18028,11 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 31,
+      "events": 34,
       "trails": 21,
-      "swimming": 35,
-      "attractions": 2871,
-      "restaurants": 2054
+      "swimming": 39,
+      "attractions": 2793,
+      "restaurants": 2609
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17809,12 +18074,12 @@
     "inventory": {
       "golf": 5,
       "events": 11,
-      "trails": 4,
+      "trails": 11,
       "swimming": 51,
       "walkNodes": 521,
-      "cycleNodes": 184,
-      "attractions": 202,
-      "restaurants": 212
+      "cycleNodes": 154,
+      "attractions": 285,
+      "restaurants": 281
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17852,7 +18117,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 1,
+      "attractions": 3,
       "restaurants": 19
     },
     "enrichments": [],
@@ -17900,12 +18165,12 @@
     "inventory": {
       "golf": 1,
       "events": 5,
-      "trails": 13,
+      "trails": 18,
       "swimming": 33,
-      "walkNodes": 466,
-      "cycleNodes": 189,
-      "attractions": 75,
-      "restaurants": 33
+      "walkNodes": 463,
+      "cycleNodes": 138,
+      "attractions": 83,
+      "restaurants": 50
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17979,9 +18244,11 @@
     ],
     "languages": [],
     "inventory": {
-      "trails": 7,
-      "attractions": 26,
-      "restaurants": 5
+      "events": 1,
+      "trails": 10,
+      "swimming": 22,
+      "attractions": 48,
+      "restaurants": 17
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -18019,7 +18286,7 @@
     ],
     "languages": [],
     "inventory": {
-      "attractions": 15,
+      "attractions": 16,
       "restaurants": 71
     },
     "enrichments": [],
@@ -18063,12 +18330,12 @@
     "languages": [],
     "inventory": {
       "events": 2,
-      "trails": 48,
-      "swimming": 17,
-      "walkNodes": 348,
-      "cycleNodes": 113,
-      "attractions": 102,
-      "restaurants": 15
+      "trails": 53,
+      "swimming": 35,
+      "walkNodes": 346,
+      "cycleNodes": 99,
+      "attractions": 323,
+      "restaurants": 57
     },
     "enrichments": [],
     "sampleQuestions": {},
