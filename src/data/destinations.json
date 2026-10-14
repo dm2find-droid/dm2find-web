@@ -126,6 +126,41 @@
     ]
   },
   {
+    "slug": "agen",
+    "name": {
+      "en": "Agen"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "Lot-et-Garonne",
+    "tenantId": "agen",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/agen",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://destination-agen.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      44.204573,
+      0.61654
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/schermafbeelding-2026-10-14-222114.png",
+    "brandColor": "#164590",
+    "calendarUrl": "https://destination-agen.com/evenements-agen/"
+  },
+  {
     "slug": "ain",
     "name": {
       "en": "Ain"
@@ -9289,6 +9324,41 @@
       35.0117,
       135.7683
     ]
+  },
+  {
+    "slug": "la-reunion",
+    "name": {
+      "en": "La Réunion"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": "La Réunion",
+    "tenantId": "lareunion",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/lareunion",
+    "provenance": "official",
+    "dataSource": "datatourisme",
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://en.reunion.fr/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      -20.8789,
+      55.4481
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/lareunion.jpg",
+    "brandColor": "#2952A0",
+    "calendarUrl": null
   },
   {
     "slug": "la-rochelle",
