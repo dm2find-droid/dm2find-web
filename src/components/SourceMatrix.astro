@@ -1,0 +1,104 @@
+---
+/**
+ * Data-source matrix for /platform: which data the concierge reads, per country.
+ * One row per country or region, one column per kind of data. The official open
+ * data covers every category; the other columns add to it.
+ *
+ * Edit src/data/source-matrix.json, not this file. Only list a source that is
+ * actually connected: an empty array renders "—", never a planned connector.
+ */
+import matrix from '../data/source-matrix.json';
+
+interface Props { title?: string; intro?: string }
+const {
+  title = 'Data sources by country',
+  intro = 'Every concierge starts from the official open tourism data of its country or region. That covers all categories: sights, events, restaurants, accommodation and routes. The other columns add specialist data on top.',
+} = Astro.props;
+
+type Row = Record<string, any>;
+const cols = matrix.columns;
+const rows = matrix.rows as Row[];
+---
+<section class="smx" aria-labelledby="smx-title">
+  <h2 id="smx-title" class="smx-title">{title}</h2>
+  <p class="smx-intro">{intro}</p>
+
+  <div class="smx-scroll" role="region" aria-label={title} tabindex="0">
+    <table class="smx-table">
+      <thead>
+        <tr>
+          <th scope="col" class="smx-country">Country / region</th>
+          {cols.map((c) => (
+            <th scope="col">
+              <span class="smx-col">{c.label}</span>
+              {c.note && <span class="smx-colnote">{c.note}</span>}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr>
+            <th scope="row" class="smx-country">
+              <span aria-hidden="true">{r.flag}</span> {r.country}
+            </th>
+            {cols.map((c) => {
+              const list: string[] = Array.isArray(r[c.id]) ? r[c.id] : [];
+              const note = c.id === 'open' ? r.openNote : null;
+              return list.length ? (
+                <td class={c.id === 'open' ? 'smx-open' : ''}>
+                  <span class="smx-check" aria-hidden="true">✓</span>
+                  <span class="smx-names">{list.join(', ')}{note && <span class="smx-scope"> ({note})</span>}</span>
+                </td>
+              ) : (
+                <td class="smx-empty"><span aria-hidden="true">—</span><span class="smx-sr">not connected</span></td>
+              );
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="smx-foot">
+    ✓ connected and in use · — not (yet) connected. Guides and awards appear as recognitions
+    (stars, toques) on the card. Map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>.
+  </p>
+</section>
+
+<style>
+  .smx { margin: 3rem 0; }
+  .smx-title { font-size: 1.5rem; font-weight: 700; line-height: 1.25; }
+  .smx-intro { margin-top: .5rem; max-width: 46rem; color: var(--color-ink-soft, #4b5563); }
+  .smx-scroll {
+    margin-top: 1.25rem; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--color-line, #e5e7eb); border-radius: .75rem;
+  }
+  .smx-scroll:focus-visible { outline: 2px solid var(--color-pine, #1f5c4a); outline-offset: 2px; }
+  .smx-table { width: 100%; min-width: 860px; border-collapse: collapse; font-size: .875rem; }
+  .smx-table th, .smx-table td {
+    padding: .65rem .75rem; text-align: left; vertical-align: top;
+    border-bottom: 1px solid var(--color-line, #e5e7eb);
+  }
+  .smx-table tbody tr:last-child th, .smx-table tbody tr:last-child td { border-bottom: 0; }
+  .smx-table thead th { background: var(--color-paper-2, #f6f7f5); font-weight: 600; white-space: nowrap; }
+  .smx-col { display: block; }
+  .smx-colnote { display: block; font-weight: 400; font-size: .75rem; color: var(--color-ink-soft, #6b7280); }
+  /* Eerste kolom blijft staan bij horizontaal scrollen (telefoon). */
+  .smx-country {
+    position: sticky; left: 0; z-index: 1; min-width: 11rem;
+    background: var(--color-paper, #fff); font-weight: 600; white-space: nowrap;
+  }
+  thead .smx-country { background: var(--color-paper-2, #f6f7f5); z-index: 2; }
+  @media (max-width: 640px) {
+    .smx-country { min-width: 8.5rem; white-space: normal; }
+    .smx-table { min-width: 760px; }
+  }
+  .smx-open { background: color-mix(in srgb, var(--color-pine, #1f5c4a) 7%, transparent); }
+  .smx-check { color: var(--color-pine, #1f5c4a); font-weight: 700; margin-right: .3rem; }
+  .smx-scope { color: var(--color-ink-soft, #6b7280); }
+  .smx-empty { color: var(--color-ink-soft, #9ca3af); }
+  .smx-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .smx-foot { margin-top: .75rem; font-size: .8125rem; color: var(--color-ink-soft, #6b7280); max-width: 52rem; }
+  .smx-foot a { text-decoration: underline; }
+</style>
