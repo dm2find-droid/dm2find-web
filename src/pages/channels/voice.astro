@@ -5,9 +5,10 @@ import { BOOKING_URL, SALES_EMAIL } from '../../data/site';
 import ChannelsNav from '../../components/ChannelsNav.astro';
 import sources from '../../data/sources.json';
 
-/* Live spraakdemo's.
+/* Live spraakdemo's. Volgorde (okt. 2026): eerst de volledig Europese keten,
+   daarna de internationale demo's op ElevenLabs (VS).
 
-   Wélke demo's er staan, komt uit destinations.json: elke bestemming met een
+   Wélke ElevenLabs-demo's er staan, komt uit destinations.json: elke bestemming met een
    voiceAgentId (= el_agent_id in de tenants-tabel) verschijnt hier vanzelf.
    Deze lijst voegt alleen toe wat de data niet weet:
    - FEATURED: de Franse demo's, bovenaan en in deze volgorde, met taalknoppen.
@@ -128,7 +129,7 @@ const groups = countries.map(c => ({
   items: demos.filter(d => d.country === c),
 }));
 
-/* De bronnenzin bovenaan, afgeleid uit wat de demo's werkelijk gebruiken. */
+/* De bronnenzin bij de ElevenLabs-demo's, afgeleid uit wat die demo's werkelijk gebruiken. */
 const feeds = [...new Set(demos.filter(d => d.provenance === 'official' && d.sourceName).map(d => d.sourceName as string))];
 const hasPublic = demos.some(d => d.provenance === 'preview');
 const sourceSentence = and([
@@ -150,28 +151,103 @@ const EU_CHAIN = [
 const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully European voice')}`;
 ---
 <Base title="Voice demos" angle="dmo"
-      description={`Talk to a destination. Live voice demos for ${metaNames}, right in your browser.`}>
+      description={`Talk to a destination. A fully European voice assistant, plus live demos on ElevenLabs for ${metaNames}, right in your browser.`}>
   <section class="mx-auto max-w-6xl px-5 pt-14 pb-8">
     <ChannelsNav />
     <p class="mb-3 text-xs font-bold tracking-widest text-(--color-terra) uppercase">Voice · live demo</p>
     <h1 class="h-display">Talk to a destination.</h1>
     <p class="lede mt-5">
-      Pick a destination and just speak, in your own language. It answers out loud, in that same
-      language, from the open tourism data published for that destination: events, opening hours,
-      restaurants, trails.
+      Ask out loud and hear the answer, from the open tourism data published for that destination:
+      events, opening hours, restaurants, trails. Start with our fully European voice stack, or try the
+      international one for more destinations and languages.
     </p>
     <p class="mt-3 max-w-[60ch] text-sm text-(--color-ink-3)">
-      These are demos on live data from {sourceSentence}; each card shows which. A destination's name
-      and logo show which place the assistant covers; they do not mean the tourist office is a customer.
+      A destination's name and logo show which place the assistant covers; they do not mean the tourist
+      office is a customer.
     </p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="#eu-voice" class="rounded-full bg-(--color-slate2) px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110">
+        Fully European ↓
+      </a>
+      <a href="#demos" class="rounded-full border border-(--color-line) bg-white px-5 py-2.5 text-sm font-semibold text-(--color-ink) transition hover:border-(--color-ink-3)">
+        International demos ↓
+      </a>
+    </div>
     <ul class="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-(--color-ink-2)">
-      <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">Speaks (almost) any language</li>
+      <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">European or international voice stack</li>
       <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">In the browser, no app</li>
       <li class="rounded-full border border-(--color-line) bg-white px-3 py-1">Microphone only after you tap</li>
     </ul>
   </section>
 
-  <section class="mx-auto max-w-6xl px-5 pb-14">
+  <section id="eu-voice" class="scroll-mt-20 border-t border-(--color-line-2) py-14">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 lg:grid-cols-[1fr_1.35fr] lg:items-start">
+      <div>
+        <p class="mb-3 text-xs font-bold tracking-widest text-(--color-slate2) uppercase">Fully European · EU sovereignty</p>
+        <h2 class="h-section">The whole conversation,<br />inside Europe.</h2>
+        <p class="mt-4 text-(--color-ink-2)">
+          Our European voice stack keeps every step of the conversation in the EU: European speech
+          technology for listening and speaking, Mistral for the answers, and our own servers for the data
+          and the audio. No US cloud anywhere in the chain.
+        </p>
+        <p class="mt-3 text-(--color-ink-2)">
+          For tourist offices that want visitor conversations to stay under European rules, this is the
+          stack to start from.
+        </p>
+        <p class="mt-3 text-sm text-(--color-ink-3)">Try it live for Strasbourg, on open data from DATAtourisme. French today, more languages on request.</p>
+
+        <div id="eu" class="mt-6 flex items-center gap-5 rounded-2xl border border-(--color-line) bg-white p-5">
+          <button id="eu-orb" type="button" data-state="idle" aria-label="Start the European voice demo"
+                  class="vc-orb vc-orb-eu grid h-24 w-24 shrink-0 place-items-center rounded-full text-white">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="3" width="6" height="11" rx="3" />
+              <path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7" />
+            </svg>
+          </button>
+          <div class="min-w-0 text-left">
+            <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Live · Strasbourg</p>
+            <p id="eu-status" class="mt-1 min-h-6 text-base font-semibold" aria-live="polite">Tap to talk</p>
+            <button id="eu-end" type="button" hidden
+                    class="mt-2 rounded-full border border-(--color-slate2) px-4 py-1.5 text-sm font-semibold text-(--color-slate2) transition hover:bg-(--color-slate2-l)">
+              End call
+            </button>
+          </div>
+        </div>
+
+        <a href={euMail} class="mt-5 inline-flex text-sm font-semibold text-(--color-slate2) underline underline-offset-2 hover:brightness-110">
+          Talk to us about the European option
+        </a>
+      </div>
+      <ol class="grid gap-3 sm:grid-cols-2">
+        {EU_CHAIN.map((c, i) => (
+          <li class="rounded-2xl border border-(--color-line) bg-white p-5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs font-bold tracking-wider text-(--color-ink-3) uppercase">{i + 1} · {c.k}</span>
+              <span class="rounded-full bg-(--color-pine-l) px-2.5 py-0.5 text-[11px] font-semibold text-(--color-pine)">EU</span>
+            </div>
+            <p class="mt-2 font-semibold text-(--color-ink)">{c.what}</p>
+            <p class="mt-1 text-sm text-(--color-ink-2)">{c.who} · {c.where}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section id="demos" class="scroll-mt-20 border-t border-(--color-line-2) py-14">
+    <div class="mx-auto max-w-6xl px-5">
+    <div class="mb-8 max-w-[68ch]">
+      <p class="mb-3 text-xs font-bold tracking-widest text-(--color-terra) uppercase">International · ElevenLabs (US)</p>
+      <h2 class="h-section">More destinations, almost any language.</h2>
+      <p class="mt-4 text-(--color-ink-2)">
+        These demos run on ElevenLabs, a US provider. In return they cover more destinations, and they
+        understand and answer in almost any language, switching when you do.
+      </p>
+      <p class="mt-3 text-sm text-(--color-ink-3)">
+        Live data from {sourceSentence}; each card shows which.
+        Need every step in Europe? <a href="#eu-voice" class="font-semibold text-(--color-slate2) underline underline-offset-2">Use the European version ↑</a>
+      </p>
+    </div>
     <div class="grid items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
       <div>
         {groups.length > 2 && (
@@ -185,7 +261,7 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
         )}
         {groups.map(g => (
           <div id={g.id} class="mb-8 scroll-mt-24 last:mb-0">
-            <h2 class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase" style="font-family:var(--font-sans)">{g.title}</h2>
+            <h3 class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase" style="font-family:var(--font-sans)">{g.title}</h3>
             <div class="grid gap-3 sm:grid-cols-2">
               {g.items.map(d => (
                 <button type="button" data-key={d.slug} aria-pressed={d.slug === first.slug ? 'true' : 'false'}
@@ -218,7 +294,7 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
 
       <div id="vc" class="scroll-mt-20 rounded-2xl border border-(--color-line) bg-white p-6 text-center lg:sticky lg:top-24">
         <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">You are talking to</p>
-        <h2 id="vc-name" class="h-section mt-1">{first.name}</h2>
+        <h3 id="vc-name" class="h-section mt-1">{first.name}</h3>
         <p id="vc-level" class="mt-1 text-sm text-(--color-ink-3)">{first.level} · {first.country}</p>
 
         {/* Geldt voor álle agents: ze herkennen de taal van de spreker en wisselen mee. */}
@@ -263,65 +339,6 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
         </a>
       </div>
     </div>
-
-    <div class="mt-8 flex flex-col gap-4 rounded-2xl border border-(--color-line) bg-(--color-paper-2) p-5 text-sm text-(--color-ink-2) sm:flex-row sm:items-center sm:justify-between">
-      <p>
-        <b class="text-(--color-ink)">These demos run on ElevenLabs (US).</b>{' '}
-        A fully European voice version, without ElevenLabs and without a US cloud, is live below.
-      </p>
-      <a href="#eu-voice" class="shrink-0 rounded-full border border-(--color-slate2) px-4 py-2 text-center font-semibold text-(--color-slate2) transition hover:bg-(--color-slate2-l)">
-        Try the European version ↓
-      </a>
-    </div>
-  </section>
-
-  <section id="eu-voice" class="scroll-mt-20 border-t border-(--color-line-2) py-14">
-    <div class="mx-auto grid max-w-6xl gap-8 px-5 lg:grid-cols-[1fr_1.35fr] lg:items-start">
-      <div>
-        <p class="mb-3 text-xs font-bold tracking-widest text-(--color-slate2) uppercase">The European option</p>
-        <h2 class="h-section">The same conversation,<br />entirely in Europe.</h2>
-        <p class="mt-4 text-(--color-ink-2)">
-          For destinations that choose the European option there is a second voice stack: no ElevenLabs,
-          no US cloud. European speech technology for listening and speaking, Mistral for the answers,
-          and every step hosted in the EU.
-        </p>
-        <p class="mt-3 text-sm text-(--color-ink-3)">Try it live for Strasbourg, on open data from DATAtourisme. French today, more languages on request.</p>
-
-        <div id="eu" class="mt-6 flex items-center gap-5 rounded-2xl border border-(--color-line) bg-white p-5">
-          <button id="eu-orb" type="button" data-state="idle" aria-label="Start the European voice demo"
-                  class="vc-orb vc-orb-eu grid h-24 w-24 shrink-0 place-items-center rounded-full text-white">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8"
-                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="9" y="3" width="6" height="11" rx="3" />
-              <path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7" />
-            </svg>
-          </button>
-          <div class="min-w-0 text-left">
-            <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Live · Strasbourg</p>
-            <p id="eu-status" class="mt-1 min-h-6 text-base font-semibold" aria-live="polite">Tap to talk</p>
-            <button id="eu-end" type="button" hidden
-                    class="mt-2 rounded-full border border-(--color-slate2) px-4 py-1.5 text-sm font-semibold text-(--color-slate2) transition hover:bg-(--color-slate2-l)">
-              End call
-            </button>
-          </div>
-        </div>
-
-        <a href={euMail} class="mt-5 inline-flex text-sm font-semibold text-(--color-slate2) underline underline-offset-2 hover:brightness-110">
-          Talk to us about the European option
-        </a>
-      </div>
-      <ol class="grid gap-3 sm:grid-cols-2">
-        {EU_CHAIN.map((c, i) => (
-          <li class="rounded-2xl border border-(--color-line) bg-white p-5">
-            <div class="flex items-center justify-between gap-2">
-              <span class="text-xs font-bold tracking-wider text-(--color-ink-3) uppercase">{i + 1} · {c.k}</span>
-              <span class="rounded-full bg-(--color-pine-l) px-2.5 py-0.5 text-[11px] font-semibold text-(--color-pine)">EU</span>
-            </div>
-            <p class="mt-2 font-semibold text-(--color-ink)">{c.what}</p>
-            <p class="mt-1 text-sm text-(--color-ink-2)">{c.who} · {c.where}</p>
-          </li>
-        ))}
-      </ol>
     </div>
   </section>
 
@@ -330,8 +347,9 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
       <div>
         <h2 class="h-section">Voice for your destination</h2>
         <p class="mt-3 text-(--color-ink-2)">
-          The same assistant as your webchat, with the same data and the same answers, now spoken. From a
-          single city to a whole region, in the browser, on the phone or through WhatsApp.
+          The same assistant as your webchat, with the same data and the same answers, now spoken. Fully
+          European or international, from a single city to a whole region, in the browser, on the phone or
+          through WhatsApp.
         </p>
       </div>
       <div class="flex flex-wrap gap-3 lg:justify-end">
