@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import EuBadges from '../components/EuBadges.astro';
+import SourceMatrix from '../components/SourceMatrix.astro';
 
 const sources = (await getCollection('sources')).map(e => e.data);
 const dests   = (await getCollection('destinations')).map(e => e.data);
@@ -93,6 +94,10 @@ const chain = [
       </div>
     </div>
   </section>
+
+  <div class="mx-auto max-w-6xl px-5">
+    <SourceMatrix />
+  </div>
 
   <section class="mx-auto max-w-6xl px-5 py-14">
     <div class="grid gap-10 lg:grid-cols-2">
