@@ -138,12 +138,14 @@ const sourceSentence = and([
 const names = demos.map(d => d.name);
 const metaNames = names.length > 7 ? `${names.slice(0, 6).join(', ')} and more` : and(names);
 /* De volledig Europese spraakketen. Alleen wat echt draait, met waar het draait —
-   dezelfde regel als de keten op /platform. */
+   dezelfde regel als de keten op /platform. Gradium alleen als EU-endpoint
+   (eu.api.gradium.ai) in de worker staat; zie de handleiding. */
 const EU_CHAIN = [
-  { k: 'Speech to text',   what: 'Whisper (small), an open model',             who: 'Scaleway',                 where: 'Amsterdam, NL' },
+  { k: 'Speech to text',   what: 'Gradium speech recognition',                 who: 'Gradium',                  where: 'EU endpoint' },
   { k: 'Language model',   what: 'Mistral Small 3.2',                          who: 'Scaleway',                 where: 'Paris, FR' },
   { k: 'Destination data', what: "Our search over the destination's own data", who: 'Our own servers, Hetzner', where: 'Germany' },
-  { k: 'Text to speech',   what: 'Kokoro, an open model',                      who: 'Scaleway',                 where: 'Amsterdam, NL' },
+  { k: 'Text to speech',   what: 'Gradium voice synthesis',                    who: 'Gradium',                  where: 'EU endpoint' },
+  { k: 'Real-time audio',  what: 'LiveKit, open source WebRTC',                who: 'Our own servers, Hetzner', where: 'Germany' },
 ];
 const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully European voice')}`;
 ---
@@ -265,10 +267,10 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
     <div class="mt-8 flex flex-col gap-4 rounded-2xl border border-(--color-line) bg-(--color-paper-2) p-5 text-sm text-(--color-ink-2) sm:flex-row sm:items-center sm:justify-between">
       <p>
         <b class="text-(--color-ink)">These demos run on ElevenLabs (US).</b>{' '}
-        A fully European voice version, without ElevenLabs and without a US cloud, is also available.
+        A fully European voice version, without ElevenLabs and without a US cloud, is live below.
       </p>
       <a href="#eu-voice" class="shrink-0 rounded-full border border-(--color-slate2) px-4 py-2 text-center font-semibold text-(--color-slate2) transition hover:bg-(--color-slate2-l)">
-        See the European version ↓
+        Try the European version ↓
       </a>
     </div>
   </section>
@@ -280,12 +282,32 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
         <h2 class="h-section">The same conversation,<br />entirely in Europe.</h2>
         <p class="mt-4 text-(--color-ink-2)">
           For destinations that choose the European option there is a second voice stack: no ElevenLabs,
-          no US cloud. Open models for listening and speaking, Mistral for the answers, and every step
-          hosted in the EU.
+          no US cloud. European speech technology for listening and speaking, Mistral for the answers,
+          and every step hosted in the EU.
         </p>
-        <p class="mt-3 text-sm text-(--color-ink-3)">French and English today. We demo it live for Strasbourg, on open data from DATAtourisme.</p>
-        <a href={euMail} class="mt-6 inline-flex rounded-full bg-(--color-slate2) px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110">
-          Ask for the European voice demo
+        <p class="mt-3 text-sm text-(--color-ink-3)">Try it live for Strasbourg, on open data from DATAtourisme. French today, more languages on request.</p>
+
+        <div id="eu" class="mt-6 flex items-center gap-5 rounded-2xl border border-(--color-line) bg-white p-5">
+          <button id="eu-orb" type="button" data-state="idle" aria-label="Start the European voice demo"
+                  class="vc-orb vc-orb-eu grid h-24 w-24 shrink-0 place-items-center rounded-full text-white">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="3" width="6" height="11" rx="3" />
+              <path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7" />
+            </svg>
+          </button>
+          <div class="min-w-0 text-left">
+            <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Live · Strasbourg</p>
+            <p id="eu-status" class="mt-1 min-h-6 text-base font-semibold" aria-live="polite">Tap to talk</p>
+            <button id="eu-end" type="button" hidden
+                    class="mt-2 rounded-full border border-(--color-slate2) px-4 py-1.5 text-sm font-semibold text-(--color-slate2) transition hover:bg-(--color-slate2-l)">
+              End call
+            </button>
+          </div>
+        </div>
+
+        <a href={euMail} class="mt-5 inline-flex text-sm font-semibold text-(--color-slate2) underline underline-offset-2 hover:brightness-110">
+          Talk to us about the European option
         </a>
       </div>
       <ol class="grid gap-3 sm:grid-cols-2">
@@ -340,6 +362,7 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
     transition: transform .2s ease, background-color .25s ease;
     cursor: pointer;
   }
+  .vc-orb-eu { background: var(--color-slate2); }
   .vc-orb:active { transform: scale(.97); }
   .vc-orb[data-state='idle']       { animation: vc-invite 2.6s ease-in-out infinite; }
   .vc-orb[data-state='connecting'] { opacity: .75; animation: vc-pulse 1.2s ease-in-out infinite; cursor: progress; }
@@ -518,4 +541,137 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
 
   markPick();
   markLang();
+</script>
+
+<script is:inline type="module">
+  /* De Europese demo (LiveKit + Gradium + Mistral), live voor Strasbourg.
+     Los van het ElevenLabs-script hierboven: een fout hier raakt de andere demo's niet.
+     De LiveKit-client staat als eigen bestand op deze site (/vendor/), dus er wordt
+     niets van een externe CDN geladen; hij wordt pas opgehaald bij de eerste tik.
+     Het token komt van de chat-app (alleen tenants met voice_provider = livekit). */
+  const LK_SDK = '/vendor/livekit-client-2.23.0.esm.mjs';
+  const TOKEN_API = 'https://chat.dm2find.ai/api/voice-token';
+  const TENANT = 'strasbourg-eu';
+  const MAX_MS = 5 * 60 * 1000;     // vangnet tegen vergeten sessies (kosten)
+  const JOIN_MS = 20 * 1000;        // de agent moet binnen 20 s aansluiten
+
+  const orb = document.getElementById('eu-orb');
+  const statusEl = document.getElementById('eu-status');
+  const endBtn = document.getElementById('eu-end');
+  if (orb && statusEl && endBtn) {
+    let room = null, gen = 0, joinTimer = null, maxTimer = null;
+    const audioEls = new Set();
+    const TEXT = { idle: 'Tap to talk', connecting: 'Connecting…', listening: 'Listening…', speaking: 'Speaking…' };
+
+    function setState(state, text) {
+      orb.dataset.state = state;
+      statusEl.textContent = text ?? TEXT[state] ?? '';
+      const inCall = state === 'connecting' || state === 'listening' || state === 'speaking';
+      endBtn.hidden = !inCall;
+      orb.setAttribute('aria-label', inCall ? 'Conversation in progress' : 'Start the European voice demo');
+    }
+
+    function teardown() {
+      clearTimeout(joinTimer); clearTimeout(maxTimer);
+      joinTimer = null; maxTimer = null;
+      audioEls.forEach(a => a.remove());
+      audioEls.clear();
+      const r = room; room = null;
+      if (r) { r.removeAllListeners(); try { r.disconnect(); } catch {} }
+    }
+
+    async function end(text) {
+      gen++;
+      teardown();
+      setState('idle', text);
+    }
+
+    async function getToken() {
+      const r = await fetch(TOKEN_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tenant: TENANT, ui: 'voice' }),
+        cache: 'no-store',
+      });
+      if (!r.ok) throw new Error('token_' + r.status);
+      const d = await r.json();
+      if (!d?.token || !d?.url) throw new Error('no_token');
+      return d;
+    }
+
+    async function start() {
+      if (room || orb.dataset.state === 'connecting') return;
+      const my = ++gen;
+      setState('connecting');
+      try {
+        const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mic.getTracks().forEach(t => t.stop());   // alleen toestemming vragen; de SDK opent zijn eigen stream
+      } catch {
+        if (my === gen) setState('error', 'Microphone blocked. Allow it in your browser, then tap again.');
+        return;
+      }
+      try {
+        const [lk, tok] = await Promise.all([import(LK_SDK), getToken()]);
+        if (my !== gen) return;
+        const { Room, RoomEvent, Track, ParticipantKind } = lk;
+        const r = new Room({ audioCaptureDefaults: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
+        room = r;
+        let agentSeen = false;
+        const live = () => {
+          agentSeen = true;
+          clearTimeout(joinTimer); joinTimer = null;
+          if (my === gen) setState('listening');
+        };
+        r.on(RoomEvent.TrackSubscribed, (track) => {
+          if (track.kind !== Track.Kind.Audio) return;
+          const a = track.attach();
+          a.style.display = 'none';
+          document.body.appendChild(a);
+          audioEls.add(a);
+        });
+        r.on(RoomEvent.TrackUnsubscribed, (track) => {
+          track.detach().forEach(a => { audioEls.delete(a); a.remove(); });
+        });
+        r.on(RoomEvent.ParticipantConnected, (p) => { if (p.kind === ParticipantKind.AGENT) live(); });
+        r.on(RoomEvent.ActiveSpeakersChanged, (speakers) => {
+          if (my !== gen || !agentSeen) return;
+          setState(speakers.some(s => s.identity !== r.localParticipant.identity) ? 'speaking' : 'listening');
+        });
+        r.on(RoomEvent.Disconnected, () => {
+          if (my !== gen) return;
+          teardown();
+          setState('idle');
+        });
+
+        await r.connect(tok.url, tok.token);
+        if (my !== gen) return;                   // end() ruimde al op
+        await r.startAudio().catch(() => {});     // afspelen is ontgrendeld door de tik die het gesprek startte
+        await r.localParticipant.setMicrophoneEnabled(true);
+        if (my !== gen) return;
+
+        if ([...r.remoteParticipants.values()].some(p => p.kind === ParticipantKind.AGENT)) {
+          live();
+        } else {
+          joinTimer = setTimeout(() => {
+            if (my !== gen || agentSeen) return;
+            gen++; teardown();
+            setState('error', 'The European demo is not available right now. Please try again later.');
+          }, JOIN_MS);
+        }
+        maxTimer = setTimeout(() => {
+          if (my === gen) end('Call ended after 5 minutes. Tap to talk again.');
+        }, MAX_MS);
+      } catch (e) {
+        console.error(e);
+        if (my !== gen) return;
+        gen++; teardown();
+        setState('error', 'Could not connect. Tap to try again.');
+      }
+    }
+
+    orb.addEventListener('click', () => { if (!room) start(); });
+    endBtn.addEventListener('click', () => end());
+    window.addEventListener('pagehide', () => { try { room?.disconnect(); } catch {} });
+    setState('idle');
+  }
 </script>
