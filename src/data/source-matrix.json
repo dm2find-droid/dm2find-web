@@ -68,7 +68,7 @@
         "Gault&Millau"
       ],
       "charging": [
-        "RDW DOT-platform"
+        "NDW (DOT-NL)"
       ],
       "bathing": [
         "EU bathing water"
@@ -114,7 +114,9 @@
       "guides": [
         "Michelin"
       ],
-      "charging": [],
+      "charging": [
+        "Bundesnetzagentur"
+      ],
       "bathing": [
         "EU bathing water"
       ],
@@ -190,7 +192,9 @@
       "guides": [
         "Michelin"
       ],
-      "charging": [],
+      "charging": [
+        "Fintraffic (Digitraffic)"
+      ],
       "bathing": [
         "EU bathing water"
       ],
