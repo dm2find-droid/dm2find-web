@@ -36,7 +36,7 @@ const chain = [
   { k: 'Web search',     who: 'Mistral',                  where: 'Paris',           eu: true },
   { k: 'Event emails',   who: 'Scaleway',                 where: 'Paris',           eu: true },
   { k: 'Tourism data',   who: andList(euSources),         where: 'EU open data',    eu: true },
-  { k: 'Voice',          who: 'Gradium speech recognition and voice, LiveKit on our own servers — no ElevenLabs', where: 'EU endpoint, Germany — on request', eu: true },
+  { k: 'Voice',          who: 'Gradium speech recognition and voice, LiveKit on our own servers — no ElevenLabs', where: 'EU endpoint, Germany — default for EU destinations', eu: true },
 ];
 ---
 <Base title="For national and regional tourism organisations" angle="nto" concierge
@@ -145,22 +145,24 @@ const chain = [
   <section id="sovereignty" class="border-t border-(--color-line-2) py-14">
     <div class="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[1fr_1.1fr]">
       <div>
-        <p class="mb-3 text-xs font-bold tracking-widest text-(--color-slate2) uppercase">The European option</p>
+        <p class="mb-3 text-xs font-bold tracking-widest text-(--color-slate2) uppercase">EU-first</p>
         <h2 class="h-section">European destination.<br />European AI.</h2>
         <p class="lede mt-4">
-          An option per destination — and when it is on, it is complete. From the visitor's question to
-          the answer, no American AI service handles it: not the model, not the web search, not the email.
+          For every destination in the EU this is the default, and it is complete. From the visitor's
+          question to the answer, no American AI service handles it: not the model, not the web search,
+          not the email, not the voice.
         </p>
         <p class="mt-4 text-sm text-(--color-ink-2)">
-          Every destination already runs on our own servers in Germany. What the option changes is
-          everything the question touches on its way to an answer. Choose it and every link in the list
-          stays in Europe — voice included, on request.
+          Every destination already runs on our own servers in Germany. For EU destinations, everything
+          the question touches on its way to an answer stays in Europe as well — every link in the list,
+          voice included. The international edition, with US AI and extras such as photo recognition,
+          is available on request.
         </p>
         {/* Nieuw venster, expliciet: linkAttrs() en het vangnet in Base houden
             chat.dm2find.ai bewust in hetzelfde tabblad, maar hier moet de
             lezer na de demo terug kunnen naar de uitleg over de keten. */}
         <a href={EU_DEMO} target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 rounded-full bg-(--color-slate2) px-5 py-2.5 text-sm font-semibold text-white">
-          Try it on Strasbourg, with live DATAtourisme data →
+          Try it on Strasbourg, with live DATAtourisme data — or on any EU destination →
         </a>
       </div>
       <ol class="divide-y divide-(--color-line-2) overflow-hidden rounded-2xl border border-(--color-line) bg-white">
@@ -183,7 +185,7 @@ const chain = [
 
   <section class="border-t border-(--color-line-2) bg-(--color-paper-2) py-12">
     <div class="mx-auto grid max-w-6xl gap-5 px-5 sm:grid-cols-3">
-      {[['Sovereignty','Built in the Netherlands, hosted on our own servers in Germany. A fully European chain — model, search and email — is one switch per destination. Voice can run fully in Europe too, on request, in English, French, Spanish, German and Portuguese.'],
+      {[['Sovereignty','Built in the Netherlands, hosted on our own servers in Germany. For EU destinations the fully European chain — model, search, email and voice — is the default, with voice in English, French, Spanish, German and Portuguese. The international edition is available on request.'],
         ['Non-exclusive','We sit beside your platform, not in front of it. Your data stays yours; attribution travels with it, per field.'],
         ['Rollout','Pilot three destinations, then extend nationally with per-DMO branding on one shared layer.']
       ].map(([t,b]) => (
