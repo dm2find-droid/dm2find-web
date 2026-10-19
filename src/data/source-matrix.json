@@ -1,0 +1,256 @@
+{
+  "columns": [
+    {
+      "id": "open",
+      "label": "Official open data",
+      "note": "All categories"
+    },
+    {
+      "id": "guides",
+      "label": "Guides & awards",
+      "note": "Restaurants, hotels"
+    },
+    {
+      "id": "charging",
+      "label": "EV charging",
+      "note": "Charge points"
+    },
+    {
+      "id": "bathing",
+      "label": "Bathing water",
+      "note": "Quality per site"
+    },
+    {
+      "id": "routes",
+      "label": "Routes",
+      "note": "Walking, cycling"
+    },
+    {
+      "id": "map",
+      "label": "Map",
+      "note": "Base map"
+    }
+  ],
+  "rows": [
+    {
+      "country": "France",
+      "flag": "🇫🇷",
+      "eu": true,
+      "open": [
+        "DATAtourisme"
+      ],
+      "guides": [
+        "Michelin",
+        "Gault&Millau"
+      ],
+      "charging": [
+        "IRVE"
+      ],
+      "bathing": [
+        "EU bathing water"
+      ],
+      "routes": [
+        "OpenStreetMap"
+      ],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "Netherlands",
+      "flag": "🇳🇱",
+      "eu": true,
+      "open": [
+        "Touripedia"
+      ],
+      "guides": [
+        "Michelin",
+        "Gault&Millau"
+      ],
+      "charging": [
+        "RDW DOT-platform"
+      ],
+      "bathing": [
+        "EU bathing water"
+      ],
+      "routes": [
+        "Wandelnet",
+        "OpenStreetMap"
+      ],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "Belgium",
+      "flag": "🇧🇪",
+      "eu": true,
+      "open": [
+        "Open Data Flanders"
+      ],
+      "openNote": "Flanders, accommodation only",
+      "guides": [
+        "Michelin",
+        "Gault&Millau"
+      ],
+      "charging": [],
+      "bathing": [
+        "EU bathing water"
+      ],
+      "routes": [
+        "OpenStreetMap"
+      ],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "eu": true,
+      "open": [
+        "Deutsche Zentrale für Tourismus"
+      ],
+      "guides": [
+        "Michelin"
+      ],
+      "charging": [],
+      "bathing": [
+        "EU bathing water"
+      ],
+      "routes": [],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "Austria",
+      "flag": "🇦🇹",
+      "eu": true,
+      "open": [
+        "Österreich Werbung"
+      ],
+      "guides": [
+        "Michelin"
+      ],
+      "charging": [],
+      "bathing": [
+        "EU bathing water"
+      ],
+      "routes": [],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "Italy — Emilia-Romagna",
+      "flag": "🇮🇹",
+      "eu": true,
+      "open": [
+        "Emilia-Romagna Tourism"
+      ],
+      "guides": [
+        "Michelin"
+      ],
+      "charging": [],
+      "bathing": [
+        "EU bathing water"
+      ],
+      "routes": [],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "Italy — South Tyrol",
+      "flag": "🇮🇹",
+      "eu": true,
+      "open": [
+        "Open Data Hub Südtirol"
+      ],
+      "guides": [
+        "Michelin"
+      ],
+      "charging": [],
+      "bathing": [
+        "EU bathing water"
+      ],
+      "routes": [],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "Finland",
+      "flag": "🇫🇮",
+      "eu": true,
+      "open": [
+        "Visit Finland"
+      ],
+      "guides": [
+        "Michelin"
+      ],
+      "charging": [],
+      "bathing": [
+        "EU bathing water"
+      ],
+      "routes": [],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "Sweden",
+      "flag": "🇸🇪",
+      "eu": true,
+      "open": [
+        "Visit Sweden"
+      ],
+      "guides": [
+        "Michelin"
+      ],
+      "charging": [],
+      "bathing": [
+        "EU bathing water"
+      ],
+      "routes": [],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "South Korea",
+      "flag": "🇰🇷",
+      "eu": false,
+      "open": [
+        "Korea Tourism Organization"
+      ],
+      "guides": [
+        "Michelin"
+      ],
+      "charging": [],
+      "bathing": [],
+      "routes": [],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
+      "country": "Canada — Québec",
+      "flag": "🇨🇦",
+      "eu": false,
+      "open": [
+        "Données Québec"
+      ],
+      "guides": [
+        "Michelin"
+      ],
+      "charging": [],
+      "bathing": [],
+      "routes": [],
+      "map": [
+        "OpenStreetMap"
+      ]
+    }
+  ]
+}

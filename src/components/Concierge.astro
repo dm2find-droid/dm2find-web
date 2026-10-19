@@ -1,45 +1,206 @@
 ---
 /**
- * ElevenLabs voice agent — answers DMOs' spoken questions about DM2find itself.
+ * Voice agent that answers DMOs' spoken questions about DM2find itself.
  * This is NOT the product demo: the destination concierge is our own webchat,
  * embedded on every /destinations/* page. Keep the two apart.
  *
- * Loaded lazily, on click only. Nothing from unpkg.com or elevenlabs.io is
- * requested until the visitor asks for it. Two reasons that matters here:
+ * Runs on the European stack: LiveKit (our own servers, Germany), Gradium speech
+ * (EU endpoint) and a Mistral model (Scaleway, Paris). The tenant row `dm2find-platform`
+ * in Supabase holds the prompt, the first message and the voice. No ElevenLabs.
+ *
+ * Loaded lazily, on click only. Nothing is requested until the visitor asks for it
+ * (the LiveKit client comes from /vendor/ on this site, the token from chat.dm2find.ai).
+ * Two reasons that matters here:
  *  1. /platform/sovereignty claims an EU-hosted stack with no third-party
- *     tracking. A US script firing on page load would quietly make that untrue.
- *  2. It is a microphone agent — the visitor should opt in before it exists.
+ *     tracking. A script firing on page load would quietly make that harder to defend.
+ *  2. It is a microphone agent: the visitor should opt in before it exists.
  */
-interface Props { agentId?: string }
-const { agentId = 'agent_9901kxekjtptffn865av645chsd0' } = Astro.props;
+interface Props { tenant?: string; agentId?: string /* legacy ElevenLabs prop, ignored */ }
+const { tenant = 'dm2find-platform' } = Astro.props;
 ---
-<div id="el-wrap" class="fixed right-5 bottom-5 z-40" data-agent={agentId}>
-  <button id="el-open"
-    class="flex items-center gap-2.5 rounded-full bg-(--color-terra) px-5 py-3.5 font-semibold text-white shadow-lg transition hover:brightness-110">
+<div id="pv-wrap" class="fixed right-5 bottom-5 z-40 flex max-w-[calc(100vw-2.5rem)] flex-col items-end" data-tenant={tenant}>
+  <div id="pv-panel" hidden class="mb-3 w-[19rem] max-w-full rounded-2xl border border-(--color-line) bg-white p-4 shadow-lg">
+    <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">DM2find platform assistant</p>
+    <p id="pv-status" class="mt-1 min-h-6 text-base font-semibold" aria-live="polite"></p>
+    <p id="pv-caption" class="mt-2 max-h-28 overflow-y-auto text-sm leading-snug text-(--color-ink-2)" aria-live="off"></p>
+    <button id="pv-end" type="button" hidden
+            class="mt-3 rounded-full border border-(--color-slate2) px-4 py-1.5 text-sm font-semibold text-(--color-slate2) transition hover:bg-(--color-slate2-l)">
+      End call
+    </button>
+  </div>
+  <button id="pv-open" type="button" class="flex items-center gap-2.5 rounded-full bg-(--color-terra) px-5 py-3.5 font-semibold text-white shadow-lg transition hover:brightness-110">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="1.8"/>
-      <path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="1.8"></rect>
+      <path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
     </svg>
     Ask about the platform
   </button>
-  <p id="el-note" class="mt-2 max-w-[13rem] text-right text-[11px] leading-snug text-(--color-ink-3)">
-    Voice agent for questions about DM2find. Runs on ElevenLabs (US); loads only when you tap, and will ask for your microphone.
-  </p>
+  <p id="pv-note" class="mt-2 max-w-[13rem] text-right text-[11px] leading-snug text-(--color-ink-3)">Voice agent for questions about DM2find. Runs on European infrastructure (LiveKit in Germany, Gradium voice, Mistral model in Paris). Loads only when you tap, and will ask for your microphone.</p>
 </div>
+<script is:inline type="module">
+  /* Platform Q&A voice agent, fully European. Same mechanics as the Strasbourg demo on /channels/voice:
+     LiveKit client served from this site (/vendor/), token from the chat app, nothing external loads before the first tap. */
+  const LK_SDK = '/vendor/livekit-client-2.23.0.esm.mjs';
+  const TOKEN_API = 'https://chat.dm2find.ai/api/voice-token';
+  const MAX_MS = 10 * 60 * 1000;     // safety net against forgotten sessions (cost)
+  const JOIN_MS = 20 * 1000;         // the agent must join within 20 s
+  const TOPIC = 'lk.transcription';
 
-<script>
-  const wrap = document.getElementById('el-wrap');
-  const btn  = document.getElementById('el-open');
-  btn?.addEventListener('click', () => {
-    const id = wrap!.dataset.agent!;
-    btn.remove();
-    document.getElementById('el-note')?.remove();
-    const el = document.createElement('elevenlabs-convai');
-    el.setAttribute('agent-id', id);
-    wrap!.appendChild(el);
-    const s = document.createElement('script');
-    s.src = 'https://unpkg.com/@elevenlabs/convai-widget-embed';
-    s.async = true;
-    document.body.appendChild(s);
-  }, { once: true });
+  const wrap = document.getElementById('pv-wrap');
+  const openBtn = document.getElementById('pv-open');
+  const panel = document.getElementById('pv-panel');
+  const statusEl = document.getElementById('pv-status');
+  const capEl = document.getElementById('pv-caption');
+  const endBtn = document.getElementById('pv-end');
+  const noteEl = document.getElementById('pv-note');
+  if (wrap && openBtn && panel && statusEl && capEl && endBtn) {
+    const TENANT = wrap.dataset.tenant || 'dm2find-platform';
+    let room = null, gen = 0, joinTimer = null, maxTimer = null;
+    const audioEls = new Set();
+    const seen = new Set();
+    const TEXT = { connecting: 'Connecting…', listening: 'Listening…', speaking: 'Speaking…' };
+
+    function show(el, on) { el.style.display = on ? '' : 'none'; }
+
+    function setState(state, text) {
+      const inCall = state === 'connecting' || state === 'listening' || state === 'speaking';
+      statusEl.textContent = text ?? TEXT[state] ?? '';
+      panel.hidden = !(inCall || text);
+      endBtn.hidden = !inCall;
+      show(openBtn, !inCall);
+      show(noteEl, !inCall);
+      if (!inCall) capEl.textContent = '';
+    }
+
+    function teardown() {
+      clearTimeout(joinTimer); clearTimeout(maxTimer);
+      joinTimer = null; maxTimer = null;
+      audioEls.forEach(a => a.remove());
+      audioEls.clear();
+      seen.clear();
+      const r = room; room = null;
+      if (r) {
+        try { r.unregisterTextStreamHandler(TOPIC); } catch {}
+        r.removeAllListeners();
+        try { r.disconnect(); } catch {}
+      }
+    }
+
+    function end(text) {
+      gen++;
+      teardown();
+      setState('idle', text);
+    }
+
+    async function getToken() {
+      const r = await fetch(TOKEN_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tenant: TENANT, ui: 'voice', language: 'en', page_url: location.href }),
+        cache: 'no-store',
+      });
+      if (!r.ok) throw new Error('token_' + r.status);
+      const d = await r.json();
+      if (!d?.token || !d?.url) throw new Error('no_token');
+      return d;
+    }
+
+    async function start() {
+      if (room || statusEl.dataset.busy === '1') return;
+      const my = ++gen;
+      statusEl.dataset.busy = '1';
+      setState('connecting');
+      try {
+        const mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mic.getTracks().forEach(t => t.stop());   // permission only; the SDK opens its own stream
+      } catch {
+        statusEl.dataset.busy = '';
+        if (my === gen) setState('idle', 'Microphone blocked. Allow it in your browser, then tap again.');
+        return;
+      }
+      try {
+        const [lk, tok] = await Promise.all([import(LK_SDK), getToken()]);
+        if (my !== gen) return;
+        const { Room, RoomEvent, Track, ParticipantKind } = lk;
+        const r = new Room({ audioCaptureDefaults: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
+        room = r;
+        let agentSeen = false;
+        const live = () => {
+          agentSeen = true;
+          clearTimeout(joinTimer); joinTimer = null;
+          if (my === gen) setState('listening');
+        };
+        r.on(RoomEvent.TrackSubscribed, (track) => {
+          if (track.kind !== Track.Kind.Audio) return;
+          const a = track.attach();
+          a.style.display = 'none';
+          document.body.appendChild(a);
+          audioEls.add(a);
+        });
+        r.on(RoomEvent.TrackUnsubscribed, (track) => {
+          track.detach().forEach(a => { audioEls.delete(a); a.remove(); });
+        });
+        r.on(RoomEvent.ParticipantConnected, (p) => { if (p.kind === ParticipantKind.AGENT) live(); });
+        r.on(RoomEvent.ActiveSpeakersChanged, (speakers) => {
+          if (my !== gen || !agentSeen) return;
+          setState(speakers.some(s => s.identity !== r.localParticipant.identity) ? 'speaking' : 'listening');
+        });
+        r.on(RoomEvent.Disconnected, () => {
+          if (my !== gen) return;
+          gen++; teardown();
+          setState('idle');
+        });
+
+        // Captions: what the agent said, and what it heard. Text only, never HTML.
+        r.registerTextStreamHandler(TOPIC, async (reader, participant) => {
+          try {
+            const text = (await reader.readAll()).trim();
+            if (!text || my !== gen) return;
+            const attrs = reader.info.attributes ?? {};
+            const mine = participant.identity === r.localParticipant.identity;
+            if (mine) {
+              if (attrs['lk.transcription_final'] !== 'true') return;
+              const k = 'u:' + (attrs['lk.segment_id'] ?? '') + text;
+              if (seen.has(k)) return;
+              seen.add(k);
+              capEl.textContent = 'You: ' + text;
+            } else {
+              const k = 'a:' + (attrs['lk.segment_id'] || reader.info.id);
+              if (seen.has(k)) return;
+              seen.add(k);
+              capEl.textContent = text;
+            }
+          } catch { /* a broken caption must never break the call */ }
+        });
+
+        await r.connect(tok.url, tok.token);
+        if (my !== gen) return;
+        await r.startAudio().catch(() => {});
+        await r.localParticipant.setMicrophoneEnabled(true);
+        if (my !== gen) return;
+
+        if ([...r.remoteParticipants.values()].some(p => p.kind === ParticipantKind.AGENT)) {
+          live();
+        } else {
+          joinTimer = setTimeout(() => {
+            if (my !== gen || agentSeen) return;
+            end('The voice assistant is not available right now. Please try again later.');
+          }, JOIN_MS);
+        }
+        maxTimer = setTimeout(() => {
+          if (my === gen) end('Call ended after 10 minutes. Tap to ask again.');
+        }, MAX_MS);
+      } catch (e) {
+        console.error(e);
+        if (my !== gen) return;
+        end('Could not connect. Tap to try again.');
+      } finally {
+        statusEl.dataset.busy = '';
+      }
+    }
+
+    openBtn.addEventListener('click', () => { if (!room) start(); });
+    endBtn.addEventListener('click', () => end());
+    window.addEventListener('pagehide', () => { try { room?.disconnect(); } catch {} });
+  }
 </script>
