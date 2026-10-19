@@ -32,6 +32,8 @@ const chain = [
   { k: _('eu.chain.model'),   who: _('eu.chain.model.who') },
   { k: _('eu.chain.hosting'), who: _('eu.chain.hosting.who') },
   { k: _('eu.chain.voice'),   who: _('eu.chain.voice.who'), href: '/channels/voice#eu-voice' },
+  /* OpenFreeMap runs on Hetzner machines in the EU, but it is not our contract: say "Europe", not "our servers". */
+  { k: _('eu.chain.map'),     who: _('eu.chain.map.who') },
 ];
 ---
 <section class="mx-auto max-w-6xl px-5 pt-8 pb-12">
