@@ -156,6 +156,9 @@ const en: Dict = {
   'eu.intl.link': 'Open it →',
   'index.processing': 'Processing',
   'index.eu': 'Entirely in the EU',
+  'ch.webchat': 'Web chat',
+  'ch.voice': 'Voice',
+  'ch.webvoice': 'Web & voice',
 
   'country.count.one': '{n} live concierge in {country}',
   'country.count.many': '{n} live concierges in {country}',
@@ -275,6 +278,9 @@ const fr: Dict = {
   'eu.intl.link': 'L’ouvrir →',
   'index.processing': 'Traitement',
   'index.eu': 'Entièrement dans l’UE',
+  'ch.webchat': 'Chat web',
+  'ch.voice': 'Voix',
+  'ch.webvoice': 'Web & voix',
 
   'country.count.one': '{n} concierge en ligne en {country}',
   'country.count.many': '{n} concierges en ligne en {country}',
@@ -394,6 +400,9 @@ const de: Dict = {
   'eu.intl.link': 'Öffnen →',
   'index.processing': 'Verarbeitung',
   'index.eu': 'Vollständig in der EU',
+  'ch.webchat': 'Web-Chat',
+  'ch.voice': 'Sprache',
+  'ch.webvoice': 'Web & Sprache',
 
   'country.count.one': '{n} Live-Concierge in {country}',
   'country.count.many': '{n} Live-Concierges in {country}',
@@ -513,6 +522,9 @@ const nl: Dict = {
   'eu.intl.link': 'Openen →',
   'index.processing': 'Verwerking',
   'index.eu': 'Volledig in de EU',
+  'ch.webchat': 'Webchat',
+  'ch.voice': 'Spraak',
+  'ch.webvoice': 'Web & spraak',
 
   'country.count.one': '{n} live conciërge in {country}',
   'country.count.many': '{n} live conciërges in {country}',
@@ -632,6 +644,9 @@ const es: Dict = {
   'eu.intl.link': 'Abrirla →',
   'index.processing': 'Procesamiento',
   'index.eu': 'Íntegramente en la UE',
+  'ch.webchat': 'Chat web',
+  'ch.voice': 'Voz',
+  'ch.webvoice': 'Web y voz',
 
   'country.count.one': '{n} conserje activo en {country}',
   'country.count.many': '{n} conserjes activos en {country}',
@@ -752,6 +767,9 @@ const it: Dict = {
   'eu.intl.link': 'Aprila →',
   'index.processing': 'Elaborazione',
   'index.eu': 'Interamente nell’UE',
+  'ch.webchat': 'Chat web',
+  'ch.voice': 'Voce',
+  'ch.webvoice': 'Web e voce',
 
   'country.count.one': '{n} concierge attivo in {country}',
   'country.count.many': '{n} concierge attivi in {country}',
@@ -871,6 +889,9 @@ const zh: Dict = {
   'eu.intl.link': '打开 →',
   'index.processing': '处理地',
   'index.eu': '全程在欧盟',
+  'ch.webchat': '网页聊天',
+  'ch.voice': '语音',
+  'ch.webvoice': '网页 + 语音',
 
   'country.count.one': '{country}有 {n} 位已上线的礼宾助手',
   'country.count.many': '{country}有 {n} 位已上线的礼宾助手',
@@ -990,6 +1011,9 @@ const ja: Dict = {
   'eu.intl.link': '開く →',
   'index.processing': '処理場所',
   'index.eu': 'すべてEU域内',
+  'ch.webchat': 'ウェブチャット',
+  'ch.voice': '音声',
+  'ch.webvoice': 'ウェブ＋音声',
 
   'country.count.one': '{country}で稼働中のコンシェルジュ {n} 件',
   'country.count.many': '{country}で稼働中のコンシェルジュ {n} 件',
@@ -1109,6 +1133,9 @@ const ko: Dict = {
   'eu.intl.link': '열기 →',
   'index.processing': '처리 위치',
   'index.eu': '전 과정 EU 내',
+  'ch.webchat': '웹 채팅',
+  'ch.voice': '음성',
+  'ch.webvoice': '웹 + 음성',
 
   'country.count.one': '{country}에서 운영 중인 컨시어지 {n}곳',
   'country.count.many': '{country}에서 운영 중인 컨시어지 {n}곳',

@@ -7,6 +7,7 @@ import DestinationCard from './DestinationCard.astro';
 import EuSovereignBadge from './EuSovereignBadge.astro';
 import EuFlag from './EuFlag.astro';
 import { linkAttrs } from '../lib/link';
+import { channelsOf, channelLabel } from '../lib/channels';
 import { t, localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
 
 interface Props { d: any; source: any; siblings: any[]; curatedCount: number; locale?: Locale }
@@ -177,8 +178,8 @@ const chain = [
       <div class="rounded-xl border border-(--color-line) bg-white p-5">
         <h2 class="text-sm font-semibold">{_('dest.channels.title')}</h2>
         <div class="mt-3 flex flex-wrap gap-1.5">
-          {d.channels.map((c: string) => (
-            <span class="rounded-full bg-(--color-paper-3) px-3 py-1 text-xs font-semibold">{c}</span>
+          {channelsOf(d).map((c: string) => (
+            <span class="rounded-full bg-(--color-paper-3) px-3 py-1 text-xs font-semibold">{channelLabel(_, c)}</span>
           ))}
         </div>
         {d.voiceId && <p class="mt-3 text-xs text-(--color-ink-3)">{_('dest.voice.id')} <code>{d.voiceId}</code></p>}

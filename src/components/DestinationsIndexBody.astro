@@ -3,6 +3,7 @@ import DestinationCard from './DestinationCard.astro';
 import EuFlag from './EuFlag.astro';
 import countryConcierges from '../data/country-concierges.json';
 import { t, localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
+import { channelsOf, channelLabel } from '../lib/channels';
 
 interface Props { all: any[]; countries: string[]; channels: string[]; venueCount: number; locale?: Locale }
 const { all, countries, channels, venueCount, locale = DEFAULT_LOCALE } = Astro.props;
@@ -72,7 +73,7 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
       <span class="w-24 pt-2 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">{_('index.channel')}</span>
       <div class="flex flex-1 flex-wrap gap-1.5">
         <button class="f-chip" data-k="channel" data-v="All">{_('index.all')}</button>
-        {channels.map(c => <button class="f-chip" data-k="channel" data-v={c}>{c}</button>)}
+        {channels.map(c => <button class="f-chip" data-k="channel" data-v={c}>{channelLabel(_, c)}</button>)}
       </div>
     </div>
     <div class="flex flex-wrap items-start gap-2 border-b border-(--color-line-2) py-3">
@@ -112,7 +113,7 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
     ))}
     {all.map(d => (
       <div class="d-item" data-country={d.countryName} data-prov={d.provenance} data-eu={d.euTenantId ? 'eu' : ''}
-           data-channel={d.channels.join('|')} data-k={key(d)}>
+           data-channel={channelsOf(d).join('|')} data-k={key(d)}>
         <DestinationCard d={d} locale={locale} />
       </div>
     ))}

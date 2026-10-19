@@ -1,10 +1,13 @@
 ---
 import ProvenanceBadge from './ProvenanceBadge.astro';
 import EuSovereignBadge from './EuSovereignBadge.astro';
-import { localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
+import { t, localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
+import { channelsOf, channelLabel } from '../lib/channels';
 /** `href` overschrijft de standaardlink. De landelijke concierges hebben geen
  *  bestemmingspagina; die wijzen naar hun landpagina. */
 const { d, locale = DEFAULT_LOCALE, href } = Astro.props as { d: any; locale?: Locale; href?: string };
+const _ = t(locale);
+const channels = channelsOf(d).map(c => channelLabel(_, c));
 
 /**
  * Card artwork, in order of what we actually have:
@@ -72,7 +75,7 @@ const to   = d.brandColor ? shade(d.brandColor, 0.58) : plate[1];
   <div class="p-4">
     <h3 class="font-serif text-lg font-semibold">{d.name.en}</h3>
     <p class="mt-0.5 text-sm text-(--color-ink-3)">{d.region ?? countryName(locale, d.country, d.countryName)}</p>
-    <p class="mt-2 text-xs text-(--color-ink-3)">{d.channels.join(' · ')}</p>
+    <p class="mt-2 text-xs text-(--color-ink-3)">{channels.join(' · ')}</p>
   </div>
   <div class="mt-auto flex flex-wrap items-center gap-1.5 border-t border-(--color-line-2) bg-(--color-paper-2) px-4 py-2.5">
     <ProvenanceBadge provenance={d.provenance} locale={locale} />
