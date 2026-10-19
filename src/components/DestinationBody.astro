@@ -4,6 +4,8 @@ import AskExamples from './AskExamples.astro';
 import VoiceDemo from './VoiceDemo.astro';
 import ProvenanceBadge from './ProvenanceBadge.astro';
 import DestinationCard from './DestinationCard.astro';
+import EuSovereignBadge from './EuSovereignBadge.astro';
+import EuFlag from './EuFlag.astro';
 import { linkAttrs } from '../lib/link';
 import { t, localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
 
@@ -17,6 +19,19 @@ const official = d.provenance === 'official';
 const attribution = official && source?.attributionRequired ? source.attribution : null;
 const place = d.name.en;
 const country = countryName(locale, d.country, d.countryName);
+
+/* EU-first. A destination with a European tenant opens THAT chat: the page
+   must deliver what the badge promises. The international tenant stays
+   reachable one click away, because it has features the EU chain does not
+   (photo recognition runs on a non-EU model). */
+const eu = !!d.euTenantId;
+const chatUrl = eu ? `https://chat.dm2find.ai/${d.euTenantId}` : d.chatUrl;
+const chain = [
+  { k: _('eu.chain.data'),    who: official ? `${source?.name} · ${country}` : `${_('dest.source.public')} · ${country}` },
+  { k: _('eu.chain.model'),   who: _('eu.chain.model.who') },
+  { k: _('eu.chain.hosting'), who: _('eu.chain.hosting.who') },
+  { k: _('eu.chain.voice'),   who: _('eu.chain.voice.who'), href: '/channels/voice#eu-voice' },
+];
 ---
 <section class="mx-auto max-w-6xl px-5 pt-8 pb-12">
   <nav class="text-sm text-(--color-ink-3)">
@@ -32,6 +47,7 @@ const country = countryName(locale, d.country, d.countryName);
     )}
     <h1 class="h-display">{_('dest.title', { place })}</h1>
     <ProvenanceBadge provenance={d.provenance} sourceName={official ? source?.name : undefined} locale={locale} />
+    {eu && <EuSovereignBadge locale={locale} href="#eu" />}
   </div>
   <p class="lede mt-4">
     {official
@@ -39,24 +55,50 @@ const country = countryName(locale, d.country, d.countryName);
       : _('dest.lede.preview', { place, country })}
   </p>
 
+  {eu && (
+    <div id="eu" class="mt-6 flex scroll-mt-24 flex-col gap-5 rounded-2xl border border-[#003399]/15 bg-[#EEF2FB] p-5 sm:flex-row sm:items-center sm:gap-6">
+      <EuFlag size={44} class="shrink-0 self-start rounded-md shadow-sm sm:self-center" />
+      <div class="min-w-0 flex-1">
+        <p class="text-xs font-bold tracking-widest text-[#1D3A8A] uppercase">{_('eu.hero.kicker')}</p>
+        <p class="mt-1 font-serif text-xl font-semibold leading-tight text-(--color-ink)">{_('eu.hero.title')}</p>
+        <p class="mt-1.5 max-w-[66ch] text-sm text-(--color-ink-2)">{_('eu.hero.body')}</p>
+      </div>
+      <div class="flex shrink-0 flex-col items-start gap-2">
+        <a href="/platform#sovereignty" class="rounded-full border border-[#1D3A8A]/30 bg-white px-4 py-2 text-sm font-semibold text-[#1D3A8A] transition hover:border-[#1D3A8A]">
+          {_('eu.hero.link')}
+        </a>
+        <a href="/channels/voice#eu-voice" class="px-4 text-sm font-semibold text-[#1D3A8A] underline-offset-2 hover:underline">
+          {_('eu.hero.voice')}
+        </a>
+      </div>
+    </div>
+  )}
+
   <div class="mt-8 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
     <div>
-      <AskExamples d={d} chatUrl={d.chatUrl} locale={locale} />
-      <Chat name={place} chatUrl={d.chatUrl}
-            barLabel={_('dest.webchat', { place })}
+      <AskExamples d={d} chatUrl={chatUrl} locale={locale} />
+      <Chat name={place} chatUrl={chatUrl} eu={eu}
+            barLabel={eu ? _('eu.webchat', { place }) : _('dest.webchat', { place })}
             fullLabel={_('dest.fullscreen')}
             fullTitle={_('dest.fullscreen.title', { place })} />
       <p class="mt-2 text-xs text-(--color-ink-3)">
         {_('dest.bigger')}
-        <a href={d.chatUrl} target="_blank" rel="noopener"
+        <a href={chatUrl} target="_blank" rel="noopener"
            class="font-semibold text-(--color-pine) underline">{_('dest.bigger.link', { place })}</a>
       </p>
+      {eu && (
+        <p class="mt-1 text-xs text-(--color-ink-3)">
+          {_('eu.intl')}
+          <a href={d.chatUrl} target="_blank" rel="noopener" class="underline hover:text-(--color-ink)">{_('eu.intl.link')}</a>
+        </p>
+      )}
       {d.voiceAgentId && (
         <div class="mt-6">
           <div class="flex items-center gap-2">
             <h2 class="text-sm font-semibold">{_('dest.talk')}</h2>
-            <span class="inline-flex items-center gap-1.5 rounded-full bg-(--color-pine-l) px-2.5 py-0.5 text-[11px] font-semibold text-(--color-pine)">
-              <span class="h-1.5 w-1.5 rounded-full bg-current"></span> {_('dest.voicedemo')}
+            <span class={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[11px] font-semibold ${
+              eu ? 'bg-(--color-amber-l) text-(--color-amber)' : 'bg-(--color-pine-l) text-(--color-pine)'}`}>
+              <span class="h-1.5 w-1.5 rounded-full bg-current"></span> {eu ? _('eu.voice.intl') : _('dest.voicedemo')}
             </span>
           </div>
           <div class="mt-3"><VoiceDemo agentId={d.voiceAgentId} place={place} /></div>
@@ -89,6 +131,25 @@ const country = countryName(locale, d.country, d.countryName);
     </div>
 
     <aside class="space-y-4">
+      {eu && (
+        <div class="rounded-xl border border-[#003399]/15 bg-white p-5">
+          <div class="flex items-center justify-between gap-3">
+            <h2 class="text-sm font-semibold">{_('eu.chain.title')}</h2>
+            <EuFlag size={14} class="rounded-[2px]" />
+          </div>
+          <ol class="mt-3 divide-y divide-(--color-line-2)">
+            {chain.map(c => (
+              <li class="flex items-start gap-3 py-2 text-sm">
+                <span class="w-24 shrink-0 text-xs font-bold tracking-wider text-(--color-ink-3) uppercase">{c.k}</span>
+                {c.href
+                  ? <a href={c.href} class="min-w-0 text-(--color-ink-2) underline decoration-[#003399]/30 underline-offset-2 hover:text-[#1D3A8A]">{c.who}</a>
+                  : <span class="min-w-0 text-(--color-ink-2)">{c.who}</span>}
+                <span class="ml-auto shrink-0 rounded-full bg-[#EEF2FB] px-2 py-0.5 text-[11px] font-semibold text-[#1D3A8A]">EU</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
       <div class="rounded-xl border border-(--color-line) bg-white p-5">
         <h2 class="text-sm font-semibold">{_('dest.source.title')}</h2>
         <p class="mt-2 text-sm text-(--color-ink-2)">

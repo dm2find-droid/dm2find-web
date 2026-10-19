@@ -1,10 +1,11 @@
 ---
 /** The live webchat. Main channel, embedded on every destination page. */
+import EuFlag from './EuFlag.astro';
 interface Props {
-  name: string; chatUrl: string; embed?: boolean; frameId?: string;
+  name: string; chatUrl: string; embed?: boolean; frameId?: string; eu?: boolean;
   barLabel?: string; fullLabel?: string; fullTitle?: string;
 }
-const { name, chatUrl, embed = true, frameId = 'concierge-frame',
+const { name, chatUrl, embed = true, frameId = 'concierge-frame', eu = false,
         barLabel = `${name} concierge · webchat`,
         fullLabel = 'Full screen',
         fullTitle = `Open the ${name} concierge in a new window` } = Astro.props;
@@ -13,6 +14,7 @@ const { name, chatUrl, embed = true, frameId = 'concierge-frame',
   <div class="flex items-center gap-2 bg-(--color-ink) px-4 py-3 text-sm text-white">
     <span class="h-2 w-2 rounded-full bg-[#68C48C]"></span>
     <span>{barLabel}</span>
+    {eu && <EuFlag size={12} class="ml-1 rounded-[2px]" />}
     {/* Het iframe is 420px hoog; op een telefoon of voor een langer gesprek
         wil je de hele pagina. Zelfde URL, eigen venster. */}
     <a href={chatUrl} target="_blank" rel="noopener" title={fullTitle}

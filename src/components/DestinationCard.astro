@@ -1,5 +1,6 @@
 ---
 import ProvenanceBadge from './ProvenanceBadge.astro';
+import EuSovereignBadge from './EuSovereignBadge.astro';
 import { localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
 /** `href` overschrijft de standaardlink. De landelijke concierges hebben geen
  *  bestemmingspagina; die wijzen naar hun landpagina. */
@@ -73,7 +74,8 @@ const to   = d.brandColor ? shade(d.brandColor, 0.58) : plate[1];
     <p class="mt-0.5 text-sm text-(--color-ink-3)">{d.region ?? countryName(locale, d.country, d.countryName)}</p>
     <p class="mt-2 text-xs text-(--color-ink-3)">{d.channels.join(' · ')}</p>
   </div>
-  <div class="mt-auto border-t border-(--color-line-2) bg-(--color-paper-2) px-4 py-2.5">
+  <div class="mt-auto flex flex-wrap items-center gap-1.5 border-t border-(--color-line-2) bg-(--color-paper-2) px-4 py-2.5">
     <ProvenanceBadge provenance={d.provenance} locale={locale} />
+    {d.euTenantId && <EuSovereignBadge size="sm" locale={locale} />}
   </div>
 </a>

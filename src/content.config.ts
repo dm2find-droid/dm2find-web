@@ -83,6 +83,10 @@ const destinations = defineCollection({
     voiceAgentId: z.string().regex(/^agent_[A-Za-z0-9]+$/, 'not an ElevenLabs agent id')
                    .nullable().default(null),
     chatUrl: z.string().url(),
+    /** Tenant that runs the fully European chain (slug + '-eu' in the tenants
+     *  table). Present only for EU destinations that actually have one; the
+     *  page then opens that chat first and shows the EU badge. */
+    euTenantId: z.string().nullable().default(null),
     provenance: z.enum(['official', 'preview']),
     dataSource: z.string().nullable().default(null),
     status: z.enum(['live', 'preview', 'requested']).default('live'),

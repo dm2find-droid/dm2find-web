@@ -1,5 +1,6 @@
 ---
 import DestinationCard from './DestinationCard.astro';
+import EuFlag from './EuFlag.astro';
 import countryConcierges from '../data/country-concierges.json';
 import { t, localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
 
@@ -74,6 +75,16 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
         {channels.map(c => <button class="f-chip" data-k="channel" data-v={c}>{c}</button>)}
       </div>
     </div>
+    <div class="flex flex-wrap items-start gap-2 border-b border-(--color-line-2) py-3">
+      <span class="w-24 pt-2 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">{_('index.processing')}</span>
+      <div class="flex flex-1 flex-wrap gap-1.5">
+        <button class="f-chip" data-k="eu" data-v="All">{_('index.all')}</button>
+        <button class="f-chip f-chip-eu" data-k="eu" data-v="eu">
+          <EuFlag size={11} class="rounded-[2px]" /> {_('index.eu')}
+          <span class="opacity-60">{all.filter(d => d.euTenantId).length}</span>
+        </button>
+      </div>
+    </div>
     <div class="flex flex-wrap items-start gap-2 py-3">
       <span class="w-24 pt-2 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">{_('index.data')}</span>
       <div class="flex flex-1 flex-wrap gap-1.5">
@@ -100,7 +111,7 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
       </div>
     ))}
     {all.map(d => (
-      <div class="d-item" data-country={d.countryName} data-prov={d.provenance}
+      <div class="d-item" data-country={d.countryName} data-prov={d.provenance} data-eu={d.euTenantId ? 'eu' : ''}
            data-channel={d.channels.join('|')} data-k={key(d)}>
         <DestinationCard d={d} locale={locale} />
       </div>
@@ -119,9 +130,11 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
   .f-chip { border:1px solid var(--color-line); background:#fff; border-radius:9999px;
     padding:.45rem .85rem; font-size:.83rem; color:var(--color-ink-2); cursor:pointer }
   .f-chip[data-on] { background:var(--color-ink); color:#fff; border-color:var(--color-ink) }
+  .f-chip-eu { display:inline-flex; align-items:center; gap:.4rem }
+  .f-chip-eu[data-on] { background:#1D3A8A; border-color:#1D3A8A }
 </style>
 <script>
-  const F: Record<string,string> = { country:'All', channel:'All', prov:'All' };
+  const F: Record<string,string> = { country:'All', channel:'All', prov:'All', eu:'All' };
   const chips = document.querySelectorAll<HTMLElement>('.f-chip');
   const items = document.querySelectorAll<HTMLElement>('.d-item');
   /* Landelijke concierges. Ze staan buiten `items` en dus buiten de telling:
@@ -149,6 +162,7 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
     items.forEach(i => {
       const ok = (F.country==='All' || i.dataset.country===F.country)
               && (F.prov==='All'    || i.dataset.prov===F.prov)
+              && (F.eu==='All'      || i.dataset.eu===F.eu)
               && (F.channel==='All' || (i.dataset.channel||'').split('|').includes(F.channel))
               && words.every(w => (i.dataset.k||'').includes(w));
       i.style.display = ok ? '' : 'none';
@@ -176,7 +190,7 @@ const key = (d: any) => [d.name.en, d.region, d.countryName, d.slug].filter(Bool
     }
   });
   document.getElementById('reset')!.addEventListener('click', () => {
-    q.value = ''; F.country = F.channel = F.prov = 'All'; paint(); q.focus();
+    q.value = ''; F.country = F.channel = F.prov = F.eu = 'All'; paint(); q.focus();
   });
   paint();
 </script>

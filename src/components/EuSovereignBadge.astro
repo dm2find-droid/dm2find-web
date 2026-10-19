@@ -1,0 +1,20 @@
+---
+/**
+ * "Processed entirely in the EU" — the badge that marks a destination whose
+ * concierge runs the fully European chain (euTenantId in destinations.json).
+ * Renders nothing when the destination has no such tenant: the badge is a
+ * claim, and a claim without the tenant behind it would be false.
+ */
+import EuFlag from './EuFlag.astro';
+import { t, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
+interface Props { size?: 'sm' | 'md'; locale?: Locale; href?: string }
+const { size = 'md', locale = DEFAULT_LOCALE, href } = Astro.props;
+const _ = t(locale);
+const Tag = href ? 'a' : 'span';
+---
+<Tag href={href}
+     class={`inline-flex items-center gap-1.5 rounded-full border border-[#003399]/20 bg-[#EEF2FB] font-semibold text-[#1D3A8A] ${
+       size === 'sm' ? 'px-2.5 py-0.5 text-[11px]' : 'px-3 py-1 text-xs'} ${href ? 'transition hover:border-[#003399]/50' : ''}`}>
+  <EuFlag size={size === 'sm' ? 11 : 13} class="rounded-[2px]" />
+  {size === 'sm' ? _('eu.badge.short') : _('eu.badge')}
+</Tag>
