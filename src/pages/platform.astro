@@ -36,7 +36,7 @@ const chain = [
   { k: 'Web search',     who: 'Mistral',                  where: 'Paris',           eu: true },
   { k: 'Event emails',   who: 'Scaleway',                 where: 'Paris',           eu: true },
   { k: 'Tourism data',   who: andList(euSources),         where: 'EU open data',    eu: true },
-  { k: 'Voice',          who: 'Gradium speech recognition and voice, LiveKit on our own servers — no ElevenLabs', where: 'EU endpoint, Germany — default for EU destinations', eu: true },
+  { k: 'Voice',          who: 'Gradium and Mistral Voxtral 3 speech recognition and voice, LiveKit on our own servers — no ElevenLabs', where: 'EU endpoints, Germany — default for EU destinations', eu: true },
 ];
 ---
 <Base title="For national and regional tourism organisations" angle="nto" concierge
@@ -185,7 +185,7 @@ const chain = [
 
   <section class="border-t border-(--color-line-2) bg-(--color-paper-2) py-12">
     <div class="mx-auto grid max-w-6xl gap-5 px-5 sm:grid-cols-3">
-      {[['Sovereignty','Built in the Netherlands, hosted on our own servers in Germany. For EU destinations the fully European chain — model, search, email and voice — is the default, with voice in English, French, Spanish, German and Portuguese. The international edition is available on request.'],
+      {[['Sovereignty','Built in the Netherlands, hosted on our own servers in Germany. For EU destinations the fully European chain — model, search, email and voice — is the default, with voice in more than 30 languages through Gradium and Mistral Voxtral 3. The international edition is available on request.'],
         ['Non-exclusive','We sit beside your platform, not in front of it. Your data stays yours; attribution travels with it, per field.'],
         ['Rollout','Pilot three destinations, then extend nationally with per-DMO branding on one shared layer.']
       ].map(([t,b]) => (

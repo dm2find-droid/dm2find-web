@@ -2,7 +2,7 @@
  * Which channels a destination's concierge is reachable on.
  *
  * A destination with an EU tenant (euTenantId) runs the fully European chat,
- * and that chat carries voice as well (the wave icon: Gradium speech over
+ * and that chat carries voice as well (the wave icon: Gradium or Mistral Voxtral 3 speech over
  * LiveKit), so it is a web chat, a voice concierge and the two combined —
  * whatever destinations.json lists. Destinations without an EU tenant keep
  * the channels listed in the data, so the label never promises more than
