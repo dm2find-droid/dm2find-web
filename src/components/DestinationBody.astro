@@ -8,6 +8,7 @@ import EuSovereignBadge from './EuSovereignBadge.astro';
 import EuFlag from './EuFlag.astro';
 import { linkAttrs } from '../lib/link';
 import { channelsOf, channelLabel } from '../lib/channels';
+import { euVoiceOf } from '../lib/euVoice';
 import { t, localeHref, countryName, DEFAULT_LOCALE, type Locale } from '../i18n/ui';
 
 interface Props { d: any; source: any; siblings: any[]; curatedCount: number; locale?: Locale }
@@ -27,11 +28,14 @@ const country = countryName(locale, d.country, d.countryName);
    (photo recognition runs on a non-EU model). */
 const eu = !!d.euTenantId;
 const chatUrl = eu ? `https://chat.dm2find.ai/${d.euTenantId}` : d.chatUrl;
+/* Voice on the EU chain only when the tenant export says so (src/data/eu-voice.json):
+   the row then names the engines and how many languages this destination speaks. */
+const euVoice = eu ? euVoiceOf(d) : null;
 const chain = [
   { k: _('eu.chain.data'),    who: official ? `${source?.name} · ${country}` : `${_('dest.source.public')} · ${country}` },
   { k: _('eu.chain.model'),   who: _('eu.chain.model.who') },
   { k: _('eu.chain.hosting'), who: _('eu.chain.hosting.who') },
-  { k: _('eu.chain.voice'),   who: _('eu.chain.voice.who'), href: '/channels/voice#eu-voice' },
+  ...(euVoice ? [{ k: _('eu.chain.voice'), who: `${_('eu.chain.voice.who')} · ${_('eu.voice.langs', { n: String(euVoice.langs.length) })}`, href: '/channels/voice#eu-voice' }] : []),
   /* OpenFreeMap runs on Hetzner machines in the EU, but it is not our contract: say "Europe", not "our servers". */
   { k: _('eu.chain.map'),     who: _('eu.chain.map.who') },
 ];

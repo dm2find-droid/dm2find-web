@@ -1,0 +1,2495 @@
+{
+ "_comment": "Export from tenants (data_residency = eu_sovereign, voice_provider = livekit, web_voice_enabled). Regenerate with the query in README; the site derives every voice count from this file.",
+ "updated": "2026-10-21",
+ "stt": {
+  "who": "Mistral Voxtral 3",
+  "what": "Realtime transcription with automatic language detection",
+  "where": "EU endpoint"
+ },
+ "tts": {
+  "gradium": [
+   "fr",
+   "en",
+   "de",
+   "es",
+   "pt"
+  ],
+  "mistral": [
+   "nl",
+   "ca",
+   "it",
+   "pl",
+   "no",
+   "ar",
+   "zh",
+   "ja",
+   "ko"
+  ]
+ },
+ "tenants": [
+  {
+   "t": "at-eu",
+   "iso": "AT",
+   "level": "country",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "attirol-eu",
+   "iso": "AT",
+   "level": "province",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "burgenland-eu",
+   "iso": "AT",
+   "level": "province",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "innsbruck-eu",
+   "iso": "AT",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "kaernten-eu",
+   "iso": "AT",
+   "level": "province",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "niederoesterreich-eu",
+   "iso": "AT",
+   "level": "province",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "oberoesterreich-eu",
+   "iso": "AT",
+   "level": "province",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "salzburg-land-eu",
+   "iso": "AT",
+   "level": "province",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "steiermark-eu",
+   "iso": "AT",
+   "level": "province",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "vorarlberg-eu",
+   "iso": "AT",
+   "level": "province",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "wien-eu",
+   "iso": "AT",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "brugge-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "brussels-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "dinant-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "gent-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "hasselt-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "herve-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "kortrijk-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "leuven-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "liege-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "mechelen-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "namur-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "ostend-eu",
+   "iso": "BE",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "aachen-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "berlin-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "cologne-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "dresden-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "dusseldorf-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "frankfurtam-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "freiburg-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "hamburg-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "hannover-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "heidelberg-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "karlsruhe-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "kiel-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "leipzig-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "mannheim-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "munich-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nuremberg-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "stuttgart-eu",
+   "iso": "DE",
+   "level": "city",
+   "main": "de",
+   "langs": "de|en|fr|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "alicante-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "almeria-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "barcelona-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|ca|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "benidorm-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bilbao-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "cadiz-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "cordoba-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "donostia-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "estarragona-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "figueres-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "gijon-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "girona-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "granada-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "huelva-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "jaen-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "jerez-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "madrid-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "malaga-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "oviedo-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "pontevedra-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "santander-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "sevilla-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "sitges-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "valencia-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "vigo-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "vitoriagasteiz-eu",
+   "iso": "ES",
+   "level": "city",
+   "main": "es",
+   "langs": "es|en|fr|de|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "01-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "02-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "03-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "04-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "05-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "07-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "08-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "09-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "10-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "11-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "12-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "13-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "14-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "15-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "16-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "17-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "18-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "19-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "21-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "22-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "23-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "24-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "25-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "26-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "28-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "29-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "2a-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "2b-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "30-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "31-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "32-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "33-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "34-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "35-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "36-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "37-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "38-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "39-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "40-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "41-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "43-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "44-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "45-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "46-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "47-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "48-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "50-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "51-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "52-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "53-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "54-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "55-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "56-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "57-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "58-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "59-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "62-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "63-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "64-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "66-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "68-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "70-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "72-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "73-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "74-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "76-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "77-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "78-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "79-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "80-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "81-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "82-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "83-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "85-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "86-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "88-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "89-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "90-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "91-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "95-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "agen-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "aixenprovince-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "ajaccio-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "albi-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "alencon-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "amiens-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "angers-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "angouleme-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "annecy-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "antibesjuanlespins-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "ardechehermitage-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "armagnacdartagnan-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "arras-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "auch-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "aurillac-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "auvergnerhonealpes-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "auxerre-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "avignon-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bastia-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bayonne-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bearngaves-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "beaune-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "beauvais-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "belfort-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "besancon-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "biarritz-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bidart-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "blois-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bordeaux-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bourgenbresse-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bourges-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bourgognefranchecomte-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "brest-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "bretagne-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "caen-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "cahors-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "cambolesbains-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "cannes-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "carcassone-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "cauxvexin-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "chalonsenchampagne-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "chambery-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "chamonixmontblanc-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "charlevillemezieres-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "chartres-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "chateauroux-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "chaumont-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "clermontferrand-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "cluny-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "coeurdebearn-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "colmar-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "corse-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "deauville-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "dieppe-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "dignelesbains-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "dijon-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "dunkirk-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "epernay-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "epinal-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "etretat-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "evreux-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "evry-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "eze-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "falaise-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "foix-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "fr-eu",
+   "iso": "FR",
+   "level": "country",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "frtarbes-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "frtoulouse-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "frtours-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "frtrouville-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "frtroyes-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "frtulle-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "gap-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "grandest-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "grasse-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "grenoble-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "haguenau-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "hautbearn-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "hautsdefrance-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "hautsdeseine-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "hendaye-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "honfleur-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "iledefrance-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "kaysersberg-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "lacanau-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "laon-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "lareunion-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "larochelle-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "laval-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "lemans-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "lepuyenvelay-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "lille-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "limoges-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "lonslesaunier-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "lourdes-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "lyon-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "macon-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "marseille-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "melun-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "mende-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "metz-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "montauban-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "montdemarsan-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "montpellier-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "montsaintmichel-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "moulins-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "mulhouse-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nancy-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nantes-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nevers-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nice-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nimes-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "niort-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "normandie-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nouvelleaquitaine-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "obernai-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "occitanie-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "orange-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "orleans-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "paris-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "pau-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "paysbasque-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "paysdelaloire-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "perigueux-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "perpignan-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "poitiers-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "pontoise-eu",
+   "iso": "FR",
+   "level": "province",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "privas-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "provencealpescotedazur-eu",
+   "iso": "FR",
+   "level": "region",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "pyrenees31-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "quimper-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "reims-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "rennes-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "rodez-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "rouen-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "saintbrieuc-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "saintetienne-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "saintlo-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "saintmalo-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "seinesaintdenis-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "strasbourg-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "uzes-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "valdemarne-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "valdisere-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "valdugaronne-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "valence-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "valleedossau-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "vannes-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "versailles-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "vichy-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "wissembourg-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "yvoire-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "zonza-eu",
+   "iso": "FR",
+   "level": "city",
+   "main": "fr",
+   "langs": "fr|en|de|es|pt|nl|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "alkmaar-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "almere-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "amersfoort-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "amstelveen-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "amsterdam-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "apeldoorn-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "arnhem-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "assen-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "breda-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "delft-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "denbosch-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "denhaag-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "denhelder-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "dordrecht-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "eemsdelta-eu",
+   "iso": "NL",
+   "level": "province",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "eindhoven-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "enkhuizen-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "gooivecht-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "gouda-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "groningen-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "haarlem-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "harderwijk-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "heuvelrug-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "hilversum-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "hoorn-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "ijmuiden-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "leeuwarden-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "leiden-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "lelystad-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "maastricht-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "middelburg-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nijmegen-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nl-eu",
+   "iso": "NL",
+   "level": "country",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nl-groningen-eu",
+   "iso": "NL",
+   "level": "province",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nl-limburg-eu",
+   "iso": "NL",
+   "level": "province",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nltexel-eu",
+   "iso": "NL",
+   "level": "province",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nltilburg-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "nltwente-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "noordwijk-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "roosendaal-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "rotterdam-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "schouwenduiveland-eu",
+   "iso": "NL",
+   "level": "province",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "steenwijk-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "utrecht-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "venlo-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "vlaardingen-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "vlissingen-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "volendam-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "woerden-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "zaandam-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "zandvoort-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "zutphen-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  },
+  {
+   "t": "zwolle-eu",
+   "iso": "NL",
+   "level": "city",
+   "main": "nl",
+   "langs": "nl|fr|en|de|es|pt|it|pl|no|ar|zh|ja|ko"
+  }
+ ]
+}

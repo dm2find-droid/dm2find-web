@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import { BOOKING_URL, SALES_EMAIL } from '../../data/site';
 import ChannelsNav from '../../components/ChannelsNav.astro';
 import sources from '../../data/sources.json';
+import { euVoiceOf, euVoiceStats, STT, TTS, LANG_NAME, UPDATED } from '../../lib/euVoice';
 
 /* Live spraakdemo's. Volgorde (okt. 2026): eerst de volledig Europese keten,
    daarna de internationale demo's op ElevenLabs (VS).
@@ -151,6 +152,31 @@ const EU_CHAIN = [
   { k: 'Real-time audio',  what: 'LiveKit, open source WebRTC',                who: 'Our own servers, Hetzner', where: 'Germany' },
 ];
 const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully European voice')}`;
+
+/* Voice on the EU chain: counts and the per-destination picker, all from the
+   tenant export (src/data/eu-voice.json). Country-level tenants (fr-eu, nl-eu,
+   at-eu) and a few tenants without a page on this site count in the totals but
+   are not in the picker: the picker only offers what the visitor can open. */
+const euStats = euVoiceStats();
+const allDest = (await getCollection('destinations')).map(e => e.data);
+const EU_DEFAULT = 'strasbourg';
+const euPick = allDest
+  .map(x => ({ slug: x.slug, name: x.name?.en ?? x.slug, country: x.countryName, v: euVoiceOf(x) }))
+  .filter(x => x.v)
+  .map(x => ({ slug: x.slug, name: x.name, country: x.country, tenant: x.v!.tenant, main: LANG_NAME[x.v!.main] ?? x.v!.main, n: x.v!.langs.length }))
+  .sort((a, b) => a.country.localeCompare(b.country, 'en') || a.name.localeCompare(b.name, 'en'));
+const euPickCountries = [...new Set(euPick.map(x => x.country))];
+const euFirst = euPick.find(x => x.slug === EU_DEFAULT) ?? euPick[0];
+if (!euFirst) throw new Error('/channels/voice: no EU destination with voice in eu-voice.json');
+/* The floor: every EU destination speaks at least this many; the country table shows who speaks more (Barcelona adds Catalan). */
+const langsPerTenant = String(euStats.perTenant[0]);
+const gradiumLangs = euStats.languages.filter(l => l.provider === 'gradium');
+const mistralLangs = euStats.languages.filter(l => l.provider === 'mistral');
+const WAYS = [
+  { k: 'Web chat', what: 'Type and read. The concierge on the destination page, in the widget on the tourist office site, or on its own URL.', on: 'Every destination' },
+  { k: 'Voice', what: 'Speak and listen, nothing to type: a voice button on a page, or by phone.', on: `${euStats.tenants} EU destinations on the European chain` },
+  { k: 'Web & voice', what: 'Both in one window: the wave icon in the chat starts a spoken conversation; the cards, map and links stay on screen.', on: `${euStats.tenants} EU destinations, the default` },
+];
 ---
 <Base title="Voice demos" angle="dmo"
       description={`Talk to a destination. A fully European voice assistant, plus live demos on ElevenLabs for ${metaNames}, right in your browser.`}>
@@ -160,9 +186,17 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
     <h1 class="h-display">Talk to a destination.</h1>
     <p class="lede mt-5">
       Ask out loud and hear the answer, from the open tourism data published for that destination:
-      events, opening hours, restaurants, trails. Start with our fully European voice stack, or try the
-      international one for more destinations and languages.
+      events, opening hours, restaurants, trails. On every EU destination the whole conversation stays
+      in Europe, in {langsPerTenant} languages; outside the EU an international stack covers the rest.
     </p>
+    <dl class="mt-7 grid max-w-3xl grid-cols-3 gap-3">
+      {[[String(euStats.tenants), 'EU destinations with voice'], [langsPerTenant, 'spoken languages per destination'], [String(euStats.countries.length), 'countries, entirely in Europe']].map(([n, l]) => (
+        <div class="rounded-2xl border border-(--color-line) bg-white px-4 py-3">
+          <dt class="font-serif text-3xl font-semibold leading-none text-(--color-slate2)">{n}</dt>
+          <dd class="mt-1.5 text-xs text-(--color-ink-2)">{l}</dd>
+        </div>
+      ))}
+    </dl>
     <p class="mt-3 max-w-[60ch] text-sm text-(--color-ink-3)">
       A destination's name and logo show which place the assistant covers; they do not mean the tourist
       office is a customer.
@@ -182,6 +216,29 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
     </ul>
   </section>
 
+  <section class="border-t border-(--color-line-2) py-12">
+    <div class="mx-auto max-w-6xl px-5">
+      <p class="mb-3 text-xs font-bold tracking-widest text-(--color-slate2) uppercase">Three ways to deploy it</p>
+      <h2 class="h-section">Chat, voice, or both in one window.</h2>
+      <p class="mt-3 max-w-[66ch] text-(--color-ink-2)">
+        Same assistant, same data, same answers. Pick per destination how visitors reach it; the social
+        channels (WhatsApp, Instagram, Messenger) are a separate choice on the <a href="/channels" class="font-semibold text-(--color-pine) underline underline-offset-2">channels page</a>.
+      </p>
+      <ol class="mt-6 grid gap-4 sm:grid-cols-3">
+        {WAYS.map((w, i) => (
+          <li class={`rounded-2xl border bg-white p-5 ${i === 2 ? 'border-(--color-slate2)' : 'border-(--color-line)'}`}>
+            <div class="flex items-center justify-between gap-2">
+              <span class="font-serif text-xl font-semibold">{w.k}</span>
+              {i === 2 && <span class="rounded-full bg-(--color-slate2) px-2.5 py-0.5 text-[11px] font-semibold text-white">Default in the EU</span>}
+            </div>
+            <p class="mt-2 text-sm text-(--color-ink-2)">{w.what}</p>
+            <p class="mt-3 text-xs font-semibold text-(--color-ink-3)">Live on: <span class="text-(--color-ink)">{w.on}</span></p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
   <section id="eu-voice" class="scroll-mt-20 border-t border-(--color-line-2) py-14">
     <div class="mx-auto grid max-w-6xl gap-8 px-5 lg:grid-cols-[1fr_1.35fr] lg:items-start">
       <div>
@@ -196,7 +253,10 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
           For tourist offices that want visitor conversations to stay under European rules, this is the
           stack to start from.
         </p>
-        <p class="mt-3 text-sm text-(--color-ink-3)">Try it live for Strasbourg, on open data from DATAtourisme — and on every EU destination, from the wave icon in its chat. More than 30 languages, including French, German, Dutch, Italian, Chinese and Japanese.</p>
+        <p class="mt-3 text-sm text-(--color-ink-3)">
+          Live on {euStats.tenants} destinations in {euStats.countries.length} countries, {langsPerTenant} languages each.
+          Pick one below and talk to it here, or open its chat and tap the wave icon.
+        </p>
 
         <div id="eu" class="mt-6 flex items-center gap-5 rounded-2xl border border-(--color-line) bg-white p-5">
           <button id="eu-orb" type="button" data-state="idle" aria-label="Start the European voice demo"
@@ -207,8 +267,18 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
               <path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7" />
             </svg>
           </button>
-          <div class="min-w-0 text-left">
-            <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Live · Strasbourg</p>
+          <div class="min-w-0 flex-1 text-left">
+            <label for="eu-pick" class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Live · talk to</label>
+            <select id="eu-pick" class="mt-1 block w-full max-w-xs rounded-lg border border-(--color-line) bg-white px-2.5 py-1.5 text-sm font-semibold text-(--color-ink)">
+              {euPickCountries.map(c => (
+                <optgroup label={c}>
+                  {euPick.filter(x => x.country === c).map(x => (
+                    <option value={x.tenant} data-main={x.main} data-n={x.n} selected={x.slug === euFirst.slug}>{x.name}</option>
+                  ))}
+                </optgroup>
+              ))}
+            </select>
+            <p id="eu-langs" class="mt-1 text-xs text-(--color-ink-3)">Starts in {euFirst.main} · {euFirst.n} languages, switch by speaking</p>
             <p id="eu-status" class="mt-1 min-h-6 text-base font-semibold" aria-live="polite">Tap to talk</p>
             <button id="eu-end" type="button" hidden
                     class="mt-2 rounded-full border border-(--color-slate2) px-4 py-1.5 text-sm font-semibold text-(--color-slate2) transition hover:bg-(--color-slate2-l)">
@@ -234,16 +304,75 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
         ))}
       </ol>
     </div>
+
+    <div class="mx-auto mt-12 grid max-w-6xl gap-8 px-5 lg:grid-cols-[1fr_1.35fr] lg:items-start">
+      <div class="overflow-x-auto rounded-2xl border border-(--color-line) bg-white">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-(--color-line-2) text-left text-[11px] font-bold tracking-wider text-(--color-ink-3) uppercase">
+              <th class="px-4 py-2.5">Country</th>
+              <th class="px-2 py-2.5 text-right">Destinations</th>
+              <th class="hidden px-2 py-2.5 sm:table-cell">Starts in</th>
+              <th class="px-4 py-2.5 text-right">Languages</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-(--color-line-2)">
+            {euStats.countries.map(c => (
+              <tr>
+                <td class="px-4 py-2.5 font-semibold">{c.name}</td>
+                <td class="px-2 py-2.5 text-right tabular-nums">{c.count}</td>
+                <td class="hidden px-2 py-2.5 whitespace-nowrap text-(--color-ink-2) sm:table-cell">{c.main.join(' or ')}</td>
+                <td class="px-4 py-2.5 text-right tabular-nums">{c.langs}{c.note ? <span class="block text-[11px] font-normal text-(--color-ink-3)">{c.note}</span> : null}</td>
+              </tr>
+            ))}
+          </tbody>
+          <tfoot>
+            <tr class="border-t border-(--color-line) bg-(--color-paper-2) font-semibold">
+              <td class="px-4 py-2.5">Total</td>
+              <td class="px-2 py-2.5 text-right tabular-nums">{euStats.tenants}</td>
+              <td class="hidden px-2 py-2.5 text-xs font-normal whitespace-nowrap text-(--color-ink-3) sm:table-cell">Updated {UPDATED}</td>
+              <td class="px-4 py-2.5 text-right text-xs font-normal text-(--color-ink-3) sm:hidden">Updated {UPDATED}</td>
+              <td class="hidden px-4 py-2.5 sm:table-cell"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div>
+        <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Spoken languages · every EU destination</p>
+        <p class="mt-2 text-sm text-(--color-ink-2)">
+          Listening is {STT.who} for every language, with automatic detection: the visitor just talks.
+          The voice that answers depends on the language.
+        </p>
+        {[['Gradium voices', gradiumLangs], ['Mistral Voxtral 3 voices', mistralLangs]].map(([title, ls]) => (
+          <div class="mt-4">
+            <p class="text-xs font-semibold text-(--color-ink-3)">{title as string}</p>
+            <ul class="mt-1.5 flex flex-wrap gap-1.5">
+              {(ls as typeof gradiumLangs).map(l => (
+                <li class="rounded-full border border-(--color-line) bg-white px-3 py-1 text-sm" title={l.tenants === euStats.tenants ? 'All EU destinations' : `${l.tenants} destinations`}>
+                  <span class="font-semibold">{l.name}</span> <span class="text-(--color-ink-3)">{l.native}</span>
+                  {l.tenants < euStats.tenants && <span class="ml-1 text-[11px] text-(--color-ink-3)">· {l.tenants === 1 ? 'one destination' : `${l.tenants} destinations`}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        <p class="mt-4 text-xs text-(--color-ink-3)">
+          Only these languages are spoken. Ask in another language and the answer is spoken in English,
+          with a note that the chat itself understands more. The voice switches when the visitor does,
+          also between Gradium and Mistral.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section id="demos" class="scroll-mt-20 border-t border-(--color-line-2) py-14">
     <div class="mx-auto max-w-6xl px-5">
     <div class="mb-8 max-w-[68ch]">
-      <p class="mb-3 text-xs font-bold tracking-widest text-(--color-terra) uppercase">International · ElevenLabs (US)</p>
-      <h2 class="h-section">More destinations, almost any language.</h2>
+      <p class="mb-3 text-xs font-bold tracking-widest text-(--color-terra) uppercase">Outside the EU · international edition · ElevenLabs (US)</p>
+      <h2 class="h-section">Beyond Europe, almost any language.</h2>
       <p class="mt-4 text-(--color-ink-2)">
-        These demos run on ElevenLabs, a US provider. In return they cover more destinations, and they
-        understand and answer in almost any language, switching when you do.
+        For destinations outside the EU, and for anyone who prefers it, the international edition runs on
+        ElevenLabs, a US provider. It understands and answers in almost any language, switching when you do.
       </p>
       <p class="mt-3 text-sm text-(--color-ink-3)">
         Live data from {sourceSentence}; each card shows which.
@@ -571,7 +700,10 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
      Het token komt van de chat-app (alleen tenants met voice_provider = livekit). */
   const LK_SDK = '/vendor/livekit-client-2.23.0.esm.mjs';
   const TOKEN_API = 'https://chat.dm2find.ai/api/voice-token';
-  const TENANT = 'strasbourg-eu';
+  /* De bestemming komt uit de keuzelijst; wisselen tijdens een gesprek beëindigt het. */
+  const pick = document.getElementById('eu-pick');
+  const langsEl = document.getElementById('eu-langs');
+  const TENANT = () => (pick && pick.value) || 'strasbourg-eu';
   const MAX_MS = 5 * 60 * 1000;     // vangnet tegen vergeten sessies (kosten)
   const JOIN_MS = 20 * 1000;        // de agent moet binnen 20 s aansluiten
 
@@ -610,7 +742,7 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
       const r = await fetch(TOKEN_API, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ tenant: TENANT, ui: 'voice' }),
+        body: JSON.stringify({ tenant: TENANT(), ui: 'voice' }),
         cache: 'no-store',
       });
       if (!r.ok) throw new Error('token_' + r.status);
@@ -691,6 +823,11 @@ const euMail = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('Demo: fully 
 
     orb.addEventListener('click', () => { if (!room) start(); });
     endBtn.addEventListener('click', () => end());
+    if (pick) pick.addEventListener('change', () => {
+      const o = pick.selectedOptions[0];
+      if (langsEl && o) langsEl.textContent = `Starts in ${o.dataset.main} · ${o.dataset.n} languages, switch by speaking`;
+      if (room || orb.dataset.state === 'connecting') end();
+    });
     window.addEventListener('pagehide', () => { try { room?.disconnect(); } catch {} });
     setState('idle');
   }

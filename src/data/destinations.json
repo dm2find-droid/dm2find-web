@@ -8148,7 +8148,7 @@
       "url": "https://destination.hauts-de-seine.fr/pass-destination-78-92.html",
       "name": "Le Pass Destination Yvelines Hauts-de-Seine"
     },
-    "euTenantId": null
+    "euTenantId": "hautsdeseine-eu"
   },
   {
     "slug": "heidelberg",
@@ -15507,7 +15507,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/seinesaintdenistourisme.png",
     "brandColor": "#115BA2",
     "calendarUrl": "https://uk.tourisme93.com/document.php?pagendx=10006",
-    "euTenantId": null
+    "euTenantId": "seinesaintdenis-eu"
   },
   {
     "slug": "seoul",
@@ -18586,4 +18586,4 @@
     "calendarUrl": "https://en.visitzwolle.com/see-and-do/activities-in-zwolle/",
     "euTenantId": "zwolle-eu"
   }
-]
+]
