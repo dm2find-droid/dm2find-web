@@ -1,0 +1,46 @@
+---
+import ConnectLayout from '../../../layouts/ConnectLayout.astro';
+---
+<ConnectLayout title="Connecting Instagram">
+  <h1>Instagram Direct</h1>
+  <div id="status" class="status" data-kind="busy"><strong>Connecting your Instagram account…</strong></div>
+  <a id="retry" class="button" href="/connect/instagram" hidden>Start again</a>
+</ConnectLayout>
+
+<script>
+  import { INSTAGRAM, postJson, setStatus, getConnectCode } from '../../../lib/connect';
+
+  const status = document.getElementById('status') as HTMLElement;
+  const retry = document.getElementById('retry') as HTMLAnchorElement;
+  const q = new URLSearchParams(location.search);
+  const code = q.get('code');
+  const state = q.get('state') ?? '';
+
+  history.replaceState(null, '', location.pathname);
+
+  function fail(title: string, detail = '') {
+    setStatus(status, 'error', title, detail);
+    const c = getConnectCode() || state;
+    retry.href = c ? `/connect/instagram?c=${encodeURIComponent(c)}` : '/connect/instagram';
+    retry.hidden = false;
+  }
+
+  async function run() {
+    if (q.get('error')) {
+      fail('Instagram connection was cancelled.', q.get('error_description') ?? q.get('error_reason') ?? '');
+      return;
+    }
+    if (!code || !state) {
+      fail('This page was opened without an Instagram authorization.', 'Please start from your DM2find connection link.');
+      return;
+    }
+    const r = await postJson(INSTAGRAM.endpoint, { code, state });
+    if (r.success) {
+      setStatus(status, 'ok', `Connected: ${r.name ?? 'your account'}`,
+        'Send your account a direct message from another Instagram account — the concierge should reply within seconds. DM2find has been notified.');
+      return;
+    }
+    fail('Connection failed.', r.message ?? '');
+  }
+  run();
+</script>
