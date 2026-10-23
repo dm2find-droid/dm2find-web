@@ -1,0 +1,63 @@
+---
+import ConnectLayout from '../../../layouts/ConnectLayout.astro';
+---
+<ConnectLayout title="Connecting Facebook">
+  <h1>Facebook Messenger</h1>
+  <div id="status" class="status" data-kind="busy"><strong>Connecting your Facebook Page…</strong></div>
+  <div id="pages" class="pages" hidden></div>
+  <a id="retry" class="button" href="/connect/facebook" hidden>Start again</a>
+</ConnectLayout>
+
+<script>
+  import { FACEBOOK, postJson, setStatus, facebookAuthorizeUrl, getConnectCode } from '../../../lib/connect';
+
+  const status = document.getElementById('status') as HTMLElement;
+  const pagesBox = document.getElementById('pages') as HTMLElement;
+  const retry = document.getElementById('retry') as HTMLAnchorElement;
+  const q = new URLSearchParams(location.search);
+  const code = q.get('code');
+  const state = q.get('state') ?? '';
+
+  // Remove the one-time OAuth code from the address bar right away.
+  history.replaceState(null, '', location.pathname);
+
+  function fail(title: string, detail = '') {
+    setStatus(status, 'error', title, detail);
+    const c = getConnectCode() || state.split('.')[0];
+    retry.href = c ? `/connect/facebook?c=${encodeURIComponent(c)}` : '/connect/facebook';
+    retry.hidden = false;
+  }
+
+  async function run() {
+    if (q.get('error')) {
+      fail('Facebook connection was cancelled.', q.get('error_description') ?? '');
+      return;
+    }
+    if (!code || !state) {
+      fail('This page was opened without a Facebook authorization.', 'Please start from your DM2find connection link.');
+      return;
+    }
+    const r = await postJson(FACEBOOK.endpoint, { code, state });
+    if (r.success) {
+      setStatus(status, 'ok', `Connected: ${r.name ?? 'your Page'}`,
+        'Send your Page a message on Messenger — the concierge should reply within seconds. DM2find has been notified.');
+      return;
+    }
+    if (r.needs_page_choice && r.pages?.length) {
+      // Several Pages were shared: let the user pick one, then re-run the (instant) Facebook authorization.
+      setStatus(status, 'busy', 'Which Page should the concierge answer for?', 'You shared several Pages. Choose one:');
+      const connectCode = state.split('.')[0];
+      for (const p of r.pages) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = p.name;
+        b.addEventListener('click', () => { location.href = facebookAuthorizeUrl(`${connectCode}.${p.id}`); });
+        pagesBox.append(b);
+      }
+      pagesBox.hidden = false;
+      return;
+    }
+    fail('Connection failed.', r.message ?? '');
+  }
+  run();
+</script>
