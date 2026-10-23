@@ -1,0 +1,25 @@
+---
+import ConnectLayout from '../../layouts/ConnectLayout.astro';
+---
+<ConnectLayout title="Connect your channels">
+  <h1>Connect your channels</h1>
+  <p class="lead">Let the DM2find AI Travel Concierge answer visitors on your destination's own accounts.
+    You need the connection link DM2find sent you.</p>
+
+  <nav class="channels">
+    <a href="/connect/facebook" data-channel><strong>Facebook Messenger</strong><span>Connect your destination's Facebook Page</span></a>
+    <a href="/connect/instagram" data-channel><strong>Instagram Direct</strong><span>Connect your Instagram professional account</span></a>
+    <a href="/connect/telegram" data-channel><strong>Telegram</strong><span>Connect a Telegram bot you create with @BotFather</span></a>
+  </nav>
+</ConnectLayout>
+
+<script>
+  import { getConnectCode } from '../../lib/connect';
+  // Carry the connection code over to each channel page.
+  const code = getConnectCode();
+  if (code) {
+    document.querySelectorAll<HTMLAnchorElement>('a[data-channel]').forEach((a) => {
+      a.href = `${a.pathname}?c=${encodeURIComponent(code)}`;
+    });
+  }
+</script>
