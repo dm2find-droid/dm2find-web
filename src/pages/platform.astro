@@ -60,7 +60,9 @@ const chain = [
       <h2 class="h-section">Connected platforms and licence attribution</h2>
       <p class="mt-2 text-sm text-(--color-ink-2)">
         Attribution is rendered wherever the licence requires it — on the destination page and in its
-        machine-readable record. Where a connector is only planned, we publish no attribution at all.
+        machine-readable record. <i>Ready</i> means a connector is built and tested and goes live per
+        destination; until a destination runs on it, and wherever a connector is only planned, we publish
+        no attribution at all.
       </p>
       <div class="mt-6 overflow-x-auto">
         <table class="w-full min-w-[680px] border-collapse text-sm">
@@ -79,19 +81,49 @@ const chain = [
                 <td class="p-3"><a class="font-semibold text-(--color-pine) underline" href={`/data/${s.id}`}>{s.name}</a></td>
                 <td class="p-3">
                   <span class={`rounded-full px-2.5 py-1 text-xs font-semibold ${
-                    s.status === 'connected' ? 'bg-(--color-pine-l) text-(--color-pine)' : 'bg-(--color-amber-l) text-(--color-amber)'}`}>
-                    {s.status === 'connected' ? 'Connected' : 'Planned'}
+                    s.status === 'connected' ? 'bg-(--color-pine-l) text-(--color-pine)'
+                    : s.status === 'ready'   ? 'bg-(--color-slate2-l) text-(--color-slate2)'
+                    :                          'bg-(--color-amber-l) text-(--color-amber)'}`}>
+                    {s.status === 'connected' ? 'Connected' : s.status === 'ready' ? 'Ready' : 'Planned'}
                   </span>
                 </td>
                 <td class="p-3 text-xs italic text-(--color-ink-3)">
-                  {s.status === 'connected' ? s.attribution : '— not claimed until the connector is live'}
+                  {s.status === 'connected' ? s.attribution
+                   : s.status === 'ready'   ? '— not claimed until the first destination runs on it'
+                   :                          '— not claimed until the connector is live'}
                 </td>
-                <td class="p-3">{countBy(s.id)}</td>
+                <td class="p-3">{s.status === 'connected' ? countBy(s.id) : '—'}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+    </div>
+  </section>
+
+  {/* Apidae: built, not yet live for any destination. Every sentence below is
+      verifiable today; switch the badge in sources.json to 'connected' only once
+      a destination actually runs on it. */}
+  <section class="mx-auto max-w-6xl px-5 py-12">
+    <p class="mb-3 text-xs font-bold tracking-widest text-(--color-slate2) uppercase">Apidae · ready</p>
+    <h2 class="h-section">Apidae: enrichment, not a second copy</h2>
+    <div class="mt-5 grid gap-8 lg:grid-cols-2">
+      <p class="text-sm leading-relaxed text-(--color-ink-2)">
+        Many French tourist offices maintain their offer in Apidae, and much of that offer also reaches
+        DATAtourisme, which we already read. So the Apidae connector does not import a second copy of the same
+        hotel. It matches each Apidae object to the DATAtourisme record it belongs to — by the producer's own
+        ID first, by name and position only when that is unambiguous — and fills what that record leaves empty:
+        contact details, photos, star ratings, accessibility, spoken languages, and clean English where the
+        national translation chain has lost characters. Objects that never reach DATAtourisme become records
+        of their own.
+      </p>
+      <p class="text-sm leading-relaxed text-(--color-ink-2)">
+        The connector is built and tested on Apidae's own demonstration project, and it goes live per office.
+        You create an API project for DM2find with the selections you want published and share its key. We
+        review a dry run with you — every record it would add or enrich, with nothing written — and from the
+        next night it runs, after the DATAtourisme import. We only read from Apidae. A value DATAtourisme
+        provides always stands, and every field Apidae fills is recorded, so it can be traced and reversed.
+      </p>
     </div>
   </section>
 

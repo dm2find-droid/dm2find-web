@@ -16,8 +16,14 @@ const sources = defineCollection({
     geo: z.string(),
     country: z.string(),
     url: z.string().url().optional(),
-    /** 'connected' = we read the feed. 'planned' = we do NOT, and must not claim attribution. */
-    status: z.enum(['connected', 'planned']),
+    /** 'connected' = we read the feed for live destinations.
+     *  'ready'     = the connector is built and tested, but no destination runs on
+     *                it yet (it is switched on per office). Counts as NOT live: no
+     *                attribution, not in the connected count, not in the EU chain.
+     *  'planned'   = we do NOT read it, and must not claim attribution. */
+    status: z.enum(['connected', 'ready', 'planned']),
+    /** Optional one-line explanation for the /data/<id> page of a 'ready' connector. */
+    note: z.string().optional(),
     attributionRequired: z.boolean().default(false),
     attribution: z.string().optional(),
     /** Where a connector covers only part of a country, say so. Rendered next

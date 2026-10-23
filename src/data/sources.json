@@ -10,6 +10,17 @@
   "attribution": "DATAtourisme, Licence Ouverte / Etalab"
  },
  {
+  "id": "apidae",
+  "name": "Apidae",
+  "geo": "France",
+  "country": "FR",
+  "url": "https://www.apidae-tourisme.com",
+  "status": "ready",
+  "attributionRequired": false,
+  "coverage": "Regional tourism information system used by tourist offices in several French regions, Auvergne-Rhône-Alpes first among them",
+  "note": "Built and tested on Apidae's own demonstration project. It goes live per office: the office creates an API project for DM2find and shares its key, we review a dry run together, and from the next night it enriches that office's DATAtourisme records."
+ },
+ {
   "id": "touripedia",
   "name": "Touripedia",
   "geo": "Netherlands",

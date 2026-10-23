@@ -70,7 +70,7 @@ const first = all.find(d => d.slug === 'bordeaux') ?? all[0];
           <a href={`/data/${s.id}`}
              class={`rounded-full px-3 py-1.5 text-xs font-semibold ${
                s.status === 'connected' ? 'bg-(--color-pine-l) text-(--color-pine)' : 'bg-(--color-paper-3) text-(--color-ink-3)'}`}>
-            {s.name}{s.status === 'planned' ? ' · planned' : ''}
+            {s.name}{s.status === 'planned' ? ' · planned' : s.status === 'ready' ? ' · ready' : ''}
           </a>
         ))}
       </div>
