@@ -15,6 +15,7 @@ export const FACEBOOK = {
     'pages_show_list',
     'pages_messaging',
     'pages_manage_metadata',
+    'business_management',
   ],
   // If the app uses "Facebook Login for Business", put its configuration ID
   // here; the dialog then uses config_id instead of scope.
