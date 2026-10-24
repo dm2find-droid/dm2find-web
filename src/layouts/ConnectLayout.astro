@@ -1,0 +1,71 @@
+---
+// Standalone layout for the /connect pages. To use your site's header/footer,
+// swap this for your own Layout and keep the <style is:global> block.
+interface Props { title: string; description?: string }
+const { title, description = 'Connect your channel to the DM2find AI Travel Concierge.' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content={description} />
+    <title>{title} · DM2find</title>
+  </head>
+  <body>
+    <main class="connect">
+      <a class="brand" href="/">DM2find</a>
+      <slot />
+      <p class="help">Questions? <a href="mailto:sales@dm2find.ai">sales@dm2find.ai</a></p>
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1d2330; --muted: #5b6577;
+    --line: #e2e6ec; --accent: #1f6feb; --ok: #137a3f; --okbg: #e8f6ee;
+    --err: #b42318; --errbg: #fdecea; --busybg: #eef4ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11141a; --card: #1a1f27; --text: #e7ebf1; --muted: #9aa5b5;
+      --line: #2a313c; --accent: #5b9dff; --ok: #6fd39a; --okbg: #15301f;
+      --err: #ff8a80; --errbg: #3a1714; --busybg: #17233a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .connect { max-width: 640px; margin: 0 auto; padding: 32px 16px 64px; }
+  .brand { display: inline-block; font-weight: 700; color: var(--text); text-decoration: none; margin-bottom: 24px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 8px; }
+  .lead { color: var(--muted); margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+  .card h2 { font-size: 1.05rem; margin: 0 0 8px; }
+  .card ol, .card ul { margin: 0; padding-left: 20px; }
+  .card li { margin: 4px 0; }
+  label { display: block; font-weight: 600; margin: 12px 0 6px; }
+  input[type=text] { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px;
+                     background: var(--bg); color: var(--text); font: inherit; font-family: ui-monospace, monospace; font-size: 14px; }
+  button, .button { display: inline-block; margin-top: 16px; padding: 11px 18px; border: 0; border-radius: 8px;
+           background: var(--accent); color: #fff; font: inherit; font-weight: 600; cursor: pointer; text-decoration: none; }
+  button:disabled { opacity: .55; cursor: default; }
+  .status { border-radius: 10px; padding: 14px 16px; margin: 16px 0; }
+  .status p { margin: 6px 0 0; }
+  .status[data-kind=busy] { background: var(--busybg); }
+  .status[data-kind=ok] { background: var(--okbg); color: var(--ok); }
+  .status[data-kind=error] { background: var(--errbg); color: var(--err); }
+  .pages { display: grid; gap: 8px; margin-top: 12px; }
+  .pages button { margin: 0; text-align: left; background: var(--card); color: var(--text); border: 1px solid var(--line); }
+  .channels { display: grid; gap: 12px; }
+  .channels a { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 12px;
+                background: var(--card); color: var(--text); text-decoration: none; }
+  .channels a strong { display: block; }
+  .channels a span { color: var(--muted); font-size: .95rem; }
+  code { font-family: ui-monospace, monospace; font-size: .9em; }
+  .help { color: var(--muted); font-size: .9rem; margin-top: 32px; }
+  .help a { color: var(--accent); }
+</style>

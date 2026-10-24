@@ -1,0 +1,66 @@
+---
+import ConnectLayout from '../../layouts/ConnectLayout.astro';
+import ConnectCodeField from '../../components/ConnectCodeField.astro';
+---
+<ConnectLayout title="Connect Telegram">
+  <h1>Connect Telegram</h1>
+  <p class="lead">Create a Telegram bot for your destination and let the AI Travel Concierge answer every message it receives.</p>
+
+  <section class="card">
+    <h2>1. Create your bot</h2>
+    <ol>
+      <li>In Telegram, open <a href="https://t.me/BotFather" target="_blank" rel="noopener">@BotFather</a> and send <code>/newbot</code>.</li>
+      <li>Choose a display name (e.g. <em>Visit Yourcity Concierge</em>) and a username ending in <code>bot</code>.</li>
+      <li>BotFather replies with a token like <code>123456789:AA…</code>. Copy it — treat it like a password.</li>
+      <li>Optional: set a profile picture and description with <code>/setuserpic</code> and <code>/setdescription</code>.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>2. Connect it</h2>
+    <form id="form" autocomplete="off">
+      <ConnectCodeField />
+      <label for="bot-token">Bot token from @BotFather</label>
+      <input id="bot-token" type="text" spellcheck="false" placeholder="123456789:AA…" />
+      <button id="submit" type="submit">Connect Telegram bot</button>
+    </form>
+    <div id="status" class="status" hidden></div>
+  </section>
+</ConnectLayout>
+
+<script>
+  import { TELEGRAM, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+
+  const form = document.getElementById('form') as HTMLFormElement;
+  const codeInput = document.getElementById('connect-code') as HTMLInputElement;
+  const tokenInput = document.getElementById('bot-token') as HTMLInputElement;
+  const button = document.getElementById('submit') as HTMLButtonElement;
+  const status = document.getElementById('status') as HTMLElement;
+  codeInput.value = getConnectCode();
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const connect_code = codeInput.value.trim();
+    const bot_token = tokenInput.value.trim();
+    if (!isValidConnectCode(connect_code)) {
+      setStatus(status, 'error', 'Please enter the 32-character connection code from DM2find.');
+      return;
+    }
+    if (!/^[0-9]{5,}:[A-Za-z0-9_-]{30,}$/.test(bot_token)) {
+      setStatus(status, 'error', 'That does not look like a bot token.', 'Copy the full token from @BotFather (format 123456789:AA…).');
+      return;
+    }
+    rememberConnectCode(connect_code);
+    button.disabled = true;
+    setStatus(status, 'busy', 'Connecting your bot…');
+    const r = await postJson(TELEGRAM.endpoint, { connect_code, bot_token });
+    button.disabled = false;
+    if (r.success) {
+      tokenInput.value = '';
+      setStatus(status, 'ok', `Connected: ${r.name ?? 'your bot'}`,
+        'Open your bot in Telegram, press Start and ask a question — the concierge should reply within seconds. DM2find has been notified.');
+    } else {
+      setStatus(status, 'error', 'Connection failed.', r.message ?? '');
+    }
+  });
+</script>
