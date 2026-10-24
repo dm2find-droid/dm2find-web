@@ -61,6 +61,7 @@ export function facebookAuthorizeUrl(state: string): string {
     state,
     response_type: 'code',
   });
+  p.set('auth_type', 'rerequest');
   if (FACEBOOK.configId) p.set('config_id', FACEBOOK.configId);
   else p.set('scope', FACEBOOK.scopes.join(','));
   return `https://www.facebook.com/${FACEBOOK.graphVersion}/dialog/oauth?${p}`;
