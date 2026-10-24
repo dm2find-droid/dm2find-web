@@ -1,0 +1,149 @@
+---
+import ConnectLayout from '../../layouts/ConnectLayout.astro';
+import ConnectCodeField from '../../components/ConnectCodeField.astro';
+import { WHATSAPP } from '../../lib/connect';
+---
+<ConnectLayout title="Connect WhatsApp">
+  <h1>Connect WhatsApp</h1>
+  <p class="lead">Let the AI Travel Concierge answer visitors who message your destination's WhatsApp number.
+    You connect through Meta's own window; DM2find never sees your password.</p>
+
+  <section class="card">
+    <h2>Before you start</h2>
+    <ul>
+      <li>Log in with a Facebook account that is an <strong>admin of your organisation's Meta Business portfolio</strong>
+        (or create the portfolio during the steps).</li>
+      <li>Have a <strong>phone number</strong> that can receive an SMS or voice call for verification.
+        It must <strong>not</strong> be in use on the WhatsApp or WhatsApp Business app — or remove that account first.</li>
+      <li>Afterwards, add a payment method in WhatsApp Manager. Replies to visitors who message you are free;
+        Meta only bills messages your organisation starts itself.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <ConnectCodeField />
+    <button id="start" type="button">Connect with WhatsApp</button>
+    <div id="status" class="status" hidden></div>
+  </section>
+</ConnectLayout>
+
+<script is:inline define:vars={{ appId: WHATSAPP.appId, graphVersion: WHATSAPP.graphVersion }}>
+  window.fbAsyncInit = function () {
+    FB.init({ appId: appId, autoLogAppEvents: true, xfbml: false, version: graphVersion });
+  };
+</script>
+<script is:inline async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<script>
+  import { WHATSAPP, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+
+  type FBLoginResponse = { authResponse?: { code?: string } | null; status?: string };
+  type FBGlobal = { login: (cb: (r: FBLoginResponse) => void, opts: Record<string, unknown>) => void };
+  const getFB = (): FBGlobal | undefined => (window as unknown as { FB?: FBGlobal }).FB;
+
+  const input = document.getElementById('connect-code') as HTMLInputElement;
+  const button = document.getElementById('start') as HTMLButtonElement;
+  const status = document.getElementById('status') as HTMLElement;
+  input.value = getConnectCode();
+
+  let authCode: string | null = null;
+  let session: { phone_number_id?: string; waba_id?: string } | null = null;
+  let sessionEvent = '';
+  let submitted = false;
+  let waitTimer: number | undefined;
+
+  // Session info from the Embedded Signup popup: which WABA and phone number were chosen.
+  window.addEventListener('message', (ev: MessageEvent) => {
+    if (!/^https:\/\/([a-z0-9-]+\.)*facebook\.com$/.test(ev.origin)) return;
+    let d: { type?: string; event?: string; data?: Record<string, string> };
+    try { d = typeof ev.data === 'string' ? JSON.parse(ev.data) : ev.data; } catch { return; }
+    if (!d || d.type !== 'WA_EMBEDDED_SIGNUP') return;
+    sessionEvent = d.event ?? '';
+    if (sessionEvent === 'CANCEL') {
+      setStatus(status, 'error', 'Connection cancelled.',
+        d.data?.current_step ? `Stopped at step: ${d.data.current_step}. You can start again.` : 'You can start again.');
+      button.disabled = false;
+      return;
+    }
+    if (sessionEvent === 'ERROR') {
+      setStatus(status, 'error', 'Meta reported an error.', d.data?.error_message ?? '');
+      button.disabled = false;
+      return;
+    }
+    session = { phone_number_id: d.data?.phone_number_id, waba_id: d.data?.waba_id };
+    maybeSubmit();
+  });
+
+  async function maybeSubmit() {
+    if (submitted || !authCode) return;
+    if (!session) {
+      // The code can arrive just before the session info; wait briefly.
+      if (waitTimer === undefined) {
+        waitTimer = window.setTimeout(() => {
+          if (!session && !submitted) {
+            setStatus(status, 'error', 'Setup was not completed.',
+              'Meta did not report a WhatsApp Business account and phone number. Please start again and finish every step.');
+            button.disabled = false;
+          }
+        }, 8000);
+      }
+      return;
+    }
+    submitted = true;
+    window.clearTimeout(waitTimer);
+    setStatus(status, 'busy', 'Connecting your WhatsApp number…', 'This can take up to half a minute.');
+    const r = await postJson(WHATSAPP.endpoint, {
+      state: input.value.trim(),
+      code: authCode,
+      phone_number_id: session.phone_number_id ?? '',
+      waba_id: session.waba_id ?? '',
+    });
+    if (r.success) {
+      setStatus(status, 'ok', `Connected: ${r.name ?? 'your number'}`,
+        'Send your number a WhatsApp message from another phone — the concierge should reply within seconds. DM2find has been notified.');
+    } else {
+      setStatus(status, 'error', 'Connection failed.', r.message ?? '');
+      submitted = false;
+      authCode = null;
+      session = null;
+      button.disabled = false;
+    }
+  }
+
+  button.addEventListener('click', () => {
+    const code = input.value.trim();
+    if (!isValidConnectCode(code)) {
+      setStatus(status, 'error', 'Please enter the 32-character connection code from DM2find.');
+      return;
+    }
+    if (!WHATSAPP.configId) {
+      setStatus(status, 'error', 'WhatsApp onboarding is not configured yet.', 'Please contact sales@dm2find.ai.');
+      return;
+    }
+    const FB = getFB();
+    if (!FB) {
+      setStatus(status, 'error', 'The Meta login could not be loaded.', 'Disable ad or tracking blockers for this page and reload.');
+      return;
+    }
+    rememberConnectCode(code);
+    authCode = null; session = null; submitted = false; waitTimer = undefined;
+    button.disabled = true;
+    setStatus(status, 'busy', 'Follow the steps in the Meta window…');
+    // Must be called directly from the click so the popup is not blocked.
+    FB.login((resp) => {
+      const c = resp.authResponse?.code;
+      if (!c) {
+        if (sessionEvent !== 'CANCEL') setStatus(status, 'error', 'Connection cancelled.', 'You can start again.');
+        button.disabled = false;
+        return;
+      }
+      authCode = c;
+      maybeSubmit();
+    }, {
+      config_id: WHATSAPP.configId,
+      response_type: 'code',
+      override_default_response_type: true,
+      extras: { setup: {}, featureType: '', sessionInfoVersion: '3' },
+    });
+  });
+</script>
