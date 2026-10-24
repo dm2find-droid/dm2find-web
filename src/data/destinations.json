@@ -1178,6 +1178,42 @@
     "euTenantId": "antwerp-eu"
   },
   {
+    "slug": "anzere",
+    "name": {
+      "en": "Anzère"
+    },
+    "country": "CH",
+    "countryName": "Switzerland",
+    "region": "Valais",
+    "tenantId": "anzere",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/anzere",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {},
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.anzere.ch/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      46.2967,
+      7.3975
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/anzere.jpg",
+    "brandColor": "#FCB535",
+    "calendarUrl": "https://www.anzere.ch/en/events/",
+    "euTenantId": "anzere-eu"
+  },
+  {
     "slug": "apeldoorn",
     "name": {
       "en": "Apeldoorn"
@@ -2034,7 +2070,7 @@
       "url": "https://www.basel.com/en/baselcard",
       "name": "BaselCard"
     },
-    "euTenantId": null
+    "euTenantId": "basel-eu"
   },
   {
     "slug": "bastia",
@@ -6734,7 +6770,7 @@
       46.2,
       6.15
     ],
-    "euTenantId": null
+    "euTenantId": "geneva-eu"
   },
   {
     "slug": "gers",
@@ -10837,7 +10873,7 @@
       47.0523,
       8.3059
     ],
-    "euTenantId": null
+    "euTenantId": "lucerne-eu"
   },
   {
     "slug": "luxembourg-city",
@@ -18455,7 +18491,7 @@
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/zermatt.jpg",
     "brandColor": "#414141",
     "calendarUrl": "https://zermatt.swiss/en/activities/more",
-    "euTenantId": null
+    "euTenantId": "zermatt-eu"
   },
   {
     "slug": "zonza",
@@ -18540,7 +18576,7 @@
       "url": "https://www.zuerich.com/en/zurich-card-city-guide-app/zurich-card",
       "name": "Zürich Card"
     },
-    "euTenantId": null
+    "euTenantId": "zuerich-eu"
   },
   {
     "slug": "zwolle",

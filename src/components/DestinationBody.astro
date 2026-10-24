@@ -74,9 +74,11 @@ const chain = [
         <a href="/platform#sovereignty" class="rounded-full border border-[#1D3A8A]/30 bg-white px-4 py-2 text-sm font-semibold text-[#1D3A8A] transition hover:border-[#1D3A8A]">
           {_('eu.hero.link')}
         </a>
-        <a href="/channels/voice#eu-voice" class="px-4 text-sm font-semibold text-[#1D3A8A] underline-offset-2 hover:underline">
-          {_('eu.hero.voice')}
-        </a>
+        {euVoice && (
+          <a href="/channels/voice#eu-voice" class="px-4 text-sm font-semibold text-[#1D3A8A] underline-offset-2 hover:underline">
+            {_('eu.hero.voice')}
+          </a>
+        )}
       </div>
     </div>
   )}
