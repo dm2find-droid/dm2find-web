@@ -14,7 +14,15 @@
     "connector het hele grondgebied dekt. DataTourisme dekt heel Frankrijk en",
     "Osterreich Werbung heel Oostenrijk; Touripedia dekt drie Nederlandse steden,",
     "dus de landelijke NL-concierge is 'preview'. Een landbrede claim op een",
-    "connector die drie steden dekt, is geen claim die je kunt verdedigen."
+    "connector die drie steden dekt, is geen claim die je kunt verdedigen.",
+    "",
+    "euTenantId: de -eu twin (data_residency = eu_sovereign); de landpagina wijst",
+    "daar standaard naartoe, net als de bestemmingspagina's.",
+    "",
+    "social: kanalen die alleen op de internationale tenant draaien (WhatsApp via",
+    "ElevenLabs, Messenger en Instagram via OpenAI op onze eigen n8n). Nooit op de",
+    "-eu twin, en de site zegt dat er ook bij. whatsapp = nummer in E.164 zonder",
+    "plus; whatsappCall = ook bellen via WhatsApp; messenger/instagram = page-slug."
   ],
   "FR": {
     "tenantId": "fr",
@@ -23,7 +31,16 @@
     "brandColor": "#030615",
     "website": "https://www.france.fr/en/",
     "provenance": "official",
-    "dataSource": "datatourisme"
+    "dataSource": "datatourisme",
+    "euTenantId": "fr-eu",
+    "social": {
+      "whatsapp": "33775493743",
+      "whatsappCall": true,
+      "messenger": "Trydm2find",
+      "instagram": "trydm2find",
+      "facebookUrl": "https://www.facebook.com/Trydm2find",
+      "instagramUrl": "https://www.instagram.com/trydm2find/"
+    }
   },
   "AT": {
     "tenantId": "at",
@@ -32,7 +49,8 @@
     "brandColor": "#C8102E",
     "website": null,
     "provenance": "official",
-    "dataSource": "austria"
+    "dataSource": "austria",
+    "euTenantId": "at-eu"
   },
   "NL": {
     "tenantId": "nl",
@@ -41,6 +59,7 @@
     "brandColor": "#FF6F00",
     "website": null,
     "provenance": "preview",
-    "dataSource": null
+    "dataSource": null,
+    "euTenantId": "nl-eu"
   }
 }
