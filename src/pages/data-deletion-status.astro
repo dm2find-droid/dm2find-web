@@ -1,0 +1,18 @@
+---
+import ConnectLayout from '../layouts/ConnectLayout.astro';
+---
+<ConnectLayout title="Data deletion status" description="Status of a data deletion request sent to DM2find via Meta.">
+  <h1>Data deletion request</h1>
+  <section class="card">
+    <p>Your request to delete the data DM2find received through Meta (Facebook, Instagram or WhatsApp) has been processed.
+      The access tokens and connection details linked to your account have been removed from our systems.</p>
+    <p>Confirmation code: <code id="code">—</code></p>
+    <p>Questions about this request? Email <a href="mailto:sales@dm2find.ai">sales@dm2find.ai</a> and quote the confirmation code.</p>
+  </section>
+</ConnectLayout>
+
+<script>
+  const code = new URLSearchParams(location.search).get('code') ?? '';
+  const el = document.getElementById('code');
+  if (el && /^del-[A-Za-z0-9-]{1,40}$/.test(code)) el.textContent = code;
+</script>

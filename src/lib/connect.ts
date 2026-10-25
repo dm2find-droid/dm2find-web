@@ -33,6 +33,14 @@ export const TELEGRAM = {
   endpoint: `${N8N_WEBHOOK_BASE}/connect-telegram`,
 };
 
+export const WHATSAPP = {
+  appId: '1599985487884076', // "DM2find WA direct"
+  graphVersion: 'v25.0',
+  // Facebook Login for Business → Configurations → WhatsApp Embedded Signup → Configuration ID
+  configId: '',
+  endpoint: `${N8N_WEBHOOK_BASE}/connect-whatsapp`,
+};
+
 const STORE_KEY = 'dm2find_connect_code';
 const CODE_RE = /^[a-f0-9]{32}$/i;
 
