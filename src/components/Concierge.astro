@@ -20,7 +20,7 @@ const { tenant = 'dm2find-platform' } = Astro.props;
 ---
 <div id="pv-wrap" class="fixed right-5 bottom-5 z-40 flex max-w-[calc(100vw-2.5rem)] flex-col items-end" data-tenant={tenant}>
   <div id="pv-panel" hidden class="mb-3 w-[19rem] max-w-full rounded-2xl border border-(--color-line) bg-white p-4 shadow-lg">
-    <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">DM2find platform assistant</p>
+    <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">DM2find AI assistant · not a person</p>
     <p id="pv-status" class="mt-1 min-h-6 text-base font-semibold" aria-live="polite"></p>
     <p id="pv-caption" class="mt-2 max-h-28 overflow-y-auto text-sm leading-snug text-(--color-ink-2)" aria-live="off"></p>
     <button id="pv-end" type="button" hidden
@@ -29,13 +29,17 @@ const { tenant = 'dm2find-platform' } = Astro.props;
     </button>
   </div>
   <button id="pv-open" type="button" class="flex items-center gap-2.5 rounded-full bg-(--color-terra) px-5 py-3.5 font-semibold text-white shadow-lg transition hover:brightness-110">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="1.8"></rect>
-      <path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+    {/* Bot-icoon, geen microfoon: de EU AI Act vraagt dat meteen duidelijk is
+        dat je met een AI praat, dus het icoon en de tekst zeggen het allebei. */}
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="4" y="8" width="16" height="12" rx="3"></rect>
+      <path d="M12 8V5M12 5a1.5 1.5 0 1 0-.01 0M2 13v3M22 13v3"></path>
+      <circle cx="9" cy="14" r="1.2" fill="currentColor" stroke="none"></circle>
+      <circle cx="15" cy="14" r="1.2" fill="currentColor" stroke="none"></circle>
     </svg>
-    Ask about the platform
+    Ask the AI about the platform
   </button>
-  <p id="pv-note" class="mt-2 max-w-[13rem] text-right text-[11px] leading-snug text-(--color-ink-3)">Voice agent for questions about DM2find. Runs on European infrastructure (LiveKit in Germany, Gradium voice, Mistral model in Paris). Loads only when you tap, and will ask for your microphone.</p>
+  <p id="pv-note" class="mt-2 max-w-[13rem] text-right text-[11px] leading-snug text-(--color-ink-3)">AI voice assistant: you talk to an AI, not a person. Answers questions about DM2find. Runs on European infrastructure (LiveKit in Germany, Gradium voice, Mistral model in Paris). Loads only when you tap, and will ask for your microphone.</p>
 </div>
 <script is:inline type="module">
   /* Platform Q&A voice agent, fully European. Same mechanics as the Strasbourg demo on /channels/voice:

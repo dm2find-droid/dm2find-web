@@ -183,9 +183,9 @@ const WAYS = [
   <section class="mx-auto max-w-6xl px-5 pt-14 pb-8">
     <ChannelsNav />
     <p class="mb-3 text-xs font-bold tracking-widest text-(--color-terra) uppercase">Voice · live demo</p>
-    <h1 class="h-display">Talk to a destination.</h1>
+    <h1 class="h-display">Talk to a destination's AI.</h1>
     <p class="lede mt-5">
-      Ask out loud and hear the answer, from the open tourism data published for that destination:
+      Every voice here is an AI concierge, never a person. Ask out loud and hear the answer, from the open tourism data published for that destination:
       events, opening hours, restaurants, trails. On every EU destination the whole conversation stays
       in Europe, in {langsPerTenant} languages; outside the EU an international stack covers the rest.
     </p>
@@ -259,7 +259,7 @@ const WAYS = [
         </p>
 
         <div id="eu" class="mt-6 flex items-center gap-5 rounded-2xl border border-(--color-line) bg-white p-5">
-          <button id="eu-orb" type="button" data-state="idle" aria-label="Start the European voice demo"
+          <button id="eu-orb" type="button" data-state="idle" aria-label="Start the European AI voice demo"
                   class="vc-orb vc-orb-eu grid h-24 w-24 shrink-0 place-items-center rounded-full text-white">
             <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8"
                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -279,7 +279,7 @@ const WAYS = [
               ))}
             </select>
             <p id="eu-langs" class="mt-1 text-xs text-(--color-ink-3)">Starts in {euFirst.main} · {euFirst.n} languages, switch by speaking</p>
-            <p id="eu-status" class="mt-1 min-h-6 text-base font-semibold" aria-live="polite">Tap to talk</p>
+            <p id="eu-status" class="mt-1 min-h-6 text-base font-semibold" aria-live="polite">Tap to talk to the AI</p>
             <button id="eu-end" type="button" hidden
                     class="mt-2 rounded-full border border-(--color-slate2) px-4 py-1.5 text-sm font-semibold text-(--color-slate2) transition hover:bg-(--color-slate2-l)">
               End call
@@ -424,7 +424,7 @@ const WAYS = [
       </div>
 
       <div id="vc" class="scroll-mt-20 rounded-2xl border border-(--color-line) bg-white p-6 text-center lg:sticky lg:top-24">
-        <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">You are talking to</p>
+        <p class="text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">You are talking to the AI concierge of</p>
         <h3 id="vc-name" class="h-section mt-1">{first.name}</h3>
         <p id="vc-level" class="mt-1 text-sm text-(--color-ink-3)">{first.level} · {first.country}</p>
 
@@ -459,7 +459,7 @@ const WAYS = [
             <path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7" />
           </svg>
         </button>
-        <p id="vc-status" class="mt-5 min-h-7 text-lg font-semibold" aria-live="polite">Tap to talk</p>
+        <p id="vc-status" class="mt-5 min-h-7 text-lg font-semibold" aria-live="polite">Tap to talk to the AI</p>
         <button id="vc-end" type="button" hidden
                 class="mt-3 rounded-full border border-(--color-terra) px-5 py-2 text-sm font-semibold text-(--color-terra) transition hover:bg-(--color-terra-l)">
           End call
@@ -555,14 +555,14 @@ const WAYS = [
   let gen = 0;
 
   const TEXT = {
-    idle: 'Tap to talk', connecting: 'Connecting…', listening: 'Listening…', speaking: 'Speaking…',
+    idle: 'Tap to talk to the AI', connecting: 'Connecting…', listening: 'Listening…', speaking: 'AI speaking…',
   };
   function setState(state, text) {
     orb.dataset.state = state;
     statusEl.textContent = text ?? TEXT[state] ?? '';
     const inCall = state === 'connecting' || state === 'listening' || state === 'speaking';
     endBtn.hidden = !inCall;
-    orb.setAttribute('aria-label', inCall ? 'Conversation in progress' : 'Start talking');
+    orb.setAttribute('aria-label', inCall ? 'Conversation with the AI in progress' : 'Start talking to the AI');
   }
   function markPick() {
     picks.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.key === current.slug)));
@@ -713,14 +713,14 @@ const WAYS = [
   if (orb && statusEl && endBtn) {
     let room = null, gen = 0, joinTimer = null, maxTimer = null;
     const audioEls = new Set();
-    const TEXT = { idle: 'Tap to talk', connecting: 'Connecting…', listening: 'Listening…', speaking: 'Speaking…' };
+    const TEXT = { idle: 'Tap to talk to the AI', connecting: 'Connecting…', listening: 'Listening…', speaking: 'AI speaking…' };
 
     function setState(state, text) {
       orb.dataset.state = state;
       statusEl.textContent = text ?? TEXT[state] ?? '';
       const inCall = state === 'connecting' || state === 'listening' || state === 'speaking';
       endBtn.hidden = !inCall;
-      orb.setAttribute('aria-label', inCall ? 'Conversation in progress' : 'Start the European voice demo');
+      orb.setAttribute('aria-label', inCall ? 'Conversation with the AI in progress' : 'Start the European AI voice demo');
     }
 
     function teardown() {
@@ -811,7 +811,7 @@ const WAYS = [
           }, JOIN_MS);
         }
         maxTimer = setTimeout(() => {
-          if (my === gen) end('Call ended after 5 minutes. Tap to talk again.');
+          if (my === gen) end('Call ended after 5 minutes. Tap to talk to the AI again.');
         }, MAX_MS);
       } catch (e) {
         console.error(e);
