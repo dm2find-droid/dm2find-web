@@ -37,7 +37,7 @@ export const WHATSAPP = {
   appId: '1599985487884076', // "DM2find WA direct"
   graphVersion: 'v25.0',
   // Facebook Login for Business → Configurations → WhatsApp Embedded Signup → Configuration ID
-  configId: '',
+  configId: '1449955883592798',
   endpoint: `${N8N_WEBHOOK_BASE}/connect-whatsapp`,
 };
 
