@@ -34,6 +34,7 @@ interface Props {
       whatsappCall?: boolean;
       messenger?: string;       // page-slug voor m.me
       instagram?: string;       // handle voor ig.me
+      telegram?: string;        // botnaam zonder @, voor t.me
       facebookUrl?: string;
       instagramUrl?: string;
     } | null;
@@ -60,8 +61,9 @@ const social = c?.social
   ? [
       ...(c.social.whatsapp ? [{ k: 'wa', label: _('country.social.wa'), sub: fmtPhone(c.social.whatsapp), href: `https://wa.me/${c.social.whatsapp}?text=${waText}` }] : []),
       ...(c.social.whatsapp && c.social.whatsappCall ? [{ k: 'wacall', label: _('country.social.wacall'), sub: _('country.social.wacall.sub'), href: `https://wa.me/${c.social.whatsapp}` }] : []),
-      ...(c.social.messenger ? [{ k: 'messenger', label: 'Messenger', sub: c.social.facebookUrl ? 'facebook.com/' + c.social.messenger : '', href: `https://m.me/${c.social.messenger}` }] : []),
+      ...(c.social.messenger ? [{ k: 'messenger', label: 'Messenger', sub: '@' + c.social.messenger, href: `https://m.me/${c.social.messenger}` }] : []),
       ...(c.social.instagram ? [{ k: 'instagram', label: 'Instagram', sub: '@' + c.social.instagram, href: `https://ig.me/m/${c.social.instagram}` }] : []),
+      ...(c.social.telegram ? [{ k: 'telegram', label: 'Telegram', sub: '@' + c.social.telegram, href: `https://t.me/${c.social.telegram}` }] : []),
     ]
   : [];
 ---
@@ -104,7 +106,7 @@ const social = c?.social
             <span class="h-1.5 w-1.5 rounded-full bg-current"></span> {_('country.social.badge')}
           </span>
         </div>
-        <ul class="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+        <ul class="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {social.map(s => (
             <li>
               <a href={s.href} target="_blank" rel="noopener noreferrer"
@@ -118,6 +120,9 @@ const social = c?.social
                   )}
                   {s.k === 'messenger' && (
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 8.5 0 0 0-5 15.6V21l2.9-1.6A10 10 0 0 0 12 20a9 8.5 0 0 0 0-17Z" /><path d="m7.5 13 3-3.5 2.5 2 3.5-3.5" /></svg>
+                  )}
+                  {s.k === 'telegram' && (
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4 3 11l5.5 2L17 7l-6.5 7.5L10.5 20l3-3.5 4.5 3L21 4Z" /></svg>
                   )}
                   {s.k === 'instagram' && (
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="3.8" /><circle cx="17.3" cy="6.7" r=".8" fill="currentColor" /></svg>

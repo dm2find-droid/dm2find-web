@@ -172,11 +172,11 @@ const en: Dict = {
   'country.national.cta': "Open the {country} concierge →",
   'country.social.title': 'Also live on',
   'country.social.badge': 'International edition · US AI',
-  'country.social.wa': 'WhatsApp · message',
+  'country.social.wa': 'WhatsApp',
   'country.social.wacall': 'WhatsApp · call',
   'country.social.wacall.sub': 'Open the chat, then tap the call button',
   'country.social.wa.text': "Hello! What's on in {country} this weekend?",
-  'country.social.note': 'These channels run on the international edition — WhatsApp messages and calls on ElevenLabs, Messenger and Instagram on OpenAI, both US — not on the EU chain. The chat button above is the EU edition.',
+  'country.social.note': 'These channels run on the international edition — WhatsApp messages and calls on ElevenLabs; Messenger, Instagram and Telegram on OpenAI, all US — not on the EU chain. The chat button above is the EU edition.',
 };
 
 const fr: Dict = {
@@ -304,11 +304,11 @@ const fr: Dict = {
   'country.national.cta': "Ouvrir le concierge {country} →",
   'country.social.title': 'Aussi disponible sur',
   'country.social.badge': 'Édition internationale · IA américaine',
-  'country.social.wa': 'WhatsApp · message',
+  'country.social.wa': 'WhatsApp',
   'country.social.wacall': 'WhatsApp · appel',
   'country.social.wacall.sub': 'Ouvrez la conversation, puis touchez le bouton d’appel',
   'country.social.wa.text': 'Bonjour ! Que se passe-t-il en {country} ce week-end ?',
-  'country.social.note': 'Ces canaux fonctionnent sur l’édition internationale — messages et appels WhatsApp via ElevenLabs, Messenger et Instagram via OpenAI, tous deux américains — et non sur la chaîne UE. Le bouton de chat ci-dessus est l’édition UE.',
+  'country.social.note': 'Ces canaux fonctionnent sur l’édition internationale — messages et appels WhatsApp via ElevenLabs ; Messenger, Instagram et Telegram via OpenAI, tous américains — et non sur la chaîne UE. Le bouton de chat ci-dessus est l’édition UE.',
 };
 
 const de: Dict = {
@@ -436,11 +436,11 @@ const de: Dict = {
   'country.national.cta': "Concierge {country} öffnen →",
   'country.social.title': 'Auch erreichbar über',
   'country.social.badge': 'Internationale Edition · US-KI',
-  'country.social.wa': 'WhatsApp · Nachricht',
+  'country.social.wa': 'WhatsApp',
   'country.social.wacall': 'WhatsApp · Anruf',
   'country.social.wacall.sub': 'Chat öffnen, dann auf den Anruf-Button tippen',
   'country.social.wa.text': 'Hallo! Was ist dieses Wochenende in {country} los?',
-  'country.social.note': 'Diese Kanäle laufen auf der internationalen Edition — WhatsApp-Nachrichten und -Anrufe über ElevenLabs, Messenger und Instagram über OpenAI, beide USA — nicht auf der EU-Kette. Der Chat-Button oben ist die EU-Edition.',
+  'country.social.note': 'Diese Kanäle laufen auf der internationalen Edition — WhatsApp-Nachrichten und -Anrufe über ElevenLabs; Messenger, Instagram und Telegram über OpenAI, alle USA — nicht auf der EU-Kette. Der Chat-Button oben ist die EU-Edition.',
 };
 
 const nl: Dict = {
@@ -568,11 +568,11 @@ const nl: Dict = {
   'country.national.cta': "Open de concierge van {country} →",
   'country.social.title': 'Ook te proberen via',
   'country.social.badge': 'Internationale editie · Amerikaanse AI',
-  'country.social.wa': 'WhatsApp · bericht',
+  'country.social.wa': 'WhatsApp',
   'country.social.wacall': 'WhatsApp · bellen',
   'country.social.wacall.sub': 'Open de chat en tik op de belknop',
   'country.social.wa.text': 'Hallo! Wat is er dit weekend te doen in {country}?',
-  'country.social.note': 'Deze kanalen draaien op de internationale editie — WhatsApp-berichten en -gesprekken via ElevenLabs, Messenger en Instagram via OpenAI, beide VS — niet op de EU-keten. De chatknop hierboven is de EU-editie.',
+  'country.social.note': 'Deze kanalen draaien op de internationale editie — WhatsApp-berichten en -gesprekken via ElevenLabs; Messenger, Instagram en Telegram via OpenAI, allemaal VS — niet op de EU-keten. De chatknop hierboven is de EU-editie.',
 };
 
 const es: Dict = {
@@ -700,11 +700,11 @@ const es: Dict = {
   'country.national.cta': "Abrir el conserje de {country} →",
   'country.social.title': 'También disponible en',
   'country.social.badge': 'Edición internacional · IA estadounidense',
-  'country.social.wa': 'WhatsApp · mensaje',
+  'country.social.wa': 'WhatsApp',
   'country.social.wacall': 'WhatsApp · llamada',
   'country.social.wacall.sub': 'Abra el chat y toque el botón de llamada',
   'country.social.wa.text': '¡Hola! ¿Qué hay este fin de semana en {country}?',
-  'country.social.note': 'Estos canales funcionan con la edición internacional — mensajes y llamadas de WhatsApp con ElevenLabs, Messenger e Instagram con OpenAI, ambos de EE. UU. — y no con la cadena UE. El botón de chat de arriba es la edición UE.',
+  'country.social.note': 'Estos canales funcionan con la edición internacional — mensajes y llamadas de WhatsApp con ElevenLabs; Messenger, Instagram y Telegram con OpenAI, todos de EE. UU. — y no con la cadena UE. El botón de chat de arriba es la edición UE.',
 };
 
 
@@ -833,11 +833,11 @@ const it: Dict = {
   'country.national.cta': "Apri il concierge di {country} →",
   'country.social.title': 'Disponibile anche su',
   'country.social.badge': 'Edizione internazionale · IA statunitense',
-  'country.social.wa': 'WhatsApp · messaggio',
+  'country.social.wa': 'WhatsApp',
   'country.social.wacall': 'WhatsApp · chiamata',
   'country.social.wacall.sub': 'Apra la chat, poi tocchi il pulsante di chiamata',
   'country.social.wa.text': 'Ciao! Cosa c’è questo fine settimana in {country}?',
-  'country.social.note': 'Questi canali funzionano sull’edizione internazionale — messaggi e chiamate WhatsApp su ElevenLabs, Messenger e Instagram su OpenAI, entrambi statunitensi — non sulla catena UE. Il pulsante di chat qui sopra è l’edizione UE.',
+  'country.social.note': 'Questi canali funzionano sull’edizione internazionale — messaggi e chiamate WhatsApp su ElevenLabs; Messenger, Instagram e Telegram su OpenAI, tutti statunitensi — non sulla catena UE. Il pulsante di chat qui sopra è l’edizione UE.',
 };
 
 const zh: Dict = {
@@ -965,11 +965,11 @@ const zh: Dict = {
   'country.national.cta': "打开{country}礼宾助手 →",
   'country.social.title': '也可通过以下渠道试用',
   'country.social.badge': '国际版 · 美国 AI',
-  'country.social.wa': 'WhatsApp · 消息',
+  'country.social.wa': 'WhatsApp',
   'country.social.wacall': 'WhatsApp · 通话',
   'country.social.wacall.sub': '打开对话后点按通话按钮',
   'country.social.wa.text': '你好！{country}这个周末有什么活动？',
-  'country.social.note': '这些渠道运行在国际版上：WhatsApp 消息和通话由 ElevenLabs 处理，Messenger 和 Instagram 由 OpenAI 处理，均为美国服务，而非欧盟链路。上方的聊天按钮是欧盟版。',
+  'country.social.note': '这些渠道运行在国际版上：WhatsApp 消息和通话由 ElevenLabs 处理，Messenger、Instagram 和 Telegram 由 OpenAI 处理，均为美国服务，而非欧盟链路。上方的聊天按钮是欧盟版。',
 };
 
 const ja: Dict = {
@@ -1097,11 +1097,11 @@ const ja: Dict = {
   'country.national.cta': "{country}のコンシェルジュを開く →",
   'country.social.title': 'こちらでも利用可能',
   'country.social.badge': '国際版 · 米国のAI',
-  'country.social.wa': 'WhatsApp · メッセージ',
+  'country.social.wa': 'WhatsApp',
   'country.social.wacall': 'WhatsApp · 通話',
   'country.social.wacall.sub': 'チャットを開いて通話ボタンをタップ',
   'country.social.wa.text': 'こんにちは！今週末の{country}のイベントは？',
-  'country.social.note': 'これらのチャンネルは国際版で動作します。WhatsAppのメッセージと通話はElevenLabs、MessengerとInstagramはOpenAI（いずれも米国）で処理され、EUの処理の流れではありません。上のチャットボタンはEU版です。',
+  'country.social.note': 'これらのチャンネルは国際版で動作します。WhatsAppのメッセージと通話はElevenLabs、Messenger・Instagram・TelegramはOpenAI（いずれも米国）で処理され、EUの処理の流れではありません。上のチャットボタンはEU版です。',
 };
 
 const ko: Dict = {
@@ -1229,11 +1229,11 @@ const ko: Dict = {
   'country.national.cta': "{country} 컨시어지 열기 →",
   'country.social.title': '다음 채널에서도 이용 가능',
   'country.social.badge': '국제판 · 미국 AI',
-  'country.social.wa': 'WhatsApp · 메시지',
+  'country.social.wa': 'WhatsApp',
   'country.social.wacall': 'WhatsApp · 통화',
   'country.social.wacall.sub': '채팅을 연 뒤 통화 버튼을 누르세요',
   'country.social.wa.text': '안녕하세요! 이번 주말 {country}에 어떤 행사가 있나요?',
-  'country.social.note': '이 채널들은 국제판으로 운영됩니다. WhatsApp 메시지와 통화는 ElevenLabs, Messenger와 Instagram은 OpenAI(모두 미국)로 처리되며 EU 처리 체계가 아닙니다. 위의 채팅 버튼은 EU 에디션입니다.',
+  'country.social.note': '이 채널들은 국제판으로 운영됩니다. WhatsApp 메시지와 통화는 ElevenLabs, Messenger·Instagram·Telegram은 OpenAI(모두 미국)로 처리되며 EU 처리 체계가 아닙니다. 위의 채팅 버튼은 EU 에디션입니다.',
 };
 
 
