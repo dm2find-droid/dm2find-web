@@ -1,0 +1,95 @@
+---
+import ConnectLayout from '../../layouts/ConnectLayout.astro';
+import ConnectCodeField from '../../components/ConnectCodeField.astro';
+---
+<ConnectLayout title="Connect LINE">
+  <h1>Connect LINE</h1>
+  <p class="lead">Connect your destination's LINE Official Account and let the AI Travel Concierge answer every message it receives — in the visitor's language, with a ready-made menu.</p>
+
+  <section class="card">
+    <h2>1. Prepare your LINE Official Account</h2>
+    <ol>
+      <li>Open <a href="https://manager.line.biz" target="_blank" rel="noopener">LINE Official Account Manager</a> and create an account for your destination (or use your existing one).</li>
+      <li>Go to <strong>Settings → Messaging API</strong> and click <strong>Enable Messaging API</strong> (choose or create a provider).</li>
+      <li>In <strong>Settings → Response settings</strong>: turn <strong>Chat</strong>, <strong>Greeting message</strong> and <strong>Auto-response messages</strong> off, and <strong>Webhooks</strong> on.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>2. Copy two values</h2>
+    <ol>
+      <li>Open <a href="https://developers.line.biz/console/" target="_blank" rel="noopener">LINE Developers console</a> → your provider → the channel of your Official Account.</li>
+      <li><strong>Basic settings</strong> → <strong>Channel secret</strong> (32 characters).</li>
+      <li><strong>Messaging API</strong> → <strong>Channel access token (long-lived)</strong> → <strong>Issue</strong>, then copy the whole token. Treat both like passwords.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>3. Connect it</h2>
+    <form id="form" autocomplete="off">
+      <ConnectCodeField />
+      <label for="channel-secret">Channel secret</label>
+      <input id="channel-secret" type="text" spellcheck="false" maxlength="64" placeholder="32 characters, 0-9 and a-f" />
+      <label for="channel-token">Channel access token (long-lived)</label>
+      <textarea id="channel-token" rows="4" spellcheck="false" placeholder="Paste the full token"></textarea>
+      <button id="submit" type="submit">Connect LINE account</button>
+    </form>
+    <div id="status" class="status" hidden></div>
+  </section>
+
+  <section class="card">
+    <h2>4. Last step in LINE</h2>
+    <p>We set the webhook URL for you. In the LINE Developers console → <strong>Messaging API</strong>, make sure <strong>Use webhook</strong> is switched <strong>on</strong>. Then add your account as a friend and ask a question.</p>
+  </section>
+</ConnectLayout>
+
+<style>
+  textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; resize: vertical;
+             background: var(--bg); color: var(--text); font: inherit; font-family: ui-monospace, monospace; font-size: 13px; word-break: break-all; }
+</style>
+
+<script>
+  import { N8N_WEBHOOK_BASE, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+  import type { ConnectResult } from '../../lib/connect';
+
+  const LINE_ENDPOINT = `${N8N_WEBHOOK_BASE}/connect-line`;
+  const form = document.getElementById('form') as HTMLFormElement;
+  const codeInput = document.getElementById('connect-code') as HTMLInputElement;
+  const secretInput = document.getElementById('channel-secret') as HTMLInputElement;
+  const tokenInput = document.getElementById('channel-token') as HTMLTextAreaElement;
+  const button = document.getElementById('submit') as HTMLButtonElement;
+  const status = document.getElementById('status') as HTMLElement;
+  codeInput.value = getConnectCode();
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const connect_code = codeInput.value.trim();
+    const channel_secret = secretInput.value.trim();
+    const channel_token = tokenInput.value.replace(/\s+/g, '');
+    if (!isValidConnectCode(connect_code)) {
+      setStatus(status, 'error', 'Please enter the 32-character connection code from DM2find.');
+      return;
+    }
+    if (!/^[0-9a-f]{32}$/i.test(channel_secret)) {
+      setStatus(status, 'error', 'That does not look like a channel secret.', 'Copy it from Basic settings → Channel secret (32 characters, 0-9 and a-f).');
+      return;
+    }
+    if (channel_token.length < 100) {
+      setStatus(status, 'error', 'That does not look like a channel access token.', 'Use the long-lived token from Messaging API → Channel access token → Issue, and copy all of it.');
+      return;
+    }
+    rememberConnectCode(connect_code);
+    button.disabled = true;
+    setStatus(status, 'busy', 'Connecting your LINE account…');
+    const r = (await postJson(LINE_ENDPOINT, { connect_code, channel_secret, channel_token })) as ConnectResult & { add_friend?: string };
+    button.disabled = false;
+    if (r.success) {
+      secretInput.value = '';
+      tokenInput.value = '';
+      setStatus(status, 'ok', `Connected: ${r.name ?? 'your LINE account'}`,
+        `Switch "Use webhook" on (step 4), then add the account as a friend${r.add_friend ? ' via ' + r.add_friend : ''} and ask a question. The menu appears within a minute. DM2find has been notified.`);
+    } else {
+      setStatus(status, 'error', 'Connection failed.', r.message ?? '');
+    }
+  });
+</script>
