@@ -1,0 +1,108 @@
+---
+import ConnectLayout from '../../layouts/ConnectLayout.astro';
+import ConnectCodeField from '../../components/ConnectCodeField.astro';
+---
+<ConnectLayout title="Connect WeChat">
+  <h1>Connect WeChat</h1>
+  <p class="lead">Connect your destination's WeChat Official Account (微信公众号) and let the AI Travel Concierge answer every message — with a ready-made menu.</p>
+
+  <section class="card">
+    <h2>Requirement</h2>
+    <p>The account must be a <strong>verified Service Account</strong> (服务号, 微信认证). Subscription accounts (订阅号) and unverified accounts cannot send the concierge's replies. You need the <strong>administrator</strong> (管理员) of the account to confirm a few steps with WeChat on their phone.</p>
+  </section>
+
+  <section class="card">
+    <h2>1. Collect three values</h2>
+    <ol>
+      <li>Log in to <a href="https://mp.weixin.qq.com" target="_blank" rel="noopener">mp.weixin.qq.com</a> by scanning the QR code with the administrator's WeChat.</li>
+      <li><strong>设置与开发 → 基本配置</strong> (Settings and Development → Basic Configuration): copy the <strong>AppID</strong>, and show or reset the <strong>AppSecret</strong> (the administrator confirms by scan).</li>
+      <li>On the same page, add <code>178.104.126.125</code> to the <strong>IP白名单</strong> (IP whitelist) and save.</li>
+      <li><strong>设置与开发 → 公众号设置</strong> (Account settings): copy the <strong>原始ID</strong> (original ID, starts with <code>gh_</code>).</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>2. Connect it</h2>
+    <form id="form" autocomplete="off">
+      <ConnectCodeField />
+      <label for="appid">AppID</label>
+      <input id="appid" type="text" spellcheck="false" maxlength="40" placeholder="wx…" />
+      <label for="appsecret">AppSecret</label>
+      <input id="appsecret" type="text" spellcheck="false" maxlength="64" placeholder="32 characters" />
+      <label for="original-id">Original ID (原始ID)</label>
+      <input id="original-id" type="text" spellcheck="false" maxlength="40" placeholder="gh_…" />
+      <button id="submit" type="submit">Connect WeChat account</button>
+    </form>
+    <div id="status" class="status" hidden></div>
+  </section>
+
+  <section class="card" id="server-config" hidden>
+    <h2>3. Server configuration (last step)</h2>
+    <ol>
+      <li>In <strong>设置与开发 → 基本配置 → 服务器配置</strong> click <strong>修改配置</strong> (modify).</li>
+      <li><strong>URL</strong>: <code id="server-url"></code></li>
+      <li><strong>Token</strong>: <code id="server-token"></code></li>
+      <li><strong>EncodingAESKey</strong>: click 随机生成 (generate). <strong>消息加解密方式</strong>: <strong>明文模式</strong> (plaintext).</li>
+      <li>Click <strong>提交</strong> (submit), then <strong>启用</strong> (enable). The administrator confirms by scan.</li>
+    </ol>
+    <p>Then follow your account in WeChat and send a message — the concierge replies within seconds. Keep the token private.</p>
+  </section>
+</ConnectLayout>
+
+<script>
+  import { N8N_WEBHOOK_BASE, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+  import type { ConnectResult } from '../../lib/connect';
+
+  type WeChatResult = ConnectResult & { server_url?: string; server_token?: string; warning?: string };
+  const WECHAT_ENDPOINT = `${N8N_WEBHOOK_BASE}/connect-wechat`;
+  const form = document.getElementById('form') as HTMLFormElement;
+  const codeInput = document.getElementById('connect-code') as HTMLInputElement;
+  const appidInput = document.getElementById('appid') as HTMLInputElement;
+  const secretInput = document.getElementById('appsecret') as HTMLInputElement;
+  const ghInput = document.getElementById('original-id') as HTMLInputElement;
+  const button = document.getElementById('submit') as HTMLButtonElement;
+  const status = document.getElementById('status') as HTMLElement;
+  const serverBox = document.getElementById('server-config') as HTMLElement;
+  const serverUrl = document.getElementById('server-url') as HTMLElement;
+  const serverToken = document.getElementById('server-token') as HTMLElement;
+  codeInput.value = getConnectCode();
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const connect_code = codeInput.value.trim();
+    const appid = appidInput.value.trim();
+    const appsecret = secretInput.value.trim();
+    const original_id = ghInput.value.trim();
+    if (!isValidConnectCode(connect_code)) {
+      setStatus(status, 'error', 'Please enter the 32-character connection code from DM2find.');
+      return;
+    }
+    if (!/^wx[0-9a-f]{16}$/i.test(appid)) {
+      setStatus(status, 'error', 'That does not look like an AppID.', 'It starts with wx and has 18 characters in total.');
+      return;
+    }
+    if (!/^[0-9a-f]{32}$/i.test(appsecret)) {
+      setStatus(status, 'error', 'That does not look like an AppSecret.', '32 characters, 0-9 and a-f.');
+      return;
+    }
+    if (!/^gh_[0-9a-f]{12}$/i.test(original_id)) {
+      setStatus(status, 'error', 'That does not look like the original ID.', 'It starts with gh_ followed by 12 characters (公众号设置 → 原始ID).');
+      return;
+    }
+    rememberConnectCode(connect_code);
+    button.disabled = true;
+    setStatus(status, 'busy', 'Connecting your WeChat account…');
+    const r = (await postJson(WECHAT_ENDPOINT, { connect_code, appid, appsecret, original_id })) as WeChatResult;
+    button.disabled = false;
+    if (r.success) {
+      secretInput.value = '';
+      serverUrl.textContent = r.server_url ?? '';
+      serverToken.textContent = r.server_token ?? '';
+      serverBox.hidden = false;
+      setStatus(status, 'ok', `Connected: ${r.name ?? 'your account'}`,
+        (r.warning ? r.warning + ' ' : '') + 'Finish with the server configuration below. DM2find has been notified and your menu is being set.');
+    } else {
+      setStatus(status, 'error', 'Connection failed.', r.message ?? '');
+    }
+  });
+</script>
