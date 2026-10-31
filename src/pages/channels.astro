@@ -29,6 +29,7 @@ const live = frSocial ? [
   { n: 'Messenger', sub: '@' + frSocial.messenger, href: `https://m.me/${frSocial.messenger}` },
   { n: 'Instagram', sub: '@' + frSocial.instagram, href: `https://ig.me/m/${frSocial.instagram}` },
   ...(frSocial.telegram ? [{ n: 'Telegram', sub: '@' + frSocial.telegram, href: `https://t.me/${frSocial.telegram}` }] : []),
+  ...(frSocial.lineUrl ? [{ n: 'LINE', sub: frSocial.lineUrl.replace(/^https?:\/\//, ''), href: frSocial.lineUrl }] : []),
 ] : [];
 
 const here = (p?: string) => !!p && existsSync(`public${p}`);
@@ -138,7 +139,7 @@ const tips = (tipsRaw as any).videos.map((v: any) => ({
       <h2 class="h-section">Optional channels, on video — and live for France</h2>
       <p class="mt-2 max-w-[64ch] text-sm text-(--color-ink-2)">
         These run inside apps we can't embed, so each video shows a real conversation end to end.
-        Five of them you can try yourself right now, on the concierge for the whole of France.
+        Six of them you can try yourself right now, on the concierge for the whole of France.
       </p>
       {live.length > 0 && (
         <div class="mt-6 rounded-2xl border border-(--color-line) bg-white p-5">
@@ -148,7 +149,7 @@ const tips = (tipsRaw as any).videos.map((v: any) => ({
               <span class="h-1.5 w-1.5 rounded-full bg-current"></span> International edition · US AI
             </span>
           </div>
-          <ul class="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <ul class="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {live.map(l => (
               <li>
                 <a href={l.href} target="_blank" rel="noopener noreferrer"
@@ -161,7 +162,7 @@ const tips = (tipsRaw as any).videos.map((v: any) => ({
           </ul>
           <p class="mt-3 text-xs text-(--color-ink-3)">
             Ask about any place in France; answers come from DATAtourisme. WhatsApp messages and calls run on
-            ElevenLabs; Messenger, Instagram and Telegram on OpenAI through our own n8n in Germany — US AI, so not the
+            ElevenLabs; Messenger, Instagram, Telegram and LINE on OpenAI through our own n8n in Germany — US AI, so not the
             EU chain. The EU edition is the <a href="/countries/fr" class="underline underline-offset-2">France web chat</a>.
           </p>
         </div>

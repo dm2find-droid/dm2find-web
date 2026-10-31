@@ -23,7 +23,8 @@
     "ElevenLabs, Messenger en Instagram via OpenAI op onze eigen n8n). Nooit op de",
     "-eu twin, en de site zegt dat er ook bij. whatsapp = nummer in E.164 zonder",
     "plus; whatsappCall = ook bellen via WhatsApp; messenger/instagram = page-slug;",
-    "telegram = bot-naam zonder @ (t.me/<naam>)."
+    "telegram = bot-naam zonder @ (t.me/<naam>); lineUrl = de lin.ee-link van het",
+    "officiële LINE-account (voegt de account als vriend toe)."
   ],
   "FR": {
     "tenantId": "fr",
@@ -40,6 +41,7 @@
       "messenger": "Trydm2find",
       "instagram": "trydm2find",
       "telegram": "explorefrance_bot",
+      "lineUrl": "https://lin.ee/WqJM03G",
       "facebookUrl": "https://www.facebook.com/Trydm2find",
       "instagramUrl": "https://www.instagram.com/trydm2find/"
     }
