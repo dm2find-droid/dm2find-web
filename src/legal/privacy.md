@@ -73,7 +73,9 @@ DM2find does not store dictation audio. The workflow that handles it is
 set not to keep the audio or the resulting text after a successful
 request. Transcripts of voice conversations are anonymous and are kept
 only for as long as they are useful to improve answer quality, and no
-longer than 12 months.
+longer than 12 months. Transcripts of voice messages sent on WhatsApp are
+an exception: they are kept for no longer than 30 days (see "Messaging
+channels").
 
 ## Messaging channels
 
@@ -101,6 +103,11 @@ use your details from a messaging channel for advertising.
 delete the chat in the app. Deleting it in the app does not delete it
 from our systems, so ask the destination or us if you want your
 conversation removed.
+
+**Voice messages on WhatsApp.** If you send a voice message on WhatsApp,
+we convert it to text so the assistant can answer you. DM2find does not
+store the audio once it has been transcribed. The transcript is kept for
+no longer than 30 days and is then deleted.
 
 ## Why we process data and on what basis
 
@@ -168,14 +175,16 @@ data under their own terms and may do so outside the EU.
 We keep personal data no longer than needed for the purpose it was
 collected for. The periods below are the ones we apply.
 
-| Data                                     | Retention                                                                                                      |
-|------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Dictation audio                          | Not stored by DM2find                                                                                          |
-| Live voice audio                         | Not stored by DM2find. Audio recording is switched off at ElevenLabs.                                          |
-| Chat conversations and voice transcripts | As long as they are useful to improve answer quality, and no longer than 12 months, then deleted or anonymised |
-| Technical and server logs                | Up to 7 days                                                                                                   |
-| Emails you send us                       | Until the matter is resolved                                                                                   |
-| Accounting records                       | As long as the law requires                                                                                    |
+| Data                                                                                | Retention                                                                                                      |
+|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| Dictation audio                                                                     | Not stored by DM2find                                                                                          |
+| Live voice audio                                                                    | Not stored by DM2find. Audio recording is switched off at ElevenLabs.                                          |
+| WhatsApp voice messages (audio)                                                     | Not stored by DM2find after transcription                                                                      |
+| WhatsApp voice message transcripts                                                  | No longer than 30 days, then deleted                                                                           |
+| Chat conversations and voice transcripts, except WhatsApp voice message transcripts | As long as they are useful to improve answer quality, and no longer than 12 months, then deleted or anonymised |
+| Technical and server logs                                                           | Up to 7 days                                                                                                   |
+| Emails you send us                                                                  | Until the matter is resolved                                                                                   |
+| Accounting records                                                                  | As long as the law requires                                                                                    |
 
 If a destination is the controller, it can set a shorter period for its
 own assistant.
@@ -215,7 +224,7 @@ not knowingly collect their data.
 (Autoriteit Persoonsgegevens) or to the authority in your own country.
 
 **Changes.** We will update this policy when our service or the law
-changes, and change the date below. Last updated: 7 October 2026.
+changes, and change the date below. Last updated: 30 October 2026.
 
 **Contact.** DM2find BV, Hilversum, the Netherlands. Chamber of Commerce
 89552407. Email: sales@dm2find.ai.

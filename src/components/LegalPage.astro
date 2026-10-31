@@ -1,7 +1,11 @@
 ---
 /* Juridische pagina's (/privacy, /terms). De tekst staat als Markdown in
    src/legal/, zodat een wijziging een tekstwijziging is en geen HTML-klus.
-   De inhoudsopgave komt uit de koppen van dat bestand. */
+   De inhoudsopgave komt uit de koppen van dat bestand.
+
+   Layout: lopende tekst blijft op leesbreedte (70ch), tabellen mogen de hele
+   kolom gebruiken. Op telefoons wordt elke tabelrij een gestapelde kaart; de
+   kolomnamen komen dan uit data-label (gezet door het script onderaan). */
 import Base from '../layouts/Base.astro';
 
 interface Props {
@@ -15,53 +19,138 @@ const { title, description, updated, headings, other } = Astro.props;
 const toc = headings.filter(h => h.depth === 2);
 ---
 <Base title={title} description={description}>
-  <section class="mx-auto max-w-6xl px-5 pt-14 pb-6">
+  <section class="mx-auto max-w-6xl px-5 pt-14 pb-6 lg:pb-10">
     <p class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Legal</p>
     <h1 class="h-display">{title}</h1>
     <p class="mt-4 text-sm text-(--color-ink-3)">
       Last updated {updated} · <a href={other.href} class="underline underline-offset-2 hover:text-(--color-ink)">{other.label}</a>
     </p>
+
+    <details class="legal-toc-mobile mt-6 rounded-xl border border-(--color-line) bg-(--color-paper-2) lg:hidden">
+      <summary class="cursor-pointer px-4 py-3 text-sm font-semibold text-(--color-ink)">Contents</summary>
+      <ol class="space-y-2 px-4 pb-4 text-sm">
+        {toc.map(h => (
+          <li><a href={`#${h.slug}`} class="text-(--color-ink-2) hover:text-(--color-ink)">{h.text}</a></li>
+        ))}
+      </ol>
+    </details>
   </section>
 
-  <section class="mx-auto grid max-w-6xl gap-10 px-5 pb-16 lg:grid-cols-[15rem_1fr]">
+  <section class="mx-auto grid max-w-6xl gap-12 px-5 pb-20 lg:grid-cols-[14rem_minmax(0,1fr)]">
     <nav aria-label="Contents" class="hidden lg:block">
-      <div class="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto border-l border-(--color-line) pl-4">
-        <p class="mb-2 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Contents</p>
-        <ol class="space-y-1.5 text-sm">
+      <div class="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
+        <p class="mb-3 text-xs font-bold tracking-widest text-(--color-ink-3) uppercase">Contents</p>
+        <ol class="legal-toc border-l border-(--color-line) text-sm">
           {toc.map(h => (
-            <li><a href={`#${h.slug}`} class="text-(--color-ink-2) hover:text-(--color-ink)">{h.text}</a></li>
+            <li><a href={`#${h.slug}`} data-toc={h.slug}>{h.text}</a></li>
           ))}
         </ol>
       </div>
     </nav>
-    <article class="legal min-w-0 max-w-[72ch]">
+    <article class="legal min-w-0">
       <slot />
     </article>
   </section>
 </Base>
 
 <style>
-  .legal :global(h2) {
-    font-size: 1.45rem; margin: 2.6rem 0 .8rem; scroll-margin-top: 6rem;
+  /* Inhoudsopgave (desktop) met actieve sectie */
+  .legal-toc a {
+    display: block; margin-left: -1px; padding: .3rem 0 .3rem 1rem;
+    border-left: 2px solid transparent; line-height: 1.4;
+    color: var(--color-ink-3); transition: color .15s, border-color .15s;
   }
-  .legal :global(h2:first-child) { margin-top: 0; }
-  .legal :global(p) { margin: .75rem 0; line-height: 1.7; color: var(--color-ink-2); }
+  .legal-toc a:hover { color: var(--color-ink); }
+  .legal-toc a[aria-current="true"] { color: var(--color-pine); border-left-color: var(--color-pine); }
+
+  .legal-toc-mobile summary::marker { color: var(--color-ink-3); }
+
+  /* Lopende tekst op leesbreedte */
+  .legal :global(:is(h2, h3, p, ul, ol)) { max-width: 70ch; }
+  .legal :global(h2) {
+    font-size: 1.5rem; margin: 3.5rem 0 .9rem; padding-top: 2.5rem;
+    border-top: 1px solid var(--color-line-2); scroll-margin-top: 5rem;
+  }
+  .legal :global(h2:first-child) { margin-top: 0; padding-top: 0; border-top: 0; }
+  .legal :global(h3) { font-size: 1.1rem; font-weight: 600; margin: 1.8rem 0 .5rem; color: var(--color-ink); }
+  .legal :global(p) { margin: .8rem 0; line-height: 1.75; color: var(--color-ink-2); }
   .legal :global(strong) { color: var(--color-ink); }
-  .legal :global(ul) { margin: .75rem 0; padding-left: 1.2rem; list-style: disc; color: var(--color-ink-2); }
-  .legal :global(li) { margin: .35rem 0; line-height: 1.6; }
+  .legal :global(ul) { margin: .8rem 0; padding-left: 1.2rem; list-style: disc; color: var(--color-ink-2); }
+  .legal :global(ol) { margin: .8rem 0; padding-left: 1.4rem; list-style: decimal; color: var(--color-ink-2); }
+  .legal :global(li) { margin: .4rem 0; line-height: 1.65; }
   .legal :global(a) { color: var(--color-pine); text-decoration: underline; text-underline-offset: 2px; }
+
+  /* Tabellen: volle kolombreedte, vaste kolomverhouding, alles mag afbreken */
   .legal :global(table) {
-    display: block; overflow-x: auto; width: 100%; margin: 1.2rem 0;
-    border-collapse: collapse; font-size: .9rem;
+    width: 100%; margin: 1.5rem 0 1.8rem; table-layout: fixed;
+    border-collapse: separate; border-spacing: 0; font-size: .92rem;
+    border: 1px solid var(--color-line); border-radius: .75rem; overflow: hidden;
   }
   .legal :global(th), .legal :global(td) {
-    text-align: left; vertical-align: top; padding: .6rem .8rem;
+    text-align: left; vertical-align: top; padding: .8rem 1rem;
     border-bottom: 1px solid var(--color-line-2); line-height: 1.55;
+    overflow-wrap: break-word;
   }
+  .legal :global(tbody tr:last-child td) { border-bottom: 0; }
   .legal :global(th) {
-    font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
     color: var(--color-ink-3); border-bottom-color: var(--color-line); background: var(--color-paper-2);
   }
-  .legal :global(td:first-child) { font-weight: 600; color: var(--color-ink); white-space: nowrap; }
-  @media (max-width: 640px) { .legal :global(td:first-child) { white-space: normal; } }
+  .legal :global(td) { color: var(--color-ink-2); }
+  .legal :global(td:first-child) { font-weight: 600; color: var(--color-ink); }
+  /* 2 kolommen: label 32%, tekst de rest */
+  .legal :global(th:first-child) { width: 32%; }
+  /* 3 kolommen (ontvangers): naam 20%, beschrijving, waar 24% */
+  .legal :global(table:has(th:nth-child(3)) th:first-child) { width: 20%; }
+  .legal :global(table:has(th:nth-child(3)) th:nth-child(3)) { width: 24%; }
+
+  /* Telefoon: elke rij een kaart */
+  @media (max-width: 640px) {
+    .legal :global(table), .legal :global(tbody), .legal :global(tr), .legal :global(td) { display: block; width: auto; }
+    .legal :global(table) { border: 0; border-radius: 0; overflow: visible; }
+    .legal :global(thead) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .legal :global(tr) {
+      margin: 0 0 .75rem; padding: .9rem 1rem; border: 1px solid var(--color-line);
+      border-radius: .75rem; background: var(--color-paper-2);
+    }
+    .legal :global(td) { padding: 0; border: 0; }
+    .legal :global(td:first-child) { font-size: 1rem; margin-bottom: .35rem; }
+    .legal :global(td + td) { margin-top: .5rem; }
+    .legal :global(td + td[data-label]::before) {
+      content: attr(data-label); display: block; margin-bottom: .1rem;
+      font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+      color: var(--color-ink-3);
+    }
+  }
 </style>
+
+<script>
+  // Kolomnamen als data-label op de cellen, voor de kaartweergave op telefoons.
+  document.querySelectorAll<HTMLTableElement>('.legal table').forEach(table => {
+    const labels = [...table.querySelectorAll('thead th')].map(th => th.textContent?.trim() ?? '');
+    table.querySelectorAll('tbody tr').forEach(tr => {
+      [...tr.children].forEach((td, i) => { if (labels[i]) td.setAttribute('data-label', labels[i]); });
+    });
+  });
+
+  // Actieve sectie in de inhoudsopgave markeren.
+  const links = new Map<string, HTMLAnchorElement>();
+  document.querySelectorAll<HTMLAnchorElement>('.legal-toc a[data-toc]').forEach(a => links.set(a.dataset.toc!, a));
+  const heads = [...document.querySelectorAll<HTMLElement>('.legal h2[id]')];
+  if (links.size && heads.length) {
+    const update = () => {
+      const line = window.innerHeight * 0.3;
+      let current = heads[0];
+      for (const h of heads) { if (h.getBoundingClientRect().top <= line) current = h; else break; }
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) current = heads[heads.length - 1];
+      links.forEach((a, id) => a.setAttribute('aria-current', String(id === current.id)));
+    };
+    let raf = 0;
+    window.addEventListener('scroll', () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); }, { passive: true });
+    update();
+  }
+
+  // Mobiele inhoudsopgave sluiten na een klik.
+  document.querySelectorAll<HTMLAnchorElement>('.legal-toc-mobile a').forEach(a =>
+    a.addEventListener('click', () => a.closest('details')?.removeAttribute('open')));
+</script>
