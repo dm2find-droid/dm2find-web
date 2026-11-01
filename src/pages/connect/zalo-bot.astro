@@ -1,0 +1,92 @@
+---
+import ConnectLayout from '../../layouts/ConnectLayout.astro';
+import ConnectCodeField from '../../components/ConnectCodeField.astro';
+---
+<ConnectLayout title="Connect a Zalo bot">
+  <h1>Connect a Zalo bot</h1>
+  <p class="lead">Create a Zalo bot for your destination and let the AI Travel Concierge answer every message it receives — in Vietnamese or in the visitor's own language.</p>
+
+  <section class="card">
+    <h2>1. Create your bot</h2>
+    <ol>
+      <li>Open <a href="https://bot.zaloplatforms.com" target="_blank" rel="noopener">bot.zaloplatforms.com</a>, or the <strong>Zalo Bot Manager</strong> in the Zalo app, and sign in with your Zalo account.</li>
+      <li>Create a new bot. Choose a name visitors will recognise (e.g. <em>Visit Yourcity Concierge</em>) and a profile picture.</li>
+      <li>Copy the <strong>Bot Token</strong>. It looks like <code>1234567890:Ab…</code> — treat it like a password.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>2. Connect it</h2>
+    <form id="form" autocomplete="off">
+      <ConnectCodeField />
+      <label for="bot-token">Bot Token</label>
+      <input id="bot-token" type="text" spellcheck="false" placeholder="1234567890:Ab…" />
+      <button id="submit" type="submit">Connect Zalo bot</button>
+    </form>
+    <div id="status" class="status" hidden></div>
+  </section>
+
+  <section class="card" id="webhook-config" hidden>
+    <h2>3. Webhook (last step)</h2>
+    <p>Zalo did not confirm the webhook automatically. Set it once by hand:</p>
+    <ol>
+      <li>In the Zalo Bot Manager, open your bot and go to <strong>Thiết lập chung</strong> (General settings) → <strong>Webhook</strong>.</li>
+      <li><strong>Webhook URL</strong>: <code id="webhook-url"></code></li>
+      <li><strong>Secret token</strong>: <code id="webhook-secret"></code></li>
+      <li>Save. Then send your bot a message in Zalo — the concierge replies within seconds.</li>
+    </ol>
+    <p>Keep the secret private.</p>
+  </section>
+</ConnectLayout>
+
+<script>
+  import { N8N_WEBHOOK_BASE, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+  import type { ConnectResult } from '../../lib/connect';
+
+  type ZaloBotResult = ConnectResult & { webhook_ok?: boolean; webhook_url?: string; webhook_secret?: string; hint?: string };
+  const ZALO_BOT_ENDPOINT = `${N8N_WEBHOOK_BASE}/connect-zalo-bot`;
+  const form = document.getElementById('form') as HTMLFormElement;
+  const codeInput = document.getElementById('connect-code') as HTMLInputElement;
+  const tokenInput = document.getElementById('bot-token') as HTMLInputElement;
+  const button = document.getElementById('submit') as HTMLButtonElement;
+  const status = document.getElementById('status') as HTMLElement;
+  const box = document.getElementById('webhook-config') as HTMLElement;
+  const urlEl = document.getElementById('webhook-url') as HTMLElement;
+  const secretEl = document.getElementById('webhook-secret') as HTMLElement;
+  codeInput.value = getConnectCode();
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const connect_code = codeInput.value.trim();
+    const bot_token = tokenInput.value.trim();
+    if (!isValidConnectCode(connect_code)) {
+      setStatus(status, 'error', 'Please enter the 32-character connection code from DM2find.');
+      return;
+    }
+    if (!/^[0-9]{5,30}:[A-Za-z0-9_-]{8,200}$/.test(bot_token)) {
+      setStatus(status, 'error', 'That does not look like a Zalo bot token.', 'Copy the full token from the Zalo Bot Manager (format 1234567890:Ab…).');
+      return;
+    }
+    rememberConnectCode(connect_code);
+    button.disabled = true;
+    box.hidden = true;
+    setStatus(status, 'busy', 'Connecting your bot…');
+    const r = (await postJson(ZALO_BOT_ENDPOINT, { connect_code, bot_token })) as ZaloBotResult;
+    button.disabled = false;
+    if (r.success) {
+      tokenInput.value = '';
+      if (r.webhook_ok) {
+        setStatus(status, 'ok', `Connected: ${r.name ?? 'your bot'}`,
+          'Send your bot a message in Zalo — the concierge should reply within seconds. DM2find has been notified.');
+      } else {
+        urlEl.textContent = r.webhook_url ?? '';
+        secretEl.textContent = r.webhook_secret ?? '';
+        box.hidden = false;
+        setStatus(status, 'ok', `Bot saved: ${r.name ?? 'your bot'}`,
+          'One more step: set the webhook below in the Zalo Bot Manager. DM2find has been notified.' + (r.hint ? ` (Zalo: ${r.hint})` : ''));
+      }
+    } else {
+      setStatus(status, 'error', 'Connection failed.', r.message ?? '');
+    }
+  });
+</script>
