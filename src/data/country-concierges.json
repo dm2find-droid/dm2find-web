@@ -19,12 +19,14 @@
     "euTenantId: de -eu twin (data_residency = eu_sovereign); de landpagina wijst",
     "daar standaard naartoe, net als de bestemmingspagina's.",
     "",
-    "social: kanalen die alleen op de internationale tenant draaien (WhatsApp via",
-    "ElevenLabs, Messenger en Instagram via OpenAI op onze eigen n8n). Nooit op de",
-    "-eu twin, en de site zegt dat er ook bij. whatsapp = nummer in E.164 zonder",
-    "plus; whatsappCall = ook bellen via WhatsApp; messenger/instagram = page-slug;",
+    "social: berichtenkanalen buiten de webchat. WhatsApp via ElevenLabs en",
+    "Messenger/Instagram/Telegram via OpenAI draaien op de internationale tenant (US-AI);",
+    "LINE, KakaoTalk en Zalo draaien op de -eu twin (Scaleway en Mistral, EU-keten).",
+    "De site zegt dat er ook bij. whatsapp = nummer in E.164 zonder plus;",
+    "whatsappCall = ook bellen via WhatsApp; messenger/instagram = page-slug;",
     "telegram = bot-naam zonder @ (t.me/<naam>); lineUrl = de lin.ee-link van het",
-    "officiële LINE-account (voegt de account als vriend toe)."
+    "officiële LINE-account; kakaoUrl/kakaoId = chatlink en zoek-ID van het",
+    "KakaoTalk-kanaal; zaloUrl/zaloName = zalo.me-link en naam van de Zalo-bot."
   ],
   "FR": {
     "tenantId": "fr",
