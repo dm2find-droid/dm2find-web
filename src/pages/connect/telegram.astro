@@ -14,6 +14,21 @@ import ConnectCodeField from '../../components/ConnectCodeField.astro';
       <li>BotFather replies with a token like <code>123456789:AA…</code>. Copy it — treat it like a password.</li>
       <li>Optional: set a profile picture and description with <code>/setuserpic</code> and <code>/setdescription</code>.</li>
     </ol>
+    {/* Korte video-uitleg van een derde (YouTube). Niets van YouTube wordt
+        geladen tot iemand op de knop drukt; dan pas de speler, via
+        youtube-nocookie.com, en alleen de eerste 60 seconden. De gewone link
+        staat ernaast voor wie liever op YouTube zelf kijkt. */}
+    <div class="video" id="howto">
+      <button type="button" id="howto-play" class="video-play" aria-label="Play: how to create your Telegram bot and get your token">
+        <span class="video-icon" aria-hidden="true">▶</span>
+        <span>
+          <strong>Not sure how? Watch the first 60 seconds.</strong>
+          <small>“How to create your Telegram bot and get your token” · YouTube, loads only when you press play</small>
+        </span>
+      </button>
+      <div id="howto-slot" class="video-slot" hidden></div>
+      <p class="video-link"><a href="https://www.youtube.com/watch?v=9CVrnURQtpU" target="_blank" rel="noopener">Open the video on YouTube ↗</a></p>
+    </div>
   </section>
 
   <section class="card">
@@ -28,8 +43,31 @@ import ConnectCodeField from '../../components/ConnectCodeField.astro';
   </section>
 </ConnectLayout>
 
+<style>
+  .video { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 14px; }
+  .video-play { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; font: inherit; color: var(--text); }
+  .video-play:hover { border-color: var(--accent); }
+  .video-play strong { display: block; font-size: .95rem; }
+  .video-play small { display: block; color: var(--muted); margin-top: 2px; }
+  .video-icon { flex: 0 0 auto; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 999px; background: var(--accent); color: #fff; font-size: 14px; }
+  .video-slot { margin-top: 10px; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: #000; }
+  .video-slot iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .video-link { margin: 8px 0 0; font-size: .85rem; color: var(--muted); }
+</style>
+
 <script>
   import { TELEGRAM, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+
+  // De uitlegvideo: pas bij een druk op de knop komt de YouTube-speler binnen
+  // (youtube-nocookie), en hij stopt na 60 seconden — meer is er niet nodig.
+  const play = document.getElementById('howto-play') as HTMLButtonElement | null;
+  const slot = document.getElementById('howto-slot') as HTMLElement | null;
+  play?.addEventListener('click', () => {
+    if (!slot) return;
+    slot.innerHTML = '<iframe allow="autoplay; encrypted-media; fullscreen" allowfullscreen loading="lazy" title="How to create your Telegram bot and get your token" src="https://www.youtube-nocookie.com/embed/9CVrnURQtpU?autoplay=1&start=0&end=60&rel=0"></iframe>';
+    slot.hidden = false;
+    play.hidden = true;
+  });
 
   const form = document.getElementById('form') as HTMLFormElement;
   const codeInput = document.getElementById('connect-code') as HTMLInputElement;
