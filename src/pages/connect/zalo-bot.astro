@@ -13,6 +13,21 @@ import ConnectCodeField from '../../components/ConnectCodeField.astro';
       <li>Create a new bot. Choose a name visitors will recognise (e.g. <em>Visit Yourcity Concierge</em>) and a profile picture.</li>
       <li>Copy the <strong>Bot Token</strong>. It looks like <code>1234567890:Ab…</code> — treat it like a password.</li>
     </ol>
+    {/* Korte video-uitleg van een derde (YouTube). Niets van YouTube wordt
+        geladen tot iemand op de knop drukt; dan pas de speler, via
+        youtube-nocookie.com, en alleen de eerste 37 seconden. De gewone link
+        staat ernaast voor wie liever op YouTube zelf kijkt. */}
+    <div class="video" id="howto">
+      <button type="button" id="howto-play" class="video-play" aria-label="Play: how to create your Zalo bot and get your token">
+        <span class="video-icon" aria-hidden="true">▶</span>
+        <span>
+          <strong>Not sure how? Watch the first 37 seconds.</strong>
+          <small>Creating a Zalo bot and copying its token · YouTube, loads only when you press play</small>
+        </span>
+      </button>
+      <div id="howto-slot" class="video-slot" hidden></div>
+      <p class="video-link"><a href="https://www.youtube.com/watch?v=gaqR1nE4dx4" target="_blank" rel="noopener">Open the video on YouTube ↗</a></p>
+    </div>
   </section>
 
   <section class="card">
@@ -39,9 +54,32 @@ import ConnectCodeField from '../../components/ConnectCodeField.astro';
   </section>
 </ConnectLayout>
 
+<style>
+  .video { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 14px; }
+  .video-play { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; font: inherit; color: var(--text); }
+  .video-play:hover { border-color: var(--accent); }
+  .video-play strong { display: block; font-size: .95rem; }
+  .video-play small { display: block; color: var(--muted); margin-top: 2px; }
+  .video-icon { flex: 0 0 auto; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 999px; background: var(--accent); color: #fff; font-size: 14px; }
+  .video-slot { margin-top: 10px; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: #000; }
+  .video-slot iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .video-link { margin: 8px 0 0; font-size: .85rem; color: var(--muted); }
+</style>
+
 <script>
   import { N8N_WEBHOOK_BASE, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
   import type { ConnectResult } from '../../lib/connect';
+
+  // De uitlegvideo: pas bij een druk op de knop komt de YouTube-speler binnen
+  // (youtube-nocookie), en hij stopt na 37 seconden — meer is er niet nodig.
+  const play = document.getElementById('howto-play') as HTMLButtonElement | null;
+  const slot = document.getElementById('howto-slot') as HTMLElement | null;
+  play?.addEventListener('click', () => {
+    if (!slot) return;
+    slot.innerHTML = '<iframe allow="autoplay; encrypted-media; fullscreen" allowfullscreen loading="lazy" title="How to create your Zalo bot and get your token" src="https://www.youtube-nocookie.com/embed/gaqR1nE4dx4?autoplay=1&start=0&end=37&rel=0"></iframe>';
+    slot.hidden = false;
+    play.hidden = true;
+  });
 
   type ZaloBotResult = ConnectResult & { webhook_ok?: boolean; webhook_url?: string; webhook_secret?: string; hint?: string };
   const ZALO_BOT_ENDPOINT = `${N8N_WEBHOOK_BASE}/connect-zalo-bot`;
