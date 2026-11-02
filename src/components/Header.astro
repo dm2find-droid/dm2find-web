@@ -50,6 +50,7 @@ const path = Astro.url.pathname;
     {nav.map(n => <>
       <a href={n.url} class="py-3 text-base">{n.label}</a>
       {n.href === '/channels' && <a href="/channels/voice" class="-mt-2 py-2 pl-4 text-sm text-(--color-ink-2)">{_('nav.voice')}</a>}
+      {n.href === '/channels' && <a href="/connect" class="-mt-2 py-2 pl-4 text-sm text-(--color-ink-2)">{_('nav.connect')}</a>}
     </>)}
     {/* The desktop CTA is md:inline-block, so without this the booking link was
         invisible on a phone — where most of your traveller traffic will be. */}
