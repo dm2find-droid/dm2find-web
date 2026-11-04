@@ -50,7 +50,11 @@
       "zaloName": "Toute la France demo",
       "facebookUrl": "https://www.facebook.com/Trydm2find",
       "instagramUrl": "https://www.instagram.com/trydm2find/"
-    }
+    },
+    "videos": [
+      { "id": "pid71NRNTqA", "label": "France - KakaoTalk", "channel": "KakaoTalk" },
+      { "id": "VCeBy0I3ahs", "label": "France - Zalo", "channel": "Zalo" }
+    ]
   },
   "AT": {
     "tenantId": "at",

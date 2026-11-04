@@ -8423,6 +8423,13 @@
     "channels": [
       "webchat"
     ],
+    "videos": [
+      {
+        "id": "F95E2Ne15w8",
+        "label": "Hilversum - Web Chat",
+        "channel": "webchat"
+      }
+    ],
     "languages": [],
     "inventory": {
       "golf": 12,
