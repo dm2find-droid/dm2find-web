@@ -56,7 +56,7 @@ import ConnectCodeField from '../../components/ConnectCodeField.astro';
 </style>
 
 <script>
-  import { TELEGRAM, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+  import { TELEGRAM, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus, telegramBotLink } from '../../lib/connect';
 
   // De uitlegvideo: pas bij een druk op de knop komt de YouTube-speler binnen
   // (youtube-nocookie), en hij stopt na 60 seconden — meer is er niet nodig.
@@ -95,8 +95,10 @@ import ConnectCodeField from '../../components/ConnectCodeField.astro';
     button.disabled = false;
     if (r.success) {
       tokenInput.value = '';
+      const link = telegramBotLink(r.name);
       setStatus(status, 'ok', `Connected: ${r.name ?? 'your bot'}`,
-        'Open your bot in Telegram, press Start and ask a question — the concierge should reply within seconds. DM2find has been notified.');
+        `${link ? 'Open your bot with the link below' : 'Open your bot in Telegram'}, press Start and ask a question — the concierge should reply within seconds. DM2find has been notified.`,
+        link);
     } else {
       setStatus(status, 'error', 'Connection failed.', r.message ?? '');
     }
