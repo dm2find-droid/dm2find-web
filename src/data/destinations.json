@@ -67,7 +67,7 @@
       "swimming": 22,
       "walkNodes": 376,
       "cycleNodes": 99,
-      "attractions": 184,
+      "attractions": 186,
       "restaurants": 45
     },
     "enrichments": [],
@@ -756,7 +756,7 @@
       "swimming": 22,
       "walkNodes": 184,
       "cycleNodes": 177,
-      "attractions": 98,
+      "attractions": 97,
       "restaurants": 105
     },
     "enrichments": [],
@@ -1253,7 +1253,7 @@
       "swimming": 17,
       "walkNodes": 239,
       "cycleNodes": 100,
-      "attractions": 178,
+      "attractions": 181,
       "restaurants": 36
     },
     "enrichments": [],
@@ -1600,7 +1600,7 @@
       "swimming": 53,
       "walkNodes": 333,
       "cycleNodes": 80,
-      "attractions": 503,
+      "attractions": 504,
       "restaurants": 96
     },
     "enrichments": [],
@@ -2250,7 +2250,7 @@
       "events": 175,
       "trails": 66,
       "swimming": 7,
-      "attractions": 1027,
+      "attractions": 1034,
       "restaurants": 253
     },
     "enrichments": [],
@@ -4568,6 +4568,50 @@
     "euTenantId": "clermontferrand-eu"
   },
   {
+    "slug": "cluny",
+    "name": {
+      "en": "Cluny"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "cluny",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/cluny",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {
+      "golf": 1,
+      "events": 196,
+      "trails": 193,
+      "swimming": 6,
+      "attractions": 643,
+      "restaurants": 162
+    },
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.cluny-tourisme.com/en/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      46.433952,
+      4.657915
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/clunytourisme.jpg",
+    "brandColor": "#7FA59B",
+    "calendarUrl": "https://www.cluny-tourisme.com/en/agenda/tout-lagenda/",
+    "voiceAgentId": null,
+    "euTenantId": "cluny-eu"
+  },
+  {
     "slug": "coeur-de-bearn",
     "name": {
       "en": "Cœur de Béarn"
@@ -5875,7 +5919,7 @@
       "swimming": 29,
       "walkNodes": 119,
       "cycleNodes": 49,
-      "attractions": 812,
+      "attractions": 821,
       "restaurants": 180
     },
     "enrichments": [],
@@ -7131,7 +7175,7 @@
       "swimming": 51,
       "walkNodes": 381,
       "cycleNodes": 188,
-      "attractions": 180,
+      "attractions": 179,
       "restaurants": 119
     },
     "enrichments": [],
@@ -7440,13 +7484,13 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 48,
+      "events": 49,
       "trails": 194,
       "swimming": 65,
       "districts": 17,
       "walkNodes": 287,
       "cycleNodes": 111,
-      "attractions": 2513,
+      "attractions": 2526,
       "restaurants": 821
     },
     "enrichments": [],
@@ -7497,12 +7541,12 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 48,
+      "events": 49,
       "trails": 194,
       "swimming": 65,
       "walkNodes": 287,
       "cycleNodes": 111,
-      "attractions": 2513,
+      "attractions": 2526,
       "restaurants": 821
     },
     "enrichments": [],
@@ -8304,12 +8348,12 @@
       48.778633,
       2.267295
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
     },
-    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/destinationhautsdeseine.png",
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/hautsdeseine.png",
     "brandColor": "#C94645",
     "website": "https://destination.hauts-de-seine.fr/",
     "calendarUrl": "https://destination.hauts-de-seine.fr/tous-les-evenenements-dans-les-hauts-de-seine.html",
@@ -8524,7 +8568,7 @@
       "swimming": 22,
       "walkNodes": 367,
       "cycleNodes": 184,
-      "attractions": 71,
+      "attractions": 70,
       "restaurants": 102
     },
     "enrichments": [],
@@ -8578,7 +8622,7 @@
       "swimming": 51,
       "walkNodes": 395,
       "cycleNodes": 185,
-      "attractions": 182,
+      "attractions": 181,
       "restaurants": 118
     },
     "enrichments": [],
@@ -13995,6 +14039,49 @@
     "euTenantId": "paysbasque-eu"
   },
   {
+    "slug": "pays-de-herve",
+    "name": {
+      "en": "Pays de Herve"
+    },
+    "country": "BE",
+    "countryName": "Belgium",
+    "region": null,
+    "tenantId": "herve",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/herve",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {
+      "trails": 3,
+      "walkNodes": 91,
+      "cycleNodes": 108,
+      "attractions": 20,
+      "restaurants": 43
+    },
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.paysdeherve.be/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      50.642559,
+      5.791238
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/herve.jpg",
+    "brandColor": "#6CA91E",
+    "calendarUrl": "https://www.paysdeherve.be/agenda",
+    "voiceAgentId": null,
+    "euTenantId": "herve-eu"
+  },
+  {
     "slug": "pays-de-la-loire",
     "name": {
       "en": "Pays de la Loire"
@@ -14585,6 +14672,90 @@
     "brandColor": "#FF3B3B",
     "voiceAgentId": "agent_4301m3yd3vdff1ybwkwhsg188589",
     "euTenantId": "64-eu"
+  },
+  {
+    "slug": "pyrenees-orientales",
+    "name": {
+      "en": "Pyrénées-Orientales"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "66",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/66",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {
+      "golf": 2,
+      "events": 288,
+      "swimming": 51,
+      "attractions": 335,
+      "restaurants": 286
+    },
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.tourisme-pyreneesorientales.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      42.701317,
+      2.894159
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/pyreneesorientales.jpg",
+    "brandColor": "#AA0409",
+    "calendarUrl": "https://www.tourisme-pyreneesorientales.com/agenda/",
+    "voiceAgentId": null,
+    "euTenantId": "66-eu"
+  },
+  {
+    "slug": "pyrenees2vallees",
+    "name": {
+      "en": "Pyrénées2vallées"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "pyrenees2vallees",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/pyrenees2vallees",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {
+      "events": 47,
+      "attractions": 725,
+      "restaurants": 218
+    },
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.pyrenees2vallees.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      42.906695,
+      0.358105
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/pyrenees2vallees.jpg",
+    "brandColor": "#004C6C",
+    "calendarUrl": "https://www.pyrenees2vallees.com/fetes-et-manifestations-1",
+    "voiceAgentId": null,
+    "euTenantId": "pyrenees2vallees-eu"
   },
   {
     "slug": "quebec-city",
@@ -15334,6 +15505,50 @@
     "euTenantId": "saintlo-eu"
   },
   {
+    "slug": "saint-malo",
+    "name": {
+      "en": "Saint-Malo"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "saintmalo",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/saintmalo",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {
+      "golf": 2,
+      "events": 224,
+      "trails": 153,
+      "swimming": 75,
+      "attractions": 278,
+      "restaurants": 148
+    },
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://www.saint-malo-tourisme.co.uk/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      48.651111,
+      -2.021662
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/saint-malo.jpg",
+    "brandColor": "#ECB296",
+    "calendarUrl": null,
+    "voiceAgentId": null,
+    "euTenantId": "saintmalo-eu"
+  },
+  {
     "slug": "salzburger-land",
     "name": {
       "en": "Salzburger Land"
@@ -15784,8 +15999,8 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
-    "website": "https://uk.tourisme93.com/",
+    "dtFeed": true,
+    "website": "https://www.tourisme93.com/",
     "dmo": {
       "name": null,
       "claimed": false
@@ -16049,7 +16264,7 @@
       "swimming": 27,
       "walkNodes": 270,
       "cycleNodes": 81,
-      "attractions": 290,
+      "attractions": 291,
       "restaurants": 46
     },
     "enrichments": [],
@@ -17195,7 +17410,7 @@
       "swimming": 44,
       "walkNodes": 667,
       "cycleNodes": 119,
-      "attractions": 543,
+      "attractions": 545,
       "restaurants": 89
     },
     "enrichments": [],
@@ -17242,7 +17457,7 @@
       "districts": 27,
       "walkNodes": 566,
       "cycleNodes": 290,
-      "attractions": 104,
+      "attractions": 103,
       "restaurants": 109
     },
     "enrichments": [],
@@ -17914,6 +18129,49 @@
     "euTenantId": "versailles-eu"
   },
   {
+    "slug": "vichy",
+    "name": {
+      "en": "Vichy"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "vichy",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/vichy",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {
+      "events": 183,
+      "trails": 112,
+      "swimming": 2,
+      "attractions": 838,
+      "restaurants": 210
+    },
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://vichymonamour.fr/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      46.125205,
+      3.419199
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/vichy.png",
+    "brandColor": "#003E50",
+    "calendarUrl": "https://vichymonamour.com/stay/agenda/",
+    "voiceAgentId": null,
+    "euTenantId": "vichy-eu"
+  },
+  {
     "slug": "vienne",
     "name": {
       "en": "Vienne"
@@ -18445,7 +18703,7 @@
       "swimming": 31,
       "walkNodes": 378,
       "cycleNodes": 210,
-      "attractions": 84,
+      "attractions": 83,
       "restaurants": 93
     },
     "enrichments": [],
@@ -18594,6 +18852,50 @@
       "name": "Pass Destination Yvelines - Hauts-de-Seine"
     },
     "euTenantId": "78-eu"
+  },
+  {
+    "slug": "yvoire",
+    "name": {
+      "en": "Yvoire"
+    },
+    "country": "FR",
+    "countryName": "France",
+    "region": null,
+    "tenantId": "yvoire",
+    "voiceId": null,
+    "chatUrl": "https://chat.dm2find.ai/yvoire",
+    "provenance": "preview",
+    "dataSource": null,
+    "status": "live",
+    "channels": [
+      "webchat"
+    ],
+    "languages": [],
+    "inventory": {
+      "golf": 4,
+      "events": 6,
+      "trails": 22,
+      "swimming": 20,
+      "attractions": 434,
+      "restaurants": 141
+    },
+    "enrichments": [],
+    "sampleQuestions": {},
+    "dtFeed": false,
+    "website": "https://yvoire-france.com/",
+    "dmo": {
+      "name": null,
+      "claimed": false
+    },
+    "coords": [
+      46.369608,
+      6.327347
+    ],
+    "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/yvoire-tourisme.jpg",
+    "brandColor": "#014A7F",
+    "calendarUrl": null,
+    "voiceAgentId": null,
+    "euTenantId": "yvoire-eu"
   },
   {
     "slug": "zaandam",
@@ -18882,7 +19184,7 @@
       "swimming": 37,
       "walkNodes": 346,
       "cycleNodes": 99,
-      "attractions": 421,
+      "attractions": 423,
       "restaurants": 197
     },
     "enrichments": [],
