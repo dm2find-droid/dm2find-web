@@ -41,7 +41,7 @@ import { WHATSAPP } from '../../lib/connect';
 <script is:inline async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 <script>
-  import { WHATSAPP, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+  import { WHATSAPP, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus, endpointLink, whatsappLink } from '../../lib/connect';
 
   type FBLoginResponse = { authResponse?: { code?: string } | null; status?: string };
   type FBGlobal = { login: (cb: (r: FBLoginResponse) => void, opts: Record<string, unknown>) => void };
@@ -110,9 +110,12 @@ import { WHATSAPP } from '../../lib/connect';
       coexistence,
     });
     if (r.success) {
+      // Open-chat link: the endpoint's own link, else wa.me/<number> from the number it returns.
+      const link = endpointLink(r, 'Open the chat in WhatsApp ↗') ?? whatsappLink(r.wa_number, r.display_phone_number, r.name);
       setStatus(status, 'ok', `Connected: ${r.name ?? 'your number'}`, coexistence
         ? 'Your number stays in the WhatsApp Business app. The concierge answers new questions; when someone of your team answers a chat in the app, the concierge stays quiet in that chat for a few hours. DM2find has been notified.'
-        : 'Send your number a WhatsApp message from another phone — the concierge should reply within seconds. DM2find has been notified.');
+        : `Send your number a WhatsApp message from another phone${link ? ' (the link below opens the chat)' : ''} — the concierge should reply within seconds. DM2find has been notified.`,
+        link);
     } else {
       setStatus(status, 'error', 'Connection failed.', r.message ?? '');
       submitted = false;

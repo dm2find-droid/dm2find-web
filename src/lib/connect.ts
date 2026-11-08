@@ -94,6 +94,14 @@ export interface ConnectResult {
   message?: string;
   needs_page_choice?: boolean;
   pages?: { id: string; name: string }[];
+  /** Optional: an https link that opens a chat with the connected account (shown under the confirmation). */
+  link?: string;
+  /** Optional, per channel: what the "open chat" link is made from when the endpoint gives no link. */
+  username?: string;            // Telegram bot, Instagram account, Facebook Page username
+  page_id?: string;             // Facebook Page id
+  wa_number?: string;           // WhatsApp number, e.g. "+31 6 1234 5678"
+  display_phone_number?: string;
+  add_friend?: string;          // LINE: basic id "@abc1234d" or a https://lin.ee/… / https://line.me/… link
 }
 
 export async function postJson(url: string, data: unknown): Promise<ConnectResult> {
@@ -144,6 +152,47 @@ export function setStatus(el: HTMLElement, kind: 'busy' | 'ok' | 'error', title:
     p.append(a);
     el.append(p);
   }
+}
+
+/** The endpoint's own "open chat" link, when it is a https link. */
+export function endpointLink(r: ConnectResult, label: string): StatusLink | undefined {
+  const href = String(r.link ?? '').trim();
+  return /^https:\/\/[^\s]+$/i.test(href) ? { href, label } : undefined;
+}
+
+/** wa.me link from the first value that is a phone number in international format (7–15 digits). */
+export function whatsappLink(...candidates: (string | undefined)[]): StatusLink | undefined {
+  for (const c of candidates) {
+    const m = String(c ?? '').replace(/[\s().-]/g, '').match(/^\+?([1-9][0-9]{6,14})$/);
+    if (m) return { href: `https://wa.me/${m[1]}`, label: `Open +${m[1]} in WhatsApp ↗` };
+  }
+  return undefined;
+}
+
+/** LINE add-friend link from a basic or premium id ("@abc1234d") or a lin.ee / line.me link. */
+export function lineAddFriendLink(addFriend?: string): StatusLink | undefined {
+  const s = String(addFriend ?? '').trim();
+  const label = 'Add the account as a friend in LINE ↗';
+  if (/^https:\/\/(lin\.ee|line\.me|page\.line\.me)\/[^\s]+$/i.test(s)) return { href: s, label };
+  const m = s.match(/^@([a-z0-9._-]{3,20})$/i);
+  return m ? { href: `https://line.me/R/ti/p/${encodeURIComponent('@' + m[1])}`, label } : undefined;
+}
+
+/** m.me link from a Facebook Page id (digits) or Page username (letters, digits, dots). */
+export function messengerLink(...candidates: (string | undefined)[]): StatusLink | undefined {
+  for (const c of candidates) {
+    const s = String(c ?? '').trim().replace(/^@/, '');
+    if (/^[0-9]{5,20}$/.test(s) || /^[A-Za-z0-9.]{5,50}$/.test(s) && /[A-Za-z]/.test(s)) {
+      return { href: `https://m.me/${s}`, label: 'Open the chat in Messenger ↗' };
+    }
+  }
+  return undefined;
+}
+
+/** ig.me link from an Instagram username ("@name" or "name"; letters, digits, _ and .). */
+export function instagramLink(username?: string): StatusLink | undefined {
+  const m = String(username ?? '').trim().match(/^@?([A-Za-z0-9._]{1,30})$/);
+  return m ? { href: `https://ig.me/m/${m[1]}`, label: `Open @${m[1]} in Instagram ↗` } : undefined;
 }
 
 /** t.me link for a bot username as the connect endpoint returns it ("@yourbot" or "yourbot").

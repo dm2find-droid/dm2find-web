@@ -49,7 +49,7 @@ import ConnectCodeField from '../../components/ConnectCodeField.astro';
 </style>
 
 <script>
-  import { N8N_WEBHOOK_BASE, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+  import { N8N_WEBHOOK_BASE, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus, endpointLink, lineAddFriendLink } from '../../lib/connect';
   import type { ConnectResult } from '../../lib/connect';
 
   const LINE_ENDPOINT = `${N8N_WEBHOOK_BASE}/connect-line`;
@@ -81,13 +81,15 @@ import ConnectCodeField from '../../components/ConnectCodeField.astro';
     rememberConnectCode(connect_code);
     button.disabled = true;
     setStatus(status, 'busy', 'Connecting your LINE account…');
-    const r = (await postJson(LINE_ENDPOINT, { connect_code, channel_secret, channel_token })) as ConnectResult & { add_friend?: string };
+    const r: ConnectResult = await postJson(LINE_ENDPOINT, { connect_code, channel_secret, channel_token });
     button.disabled = false;
     if (r.success) {
       secretInput.value = '';
       tokenInput.value = '';
+      const link = endpointLink(r, 'Add the account as a friend in LINE ↗') ?? lineAddFriendLink(r.add_friend);
       setStatus(status, 'ok', `Connected: ${r.name ?? 'your LINE account'}`,
-        `Switch "Use webhook" on (step 4), then add the account as a friend${r.add_friend ? ' via ' + r.add_friend : ''} and ask a question. The menu appears within a minute. DM2find has been notified.`);
+        `Switch "Use webhook" on (step 4), then add the account as a friend${link ? ' with the link below' : r.add_friend ? ' via ' + r.add_friend : ''} and ask a question. The menu appears within a minute. DM2find has been notified.`,
+        link);
     } else {
       setStatus(status, 'error', 'Connection failed.', r.message ?? '');
     }
