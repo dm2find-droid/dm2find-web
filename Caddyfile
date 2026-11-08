@@ -3,6 +3,12 @@
 :80 {
 	root * /srv
 	encode zstd gzip
+
+	# De homepage expliciet. Op de live server viel "/" op 8 nov 2026 door naar
+	# 404.html terwijl /index.html gewoon bestond; een rewrite op precies "/" is
+	# onafhankelijk van hoe try_files een map behandelt.
+	rewrite / /index.html
+
 	try_files {path} {path}/ {path}.html /404.html
 	file_server
 
