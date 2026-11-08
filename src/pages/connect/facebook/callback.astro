@@ -9,7 +9,7 @@ import ConnectLayout from '../../../layouts/ConnectLayout.astro';
 </ConnectLayout>
 
 <script>
-  import { FACEBOOK, postJson, setStatus, facebookAuthorizeUrl, getConnectCode } from '../../../lib/connect';
+  import { FACEBOOK, postJson, setStatus, facebookAuthorizeUrl, getConnectCode, endpointLink, messengerLink } from '../../../lib/connect';
 
   const status = document.getElementById('status') as HTMLElement;
   const pagesBox = document.getElementById('pages') as HTMLElement;
@@ -39,8 +39,12 @@ import ConnectLayout from '../../../layouts/ConnectLayout.astro';
     }
     const r = await postJson(FACEBOOK.endpoint, { code, state });
     if (r.success) {
+      // Open-chat link: the endpoint's own link, else m.me/<Page id or username>; after a Page choice the id is in the state.
+      const chosen = state.split('.')[1];
+      const link = endpointLink(r, 'Open the chat in Messenger ↗') ?? messengerLink(r.page_id, r.username, chosen);
       setStatus(status, 'ok', `Connected: ${r.name ?? 'your Page'}`,
-        'Send your Page a message on Messenger — the concierge should reply within seconds. DM2find has been notified.');
+        `Send your Page a message on Messenger${link ? ' (the link below opens the chat)' : ''} — the concierge should reply within seconds. DM2find has been notified.`,
+        link);
       return;
     }
     if (r.needs_page_choice && r.pages?.length) {

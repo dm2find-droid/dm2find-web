@@ -8,7 +8,7 @@ import ConnectLayout from '../../../layouts/ConnectLayout.astro';
 </ConnectLayout>
 
 <script>
-  import { INSTAGRAM, postJson, setStatus, getConnectCode } from '../../../lib/connect';
+  import { INSTAGRAM, postJson, setStatus, getConnectCode, endpointLink, instagramLink } from '../../../lib/connect';
 
   const status = document.getElementById('status') as HTMLElement;
   const retry = document.getElementById('retry') as HTMLAnchorElement;
@@ -36,8 +36,12 @@ import ConnectLayout from '../../../layouts/ConnectLayout.astro';
     }
     const r = await postJson(INSTAGRAM.endpoint, { code, state });
     if (r.success) {
+      // Open-chat link: the endpoint's own link, else ig.me/m/<username> (only from a username, never from a display name).
+      const link = endpointLink(r, 'Open the chat in Instagram ↗')
+        ?? instagramLink(r.username ?? (String(r.name ?? '').startsWith('@') ? r.name : undefined));
       setStatus(status, 'ok', `Connected: ${r.name ?? 'your account'}`,
-        'Send your account a direct message from another Instagram account — the concierge should reply within seconds. DM2find has been notified.');
+        `Send your account a direct message from another Instagram account${link ? ' (open the link below there)' : ''} — the concierge should reply within seconds. DM2find has been notified.`,
+        link);
       return;
     }
     fail('Connection failed.', r.message ?? '');
