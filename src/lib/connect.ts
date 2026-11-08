@@ -114,8 +114,14 @@ export async function postJson(url: string, data: unknown): Promise<ConnectResul
   }
 }
 
+/** A link shown under the status text, e.g. "Open @yourbot in Telegram". Only https links are shown. */
+export interface StatusLink {
+  href: string;
+  label: string;
+}
+
 /** Status box helper: kind = 'busy' | 'ok' | 'error'. Uses textContent only. */
-export function setStatus(el: HTMLElement, kind: 'busy' | 'ok' | 'error', title: string, detail = ''): void {
+export function setStatus(el: HTMLElement, kind: 'busy' | 'ok' | 'error', title: string, detail = '', link?: StatusLink): void {
   el.dataset.kind = kind;
   el.hidden = false;
   el.replaceChildren();
@@ -127,4 +133,23 @@ export function setStatus(el: HTMLElement, kind: 'busy' | 'ok' | 'error', title:
     p.textContent = detail;
     el.append(p);
   }
+  if (link && /^https:\/\/[^\s]+$/i.test(link.href)) {
+    const p = document.createElement('p');
+    const a = document.createElement('a');
+    a.href = link.href;
+    a.textContent = link.label;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.className = 'status-link';
+    p.append(a);
+    el.append(p);
+  }
+}
+
+/** t.me link for a bot username as the connect endpoint returns it ("@yourbot" or "yourbot").
+ *  Telegram bot usernames: 5–32 characters, letters, digits and _, starting with a letter, ending in "bot". */
+export function telegramBotLink(name?: string): StatusLink | undefined {
+  const m = String(name ?? '').trim().match(/^@?([A-Za-z][A-Za-z0-9_]{3,31})$/);
+  if (!m || !/bot$/i.test(m[1])) return undefined;
+  return { href: `https://t.me/${m[1]}`, label: `Open @${m[1]} in Telegram ↗` };
 }
