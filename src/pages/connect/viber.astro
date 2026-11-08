@@ -1,0 +1,79 @@
+---
+import ConnectLayout from '../../layouts/ConnectLayout.astro';
+import ConnectCodeField from '../../components/ConnectCodeField.astro';
+---
+<ConnectLayout title="Connect Viber">
+  <h1>Connect Viber</h1>
+  <p class="lead">Let the AI Travel Concierge answer every message your destination's Viber bot receives — in the visitor's own language.</p>
+
+  <section class="card">
+    <h2>1. Your Viber bot</h2>
+    <ol>
+      <li>Viber bots run on a commercial agreement with Rakuten Viber, who charges the bot owner a monthly fee. Replies to visitors are included; DM2find only replies, it never sends unprompted messages.</li>
+      <li>Your bot is set up by a Viber partner or by Rakuten Viber directly. No bot yet? Contact <a href="mailto:sales@dm2find.ai">sales@dm2find.ai</a> and we will arrange it with you.</li>
+      <li>Copy the bot's <strong>token</strong> from the Viber Admin Panel (your bot → <em>Info</em>), or ask your Viber partner for it. Treat it like a password.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>2. Connect it</h2>
+    <form id="form" autocomplete="off">
+      <ConnectCodeField />
+      <label for="bot-token">Bot token</label>
+      <input id="bot-token" type="text" spellcheck="false" placeholder="4453b6ac1234567z-e02c5f12174805f9-daec0e5a6a1d5fb0" />
+      <button id="submit" type="submit">Connect Viber bot</button>
+    </form>
+    <div id="status" class="status" hidden></div>
+    <p id="open-chat" hidden><a id="chat-link" class="button" href="#">Open the chat in Viber</a></p>
+  </section>
+</ConnectLayout>
+
+<script>
+  import { N8N_WEBHOOK_BASE, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+  import type { ConnectResult } from '../../lib/connect';
+
+  type ViberResult = ConnectResult & { webhook_ok?: boolean; link?: string; hint?: string };
+  const VIBER_ENDPOINT = `${N8N_WEBHOOK_BASE}/connect-viber`;
+  const TOKEN_RE = /^[A-Za-z0-9]{8,64}(-[A-Za-z0-9]{8,64}){1,5}$/;
+  const form = document.getElementById('form') as HTMLFormElement;
+  const codeInput = document.getElementById('connect-code') as HTMLInputElement;
+  const tokenInput = document.getElementById('bot-token') as HTMLInputElement;
+  const button = document.getElementById('submit') as HTMLButtonElement;
+  const status = document.getElementById('status') as HTMLElement;
+  const openChat = document.getElementById('open-chat') as HTMLElement;
+  const chatLink = document.getElementById('chat-link') as HTMLAnchorElement;
+  codeInput.value = getConnectCode();
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const connect_code = codeInput.value.trim();
+    const bot_token = tokenInput.value.trim();
+    if (!isValidConnectCode(connect_code)) {
+      setStatus(status, 'error', 'Please enter the 32-character connection code from DM2find.');
+      return;
+    }
+    if (!TOKEN_RE.test(bot_token)) {
+      setStatus(status, 'error', 'That does not look like a Viber bot token.', 'Copy the full token from the Viber Admin Panel: groups of letters and digits separated by dashes.');
+      return;
+    }
+    rememberConnectCode(connect_code);
+    button.disabled = true;
+    openChat.hidden = true;
+    setStatus(status, 'busy', 'Connecting your bot…');
+    const r = (await postJson(VIBER_ENDPOINT, { connect_code, bot_token })) as ViberResult;
+    button.disabled = false;
+    if (r.success) {
+      tokenInput.value = '';
+      if (r.link && /^viber:\/\/pa\?chatURI=/.test(r.link)) { chatLink.href = r.link; openChat.hidden = false; }
+      if (r.webhook_ok) {
+        setStatus(status, 'ok', `Connected: ${r.name ?? 'your bot'}`,
+          'Open the chat in Viber and send a message — the concierge replies within seconds. DM2find has been notified.');
+      } else {
+        setStatus(status, 'error', `Bot saved: ${r.name ?? 'your bot'}, but Viber did not accept the webhook.`,
+          `Please press Connect again in a minute. If it keeps failing, DM2find has been notified and will finish it for you.${r.hint ? ` (Viber: ${r.hint})` : ''}`);
+      }
+    } else {
+      setStatus(status, 'error', 'Connection failed.', r.message ?? '');
+    }
+  });
+</script>

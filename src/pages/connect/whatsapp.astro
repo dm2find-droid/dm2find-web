@@ -13,8 +13,14 @@ import { WHATSAPP } from '../../lib/connect';
     <ul>
       <li>Log in with a Facebook account that is an <strong>admin of your organisation's Meta Business portfolio</strong>
         (or create the portfolio during the steps).</li>
-      <li>Have a <strong>phone number</strong> that can receive an SMS or voice call for verification.
-        It must <strong>not</strong> be in use on the WhatsApp or WhatsApp Business app — or remove that account first.</li>
+      <li><strong>Choose your number</strong> in the Meta window:
+        <ul>
+          <li><strong>A new number</strong> that can receive an SMS or voice call. It must not be in use on WhatsApp.</li>
+          <li><strong>Your existing WhatsApp Business app number.</strong> It stays in the app: your team keeps answering there,
+            and the concierge answers the other questions. Requirements: WhatsApp Business app version 2.24.17 or later,
+            and open the app at least once every 13 days. You scan a QR code with the app and can share your chat history.</li>
+        </ul>
+      </li>
       <li>Afterwards, add a payment method in WhatsApp Manager. Replies to visitors who message you are free;
         Meta only bills messages your organisation starts itself.</li>
     </ul>
@@ -49,6 +55,7 @@ import { WHATSAPP } from '../../lib/connect';
   let authCode: string | null = null;
   let session: { phone_number_id?: string; waba_id?: string } | null = null;
   let sessionEvent = '';
+  let coexistence = false;   // the DMO chose its existing WhatsApp Business app number
   let submitted = false;
   let waitTimer: number | undefined;
 
@@ -70,6 +77,9 @@ import { WHATSAPP } from '../../lib/connect';
       button.disabled = false;
       return;
     }
+    // FINISH: a new number on the Cloud API. FINISH_WHATSAPP_BUSINESS_APP_ONBOARDING: the WhatsApp Business app number
+    // (coexistence); Meta may report only the waba_id, n8n then looks the number up.
+    coexistence = sessionEvent === 'FINISH_WHATSAPP_BUSINESS_APP_ONBOARDING';
     session = { phone_number_id: d.data?.phone_number_id, waba_id: d.data?.waba_id };
     maybeSubmit();
   });
@@ -97,10 +107,12 @@ import { WHATSAPP } from '../../lib/connect';
       code: authCode,
       phone_number_id: session.phone_number_id ?? '',
       waba_id: session.waba_id ?? '',
+      coexistence,
     });
     if (r.success) {
-      setStatus(status, 'ok', `Connected: ${r.name ?? 'your number'}`,
-        'Send your number a WhatsApp message from another phone — the concierge should reply within seconds. DM2find has been notified.');
+      setStatus(status, 'ok', `Connected: ${r.name ?? 'your number'}`, coexistence
+        ? 'Your number stays in the WhatsApp Business app. The concierge answers new questions; when someone of your team answers a chat in the app, the concierge stays quiet in that chat for a few hours. DM2find has been notified.'
+        : 'Send your number a WhatsApp message from another phone — the concierge should reply within seconds. DM2find has been notified.');
     } else {
       setStatus(status, 'error', 'Connection failed.', r.message ?? '');
       submitted = false;
@@ -126,7 +138,7 @@ import { WHATSAPP } from '../../lib/connect';
       return;
     }
     rememberConnectCode(code);
-    authCode = null; session = null; submitted = false; waitTimer = undefined;
+    authCode = null; session = null; submitted = false; waitTimer = undefined; coexistence = false;
     button.disabled = true;
     setStatus(status, 'busy', 'Follow the steps in the Meta window…');
     // Must be called directly from the click so the popup is not blocked.
@@ -143,7 +155,8 @@ import { WHATSAPP } from '../../lib/connect';
       config_id: WHATSAPP.configId,
       response_type: 'code',
       override_default_response_type: true,
-      extras: { setup: {}, featureType: '', sessionInfoVersion: '3' },
+      // whatsapp_business_app_onboarding: Meta also offers the existing WhatsApp Business app number (coexistence)
+      extras: { setup: {}, featureType: 'whatsapp_business_app_onboarding', sessionInfoVersion: '3' },
     });
   });
 </script>

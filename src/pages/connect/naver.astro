@@ -1,0 +1,90 @@
+---
+import ConnectLayout from '../../layouts/ConnectLayout.astro';
+import ConnectCodeField from '../../components/ConnectCodeField.astro';
+---
+<ConnectLayout title="Connect Naver TalkTalk">
+  <h1>Connect Naver TalkTalk</h1>
+  <p class="lead">Let the AI Travel Concierge answer the messages your destination's Naver TalkTalk (네이버 톡톡) account receives — in Korean or in the visitor's own language.</p>
+
+  <section class="card">
+    <h2>1. Switch on the Chat Bot API</h2>
+    <ol>
+      <li>Sign in to the <a href="https://partner.talk.naver.com/" target="_blank" rel="noopener">TalkTalk Partner Center</a> (톡톡 파트너센터) with the account of your destination. Overseas businesses can use an account of the type <em>해외 사업자</em>.</li>
+      <li>Open <strong>개발자도구 → 챗봇 API 설정</strong> (Developer tools → Chat Bot API settings) and accept the terms.</li>
+      <li>Under <strong>보내기 API</strong> (Send API), click <strong>생성</strong> (Create) and copy the key. It usually starts with <code>ct_</code>. Treat it like a password.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>2. Connect it</h2>
+    <form id="form" autocomplete="off">
+      <ConnectCodeField />
+      <label for="auth-key">보내기 API key</label>
+      <input id="auth-key" type="text" spellcheck="false" placeholder="ct_…" />
+      <button id="submit" type="submit">Connect TalkTalk</button>
+    </form>
+    <div id="status" class="status" hidden></div>
+  </section>
+
+  <section class="card" id="webhook-config" hidden>
+    <h2>3. Webhook (last step)</h2>
+    <p>TalkTalk needs our address to deliver the messages. Set it once:</p>
+    <ol>
+      <li>In <strong>개발자도구 → 챗봇 API 설정</strong>, paste this into <strong>Webhook</strong>:<br /><code id="webhook-url"></code> <button type="button" id="copy" class="button">Copy</button></li>
+      <li>Under <strong>Event 선택</strong> (events), switch on <strong>send</strong> and <strong>open</strong>. Leave <em>echo</em> off.</li>
+      <li>Save, then send your account a message in TalkTalk — the concierge replies within seconds. The menu at the bottom of the chat (language, city, examples) is already set.</li>
+    </ol>
+    <p>Keep this address private: it contains your account's secret.</p>
+  </section>
+</ConnectLayout>
+
+<script>
+  import { N8N_WEBHOOK_BASE, getConnectCode, isValidConnectCode, rememberConnectCode, postJson, setStatus } from '../../lib/connect';
+  import type { ConnectResult } from '../../lib/connect';
+
+  type NaverResult = ConnectResult & { webhook_url?: string };
+  const NAVER_ENDPOINT = `${N8N_WEBHOOK_BASE}/connect-naver`;
+  const KEY_RE = /^[A-Za-z0-9_-]{16,200}$/;
+  const form = document.getElementById('form') as HTMLFormElement;
+  const codeInput = document.getElementById('connect-code') as HTMLInputElement;
+  const keyInput = document.getElementById('auth-key') as HTMLInputElement;
+  const button = document.getElementById('submit') as HTMLButtonElement;
+  const status = document.getElementById('status') as HTMLElement;
+  const box = document.getElementById('webhook-config') as HTMLElement;
+  const urlEl = document.getElementById('webhook-url') as HTMLElement;
+  const copy = document.getElementById('copy') as HTMLButtonElement;
+  codeInput.value = getConnectCode();
+
+  copy.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(urlEl.textContent ?? ''); copy.textContent = 'Copied'; }
+    catch { const r = document.createRange(); r.selectNodeContents(urlEl); const s = window.getSelection(); s?.removeAllRanges(); s?.addRange(r); }
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const connect_code = codeInput.value.trim();
+    const auth_key = keyInput.value.trim();
+    if (!isValidConnectCode(connect_code)) {
+      setStatus(status, 'error', 'Please enter the 32-character connection code from DM2find.');
+      return;
+    }
+    if (!KEY_RE.test(auth_key)) {
+      setStatus(status, 'error', 'That does not look like a TalkTalk API key.', 'Copy the key from 개발자도구 → 챗봇 API 설정 → 보내기 API (it usually starts with ct_).');
+      return;
+    }
+    rememberConnectCode(connect_code);
+    button.disabled = true;
+    box.hidden = true;
+    setStatus(status, 'busy', 'Checking your key…');
+    const r = (await postJson(NAVER_ENDPOINT, { connect_code, auth_key })) as NaverResult;
+    button.disabled = false;
+    if (r.success && r.webhook_url) {
+      keyInput.value = '';
+      urlEl.textContent = r.webhook_url;
+      box.hidden = false;
+      setStatus(status, 'ok', 'Key accepted', 'One more step: paste the webhook address below in the Partner Center. DM2find has been notified.');
+    } else {
+      setStatus(status, 'error', 'Connection failed.', r.message ?? '');
+    }
+  });
+</script>

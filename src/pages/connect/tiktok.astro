@@ -1,0 +1,60 @@
+---
+import ConnectLayout from '../../layouts/ConnectLayout.astro';
+import ConnectCodeField from '../../components/ConnectCodeField.astro';
+---
+<ConnectLayout title="Connect TikTok">
+  <h1>Connect TikTok</h1>
+  <p class="lead">Let the AI Travel Concierge answer the direct messages your destination's TikTok account receives — in the visitor's own language.</p>
+
+  <section class="card">
+    <h2>1. Check your account</h2>
+    <ol>
+      <li>You need a <strong>TikTok Business Account</strong> (Settings → Account → Switch to Business Account). Personal accounts cannot be connected.</li>
+      <li>TikTok offers direct-message automation only for Business Accounts <strong>registered outside</strong> the European Economic Area, Switzerland, the United Kingdom and the United States. It also only delivers messages from visitors outside the EEA, Switzerland and the UK.</li>
+      <li>Allow messages from everyone: Settings and privacy → Privacy → Direct messages → <em>Everyone</em>. Otherwise every new conversation has to be accepted by hand first.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>2. Connect it</h2>
+    <form id="form" autocomplete="off">
+      <ConnectCodeField />
+      <button id="submit" type="submit">Connect with TikTok</button>
+    </form>
+    <p class="hint">You will be sent to TikTok to log in with the Business Account and to allow DM2find to read and answer its direct messages. Afterwards you come back here.</p>
+    <div id="status" class="status" hidden></div>
+  </section>
+</ConnectLayout>
+
+<script>
+  import { N8N_WEBHOOK_BASE, getConnectCode, isValidConnectCode, rememberConnectCode, setStatus } from '../../lib/connect';
+
+  const TIKTOK_START = `${N8N_WEBHOOK_BASE}/connect-tiktok`;
+  const form = document.getElementById('form') as HTMLFormElement;
+  const codeInput = document.getElementById('connect-code') as HTMLInputElement;
+  const button = document.getElementById('submit') as HTMLButtonElement;
+  const status = document.getElementById('status') as HTMLElement;
+  codeInput.value = getConnectCode();
+
+  // Back from TikTok (via n8n): ?ok=1&name=@account or ?error=message
+  const q = new URLSearchParams(location.search);
+  if (q.get('ok') === '1') {
+    setStatus(status, 'ok', `Connected: ${q.get('name') || 'your TikTok account'}`,
+      'Send the account a direct message from another TikTok account (outside the EEA, Switzerland and the UK) — the concierge replies within seconds. DM2find has been notified.');
+  } else if (q.get('error')) {
+    setStatus(status, 'error', 'Connection failed.', q.get('error') ?? '');
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const connect_code = codeInput.value.trim();
+    if (!isValidConnectCode(connect_code)) {
+      setStatus(status, 'error', 'Please enter the 32-character connection code from DM2find.');
+      return;
+    }
+    rememberConnectCode(connect_code);
+    button.disabled = true;
+    setStatus(status, 'busy', 'Opening TikTok…');
+    location.href = `${TIKTOK_START}?c=${encodeURIComponent(connect_code)}`;
+  });
+</script>
