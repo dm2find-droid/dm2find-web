@@ -4578,8 +4578,8 @@
     "tenantId": "cluny",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/cluny",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -4595,7 +4595,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.cluny-tourisme.com/en/",
     "dmo": {
       "name": null,
@@ -14684,8 +14684,8 @@
     "tenantId": "66",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/66",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -14700,7 +14700,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-pyreneesorientales.com/",
     "dmo": {
       "name": null,
@@ -14727,8 +14727,8 @@
     "tenantId": "pyrenees2vallees",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/pyrenees2vallees",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -14741,7 +14741,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.pyrenees2vallees.com/",
     "dmo": {
       "name": null,
@@ -15515,8 +15515,8 @@
     "tenantId": "saintmalo",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/saintmalo",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -15532,7 +15532,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.saint-malo-tourisme.co.uk/",
     "dmo": {
       "name": null,
@@ -18139,8 +18139,8 @@
     "tenantId": "vichy",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/vichy",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -18155,7 +18155,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://vichymonamour.fr/",
     "dmo": {
       "name": null,
@@ -18864,8 +18864,8 @@
     "tenantId": "yvoire",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/yvoire",
-    "provenance": "preview",
-    "dataSource": null,
+    "provenance": "official",
+    "dataSource": "datatourisme",
     "status": "live",
     "channels": [
       "webchat"
@@ -18881,7 +18881,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://yvoire-france.com/",
     "dmo": {
       "name": null,
