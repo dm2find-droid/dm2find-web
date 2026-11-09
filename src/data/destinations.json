@@ -62,7 +62,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 33,
+      "events": 31,
       "trails": 24,
       "swimming": 22,
       "walkNodes": 376,
@@ -156,7 +156,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://destination-agen.com/",
     "dmo": {
       "name": null,
@@ -191,7 +191,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 7,
+      "events": 6,
       "trails": 23,
       "swimming": 7,
       "attractions": 339,
@@ -203,7 +203,7 @@
       46.207045,
       5.228283
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -234,7 +234,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 57,
+      "events": 56,
       "trails": 82,
       "swimming": 3,
       "attractions": 124,
@@ -246,7 +246,7 @@
       49.5656,
       3.623633
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -277,7 +277,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 315,
+      "events": 302,
       "trails": 108,
       "swimming": 25,
       "attractions": 1764,
@@ -289,7 +289,7 @@
       43.526131,
       5.444158
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -449,7 +449,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 65,
+      "events": 62,
       "trails": 57,
       "swimming": 2,
       "attractions": 144,
@@ -532,7 +532,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 22,
+      "events": 21,
       "trails": 5,
       "swimming": 29,
       "walkNodes": 419,
@@ -578,7 +578,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 109,
+      "events": 100,
       "trails": 105,
       "swimming": 1,
       "attractions": 295,
@@ -590,7 +590,7 @@
       46.567176,
       3.33318
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -621,7 +621,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 43,
+      "events": 42,
       "trails": 7,
       "swimming": 33,
       "walkNodes": 174,
@@ -708,7 +708,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 6,
+      "events": 5,
       "trails": 4,
       "swimming": 1,
       "attractions": 124,
@@ -720,7 +720,7 @@
       44.094918,
       6.238205
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -751,7 +751,7 @@
     "languages": [],
     "inventory": {
       "golf": 7,
-      "events": 99,
+      "events": 97,
       "trails": 31,
       "swimming": 22,
       "walkNodes": 184,
@@ -797,7 +797,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 131,
+      "events": 130,
       "trails": 59,
       "swimming": 5,
       "cycleNodes": 12,
@@ -845,7 +845,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 236,
+      "events": 231,
       "trails": 7,
       "swimming": 60,
       "walkNodes": 470,
@@ -892,7 +892,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 240,
+      "events": 235,
       "trails": 10,
       "swimming": 58,
       "districts": 110,
@@ -984,7 +984,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 112,
+      "events": 108,
       "trails": 33,
       "swimming": 16,
       "attractions": 459,
@@ -1031,7 +1031,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 185,
+      "events": 174,
       "trails": 117,
       "swimming": 7,
       "attractions": 487,
@@ -1117,7 +1117,7 @@
     "languages": [],
     "inventory": {
       "golf": 15,
-      "events": 38,
+      "events": 36,
       "trails": 20,
       "swimming": 101,
       "attractions": 791,
@@ -1125,7 +1125,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.antibesjuanlespins.com/en",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/antibes.jpg",
     "brandColor": "#24A4E4",
@@ -1248,7 +1248,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 45,
+      "events": 42,
       "trails": 21,
       "swimming": 17,
       "walkNodes": 239,
@@ -1305,7 +1305,7 @@
       44.734612,
       4.598372
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1336,7 +1336,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 618,
+      "events": 586,
       "trails": 137,
       "swimming": 20,
       "attractions": 2255,
@@ -1348,7 +1348,7 @@
       45.063142,
       4.833866
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1378,7 +1378,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 113,
+      "events": 110,
       "trails": 79,
       "swimming": 6,
       "attractions": 546,
@@ -1390,7 +1390,7 @@
       49.77433,
       4.720675
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1433,7 +1433,7 @@
       42.965766,
       1.604834
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1464,7 +1464,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 23,
+      "events": 20,
       "trails": 2,
       "swimming": 4,
       "attractions": 125,
@@ -1476,7 +1476,7 @@
       43.784486,
       -0.009177
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1641,7 +1641,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 320,
+      "events": 319,
       "trails": 47,
       "swimming": 8,
       "attractions": 737,
@@ -1653,7 +1653,7 @@
       48.294426,
       4.071799
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1727,7 +1727,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 97,
+      "events": 95,
       "trails": 10,
       "swimming": 8,
       "attractions": 205,
@@ -1739,7 +1739,7 @@
       43.213,
       2.3491
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1813,7 +1813,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 50,
+      "events": 49,
       "trails": 46,
       "swimming": 14,
       "attractions": 981,
@@ -1821,7 +1821,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.auvergnerhonealpes-tourisme.com/",
     "dmo": {
       "name": null,
@@ -1856,7 +1856,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 134,
+      "events": 130,
       "trails": 29,
       "swimming": 3,
       "attractions": 327,
@@ -1898,7 +1898,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 208,
+      "events": 200,
       "trails": 126,
       "swimming": 12,
       "attractions": 331,
@@ -1910,7 +1910,7 @@
       44.3495,
       2.575
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -1941,7 +1941,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 137,
+      "events": 130,
       "trails": 74,
       "swimming": 14,
       "attractions": 1515,
@@ -2159,7 +2159,7 @@
     "languages": [],
     "inventory": {
       "golf": 10,
-      "events": 754,
+      "events": 728,
       "trails": 95,
       "swimming": 71,
       "attractions": 1343,
@@ -2167,7 +2167,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.visitbayonne.com/en/",
     "dmo": {
       "name": null,
@@ -2203,7 +2203,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 177,
+      "events": 169,
       "trails": 65,
       "swimming": 9,
       "attractions": 375,
@@ -2211,7 +2211,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-bearn-gaves.com/",
     "dmo": {
       "name": null,
@@ -2247,15 +2247,15 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 175,
+      "events": 169,
       "trails": 66,
       "swimming": 7,
-      "attractions": 1034,
+      "attractions": 1027,
       "restaurants": 253
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.beaune-tourism.com/",
     "dmo": {
       "name": null,
@@ -2289,7 +2289,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 47,
+      "events": 43,
       "trails": 105,
       "swimming": 4,
       "attractions": 164,
@@ -2377,7 +2377,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 273,
+      "events": 263,
       "trails": 266,
       "swimming": 9,
       "attractions": 431,
@@ -2514,7 +2514,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 227,
+      "events": 223,
       "trails": 233,
       "swimming": 2,
       "attractions": 412,
@@ -2562,7 +2562,7 @@
     "languages": [],
     "inventory": {
       "golf": 9,
-      "events": 710,
+      "events": 685,
       "trails": 100,
       "swimming": 61,
       "attractions": 1160,
@@ -2570,7 +2570,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.destination-biarritz.fr/en/",
     "dmo": {
       "name": null,
@@ -2606,7 +2606,7 @@
     "languages": [],
     "inventory": {
       "golf": 9,
-      "events": 731,
+      "events": 703,
       "trails": 123,
       "swimming": 62,
       "attractions": 1290,
@@ -2614,7 +2614,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.bidarttourisme.com/",
     "dmo": {
       "name": null,
@@ -2694,7 +2694,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 42,
+      "events": 40,
       "trails": 25,
       "swimming": 2,
       "attractions": 143,
@@ -2872,7 +2872,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 94,
+      "events": 93,
       "trails": 134,
       "swimming": 16,
       "districts": 8,
@@ -2959,7 +2959,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 1009,
+      "events": 1000,
       "trails": 148,
       "swimming": 72,
       "attractions": 2558,
@@ -2971,7 +2971,7 @@
       43.2964,
       5.37
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -3002,7 +3002,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 7,
+      "events": 6,
       "trails": 23,
       "swimming": 7,
       "attractions": 339,
@@ -3045,7 +3045,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 121,
+      "events": 115,
       "trails": 7,
       "swimming": 1,
       "attractions": 164,
@@ -3088,7 +3088,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 136,
+      "events": 133,
       "trails": 75,
       "swimming": 13,
       "attractions": 572,
@@ -3096,7 +3096,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.burgundy-tourism.com/",
     "dmo": {
       "name": null,
@@ -3177,7 +3177,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 299,
+      "events": 289,
       "trails": 103,
       "swimming": 37,
       "attractions": 171,
@@ -3189,7 +3189,7 @@
       48.398019,
       -4.487839
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -3232,7 +3232,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.brittanytourism.com/",
     "dmo": {
       "name": null,
@@ -3515,7 +3515,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 333,
+      "events": 318,
       "trails": 90,
       "swimming": 25,
       "attractions": 662,
@@ -3557,7 +3557,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 237,
+      "events": 232,
       "trails": 87,
       "swimming": 12,
       "attractions": 521,
@@ -3600,7 +3600,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 333,
+      "events": 318,
       "trails": 90,
       "swimming": 25,
       "attractions": 662,
@@ -3612,7 +3612,7 @@
       49.186267,
       -0.36335
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -3650,7 +3650,7 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 605,
+      "events": 581,
       "trails": 110,
       "swimming": 48,
       "attractions": 963,
@@ -3658,7 +3658,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.cambolesbains.com/",
     "dmo": {
       "name": null,
@@ -3693,7 +3693,7 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 2,
+      "events": 1,
       "trails": 20,
       "swimming": 104,
       "attractions": 659,
@@ -3701,7 +3701,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://en.cannes-france.com/",
     "dmo": {
       "name": null,
@@ -3748,7 +3748,7 @@
       44.9261,
       2.4402
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -3822,7 +3822,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 97,
+      "events": 95,
       "trails": 10,
       "swimming": 8,
       "attractions": 205,
@@ -3865,7 +3865,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 103,
+      "events": 96,
       "trails": 104,
       "attractions": 142,
       "restaurants": 44
@@ -3876,7 +3876,7 @@
       49.585204,
       1.358931
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -3907,7 +3907,7 @@
     "languages": [],
     "inventory": {
       "golf": 7,
-      "events": 7,
+      "events": 6,
       "trails": 28,
       "swimming": 5,
       "attractions": 161,
@@ -3950,7 +3950,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 74,
+      "events": 72,
       "trails": 16,
       "attractions": 103,
       "restaurants": 48
@@ -4035,7 +4035,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 50,
+      "events": 49,
       "trails": 102,
       "swimming": 8,
       "attractions": 849,
@@ -4043,7 +4043,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://en.chamonix.com/",
     "dmo": {
       "name": null,
@@ -4078,7 +4078,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 185,
+      "events": 174,
       "trails": 117,
       "swimming": 7,
       "attractions": 487,
@@ -4090,7 +4090,7 @@
       45.6484,
       0.156
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -4121,7 +4121,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 236,
+      "events": 224,
       "trails": 12,
       "swimming": 36,
       "attractions": 325,
@@ -4133,7 +4133,7 @@
       46.158134,
       -1.151128
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -4163,7 +4163,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 113,
+      "events": 110,
       "trails": 79,
       "swimming": 6,
       "attractions": 546,
@@ -4249,7 +4249,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 155,
+      "events": 149,
       "trails": 24,
       "swimming": 1,
       "attractions": 89,
@@ -4292,7 +4292,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 136,
+      "events": 132,
       "trails": 19,
       "swimming": 5,
       "attractions": 138,
@@ -4377,7 +4377,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 61,
+      "events": 59,
       "trails": 56,
       "swimming": 2,
       "attractions": 710,
@@ -4420,7 +4420,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 121,
+      "events": 115,
       "trails": 7,
       "swimming": 1,
       "attractions": 164,
@@ -4432,7 +4432,7 @@
       47.081,
       2.3988
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -4540,7 +4540,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 71,
+      "events": 69,
       "trails": 40,
       "swimming": 9,
       "attractions": 496,
@@ -4587,7 +4587,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 196,
+      "events": 186,
       "trails": 193,
       "swimming": 6,
       "attractions": 643,
@@ -4632,7 +4632,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 202,
+      "events": 189,
       "trails": 80,
       "swimming": 10,
       "attractions": 365,
@@ -4640,7 +4640,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.coeurdebearn.com/",
     "dmo": {
       "name": null,
@@ -4676,7 +4676,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 614,
+      "events": 596,
       "trails": 251,
       "swimming": 8,
       "attractions": 1506,
@@ -4817,7 +4817,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 118,
+      "events": 112,
       "trails": 149,
       "swimming": 15,
       "attractions": 511,
@@ -4829,7 +4829,7 @@
       45.2671,
       1.771
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -4865,7 +4865,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.visit-corsica.com/en",
     "dmo": {
       "name": null,
@@ -4909,7 +4909,7 @@
       41.9267,
       8.7369
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -4940,7 +4940,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 136,
+      "events": 133,
       "trails": 75,
       "swimming": 13,
       "attractions": 574,
@@ -4952,7 +4952,7 @@
       47.322,
       5.0415
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -4983,7 +4983,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 407,
+      "events": 385,
       "trails": 242,
       "swimming": 33,
       "attractions": 200,
@@ -4995,7 +4995,7 @@
       48.5144,
       -2.7653
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5025,7 +5025,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 178,
+      "events": 169,
       "trails": 128,
       "swimming": 9,
       "attractions": 333,
@@ -5037,7 +5037,7 @@
       46.17,
       1.87
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5150,7 +5150,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 670,
+      "events": 650,
       "trails": 85,
       "swimming": 28,
       "attractions": 751,
@@ -5162,7 +5162,7 @@
       49.359811,
       0.077275
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5193,7 +5193,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 215,
+      "events": 214,
       "trails": 11,
       "swimming": 45,
       "walkNodes": 518,
@@ -5340,7 +5340,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 130,
+      "events": 120,
       "trails": 130,
       "swimming": 10,
       "attractions": 504,
@@ -5352,7 +5352,7 @@
       46.321645,
       -0.454418
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5383,7 +5383,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 257,
+      "events": 246,
       "trails": 70,
       "swimming": 9,
       "attractions": 189,
@@ -5391,7 +5391,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://uk.dieppetourisme.com/",
     "dmo": {
       "name": null,
@@ -5426,7 +5426,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 6,
+      "events": 5,
       "trails": 4,
       "swimming": 1,
       "attractions": 124,
@@ -5469,7 +5469,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 136,
+      "events": 133,
       "trails": 75,
       "swimming": 13,
       "attractions": 574,
@@ -5559,7 +5559,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 362,
+      "events": 352,
       "trails": 59,
       "swimming": 8,
       "attractions": 296,
@@ -5571,7 +5571,7 @@
       45.184,
       0.721
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5602,7 +5602,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 106,
+      "events": 105,
       "trails": 4,
       "swimming": 25,
       "walkNodes": 436,
@@ -5648,7 +5648,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 227,
+      "events": 223,
       "trails": 233,
       "swimming": 2,
       "attractions": 412,
@@ -5660,7 +5660,7 @@
       47.241084,
       6.022812
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5742,7 +5742,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 569,
+      "events": 543,
       "trails": 54,
       "swimming": 10,
       "attractions": 1420,
@@ -5754,7 +5754,7 @@
       44.9334,
       4.8924
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -5826,7 +5826,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 2,
+      "events": 1,
       "trails": 3,
       "swimming": 8,
       "walkNodes": 21,
@@ -5840,7 +5840,7 @@
       51.036181,
       2.376022
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6053,7 +6053,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 78,
+      "events": 72,
       "trails": 36,
       "swimming": 1,
       "attractions": 518,
@@ -6065,7 +6065,7 @@
       49.043813,
       3.958146
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6096,7 +6096,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 140,
+      "events": 132,
       "trails": 168,
       "swimming": 5,
       "attractions": 202,
@@ -6151,7 +6151,7 @@
       48.6238,
       2.429
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6182,7 +6182,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 74,
+      "events": 72,
       "trails": 28,
       "swimming": 8,
       "attractions": 143,
@@ -6194,7 +6194,7 @@
       49.70789,
       0.205648
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6225,7 +6225,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 155,
+      "events": 149,
       "trails": 24,
       "swimming": 1,
       "attractions": 89,
@@ -6237,7 +6237,7 @@
       48.447,
       1.489
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6266,7 +6266,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 76,
+      "events": 75,
       "trails": 26,
       "swimming": 2,
       "attractions": 81,
@@ -6352,7 +6352,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 36,
+      "events": 35,
       "trails": 21,
       "swimming": 70,
       "attractions": 825,
@@ -6364,7 +6364,7 @@
       43.728712,
       7.361596
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6393,7 +6393,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 72,
+      "events": 70,
       "trails": 51,
       "swimming": 1,
       "attractions": 134,
@@ -6405,7 +6405,7 @@
       48.895885,
       -0.198888
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6474,7 +6474,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 4,
+      "events": 3,
       "attractions": 6,
       "restaurants": 9
     },
@@ -6557,7 +6557,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 148,
+      "events": 143,
       "trails": 196,
       "swimming": 32,
       "attractions": 182,
@@ -6569,7 +6569,7 @@
       47.996,
       -4.098
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6865,7 +6865,7 @@
       43.8367,
       4.3601
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -6953,7 +6953,7 @@
       43.6465,
       0.5857
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -7127,7 +7127,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 94,
+      "events": 93,
       "trails": 134,
       "swimming": 16,
       "attractions": 551,
@@ -7139,7 +7139,7 @@
       44.84,
       -0.58
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -7170,7 +7170,7 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 110,
+      "events": 108,
       "trails": 27,
       "swimming": 51,
       "walkNodes": 381,
@@ -7217,7 +7217,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 98,
+      "events": 93,
       "swimming": 22,
       "attractions": 1082,
       "restaurants": 822
@@ -7260,7 +7260,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 104,
+      "events": 103,
       "trails": 11,
       "swimming": 26,
       "walkNodes": 385,
@@ -7353,7 +7353,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 229,
+      "events": 225,
       "trails": 173,
       "swimming": 16,
       "attractions": 881,
@@ -7361,7 +7361,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.explore-grandest.com/",
     "dmo": {
       "name": null,
@@ -7396,7 +7396,7 @@
     "languages": [],
     "inventory": {
       "golf": 15,
-      "events": 29,
+      "events": 28,
       "trails": 27,
       "swimming": 75,
       "attractions": 727,
@@ -7404,7 +7404,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.paysdegrassetourisme.fr/en/",
     "dmo": {
       "name": null,
@@ -7484,7 +7484,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 49,
+      "events": 48,
       "trails": 194,
       "swimming": 65,
       "districts": 17,
@@ -7541,7 +7541,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 49,
+      "events": 48,
       "trails": 194,
       "swimming": 65,
       "walkNodes": 287,
@@ -7635,7 +7635,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 226,
+      "events": 221,
       "trails": 23,
       "swimming": 44,
       "walkNodes": 544,
@@ -7682,7 +7682,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 451,
+      "events": 440,
       "trails": 205,
       "swimming": 12,
       "attractions": 900,
@@ -7690,7 +7690,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.visithaguenau.alsace/en/",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/visithaguenau.jpg",
     "brandColor": "#1C803C",
@@ -7820,7 +7820,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 28,
+      "events": 27,
       "trails": 6,
       "swimming": 27,
       "walkNodes": 257,
@@ -7914,7 +7914,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 154,
+      "events": 147,
       "trails": 155,
       "swimming": 5,
       "attractions": 398,
@@ -7922,7 +7922,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.pyrenees-bearnaises.com/",
     "dmo": {
       "name": null,
@@ -7958,7 +7958,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 614,
+      "events": 596,
       "trails": 251,
       "swimming": 8,
       "attractions": 1506,
@@ -7970,7 +7970,7 @@
       48.075915,
       7.356395
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8010,7 +8010,7 @@
       42.701132,
       9.451119
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8041,7 +8041,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 584,
+      "events": 565,
       "swimming": 27,
       "attractions": 773,
       "restaurants": 452
@@ -8052,7 +8052,7 @@
       43.6045,
       1.444
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8082,7 +8082,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 146,
+      "events": 136,
       "trails": 13,
       "swimming": 8,
       "attractions": 499,
@@ -8094,7 +8094,7 @@
       45.043,
       3.885
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8124,7 +8124,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 61,
+      "events": 59,
       "trails": 56,
       "swimming": 2,
       "attractions": 710,
@@ -8136,7 +8136,7 @@
       48.112,
       5.139
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8167,7 +8167,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 59,
+      "events": 56,
       "trails": 26,
       "swimming": 5,
       "attractions": 148,
@@ -8179,7 +8179,7 @@
       47.622,
       6.154
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8221,7 +8221,7 @@
       45.900369,
       6.125679
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8262,7 +8262,7 @@
       44.558682,
       6.078073
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8292,7 +8292,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 187,
+      "events": 182,
       "trails": 4,
       "swimming": 1,
       "cycleNodes": 162,
@@ -8301,7 +8301,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-en-hautsdefrance.com/",
     "dmo": {
       "name": null,
@@ -8336,7 +8336,7 @@
     "languages": [],
     "inventory": {
       "golf": 16,
-      "events": 41,
+      "events": 40,
       "trails": 34,
       "swimming": 77,
       "attractions": 3416,
@@ -8470,7 +8470,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 249,
+      "events": 242,
       "trails": 67,
       "swimming": 26,
       "attractions": 669,
@@ -8478,7 +8478,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.hendaye-tourisme.fr/en/",
     "dmo": {
       "name": null,
@@ -8520,7 +8520,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 489,
+      "events": 482,
       "trails": 50,
       "swimming": 40,
       "attractions": 529,
@@ -8532,7 +8532,7 @@
       43.6108,
       3.8767
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -8563,7 +8563,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 81,
+      "events": 80,
       "trails": 32,
       "swimming": 22,
       "walkNodes": 367,
@@ -8617,7 +8617,7 @@
     "languages": [],
     "inventory": {
       "golf": 12,
-      "events": 111,
+      "events": 109,
       "trails": 27,
       "swimming": 51,
       "walkNodes": 395,
@@ -8662,7 +8662,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 646,
+      "events": 629,
       "trails": 75,
       "swimming": 24,
       "attractions": 614,
@@ -8670,7 +8670,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.ot-honfleur.fr/en/",
     "dmo": {
       "name": null,
@@ -8887,7 +8887,7 @@
     "languages": [],
     "inventory": {
       "golf": 19,
-      "events": 36,
+      "events": 34,
       "trails": 38,
       "swimming": 70,
       "attractions": 3367,
@@ -8895,7 +8895,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.visitparisregion.com/en",
     "dmo": {
       "name": null,
@@ -8942,7 +8942,7 @@
       48.1173,
       -1.6778
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -9051,7 +9051,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 136,
+      "events": 132,
       "trails": 19,
       "swimming": 5,
       "attractions": 138,
@@ -9059,7 +9059,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.indreberry.fr/",
     "dmo": {
       "name": null,
@@ -9094,7 +9094,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 179,
+      "events": 172,
       "trails": 72,
       "swimming": 8,
       "attractions": 173,
@@ -9102,7 +9102,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourainevaldeloire.com/",
     "dmo": {
       "name": null,
@@ -9195,7 +9195,7 @@
       45.192996,
       5.726128
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -9475,7 +9475,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 223,
+      "events": 222,
       "trails": 107,
       "swimming": 8,
       "attractions": 362,
@@ -9487,7 +9487,7 @@
       46.675,
       5.554
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -9605,7 +9605,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 665,
+      "events": 647,
       "trails": 403,
       "swimming": 8,
       "attractions": 1489,
@@ -9613,7 +9613,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.kaysersberg.com/en",
     "logo": "https://supabase.dm2find.ai/storage/v1/object/public/assets/venues/kaysersberg.jpg",
     "brandColor": "#A4213B",
@@ -9824,7 +9824,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://en.reunion.fr/",
     "dmo": {
       "name": null,
@@ -9859,7 +9859,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 236,
+      "events": 224,
       "trails": 12,
       "swimming": 36,
       "attractions": 325,
@@ -9902,7 +9902,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 123,
+      "events": 122,
       "trails": 12,
       "swimming": 6,
       "attractions": 350,
@@ -9914,7 +9914,7 @@
       43.8938,
       -0.499
     ],
-    "dtFeed": false,
+    "dtFeed": true,
     "dmo": {
       "name": null,
       "claimed": false
@@ -9945,7 +9945,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 57,
+      "events": 56,
       "trails": 82,
       "swimming": 3,
       "attractions": 124,
@@ -10031,7 +10031,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 104,
+      "events": 103,
       "trails": 30,
       "swimming": 1,
       "attractions": 200,
@@ -10074,7 +10074,7 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 578,
+      "events": 572,
       "trails": 12,
       "swimming": 2,
       "attractions": 582,
@@ -10117,7 +10117,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 354,
+      "events": 342,
       "trails": 188,
       "swimming": 8,
       "attractions": 383,
@@ -10159,7 +10159,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 146,
+      "events": 136,
       "trails": 13,
       "swimming": 8,
       "attractions": 499,
@@ -10248,7 +10248,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 160,
+      "events": 158,
       "trails": 11,
       "swimming": 41,
       "walkNodes": 500,
@@ -10511,7 +10511,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 187,
+      "events": 182,
       "trails": 4,
       "swimming": 1,
       "cycleNodes": 161,
@@ -10558,7 +10558,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 26,
+      "events": 25,
       "trails": 9,
       "swimming": 3,
       "walkNodes": 637,
@@ -10605,7 +10605,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 498,
+      "events": 482,
       "trails": 144,
       "swimming": 12,
       "attractions": 641,
@@ -10691,7 +10691,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 42,
+      "events": 40,
       "trails": 25,
       "swimming": 2,
       "attractions": 143,
@@ -10699,7 +10699,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.val-de-loire-41.com/",
     "dmo": {
       "name": null,
@@ -10734,7 +10734,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 80,
+      "events": 79,
       "trails": 118,
       "swimming": 4,
       "attractions": 347,
@@ -10742,7 +10742,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.atlantic-loire-valley.com/",
     "dmo": {
       "name": null,
@@ -10777,7 +10777,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 30,
+      "events": 28,
       "trails": 91,
       "swimming": 12,
       "attractions": 454,
@@ -10785,7 +10785,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourismeloiret.com/fr",
     "dmo": {
       "name": null,
@@ -10819,7 +10819,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 223,
+      "events": 222,
       "trails": 107,
       "swimming": 8,
       "attractions": 362,
@@ -10902,7 +10902,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 237,
+      "events": 232,
       "trails": 87,
       "swimming": 12,
       "attractions": 521,
@@ -10910,7 +10910,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-lot.com/",
     "dmo": {
       "name": null,
@@ -10953,7 +10953,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-lotetgaronne.com/",
     "dmo": {
       "name": null,
@@ -10988,7 +10988,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 247,
+      "events": 235,
       "trails": 52,
       "swimming": 2,
       "attractions": 1385,
@@ -10996,7 +10996,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://en.lourdes-infotourisme.com/",
     "dmo": {
       "name": null,
@@ -11032,7 +11032,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 124,
+      "events": 120,
       "trails": 216,
       "swimming": 9,
       "attractions": 187,
@@ -11040,7 +11040,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.lozere-tourisme.com/",
     "dmo": {
       "name": null,
@@ -11208,7 +11208,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 50,
+      "events": 49,
       "trails": 45,
       "swimming": 14,
       "districts": 21,
@@ -11256,7 +11256,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 26,
+      "events": 25,
       "trails": 9,
       "swimming": 3,
       "districts": 37,
@@ -11309,7 +11309,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 217,
+      "events": 206,
       "trails": 143,
       "swimming": 12,
       "attractions": 678,
@@ -11439,14 +11439,14 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 138,
+      "events": 136,
       "trails": 37,
       "attractions": 142,
       "restaurants": 73
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.attitude-manche.fr/",
     "dmo": {
       "name": null,
@@ -11523,14 +11523,14 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 74,
+      "events": 72,
       "trails": 16,
       "attractions": 103,
       "restaurants": 48
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-en-champagne.co.uk/",
     "dmo": {
       "name": null,
@@ -11607,7 +11607,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 1009,
+      "events": 1000,
       "trails": 148,
       "swimming": 72,
       "districts": 30,
@@ -11655,7 +11655,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 104,
+      "events": 103,
       "trails": 30,
       "swimming": 1,
       "attractions": 200,
@@ -11663,7 +11663,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.destination-mayenne.com/en/",
     "dmo": {
       "name": null,
@@ -11747,7 +11747,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.medoc-atlantique.co.uk/",
     "dmo": {
       "name": null,
@@ -11823,7 +11823,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 124,
+      "events": 120,
       "trails": 216,
       "swimming": 9,
       "attractions": 187,
@@ -11907,7 +11907,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 367,
+      "events": 353,
       "trails": 127,
       "swimming": 10,
       "attractions": 683,
@@ -11954,7 +11954,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 320,
+      "events": 313,
       "trails": 65,
       "swimming": 9,
       "attractions": 489,
@@ -11962,7 +11962,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-meurtheetmoselle.fr/en/",
     "dmo": {
       "name": null,
@@ -11997,7 +11997,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 159,
+      "events": 155,
       "trails": 6,
       "swimming": 3,
       "attractions": 362,
@@ -12005,7 +12005,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.lameuse.fr/je-visite",
     "dmo": {
       "name": null,
@@ -12213,7 +12213,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 123,
+      "events": 122,
       "trails": 12,
       "swimming": 6,
       "attractions": 350,
@@ -12255,7 +12255,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 108,
+      "events": 101,
       "trails": 47,
       "swimming": 9,
       "attractions": 143,
@@ -12263,7 +12263,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.ot-montsaintmichel.com/en/",
     "dmo": {
       "name": null,
@@ -12341,7 +12341,7 @@
     "languages": [],
     "inventory": {
       "golf": 25,
-      "events": 593,
+      "events": 586,
       "trails": 75,
       "swimming": 7,
       "attractions": 924,
@@ -12384,7 +12384,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 489,
+      "events": 482,
       "trails": 50,
       "swimming": 40,
       "attractions": 529,
@@ -12428,7 +12428,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 584,
+      "events": 578,
       "trails": 21,
       "swimming": 3,
       "districts": 32,
@@ -12472,7 +12472,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 87,
+      "events": 85,
       "trails": 62,
       "swimming": 54,
       "attractions": 147,
@@ -12480,7 +12480,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.centre-morbihan-tourisme.bzh/en/",
     "dmo": {
       "name": null,
@@ -12514,7 +12514,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 367,
+      "events": 353,
       "trails": 127,
       "swimming": 10,
       "attractions": 683,
@@ -12522,7 +12522,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.mosl.fr/en/discover-moselle/destination",
     "dmo": {
       "name": null,
@@ -12557,7 +12557,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 109,
+      "events": 100,
       "trails": 105,
       "swimming": 1,
       "attractions": 295,
@@ -12600,7 +12600,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 401,
+      "events": 389,
       "trails": 249,
       "swimming": 14,
       "attractions": 1049,
@@ -12608,7 +12608,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-mulhouse.com/",
     "dmo": {
       "name": null,
@@ -12741,7 +12741,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 320,
+      "events": 313,
       "trails": 65,
       "swimming": 9,
       "attractions": 489,
@@ -12801,7 +12801,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 80,
+      "events": 79,
       "trails": 118,
       "swimming": 4,
       "attractions": 347,
@@ -12847,7 +12847,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 81,
+      "events": 77,
       "trails": 47,
       "swimming": 6,
       "attractions": 191,
@@ -12936,7 +12936,7 @@
     "languages": [],
     "inventory": {
       "golf": 8,
-      "events": 40,
+      "events": 38,
       "trails": 19,
       "swimming": 90,
       "attractions": 820,
@@ -13026,7 +13026,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 81,
+      "events": 77,
       "trails": 47,
       "swimming": 6,
       "attractions": 191,
@@ -13034,7 +13034,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.lanievrenaturellement.com/",
     "dmo": {
       "name": null,
@@ -13069,7 +13069,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 73,
+      "events": 74,
       "trails": 16,
       "swimming": 27,
       "walkNodes": 951,
@@ -13163,7 +13163,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 130,
+      "events": 120,
       "trails": 130,
       "swimming": 10,
       "attractions": 504,
@@ -13206,7 +13206,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 148,
+      "events": 147,
       "trails": 19,
       "swimming": 33,
       "walkNodes": 380,
@@ -13253,7 +13253,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 187,
+      "events": 182,
       "trails": 4,
       "swimming": 1,
       "cycleNodes": 161,
@@ -13262,7 +13262,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://evasion.lenord.fr/",
     "dmo": {
       "name": null,
@@ -13297,7 +13297,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 247,
+      "events": 237,
       "trails": 44,
       "swimming": 8,
       "attractions": 281,
@@ -13305,7 +13305,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://en.normandie-tourisme.fr/",
     "dmo": {
       "name": null,
@@ -13341,7 +13341,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 95,
+      "events": 94,
       "trails": 135,
       "swimming": 16,
       "attractions": 548,
@@ -13349,7 +13349,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://visit-nouvelle-aquitaine.com/",
     "dmo": {
       "name": null,
@@ -13430,7 +13430,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 458,
+      "events": 440,
       "trails": 610,
       "swimming": 11,
       "attractions": 1907,
@@ -13438,7 +13438,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-obernai.fr/en/",
     "dmo": {
       "name": null,
@@ -13516,14 +13516,14 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 584,
+      "events": 565,
       "swimming": 27,
       "attractions": 773,
       "restaurants": 452
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-occitanie.com/",
     "dmo": {
       "name": null,
@@ -13558,7 +13558,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 6,
+      "events": 5,
       "trails": 20,
       "swimming": 13,
       "attractions": 866,
@@ -13566,7 +13566,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.poptourisme.fr/en/",
     "dmo": {
       "name": null,
@@ -13601,7 +13601,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 30,
+      "events": 28,
       "trails": 91,
       "swimming": 12,
       "attractions": 454,
@@ -13827,7 +13827,7 @@
     "languages": [],
     "inventory": {
       "golf": 19,
-      "events": 36,
+      "events": 34,
       "trails": 38,
       "swimming": 70,
       "districts": 106,
@@ -13876,7 +13876,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 4,
+      "events": 3,
       "attractions": 6,
       "restaurants": 18
     },
@@ -13926,7 +13926,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.calaisxxl.com/en/",
     "dmo": {
       "name": null,
@@ -13962,7 +13962,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 500,
+      "events": 487,
       "trails": 199,
       "swimming": 10,
       "attractions": 605,
@@ -14014,7 +14014,7 @@
     "languages": [],
     "inventory": {
       "golf": 9,
-      "events": 750,
+      "events": 723,
       "trails": 126,
       "swimming": 70,
       "attractions": 1385,
@@ -14022,7 +14022,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.en-pays-basque.fr/",
     "dmo": {
       "name": null,
@@ -14101,7 +14101,7 @@
     "languages": [],
     "inventory": {
       "golf": 6,
-      "events": 80,
+      "events": 79,
       "trails": 118,
       "swimming": 4,
       "attractions": 347,
@@ -14109,7 +14109,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.atlantic-loire-valley.com/",
     "dmo": {
       "name": null,
@@ -14144,7 +14144,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 362,
+      "events": 352,
       "trails": 59,
       "swimming": 8,
       "attractions": 296,
@@ -14187,7 +14187,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 288,
+      "events": 282,
       "swimming": 51,
       "attractions": 335,
       "restaurants": 286
@@ -14309,7 +14309,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 23,
+      "events": 20,
       "trails": 16,
       "swimming": 12,
       "attractions": 313,
@@ -14394,7 +14394,7 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 21,
+      "events": 18,
       "trails": 20,
       "swimming": 18,
       "attractions": 793,
@@ -14522,7 +14522,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 1009,
+      "events": 1000,
       "trails": 148,
       "swimming": 72,
       "attractions": 2558,
@@ -14530,7 +14530,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://provence-alpes-cotedazur.com/en/",
     "dmo": {
       "name": null,
@@ -14565,7 +14565,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 71,
+      "events": 69,
       "trails": 40,
       "swimming": 9,
       "attractions": 496,
@@ -14573,7 +14573,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.puydedome-tourisme.com/en/",
     "dmo": {
       "name": null,
@@ -14607,14 +14607,14 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 66,
+      "events": 62,
       "swimming": 3,
       "attractions": 485,
       "restaurants": 109
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.pyrenees31.com/en",
     "dmo": {
       "name": null,
@@ -14650,7 +14650,7 @@
     "languages": [],
     "inventory": {
       "golf": 4,
-      "events": 500,
+      "events": 487,
       "trails": 199,
       "swimming": 10,
       "attractions": 605,
@@ -14658,7 +14658,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme64.com/en/",
     "dmo": {
       "name": null,
@@ -14693,7 +14693,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 288,
+      "events": 282,
       "swimming": 51,
       "attractions": 335,
       "restaurants": 286
@@ -14735,7 +14735,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 47,
+      "events": 41,
       "attractions": 725,
       "restaurants": 218
     },
@@ -14820,7 +14820,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 148,
+      "events": 143,
       "trails": 196,
       "swimming": 32,
       "attractions": 182,
@@ -14863,7 +14863,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 2,
+      "events": 1,
       "swimming": 12,
       "attractions": 25,
       "restaurants": 5
@@ -14905,7 +14905,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 5,
+      "events": 4,
       "attractions": 15,
       "restaurants": 12
     },
@@ -14946,14 +14946,14 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 243,
+      "events": 242,
       "trails": 42,
       "attractions": 341,
       "restaurants": 194
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.reims-tourisme.com/en/",
     "dmo": {
       "name": null,
@@ -15115,7 +15115,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 208,
+      "events": 200,
       "trails": 126,
       "swimming": 12,
       "attractions": 331,
@@ -15246,7 +15246,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 120,
+      "events": 118,
       "trails": 12,
       "swimming": 36,
       "districts": 14,
@@ -15308,7 +15308,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 249,
+      "events": 239,
       "trails": 44,
       "swimming": 8,
       "attractions": 282,
@@ -15394,7 +15394,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 407,
+      "events": 385,
       "trails": 242,
       "swimming": 33,
       "attractions": 200,
@@ -15436,7 +15436,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 61,
+      "events": 59,
       "trails": 25,
       "swimming": 7,
       "attractions": 552,
@@ -15482,7 +15482,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 138,
+      "events": 136,
       "trails": 37,
       "attractions": 142,
       "restaurants": 73
@@ -15524,7 +15524,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 224,
+      "events": 212,
       "trails": 153,
       "swimming": 75,
       "attractions": 278,
@@ -15738,7 +15738,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 354,
+      "events": 342,
       "trails": 188,
       "swimming": 8,
       "attractions": 383,
@@ -15746,7 +15746,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.sarthetourisme.com/en/",
     "dmo": {
       "name": null,
@@ -15789,7 +15789,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.explore-savoie.com/en/",
     "dmo": {
       "name": null,
@@ -15823,7 +15823,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 18,
+      "events": 17,
       "trails": 8,
       "swimming": 39,
       "walkNodes": 117,
@@ -15914,7 +15914,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-seine-et-marne.fr/",
     "dmo": {
       "name": null,
@@ -15948,7 +15948,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 249,
+      "events": 239,
       "trails": 44,
       "swimming": 8,
       "attractions": 282,
@@ -15956,7 +15956,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.seine-maritime-tourisme.com/en/",
     "dmo": {
       "name": null,
@@ -15991,7 +15991,7 @@
     "languages": [],
     "inventory": {
       "golf": 16,
-      "events": 30,
+      "events": 28,
       "trails": 35,
       "swimming": 64,
       "attractions": 3131,
@@ -16216,7 +16216,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 131,
+      "events": 130,
       "trails": 59,
       "swimming": 5,
       "cycleNodes": 12,
@@ -16225,7 +16225,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.somme-tourisme.com/en/",
     "dmo": {
       "name": null,
@@ -16343,7 +16343,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 584,
+      "events": 566,
       "attractions": 43,
       "restaurants": 66
     },
@@ -16385,7 +16385,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 236,
+      "events": 230,
       "trails": 201,
       "swimming": 16,
       "districts": 15,
@@ -16604,7 +16604,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 194,
+      "events": 182,
       "trails": 18,
       "swimming": 1,
       "attractions": 1346,
@@ -16654,7 +16654,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-tarn.com/uk",
     "dmo": {
       "name": null,
@@ -16696,7 +16696,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-tarnetgaronne.fr/en",
     "dmo": {
       "name": null,
@@ -16769,7 +16769,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 273,
+      "events": 263,
       "trails": 266,
       "swimming": 9,
       "attractions": 431,
@@ -16777,7 +16777,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.belfort-tourisme.com/",
     "dmo": {
       "name": null,
@@ -16862,7 +16862,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 148,
+      "events": 147,
       "trails": 11,
       "swimming": 39,
       "districts": 44,
@@ -16958,8 +16958,8 @@
     "inventory": {
       "trails": 44,
       "swimming": 193,
-      "attractions": 7578,
-      "restaurants": 3990
+      "attractions": 7582,
+      "restaurants": 3995
     },
     "enrichments": [],
     "sampleQuestions": {},
@@ -17043,7 +17043,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 584,
+      "events": 565,
       "swimming": 27,
       "attractions": 773,
       "restaurants": 452
@@ -17089,7 +17089,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 179,
+      "events": 172,
       "trails": 72,
       "swimming": 8,
       "attractions": 173,
@@ -17185,7 +17185,7 @@
     "languages": [],
     "inventory": {
       "golf": 7,
-      "events": 672,
+      "events": 653,
       "trails": 86,
       "swimming": 29,
       "attractions": 756,
@@ -17193,7 +17193,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://en.trouvillesurmer.org/",
     "dmo": {
       "name": null,
@@ -17228,7 +17228,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 320,
+      "events": 319,
       "trails": 47,
       "swimming": 8,
       "attractions": 737,
@@ -17271,7 +17271,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 118,
+      "events": 112,
       "trails": 149,
       "swimming": 15,
       "attractions": 511,
@@ -17451,7 +17451,7 @@
     "languages": [],
     "inventory": {
       "golf": 10,
-      "events": 89,
+      "events": 87,
       "trails": 28,
       "swimming": 31,
       "districts": 27,
@@ -17513,7 +17513,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.uzes-pontdugard.com/en/",
     "dmo": {
       "name": null,
@@ -17556,7 +17556,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.valdisere.com/en/",
     "dmo": {
       "name": null,
@@ -17591,7 +17591,7 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 21,
+      "events": 18,
       "trails": 20,
       "swimming": 18,
       "attractions": 793,
@@ -17599,7 +17599,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.valdoise-tourisme.com/welcome/",
     "dmo": {
       "name": null,
@@ -17677,7 +17677,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 176,
+      "events": 164,
       "trails": 107,
       "swimming": 8,
       "attractions": 410,
@@ -17759,7 +17759,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 569,
+      "events": 543,
       "trails": 54,
       "swimming": 10,
       "attractions": 1420,
@@ -17848,7 +17848,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 413,
+      "events": 400,
       "trails": 232,
       "swimming": 7,
       "attractions": 671,
@@ -17856,7 +17856,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://en.valleedossau.com/",
     "dmo": {
       "name": null,
@@ -17891,7 +17891,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 87,
+      "events": 85,
       "trails": 62,
       "swimming": 52,
       "attractions": 148,
@@ -17934,7 +17934,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 18,
+      "events": 17,
       "trails": 16,
       "swimming": 78,
       "attractions": 981,
@@ -17942,7 +17942,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.visitvar.com/",
     "dmo": {
       "name": null,
@@ -17976,14 +17976,14 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 101,
+      "events": 96,
       "swimming": 4,
       "attractions": 223,
       "restaurants": 28
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.vendee-tourisme.com/",
     "dmo": {
       "name": null,
@@ -18147,7 +18147,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 183,
+      "events": 171,
       "trails": 112,
       "swimming": 2,
       "attractions": 838,
@@ -18191,7 +18191,7 @@
     "languages": [],
     "inventory": {
       "golf": 3,
-      "events": 23,
+      "events": 20,
       "trails": 16,
       "swimming": 12,
       "attractions": 313,
@@ -18199,7 +18199,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-vienne.com/en/",
     "dmo": {
       "name": null,
@@ -18313,7 +18313,7 @@
     "languages": [],
     "inventory": {
       "golf": 2,
-      "events": 155,
+      "events": 153,
       "trails": 11,
       "swimming": 48,
       "walkNodes": 573,
@@ -18402,7 +18402,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 181,
+      "events": 178,
       "trails": 5,
       "swimming": 34,
       "walkNodes": 198,
@@ -18486,7 +18486,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 140,
+      "events": 132,
       "trails": 168,
       "swimming": 5,
       "attractions": 202,
@@ -18494,7 +18494,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme.vosges.fr/",
     "dmo": {
       "name": null,
@@ -18655,7 +18655,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 158,
+      "events": 156,
       "trails": 154,
       "swimming": 5,
       "attractions": 447,
@@ -18663,7 +18663,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.alsace-verte.com/en/",
     "dmo": {
       "name": null,
@@ -18698,7 +18698,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 87,
+      "events": 86,
       "trails": 14,
       "swimming": 31,
       "walkNodes": 378,
@@ -18785,7 +18785,7 @@
     "languages": [],
     "inventory": {
       "golf": 1,
-      "events": 134,
+      "events": 130,
       "trails": 29,
       "swimming": 3,
       "attractions": 327,
@@ -18793,7 +18793,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.tourisme-yonne.com/",
     "dmo": {
       "name": null,
@@ -18827,7 +18827,7 @@
     "languages": [],
     "inventory": {
       "golf": 18,
-      "events": 34,
+      "events": 32,
       "trails": 21,
       "swimming": 39,
       "attractions": 2814,
@@ -18835,7 +18835,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.destination-yvelines.fr/en/",
     "dmo": {
       "name": null,
@@ -18917,7 +18917,7 @@
     "languages": [],
     "inventory": {
       "golf": 5,
-      "events": 236,
+      "events": 231,
       "trails": 10,
       "swimming": 51,
       "walkNodes": 521,
@@ -19100,7 +19100,7 @@
     },
     "enrichments": [],
     "sampleQuestions": {},
-    "dtFeed": false,
+    "dtFeed": true,
     "website": "https://www.zonza-saintelucie.com/en/incontournables/le-village-de-zonza/",
     "dmo": {
       "name": null,
@@ -19179,7 +19179,7 @@
     ],
     "languages": [],
     "inventory": {
-      "events": 23,
+      "events": 22,
       "trails": 54,
       "swimming": 37,
       "walkNodes": 346,
