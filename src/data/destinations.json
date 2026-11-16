@@ -9767,7 +9767,7 @@
     "tenantId": "kyoto",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/kyoto",
-    "provenance": "preview",
+    "provenance": "official",
     "dataSource": "japan-od",
     "status": "live",
     "channels": [
@@ -13634,7 +13634,7 @@
     "tenantId": "osaka",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/osaka",
-    "provenance": "preview",
+    "provenance": "official",
     "dataSource": "japan-od",
     "status": "live",
     "channels": [
@@ -16989,7 +16989,7 @@
     "tenantId": "jptokyo",
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/jptokyo",
-    "provenance": "preview",
+    "provenance": "official",
     "dataSource": "japan-od",
     "status": "live",
     "channels": [
