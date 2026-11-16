@@ -240,6 +240,22 @@
       ]
     },
     {
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "eu": false,
+      "open": [
+        "Local-government open data"
+      ],
+      "openNote": "Tokyo, Osaka, Kyoto",
+      "guides": [],
+      "charging": [],
+      "bathing": [],
+      "routes": [],
+      "map": [
+        "OpenStreetMap"
+      ]
+    },
+    {
       "country": "Canada — Québec",
       "flag": "🇨🇦",
       "eu": false,

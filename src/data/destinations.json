@@ -9768,7 +9768,7 @@
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/kyoto",
     "provenance": "preview",
-    "dataSource": null,
+    "dataSource": "japan-od",
     "status": "live",
     "channels": [
       "webchat",
@@ -13635,7 +13635,7 @@
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/osaka",
     "provenance": "preview",
-    "dataSource": null,
+    "dataSource": "japan-od",
     "status": "live",
     "channels": [
       "webchat"
@@ -16990,7 +16990,7 @@
     "voiceId": null,
     "chatUrl": "https://chat.dm2find.ai/jptokyo",
     "provenance": "preview",
-    "dataSource": null,
+    "dataSource": "japan-od",
     "status": "live",
     "channels": [
       "webchat"

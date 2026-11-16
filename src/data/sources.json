@@ -105,6 +105,17 @@
   "attribution": "KTO Tourism from data.go.kr"
  },
  {
+  "id": "japan-od",
+  "name": "Japanese local-government open data",
+  "geo": "Japan",
+  "country": "JP",
+  "status": "connected",
+  "attributionRequired": true,
+  "attribution": "Japanese local government open data (CC BY 4.0 / CC BY 2.1 JP), adapted by DM2find. Every record names its prefecture or city and dataset, e.g. Source: Kyoto Prefecture, 観光施設一覧 (CC BY 4.0), adapted by DM2find — in Japanese 出典：京都府「観光施設一覧」（CC BY 4.0）を加工して作成",
+  "coverage": "Kyoto Prefecture, Osaka City (Map Navi Osaka) and 14 wards and cities of Tokyo — other Japanese destinations run on public sources",
+  "note": "21 local-government lists, matched against our existing Japanese records so nothing is added twice, and translated for visitors."
+ },
+ {
   "id": "visitsweden",
   "name": "Visit Sweden national API",
   "geo": "Sweden",
@@ -122,5 +133,16 @@
   "status": "connected",
   "attributionRequired": true,
   "attribution": "Visit Finland – DataHub (business.finland.fi)"
+ },
+ {
+  "id": "geofa",
+  "name": "GeoFA (udinaturen.dk)",
+  "geo": "Denmark",
+  "country": "DK",
+  "url": "https://udinaturen.dk",
+  "status": "ready",
+  "attributionRequired": true,
+  "coverage": "Outdoor facilities and routes maintained by Denmark’s municipalities: shelters, beaches, campsites, viewpoints, walking, cycling and riding routes",
+  "note": "All of Denmark is imported and refreshed weekly — about 16,000 outdoor facilities and 5,800 routes, with Danish descriptions translated. It goes live with the first Danish destination."
  }
 ]
