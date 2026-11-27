@@ -17,12 +17,28 @@ import ConnectCodeField from '../../components/ConnectCodeField.astro';
     </ul>
   </section>
 
+  <section class="card warn" role="note">
+    <h2>⚠ Password changed? Connect again</h2>
+    <p>The connection runs through the Instagram account you log in with. When that account's <strong>password changes</strong>, Instagram ends the connection and the concierge <strong>stops answering</strong> direct messages. The same happens when the account is logged out of all sessions.</p>
+    <p>To restore it, open this page again with your DM2find connection link and click <strong>Connect with Instagram</strong>. Nothing else needs to change. Keep this link.</p>
+  </section>
+
   <section class="card">
     <ConnectCodeField />
     <button id="start" type="button">Connect with Instagram</button>
     <div id="status" class="status" hidden></div>
   </section>
 </ConnectLayout>
+
+<style>
+  .warn { border-color: #f0c36d; background: #fff8e6; }
+  .warn h2 { color: #8a5a00; }
+  .warn p { margin: 6px 0 0; }
+  @media (prefers-color-scheme: dark) {
+    .warn { border-color: #7a5a1c; background: #2a2210; }
+    .warn h2 { color: #f3c969; }
+  }
+</style>
 
 <script>
   import { getConnectCode, isValidConnectCode, rememberConnectCode, instagramAuthorizeUrl, setStatus } from '../../lib/connect';
